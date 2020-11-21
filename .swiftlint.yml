@@ -1,0 +1,11 @@
+disabled_rules:
+- trailing_whitespace
+opt_in_rules:
+
+excluded:
+- Pods
+included:
+
+identifier_name:
+  excluded:
+    - id

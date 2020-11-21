@@ -1,0 +1,20 @@
+PODS:
+  - SwiftLint (0.41.0)
+  - UPCarouselFlowLayout (1.1.2)
+
+DEPENDENCIES:
+  - SwiftLint
+  - UPCarouselFlowLayout
+
+SPEC REPOS:
+  trunk:
+    - SwiftLint
+    - UPCarouselFlowLayout
+
+SPEC CHECKSUMS:
+  SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
+  UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
+
+PODFILE CHECKSUM: 8036b7a5cef3f6365fd74a159336a8278607f66c
+
+COCOAPODS: 1.10.0
