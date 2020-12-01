@@ -29,14 +29,10 @@ class RegularButton: UIButton {
     private func updateStyle() {
         // Round corners for the button
         let smallerSide: CGFloat = frame.width < frame.height ? frame.width : frame.height
-//        cornerRadius =
         cornerRadius = smallerSide / 2
-//        layer.masksToBounds = false
         
         // Setting button colors
         setTitleColor(darkStyle ? .darkButtonTitle : .lightButtonTitle, for: .normal)
-//        setBackgroundImage(UIImage.from(color: darkStyle ? .darkButtonBackground : .lightButtonBackground),
-//                           for: .normal)
         if isEnabled {
             backgroundColor = darkStyle ? .darkButtonBackground : .lightButtonBackground
         } else {
@@ -45,7 +41,6 @@ class RegularButton: UIButton {
         
         // Setting disabled style
         setTitleColor(.disabledButtonTitle, for: .disabled)
-//        setBackgroundImage(UIImage.from(color: .disabledButtonBackground), for: .disabled)
         
         // Setting button font
         titleLabel?.font = UIFont.IBMPlexSansBold(size: titleLabel?.font.pointSize ?? 16)

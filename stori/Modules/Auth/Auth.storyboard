@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lry-uT-T8C">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Regular.ttf">
+            <string>IBMPlexSans</string>
+        </array>
+        <array key="Sweet Pea.ttf">
+            <string>Sweet_Pea</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="jOs-5e-NXJ">
+            <objects>
+                <viewController storyboardIdentifier="AuthViewController" id="Lry-uT-T8C" customClass="AuthViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6je-Lx-K9N" customClass="UIGradientView" customModule="stori" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auth_image" translatesAutoresizingMaskIntoConstraints="NO" id="o04-cm-uSK">
+                                <rect key="frame" x="203" y="63" width="396" height="780"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="o04-cm-uSK" secondAttribute="height" multiplier="32:63" id="JnD-0P-zT8"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="bvY-lD-UdV">
+                                <rect key="frame" x="28" y="52" width="358" height="782"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="B6H-hl-dnQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="307"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stori" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="d9e-bY-bmD">
+                                                <rect key="frame" x="0.0" y="0.0" width="146.5" height="307"/>
+                                                <fontDescription key="fontDescription" name="Sweet_Pea" family="Sweet Pea" pointSize="70"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDg-3i-yEs">
+                                                <rect key="frame" x="326" y="0.0" width="32" height="307"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03d-b5-Rcg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft4-fp-pJC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                                <color key="backgroundColor" name="Placeholder Gray"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="16"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="Placeholder Gray"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="languageButtonPressed:" destination="Lry-uT-T8C" eventType="touchUpInside" id="fLD-RP-cCU"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" name="GradientBottom"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Ft4-fp-pJC" secondAttribute="trailing" id="Io0-bf-08Y"/>
+                                                            <constraint firstItem="Ft4-fp-pJC" firstAttribute="leading" secondItem="03d-b5-Rcg" secondAttribute="leading" id="TJ5-Sn-5fx"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Ft4-fp-pJC" secondAttribute="bottom" id="i1U-iw-GKM"/>
+                                                            <constraint firstAttribute="width" secondItem="03d-b5-Rcg" secondAttribute="height" multiplier="1:1" id="mT4-ZR-oD7"/>
+                                                            <constraint firstItem="Ft4-fp-pJC" firstAttribute="top" secondItem="03d-b5-Rcg" secondAttribute="top" id="nL4-cf-Sy4"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="03d-b5-Rcg" firstAttribute="leading" secondItem="xDg-3i-yEs" secondAttribute="leading" id="dAi-4q-LEa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="03d-b5-Rcg" secondAttribute="trailing" id="fhq-eR-7RH"/>
+                                                    <constraint firstItem="03d-b5-Rcg" firstAttribute="top" secondItem="xDg-3i-yEs" secondAttribute="top" id="mBA-LN-ZbG"/>
+                                                    <constraint firstAttribute="width" constant="32" id="uHb-a7-3bD"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNs-RS-W7f">
+                                        <rect key="frame" x="0.0" y="323" width="358" height="87.5"/>
+                                        <string key="text">The app 
+for enriching
+your vocabulary</string>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-ep-V1D" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="410.5" width="358" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="UWr-r4-uEP"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="Placeholder Gray"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Lry-uT-T8C" id="AWH-z2-U9X"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFc-CR-ZWK" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="426.5" width="358" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="yAN-G2-N4c"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="Placeholder Gray"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Lry-uT-T8C" id="xQt-F0-XUf"/>
+                                        </connections>
+                                    </textField>
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qb9-Xi-82l" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="476.5" width="358" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SHH-bG-tcx"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="one-time-code"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="Placeholder Gray"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Lry-uT-T8C" id="UW9-sj-f0e"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BRw-B7-GmL" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="493" width="358" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uAl-yK-OZY"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="Placeholder Gray"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Lry-uT-T8C" id="DNY-Yz-Imm"/>
+                                        </connections>
+                                    </textField>
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Repeat password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="osF-Ee-XLd" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="543" width="358" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="tBU-o2-Tg6"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="new-password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="Placeholder Gray"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Lry-uT-T8C" id="TXo-cs-Vc2"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3D3-Bu-wAe">
+                                        <rect key="frame" x="0.0" y="559" width="358" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxd-jU-aAL">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Dxd-jU-aAL" secondAttribute="height" multiplier="1:1" id="oVs-9E-Xmh"/>
+                                                    <constraint firstAttribute="height" constant="50" id="yVe-EN-uX3"/>
+                                                </constraints>
+                                                <state key="normal" image="next_button"/>
+                                                <connections>
+                                                    <action selector="nextButtonPressed:" destination="Lry-uT-T8C" eventType="touchUpInside" id="SAv-IA-zFj"/>
+                                                </connections>
+                                            </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="D9o-eS-v8y">
+                                                <rect key="frame" x="15" y="15" width="20" height="20"/>
+                                                <color key="color" name="AccentColor"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Fme-Z2-XXV"/>
+                                            <constraint firstAttribute="bottom" secondItem="Dxd-jU-aAL" secondAttribute="bottom" id="HLE-54-iyf"/>
+                                            <constraint firstItem="Dxd-jU-aAL" firstAttribute="leading" secondItem="3D3-Bu-wAe" secondAttribute="leading" id="ToN-De-1aM"/>
+                                            <constraint firstItem="D9o-eS-v8y" firstAttribute="centerX" secondItem="Dxd-jU-aAL" secondAttribute="centerX" id="Tvr-56-CTb"/>
+                                            <constraint firstItem="D9o-eS-v8y" firstAttribute="centerY" secondItem="Dxd-jU-aAL" secondAttribute="centerY" id="iix-F7-531"/>
+                                            <constraint firstItem="Dxd-jU-aAL" firstAttribute="top" secondItem="3D3-Bu-wAe" secondAttribute="top" id="sg8-xi-4kt"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-BS-4pe">
+                                        <rect key="frame" x="0.0" y="625" width="358" height="73.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or Connect with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUt-1J-AfY">
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="0.26000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="wdW-XR-2QM">
+                                                <rect key="frame" x="0.0" y="33.5" width="358" height="40"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShC-TQ-lGh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIH-rb-ity">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="bIH-rb-ity" secondAttribute="height" multiplier="1:1" id="0JO-fN-n4h"/>
+                                                                </constraints>
+                                                                <state key="normal" image="facebook_auth"/>
+                                                                <connections>
+                                                                    <action selector="facebookPressed:" destination="Lry-uT-T8C" eventType="touchUpInside" id="7Mj-S1-rde"/>
+                                                                </connections>
+                                                            </button>
+                                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="V3c-nQ-pp9">
+                                                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                                <color key="color" name="AccentColor"/>
+                                                            </activityIndicatorView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="bIH-rb-ity" firstAttribute="leading" secondItem="ShC-TQ-lGh" secondAttribute="leading" id="6b3-OB-JuL"/>
+                                                            <constraint firstItem="V3c-nQ-pp9" firstAttribute="centerY" secondItem="bIH-rb-ity" secondAttribute="centerY" id="8AE-WG-8TG"/>
+                                                            <constraint firstItem="bIH-rb-ity" firstAttribute="top" secondItem="ShC-TQ-lGh" secondAttribute="top" id="JV9-6z-6Lr"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bIH-rb-ity" secondAttribute="trailing" id="Jcm-pK-POG"/>
+                                                            <constraint firstAttribute="bottom" secondItem="bIH-rb-ity" secondAttribute="bottom" id="bCh-qz-Gig"/>
+                                                            <constraint firstItem="V3c-nQ-pp9" firstAttribute="centerX" secondItem="bIH-rb-ity" secondAttribute="centerX" id="lgv-lb-qqY"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzO-8T-oLi">
+                                                        <rect key="frame" x="69" y="0.0" width="40" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8y-BM-91Z">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="x8y-BM-91Z" secondAttribute="height" multiplier="1:1" id="GlG-kW-HLC"/>
+                                                                </constraints>
+                                                                <state key="normal" image="google_auth"/>
+                                                                <connections>
+                                                                    <action selector="googlePressed:" destination="Lry-uT-T8C" eventType="touchUpInside" id="AAo-XA-tHN"/>
+                                                                </connections>
+                                                            </button>
+                                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="YH7-aS-VWL">
+                                                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                                <color key="color" name="AccentColor"/>
+                                                            </activityIndicatorView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="x8y-BM-91Z" secondAttribute="bottom" id="5oJ-Qy-pIZ"/>
+                                                            <constraint firstItem="x8y-BM-91Z" firstAttribute="leading" secondItem="wzO-8T-oLi" secondAttribute="leading" id="ErT-i2-ucO"/>
+                                                            <constraint firstItem="YH7-aS-VWL" firstAttribute="centerX" secondItem="x8y-BM-91Z" secondAttribute="centerX" id="IaQ-hj-oMS"/>
+                                                            <constraint firstAttribute="trailing" secondItem="x8y-BM-91Z" secondAttribute="trailing" id="L21-bP-Z0N"/>
+                                                            <constraint firstItem="YH7-aS-VWL" firstAttribute="centerY" secondItem="x8y-BM-91Z" secondAttribute="centerY" id="WKv-6z-ZXc"/>
+                                                            <constraint firstItem="x8y-BM-91Z" firstAttribute="top" secondItem="wzO-8T-oLi" secondAttribute="top" id="n7l-xI-kHF"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bt-Lh-EK9">
+                                                        <rect key="frame" x="138" y="0.0" width="40" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ju-KW-0a1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="4Ju-KW-0a1" secondAttribute="height" multiplier="1:1" id="cVM-2n-272"/>
+                                                                </constraints>
+                                                                <state key="normal" image="apple_auth"/>
+                                                                <connections>
+                                                                    <action selector="applePressed:" destination="Lry-uT-T8C" eventType="touchUpInside" id="RZ5-j1-YMR"/>
+                                                                </connections>
+                                                            </button>
+                                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="pQM-T7-YK9">
+                                                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                                <color key="color" name="AccentColor"/>
+                                                            </activityIndicatorView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="pQM-T7-YK9" firstAttribute="centerX" secondItem="4Ju-KW-0a1" secondAttribute="centerX" id="5Bg-PZ-CWA"/>
+                                                            <constraint firstAttribute="trailing" secondItem="4Ju-KW-0a1" secondAttribute="trailing" id="Ksp-Dn-Xq7"/>
+                                                            <constraint firstAttribute="bottom" secondItem="4Ju-KW-0a1" secondAttribute="bottom" id="Say-6W-pjP"/>
+                                                            <constraint firstItem="pQM-T7-YK9" firstAttribute="centerY" secondItem="4Ju-KW-0a1" secondAttribute="centerY" id="gdE-lQ-oXi"/>
+                                                            <constraint firstItem="4Ju-KW-0a1" firstAttribute="top" secondItem="7bt-Lh-EK9" secondAttribute="top" id="uAi-Il-uz6"/>
+                                                            <constraint firstItem="4Ju-KW-0a1" firstAttribute="leading" secondItem="7bt-Lh-EK9" secondAttribute="leading" id="yi4-kb-26j"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4i8-iV-ZSo">
+                                                        <rect key="frame" x="207" y="0.0" width="151" height="40"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="CYW-aC-k9g"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="GzA-16-NNp">
+                                        <rect key="frame" x="0.0" y="714.5" width="358" height="67.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5K-14-eF5">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="67.5"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
+                                                <state key="normal" title="Sign up">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="firstBottomButtonPressed:" destination="Lry-uT-T8C" eventType="touchUpInside" id="poz-SU-VnI"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWJ-fK-Pbq">
+                                                <rect key="frame" x="16" y="0.0" width="0.0" height="67.5"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEp-y5-V3O">
+                                                <rect key="frame" x="32" y="0.0" width="81" height="67.5"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
+                                                <state key="normal" title="Forgot password">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="secondBottomButtonPressed:" destination="Lry-uT-T8C" eventType="touchUpInside" id="el9-lV-r27"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZSI-DM-jku">
+                                                <rect key="frame" x="129" y="0.0" width="229" height="67.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lsd-2t-GxK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lsd-2t-GxK" firstAttribute="bottom" secondItem="o04-cm-uSK" secondAttribute="bottom" constant="19" id="Axh-AL-zxL"/>
+                            <constraint firstItem="bvY-lD-UdV" firstAttribute="top" secondItem="lsd-2t-GxK" secondAttribute="top" constant="8" id="HPV-nn-DqA"/>
+                            <constraint firstItem="o04-cm-uSK" firstAttribute="top" secondItem="lsd-2t-GxK" secondAttribute="top" constant="19" id="K46-gF-WbI"/>
+                            <constraint firstItem="lsd-2t-GxK" firstAttribute="bottom" secondItem="bvY-lD-UdV" secondAttribute="bottom" constant="28" id="XHC-ng-Sf8"/>
+                            <constraint firstItem="lsd-2t-GxK" firstAttribute="trailing" secondItem="bvY-lD-UdV" secondAttribute="trailing" constant="28" id="Yq0-yK-jec"/>
+                            <constraint firstItem="bvY-lD-UdV" firstAttribute="leading" secondItem="lsd-2t-GxK" secondAttribute="leading" constant="28" id="ftz-NV-qvs"/>
+                            <constraint firstAttribute="trailing" secondItem="o04-cm-uSK" secondAttribute="trailing" constant="-185" id="uMj-zb-ME5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" name="GradientTop"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" name="GradientBottom"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="appleActivityIndicator" destination="pQM-T7-YK9" id="yRG-NX-RfQ"/>
+                        <outlet property="appleButton" destination="4Ju-KW-0a1" id="Pk8-OX-87r"/>
+                        <outlet property="bottomButtonsView" destination="GzA-16-NNp" id="3MA-Re-zDw"/>
+                        <outlet property="bottomImageConstraint" destination="Axh-AL-zxL" id="NEe-nR-Dmf"/>
+                        <outlet property="bottomStackViewConstraint" destination="XHC-ng-Sf8" id="6hw-Hz-9Dd"/>
+                        <outlet property="codeTextField" destination="Qb9-Xi-82l" id="wXa-SE-lDU"/>
+                        <outlet property="emailTextField" destination="WFc-CR-ZWK" id="04B-9u-co1"/>
+                        <outlet property="facebookActivityIndicator" destination="V3c-nQ-pp9" id="0bm-JC-QjT"/>
+                        <outlet property="facebookButton" destination="bIH-rb-ity" id="w8Y-MV-WPM"/>
+                        <outlet property="firstBottomButton" destination="z5K-14-eF5" id="UBV-bl-wBB"/>
+                        <outlet property="googleActivityIndicator" destination="YH7-aS-VWL" id="ogF-Is-9Qy"/>
+                        <outlet property="googleButton" destination="x8y-BM-91Z" id="REd-wN-IJ6"/>
+                        <outlet property="languageButton" destination="Ft4-fp-pJC" id="olY-7R-X46"/>
+                        <outlet property="logoLabel" destination="d9e-bY-bmD" id="BPr-qu-tbC"/>
+                        <outlet property="logoSection" destination="B6H-hl-dnQ" id="ZBB-fQ-vPz"/>
+                        <outlet property="nextButton" destination="Dxd-jU-aAL" id="ZO4-5o-Mju"/>
+                        <outlet property="passwordTextField" destination="BRw-B7-GmL" id="aT1-tq-Sh6"/>
+                        <outlet property="progressActivityIndicator" destination="D9o-eS-v8y" id="bsb-Ds-Hj7"/>
+                        <outlet property="repeatPasswordTextField" destination="osF-Ee-XLd" id="226-hM-OVQ"/>
+                        <outlet property="secondBottomButton" destination="yEp-y5-V3O" id="2h4-Ox-tVw"/>
+                        <outlet property="socialLabel" destination="HUt-1J-AfY" id="IBV-bZ-ynA"/>
+                        <outlet property="socialView" destination="lsR-BS-4pe" id="tb3-AN-QO0"/>
+                        <outlet property="stackView" destination="bvY-lD-UdV" id="4zl-uh-j1k"/>
+                        <outlet property="titleLabel" destination="tNs-RS-W7f" id="4bS-7X-K73"/>
+                        <outlet property="usernameTextField" destination="wBa-ep-V1D" id="kaP-5M-IjP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pR6-0B-Dcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230.43478260869566" y="164.73214285714286"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="BRw-B7-GmL">
+            <size key="intrinsicContentSize" width="80" height="21"/>
+        </designable>
+        <designable name="Qb9-Xi-82l">
+            <size key="intrinsicContentSize" width="44" height="22.5"/>
+        </designable>
+        <designable name="WFc-CR-ZWK">
+            <size key="intrinsicContentSize" width="44.5" height="22.5"/>
+        </designable>
+        <designable name="osF-Ee-XLd">
+            <size key="intrinsicContentSize" width="141.5" height="21"/>
+        </designable>
+        <designable name="wBa-ep-V1D">
+            <size key="intrinsicContentSize" width="83" height="22.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="apple_auth" width="40" height="40"/>
+        <image name="auth_image" width="320" height="630"/>
+        <image name="facebook_auth" width="80" height="80"/>
+        <image name="google_auth" width="80" height="80"/>
+        <image name="next_button" width="98" height="98"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.7839999794960022" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GradientBottom">
+            <color red="0.082000002264976501" green="0.10999999940395355" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GradientTop">
+            <color red="0.19599999487400055" green="0.27500000596046448" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Placeholder Gray">
+            <color red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

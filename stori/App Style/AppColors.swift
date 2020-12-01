@@ -8,6 +8,11 @@
 import UIKit
 
 extension UIColor {
+    static var accentColor = UIColor(red: 1,
+                                     green: 0.784,
+                                     blue: 0.420,
+                                     alpha: 1)
+    
     static var gradientTop = UIColor(red: 0.196,
                                      green: 0.275,
                                      blue: 0.42,

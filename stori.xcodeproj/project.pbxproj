@@ -8,6 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		BD21B89ECB3395B7D26BCECC /* Pods_stori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAC3C6735F7BC1D8397254E /* Pods_stori.framework */; };
+		FA3C26132569559C0089F646 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3C26122569559C0089F646 /* Auth.storyboard */; };
+		FA3C2617256A3CFA0089F646 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C2616256A3CFA0089F646 /* AuthViewController.swift */; };
+		FA3C2626256A52320089F646 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C2625256A52320089F646 /* UIViewControllerExtension.swift */; };
+		FA3C27DF256BDBFD0089F646 /* RegularTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */; };
+		FA4B6112256EAEA1005501BD /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B6111256EAEA1005501BD /* AuthPresenter.swift */; };
+		FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B6115256F7BE7005501BD /* Endpoints.swift */; };
+		FA4B61342570036C005501BD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B61332570036C005501BD /* APIClient.swift */; };
+		FA4B613725700749005501BD /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B613625700749005501BD /* Commons.swift */; };
+		FA4B613A25700765005501BD /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B613925700765005501BD /* Headers.swift */; };
+		FA4B613E257007B1005501BD /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B613D257007B1005501BD /* RequestProtocol.swift */; };
+		FA4B6141257008A2005501BD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B6140257008A2005501BD /* Request.swift */; };
+		FA4B6144257015BE005501BD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B6143257015BE005501BD /* NetworkError.swift */; };
+		FA4B616F25713362005501BD /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B616E25713362005501BD /* DataExtension.swift */; };
+		FA4B61732574C45E005501BD /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B61722574C45E005501BD /* AuthModel.swift */; };
+		FA4B61762574C46D005501BD /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B61752574C46D005501BD /* AuthUser.swift */; };
+		FA4B61882574F3EF005501BD /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B61872574F3EF005501BD /* KeychainManager.swift */; };
+		FA4B618B25750412005501BD /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B618A25750412005501BD /* CurrentUser.swift */; };
+		FA4B619025752134005501BD /* MessageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B618F25752134005501BD /* MessageObject.swift */; };
+		FA4B61A625753433005501BD /* Google-Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA4B61A525753433005501BD /* Google-Credentials.plist */; };
+		FA4B61A925753487005501BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B61A825753487005501BD /* Constants.swift */; };
+		FA4B61BE25753CF2005501BD /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B61BD25753CF2005501BD /* FacebookManager.swift */; };
+		FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830B256D544E007052D9 /* UILabelExtension.swift */; };
+		FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */; };
+		FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */; };
+		FA658317256E29D5007052D9 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA658316256E29D5007052D9 /* UITextFieldExtension.swift */; };
+		FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65831A256E7805007052D9 /* AuthViewControllerSetUp.swift */; };
 		FA7B72D0256690C1003F9A0C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72CF256690C1003F9A0C /* UIViewExtension.swift */; };
 		FA7B72D325669962003F9A0C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72D225669962003F9A0C /* UIImageExtension.swift */; };
 		FA7B72D825669A31003F9A0C /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA7B72D725669A31003F9A0C /* IBMPlexSans-Regular.ttf */; };
@@ -38,6 +64,33 @@
 /* Begin PBXFileReference section */
 		0457B5C97FFBC629B11798BE /* Pods-stori.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stori.debug.xcconfig"; path = "Target Support Files/Pods-stori/Pods-stori.debug.xcconfig"; sourceTree = "<group>"; };
 		33F1C98EA2DDD6308879093F /* Pods-stori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stori.release.xcconfig"; path = "Target Support Files/Pods-stori/Pods-stori.release.xcconfig"; sourceTree = "<group>"; };
+		FA3C26122569559C0089F646 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		FA3C2616256A3CFA0089F646 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		FA3C2625256A52320089F646 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularTextField.swift; sourceTree = "<group>"; };
+		FA4B6111256EAEA1005501BD /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		FA4B6115256F7BE7005501BD /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		FA4B61332570036C005501BD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		FA4B613625700749005501BD /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		FA4B613925700765005501BD /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
+		FA4B613D257007B1005501BD /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		FA4B6140257008A2005501BD /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		FA4B6143257015BE005501BD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FA4B616E25713362005501BD /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		FA4B61722574C45E005501BD /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		FA4B61752574C46D005501BD /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
+		FA4B61872574F3EF005501BD /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		FA4B618A25750412005501BD /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		FA4B618F25752134005501BD /* MessageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageObject.swift; sourceTree = "<group>"; };
+		FA4B61A525753433005501BD /* Google-Credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Google-Credentials.plist"; sourceTree = "<group>"; };
+		FA4B61A825753487005501BD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA4B61BD25753CF2005501BD /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
+		FA4B61C4257543BC005501BD /* stori.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stori.entitlements; sourceTree = "<group>"; };
+		FA65830B256D544E007052D9 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardApperenceHandler.swift; sourceTree = "<group>"; };
+		FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerDelegates.swift; sourceTree = "<group>"; };
+		FA658316256E29D5007052D9 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		FA65831A256E7805007052D9 /* AuthViewControllerSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerSetUp.swift; sourceTree = "<group>"; };
 		FA7B72CF256690C1003F9A0C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		FA7B72D225669962003F9A0C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		FA7B72D725669A31003F9A0C /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -97,10 +150,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA3C26112569558B0089F646 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C26122569559C0089F646 /* Auth.storyboard */,
+				FA3C2616256A3CFA0089F646 /* AuthViewController.swift */,
+				FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */,
+				FA65831A256E7805007052D9 /* AuthViewControllerSetUp.swift */,
+				FA4B6111256EAEA1005501BD /* AuthPresenter.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FA4B6114256F7BA5005501BD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B61462570174A005501BD /* Base */,
+				FA4B6115256F7BE7005501BD /* Endpoints.swift */,
+				FA4B61332570036C005501BD /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FA4B61462570174A005501BD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B613625700749005501BD /* Commons.swift */,
+				FA4B613925700765005501BD /* Headers.swift */,
+				FA4B613D257007B1005501BD /* RequestProtocol.swift */,
+				FA4B6140257008A2005501BD /* Request.swift */,
+				FA4B6143257015BE005501BD /* NetworkError.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FA4B61712574C44E005501BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B61722574C45E005501BD /* AuthModel.swift */,
+				FA4B61752574C46D005501BD /* AuthUser.swift */,
+				FA4B618A25750412005501BD /* CurrentUser.swift */,
+				FA4B618F25752134005501BD /* MessageObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA658314256E2863007052D9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */,
+				FA4B61BD25753CF2005501BD /* FacebookManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		FA7B72D525669A08003F9A0C /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
 				FA7B72D625669A10003F9A0C /* Fonts */,
+				FA812D76256298450036F162 /* Assets.xcassets */,
 				FA999D9A25694D3E00B694FA /* Strings.strings */,
 			);
 			path = Ressources;
@@ -146,17 +254,22 @@
 		FA812D6C256298440036F162 /* stori */ = {
 			isa = PBXGroup;
 			children = (
-				FA999D9F2569513E00B694FA /* Storage */,
-				FA7B72D525669A08003F9A0C /* Ressources */,
+				FA4B61C4257543BC005501BD /* stori.entitlements */,
+				FA4B61712574C44E005501BD /* Models */,
 				FA812D8C256641820036F162 /* App Style */,
 				FA812D8A256640E50036F162 /* Extensions */,
+				FA658314256E2863007052D9 /* Managers */,
+				FA4B6114256F7BA5005501BD /* Networking */,
 				FA812D8B256640F30036F162 /* Modules */,
+				FA7B72D525669A08003F9A0C /* Ressources */,
+				FA999D9F2569513E00B694FA /* Storage */,
 				FA812D71256298440036F162 /* ViewController.swift */,
 				FA812D73256298440036F162 /* Main.storyboard */,
-				FA812D76256298450036F162 /* Assets.xcassets */,
 				FA812D6D256298440036F162 /* AppDelegate.swift */,
 				FA812D6F256298440036F162 /* SceneDelegate.swift */,
+				FA4B61A525753433005501BD /* Google-Credentials.plist */,
 				FA812D7B256298450036F162 /* Info.plist */,
+				FA4B61A825753487005501BD /* Constants.swift */,
 			);
 			path = stori;
 			sourceTree = "<group>";
@@ -177,6 +290,10 @@
 				FA7B72CF256690C1003F9A0C /* UIViewExtension.swift */,
 				FA7B72D225669962003F9A0C /* UIImageExtension.swift */,
 				FA999D9C25694D6800B694FA /* StringExtension.swift */,
+				FA3C2625256A52320089F646 /* UIViewControllerExtension.swift */,
+				FA65830B256D544E007052D9 /* UILabelExtension.swift */,
+				FA658316256E29D5007052D9 /* UITextFieldExtension.swift */,
+				FA4B616E25713362005501BD /* DataExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,6 +304,7 @@
 				FA812D78256298450036F162 /* LaunchScreen.storyboard */,
 				FA812D9F25665A920036F162 /* Root */,
 				FA812D86256640AB0036F162 /* Tutorial */,
+				FA3C26112569558B0089F646 /* Auth */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -206,6 +324,7 @@
 			children = (
 				FA812D8D256641940036F162 /* UIGradientView.swift */,
 				FA812DA9256682F70036F162 /* RegularButton.swift */,
+				FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */,
 				FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */,
 			);
 			path = "Custom Views";
@@ -224,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				FA999DA02569514C00B694FA /* DefaultSettings.swift */,
+				FA4B61872574F3EF005501BD /* KeychainManager.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -241,6 +361,7 @@
 				FA812D982566437E0036F162 /* ShellScript */,
 				FA812D68256298440036F162 /* Resources */,
 				495E83DCC8467CCAC9FAD7F2 /* [CP] Embed Pods Frameworks */,
+				4A993576BC95F51217BE0263 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,9 +415,11 @@
 				FA999D9825694D3E00B694FA /* Strings.strings in Resources */,
 				FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */,
 				FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */,
+				FA4B61A625753433005501BD /* Google-Credentials.plist in Resources */,
 				FA812D77256298450036F162 /* Assets.xcassets in Resources */,
 				FA812D88256640BF0036F162 /* Tutorial.storyboard in Resources */,
 				FA7B72D825669A31003F9A0C /* IBMPlexSans-Regular.ttf in Resources */,
+				FA3C26132569559C0089F646 /* Auth.storyboard in Resources */,
 				FA812D75256298440036F162 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +442,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stori/Pods-stori-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A993576BC95F51217BE0263 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stori/Pods-stori-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stori/Pods-stori-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stori/Pods-stori-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C4F0937FE79398F5F37B6586 /* [CP] Check Pods Manifest.lock */ = {
@@ -368,17 +508,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA812D72256298440036F162 /* ViewController.swift in Sources */,
+				FA4B61A925753487005501BD /* Constants.swift in Sources */,
 				FA7B72EA2566B814003F9A0C /* TutorialCollectionViewCell.swift in Sources */,
 				FA812DA725665DB90036F162 /* TutorialViewController.swift in Sources */,
+				FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */,
+				FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */,
+				FA4B616F25713362005501BD /* DataExtension.swift in Sources */,
+				FA4B6144257015BE005501BD /* NetworkError.swift in Sources */,
+				FA4B619025752134005501BD /* MessageObject.swift in Sources */,
+				FA658317256E29D5007052D9 /* UITextFieldExtension.swift in Sources */,
+				FA4B61732574C45E005501BD /* AuthModel.swift in Sources */,
+				FA4B61882574F3EF005501BD /* KeychainManager.swift in Sources */,
 				FA999D922568F30B00B694FA /* CustomCollectionViewCell.swift in Sources */,
+				FA4B6141257008A2005501BD /* Request.swift in Sources */,
+				FA3C2626256A52320089F646 /* UIViewControllerExtension.swift in Sources */,
+				FA3C2617256A3CFA0089F646 /* AuthViewController.swift in Sources */,
+				FA4B61342570036C005501BD /* APIClient.swift in Sources */,
+				FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */,
+				FA4B61BE25753CF2005501BD /* FacebookManager.swift in Sources */,
+				FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */,
 				FA812D6E256298440036F162 /* AppDelegate.swift in Sources */,
 				FA999DA12569514C00B694FA /* DefaultSettings.swift in Sources */,
+				FA3C27DF256BDBFD0089F646 /* RegularTextField.swift in Sources */,
 				FA7B72D325669962003F9A0C /* UIImageExtension.swift in Sources */,
 				FA812DA425665AB10036F162 /* RootViewController.swift in Sources */,
 				FA7B72DF25669C54003F9A0C /* AppFonts.swift in Sources */,
+				FA4B6112256EAEA1005501BD /* AuthPresenter.swift in Sources */,
+				FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */,
+				FA4B61762574C46D005501BD /* AuthUser.swift in Sources */,
+				FA4B613E257007B1005501BD /* RequestProtocol.swift in Sources */,
+				FA4B613A25700765005501BD /* Headers.swift in Sources */,
 				FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */,
 				FA812DAA256682F70036F162 /* RegularButton.swift in Sources */,
+				FA4B613725700749005501BD /* Commons.swift in Sources */,
 				FA812D8E256641940036F162 /* UIGradientView.swift in Sources */,
+				FA4B618B25750412005501BD /* CurrentUser.swift in Sources */,
 				FA7B72D0256690C1003F9A0C /* UIViewExtension.swift in Sources */,
 				FA812D9C256659690036F162 /* AppColors.swift in Sources */,
 				FA812D70256298440036F162 /* SceneDelegate.swift in Sources */,
@@ -537,6 +701,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 42;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
@@ -550,7 +715,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ideaction.io.stori;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -560,6 +725,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 42;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
@@ -573,7 +739,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ideaction.io.stori;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

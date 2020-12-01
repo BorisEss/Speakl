@@ -4,10 +4,13 @@ target 'stori' do
   use_frameworks!
 
   # Network and Caching
-#  pod 'Alamofire'
-#  pod 'AlamofireNetworkActivityLogger', :configurations => ['Debug']
+  pod 'Alamofire'
+  pod 'AlamofireNetworkActivityLogger', :configurations => ['Debug']
+  pod 'Kingfisher'
+  pod 'GoogleSignIn'
+  pod 'FBSDKCoreKit/Swift'
+  pod 'FBSDKLoginKit/Swift'
 #  pod 'SwiftyJSON'
-#  pod 'Kingfisher'
   
   # Google
 #  pod 'Firebase/Core'
@@ -18,16 +21,18 @@ target 'stori' do
 #  pod 'Google-Mobile-Ads-SDK'
   
   # System Functionality
-#  pod 'SwiftyStoreKit'
   pod 'SwiftLint'
-#  pod 'KeychainSwift'
+  pod 'IQKeyboardManagerSwift'
+  pod 'PromiseKit'
+  pod 'KeychainSwift'
+#  pod 'SwiftyStoreKit'
 #  pod 'ReachabilitySwift'
 #  pod 'UITextView+Placeholder'
-#  pod 'IQKeyboardManagerSwift'
   
   #UI Pods
-  pod "UPCarouselFlowLayout"
-#  pod 'SwiftMessages'
+  pod 'UPCarouselFlowLayout'
+  pod 'TextFieldEffects'
+  pod 'SwiftMessages'
 #  pod 'SideMenu'
 #  pod 'SimpleCheckbox'
 #  pod 'Cluster'

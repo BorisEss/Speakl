@@ -38,7 +38,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>Tutorial</string>
+					<string>Auth</string>
 				</dict>
 			</array>
 		</dict>
@@ -75,6 +75,34 @@
 		<string>IBMPlexSans-Bold.ttf</string>
 		<string>IBMPlexSans-Regular.ttf</string>
 		<string>Sweet Pea.ttf</string>
+	</array>
+	<key>FacebookAppID</key>
+	<string>982791792066230</string>
+	<key>FacebookDisplayName</key>
+	<string>Stori</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb982791792066230</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.1086533177231-hbunp9rr9g5bq115bdlgonfpgtdos2s6</string>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>
