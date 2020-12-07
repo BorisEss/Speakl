@@ -17,4 +17,20 @@ class DefaultSettings {
             UserDefaults.standard.synchronize()
         }
     }
+    
+    public static var appLanguage: String {
+        get {
+            if let lang = UserDefaults.standard.string(forKey: "appLanguage") {
+                return lang
+            }
+            if let lang = Locale.current.languageCode {
+                return lang
+            }
+            return "en"
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "appLanguage")
+            UserDefaults.standard.synchronize()
+        }
+    }
 }

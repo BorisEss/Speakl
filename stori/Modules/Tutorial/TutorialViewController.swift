@@ -49,7 +49,7 @@ class TutorialViewController: UIViewController {
     // MARK: - Button Actions
     @IBAction func nextButtonPressed(_ sender: Any) {
         DefaultSettings.finishedTutorial = true
-        // TODO: Go to next screen
+        Router.load()
     }
     
     // MARK: - Set Up

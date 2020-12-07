@@ -40,7 +40,8 @@ final class APIClient {
                     return NetworkError.unknownError
                 }
             case 403:
-                // TODO: Router dismiss screen
+                KeychainManager.shared.token = nil
+                Router.load()
                 return NetworkError.noAuthenticationProvided
             case 404:
                 if let errorString = parseError(data: data) {

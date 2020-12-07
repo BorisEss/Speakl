@@ -13,20 +13,20 @@ extension String {
     /// - Returns: `String` value which is the string in Phone Language.
     ///
     var localized: String {
-        // TODO: Add translation by selected language
-//        if let path = Bundle.main.path(forResource: appLanguage, ofType: "lproj"), let bundle = Bundle(path: path) {
-//            #if DEBUG
-//            return bundle.localizedString(forKey: self, value: ">> \(self) <<", table: "Strings")
-//            #else
-//            return bundle.localizedString(forKey: self, value: "\(self)", table: "Strings")
-//            #endif
-//        } else {
+        if let path = Bundle.main.path(forResource: Storage.shared.currentLanguage?.shortcut ?? "en",
+                                       ofType: "lproj"), let bundle = Bundle(path: path) {
+            #if DEBUG
+            return bundle.localizedString(forKey: self, value: ">> \(self) <<", table: "Strings")
+            #else
+            return bundle.localizedString(forKey: self, value: "\(self)", table: "Strings")
+            #endif
+        } else {
             #if DEBUG
             return Bundle.main.localizedString(forKey: self, value: ">> \(self) <<", table: "Strings")
             #else
             return Bundle.main.localizedString(forKey: self, value: "\(self)", table: "Strings")
             #endif
-//        }
+        }
     }
     
     /// This function checks if current string is a valid email.

@@ -106,7 +106,5 @@ extension AppDelegate: GIDSignInDelegate {
               withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
         // ...
-        
     }
-    
 }

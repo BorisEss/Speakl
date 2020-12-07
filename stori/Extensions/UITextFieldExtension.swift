@@ -11,7 +11,7 @@ extension UITextField {
     func validate() -> Bool {
         guard let fieldValue = text else { return false }
         if fieldValue.isEmpty {
-            // TODO: Show error
+            Toast.error("common_empty_field".localized)
             becomeFirstResponder()
             return false
         }
@@ -22,7 +22,7 @@ extension UITextField {
         if validate() {
             guard let fieldValue = text else { return false }
             if !fieldValue.isValidEmail {
-                // TODO: Show invalid email
+                Toast.error("auth_vc_error_wrong_email_format".localized)
                 becomeFirstResponder()
                 return false
             }
@@ -35,7 +35,7 @@ extension UITextField {
         if validate() {
             guard let fieldValue = text else { return false }
             if !fieldValue.isValidPassword {
-                // TODO: Show invalid password
+                Toast.error("common_wrong_password_format".localized)
                 becomeFirstResponder()
                 return false
             }

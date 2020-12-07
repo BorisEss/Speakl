@@ -23,17 +23,11 @@ class AuthPresenter {
         .then { (request) -> Promise<AuthModel> in
             return APIClient.request(with: request)
         }
-        .then { (model) -> Promise<URLRequest>  in
+        .then { (model) -> Promise<Void>  in
             KeychainManager.shared.token = model.token
-            return Request(endpoint: Endpoints.currentUser)
-                .set(headers: Headers().authorized)
-                .build()
+            return UserClient.getCurrentUser()
         }
-        .then { (request) -> Promise<CurrentUser> in
-            return APIClient.request(with: request)
-        }
-        .done { (value) in
-            CurrentUser.shared = value
+        .done { _ in
             completition(true)
         }
         .catch { (error) in
@@ -58,17 +52,11 @@ class AuthPresenter {
         .then { (request) -> Promise<AuthModel> in
             return APIClient.request(with: request)
         }
-        .then { (model) -> Promise<URLRequest>  in
+        .then { (model) -> Promise<Void>  in
             KeychainManager.shared.token = model.token
-            return Request(endpoint: Endpoints.currentUser)
-                .set(headers: Headers().authorized)
-                .build()
+            return UserClient.getCurrentUser()
         }
-        .then { (request) -> Promise<CurrentUser> in
-            return APIClient.request(with: request)
-        }
-        .done { (value) in
-            CurrentUser.shared = value
+        .done { _ in
             completition(true)
         }
         .catch { (error) in
@@ -131,17 +119,11 @@ class AuthPresenter {
         .then { (request) -> Promise<AuthModel> in
             return APIClient.request(with: request)
         }
-        .then { (model) -> Promise<URLRequest>  in
+        .then { (model) -> Promise<Void>  in
             KeychainManager.shared.token = model.token
-            return Request(endpoint: Endpoints.currentUser)
-                .set(headers: Headers().authorized)
-                .build()
+            return UserClient.getCurrentUser()
         }
-        .then { (request) -> Promise<CurrentUser> in
-            return APIClient.request(with: request)
-        }
-        .done { (value) in
-            CurrentUser.shared = value
+        .done { _ in
             completition(true)
         }
         .catch { (error) in
@@ -161,17 +143,11 @@ class AuthPresenter {
         .then { (request) -> Promise<AuthModel> in
             return APIClient.request(with: request)
         }
-        .then { (model) -> Promise<URLRequest>  in
+        .then { (model) -> Promise<Void>  in
             KeychainManager.shared.token = model.token
-            return Request(endpoint: Endpoints.currentUser)
-                .set(headers: Headers().authorized)
-                .build()
+            return UserClient.getCurrentUser()
         }
-        .then { (request) -> Promise<CurrentUser> in
-            return APIClient.request(with: request)
-        }
-        .done { (value) in
-            CurrentUser.shared = value
+        .done { _ in
             completition(true)
         }
         .catch { (error) in
@@ -193,17 +169,11 @@ class AuthPresenter {
         .then { (request) -> Promise<AuthModel> in
             return APIClient.request(with: request)
         }
-        .then { (model) -> Promise<URLRequest>  in
+        .then { (model) -> Promise<Void>  in
             KeychainManager.shared.token = model.token
-            return Request(endpoint: Endpoints.currentUser)
-                .set(headers: Headers().authorized)
-                .build()
+            return UserClient.getCurrentUser()
         }
-        .then { (request) -> Promise<CurrentUser> in
-            return APIClient.request(with: request)
-        }
-        .done { (value) in
-            CurrentUser.shared = value
+        .done { _ in
             completition(true)
         }
         .catch { (error) in

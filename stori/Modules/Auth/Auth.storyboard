@@ -18,10 +18,18 @@
         </array>
     </customFonts>
     <scenes>
+        <!--LanguagePopup-->
+        <scene sceneID="2ud-KX-sfg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LanguagePopup" id="W1P-Xc-zUJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OB3-KY-Il3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230" y="-271"/>
+        </scene>
         <!--Auth View Controller-->
         <scene sceneID="jOs-5e-NXJ">
             <objects>
-                <viewController storyboardIdentifier="AuthViewController" id="Lry-uT-T8C" customClass="AuthViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Lry-uT-T8C" customClass="AuthViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6je-Lx-K9N" customClass="UIGradientView" customModule="stori" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +58,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03d-b5-Rcg">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft4-fp-pJC">
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft4-fp-pJC">
                                                                 <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                                                 <color key="backgroundColor" name="Placeholder Gray"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -58,10 +66,10 @@
                                                                         <real key="value" value="16"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                        <color key="value" name="Placeholder Gray"/>
+                                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                        <real key="value" value="1"/>
+                                                                        <real key="value" value="2"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
                                                                 </userDefinedRuntimeAttributes>
@@ -190,7 +198,9 @@ your vocabulary</string>
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="new-password"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="new-password">
+                                            <passwordRules key="passwordRules" passwordRulesDescriptor="required: lower; required: upper; required: digit; minlength: 8; maxlength: 16;"/>
+                                        </textInputTraits>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
                                                 <real key="value" value="1"/>
@@ -423,6 +433,7 @@ your vocabulary</string>
                         <outlet property="stackView" destination="bvY-lD-UdV" id="4zl-uh-j1k"/>
                         <outlet property="titleLabel" destination="tNs-RS-W7f" id="4bS-7X-K73"/>
                         <outlet property="usernameTextField" destination="wBa-ep-V1D" id="kaP-5M-IjP"/>
+                        <segue destination="W1P-Xc-zUJ" kind="custom" identifier="showLanguagePopup" customClass="SwiftMessagesTopTabSegue" customModule="stori" customModuleProvider="target" id="ph8-yM-ep3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR6-0B-Dcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -39,16 +39,51 @@
                             <constraint firstItem="EPo-wV-Wxc" firstAttribute="centerX" secondItem="Lme-2x-kPp" secondAttribute="centerX" id="YKf-iN-ltS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="uIt-JY-9J6" kind="show" identifier="showTutorial" id="vhZ-Eg-QBc"/>
+                        <segue destination="3N6-nP-53O" kind="show" identifier="showAuth" id="HEG-qI-WW7"/>
+                        <segue destination="O2j-uk-fFo" kind="show" identifier="showMain" id="Vva-ng-t1Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9V-qb-xPu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-391" y="190"/>
         </scene>
+        <!--Tutorial-->
+        <scene sceneID="elC-7u-Odq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tutorial" id="uIt-JY-9J6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IGO-mg-4nT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Og6-iy-dsx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="125"/>
+        </scene>
+        <!--Auth-->
+        <scene sceneID="5bQ-og-ebo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Auth" id="3N6-nP-53O" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="A32-Yk-lr2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiK-yV-sRC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="188"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="Cdm-qS-Aa7">
+            <objects>
+                <viewControllerPlaceholder id="O2j-uk-fFo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ofl-er-bq4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Md-e7-w2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="254"/>
+        </scene>
     </scenes>
     <resources>
         <image name="StoriLogo" width="200" height="89"/>
         <namedColor name="GradientTop">
-            <color red="0.19600000000000001" green="0.27500000000000002" blue="0.41999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.19599999487400055" green="0.27500000596046448" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

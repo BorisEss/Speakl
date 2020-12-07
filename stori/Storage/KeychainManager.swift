@@ -32,4 +32,8 @@ class KeychainManager {
         let keychain = KeychainSwift()
         localToken = keychain.get(tokenKeyName)
     }
+    
+    func isLoggedIn() -> Bool {
+        return token != nil
+    }
 }

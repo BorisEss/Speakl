@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PVc-bY-fRL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Regular.ttf">
+            <string>IBMPlexSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Web Browser View Controller-->
+        <scene sceneID="s1c-gw-YGn">
+            <objects>
+                <viewController storyboardIdentifier="WebBrowserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PVc-bY-fRL" customClass="WebBrowserViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ac2-3p-qla">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeO-4Y-8kv">
+                                <rect key="frame" x="20" y="51" width="39" height="30"/>
+                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="PVc-bY-fRL" eventType="touchUpInside" id="cdK-6R-Oqr"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ib9-UE-Fiu">
+                                <rect key="frame" x="374" y="56" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35k-h7-EI1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gz2-8p-Dli"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="35k-h7-EI1" firstAttribute="trailing" secondItem="gz2-8p-Dli" secondAttribute="trailing" id="1Xx-NI-l6n"/>
+                            <constraint firstItem="ib9-UE-Fiu" firstAttribute="centerY" secondItem="IeO-4Y-8kv" secondAttribute="centerY" id="ISA-QI-oQk"/>
+                            <constraint firstItem="35k-h7-EI1" firstAttribute="leading" secondItem="gz2-8p-Dli" secondAttribute="leading" id="SDR-C2-Vrx"/>
+                            <constraint firstItem="35k-h7-EI1" firstAttribute="top" secondItem="IeO-4Y-8kv" secondAttribute="bottom" constant="7" id="cpB-66-2t3"/>
+                            <constraint firstItem="IeO-4Y-8kv" firstAttribute="leading" secondItem="gz2-8p-Dli" secondAttribute="leading" constant="20" id="d2p-bt-nLF"/>
+                            <constraint firstItem="IeO-4Y-8kv" firstAttribute="top" secondItem="gz2-8p-Dli" secondAttribute="top" constant="7" id="d5g-me-OUv"/>
+                            <constraint firstAttribute="bottom" secondItem="35k-h7-EI1" secondAttribute="bottom" id="j6r-Y4-EkZ"/>
+                            <constraint firstItem="gz2-8p-Dli" firstAttribute="trailing" secondItem="ib9-UE-Fiu" secondAttribute="trailing" constant="20" id="xZ1-qN-sWy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="IeO-4Y-8kv" id="jTd-x6-hse"/>
+                        <outlet property="progressActivityIndicator" destination="ib9-UE-Fiu" id="YhI-5H-LDw"/>
+                        <outlet property="webView" destination="35k-h7-EI1" id="eUx-Lt-b7A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLx-OB-cZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

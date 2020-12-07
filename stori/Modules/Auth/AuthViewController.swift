@@ -71,6 +71,7 @@ class AuthViewController: UIViewController {
         super.viewDidLoad()
 
         setUpLanguage()
+        setUpLanguageButton()
         authType = .login
     }
     
@@ -83,9 +84,21 @@ class AuthViewController: UIViewController {
         return .lightContent
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? LanguagePopupViewController {
+            controller.languages = Storage.shared.languages
+            controller.selectedLanguage = Storage.shared.currentLanguage
+            controller.completion = { language in
+                Storage.shared.currentLanguage = language
+                self.setUpLanguageButton()
+                self.setUpLanguage()
+            }
+        }
+    }
+    
     // MARK: - Button Actions
     @IBAction func languageButtonPressed(_ sender: Any) {
-        // TODO: Show language view, change language and update language in view
+        performSegue(withIdentifier: "showLanguagePopup", sender: nil)
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
@@ -143,6 +156,7 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction func firstBottomButtonPressed(_ sender: Any) {
+        dismissKeyboard()
         switch authType {
         case .login, .forgotPassword, .resetPassword:
             authType = .signup
@@ -152,236 +166,14 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction func secondBottomButtonPressed(_ sender: Any) {
+        dismissKeyboard()
         switch authType {
         case .login:
             authType = .forgotPassword
         case .signup:
-            // TODO: Show Terms and Conditions
-            break
+            Router.showWebBrowser(url: Endpoints.termsAndConditions)
         case .forgotPassword, .resetPassword:
             authType = .login
         }
-    }
-    
-    // MARK: - Auth Actions
-    func logIn() {
-        if !emailTextField.validateEmail() { return }
-        if !passwordTextField.validatePassword() { return }
-
-        guard let email = emailTextField.text else { return }
-        guard let password = passwordTextField.text else { return }
-      
-        nextButton.isHidden = true
-        progressActivityIndicator.startAnimating()
-        emailTextField.isEnabled = false
-        passwordTextField.isEnabled = false
-        socialView.isUserInteractionEnabled = false
-        firstBottomButton.isEnabled = false
-        secondBottomButton.isEnabled = false
-        
-        AuthPresenter().logIn(email: email,
-                              password: password) { isSuccess in
-            self.nextButton.isHidden = false
-            self.progressActivityIndicator.stopAnimating()
-            self.emailTextField.isEnabled = true
-            self.passwordTextField.isEnabled = true
-            self.socialView.isUserInteractionEnabled = true
-            self.firstBottomButton.isEnabled = true
-            self.secondBottomButton.isEnabled = true
-            if isSuccess {
-                // TODO: Router -> Go to mai screen
-            }
-        }
-    }
-    
-    func signUp() {
-        if !usernameTextField.validate() { return }
-        if !emailTextField.validateEmail() { return }
-        if !passwordTextField.validatePassword() { return }
-        if !repeatPasswordTextField.validatePassword() { return }
-        
-        guard let username = usernameTextField.text else { return }
-        guard let email = emailTextField.text  else { return }
-        guard let password = passwordTextField.text else { return }
-        guard let passwordConfirmation = repeatPasswordTextField.text else { return }
-        
-        if password != passwordConfirmation {
-            NetworkError.error("auth_vc_error_passwords_not_match".localized).parse()
-        } else {
-            nextButton.isHidden = true
-            progressActivityIndicator.startAnimating()
-            usernameTextField.isEnabled = false
-            emailTextField.isEnabled = false
-            passwordTextField.isEnabled = false
-            repeatPasswordTextField.isEnabled = false
-            firstBottomButton.isEnabled = false
-            secondBottomButton.isEnabled = false
-            AuthPresenter().signUp(username: username,
-                                   email: email,
-                                   password: password) { isSuccess in
-                self.nextButton.isHidden = false
-                self.progressActivityIndicator.stopAnimating()
-                self.usernameTextField.isEnabled = true
-                self.emailTextField.isEnabled = true
-                self.passwordTextField.isEnabled = true
-                self.repeatPasswordTextField.isEnabled = true
-                self.firstBottomButton.isEnabled = true
-                self.secondBottomButton.isEnabled = true
-                if isSuccess {
-                    // TODO: Router - go to next step of sign up
-                }
-            }
-        }
-    }
-    
-    func forgotPassword() {
-        if !emailTextField.validateEmail() { return }
-        
-        guard let email = emailTextField.text else { return }
-        
-        nextButton.isHidden = true
-        progressActivityIndicator.startAnimating()
-        emailTextField.isEnabled = false
-        firstBottomButton.isEnabled = false
-        secondBottomButton.isEnabled = false
-        
-        AuthPresenter().forgotPassword(email: email) { isSuccess in
-            self.nextButton.isHidden = false
-            self.progressActivityIndicator.stopAnimating()
-            self.emailTextField.isEnabled = true
-            self.firstBottomButton.isEnabled = true
-            self.secondBottomButton.isEnabled = true
-            if isSuccess {
-                DispatchQueue.main.async {
-                    self.authType = .resetPassword
-                }
-            }
-        }
-    }
-    
-    func resetPassword() {
-        if !codeTextField.validate() { return }
-        if !passwordTextField.validatePassword() { return }
-        if !repeatPasswordTextField.validatePassword() { return }
-        
-        guard let code = codeTextField.text else { return }
-        guard let password = passwordTextField.text else { return }
-        guard let passwordConfirmation = repeatPasswordTextField.text else { return }
-        
-        if password != passwordConfirmation {
-            NetworkError.error("auth_vc_error_passwords_not_match".localized).parse()
-        } else {
-            nextButton.isHidden = true
-            progressActivityIndicator.startAnimating()
-            codeTextField.isEnabled = false
-            passwordTextField.isEnabled = false
-            repeatPasswordTextField.isEnabled = false
-            firstBottomButton.isEnabled = false
-            secondBottomButton.isEnabled = false
-            
-            AuthPresenter().resetPassword(code: code,
-                                          password: password) { (isSuccess) in
-                self.nextButton.isHidden = false
-                self.progressActivityIndicator.stopAnimating()
-                self.codeTextField.isEnabled = true
-                self.passwordTextField.isEnabled = true
-                self.repeatPasswordTextField.isEnabled = true
-                self.firstBottomButton.isEnabled = true
-                self.secondBottomButton.isEnabled = true
-                
-                if isSuccess {
-                    // TODO: Show success message
-                    self.authType = .login
-                }
-            }
-        }
-    }
-}
-
-extension AuthViewController: GIDSignInDelegate {
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            #if DEBUG
-            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
-                print("The user has not signed in before or they have since signed out.")
-            } else {
-                print("\(error.localizedDescription)")
-            }
-            #endif
-            googleButton.isHidden = false
-            googleActivityIndicator.stopAnimating()
-            return
-        }
-        if let token = user.authentication.idToken {
-            #if DEBUG
-            print("Logged in with Google:")
-            print(user.authentication.idToken ?? "") // Safe to send to the server
-            print(user.userID ?? "")              // For client-side use only!
-            print(user.profile.name ?? "")
-            print(user.profile.email ?? "")
-            #endif
-            AuthPresenter().googleAuth(token: token) { (isSuccess) in
-                self.googleButton.isHidden = false
-                self.googleActivityIndicator.stopAnimating()
-                if isSuccess {
-                    // TODO: Go to next page
-                }
-            }
-        } else {
-            googleButton.isHidden = false
-            googleActivityIndicator.stopAnimating()
-        }
-    }
-}
-
-// MARK: ASAuthorizationControllerDelegate
-extension AuthViewController: ASAuthorizationControllerDelegate {
-    // Authorization Failed
-    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
-        #if DEBUG
-        print(error.localizedDescription)
-        #endif
-        appleButton.isHidden = false
-        appleActivityIndicator.stopAnimating()
-    }
-
-    // Authorization Succeeded
-    func authorizationController(controller: ASAuthorizationController,
-                                 didCompleteWithAuthorization authorization: ASAuthorization) {
-        if let credential = authorization.credential as? ASAuthorizationAppleIDCredential {
-            if let data = credential.authorizationCode, let code = String(data: data, encoding: .utf8) {
-                // Now send the 'code' to your backend to get an API token.
-                #if DEBUG
-                print("Code: \(code)")
-                print("User ID: \(credential.user)")
-                print("User First Name: \(credential.fullName?.givenName ?? "")")
-                print("User Last Name: \(credential.fullName?.familyName ?? "")")
-                print("User Email: \(credential.email ?? "")")
-                #endif
-                appleButton.isHidden = false
-                appleActivityIndicator.stopAnimating()
-                var name = ""
-                name += credential.fullName?.givenName ?? ""
-                if !name.isEmpty { name += " " }
-                name += credential.fullName?.familyName ?? ""
-                AuthPresenter().appleAuth(name: name.isEmpty ? nil : name,
-                                          code: code) { (isSuccess) in
-                    self.appleButton.isHidden = false
-                    self.appleActivityIndicator.stopAnimating()
-                    if isSuccess {
-                        // TODO: Router finish auth
-                    }
-                }
-            } else {
-                NetworkError.unknownError.parse()
-            }
-        }
-    }
-}
-
-// MARK: ASAuthorizationControllerPresentationContextProviding
-extension AuthViewController: ASAuthorizationControllerPresentationContextProviding {
-    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
-        return self.view.window!
     }
 }

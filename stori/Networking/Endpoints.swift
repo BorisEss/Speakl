@@ -11,6 +11,9 @@ struct Endpoints {
         
     static private let api = base.appendingPathComponent("api")
     
+    // MARK: - Others
+    public static let termsAndConditions = URL(string: "https://readstori.com/terms-and-conditions")!
+    
     // MARK: - Auth
     private static let auth = api.appendingPathComponent("auth")
     public static let login = auth.appendingPathComponent("login/")
@@ -24,4 +27,8 @@ struct Endpoints {
     // MARK: - User
     private static let user = api.appendingPathComponent("users")
     public static let currentUser = user.appendingPathComponent("me/")
+    
+    // MARK: - Languages
+    public static let languages = api.appendingPathComponent("languages/")
+    
 }

@@ -7,8 +7,6 @@
 
 import Foundation
 
-// TODO: Finish errors
-
 /// Possible networking error
 ///
 public enum NetworkError: Error {
@@ -21,18 +19,30 @@ public enum NetworkError: Error {
     case failedDecodingResponse
     case facebookCanceled
     case facebookFailed
-//    case dataIsNotEncodable(_: Any)
-//    case noInternetConnection
-//    case failedToDecodeJSON
-//    case requestTimeout
-    
-//    case failedToEncodeImage
 }
 
 extension NetworkError {
     func parse() {
-//        switch self {
-//        }
+        switch self {
+        case .requestBuilderFailed:
+            Toast.error("common_request_build_failed".localized)
+        case .noAuthenticationProvided:
+            Toast.error("common_no_authentication".localized)
+        case .error(let message):
+            Toast.error(message)
+        case .serverError:
+            Toast.error("common_server_error".localized)
+        case .unknownError:
+            Toast.error("common_error_message_something_went_wrong".localized)
+        case .notFound:
+            Toast.error("common_not_found".localized)
+        case .failedDecodingResponse:
+            Toast.error("common_failed_deconding_response".localized)
+        case .facebookCanceled:
+            break
+        case .facebookFailed:
+            Toast.error("common_failed_facebook".localized)
+        }
     }
 }
 
@@ -42,7 +52,7 @@ extension Error {
             error.parse()
         } else {
             print(self.localizedDescription)
-            print("Error parse")
+            // TODO: Crashlytics to send unknown error received
         }
     }
 }

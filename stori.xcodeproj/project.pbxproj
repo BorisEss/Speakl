@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BD21B89ECB3395B7D26BCECC /* Pods_stori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAC3C6735F7BC1D8397254E /* Pods_stori.framework */; };
 		FA3C26132569559C0089F646 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3C26122569559C0089F646 /* Auth.storyboard */; };
-		FA3C2617256A3CFA0089F646 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C2616256A3CFA0089F646 /* AuthViewController.swift */; };
 		FA3C2626256A52320089F646 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C2625256A52320089F646 /* UIViewControllerExtension.swift */; };
 		FA3C27DF256BDBFD0089F646 /* RegularTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */; };
 		FA4B6112256EAEA1005501BD /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B6111256EAEA1005501BD /* AuthPresenter.swift */; };
@@ -29,6 +28,18 @@
 		FA4B61A625753433005501BD /* Google-Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA4B61A525753433005501BD /* Google-Credentials.plist */; };
 		FA4B61A925753487005501BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B61A825753487005501BD /* Constants.swift */; };
 		FA4B61BE25753CF2005501BD /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B61BD25753CF2005501BD /* FacebookManager.swift */; };
+		FA4D445F257810C700398AE2 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D445E257810C700398AE2 /* Language.swift */; };
+		FA4D44622578BE0700398AE2 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D44612578BE0700398AE2 /* ResponseObject.swift */; };
+		FA4D44682578CF1E00398AE2 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D44672578CF1E00398AE2 /* Storage.swift */; };
+		FA4D446C2578D2B300398AE2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D446B2578D2B300398AE2 /* Router.swift */; };
+		FA4D447125790C1300398AE2 /* UserClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D447025790C1300398AE2 /* UserClient.swift */; };
+		FA4D447525790C2700398AE2 /* LanguageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D447425790C2700398AE2 /* LanguageClient.swift */; };
+		FA4D4479257940BA00398AE2 /* WebBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4D4478257940BA00398AE2 /* WebBrowser.storyboard */; };
+		FA4D447C257940DE00398AE2 /* WebBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D447B257940DE00398AE2 /* WebBrowserViewController.swift */; };
+		FA4D4481257A9B3200398AE2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4480257A9B3200398AE2 /* AuthViewController.swift */; };
+		FA4D4484257A9B6000398AE2 /* AuthViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4483257A9B6000398AE2 /* AuthViewControllerActions.swift */; };
+		FA4D4488257AA81900398AE2 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4487257AA81900398AE2 /* Toast.swift */; };
+		FA4D448B257C172F00398AE2 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D448A257C172F00398AE2 /* UIImageViewExtension.swift */; };
 		FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830B256D544E007052D9 /* UILabelExtension.swift */; };
 		FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */; };
 		FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */; };
@@ -59,13 +70,18 @@
 		FA999D9825694D3E00B694FA /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA999D9A25694D3E00B694FA /* Strings.strings */; };
 		FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999D9C25694D6800B694FA /* StringExtension.swift */; };
 		FA999DA12569514C00B694FA /* DefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999DA02569514C00B694FA /* DefaultSettings.swift */; };
+		FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */; };
+		FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */; };
+		FABB63B7257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB63B6257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift */; };
+		FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */; };
+		FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */; };
+		FAE2105925768C2100A3D971 /* LanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0457B5C97FFBC629B11798BE /* Pods-stori.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stori.debug.xcconfig"; path = "Target Support Files/Pods-stori/Pods-stori.debug.xcconfig"; sourceTree = "<group>"; };
 		33F1C98EA2DDD6308879093F /* Pods-stori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stori.release.xcconfig"; path = "Target Support Files/Pods-stori/Pods-stori.release.xcconfig"; sourceTree = "<group>"; };
 		FA3C26122569559C0089F646 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
-		FA3C2616256A3CFA0089F646 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		FA3C2625256A52320089F646 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularTextField.swift; sourceTree = "<group>"; };
 		FA4B6111256EAEA1005501BD /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
@@ -86,6 +102,18 @@
 		FA4B61A825753487005501BD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA4B61BD25753CF2005501BD /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
 		FA4B61C4257543BC005501BD /* stori.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stori.entitlements; sourceTree = "<group>"; };
+		FA4D445E257810C700398AE2 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		FA4D44612578BE0700398AE2 /* ResponseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
+		FA4D44672578CF1E00398AE2 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		FA4D446B2578D2B300398AE2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FA4D447025790C1300398AE2 /* UserClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClient.swift; sourceTree = "<group>"; };
+		FA4D447425790C2700398AE2 /* LanguageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageClient.swift; sourceTree = "<group>"; };
+		FA4D4478257940BA00398AE2 /* WebBrowser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebBrowser.storyboard; sourceTree = "<group>"; };
+		FA4D447B257940DE00398AE2 /* WebBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBrowserViewController.swift; sourceTree = "<group>"; };
+		FA4D4480257A9B3200398AE2 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		FA4D4483257A9B6000398AE2 /* AuthViewControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerActions.swift; sourceTree = "<group>"; };
+		FA4D4487257AA81900398AE2 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		FA4D448A257C172F00398AE2 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		FA65830B256D544E007052D9 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardApperenceHandler.swift; sourceTree = "<group>"; };
 		FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerDelegates.swift; sourceTree = "<group>"; };
@@ -118,6 +146,12 @@
 		FA999D9925694D3E00B694FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
 		FA999D9C25694D6800B694FA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		FA999DA02569514C00B694FA /* DefaultSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSettings.swift; sourceTree = "<group>"; };
+		FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguagePopup.storyboard; sourceTree = "<group>"; };
+		FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePopupViewController.swift; sourceTree = "<group>"; };
+		FABB63B6257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMessagesTopTabSegue.swift; sourceTree = "<group>"; };
+		FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
+		FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableViewCell.xib; sourceTree = "<group>"; };
 		FFAC3C6735F7BC1D8397254E /* Pods_stori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,9 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				FA3C26122569559C0089F646 /* Auth.storyboard */,
-				FA3C2616256A3CFA0089F646 /* AuthViewController.swift */,
+				FA4D4480257A9B3200398AE2 /* AuthViewController.swift */,
 				FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */,
 				FA65831A256E7805007052D9 /* AuthViewControllerSetUp.swift */,
+				FA4D4483257A9B6000398AE2 /* AuthViewControllerActions.swift */,
 				FA4B6111256EAEA1005501BD /* AuthPresenter.swift */,
 			);
 			path = Auth;
@@ -168,6 +203,8 @@
 				FA4B61462570174A005501BD /* Base */,
 				FA4B6115256F7BE7005501BD /* Endpoints.swift */,
 				FA4B61332570036C005501BD /* APIClient.swift */,
+				FA4D447025790C1300398AE2 /* UserClient.swift */,
+				FA4D447425790C2700398AE2 /* LanguageClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -191,8 +228,19 @@
 				FA4B61752574C46D005501BD /* AuthUser.swift */,
 				FA4B618A25750412005501BD /* CurrentUser.swift */,
 				FA4B618F25752134005501BD /* MessageObject.swift */,
+				FA4D445E257810C700398AE2 /* Language.swift */,
+				FA4D44612578BE0700398AE2 /* ResponseObject.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FA4D4477257940AB00398AE2 /* Web Browser */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D4478257940BA00398AE2 /* WebBrowser.storyboard */,
+				FA4D447B257940DE00398AE2 /* WebBrowserViewController.swift */,
+			);
+			path = "Web Browser";
 			sourceTree = "<group>";
 		};
 		FA658314256E2863007052D9 /* Managers */ = {
@@ -200,6 +248,7 @@
 			children = (
 				FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */,
 				FA4B61BD25753CF2005501BD /* FacebookManager.swift */,
+				FA4D4487257AA81900398AE2 /* Toast.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -294,6 +343,7 @@
 				FA65830B256D544E007052D9 /* UILabelExtension.swift */,
 				FA658316256E29D5007052D9 /* UITextFieldExtension.swift */,
 				FA4B616E25713362005501BD /* DataExtension.swift */,
+				FA4D448A257C172F00398AE2 /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,10 +351,13 @@
 		FA812D8B256640F30036F162 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FA4D446B2578D2B300398AE2 /* Router.swift */,
 				FA812D78256298450036F162 /* LaunchScreen.storyboard */,
 				FA812D9F25665A920036F162 /* Root */,
 				FA812D86256640AB0036F162 /* Tutorial */,
 				FA3C26112569558B0089F646 /* Auth */,
+				FABB63A9257672F0008B3FAB /* LanguagePopup */,
+				FA4D4477257940AB00398AE2 /* Web Browser */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -315,6 +368,7 @@
 				FA812D9A2566593D0036F162 /* Custom Views */,
 				FA812D9B256659690036F162 /* AppColors.swift */,
 				FA7B72DE25669C54003F9A0C /* AppFonts.swift */,
+				FABB63B6257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift */,
 			);
 			path = "App Style";
 			sourceTree = "<group>";
@@ -326,6 +380,7 @@
 				FA812DA9256682F70036F162 /* RegularButton.swift */,
 				FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */,
 				FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */,
+				FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -344,8 +399,28 @@
 			children = (
 				FA999DA02569514C00B694FA /* DefaultSettings.swift */,
 				FA4B61872574F3EF005501BD /* KeychainManager.swift */,
+				FA4D44672578CF1E00398AE2 /* Storage.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		FABB63A9257672F0008B3FAB /* LanguagePopup */ = {
+			isa = PBXGroup;
+			children = (
+				FABB63AF2576736B008B3FAB /* Cell */,
+				FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */,
+				FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */,
+			);
+			path = LanguagePopup;
+			sourceTree = "<group>";
+		};
+		FABB63AF2576736B008B3FAB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */,
+				FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,10 +487,13 @@
 				FA7B72EB2566B814003F9A0C /* TutorialCollectionViewCell.xib in Resources */,
 				FA7B72E22566B493003F9A0C /* Sweet Pea.ttf in Resources */,
 				FA812DA125665AA70036F162 /* Root.storyboard in Resources */,
+				FA4D4479257940BA00398AE2 /* WebBrowser.storyboard in Resources */,
 				FA999D9825694D3E00B694FA /* Strings.strings in Resources */,
 				FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */,
 				FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */,
+				FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */,
 				FA4B61A625753433005501BD /* Google-Credentials.plist in Resources */,
+				FAE2105925768C2100A3D971 /* LanguageTableViewCell.xib in Resources */,
 				FA812D77256298450036F162 /* Assets.xcassets in Resources */,
 				FA812D88256640BF0036F162 /* Tutorial.storyboard in Resources */,
 				FA7B72D825669A31003F9A0C /* IBMPlexSans-Regular.ttf in Resources */,
@@ -515,25 +593,35 @@
 				FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */,
 				FA4B616F25713362005501BD /* DataExtension.swift in Sources */,
 				FA4B6144257015BE005501BD /* NetworkError.swift in Sources */,
+				FA4D4484257A9B6000398AE2 /* AuthViewControllerActions.swift in Sources */,
 				FA4B619025752134005501BD /* MessageObject.swift in Sources */,
+				FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */,
 				FA658317256E29D5007052D9 /* UITextFieldExtension.swift in Sources */,
 				FA4B61732574C45E005501BD /* AuthModel.swift in Sources */,
+				FA4D4488257AA81900398AE2 /* Toast.swift in Sources */,
 				FA4B61882574F3EF005501BD /* KeychainManager.swift in Sources */,
 				FA999D922568F30B00B694FA /* CustomCollectionViewCell.swift in Sources */,
 				FA4B6141257008A2005501BD /* Request.swift in Sources */,
+				FA4D448B257C172F00398AE2 /* UIImageViewExtension.swift in Sources */,
 				FA3C2626256A52320089F646 /* UIViewControllerExtension.swift in Sources */,
-				FA3C2617256A3CFA0089F646 /* AuthViewController.swift in Sources */,
+				FA4D447525790C2700398AE2 /* LanguageClient.swift in Sources */,
+				FA4D44622578BE0700398AE2 /* ResponseObject.swift in Sources */,
 				FA4B61342570036C005501BD /* APIClient.swift in Sources */,
 				FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */,
 				FA4B61BE25753CF2005501BD /* FacebookManager.swift in Sources */,
+				FABB63B7257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift in Sources */,
+				FA4D445F257810C700398AE2 /* Language.swift in Sources */,
 				FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */,
 				FA812D6E256298440036F162 /* AppDelegate.swift in Sources */,
+				FA4D447125790C1300398AE2 /* UserClient.swift in Sources */,
 				FA999DA12569514C00B694FA /* DefaultSettings.swift in Sources */,
 				FA3C27DF256BDBFD0089F646 /* RegularTextField.swift in Sources */,
 				FA7B72D325669962003F9A0C /* UIImageExtension.swift in Sources */,
 				FA812DA425665AB10036F162 /* RootViewController.swift in Sources */,
 				FA7B72DF25669C54003F9A0C /* AppFonts.swift in Sources */,
+				FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */,
 				FA4B6112256EAEA1005501BD /* AuthPresenter.swift in Sources */,
+				FA4D446C2578D2B300398AE2 /* Router.swift in Sources */,
 				FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */,
 				FA4B61762574C46D005501BD /* AuthUser.swift in Sources */,
 				FA4B613E257007B1005501BD /* RequestProtocol.swift in Sources */,
@@ -541,8 +629,12 @@
 				FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */,
 				FA812DAA256682F70036F162 /* RegularButton.swift in Sources */,
 				FA4B613725700749005501BD /* Commons.swift in Sources */,
+				FA4D447C257940DE00398AE2 /* WebBrowserViewController.swift in Sources */,
+				FA4D4481257A9B3200398AE2 /* AuthViewController.swift in Sources */,
 				FA812D8E256641940036F162 /* UIGradientView.swift in Sources */,
 				FA4B618B25750412005501BD /* CurrentUser.swift in Sources */,
+				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,
+				FA4D44682578CF1E00398AE2 /* Storage.swift in Sources */,
 				FA7B72D0256690C1003F9A0C /* UIViewExtension.swift in Sources */,
 				FA812D9C256659690036F162 /* AppColors.swift in Sources */,
 				FA812D70256298440036F162 /* SceneDelegate.swift in Sources */,

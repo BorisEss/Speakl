@@ -8,9 +8,6 @@
 import Foundation
 
 struct CurrentUser: Decodable {
-    
-    static var shared: CurrentUser?
-    
     var id: Int
     var langToLearn: Int?
     var nativeLang: Int?

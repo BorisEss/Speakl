@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import GoogleSignIn
+import AuthenticationServices
 
 // MARK: - UITextFieldDelegate
 extension AuthViewController: UITextFieldDelegate {
@@ -93,5 +95,94 @@ extension AuthViewController: KeyboardApperenceHandlerDelegate {
         case .resetPassword:
             logoSection.isHidden = false
         }
+    }
+}
+
+// MARK: - GIDSignInDelegate
+extension AuthViewController: GIDSignInDelegate {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            #if DEBUG
+            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+                print("The user has not signed in before or they have since signed out.")
+            } else {
+                print("\(error.localizedDescription)")
+            }
+            #endif
+            googleButton.isHidden = false
+            googleActivityIndicator.stopAnimating()
+            return
+        }
+        if let token = user.authentication.idToken {
+            #if DEBUG
+            print("Logged in with Google:")
+            print(user.authentication.idToken ?? "") // Safe to send to the server
+            print(user.userID ?? "")              // For client-side use only!
+            print(user.profile.name ?? "")
+            print(user.profile.email ?? "")
+            #endif
+            AuthPresenter().googleAuth(token: token) { (isSuccess) in
+                self.googleButton.isHidden = false
+                self.googleActivityIndicator.stopAnimating()
+                if isSuccess {
+                    // TODO: Router -> Go to next page
+                }
+            }
+        } else {
+            googleButton.isHidden = false
+            googleActivityIndicator.stopAnimating()
+        }
+    }
+}
+
+// MARK: ASAuthorizationControllerDelegate
+extension AuthViewController: ASAuthorizationControllerDelegate {
+    // Authorization Failed
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+        #if DEBUG
+        print(error.localizedDescription)
+        #endif
+        appleButton.isHidden = false
+        appleActivityIndicator.stopAnimating()
+    }
+
+    // Authorization Succeeded
+    func authorizationController(controller: ASAuthorizationController,
+                                 didCompleteWithAuthorization authorization: ASAuthorization) {
+        if let credential = authorization.credential as? ASAuthorizationAppleIDCredential {
+            if let data = credential.authorizationCode, let code = String(data: data, encoding: .utf8) {
+                // Now send the 'code' to your backend to get an API token.
+                #if DEBUG
+                print("Code: \(code)")
+                print("User ID: \(credential.user)")
+                print("User First Name: \(credential.fullName?.givenName ?? "")")
+                print("User Last Name: \(credential.fullName?.familyName ?? "")")
+                print("User Email: \(credential.email ?? "")")
+                #endif
+                appleButton.isHidden = false
+                appleActivityIndicator.stopAnimating()
+                var name = ""
+                name += credential.fullName?.givenName ?? ""
+                if !name.isEmpty { name += " " }
+                name += credential.fullName?.familyName ?? ""
+                AuthPresenter().appleAuth(name: name.isEmpty ? nil : name,
+                                          code: code) { (isSuccess) in
+                    self.appleButton.isHidden = false
+                    self.appleActivityIndicator.stopAnimating()
+                    if isSuccess {
+                        // TODO: Router -> finish auth
+                    }
+                }
+            } else {
+                NetworkError.unknownError.parse()
+            }
+        }
+    }
+}
+
+// MARK: ASAuthorizationControllerPresentationContextProviding
+extension AuthViewController: ASAuthorizationControllerPresentationContextProviding {
+    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        return self.view.window!
     }
 }

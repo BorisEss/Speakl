@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 // MARK: UI Set Up
 extension AuthViewController {
@@ -35,6 +36,7 @@ extension AuthViewController {
         passwordTextField.returnKeyType = .done
         repeatPasswordTextField.isHidden = true
         socialView.isHidden = false
+        passwordTextField.textContentType = .password
         firstBottomButton.setTitle("auth_vc_button_title_signup".localized,
                                    for: .normal)
         secondBottomButton.setTitle("auth_vc_button_title_forgot_password".localized,
@@ -60,6 +62,12 @@ extension AuthViewController {
         repeatPasswordTextField.isHidden = false
         repeatPasswordTextField.returnKeyType = .done
         socialView.isHidden = true
+        passwordTextField.textContentType = .newPassword
+        let ruleString = "required: lower; required: upper; required: digit; minlength: 8; maxlength: 16;"
+        let rule = UITextInputPasswordRules(descriptor: ruleString)
+        passwordTextField.passwordRules = rule
+        repeatPasswordTextField.textContentType = .newPassword
+        repeatPasswordTextField.passwordRules = rule
         firstBottomButton.setTitle("auth_vc_button_title_log_in".localized, for: .normal)
         secondBottomButton.setTitle("auth_vc_button_title_terms_and_conditions".localized,
                                     for: .normal)
@@ -120,5 +128,10 @@ extension AuthViewController {
         codeTextField.text = nil
         passwordTextField.text = nil
         repeatPasswordTextField.text = nil
+    }
+    
+    func setUpLanguageButton() {
+        languageButton.kf.setImage(with: Storage.shared.currentLanguage?.flagUrl,
+                                   for: .normal)
     }
 }

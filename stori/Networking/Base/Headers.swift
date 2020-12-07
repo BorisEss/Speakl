@@ -7,14 +7,13 @@
 
 import Foundation
 
-//TODO: Update fields
 struct Headers {
     /// Basic headers necessary for the requests.
     ///
     let basic: HeadersDict = [
         "Accept": "application/json",
         "Content-Type": "application/json",
-//        "Accept-Language": DefaultSettingsManager.language.rawValue
+        "Accept-Language": Storage.shared.currentLanguage?.shortcut ?? "en"
     ]
     
     /// Authorized headers with token form Keychain
@@ -22,7 +21,7 @@ struct Headers {
     let authorized: HeadersDict = [
         "Accept": "application/json",
         "Content-Type": "application/json",
-//        "Accept-Language": DefaultSettingsManager.language.rawValue,
+        "Accept-Language": Storage.shared.currentLanguage?.shortcut ?? "en",
         "Authorization": "Bearer \(KeychainManager.shared.token ?? "")"
     ]
 }
