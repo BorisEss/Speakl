@@ -40,6 +40,8 @@
 		FA4D4484257A9B6000398AE2 /* AuthViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4483257A9B6000398AE2 /* AuthViewControllerActions.swift */; };
 		FA4D4488257AA81900398AE2 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4487257AA81900398AE2 /* Toast.swift */; };
 		FA4D448B257C172F00398AE2 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D448A257C172F00398AE2 /* UIImageViewExtension.swift */; };
+		FA4D4496257E48B700398AE2 /* LanguageSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4D4495257E48B700398AE2 /* LanguageSelect.storyboard */; };
+		FA4D4499257E48CE00398AE2 /* LanguageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4498257E48CE00398AE2 /* LanguageSelectViewController.swift */; };
 		FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830B256D544E007052D9 /* UILabelExtension.swift */; };
 		FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */; };
 		FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */; };
@@ -73,6 +75,7 @@
 		FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */; };
 		FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */; };
 		FABB63B7257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB63B6257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift */; };
+		FADA06BF257F67CB000333FF /* LanguagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA06BE257F67CB000333FF /* LanguagePresenter.swift */; };
 		FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */; };
 		FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */; };
 		FAE2105925768C2100A3D971 /* LanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */; };
@@ -114,6 +117,8 @@
 		FA4D4483257A9B6000398AE2 /* AuthViewControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerActions.swift; sourceTree = "<group>"; };
 		FA4D4487257AA81900398AE2 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		FA4D448A257C172F00398AE2 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		FA4D4495257E48B700398AE2 /* LanguageSelect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguageSelect.storyboard; sourceTree = "<group>"; };
+		FA4D4498257E48CE00398AE2 /* LanguageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectViewController.swift; sourceTree = "<group>"; };
 		FA65830B256D544E007052D9 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardApperenceHandler.swift; sourceTree = "<group>"; };
 		FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerDelegates.swift; sourceTree = "<group>"; };
@@ -149,6 +154,7 @@
 		FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguagePopup.storyboard; sourceTree = "<group>"; };
 		FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePopupViewController.swift; sourceTree = "<group>"; };
 		FABB63B6257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMessagesTopTabSegue.swift; sourceTree = "<group>"; };
+		FADA06BE257F67CB000333FF /* LanguagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePresenter.swift; sourceTree = "<group>"; };
 		FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableViewCell.xib; sourceTree = "<group>"; };
@@ -241,6 +247,26 @@
 				FA4D447B257940DE00398AE2 /* WebBrowserViewController.swift */,
 			);
 			path = "Web Browser";
+			sourceTree = "<group>";
+		};
+		FA4D4493257E442A00398AE2 /* Language  */ = {
+			isa = PBXGroup;
+			children = (
+				FABB63AF2576736B008B3FAB /* Cell */,
+				FABB63A9257672F0008B3FAB /* LanguagePopup */,
+				FA4D4494257E489A00398AE2 /* LanguageSelect */,
+			);
+			path = "Language ";
+			sourceTree = "<group>";
+		};
+		FA4D4494257E489A00398AE2 /* LanguageSelect */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D4495257E48B700398AE2 /* LanguageSelect.storyboard */,
+				FA4D4498257E48CE00398AE2 /* LanguageSelectViewController.swift */,
+				FADA06BE257F67CB000333FF /* LanguagePresenter.swift */,
+			);
+			path = LanguageSelect;
 			sourceTree = "<group>";
 		};
 		FA658314256E2863007052D9 /* Managers */ = {
@@ -356,8 +382,8 @@
 				FA812D9F25665A920036F162 /* Root */,
 				FA812D86256640AB0036F162 /* Tutorial */,
 				FA3C26112569558B0089F646 /* Auth */,
-				FABB63A9257672F0008B3FAB /* LanguagePopup */,
 				FA4D4477257940AB00398AE2 /* Web Browser */,
+				FA4D4493257E442A00398AE2 /* Language  */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -407,7 +433,6 @@
 		FABB63A9257672F0008B3FAB /* LanguagePopup */ = {
 			isa = PBXGroup;
 			children = (
-				FABB63AF2576736B008B3FAB /* Cell */,
 				FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */,
 				FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */,
 			);
@@ -488,6 +513,7 @@
 				FA7B72E22566B493003F9A0C /* Sweet Pea.ttf in Resources */,
 				FA812DA125665AA70036F162 /* Root.storyboard in Resources */,
 				FA4D4479257940BA00398AE2 /* WebBrowser.storyboard in Resources */,
+				FA4D4496257E48B700398AE2 /* LanguageSelect.storyboard in Resources */,
 				FA999D9825694D3E00B694FA /* Strings.strings in Resources */,
 				FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */,
 				FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */,
@@ -598,6 +624,7 @@
 				FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */,
 				FA658317256E29D5007052D9 /* UITextFieldExtension.swift in Sources */,
 				FA4B61732574C45E005501BD /* AuthModel.swift in Sources */,
+				FADA06BF257F67CB000333FF /* LanguagePresenter.swift in Sources */,
 				FA4D4488257AA81900398AE2 /* Toast.swift in Sources */,
 				FA4B61882574F3EF005501BD /* KeychainManager.swift in Sources */,
 				FA999D922568F30B00B694FA /* CustomCollectionViewCell.swift in Sources */,
@@ -631,6 +658,7 @@
 				FA4B613725700749005501BD /* Commons.swift in Sources */,
 				FA4D447C257940DE00398AE2 /* WebBrowserViewController.swift in Sources */,
 				FA4D4481257A9B3200398AE2 /* AuthViewController.swift in Sources */,
+				FA4D4499257E48CE00398AE2 /* LanguageSelectViewController.swift in Sources */,
 				FA812D8E256641940036F162 /* UIGradientView.swift in Sources */,
 				FA4B618B25750412005501BD /* CurrentUser.swift in Sources */,
 				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,

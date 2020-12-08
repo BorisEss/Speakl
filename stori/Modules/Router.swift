@@ -22,6 +22,12 @@ class Router {
             showAuth()
             return
         }
+        if let user = Storage.shared.currentUser,
+           user.langToLearn == nil {
+            let language = Storage.shared.languages.first(where: {$0.id == user.langToLearn})
+            showLanguageSelection(selected: language)
+            return
+        }
         showMainScreen()
     }
     
@@ -54,5 +60,26 @@ class Router {
                 UIViewController.topViewController()?.present(nextBrowserScreen, animated: true)
             }
         }
+    }
+    
+    static func showLanguageSelection(selected: Language? = nil) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "LanguageSelect", bundle: nil)
+        let controller = storyBoard.instantiateViewController(withIdentifier: "LanguageSelectViewController")
+        if let nextScreen = controller as? LanguageSelectViewController {
+            nextScreen.modalPresentationStyle = .fullScreen
+            nextScreen.modalTransitionStyle = .crossDissolve
+            if let language = selected {
+                nextScreen.fillWith(language: language, shouldGoBack: false)
+            }
+            UIViewController.topViewController()?.present(nextScreen, animated: true, completion: nil)
+        }
+    }
+    
+    static func showSkillsSelection() {
+        
+    }
+    
+    static func showLanguageLevelSelection() {
+        
     }
 }

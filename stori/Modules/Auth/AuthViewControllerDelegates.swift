@@ -125,7 +125,7 @@ extension AuthViewController: GIDSignInDelegate {
                 self.googleButton.isHidden = false
                 self.googleActivityIndicator.stopAnimating()
                 if isSuccess {
-                    // TODO: Router -> Go to next page
+                    Router.load()
                 }
             }
         } else {
@@ -170,7 +170,7 @@ extension AuthViewController: ASAuthorizationControllerDelegate {
                     self.appleButton.isHidden = false
                     self.appleActivityIndicator.stopAnimating()
                     if isSuccess {
-                        // TODO: Router -> finish auth
+                        Router.load()
                     }
                 }
             } else {

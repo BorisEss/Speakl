@@ -34,7 +34,7 @@ extension AuthViewController {
             self.firstBottomButton.isEnabled = true
             self.secondBottomButton.isEnabled = true
             if isSuccess {
-                // TODO: Router -> Go to main screen
+                Router.load()
             }
         }
     }
@@ -73,7 +73,7 @@ extension AuthViewController {
                 self.firstBottomButton.isEnabled = true
                 self.secondBottomButton.isEnabled = true
                 if isSuccess {
-                    // TODO: Router - go to next step of sign up
+                    Router.load()
                 }
             }
         }

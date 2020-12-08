@@ -7,6 +7,12 @@
 
 import UIKit
 
+enum CellState {
+    case disabled
+    case selected
+    case normal
+}
+
 protocol CustomTableViewCell: UITableViewCell {
     static var xibName: String { get }
     static var identifier: String { get }

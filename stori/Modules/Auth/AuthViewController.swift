@@ -125,7 +125,7 @@ class AuthViewController: UIViewController {
             case .success(let token):
                 AuthPresenter().facebookAuth(token: token) { (isSuccess) in
                     if isSuccess {
-                        // TODO: Go to next page
+                        Router.load()
                     }
                 }
             case .failure(let error):

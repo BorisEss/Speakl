@@ -91,3 +91,11 @@ public class Request: RequestProtocol {
         }
     }
 }
+
+extension Request {
+    @discardableResult
+    func authorise() -> Self {
+        set(headers: Headers().authorized)
+        return self
+    }
+}

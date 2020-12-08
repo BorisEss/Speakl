@@ -57,13 +57,8 @@ extension LanguagePopupViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let language = languages?[indexPath.row] {
             selectedLanguage = language
-            tableView.cellForRow(at: indexPath)?.isSelected = true
             completion?(language)
             dismiss(animated: true, completion: nil)
         }
-    }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        tableView.cellForRow(at: indexPath)?.isSelected = false
     }
 }
