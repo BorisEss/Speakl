@@ -28,6 +28,11 @@ class Router {
             showLanguageSelection(selected: language)
             return
         }
+        if let user = Storage.shared.currentUser,
+           user.skills.isEmpty {
+            showSkillsSelection()
+            return
+        }
         showMainScreen()
     }
     
@@ -76,7 +81,13 @@ class Router {
     }
     
     static func showSkillsSelection() {
-        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "LanguageSelect", bundle: nil)
+        let controller = storyBoard.instantiateViewController(withIdentifier: "LanguageSkillSelectionViewController")
+        if let nextScreen = controller as? LanguageSkillSelectionViewController {
+            nextScreen.modalPresentationStyle = .fullScreen
+            nextScreen.modalTransitionStyle = .crossDissolve
+            UIViewController.topViewController()?.present(nextScreen, animated: true, completion: nil)
+        }
     }
     
     static func showLanguageLevelSelection() {

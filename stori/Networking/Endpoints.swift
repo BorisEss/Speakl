@@ -31,4 +31,6 @@ struct Endpoints {
     // MARK: - Languages
     public static let languages = api.appendingPathComponent("languages/")
     
+    // MARK: - Skills
+    public static let skills = api.appendingPathComponent("skills/")
 }

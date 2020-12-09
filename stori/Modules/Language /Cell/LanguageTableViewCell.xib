@@ -60,7 +60,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHv-s0-LHb">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHv-s0-LHb">
                                 <rect key="frame" x="0.0" y="18" width="34.5" height="2"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
@@ -120,6 +120,7 @@
                 <outlet property="checkMarkImageView" destination="bs7-Br-e1w" id="bRv-ia-b7D"/>
                 <outlet property="flagImageView" destination="CXN-Xa-Tpi" id="sAU-IO-9AM"/>
                 <outlet property="languageNameLabel" destination="Xs8-pX-iN3" id="iV3-3h-wli"/>
+                <outlet property="nameUnderline" destination="tHv-s0-LHb" id="jmu-L9-NKc"/>
             </connections>
             <point key="canvasLocation" x="74" y="139"/>
         </tableViewCell>

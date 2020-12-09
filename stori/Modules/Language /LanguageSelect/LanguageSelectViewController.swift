@@ -84,7 +84,7 @@ class LanguageSelectViewController: UIViewController {
                     self.tableView.isUserInteractionEnabled = true
                     self.progressActivityIndicator.stopAnimating()
                     if isSuccess {
-                        // TODO: Go to next screen
+                        Router.load()
                     }
                 }
             }
