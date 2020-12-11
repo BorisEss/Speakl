@@ -29,8 +29,6 @@ class LanguageTableViewCell: UITableViewCell, CustomTableViewCell {
         }
     }
     
-    static var xibName: String = "LanguageTableViewCell"
-    static var identifier: String = "LanguageTableViewCell"
     static var height: CGFloat = 60
     
     @IBOutlet weak var flagImageView: UIImageView!

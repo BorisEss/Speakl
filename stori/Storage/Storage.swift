@@ -31,4 +31,8 @@ class Storage {
     init() {
         languages = []
     }
+    
+    func languageBy(id: Int) -> Language? {
+        return languages.first(where: {$0.id == id})
+    }
 }

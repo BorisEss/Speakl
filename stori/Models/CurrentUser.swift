@@ -10,12 +10,14 @@ import Foundation
 struct CurrentUser: Decodable {
     var id: Int
     var langToLearn: Int?
+    var langToLearnLevel: Int?
     var nativeLang: Int?
     var skills: [Skill]
     
     enum CodingKeys: String, CodingKey {
         case id
         case nativeLang = "native_lang"
+        case langToLearnLevel = "lang_to_learn_level"
         case langToLearn = "lang_to_learn"
         case skills
     }

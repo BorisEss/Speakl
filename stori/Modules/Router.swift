@@ -33,6 +33,11 @@ class Router {
             showSkillsSelection()
             return
         }
+        if let user = Storage.shared.currentUser,
+           user.langToLearnLevel == nil {
+            showLanguageLevelSelection()
+            return
+        }
         showMainScreen()
     }
     
@@ -91,6 +96,16 @@ class Router {
     }
     
     static func showLanguageLevelSelection() {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "LanguageSelect", bundle: nil)
+        let controller = storyBoard.instantiateViewController(withIdentifier: "LanguageLevelSelectionViewController")
+        if let nextScreen = controller as? LanguageLevelSelectionViewController {
+            nextScreen.modalPresentationStyle = .fullScreen
+            nextScreen.modalTransitionStyle = .crossDissolve
+            UIViewController.topViewController()?.present(nextScreen, animated: true, completion: nil)
+        }
+    }
+    
+    static func showLanguageInterestsSelection() {
         
     }
 }

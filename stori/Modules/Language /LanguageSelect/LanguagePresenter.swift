@@ -9,15 +9,12 @@ import Foundation
 import PromiseKit
 
 class LanguagePresenter {
-    func updateLanguages(native: Language,
-                         learning: Language,
-                         completition: @escaping (_ isSuccess: Bool) -> Void) {
+    
+    private func updateUser(body: ParametersDict,
+                            completion: @escaping (_ isSuccess: Bool) -> Void) {
         firstly {
             return Request(endpoint: Endpoints.currentUser, method: .patch)
-                .set(body: [
-                    "native_lang": native.id,
-                    "lang_to_learn": learning.id
-                ])
+                .set(body: body)
                 .authorise()
                 .build()
         }
@@ -26,12 +23,21 @@ class LanguagePresenter {
         }
         .done { user in
             Storage.shared.currentUser = user
-            completition(true)
+            completion(true)
         }
         .catch { (error) in
             error.parse()
-            completition(false)
+            completion(false)
         }
+    }
+    
+    func updateLanguages(native: Language,
+                         learning: Language,
+                         completion: @escaping (_ isSuccess: Bool) -> Void) {
+        updateUser(body: [
+            "native_lang": native.id,
+            "lang_to_learn": learning.id
+        ], completion: completion)
     }
     
     func getSkills() -> Promise<[Skill]> {
@@ -44,8 +50,8 @@ class LanguagePresenter {
             .then { (request) -> Promise<ResponseObject<Skill>> in
                 return APIClient.request(with: request)
             }
-            .done { skills in
-                promise.fulfill(skills.results)
+            .done { response in
+                promise.fulfill(response.results)
             }
             .catch { (error) in
                 error.parse()
@@ -55,25 +61,36 @@ class LanguagePresenter {
     }
     
     func updateSkills(skills: [Skill],
-                      completition: @escaping (_ isSuccess: Bool) -> Void) {
-        firstly {
-            return Request(endpoint: Endpoints.currentUser, method: .patch)
-                .set(body: [
-                    "skill_ids": skills.map { $0.id }
-                ])
-                .authorise()
-                .build()
+                      completion: @escaping (_ isSuccess: Bool) -> Void) {
+        updateUser(body: [
+            "skill_ids": skills.map { $0.id }
+        ], completion: completion)
+    }
+    
+    func getLanguageLevels(language: Language) -> Promise<[LanguageLevel]> {
+        return Promise<[LanguageLevel]> { promise in
+            firstly {
+                return Request(endpoint: Endpoints.languageLevel(langId: language.id), method: .get)
+                    .authorise()
+                    .build()
+            }
+            .then { (request) -> Promise<[LanguageLevel]> in
+                return APIClient.request(with: request)
+            }
+            .done { levels in
+                promise.fulfill(levels)
+            }
+            .catch { (error) in
+                error.parse()
+                promise.reject(error)
+            }
         }
-        .then { (request) -> Promise<CurrentUser> in
-            return APIClient.request(with: request)
-        }
-        .done { user in
-            Storage.shared.currentUser = user
-            completition(true)
-        }
-        .catch { (error) in
-            error.parse()
-            completition(false)
-        }
+    }
+    
+    func updateLearningLanguageLevel(level: LanguageLevel,
+                                     completion: @escaping (_ isSuccess: Bool) -> Void) {
+        updateUser(body: [
+            "lang_to_learn_level": level.id
+        ], completion: completion)
     }
 }

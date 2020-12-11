@@ -30,6 +30,9 @@ struct Endpoints {
     
     // MARK: - Languages
     public static let languages = api.appendingPathComponent("languages/")
+    public static func languageLevel(langId: Int) -> URL {
+        return languages.appendingPathComponent("\(langId)/levels/")
+    }
     
     // MARK: - Skills
     public static let skills = api.appendingPathComponent("skills/")

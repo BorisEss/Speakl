@@ -11,8 +11,6 @@ class SkillTableViewCell: UITableViewCell, CustomTableViewCell {
     
     var skill: Skill?
     
-    static var xibName: String = "SkillTableViewCell"
-    static var identifier: String = "SkillTableViewCell"
     static var height: CGFloat = 60
 
     @IBOutlet weak var iconImageView: UIImageView!

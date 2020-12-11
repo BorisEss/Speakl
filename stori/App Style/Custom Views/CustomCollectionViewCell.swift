@@ -7,12 +7,17 @@
 
 import UIKit
 
-protocol CustomCollectionViewCell: UICollectionViewCell {
-    static var xibName: String { get }
-    static var identifier: String { get }
-}
+protocol CustomCollectionViewCell: UICollectionViewCell { }
 
 extension CustomCollectionViewCell {
+    
+    static var xibName: String {
+        return String(describing: self)
+    }
+    static var identifier: String {
+        return String(describing: self)
+    }
+    
     static func nib() -> UINib {
         return UINib(nibName: xibName, bundle: nil)
     }

@@ -10,9 +10,6 @@ import UIKit
 typealias TutorialValue = (image: UIImage?, description: String?)
 
 class TutorialCollectionViewCell: UICollectionViewCell, CustomCollectionViewCell {
-    
-    internal static let xibName: String = "TutorialCollectionViewCell"
-    public static let identifier: String = "TutorialCollectionViewCell"
 
     @IBOutlet weak var tutorialIcon: UIImageView!
     @IBOutlet weak var tutorialLabel: UILabel!

@@ -12,7 +12,7 @@ class AuthPresenter {
     
     func logIn(email: String,
                password: String,
-               completition: @escaping (_ isSucccess: Bool) -> Void) {
+               completion: @escaping (_ isSucccess: Bool) -> Void) {
         firstly {
             return Request(endpoint: Endpoints.login, method: .post)
                 .set(body: [
@@ -28,18 +28,18 @@ class AuthPresenter {
             return UserClient.getCurrentUser()
         }
         .done { _ in
-            completition(true)
+            completion(true)
         }
         .catch { (error) in
             error.parse()
-            completition(false)
+            completion(false)
         }
     }
     
     func signUp(username: String,
                 email: String,
                 password: String,
-                completition: @escaping (_ isSucccess: Bool) -> Void) {
+                completion: @escaping (_ isSucccess: Bool) -> Void) {
         firstly {
             return Request(endpoint: Endpoints.register, method: .post)
                 .set(body: [
@@ -57,16 +57,16 @@ class AuthPresenter {
             return UserClient.getCurrentUser()
         }
         .done { _ in
-            completition(true)
+            completion(true)
         }
         .catch { (error) in
             error.parse()
-            completition(false)
+            completion(false)
         }
     }
     
     func forgotPassword(email: String,
-                        completition: @escaping (_ isSuccess: Bool) -> Void) {
+                        completion: @escaping (_ isSuccess: Bool) -> Void) {
         firstly {
             return Request(endpoint: Endpoints.requestResetPassword, method: .post)
                 .set(body: [
@@ -77,17 +77,17 @@ class AuthPresenter {
             APIClient.request(with: request)
         }
         .done { (_) in
-            completition(true)
+            completion(true)
         }
         .catch { (error) in
             error.parse()
-            completition(false)
+            completion(false)
         }
     }
     
     func resetPassword(code: String,
                        password: String,
-                       completition: @escaping (_ isSuccess: Bool) -> Void) {
+                       completion: @escaping (_ isSuccess: Bool) -> Void) {
         firstly {
             return Request(endpoint: Endpoints.resetPassword, method: .post)
                 .set(body: [
@@ -100,16 +100,16 @@ class AuthPresenter {
             APIClient.request(with: request)
         }
         .done { (_) in
-            completition(true)
+            completion(true)
         }
         .catch { (error) in
             error.parse()
-            completition(false)
+            completion(false)
         }
     }
     
     func facebookAuth(token: String,
-                      completition: @escaping (_ isSuccess: Bool) -> Void) {
+                      completion: @escaping (_ isSuccess: Bool) -> Void) {
         firstly {
             return Request(endpoint: Endpoints.facebookLogin, method: .post)
                 .set(body: [
@@ -124,16 +124,16 @@ class AuthPresenter {
             return UserClient.getCurrentUser()
         }
         .done { _ in
-            completition(true)
+            completion(true)
         }
         .catch { (error) in
             error.parse()
-            completition(false)
+            completion(false)
         }
     }
     
     func googleAuth(token: String,
-                    completition: @escaping (_ isSuccess: Bool) -> Void) {
+                    completion: @escaping (_ isSuccess: Bool) -> Void) {
         firstly {
             return Request(endpoint: Endpoints.googleLogin, method: .post)
                 .set(body: [
@@ -148,17 +148,17 @@ class AuthPresenter {
             return UserClient.getCurrentUser()
         }
         .done { _ in
-            completition(true)
+            completion(true)
         }
         .catch { (error) in
             error.parse()
-            completition(false)
+            completion(false)
         }
     }
     
     func appleAuth(name: String?,
                    code: String,
-                   completition: @escaping (_ isSuccess: Bool) -> Void) {
+                   completion: @escaping (_ isSuccess: Bool) -> Void) {
         firstly {
             return Request(endpoint: Endpoints.appleLogin, method: .post)
                 .set(body: [
@@ -174,11 +174,11 @@ class AuthPresenter {
             return UserClient.getCurrentUser()
         }
         .done { _ in
-            completition(true)
+            completion(true)
         }
         .catch { (error) in
             error.parse()
-            completition(false)
+            completion(false)
         }
     }
 }
