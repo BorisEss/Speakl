@@ -108,18 +108,18 @@ class LanguageSelectViewController: UIViewController {
     }
     
     private func setUpLanguage() {
-        nextButton.setTitle("Next", for: .normal)
+        nextButton.setTitle("common_next_title".localized, for: .normal)
     }
     
     private func setUpNativeUI() {
         backButton.isHidden = !shouldGoBack
-        titleLabel.text = "Your native language"
+        titleLabel.text = "select_langs_vc_page_title_select_native_language".localized
         nextButton.isEnabled = false
     }
     
     private func setUpLearningUI() {
         backButton.isHidden = false
-        titleLabel.text = "Which language do you want to learn?"
+        titleLabel.text = "select_langs_vc_page_title_select_learn_language".localized
         if let nativeLang = nativeLanguage,
            let index = languages.firstIndex(of: nativeLang),
            let cell = tableView.cellForRow(at: IndexPath(row: index, section: 0)),

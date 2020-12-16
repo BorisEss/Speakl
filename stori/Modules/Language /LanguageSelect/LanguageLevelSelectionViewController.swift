@@ -90,11 +90,14 @@ class LanguageLevelSelectionViewController: UIViewController {
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 100))
     }
     func setUpLanguage() {
-        titleLabel.text = "Choose your Italian level"
-        subtitleLabel.text = "Get personalized stories based on your level"
-        testQuestionLabel.text = "If you don’t know your level"
-        testButton.setTitle("Begin the test", for: .normal)
-        nextButton.setTitle("Next", for: .normal)
+        if let langId = Storage.shared.currentUser?.langToLearn,
+           let lang = Storage.shared.languageBy(id: langId) {
+            titleLabel.text = String(format: "select_lang_level_vc_page_title".localized, lang.name)
+        }
+        subtitleLabel.text = "select_lang_level_vc_page_subtitle".localized
+        testQuestionLabel.text = "select_lang_level_vc_page_test_question".localized
+        testButton.setTitle("select_lang_level_vc_page_test_button".localized, for: .normal)
+        nextButton.setTitle("common_next_title".localized, for: .normal)
     }
 }
 

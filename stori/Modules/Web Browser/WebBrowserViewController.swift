@@ -21,7 +21,7 @@ class WebBrowserViewController: UIViewController {
         super.viewDidLoad()
         
         if navigation {
-            closeButton.setTitle("common_back_title", for: .normal)
+            closeButton.setTitle("common_back_title".localized, for: .normal)
         } else {
             closeButton.setTitle("common_close_title".localized, for: .normal)
         }

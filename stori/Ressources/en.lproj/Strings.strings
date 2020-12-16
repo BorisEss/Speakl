@@ -6,10 +6,42 @@
   
 */
 
+"common_stories_tab_new" = "New";
+"common_stories_tab_popular_stories" = "Popular Stories";
+"common_stories_tab_favorites" = "Favorites";
+"common_stories_tab_categories" = "Categories";
+"common_language_name_en" = "English";
+"common_language_name_es" = "Spanish";
+"common_language_name_fr" = "French";
+"common_language_name_de" = "German";
+"common_language_name_it" = "Italian";
+"common_language_name_ru" = "Russian";
+"common_language_name_ch" = "Chinese";
+"common_no_results_message" = "No results";
+"common_yes_title" = "Yes";
+"common_no_title" = "No";
+"common_cancel_title" = "Cancel";
+"common_close_title" = "Close";
+"common_done_title" = "Done";
+"common_next_title" = "Next";
+"common_back_title" = "Back";
+"common_remove_title" = "Remove";
+"common_error_message_something_went_wrong" = "Something went wrong. Please try again.";
+"common_empty_field" = "Please fill this field";
+"common_wrong_password_format" = "Please enter a valid password with at least 6 characters";
+"common_request_build_failed" = "Failed to build your request, please try again";
+"common_no_authentication" = "Not authorised";
+"common_server_error" = "Server error";
+"common_not_found" = "Not found";
+"common_failed_deconding_response" = "Failed to decode server response";
+"common_failed_facebook" = "Failed to authenticate with Facebook";
+
+
 "start_tutorial_vc_page_one_title" = "Enrich your vocabulary anytime, anywhere.";
 "start_tutorial_vc_page_two_title" = "Interesting and fascinating stories for everyone.";
 "start_tutorial_vc_page_three_title" = "Discover new languages in the easiest way.";
 "start_tutorial_vc_button_title_start" = "Get Started";
+
 
 "auth_vc_page_title" = "Stori";
 "auth_vc_page_signin_subtitle" = "The app\nfor enriching\nyour vocabulary";
@@ -38,3 +70,22 @@
 "auth_vc_alert_empty_otp_code" = "Please enter the code you received in your email";
 "auth_vc_alert_otp_code_sent" = "Please enter the code you received in your email";
 "auth_vc_alert_password_was_reset" = "Your password was reset successfully";
+
+
+"select_langs_vc_page_title_select_native_language" = "Your native language?";
+"select_langs_vc_page_title_select_learn_language" = "What language do you want to learn?";
+"select_langs_vc_button_sart_title" = "Ready? Start!";
+
+
+"select_lang_skills_vc_page_title" = "Which language skill(s) do you want to learn?";
+
+
+"select_lang_level_vc_page_title" = "Choose your %@ level";
+"select_lang_level_vc_page_subtitle" = "Get personalized stories based on your level";
+"select_lang_level_vc_page_test_question" = "If you don’t know your level";
+"select_lang_level_vc_page_test_button" = "Begin the test";
+
+
+"select_interests_vc_page_title" = "Choose your interests";
+"select_interests_vc_page_subtitle" = "Get personalized story recommendations";
+"select_interests_vc_next_button" = "Ready? Start";

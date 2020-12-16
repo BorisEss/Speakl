@@ -86,8 +86,8 @@ class LanguageSkillSelectionViewController: UIViewController {
         tableView.allowsMultipleSelection = true
     }
     private func setUpLanguage() {
-        titleLabel.text = "Which language skill(s) do you want to learn?"
-        nextButton.setTitle("Next", for: .normal)
+        titleLabel.text = "select_lang_skills_vc_page_title".localized
+        nextButton.setTitle("common_next_title".localized, for: .normal)
     }
 }
 

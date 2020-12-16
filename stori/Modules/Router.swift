@@ -41,6 +41,7 @@ class Router {
         if let user = Storage.shared.currentUser,
            user.interests.isEmpty {
             showLanguageInterestsSelection()
+            return
         }
         showMainScreen()
     }

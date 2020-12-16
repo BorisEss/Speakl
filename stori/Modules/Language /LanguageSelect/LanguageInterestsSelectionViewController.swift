@@ -87,9 +87,9 @@ class LanguageInterestsSelectionViewController: UIViewController {
     }
     
     private func setUpLanguage() {
-        titleLabel.text = "Choose your interests"
-        subtitleLabel.text = "Get personalized story recommendations"
-        nextButton.setTitle("Ready? Start", for: .normal)
+        titleLabel.text = "select_interests_vc_page_title".localized
+        subtitleLabel.text = "select_interests_vc_page_subtitle".localized
+        nextButton.setTitle("select_interests_vc_next_button".localized, for: .normal)
     }
 }
 
