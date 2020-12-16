@@ -13,6 +13,7 @@ struct CurrentUser: Decodable {
     var langToLearnLevel: Int?
     var nativeLang: Int?
     var skills: [Skill]
+    var interests: [Interest]
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -20,5 +21,6 @@ struct CurrentUser: Decodable {
         case langToLearnLevel = "lang_to_learn_level"
         case langToLearn = "lang_to_learn"
         case skills
+        case interests
     }
 }

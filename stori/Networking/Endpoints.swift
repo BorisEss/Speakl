@@ -27,6 +27,7 @@ struct Endpoints {
     // MARK: - User
     private static let user = api.appendingPathComponent("users")
     public static let currentUser = user.appendingPathComponent("me/")
+    public static let updateInterests = user.appendingPathComponent("set-interests/")
     
     // MARK: - Languages
     public static let languages = api.appendingPathComponent("languages/")
@@ -36,4 +37,7 @@ struct Endpoints {
     
     // MARK: - Skills
     public static let skills = api.appendingPathComponent("skills/")
+    
+    // MARK: - Interests
+    public static let interests = api.appendingPathComponent("interests/")
 }

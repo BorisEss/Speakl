@@ -93,4 +93,52 @@ class LanguagePresenter {
             "lang_to_learn_level": level.id
         ], completion: completion)
     }
+    
+    func getInterests() -> Promise<[Interest]> {
+        return Promise<[Interest]> { promise in
+            firstly {
+                return Request(endpoint: Endpoints.interests, method: .get)
+                    .authorise()
+                    .set(query: [
+                        "page_size": "100"
+                    ])
+                    .build()
+            }
+            .then { (request) -> Promise<ResponseObject<Interest>> in
+                return APIClient.request(with: request)
+            }
+            .done { response in
+                promise.fulfill(response.results)
+            }
+            .catch { (error) in
+                error.parse()
+                promise.reject(error)
+            }
+        }
+    }
+    
+    func updateInterests(interests: [Interest],
+                         completion: @escaping (_ isSuccess: Bool) -> Void) {
+        firstly {
+            return Request(endpoint: Endpoints.updateInterests, method: .post)
+                .set(body: [
+                    "interest_ids": interests.map { $0.id }
+                ])
+                .authorise()
+                .build()
+        }
+        .then { (request) -> Promise<SuccessMessage> in
+            return APIClient.request(with: request)
+        }
+        .then { _ -> Promise<Void> in
+            return UserClient.getCurrentUser()
+        }
+        .done { _ in
+            completion(true)
+        }
+        .catch { (error) in
+            error.parse()
+            completion(false)
+        }
+    }
 }
