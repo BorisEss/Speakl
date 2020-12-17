@@ -47,7 +47,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="307"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stori" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="d9e-bY-bmD">
-                                                <rect key="frame" x="0.0" y="0.0" width="135.5" height="307"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="146.5" height="307"/>
                                                 <fontDescription key="fontDescription" name="Sweet_Pea" family="Sweet Pea" pointSize="70"/>
                                                 <color key="textColor" name="AccentColor"/>
                                                 <nil key="highlightedColor"/>
@@ -104,7 +104,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNs-RS-W7f">
-                                        <rect key="frame" x="0.0" y="321" width="358" height="97.5"/>
+                                        <rect key="frame" x="0.0" y="323" width="358" height="87.5"/>
                                         <string key="text">The app 
 for enriching
 your vocabulary</string>
@@ -113,7 +113,7 @@ your vocabulary</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-ep-V1D" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="418.5" width="358" height="50"/>
+                                        <rect key="frame" x="0.0" y="410.5" width="358" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="UWr-r4-uEP"/>
                                         </constraints>
@@ -133,7 +133,7 @@ your vocabulary</string>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFc-CR-ZWK" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="433" width="358" height="50"/>
+                                        <rect key="frame" x="0.0" y="426.5" width="358" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="yAN-G2-N4c"/>
                                         </constraints>
@@ -153,7 +153,7 @@ your vocabulary</string>
                                         </connections>
                                     </textField>
                                     <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qb9-Xi-82l" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="483" width="358" height="50"/>
+                                        <rect key="frame" x="0.0" y="476.5" width="358" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="SHH-bG-tcx"/>
                                         </constraints>
@@ -173,7 +173,7 @@ your vocabulary</string>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BRw-B7-GmL" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="497" width="358" height="50"/>
+                                        <rect key="frame" x="0.0" y="493" width="358" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="uAl-yK-OZY"/>
                                         </constraints>
@@ -193,7 +193,7 @@ your vocabulary</string>
                                         </connections>
                                     </textField>
                                     <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Repeat password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="osF-Ee-XLd" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="547" width="358" height="50"/>
+                                        <rect key="frame" x="0.0" y="543" width="358" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="tBU-o2-Tg6"/>
                                         </constraints>
@@ -215,7 +215,7 @@ your vocabulary</string>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3D3-Bu-wAe">
-                                        <rect key="frame" x="0.0" y="561" width="358" height="50"/>
+                                        <rect key="frame" x="0.0" y="559" width="358" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxd-jU-aAL">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -244,16 +244,16 @@ your vocabulary</string>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-BS-4pe">
-                                        <rect key="frame" x="0.0" y="625.5" width="358" height="75"/>
+                                        <rect key="frame" x="0.0" y="625" width="358" height="73.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or Connect with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUt-1J-AfY">
-                                                <rect key="frame" x="0.0" y="0.0" width="358" height="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="13"/>
                                                 <color key="textColor" white="1" alpha="0.26000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="wdW-XR-2QM">
-                                                <rect key="frame" x="0.0" y="35" width="358" height="40"/>
+                                                <rect key="frame" x="0.0" y="33.5" width="358" height="40"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShC-TQ-lGh">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -444,19 +444,19 @@ your vocabulary</string>
     </scenes>
     <designables>
         <designable name="BRw-B7-GmL">
-            <size key="intrinsicContentSize" width="78.5" height="24"/>
+            <size key="intrinsicContentSize" width="80" height="21"/>
         </designable>
         <designable name="Qb9-Xi-82l">
-            <size key="intrinsicContentSize" width="42" height="25"/>
+            <size key="intrinsicContentSize" width="44" height="22.5"/>
         </designable>
         <designable name="WFc-CR-ZWK">
-            <size key="intrinsicContentSize" width="45.5" height="25"/>
+            <size key="intrinsicContentSize" width="44.5" height="22.5"/>
         </designable>
         <designable name="osF-Ee-XLd">
-            <size key="intrinsicContentSize" width="140" height="24"/>
+            <size key="intrinsicContentSize" width="141.5" height="21"/>
         </designable>
         <designable name="wBa-ep-V1D">
-            <size key="intrinsicContentSize" width="83" height="25"/>
+            <size key="intrinsicContentSize" width="83" height="22.5"/>
         </designable>
     </designables>
     <resources>
