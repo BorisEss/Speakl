@@ -93,6 +93,7 @@
 		FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */; };
 		FAE2105925768C2100A3D971 /* LanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */; };
 		FAEBEA22258A05BE0077D942 /* SuccessMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEBEA21258A05BE0077D942 /* SuccessMessage.swift */; };
+		FAEBEA3E258B4CC90077D942 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEBEA3D258B4CC90077D942 /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +187,7 @@
 		FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableViewCell.xib; sourceTree = "<group>"; };
 		FAEBEA21258A05BE0077D942 /* SuccessMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessMessage.swift; sourceTree = "<group>"; };
+		FAEBEA3D258B4CC90077D942 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		FFAC3C6735F7BC1D8397254E /* Pods_stori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -406,6 +408,7 @@
 				FA4B616E25713362005501BD /* DataExtension.swift */,
 				FA4D448A257C172F00398AE2 /* UIImageViewExtension.swift */,
 				FA9F6C132583677400AC5197 /* UIColorExtension.swift */,
+				FAEBEA3D258B4CC90077D942 /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -701,6 +704,7 @@
 				FA7B72DF25669C54003F9A0C /* AppFonts.swift in Sources */,
 				FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */,
 				FA4B6112256EAEA1005501BD /* AuthPresenter.swift in Sources */,
+				FAEBEA3E258B4CC90077D942 /* UIButtonExtension.swift in Sources */,
 				FA4D446C2578D2B300398AE2 /* Router.swift in Sources */,
 				FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */,
 				FA4B61762574C46D005501BD /* AuthUser.swift in Sources */,

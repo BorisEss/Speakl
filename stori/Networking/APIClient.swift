@@ -13,7 +13,7 @@ final class APIClient {
     /// Alamofire Custom manager, to create a request to the server.
     ///
     /// - Parameter request: `URLRequest` which contains the URL Request details.
-    /// - Parameter completion: Returns the request response, `JSON` ->  successful or `NetworkError` -> failed.
+    /// - Returns: This function returns a promise for `T` required.
     ///
     public static func request<T: Decodable>(with request: URLRequest) -> Promise<T> {
         return Promise { promise in

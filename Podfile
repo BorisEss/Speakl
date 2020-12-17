@@ -6,7 +6,7 @@ target 'stori' do
   # Network and Caching
   pod 'Alamofire'
   pod 'AlamofireNetworkActivityLogger', :configurations => ['Debug']
-  pod 'Kingfisher'
+  pod 'SDWebImage'
   pod 'GoogleSignIn'
   pod 'FBSDKCoreKit/Swift'
   pod 'FBSDKLoginKit/Swift'

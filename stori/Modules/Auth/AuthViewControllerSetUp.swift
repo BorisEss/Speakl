@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Kingfisher
 
 // MARK: UI Set Up
 extension AuthViewController {
@@ -131,7 +130,6 @@ extension AuthViewController {
     }
     
     func setUpLanguageButton() {
-        languageButton.kf.setImage(with: Storage.shared.currentLanguage?.flagUrl,
-                                   for: .normal)
+        languageButton.load(url: Storage.shared.currentLanguage?.flagUrl)
     }
 }
