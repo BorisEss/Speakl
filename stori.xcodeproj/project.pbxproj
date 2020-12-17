@@ -372,7 +372,7 @@
 				FA812D8A256640E50036F162 /* Extensions */,
 				FA658314256E2863007052D9 /* Managers */,
 				FA4B6114256F7BA5005501BD /* Networking */,
-				FA812D8B256640F30036F162 /* Modules */,
+				FA812D8B256640F30036F162 /* App Modules */,
 				FA7B72D525669A08003F9A0C /* Ressources */,
 				FA999D9F2569513E00B694FA /* Storage */,
 				FA812D71256298440036F162 /* ViewController.swift */,
@@ -413,7 +413,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		FA812D8B256640F30036F162 /* Modules */ = {
+		FA812D8B256640F30036F162 /* App Modules */ = {
 			isa = PBXGroup;
 			children = (
 				FA4D446B2578D2B300398AE2 /* Router.swift */,
@@ -424,7 +424,7 @@
 				FA4D4477257940AB00398AE2 /* Web Browser */,
 				FA4D4493257E442A00398AE2 /* Language  */,
 			);
-			path = Modules;
+			path = "App Modules";
 			sourceTree = "<group>";
 		};
 		FA812D8C256641820036F162 /* App Style */ = {
