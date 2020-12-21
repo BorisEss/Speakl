@@ -89,3 +89,10 @@
 "select_interests_vc_page_title" = "Choose your interests";
 "select_interests_vc_page_subtitle" = "Get personalized story recommendations";
 "select_interests_vc_next_button" = "Ready? Start";
+
+"main_nav_controller_tab_title_learn" = "Learn";
+"main_nav_controller_tab_title_practice" = "Practice";
+"main_nav_controller_tab_title_vocabulary" = "Vocabulary";
+"main_nav_controller_tab_title_profile" = "Profile";
+"main_nav_controller_tip_title" = "Help Us";
+"main_nav_controller_tip_subtitle" = "Translate Stories";

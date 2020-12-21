@@ -33,6 +33,7 @@ target 'stori' do
   pod 'UPCarouselFlowLayout'
   pod 'TextFieldEffects'
   pod 'SwiftMessages'
+  pod 'EasyTipView'
 #  pod 'SideMenu'
 #  pod 'SimpleCheckbox'
 #  pod 'Cluster'

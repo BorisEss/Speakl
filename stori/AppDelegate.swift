@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        KeychainManager.shared.token = nil
         SDImageCache.shared.clearMemory()
         SDImageCache.shared.clearDisk()
         

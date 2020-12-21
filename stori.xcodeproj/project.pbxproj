@@ -49,6 +49,9 @@
 		FA4D448B257C172F00398AE2 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D448A257C172F00398AE2 /* UIImageViewExtension.swift */; };
 		FA4D4496257E48B700398AE2 /* LanguageSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4D4495257E48B700398AE2 /* LanguageSelect.storyboard */; };
 		FA4D4499257E48CE00398AE2 /* LanguageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4498257E48CE00398AE2 /* LanguageSelectViewController.swift */; };
+		FA63DA39258CF3D400722CA6 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */; };
+		FA63DA3C258CF3EC00722CA6 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */; };
+		FA63DA3F258D030900722CA6 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63DA3E258D030900722CA6 /* NotificationExtension.swift */; };
 		FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830B256D544E007052D9 /* UILabelExtension.swift */; };
 		FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */; };
 		FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */; };
@@ -141,6 +144,9 @@
 		FA4D448A257C172F00398AE2 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		FA4D4495257E48B700398AE2 /* LanguageSelect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguageSelect.storyboard; sourceTree = "<group>"; };
 		FA4D4498257E48CE00398AE2 /* LanguageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectViewController.swift; sourceTree = "<group>"; };
+		FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
+		FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		FA63DA3E258D030900722CA6 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
 		FA65830B256D544E007052D9 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardApperenceHandler.swift; sourceTree = "<group>"; };
 		FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerDelegates.swift; sourceTree = "<group>"; };
@@ -306,6 +312,15 @@
 			path = LanguageSelect;
 			sourceTree = "<group>";
 		};
+		FA63DA37258CF3B900722CA6 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */,
+				FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		FA658314256E2863007052D9 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +424,7 @@
 				FA4D448A257C172F00398AE2 /* UIImageViewExtension.swift */,
 				FA9F6C132583677400AC5197 /* UIColorExtension.swift */,
 				FAEBEA3D258B4CC90077D942 /* UIButtonExtension.swift */,
+				FA63DA3E258D030900722CA6 /* NotificationExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -423,6 +439,7 @@
 				FA3C26112569558B0089F646 /* Auth */,
 				FA4D4477257940AB00398AE2 /* Web Browser */,
 				FA4D4493257E442A00398AE2 /* Language  */,
+				FA63DA37258CF3B900722CA6 /* User */,
 			);
 			path = "App Modules";
 			sourceTree = "<group>";
@@ -555,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7B72EB2566B814003F9A0C /* TutorialCollectionViewCell.xib in Resources */,
+				FA63DA39258CF3D400722CA6 /* MainTabBar.storyboard in Resources */,
 				FA7B72E22566B493003F9A0C /* Sweet Pea.ttf in Resources */,
 				FA812DA125665AA70036F162 /* Root.storyboard in Resources */,
 				FA4D4479257940BA00398AE2 /* WebBrowser.storyboard in Resources */,
@@ -696,6 +714,7 @@
 				FA22A7E52588E1D8001129E7 /* InterestCollectionViewCell.swift in Sources */,
 				FA812D6E256298440036F162 /* AppDelegate.swift in Sources */,
 				FA4D447125790C1300398AE2 /* UserClient.swift in Sources */,
+				FA63DA3C258CF3EC00722CA6 /* MainTabBarViewController.swift in Sources */,
 				FA999DA12569514C00B694FA /* DefaultSettings.swift in Sources */,
 				FA3C27DF256BDBFD0089F646 /* RegularTextField.swift in Sources */,
 				FA7B72D325669962003F9A0C /* UIImageExtension.swift in Sources */,
@@ -718,6 +737,7 @@
 				FA4D447C257940DE00398AE2 /* WebBrowserViewController.swift in Sources */,
 				FA4D4481257A9B3200398AE2 /* AuthViewController.swift in Sources */,
 				FA4D4499257E48CE00398AE2 /* LanguageSelectViewController.swift in Sources */,
+				FA63DA3F258D030900722CA6 /* NotificationExtension.swift in Sources */,
 				FA812D8E256641940036F162 /* UIGradientView.swift in Sources */,
 				FA4B618B25750412005501BD /* CurrentUser.swift in Sources */,
 				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,

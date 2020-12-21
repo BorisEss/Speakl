@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="302" y="188"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--MainTabBar-->
         <scene sceneID="Cdm-qS-Aa7">
             <objects>
-                <viewControllerPlaceholder id="O2j-uk-fFo" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MainTabBar" id="O2j-uk-fFo" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Ofl-er-bq4"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Md-e7-w2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

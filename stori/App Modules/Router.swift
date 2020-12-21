@@ -59,7 +59,9 @@ class Router {
     }
     
     static func showMainScreen() {
-        fatalError("Show main screen of the app")
+        if UIViewController.topViewController() is RootViewController {
+            UIViewController.topViewController()?.performSegue(withIdentifier: "showMain", sender: nil)
+        }
     }
     
     static func showWebBrowser(navigation: Bool = false, url: URL) {
