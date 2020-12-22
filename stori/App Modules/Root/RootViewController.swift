@@ -9,9 +9,22 @@ import UIKit
 import PromiseKit
 
 class RootViewController: UIViewController {
+    
+    @IBOutlet weak var retryButton: UIButton!
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
                 
+        retryButton.setTitle("common_retry".localized, for: .normal)
+        load()
+    }
+    
+    @IBAction func retryPressed(_ sender: Any) {
+        retryButton.isHidden = true
+        load()
+    }
+    
+    private func load() {
         firstly {
             return LanguageClient.getLanguages()
         }
@@ -34,6 +47,7 @@ class RootViewController: UIViewController {
             Router.load()
         }
         .catch { (error) in
+            self.retryButton.isHidden = false
             error.parse()
         }
     }

@@ -18,6 +18,7 @@
 "common_language_name_ru" = "Russian";
 "common_language_name_ch" = "Chinese";
 "common_no_results_message" = "No results";
+"common_retry" = "Retry";
 "common_yes_title" = "Yes";
 "common_no_title" = "No";
 "common_cancel_title" = "Cancel";
