@@ -20,3 +20,16 @@ extension UIViewController {
         self.view.endEditing(true)
     }
 }
+
+// MARK: Email Extension
+extension UIViewController {
+    /// This function presents Email View Controller to send an email from the app.
+    ///
+    /// - Parameter emailAddress: Email Address which will be loaded inside the new email screen.
+    ///
+    func sendEmail(emailAddress: String) {
+        if let url = URL(string: "mailto:\(emailAddress)") {
+            UIApplication.shared.open(url)
+        }
+    }
+}

@@ -60,6 +60,7 @@
 		FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */; };
 		FA658317256E29D5007052D9 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA658316256E29D5007052D9 /* UITextFieldExtension.swift */; };
 		FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65831A256E7805007052D9 /* AuthViewControllerSetUp.swift */; };
+		FA6853F72599FA47008A7D63 /* IBMPlexSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6853F62599FA47008A7D63 /* IBMPlexSans-Light.ttf */; };
 		FA6B0015258116B700438E80 /* LanguageLevelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0014258116B700438E80 /* LanguageLevelSelectionViewController.swift */; };
 		FA7B72D0256690C1003F9A0C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72CF256690C1003F9A0C /* UIViewExtension.swift */; };
 		FA7B72D325669962003F9A0C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72D225669962003F9A0C /* UIImageExtension.swift */; };
@@ -158,6 +159,7 @@
 		FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerDelegates.swift; sourceTree = "<group>"; };
 		FA658316256E29D5007052D9 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		FA65831A256E7805007052D9 /* AuthViewControllerSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerSetUp.swift; sourceTree = "<group>"; };
+		FA6853F62599FA47008A7D63 /* IBMPlexSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Light.ttf"; sourceTree = "<group>"; };
 		FA6B0014258116B700438E80 /* LanguageLevelSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLevelSelectionViewController.swift; sourceTree = "<group>"; };
 		FA7B72CF256690C1003F9A0C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		FA7B72D225669962003F9A0C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 				FA7B72E12566B493003F9A0C /* Sweet Pea.ttf */,
 				FA7B72DA25669BEF003F9A0C /* IBMPlexSans-Bold.ttf */,
 				FA7B72D725669A31003F9A0C /* IBMPlexSans-Regular.ttf */,
+				FA6853F62599FA47008A7D63 /* IBMPlexSans-Light.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -596,6 +599,7 @@
 				FA4D4496257E48B700398AE2 /* LanguageSelect.storyboard in Resources */,
 				FA999D9825694D3E00B694FA /* Strings.strings in Resources */,
 				FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */,
+				FA6853F72599FA47008A7D63 /* IBMPlexSans-Light.ttf in Resources */,
 				FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */,
 				FA9F6C102582899800AC5197 /* LanguageLevelTableViewCell.xib in Resources */,
 				FA22A7E62588E1D8001129E7 /* InterestCollectionViewCell.xib in Resources */,

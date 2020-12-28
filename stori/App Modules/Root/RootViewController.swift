@@ -10,21 +10,30 @@ import PromiseKit
 
 class RootViewController: UIViewController {
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var retryButton: UIButton!
+    @IBOutlet weak var contactUsButton: UIButton!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
                 
         retryButton.setTitle("common_retry".localized, for: .normal)
+        contactUsButton.setTitle("common_contact_us".localized, for: .normal)
         load()
     }
     
+    @IBAction func contactUsButtonPressed(_ sender: Any) {
+        sendEmail(emailAddress: contactEmail)
+    }
+    
     @IBAction func retryPressed(_ sender: Any) {
-        retryButton.isHidden = true
         load()
     }
     
     private func load() {
+        activityIndicator.startAnimating()
+        retryButton.isHidden = true
+        contactUsButton.isHidden = true
         firstly {
             return LanguageClient.getLanguages()
         }
@@ -44,10 +53,12 @@ class RootViewController: UIViewController {
             }
         }
         .done { _ in
-            Router.load()
+//            Router.load()
         }
         .catch { (error) in
+            self.activityIndicator.stopAnimating()
             self.retryButton.isHidden = false
+            self.contactUsButton.isHidden = false
             error.parse()
         }
     }
