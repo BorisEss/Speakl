@@ -10,8 +10,8 @@ import UIKit
 class Router {
     
     static func load() {
-        if !(UIViewController.topViewController() is RootViewController) {
-            UIViewController.topViewController()?.dismiss(animated: true, completion: nil)
+        if !(UIApplication.getTopViewController() is RootViewController) {
+            UIApplication.getTopViewController()?.dismiss(animated: true, completion: nil)
         }
         
         if !DefaultSettings.finishedTutorial {
@@ -47,20 +47,20 @@ class Router {
     }
     
     static func showTutorial() {
-        if UIViewController.topViewController() is RootViewController {
-            UIViewController.topViewController()?.performSegue(withIdentifier: "showTutorial", sender: nil)
+        if UIApplication.getTopViewController() is RootViewController {
+            UIApplication.getTopViewController()?.performSegue(withIdentifier: "showTutorial", sender: nil)
         }
     }
     
     static func showAuth() {
-        if UIViewController.topViewController() is RootViewController {
-            UIViewController.topViewController()?.performSegue(withIdentifier: "showAuth", sender: nil)
+        if UIApplication.getTopViewController() is RootViewController {
+            UIApplication.getTopViewController()?.performSegue(withIdentifier: "showAuth", sender: nil)
         }
     }
     
     static func showMainScreen() {
-        if UIViewController.topViewController() is RootViewController {
-            UIViewController.topViewController()?.performSegue(withIdentifier: "showMain", sender: nil)
+        if UIApplication.getTopViewController() is RootViewController {
+            UIApplication.getTopViewController()?.performSegue(withIdentifier: "showMain", sender: nil)
         }
     }
     
@@ -71,10 +71,10 @@ class Router {
             nextBrowserScreen.navigation = navigation
             nextBrowserScreen.url = url
             if navigation {
-                UIViewController.topViewController()?.navigationController?.pushViewController(nextBrowserScreen,
+                UIApplication.getTopViewController()?.navigationController?.pushViewController(nextBrowserScreen,
                                                                                                animated: true)
             } else {
-                UIViewController.topViewController()?.present(nextBrowserScreen, animated: true)
+                UIApplication.getTopViewController()?.present(nextBrowserScreen, animated: true)
             }
         }
     }
@@ -88,7 +88,7 @@ class Router {
             if let language = selected {
                 nextScreen.fillWith(language: language, shouldGoBack: false)
             }
-            UIViewController.topViewController()?.present(nextScreen, animated: true, completion: nil)
+            UIApplication.getTopViewController()?.present(nextScreen, animated: true, completion: nil)
         }
     }
     
@@ -98,7 +98,7 @@ class Router {
         if let nextScreen = controller as? LanguageSkillSelectionViewController {
             nextScreen.modalPresentationStyle = .fullScreen
             nextScreen.modalTransitionStyle = .crossDissolve
-            UIViewController.topViewController()?.present(nextScreen, animated: true, completion: nil)
+            UIApplication.getTopViewController()?.present(nextScreen, animated: true, completion: nil)
         }
     }
     
@@ -108,7 +108,7 @@ class Router {
         if let nextScreen = controller as? LanguageLevelSelectionViewController {
             nextScreen.modalPresentationStyle = .fullScreen
             nextScreen.modalTransitionStyle = .crossDissolve
-            UIViewController.topViewController()?.present(nextScreen, animated: true, completion: nil)
+            UIApplication.getTopViewController()?.present(nextScreen, animated: true, completion: nil)
         }
     }
     
@@ -119,7 +119,7 @@ class Router {
         if let nextScreen = controller as? LanguageInterestsSelectionViewController {
             nextScreen.modalPresentationStyle = .fullScreen
             nextScreen.modalTransitionStyle = .crossDissolve
-            UIViewController.topViewController()?.present(nextScreen, animated: true, completion: nil)
+            UIApplication.getTopViewController()?.present(nextScreen, animated: true, completion: nil)
         }
     }
 }

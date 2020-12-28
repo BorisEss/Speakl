@@ -18,6 +18,9 @@
 		FA417564257FDF6700CF416B /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA417563257FDF6700CF416B /* Skill.swift */; };
 		FA417568257FE22E00CF416B /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA417566257FE22E00CF416B /* SkillTableViewCell.swift */; };
 		FA417569257FE22E00CF416B /* SkillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA417567257FE22E00CF416B /* SkillTableViewCell.xib */; };
+		FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA417FC42590DD2F00F9D81B /* Teacher.storyboard */; };
+		FA417FC82590DE8B00F9D81B /* TeacherNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA417FC72590DE8B00F9D81B /* TeacherNetworkViewController.swift */; };
+		FA417FDE2590F40F00F9D81B /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA417FDD2590F40F00F9D81B /* UIApplicationExtension.swift */; };
 		FA4B6112256EAEA1005501BD /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B6111256EAEA1005501BD /* AuthPresenter.swift */; };
 		FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B6115256F7BE7005501BD /* Endpoints.swift */; };
 		FA4B61342570036C005501BD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B61332570036C005501BD /* APIClient.swift */; };
@@ -112,6 +115,9 @@
 		FA417563257FDF6700CF416B /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		FA417566257FE22E00CF416B /* SkillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
 		FA417567257FE22E00CF416B /* SkillTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillTableViewCell.xib; sourceTree = "<group>"; };
+		FA417FC42590DD2F00F9D81B /* Teacher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Teacher.storyboard; sourceTree = "<group>"; };
+		FA417FC72590DE8B00F9D81B /* TeacherNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherNetworkViewController.swift; sourceTree = "<group>"; };
+		FA417FDD2590F40F00F9D81B /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		FA4B6111256EAEA1005501BD /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
 		FA4B6115256F7BE7005501BD /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		FA4B61332570036C005501BD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -237,6 +243,15 @@
 				FA4B6111256EAEA1005501BD /* AuthPresenter.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		FA417FC22590D86600F9D81B /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				FA417FC42590DD2F00F9D81B /* Teacher.storyboard */,
+				FA417FC72590DE8B00F9D81B /* TeacherNetworkViewController.swift */,
+			);
+			path = Teacher;
 			sourceTree = "<group>";
 		};
 		FA4B6114256F7BA5005501BD /* Networking */ = {
@@ -425,6 +440,7 @@
 				FA9F6C132583677400AC5197 /* UIColorExtension.swift */,
 				FAEBEA3D258B4CC90077D942 /* UIButtonExtension.swift */,
 				FA63DA3E258D030900722CA6 /* NotificationExtension.swift */,
+				FA417FDD2590F40F00F9D81B /* UIApplicationExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -440,6 +456,7 @@
 				FA4D4477257940AB00398AE2 /* Web Browser */,
 				FA4D4493257E442A00398AE2 /* Language  */,
 				FA63DA37258CF3B900722CA6 /* User */,
+				FA417FC22590D86600F9D81B /* Teacher */,
 			);
 			path = "App Modules";
 			sourceTree = "<group>";
@@ -589,6 +606,7 @@
 				FA812D77256298450036F162 /* Assets.xcassets in Resources */,
 				FA812D88256640BF0036F162 /* Tutorial.storyboard in Resources */,
 				FA7B72D825669A31003F9A0C /* IBMPlexSans-Regular.ttf in Resources */,
+				FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */,
 				FA3C26132569559C0089F646 /* Auth.storyboard in Resources */,
 				FA812D75256298440036F162 /* Main.storyboard in Resources */,
 			);
@@ -685,6 +703,7 @@
 				FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */,
 				FA4B616F25713362005501BD /* DataExtension.swift in Sources */,
 				FA4B6144257015BE005501BD /* NetworkError.swift in Sources */,
+				FA417FC82590DE8B00F9D81B /* TeacherNetworkViewController.swift in Sources */,
 				FA4D4484257A9B6000398AE2 /* AuthViewControllerActions.swift in Sources */,
 				FA4B619025752134005501BD /* MessageObject.swift in Sources */,
 				FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */,
@@ -741,6 +760,7 @@
 				FA812D8E256641940036F162 /* UIGradientView.swift in Sources */,
 				FA4B618B25750412005501BD /* CurrentUser.swift in Sources */,
 				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,
+				FA417FDE2590F40F00F9D81B /* UIApplicationExtension.swift in Sources */,
 				FA4D44682578CF1E00398AE2 /* Storage.swift in Sources */,
 				FA7B72D0256690C1003F9A0C /* UIViewExtension.swift in Sources */,
 				FA417564257FDF6700CF416B /* Skill.swift in Sources */,

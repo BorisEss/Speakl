@@ -11,7 +11,7 @@
         <!--Main Tab Bar View Controller-->
         <scene sceneID="7K9-yY-th6">
             <objects>
-                <tabBarController storyboardIdentifier="MainTabBarViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MhR-30-8YE" customClass="MainTabBarViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MhR-30-8YE" customClass="MainTabBarViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="vtg-1A-6Zw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

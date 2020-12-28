@@ -11,15 +11,16 @@ import EasyTipView
 class MainTabBarViewController: UITabBarController {
     
     private var addButton = UIButton()
+    private var tipView: EasyTipView?
     
     let item1 = UIStoryboard(name: "Main",
-                             bundle: nil).instantiateViewController(withIdentifier: "ViewController")
+                             bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
     let item2 = UIStoryboard(name: "Main",
-                             bundle: nil).instantiateViewController(withIdentifier: "ViewController")
+                             bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
     let item3 = UIStoryboard(name: "Main",
-                             bundle: nil).instantiateViewController(withIdentifier: "ViewController")
+                             bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
     let item4 = UIStoryboard(name: "Main",
-                             bundle: nil).instantiateViewController(withIdentifier: "ViewController")
+                             bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,8 +123,8 @@ class MainTabBarViewController: UITabBarController {
         let contentView = UIView(frame: CGRect(x: 0, y: 0, width: 91, height: 44))
         contentView.addSubview(stackView)
         stackView.center = CGPoint(x: contentView.center.x, y: contentView.center.y-3)
-        let tipView = EasyTipView(contentView: contentView, preferences: preferences)
-        tipView.show(forView: self.addButton)
+        tipView = EasyTipView(contentView: contentView, preferences: preferences)
+        tipView?.show(forView: self.addButton)
     }
     
     @objc func updateTitles() {
@@ -134,6 +135,12 @@ class MainTabBarViewController: UITabBarController {
     }
     
     @objc func addButtonPressed(sender: UIButton!) {
-        showToolTip()
+        tipView?.dismiss()
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Teacher", bundle: nil)
+        let identifier = "TeacherNetworkViewController"
+        let controller = storyBoard.instantiateViewController(withIdentifier: identifier)
+        if let nextScreen = controller as? TeacherNetworkViewController {
+            UIApplication.getTopViewController()?.navigationController?.pushViewController(nextScreen, animated: true)
+        }
     }
 }

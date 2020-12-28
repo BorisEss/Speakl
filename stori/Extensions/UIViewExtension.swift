@@ -41,3 +41,36 @@ extension UIView {
         }
     }
 }
+
+// MARK: - Custom Shadow extension
+extension UIView {
+    @IBInspectable var shadowColor: UIColor? {
+        get { if let color = layer.shadowColor {
+            return UIColor(cgColor: color)
+        } else {
+            return nil
+        }
+        }
+        set (newValue) {
+            self.layer.shadowColor = newValue?.cgColor
+        }
+    }
+    @IBInspectable var shadowRadius: CGFloat {
+        get { return layer.shadowRadius }
+        set (newValue) {
+            self.layer.shadowRadius = newValue
+        }
+    }
+    @IBInspectable var shadowOpacity: CGFloat {
+        get { return CGFloat(layer.shadowOpacity) }
+        set (newValue) {
+            self.layer.shadowOpacity = Float(newValue)
+        }
+    }
+    @IBInspectable var shadowOffset: CGSize {
+        get { return layer.shadowOffset }
+        set (newValue) {
+            self.layer.shadowOffset = newValue
+        }
+    }
+}
