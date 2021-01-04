@@ -100,7 +100,6 @@ class LanguagePresenter {
                                learningLanguageLevel: LanguageLevel?,
                                interests: [Interest],
                                completion: @escaping (_ isSuccess: Bool) -> Void) {
-        // TODO: fix this
         if let nativeLanguage = nativeLanguage {
             updateUser(body: ["native_lang_id": nativeLanguage.id]) { _ in
                 self.updateLearningLanguage(learningLanguage: learningLanguage,

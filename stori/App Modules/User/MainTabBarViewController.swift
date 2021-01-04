@@ -19,8 +19,6 @@ class MainTabBarViewController: UITabBarController {
                              bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
     let item3 = UIStoryboard(name: "Main",
                              bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
-    let item4 = UIStoryboard(name: "Main",
-                             bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,17 +30,7 @@ class MainTabBarViewController: UITabBarController {
         tabBar.layer.shadowOpacity = 0.15
 
         loadTabButtons()
-        loadAddButton()
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(self.showToolTip),
-                                               name: .showAddStoriToolTip,
-                                               object: nil)
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(self.updateTitles),
-                                               name: .updateLanguage,
-                                               object: nil)
+//        loadAddButton()
     }
 
     override func viewDidLayoutSubviews() {
@@ -53,14 +41,17 @@ class MainTabBarViewController: UITabBarController {
     private func loadTabButtons() {
         item1.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_learn".localized,
                                         image: UIImage(named: "learnTab"), tag: 0)
-        item2.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_practice".localized,
-                                        image: UIImage(named: "practiceTab"), tag: 0)
-        item3.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_vocabulary".localized,
+        item2.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_vocabulary".localized,
                                         image: UIImage(named: "vocabularyTab"), tag: 0)
-        item4.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_profile".localized,
+        item3.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_profile".localized,
                                         image: UIImage(named: "profileTab"), tag: 0)
 
-        viewControllers = [item1, item2, item3, item4]
+        viewControllers = [item1, item2, item3]
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.updateTitles),
+                                               name: .updateLanguage,
+                                               object: nil)
     }
     
     private func loadAddButton() {
@@ -75,6 +66,11 @@ class MainTabBarViewController: UITabBarController {
         tabBar.addSubview(addButton)
         
         addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.showToolTip),
+                                               name: .showAddStoriToolTip,
+                                               object: nil)
     }
     
     @objc private func showToolTip() {
@@ -129,9 +125,8 @@ class MainTabBarViewController: UITabBarController {
     
     @objc func updateTitles() {
         item1.title = "main_nav_controller_tab_title_learn".localized
-        item2.title = "main_nav_controller_tab_title_practice".localized
-        item3.title = "main_nav_controller_tab_title_vocabulary".localized
-        item4.title = "main_nav_controller_tab_title_profile".localized
+        item2.title = "main_nav_controller_tab_title_vocabulary".localized
+        item3.title = "main_nav_controller_tab_title_profile".localized
     }
     
     @objc func addButtonPressed(sender: UIButton!) {
