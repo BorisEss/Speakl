@@ -23,11 +23,9 @@ class AuthPresenter {
         .then { (request) -> Promise<AuthModel> in
             return APIClient.request(with: request)
         }
-        .then { (model) -> Promise<Void>  in
+        .done { (model) in
             KeychainManager.shared.token = model.token
-            return UserClient.getCurrentUser()
-        }
-        .done { _ in
+            Storage.shared.currentUser = model.user
             completion(true)
         }
         .catch { (error) in
@@ -52,11 +50,9 @@ class AuthPresenter {
         .then { (request) -> Promise<AuthModel> in
             return APIClient.request(with: request)
         }
-        .then { (model) -> Promise<Void>  in
+        .done { (model) in
             KeychainManager.shared.token = model.token
-            return UserClient.getCurrentUser()
-        }
-        .done { _ in
+            Storage.shared.currentUser = model.user
             completion(true)
         }
         .catch { (error) in
@@ -119,11 +115,9 @@ class AuthPresenter {
         .then { (request) -> Promise<AuthModel> in
             return APIClient.request(with: request)
         }
-        .then { (model) -> Promise<Void>  in
+        .done { (model) in
             KeychainManager.shared.token = model.token
-            return UserClient.getCurrentUser()
-        }
-        .done { _ in
+            Storage.shared.currentUser = model.user
             completion(true)
         }
         .catch { (error) in
@@ -143,11 +137,9 @@ class AuthPresenter {
         .then { (request) -> Promise<AuthModel> in
             return APIClient.request(with: request)
         }
-        .then { (model) -> Promise<Void>  in
+        .done { (model) in
             KeychainManager.shared.token = model.token
-            return UserClient.getCurrentUser()
-        }
-        .done { _ in
+            Storage.shared.currentUser = model.user
             completion(true)
         }
         .catch { (error) in
@@ -169,11 +161,9 @@ class AuthPresenter {
         .then { (request) -> Promise<AuthModel> in
             return APIClient.request(with: request)
         }
-        .then { (model) -> Promise<Void>  in
+        .done { (model) in
             KeychainManager.shared.token = model.token
-            return UserClient.getCurrentUser()
-        }
-        .done { _ in
+            Storage.shared.currentUser = model.user
             completion(true)
         }
         .catch { (error) in

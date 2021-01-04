@@ -11,16 +11,16 @@ import PromiseKit
 class LanguageInterestsSelectionViewController: UIViewController {
 
     // MARK: - Internal proprietes
+    var nativeLanguage: Language?
+    var learningLanguage: Language?
+    var selectedLevel: LanguageLevel?
     var interests: [Interest] = [] {
         didSet {
             collectionView.reloadData()
         }
     }
-    var shouldGoBack: Bool = false
     
     // MARK: - Outlets
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var leftSpacingTitleLabelConstraint: NSLayoutConstraint!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var progressActivityIndicator: UIActivityIndicatorView!
@@ -63,7 +63,10 @@ class LanguageInterestsSelectionViewController: UIViewController {
         collectionView.isUserInteractionEnabled = false
         nextProgressActivityIndicator.startAnimating()
         nextButton.isHidden = true
-        LanguagePresenter().updateInterests(interests: selectedInterests) { (isSuccess) in
+        LanguagePresenter().updateLanguageDetails(nativeLanguage: nativeLanguage,
+                                                  learningLanguage: learningLanguage,
+                                                  learningLanguageLevel: selectedLevel,
+                                                  interests: selectedInterests) { (isSuccess) in
             self.collectionView.isUserInteractionEnabled = true
             self.nextProgressActivityIndicator.stopAnimating()
             self.nextButton.isHidden = false
@@ -75,8 +78,6 @@ class LanguageInterestsSelectionViewController: UIViewController {
     
     // MARK: - UI Setup
     private func setUpView() {
-        backButton.isHidden = !shouldGoBack
-        leftSpacingTitleLabelConstraint.constant = !shouldGoBack ? -7 : 33
         setUpCollectionView()
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lry-uT-T8C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wT9-MH-dnx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="IBMPlexSans-Light.ttf">
+            <string>IBMPlexSans-Light</string>
+        </array>
         <array key="IBMPlexSans-Regular.ttf">
             <string>IBMPlexSans</string>
         </array>
@@ -24,7 +27,17 @@
                 <viewControllerPlaceholder storyboardName="LanguagePopup" id="W1P-Xc-zUJ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OB3-KY-Il3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-230" y="-271"/>
+            <point key="canvasLocation" x="-1703" y="-155"/>
+        </scene>
+        <!--LanguageSelectViewController-->
+        <scene sceneID="Q91-Qx-W9L">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LanguageSelect" referencedIdentifier="LanguageSelectViewController" id="DxK-bO-Euu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="amN-02-sHR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otz-D9-Jyw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1679" y="5"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="jOs-5e-NXJ">
@@ -243,6 +256,12 @@ your vocabulary</string>
                                             <constraint firstItem="Dxd-jU-aAL" firstAttribute="top" secondItem="3D3-Bu-wAe" secondAttribute="top" id="sg8-xi-4kt"/>
                                         </constraints>
                                     </view>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing up to Stori app, you agree  with our Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywe-Yn-E7C">
+                                        <rect key="frame" x="0.0" y="609" width="358" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-BS-4pe">
                                         <rect key="frame" x="0.0" y="625" width="358" height="73.5"/>
                                         <subviews>
@@ -408,7 +427,9 @@ your vocabulary</string>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <navigationItem key="navigationItem" id="SgG-dr-yfL"/>
                     <connections>
+                        <outlet property="agreementLabel" destination="ywe-Yn-E7C" id="4jv-2l-jhO"/>
                         <outlet property="appleActivityIndicator" destination="pQM-T7-YK9" id="yRG-NX-RfQ"/>
                         <outlet property="appleButton" destination="4Ju-KW-0a1" id="Pk8-OX-87r"/>
                         <outlet property="bottomButtonsView" destination="GzA-16-NNp" id="3MA-Re-zDw"/>
@@ -435,30 +456,42 @@ your vocabulary</string>
                         <outlet property="titleLabel" destination="tNs-RS-W7f" id="4bS-7X-K73"/>
                         <outlet property="usernameTextField" destination="wBa-ep-V1D" id="kaP-5M-IjP"/>
                         <segue destination="W1P-Xc-zUJ" kind="custom" identifier="showLanguagePopup" customClass="SwiftMessagesTopTabSegue" customModule="stori" customModuleProvider="target" id="ph8-yM-ep3"/>
+                        <segue destination="cfN-qd-qZu" kind="show" identifier="showTermsAndConditions" id="fc2-jB-tlt"/>
+                        <segue destination="DxK-bO-Euu" kind="show" identifier="continueSignUp" id="8IP-3f-T4R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR6-0B-Dcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-230.43478260869566" y="164.73214285714286"/>
+            <point key="canvasLocation" x="-2278" y="5"/>
+        </scene>
+        <!--WebBrowser-->
+        <scene sceneID="0hN-CK-cLl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WebBrowser" id="cfN-qd-qZu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="k8N-hE-3uL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s5p-zz-ao3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1720" y="160"/>
+        </scene>
+        <!--Auth Navigation Controller-->
+        <scene sceneID="A4a-qY-qWB">
+            <objects>
+                <navigationController storyboardIdentifier="AuthNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="wT9-MH-dnx" customClass="AuthNavigationController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0WF-Tm-f3R">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lry-uT-T8C" kind="relationship" relationship="rootViewController" id="Ig0-cG-S6U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Nw-U5-ubL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3188" y="5"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="BRw-B7-GmL">
-            <size key="intrinsicContentSize" width="80" height="21"/>
-        </designable>
-        <designable name="Qb9-Xi-82l">
-            <size key="intrinsicContentSize" width="44" height="22.5"/>
-        </designable>
-        <designable name="WFc-CR-ZWK">
-            <size key="intrinsicContentSize" width="44.5" height="22.5"/>
-        </designable>
-        <designable name="osF-Ee-XLd">
-            <size key="intrinsicContentSize" width="141.5" height="21"/>
-        </designable>
-        <designable name="wBa-ep-V1D">
-            <size key="intrinsicContentSize" width="83" height="22.5"/>
-        </designable>
-    </designables>
     <resources>
         <image name="apple_auth" width="40" height="40"/>
         <image name="auth_image" width="320" height="630"/>

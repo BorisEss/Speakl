@@ -20,9 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        SDImageCache.shared.clearMemory()
-        SDImageCache.shared.clearDisk()
-        
         // MARK: IQKeyboardManager Set Up
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.toolbarTintColor = .systemBlue

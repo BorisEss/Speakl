@@ -48,6 +48,13 @@ class LanguageSelectViewController: UIViewController {
         return .lightContent
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nextVc = segue.destination as? LanguageLevelSelectionViewController {
+            nextVc.nativeLanguage = nativeLanguage
+            nextVc.learningLanguage = learningLanguage
+        }
+    }
+    
     // MARK: - Button Actions
     @IBAction func backButtonPressed(_ sender: Any) {
         if shouldGoBack {
@@ -73,21 +80,7 @@ class LanguageSelectViewController: UIViewController {
         case .native:
             state = .learning
         case .learning:
-            if let native = nativeLanguage,
-               let selected = learningLanguage {
-                nextButton.isHidden = true
-                tableView.isUserInteractionEnabled = false
-                progressActivityIndicator.startAnimating()
-                LanguagePresenter().updateLanguages(native: native,
-                                                    learning: selected) { (isSuccess) in
-                    self.nextButton.isHidden = false
-                    self.tableView.isUserInteractionEnabled = true
-                    self.progressActivityIndicator.stopAnimating()
-                    if isSuccess {
-                        Router.load()
-                    }
-                }
-            }
+            self.performSegue(withIdentifier: "goNext", sender: nil)
         }
     }
     

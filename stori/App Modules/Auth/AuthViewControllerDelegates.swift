@@ -73,6 +73,7 @@ extension AuthViewController: KeyboardApperenceHandlerDelegate {
         case .signup:
             logoSection.isHidden = true
             titleLabel.isHidden = true
+            agreementLabel.isHidden = true
         case .forgotPassword:
             break
         case .resetPassword:
@@ -90,6 +91,7 @@ extension AuthViewController: KeyboardApperenceHandlerDelegate {
         case .signup:
             logoSection.isHidden = false
             titleLabel.isHidden = false
+            agreementLabel.isHidden = false
         case .forgotPassword:
             break
         case .resetPassword:
@@ -124,9 +126,7 @@ extension AuthViewController: GIDSignInDelegate {
             AuthPresenter().googleAuth(token: token) { (isSuccess) in
                 self.googleButton.isHidden = false
                 self.googleActivityIndicator.stopAnimating()
-                if isSuccess {
-                    Router.load()
-                }
+                if isSuccess { self.continueToNextScreen() }
             }
         } else {
             googleButton.isHidden = false
@@ -169,9 +169,7 @@ extension AuthViewController: ASAuthorizationControllerDelegate {
                                           code: code) { (isSuccess) in
                     self.appleButton.isHidden = false
                     self.appleActivityIndicator.stopAnimating()
-                    if isSuccess {
-                        Router.load()
-                    }
+                    if isSuccess { self.continueToNextScreen() }
                 }
             } else {
                 NetworkError.unknownError.parse()

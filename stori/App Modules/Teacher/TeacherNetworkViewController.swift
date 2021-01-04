@@ -12,7 +12,6 @@ class TeacherNetworkViewController: UIViewController {
     @IBOutlet weak var createStoryLabel: UILabel!
     @IBOutlet weak var translateStoryLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -33,9 +33,7 @@ extension AuthViewController {
             self.socialView.isUserInteractionEnabled = true
             self.firstBottomButton.isEnabled = true
             self.secondBottomButton.isEnabled = true
-            if isSuccess {
-                Router.load()
-            }
+            if isSuccess { self.continueToNextScreen() }
         }
     }
     
@@ -72,9 +70,7 @@ extension AuthViewController {
                 self.repeatPasswordTextField.isEnabled = true
                 self.firstBottomButton.isEnabled = true
                 self.secondBottomButton.isEnabled = true
-                if isSuccess {
-                    Router.load()
-                }
+                if isSuccess { self.continueToNextScreen() }
             }
         }
     }
@@ -138,6 +134,17 @@ extension AuthViewController {
                     Toast.success("auth_vc_alert_password_was_reset".localized)
                     self.authType = .login
                 }
+            }
+        }
+    }
+    
+    func continueToNextScreen() {
+        if let user = Storage.shared.currentUser {
+            switch user.userStatus {
+            case .completed:
+                Router.load()
+            case .shouldUpdateLanguage:
+                performSegue(withIdentifier: Segues.continueSignUp.rawValue, sender: nil)
             }
         }
     }

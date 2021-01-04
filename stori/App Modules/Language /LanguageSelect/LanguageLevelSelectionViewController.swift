@@ -10,7 +10,8 @@ import UIKit
 class LanguageLevelSelectionViewController: UIViewController {
 
     // MARK: - Internal proprietes
-    var shouldGoBack: Bool = false
+    var nativeLanguage: Language?
+    var learningLanguage: Language?
     var levels: [LanguageLevel] = [] {
         didSet {
             tableView.reloadData()
@@ -19,12 +20,8 @@ class LanguageLevelSelectionViewController: UIViewController {
     var selectedLevel: LanguageLevel?
 
     // MARK: - Outlets
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var leftSpacingTitleLabelConstraint: NSLayoutConstraint!
     @IBOutlet weak var subtitleLabel: UILabel!
-    @IBOutlet weak var testQuestionLabel: UILabel!
-    @IBOutlet weak var testButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var progressActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var nextButton: RegularButton!
@@ -36,10 +33,8 @@ class LanguageLevelSelectionViewController: UIViewController {
         
         setUpView()
         setUpLanguage()
-        
-        if let user = Storage.shared.currentUser,
-           let langId = user.langToLearn,
-           let language = Storage.shared.languageBy(id: langId) {
+
+        if let language = learningLanguage {
             LanguagePresenter().getLanguageLevels(language: language)
                 .done { (levels) in
                     self.levels = levels
@@ -55,33 +50,24 @@ class LanguageLevelSelectionViewController: UIViewController {
         return .lightContent
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nextVC = segue.destination as? LanguageInterestsSelectionViewController {
+            nextVC.nativeLanguage = nativeLanguage
+            nextVC.learningLanguage = learningLanguage
+            nextVC.selectedLevel = selectedLevel
+        }
+    }
+    
     // MARK: - Button Actions
     @IBAction func backButtonPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
-    @IBAction func beginTestButtonPressed(_ sender: Any) {
-        
-    }
     @IBAction func nextButtonPressed(_ sender: Any) {
-        if let level = selectedLevel {
-            nextButton.isHidden = true
-            tableView.isUserInteractionEnabled = false
-            nextButtonProgressActivityIndicator.startAnimating()
-            LanguagePresenter().updateLearningLanguageLevel(level: level) { (isSuccess) in
-                self.nextButton.isHidden = false
-                self.tableView.isUserInteractionEnabled = true
-                self.nextButtonProgressActivityIndicator.stopAnimating()
-                if isSuccess {
-                    Router.load()
-                }
-            }
-        }
+        performSegue(withIdentifier: "goNext", sender: nil)
     }
     
     // MARK: - UI Setup
     func setUpView() {
-        backButton.isHidden = !shouldGoBack
-        leftSpacingTitleLabelConstraint.constant = shouldGoBack ? 33 : -7
         setUpTableView()
     }
     func setUpTableView() {
@@ -90,13 +76,10 @@ class LanguageLevelSelectionViewController: UIViewController {
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 100))
     }
     func setUpLanguage() {
-        if let langId = Storage.shared.currentUser?.langToLearn,
-           let lang = Storage.shared.languageBy(id: langId) {
+        if let lang = learningLanguage {
             titleLabel.text = String(format: "select_lang_level_vc_page_title".localized, lang.name)
         }
         subtitleLabel.text = "select_lang_level_vc_page_subtitle".localized
-        testQuestionLabel.text = "select_lang_level_vc_page_test_question".localized
-        testButton.setTitle("select_lang_level_vc_page_test_button".localized, for: .normal)
         nextButton.setTitle("common_next_title".localized, for: .normal)
     }
 }

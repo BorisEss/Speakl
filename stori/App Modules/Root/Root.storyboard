@@ -73,6 +73,7 @@
                         <segue destination="uIt-JY-9J6" kind="show" identifier="showTutorial" id="vhZ-Eg-QBc"/>
                         <segue destination="3N6-nP-53O" kind="show" identifier="showAuth" id="HEG-qI-WW7"/>
                         <segue destination="O2j-uk-fFo" kind="show" identifier="showMain" id="Vva-ng-t1Q"/>
+                        <segue destination="Kx2-xG-Qgg" kind="show" identifier="showFinishSignUp" id="snk-dZ-zAb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9V-qb-xPu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -98,6 +99,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DiK-yV-sRC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="302" y="188"/>
+        </scene>
+        <!--MainNavigationController-->
+        <scene sceneID="qA3-mF-lt8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LanguageSelect" referencedIdentifier="MainNavigationController" id="Kx2-xG-Qgg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yyk-LK-2FM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ai5-xY-hth" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392" y="208"/>
         </scene>
         <!--MainTabBar-->
         <scene sceneID="Cdm-qS-Aa7">

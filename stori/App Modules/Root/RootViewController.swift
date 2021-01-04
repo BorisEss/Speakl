@@ -53,7 +53,7 @@ class RootViewController: UIViewController {
             }
         }
         .done { _ in
-//            Router.load()
+            Router.load()
         }
         .catch { (error) in
             self.activityIndicator.stopAnimating()

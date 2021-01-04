@@ -31,15 +31,6 @@ class LanguagePresenter {
         }
     }
     
-    func updateLanguages(native: Language,
-                         learning: Language,
-                         completion: @escaping (_ isSuccess: Bool) -> Void) {
-        updateUser(body: [
-            "native_lang": native.id,
-            "lang_to_learn": learning.id
-        ], completion: completion)
-    }
-    
     func getSkills() -> Promise<[Skill]> {
         return Promise<[Skill]> { promise in
             firstly {
@@ -60,13 +51,6 @@ class LanguagePresenter {
         }
     }
     
-    func updateSkills(skills: [Skill],
-                      completion: @escaping (_ isSuccess: Bool) -> Void) {
-        updateUser(body: [
-            "skill_ids": skills.map { $0.id }
-        ], completion: completion)
-    }
-    
     func getLanguageLevels(language: Language) -> Promise<[LanguageLevel]> {
         return Promise<[LanguageLevel]> { promise in
             firstly {
@@ -79,19 +63,13 @@ class LanguagePresenter {
             }
             .done { levels in
                 promise.fulfill(levels)
+
             }
             .catch { (error) in
                 error.parse()
                 promise.reject(error)
             }
         }
-    }
-    
-    func updateLearningLanguageLevel(level: LanguageLevel,
-                                     completion: @escaping (_ isSuccess: Bool) -> Void) {
-        updateUser(body: [
-            "lang_to_learn_level": level.id
-        ], completion: completion)
     }
     
     func getInterests() -> Promise<[Interest]> {
@@ -117,22 +95,61 @@ class LanguagePresenter {
         }
     }
     
-    func updateInterests(interests: [Interest],
-                         completion: @escaping (_ isSuccess: Bool) -> Void) {
+    func updateLanguageDetails(nativeLanguage: Language?,
+                               learningLanguage: Language?,
+                               learningLanguageLevel: LanguageLevel?,
+                               interests: [Interest],
+                               completion: @escaping (_ isSuccess: Bool) -> Void) {
+        // TODO: fix this
+        if let nativeLanguage = nativeLanguage {
+            updateUser(body: ["native_lang_id": nativeLanguage.id]) { _ in
+                self.updateLearningLanguage(learningLanguage: learningLanguage,
+                                       learningLanguageLevel: learningLanguageLevel,
+                                       interests: interests,
+                                       completion: completion)
+            }
+        } else {
+            updateLearningLanguage(learningLanguage: learningLanguage,
+                                   learningLanguageLevel: learningLanguageLevel,
+                                   interests: interests,
+                                   completion: completion)
+        }
+    }
+    
+    private func updateLearningLanguage(learningLanguage: Language?,
+                                        learningLanguageLevel: LanguageLevel?,
+                                        interests: [Interest],
+                                        completion: @escaping (_ isSuccess: Bool) -> Void) {
         firstly {
-            return Request(endpoint: Endpoints.updateInterests, method: .post)
-                .set(body: [
-                    "interest_ids": interests.map { $0.id }
-                ])
-                .authorise()
-                .build()
+            return Promise<Void> { promise in
+                if let learningLanguage = learningLanguage,
+                   let learningLanguageLevel = learningLanguageLevel {
+                    self.updateUser(body: [
+                        "learn_lang_id": learningLanguage.id,
+                        "level_id": learningLanguageLevel.id,
+                        "interest_ids": interests.map { $0.id }
+                    ]) { _ in
+                        promise.fulfill_()
+                    }
+                } else {
+                    promise.fulfill_()
+                }
+            }
         }
-        .then { (request) -> Promise<SuccessMessage> in
-            return APIClient.request(with: request)
-        }
-        .then { _ -> Promise<Void> in
-            return UserClient.getCurrentUser()
-        }
+//        .then { _ -> Promise<URLRequest> in
+//            return Request(endpoint: Endpoints.updateInterests, method: .post)
+//                .set(body: [
+//                    "interest_ids": interests.map { $0.id }
+//                ])
+//                .authorise()
+//                .build()
+//        }
+//        .then { (request) -> Promise<SuccessMessage> in
+//            return APIClient.request(with: request)
+//        }
+//        .then { _ -> Promise<Void> in
+//            return UserClient.getCurrentUser()
+//        }
         .done { _ in
             completion(true)
         }
@@ -141,4 +158,51 @@ class LanguagePresenter {
             completion(false)
         }
     }
+//    func updateLanguages(native: Language,
+//                         learning: Language,
+//                         completion: @escaping (_ isSuccess: Bool) -> Void) {
+//        updateUser(body: [
+//            "native_lang": native.id,
+//            "lang_to_learn": learning.id
+//        ], completion: completion)
+//    }
+//
+//    func updateSkills(skills: [Skill],
+//                      completion: @escaping (_ isSuccess: Bool) -> Void) {
+//        updateUser(body: [
+//            "skill_ids": skills.map { $0.id }
+//        ], completion: completion)
+//    }
+//
+//    func updateLearningLanguageLevel(level: LanguageLevel,
+//                                     completion: @escaping (_ isSuccess: Bool) -> Void) {
+//        updateUser(body: [
+//            "lang_to_learn_level": level.id
+//        ], completion: completion)
+//    }
+//
+//    func updateInterests(interests: [Interest],
+//                         completion: @escaping (_ isSuccess: Bool) -> Void) {
+//        firstly {
+//            return Request(endpoint: Endpoints.updateInterests, method: .post)
+//                .set(body: [
+//                    "interest_ids": interests.map { $0.id }
+//                ])
+//                .authorise()
+//                .build()
+//        }
+//        .then { (request) -> Promise<SuccessMessage> in
+//            return APIClient.request(with: request)
+//        }
+//        .then { _ -> Promise<Void> in
+//            return UserClient.getCurrentUser()
+//        }
+//        .done { _ in
+//            completion(true)
+//        }
+//        .catch { (error) in
+//            error.parse()
+//            completion(false)
+//        }
+//    }
 }

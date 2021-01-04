@@ -34,6 +34,7 @@ extension AuthViewController {
         passwordTextField.isHidden = false
         passwordTextField.returnKeyType = .done
         repeatPasswordTextField.isHidden = true
+        agreementLabel.isHidden = true
         socialView.isHidden = false
         passwordTextField.textContentType = .password
         firstBottomButton.setTitle("auth_vc_button_title_signup".localized,
@@ -60,6 +61,7 @@ extension AuthViewController {
         passwordTextField.returnKeyType = .next
         repeatPasswordTextField.isHidden = false
         repeatPasswordTextField.returnKeyType = .done
+        agreementLabel.isHidden = false
         socialView.isHidden = true
         passwordTextField.textContentType = .newPassword
         let ruleString = "required: lower; required: upper; required: digit; minlength: 8; maxlength: 16;"
@@ -82,6 +84,7 @@ extension AuthViewController {
         codeTextField.isHidden = true
         passwordTextField.isHidden = true
         repeatPasswordTextField.isHidden = true
+        agreementLabel.isHidden = true
         socialView.isHidden = true
         firstBottomButton.setTitle("auth_vc_button_title_signup".localized,
                                    for: .normal)
@@ -101,6 +104,7 @@ extension AuthViewController {
         passwordTextField.returnKeyType = .next
         repeatPasswordTextField.isHidden = false
         repeatPasswordTextField.returnKeyType = .done
+        agreementLabel.isHidden = true
         socialView.isHidden = true
         firstBottomButton.setTitle("auth_vc_button_title_signup".localized,
                                    for: .normal)
@@ -119,6 +123,7 @@ extension AuthViewController {
         passwordTextField.placeholder = "auth_vc_field_placeholder_password".localized
         repeatPasswordTextField.placeholder = "auth_vc_field_placeholder_repeat_password".localized
         socialLabel.text = "auth_vc_social_media_option_title".localized
+        agreementLabel.text = "auth_vc_agreement".localized
     }
     
     func setEmptyFields() {

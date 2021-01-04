@@ -22,7 +22,7 @@ extension UITextField {
         if validate() {
             guard let fieldValue = text else { return false }
             if !fieldValue.isValidEmail {
-                Toast.error("auth_vc_error_wrong_email_format".localized)
+                Toast.error("common_wrong_email_format".localized)
                 becomeFirstResponder()
                 return false
             }

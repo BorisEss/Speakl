@@ -18,6 +18,12 @@ enum AuthScreenType {
 
 class AuthViewController: UIViewController {
     
+    enum Segues: String {
+        case languageSelector = "showLanguagePopup"
+        case termsAndConditions = "showTermsAndConditions"
+        case continueSignUp = "continueSignUp"
+    }
+    
     // MARK: - Internal proprietes
     private lazy var keyboardHandler = KeyboardApperenceHandler()
     var authType: AuthScreenType = .login {
@@ -50,6 +56,8 @@ class AuthViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var progressActivityIndicator: UIActivityIndicatorView!
+    
+    @IBOutlet weak var agreementLabel: UILabel!
     
     @IBOutlet weak var socialView: UIStackView!
     @IBOutlet weak var socialLabel: UILabel!
@@ -93,12 +101,18 @@ class AuthViewController: UIViewController {
                 self.setUpLanguageButton()
                 self.setUpLanguage()
             }
+            return
+        }
+        if let controller = segue.destination as? WebBrowserViewController {
+            controller.title = "common_terms_and_conditions".localized
+            controller.url = Endpoints.termsAndConditions
+            return
         }
     }
     
     // MARK: - Button Actions
     @IBAction func languageButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "showLanguagePopup", sender: nil)
+        performSegue(withIdentifier: Segues.languageSelector.rawValue, sender: nil)
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
@@ -124,9 +138,7 @@ class AuthViewController: UIViewController {
             switch result {
             case .success(let token):
                 AuthPresenter().facebookAuth(token: token) { (isSuccess) in
-                    if isSuccess {
-                        Router.load()
-                    }
+                    if isSuccess { self.continueToNextScreen() }
                 }
             case .failure(let error):
                 error.parse()
@@ -171,7 +183,7 @@ class AuthViewController: UIViewController {
         case .login:
             authType = .forgotPassword
         case .signup:
-            Router.showWebBrowser(url: Endpoints.termsAndConditions)
+            performSegue(withIdentifier: Segues.termsAndConditions.rawValue, sender: nil)
         case .forgotPassword, .resetPassword:
             authType = .login
         }

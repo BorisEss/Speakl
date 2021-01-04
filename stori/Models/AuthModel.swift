@@ -9,5 +9,5 @@ import Foundation
 
 struct AuthModel: Decodable {
     var token: String
-    var user: AuthUser
+    var user: CurrentUser
 }
