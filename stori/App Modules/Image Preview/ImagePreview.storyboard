@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O8T-Al-9Kp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Regular.ttf">
+            <string>IBMPlexSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Image Preview View Controller-->
+        <scene sceneID="zem-1c-cGX">
+            <objects>
+                <viewController storyboardIdentifier="ImagePreviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="O8T-Al-9Kp" customClass="ImagePreviewViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fNr-3K-XBf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL6-hI-yhe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Wk-t7-PuW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8Wk-t7-PuW" secondAttribute="bottom" id="13e-E5-7Mw"/>
+                                    <constraint firstItem="8Wk-t7-PuW" firstAttribute="top" secondItem="vL6-hI-yhe" secondAttribute="top" id="Exx-Zd-pjA"/>
+                                    <constraint firstItem="8Wk-t7-PuW" firstAttribute="leading" secondItem="vL6-hI-yhe" secondAttribute="leading" id="Ndl-XV-i1S"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Wk-t7-PuW" secondAttribute="trailing" id="SJD-cm-ruu"/>
+                                    <constraint firstItem="8Wk-t7-PuW" firstAttribute="centerX" secondItem="vL6-hI-yhe" secondAttribute="centerX" id="fNe-wD-Ijh"/>
+                                    <constraint firstItem="8Wk-t7-PuW" firstAttribute="centerY" secondItem="vL6-hI-yhe" secondAttribute="centerY" id="qvf-6D-dsE"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="O8T-Al-9Kp" id="nQZ-2x-z32"/>
+                                </connections>
+                            </scrollView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No image to show" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMK-52-G1F">
+                                <rect key="frame" x="139" y="437" width="136" height="22.5"/>
+                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uwv-9a-koJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vMK-52-G1F" firstAttribute="centerY" secondItem="fNr-3K-XBf" secondAttribute="centerY" id="A3y-Sb-Au6"/>
+                            <constraint firstItem="Uwv-9a-koJ" firstAttribute="bottom" secondItem="vL6-hI-yhe" secondAttribute="bottom" id="R8T-cr-395"/>
+                            <constraint firstItem="vL6-hI-yhe" firstAttribute="leading" secondItem="Uwv-9a-koJ" secondAttribute="leading" id="RqY-7r-Kau"/>
+                            <constraint firstItem="vL6-hI-yhe" firstAttribute="top" secondItem="Uwv-9a-koJ" secondAttribute="top" id="Xe1-5w-5dR"/>
+                            <constraint firstItem="vMK-52-G1F" firstAttribute="centerX" secondItem="fNr-3K-XBf" secondAttribute="centerX" id="l7V-V3-b5R"/>
+                            <constraint firstItem="Uwv-9a-koJ" firstAttribute="trailing" secondItem="vL6-hI-yhe" secondAttribute="trailing" id="llH-dA-GVE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="8Wk-t7-PuW" id="4BG-lL-yzT"/>
+                        <outlet property="noDataLabel" destination="vMK-52-G1F" id="jUC-kj-dDu"/>
+                        <outlet property="scrollView" destination="vL6-hI-yhe" id="NtU-PQ-G1V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N7r-qH-iEy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="125.89285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

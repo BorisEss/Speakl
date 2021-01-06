@@ -34,6 +34,8 @@ target 'stori' do
   pod 'TextFieldEffects'
   pod 'SwiftMessages'
   pod 'EasyTipView'
+  pod 'NVActivityIndicatorView'
+  pod 'YPImagePicker'
 #  pod 'SideMenu'
 #  pod 'SimpleCheckbox'
 #  pod 'Cluster'

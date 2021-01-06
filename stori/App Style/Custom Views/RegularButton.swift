@@ -15,6 +15,12 @@ class RegularButton: UIButton {
         }
     }
     
+    @IBInspectable var whiteStyle: Bool = false {
+        didSet {
+            updateStyle()
+        }
+    }
+    
     override var isEnabled: Bool {
         didSet {
             updateStyle()
@@ -35,6 +41,10 @@ class RegularButton: UIButton {
         setTitleColor(darkStyle ? .darkButtonTitle : .lightButtonTitle, for: .normal)
         if isEnabled {
             backgroundColor = darkStyle ? .darkButtonBackground : .lightButtonBackground
+            if whiteStyle {
+                backgroundColor = .white
+                setTitleColor(.black, for: .normal)
+            }
         } else {
             backgroundColor = .disabledButtonBackground
         }

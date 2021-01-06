@@ -96,8 +96,8 @@ class MainTabBarViewController: UITabBarController {
         preferences.animating.dismissDuration = 1
         
         // Tip Content
-        preferences.positioning.contentHInset = 8
-        preferences.positioning.contentVInset = 8
+//        preferences.positioning.contentHInset = 8
+//        preferences.positioning.contentVInset = 8
         
         let tipTitleLabel = UILabel()
         tipTitleLabel.font = .IBMPlexSans(size: 14)

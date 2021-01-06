@@ -49,6 +49,12 @@
 		FA4D448B257C172F00398AE2 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D448A257C172F00398AE2 /* UIImageViewExtension.swift */; };
 		FA4D4496257E48B700398AE2 /* LanguageSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4D4495257E48B700398AE2 /* LanguageSelect.storyboard */; };
 		FA4D4499257E48CE00398AE2 /* LanguageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4498257E48CE00398AE2 /* LanguageSelectViewController.swift */; };
+		FA5041E325A5A578004E6EC9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5041E225A5A578004E6EC9 /* ImagePicker.swift */; };
+		FA5041E625A5B3B0004E6EC9 /* UploadedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5041E525A5B3B0004E6EC9 /* UploadedFile.swift */; };
+		FA50420525A5B957004E6EC9 /* FileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50420325A5B957004E6EC9 /* FileTableViewCell.swift */; };
+		FA50420625A5B957004E6EC9 /* FileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA50420425A5B957004E6EC9 /* FileTableViewCell.xib */; };
+		FA50420B25A611DE004E6EC9 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50420A25A611DE004E6EC9 /* ImagePreviewViewController.swift */; };
+		FA50421025A611F4004E6EC9 /* ImagePreview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA50420F25A611F4004E6EC9 /* ImagePreview.storyboard */; };
 		FA63DA39258CF3D400722CA6 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */; };
 		FA63DA3C258CF3EC00722CA6 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */; };
 		FA63DA3F258D030900722CA6 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63DA3E258D030900722CA6 /* NotificationExtension.swift */; };
@@ -94,12 +100,20 @@
 		FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */; };
 		FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */; };
 		FABB63B7257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB63B6257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift */; };
+		FAC1F4BB25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC1F4BA25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf */; };
 		FADA06BF257F67CB000333FF /* LanguagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA06BE257F67CB000333FF /* LanguagePresenter.swift */; };
 		FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */; };
 		FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */; };
 		FAE2105925768C2100A3D971 /* LanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */; };
 		FAEBEA22258A05BE0077D942 /* SuccessMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEBEA21258A05BE0077D942 /* SuccessMessage.swift */; };
 		FAEBEA3E258B4CC90077D942 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEBEA3D258B4CC90077D942 /* UIButtonExtension.swift */; };
+		FAFF92C225A44C5900A604C3 /* UploadFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF92C025A44C5900A604C3 /* UploadFileTableViewCell.swift */; };
+		FAFF92C325A44C5900A604C3 /* UploadFileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFF92C125A44C5900A604C3 /* UploadFileTableViewCell.xib */; };
+		FAFF92C725A4941400A604C3 /* JoinTNAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF92C625A4941400A604C3 /* JoinTNAgreementViewController.swift */; };
+		FAFF92CA25A4944500A604C3 /* JoinTNSelectUserTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF92C925A4944500A604C3 /* JoinTNSelectUserTypeViewController.swift */; };
+		FAFF92CD25A494AA00A604C3 /* JoinTNDocumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF92CC25A494AA00A604C3 /* JoinTNDocumentListViewController.swift */; };
+		FAFF92D025A494BB00A604C3 /* JoinTNAddDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF92CF25A494BB00A604C3 /* JoinTNAddDocumentViewController.swift */; };
+		FAFF92D325A494F300A604C3 /* JoinTNSuccessMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF92D225A494F300A604C3 /* JoinTNSuccessMessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +161,12 @@
 		FA4D448A257C172F00398AE2 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		FA4D4495257E48B700398AE2 /* LanguageSelect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguageSelect.storyboard; sourceTree = "<group>"; };
 		FA4D4498257E48CE00398AE2 /* LanguageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectViewController.swift; sourceTree = "<group>"; };
+		FA5041E225A5A578004E6EC9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FA5041E525A5B3B0004E6EC9 /* UploadedFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadedFile.swift; sourceTree = "<group>"; };
+		FA50420325A5B957004E6EC9 /* FileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTableViewCell.swift; sourceTree = "<group>"; };
+		FA50420425A5B957004E6EC9 /* FileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileTableViewCell.xib; sourceTree = "<group>"; };
+		FA50420A25A611DE004E6EC9 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
+		FA50420F25A611F4004E6EC9 /* ImagePreview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePreview.storyboard; sourceTree = "<group>"; };
 		FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
 		FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FA63DA3E258D030900722CA6 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
@@ -194,12 +214,20 @@
 		FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguagePopup.storyboard; sourceTree = "<group>"; };
 		FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePopupViewController.swift; sourceTree = "<group>"; };
 		FABB63B6257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMessagesTopTabSegue.swift; sourceTree = "<group>"; };
+		FAC1F4BA25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		FADA06BE257F67CB000333FF /* LanguagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePresenter.swift; sourceTree = "<group>"; };
 		FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableViewCell.xib; sourceTree = "<group>"; };
 		FAEBEA21258A05BE0077D942 /* SuccessMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessMessage.swift; sourceTree = "<group>"; };
 		FAEBEA3D258B4CC90077D942 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		FAFF92C025A44C5900A604C3 /* UploadFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileTableViewCell.swift; sourceTree = "<group>"; };
+		FAFF92C125A44C5900A604C3 /* UploadFileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadFileTableViewCell.xib; sourceTree = "<group>"; };
+		FAFF92C625A4941400A604C3 /* JoinTNAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTNAgreementViewController.swift; sourceTree = "<group>"; };
+		FAFF92C925A4944500A604C3 /* JoinTNSelectUserTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTNSelectUserTypeViewController.swift; sourceTree = "<group>"; };
+		FAFF92CC25A494AA00A604C3 /* JoinTNDocumentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTNDocumentListViewController.swift; sourceTree = "<group>"; };
+		FAFF92CF25A494BB00A604C3 /* JoinTNAddDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTNAddDocumentViewController.swift; sourceTree = "<group>"; };
+		FAFF92D225A494F300A604C3 /* JoinTNSuccessMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTNSuccessMessageViewController.swift; sourceTree = "<group>"; };
 		FFAC3C6735F7BC1D8397254E /* Pods_stori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -249,8 +277,10 @@
 		FA417FC22590D86600F9D81B /* Teacher */ = {
 			isa = PBXGroup;
 			children = (
+				FAFF92BF25A44BFF00A604C3 /* Cells */,
 				FA417FC42590DD2F00F9D81B /* Teacher.storyboard */,
 				FA417FC72590DE8B00F9D81B /* TeacherNetworkViewController.swift */,
+				FAFF92D525A494FF00A604C3 /* Join Teacher Network */,
 			);
 			path = Teacher;
 			sourceTree = "<group>";
@@ -292,6 +322,7 @@
 				FA22A7E92588E4C6001129E7 /* Interest.swift */,
 				FAEBEA21258A05BE0077D942 /* SuccessMessage.swift */,
 				FA666A26259CAA9900FD6462 /* LearningLanguage.swift */,
+				FA5041E525A5B3B0004E6EC9 /* UploadedFile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -327,6 +358,15 @@
 			path = LanguageSelect;
 			sourceTree = "<group>";
 		};
+		FA50420925A611BE004E6EC9 /* Image Preview */ = {
+			isa = PBXGroup;
+			children = (
+				FA50420A25A611DE004E6EC9 /* ImagePreviewViewController.swift */,
+				FA50420F25A611F4004E6EC9 /* ImagePreview.storyboard */,
+			);
+			path = "Image Preview";
+			sourceTree = "<group>";
+		};
 		FA63DA37258CF3B900722CA6 /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +382,7 @@
 				FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */,
 				FA4B61BD25753CF2005501BD /* FacebookManager.swift */,
 				FA4D4487257AA81900398AE2 /* Toast.swift */,
+				FA5041E225A5A578004E6EC9 /* ImagePicker.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -361,6 +402,7 @@
 			children = (
 				FA7B72E12566B493003F9A0C /* Sweet Pea.ttf */,
 				FA7B72DA25669BEF003F9A0C /* IBMPlexSans-Bold.ttf */,
+				FAC1F4BA25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf */,
 				FA7B72D725669A31003F9A0C /* IBMPlexSans-Regular.ttf */,
 				FA6853F62599FA47008A7D63 /* IBMPlexSans-Light.ttf */,
 			);
@@ -455,6 +497,7 @@
 				FA812D9F25665A920036F162 /* Root */,
 				FA812D86256640AB0036F162 /* Tutorial */,
 				FA3C26112569558B0089F646 /* Auth */,
+				FA50420925A611BE004E6EC9 /* Image Preview */,
 				FA4D4477257940AB00398AE2 /* Web Browser */,
 				FA4D4493257E442A00398AE2 /* Language  */,
 				FA63DA37258CF3B900722CA6 /* User */,
@@ -527,6 +570,29 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FAFF92BF25A44BFF00A604C3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF92C125A44C5900A604C3 /* UploadFileTableViewCell.xib */,
+				FAFF92C025A44C5900A604C3 /* UploadFileTableViewCell.swift */,
+				FA50420425A5B957004E6EC9 /* FileTableViewCell.xib */,
+				FA50420325A5B957004E6EC9 /* FileTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAFF92D525A494FF00A604C3 /* Join Teacher Network */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF92C625A4941400A604C3 /* JoinTNAgreementViewController.swift */,
+				FAFF92C925A4944500A604C3 /* JoinTNSelectUserTypeViewController.swift */,
+				FAFF92CC25A494AA00A604C3 /* JoinTNDocumentListViewController.swift */,
+				FAFF92CF25A494BB00A604C3 /* JoinTNAddDocumentViewController.swift */,
+				FAFF92D225A494F300A604C3 /* JoinTNSuccessMessageViewController.swift */,
+			);
+			path = "Join Teacher Network";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -588,6 +654,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC1F4BB25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf in Resources */,
 				FA7B72EB2566B814003F9A0C /* TutorialCollectionViewCell.xib in Resources */,
 				FA63DA39258CF3D400722CA6 /* MainTabBar.storyboard in Resources */,
 				FA7B72E22566B493003F9A0C /* Sweet Pea.ttf in Resources */,
@@ -595,6 +662,7 @@
 				FA4D4479257940BA00398AE2 /* WebBrowser.storyboard in Resources */,
 				FA4D4496257E48B700398AE2 /* LanguageSelect.storyboard in Resources */,
 				FA999D9825694D3E00B694FA /* Strings.strings in Resources */,
+				FA50421025A611F4004E6EC9 /* ImagePreview.storyboard in Resources */,
 				FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */,
 				FA6853F72599FA47008A7D63 /* IBMPlexSans-Light.ttf in Resources */,
 				FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */,
@@ -604,9 +672,11 @@
 				FA4B61A625753433005501BD /* Google-Credentials.plist in Resources */,
 				FAE2105925768C2100A3D971 /* LanguageTableViewCell.xib in Resources */,
 				FA812D77256298450036F162 /* Assets.xcassets in Resources */,
+				FA50420625A5B957004E6EC9 /* FileTableViewCell.xib in Resources */,
 				FA812D88256640BF0036F162 /* Tutorial.storyboard in Resources */,
 				FA7B72D825669A31003F9A0C /* IBMPlexSans-Regular.ttf in Resources */,
 				FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */,
+				FAFF92C325A44C5900A604C3 /* UploadFileTableViewCell.xib in Resources */,
 				FA3C26132569559C0089F646 /* Auth.storyboard in Resources */,
 				FA812D75256298440036F162 /* Main.storyboard in Resources */,
 			);
@@ -704,6 +774,7 @@
 				FA4B616F25713362005501BD /* DataExtension.swift in Sources */,
 				FA4B6144257015BE005501BD /* NetworkError.swift in Sources */,
 				FA417FC82590DE8B00F9D81B /* TeacherNetworkViewController.swift in Sources */,
+				FAFF92D025A494BB00A604C3 /* JoinTNAddDocumentViewController.swift in Sources */,
 				FA4D4484257A9B6000398AE2 /* AuthViewControllerActions.swift in Sources */,
 				FA4B619025752134005501BD /* MessageObject.swift in Sources */,
 				FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */,
@@ -724,17 +795,22 @@
 				FA4D447525790C2700398AE2 /* LanguageClient.swift in Sources */,
 				FA4D44622578BE0700398AE2 /* ResponseObject.swift in Sources */,
 				FA4B61342570036C005501BD /* APIClient.swift in Sources */,
+				FA5041E625A5B3B0004E6EC9 /* UploadedFile.swift in Sources */,
 				FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */,
 				FA4B61BE25753CF2005501BD /* FacebookManager.swift in Sources */,
 				FABB63B7257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift in Sources */,
 				FA4D445F257810C700398AE2 /* Language.swift in Sources */,
 				FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */,
 				FA22A7E52588E1D8001129E7 /* InterestCollectionViewCell.swift in Sources */,
+				FA50420525A5B957004E6EC9 /* FileTableViewCell.swift in Sources */,
 				FA812D6E256298440036F162 /* AppDelegate.swift in Sources */,
+				FAFF92D325A494F300A604C3 /* JoinTNSuccessMessageViewController.swift in Sources */,
 				FA4D447125790C1300398AE2 /* UserClient.swift in Sources */,
+				FA5041E325A5A578004E6EC9 /* ImagePicker.swift in Sources */,
 				FA63DA3C258CF3EC00722CA6 /* MainTabBarViewController.swift in Sources */,
 				FA6853FA259B0B65008A7D63 /* AuthNavigationController.swift in Sources */,
 				FA999DA12569514C00B694FA /* DefaultSettings.swift in Sources */,
+				FAFF92C225A44C5900A604C3 /* UploadFileTableViewCell.swift in Sources */,
 				FA3C27DF256BDBFD0089F646 /* RegularTextField.swift in Sources */,
 				FA7B72D325669962003F9A0C /* UIImageExtension.swift in Sources */,
 				FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */,
@@ -743,12 +819,15 @@
 				FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */,
 				FA4B6112256EAEA1005501BD /* AuthPresenter.swift in Sources */,
 				FAEBEA3E258B4CC90077D942 /* UIButtonExtension.swift in Sources */,
+				FAFF92CD25A494AA00A604C3 /* JoinTNDocumentListViewController.swift in Sources */,
+				FA50420B25A611DE004E6EC9 /* ImagePreviewViewController.swift in Sources */,
 				FA4D446C2578D2B300398AE2 /* Router.swift in Sources */,
 				FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */,
 				FA666A27259CAA9900FD6462 /* LearningLanguage.swift in Sources */,
 				FA4B613E257007B1005501BD /* RequestProtocol.swift in Sources */,
 				FA4B613A25700765005501BD /* Headers.swift in Sources */,
 				FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */,
+				FAFF92CA25A4944500A604C3 /* JoinTNSelectUserTypeViewController.swift in Sources */,
 				FA6B0015258116B700438E80 /* LanguageLevelSelectionViewController.swift in Sources */,
 				FA9F6C0F2582899800AC5197 /* LanguageLevelTableViewCell.swift in Sources */,
 				FA812DAA256682F70036F162 /* RegularButton.swift in Sources */,
@@ -758,6 +837,7 @@
 				FA4D4499257E48CE00398AE2 /* LanguageSelectViewController.swift in Sources */,
 				FA63DA3F258D030900722CA6 /* NotificationExtension.swift in Sources */,
 				FA812D8E256641940036F162 /* UIGradientView.swift in Sources */,
+				FAFF92C725A4941400A604C3 /* JoinTNAgreementViewController.swift in Sources */,
 				FA4B618B25750412005501BD /* CurrentUser.swift in Sources */,
 				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,
 				FA417FDE2590F40F00F9D81B /* UIApplicationExtension.swift in Sources */,

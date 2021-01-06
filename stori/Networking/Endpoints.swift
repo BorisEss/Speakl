@@ -13,6 +13,7 @@ struct Endpoints {
     
     // MARK: - Others
     public static let termsAndConditions = URL(string: "https://readstori.com/terms-and-conditions")!
+    public static let privacyPolicy = URL(string: "https://readstori.com/privacy-policy")!
     
     // MARK: - Auth
     private static let auth = api.appendingPathComponent("auth")

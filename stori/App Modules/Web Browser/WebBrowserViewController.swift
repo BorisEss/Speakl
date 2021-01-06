@@ -11,6 +11,7 @@ import WebKit
 class WebBrowserViewController: UIViewController {
     
     var url: URL?
+    var navbarWasHidden: Bool = false
     private var progressActivityIndicator: UIActivityIndicatorView!
 
     @IBOutlet weak var webView: WKWebView!
@@ -33,12 +34,19 @@ class WebBrowserViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: true)
+        if let navbarIsHidden = navigationController?.navigationBar.isHidden,
+           navbarIsHidden {
+            navbarWasHidden = true
+            navigationController?.setNavigationBarHidden(false, animated: true)
+        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: true)
+        if navbarWasHidden {
+            navigationController?.setNavigationBarHidden(true, animated: true)
+        }
     }
     
     private func addActivityIndicator() {

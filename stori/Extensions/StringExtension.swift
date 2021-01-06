@@ -47,4 +47,8 @@ extension String {
         let checkRegex = "^.{6,}$"
         return NSPredicate(format: "SELF MATCHES %@", checkRegex).evaluate(with: self)
     }
+    
+    static var uniqueName: String {
+        return String(Date().timeIntervalSince1970).replacingOccurrences(of: ".", with: "")
+    }
 }
