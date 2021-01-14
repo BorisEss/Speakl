@@ -50,7 +50,7 @@
 		FA4D4496257E48B700398AE2 /* LanguageSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4D4495257E48B700398AE2 /* LanguageSelect.storyboard */; };
 		FA4D4499257E48CE00398AE2 /* LanguageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4498257E48CE00398AE2 /* LanguageSelectViewController.swift */; };
 		FA5041E325A5A578004E6EC9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5041E225A5A578004E6EC9 /* ImagePicker.swift */; };
-		FA5041E625A5B3B0004E6EC9 /* UploadedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5041E525A5B3B0004E6EC9 /* UploadedFile.swift */; };
+		FA5041E625A5B3B0004E6EC9 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5041E525A5B3B0004E6EC9 /* File.swift */; };
 		FA50420525A5B957004E6EC9 /* FileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50420325A5B957004E6EC9 /* FileTableViewCell.swift */; };
 		FA50420625A5B957004E6EC9 /* FileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA50420425A5B957004E6EC9 /* FileTableViewCell.xib */; };
 		FA50420B25A611DE004E6EC9 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50420A25A611DE004E6EC9 /* ImagePreviewViewController.swift */; };
@@ -89,6 +89,9 @@
 		FA812DA425665AB10036F162 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812DA325665AB10036F162 /* RootViewController.swift */; };
 		FA812DA725665DB90036F162 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812DA625665DB90036F162 /* TutorialViewController.swift */; };
 		FA812DAA256682F70036F162 /* RegularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812DA9256682F70036F162 /* RegularButton.swift */; };
+		FA85364C25AC644D002607EC /* UploadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85364B25AC644D002607EC /* UploadClient.swift */; };
+		FA85364F25AC6465002607EC /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85364E25AC6465002607EC /* Checksum.swift */; };
+		FA85365725B08EF6002607EC /* JoinTNPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85365625B08EF6002607EC /* JoinTNPresenter.swift */; };
 		FA999D922568F30B00B694FA /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */; };
 		FA999D9825694D3E00B694FA /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA999D9A25694D3E00B694FA /* Strings.strings */; };
 		FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999D9C25694D6800B694FA /* StringExtension.swift */; };
@@ -162,7 +165,7 @@
 		FA4D4495257E48B700398AE2 /* LanguageSelect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguageSelect.storyboard; sourceTree = "<group>"; };
 		FA4D4498257E48CE00398AE2 /* LanguageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectViewController.swift; sourceTree = "<group>"; };
 		FA5041E225A5A578004E6EC9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		FA5041E525A5B3B0004E6EC9 /* UploadedFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadedFile.swift; sourceTree = "<group>"; };
+		FA5041E525A5B3B0004E6EC9 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		FA50420325A5B957004E6EC9 /* FileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTableViewCell.swift; sourceTree = "<group>"; };
 		FA50420425A5B957004E6EC9 /* FileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileTableViewCell.xib; sourceTree = "<group>"; };
 		FA50420A25A611DE004E6EC9 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +206,9 @@
 		FA812DA325665AB10036F162 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		FA812DA625665DB90036F162 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		FA812DA9256682F70036F162 /* RegularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularButton.swift; sourceTree = "<group>"; };
+		FA85364B25AC644D002607EC /* UploadClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadClient.swift; sourceTree = "<group>"; };
+		FA85364E25AC6465002607EC /* Checksum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
+		FA85365625B08EF6002607EC /* JoinTNPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTNPresenter.swift; sourceTree = "<group>"; };
 		FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA999D9925694D3E00B694FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
 		FA999D9C25694D6800B694FA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -293,6 +299,7 @@
 				FA4B61332570036C005501BD /* APIClient.swift */,
 				FA4D447025790C1300398AE2 /* UserClient.swift */,
 				FA4D447425790C2700398AE2 /* LanguageClient.swift */,
+				FA85364B25AC644D002607EC /* UploadClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -322,7 +329,7 @@
 				FA22A7E92588E4C6001129E7 /* Interest.swift */,
 				FAEBEA21258A05BE0077D942 /* SuccessMessage.swift */,
 				FA666A26259CAA9900FD6462 /* LearningLanguage.swift */,
-				FA5041E525A5B3B0004E6EC9 /* UploadedFile.swift */,
+				FA5041E525A5B3B0004E6EC9 /* File.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -383,6 +390,7 @@
 				FA4B61BD25753CF2005501BD /* FacebookManager.swift */,
 				FA4D4487257AA81900398AE2 /* Toast.swift */,
 				FA5041E225A5A578004E6EC9 /* ImagePicker.swift */,
+				FA85364E25AC6465002607EC /* Checksum.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -589,6 +597,7 @@
 				FAFF92CC25A494AA00A604C3 /* JoinTNDocumentListViewController.swift */,
 				FAFF92CF25A494BB00A604C3 /* JoinTNAddDocumentViewController.swift */,
 				FAFF92D225A494F300A604C3 /* JoinTNSuccessMessageViewController.swift */,
+				FA85365625B08EF6002607EC /* JoinTNPresenter.swift */,
 			);
 			path = "Join Teacher Network";
 			sourceTree = "<group>";
@@ -767,6 +776,7 @@
 			files = (
 				FA812D72256298440036F162 /* ViewController.swift in Sources */,
 				FA4B61A925753487005501BD /* Constants.swift in Sources */,
+				FA85365725B08EF6002607EC /* JoinTNPresenter.swift in Sources */,
 				FA7B72EA2566B814003F9A0C /* TutorialCollectionViewCell.swift in Sources */,
 				FA812DA725665DB90036F162 /* TutorialViewController.swift in Sources */,
 				FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */,
@@ -795,13 +805,14 @@
 				FA4D447525790C2700398AE2 /* LanguageClient.swift in Sources */,
 				FA4D44622578BE0700398AE2 /* ResponseObject.swift in Sources */,
 				FA4B61342570036C005501BD /* APIClient.swift in Sources */,
-				FA5041E625A5B3B0004E6EC9 /* UploadedFile.swift in Sources */,
+				FA5041E625A5B3B0004E6EC9 /* File.swift in Sources */,
 				FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */,
 				FA4B61BE25753CF2005501BD /* FacebookManager.swift in Sources */,
 				FABB63B7257675B4008B3FAB /* SwiftMessagesTopTabSegue.swift in Sources */,
 				FA4D445F257810C700398AE2 /* Language.swift in Sources */,
 				FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */,
 				FA22A7E52588E1D8001129E7 /* InterestCollectionViewCell.swift in Sources */,
+				FA85364F25AC6465002607EC /* Checksum.swift in Sources */,
 				FA50420525A5B957004E6EC9 /* FileTableViewCell.swift in Sources */,
 				FA812D6E256298440036F162 /* AppDelegate.swift in Sources */,
 				FAFF92D325A494F300A604C3 /* JoinTNSuccessMessageViewController.swift in Sources */,
@@ -820,6 +831,7 @@
 				FA4B6112256EAEA1005501BD /* AuthPresenter.swift in Sources */,
 				FAEBEA3E258B4CC90077D942 /* UIButtonExtension.swift in Sources */,
 				FAFF92CD25A494AA00A604C3 /* JoinTNDocumentListViewController.swift in Sources */,
+				FA85364C25AC644D002607EC /* UploadClient.swift in Sources */,
 				FA50420B25A611DE004E6EC9 /* ImagePreviewViewController.swift in Sources */,
 				FA4D446C2578D2B300398AE2 /* Router.swift in Sources */,
 				FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */,

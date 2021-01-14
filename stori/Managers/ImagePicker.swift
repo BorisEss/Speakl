@@ -16,7 +16,7 @@ enum ImagePickerScreen {
 class ImagePicker {
     static func pickImage(from screen: ImagePickerScreen? = nil,
                           frontCamera: Bool = false,
-                          completion: @escaping (_ file: UploadedFile) -> Void) {
+                          completion: @escaping (_ file: LocalFile) -> Void) {
         if let screen = screen {
             switch screen {
             case .camera:
@@ -41,7 +41,7 @@ class ImagePicker {
     
     private static func pick(screen: YPPickerScreen?,
                              frontCamera: Bool,
-                             completion: @escaping (_ file: UploadedFile) -> Void) {
+                             completion: @escaping (_ file: LocalFile) -> Void) {
         var config = YPImagePickerConfiguration()
         config.isScrollToChangeModesEnabled = false
         config.showsPhotoFilters = false
@@ -69,7 +69,7 @@ class ImagePicker {
             if let screen = screen,
                screen != .video,
                let photo = items.singlePhoto {
-                completion(UploadedFile(id: "", data: Data(), image: photo.image, name: String.uniqueName))
+                completion(LocalFile(image: photo.image))
             }
             picker.dismiss(animated: true, completion: nil)
         }

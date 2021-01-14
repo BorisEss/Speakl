@@ -88,6 +88,7 @@
 		<string>fb-messenger-share-api</string>
 		<string>fbauth2</string>
 		<string>fbshareextension</string>
+		<string>mailto</string>
 	</array>
 	<key>CFBundleURLTypes</key>
 	<array>

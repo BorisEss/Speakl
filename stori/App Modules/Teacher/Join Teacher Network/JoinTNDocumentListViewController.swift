@@ -16,13 +16,14 @@ enum JoinTNDocumentType: Int {
 class JoinTNDocumentListViewController: UIViewController {
 
     var uploadDocumentSegue = "uploadDocument"
+    var finishRegistration = "finishRegistration"
     
     var userType: JoinTNUserType?
     var uploadingDocumentType: JoinTNDocumentType?
     
-    var personalIdList: [UploadedFile] = []
-    var documentList: [UploadedFile] = []
-    var selfieWithIdList: [UploadedFile] = []
+    var personalIdList: [LocalFile] = []
+    var documentList: [LocalFile] = []
+    var selfieWithIdList: [LocalFile] = []
     
     @IBOutlet weak var personalIdCheckImage: UIImageView!
     @IBOutlet weak var personalIdTitleLabel: UILabel!
@@ -71,6 +72,13 @@ class JoinTNDocumentListViewController: UIViewController {
                 self.uploadingDocumentType = nil
                 self.submissionCheck()
             }
+        }
+        if segue.identifier == finishRegistration,
+           let nextVc = segue.destination as? JoinTNSuccessMessageViewController {
+            nextVc.userType = userType
+            nextVc.personalIdList = personalIdList
+            nextVc.documentList = documentList
+            nextVc.selfieWithIdList = selfieWithIdList
         }
     }
     

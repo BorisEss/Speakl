@@ -10,7 +10,8 @@ import UIKit
 class UploadFileTableViewCell: UITableViewCell, CustomTableViewCell {
     
     static var height: CGFloat = 95
-    var completion: ((_ file: UploadedFile) -> Void)?
+    var completion: ((_ file: LocalFile) -> Void)?
+    var frontCamera: Bool = false
     
     @IBOutlet weak var uploadLabel: UILabel!
     @IBOutlet weak var takePictureLabel: UILabel!
@@ -28,7 +29,7 @@ class UploadFileTableViewCell: UITableViewCell, CustomTableViewCell {
         }
     }
     @IBAction func takePicturePressed(_ sender: Any) {
-        ImagePicker.pickImage(from: .camera) { file in
+        ImagePicker.pickImage(from: .camera, frontCamera: frontCamera) { file in
             self.completion?(file)
         }
     }

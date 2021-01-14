@@ -24,4 +24,14 @@ struct Headers {
         "Accept-Language": Storage.shared.currentLanguage?.shortcut ?? "en",
         "Authorization": "Bearer \(KeychainManager.shared.token ?? "")"
     ]
+    
+    func contentRange(start: Int, end: Int, size: Int) -> HeadersDict {
+        return [
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Accept-Language": Storage.shared.currentLanguage?.shortcut ?? "en",
+            "Authorization": "Bearer \(KeychainManager.shared.token ?? "")",
+            "Content-Range": "bytes \(start)-\(end)/\(size)"
+        ]
+    }
 }

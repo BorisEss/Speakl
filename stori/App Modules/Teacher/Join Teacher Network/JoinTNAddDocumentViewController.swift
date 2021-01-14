@@ -11,12 +11,12 @@ class JoinTNAddDocumentViewController: UIViewController {
     
     private var previewImageSegue = "previewImage"
 
-    var completion: ((_ files: [UploadedFile]) -> Void)?
+    var completion: ((_ files: [LocalFile]) -> Void)?
     
-    var files: [UploadedFile] = []
+    var files: [LocalFile] = []
     var userType: JoinTNUserType?
     var documentType: JoinTNDocumentType?
-    var selectedItem: UploadedFile?
+    var selectedItem: LocalFile?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -73,24 +73,34 @@ class JoinTNAddDocumentViewController: UIViewController {
 
 extension JoinTNAddDocumentViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return files.count + 1
+        guard let documentType = documentType else { return 0 }
+        switch documentType {
+        case .personalId, .document:
+            return files.count < 2 ? files.count + 1 : files.count
+        case .selfieWithId:
+            return files.count < 1 ? 1 : files.count
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        let radius = cell.contentView.layer.cornerRadius
-//        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: radius).cgPath
-//    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let radius = cell.contentView.layer.cornerRadius
+        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: radius).cgPath
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == files.count {
             if let tempCell = tableView.dequeueReusableCell(withIdentifier: UploadFileTableViewCell.identifier),
                let cell = tempCell as? UploadFileTableViewCell {
+                if let docType = documentType {
+                    cell.frontCamera = docType == .selfieWithId
+                }
                 cell.completion = { [weak self] file in
                     self?.files.append(file)
+                    
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                         self?.tableView.reloadData()
                     }
@@ -101,6 +111,13 @@ extension JoinTNAddDocumentViewController: UITableViewDelegate, UITableViewDataS
             if let tempCell = tableView.dequeueReusableCell(withIdentifier: FileTableViewCell.identifier),
                let cell = tempCell as? FileTableViewCell {
                 cell.setUp(file: files[indexPath.section])
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    self.files[indexPath.section].upload()
+                }
+                cell.removeHadler = {
+                    self.files.remove(at: indexPath.section)
+                    self.tableView.reloadData()
+                }
                 return cell
             }
         }

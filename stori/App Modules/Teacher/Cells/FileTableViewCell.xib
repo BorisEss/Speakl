@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -51,7 +52,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cIr-TY-n5B">
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cIr-TY-n5B">
                                                 <rect key="frame" x="0.0" y="55.5" width="210" height="4"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                             </progressView>
@@ -64,17 +65,29 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-P4-Dav">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WwF-Vw-4c8">
                                         <rect key="frame" x="264" y="0.0" width="32" height="79"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-P4-Dav">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="79"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="K9I-mp-Tkq"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="4" minY="8" maxX="4" maxY="8"/>
+                                                <state key="normal" image="x-circle"/>
+                                                <connections>
+                                                    <action selector="removeButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eg0-JD-fzr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="32" id="K9I-mp-Tkq"/>
+                                            <constraint firstAttribute="bottom" secondItem="zSy-P4-Dav" secondAttribute="bottom" id="XET-7J-DSs"/>
+                                            <constraint firstItem="zSy-P4-Dav" firstAttribute="top" secondItem="WwF-Vw-4c8" secondAttribute="top" id="jsy-nE-14c"/>
+                                            <constraint firstAttribute="trailing" secondItem="zSy-P4-Dav" secondAttribute="trailing" id="p8Y-Ga-cNC"/>
+                                            <constraint firstItem="zSy-P4-Dav" firstAttribute="leading" secondItem="WwF-Vw-4c8" secondAttribute="leading" id="u0G-T3-o6v"/>
                                         </constraints>
-                                        <inset key="contentEdgeInsets" minX="4" minY="8" maxX="4" maxY="8"/>
-                                        <state key="normal" image="x-circle"/>
-                                        <connections>
-                                            <action selector="removeButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eg0-JD-fzr"/>
-                                        </connections>
-                                    </button>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -128,5 +141,8 @@
         <namedColor name="AccentColor">
             <color red="1" green="0.7839999794960022" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

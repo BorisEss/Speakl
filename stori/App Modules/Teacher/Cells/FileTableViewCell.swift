@@ -9,7 +9,9 @@ import UIKit
 
 class FileTableViewCell: UITableViewCell, CustomTableViewCell {
 
-    private var file: UploadedFile?
+    var removeHadler: (() -> Void)?
+    
+    private var file: LocalFile?
     
     @IBOutlet weak var fileImage: UIImageView!
     @IBOutlet weak var fileNameLabel: UILabel!
@@ -18,27 +20,35 @@ class FileTableViewCell: UITableViewCell, CustomTableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        updateView()
+        if let file = file {
+            updateView(file: file)
+        }
     }
     
-    func setUp(file: UploadedFile) {
+    func setUp(file: LocalFile) {
         self.file = file
-        updateView()
+        updateView(file: file)
     }
     
     @IBAction func removeButtonPressed(_ sender: Any) {
-        
+        guard let file = file else { return }
+        Upload.remove(file: file) { [weak self] (isSuccess) in
+            if isSuccess { self?.removeHadler?() }
+        }
     }
     
-    private func updateView() {
-        if let file = file {
-            if file.id.isEmpty {
-                progressBar.progress = 0.2
-            } else {
-                progressBar.progress = 1
-            }
-            fileNameLabel.text = file.name
-            fileImage.image = file.image
+    private func updateView(file: LocalFile) {
+        fileNameLabel.text = file.name
+        fileImage.image = file.image
+        animateProgressBar(value: file.uploadProgress)
+        file.uploadHandler = { [weak self] progress in
+            self?.animateProgressBar(value: progress)
         }
+    }
+    
+    private func animateProgressBar(value: Double?) {
+        guard let value = value else { return }
+        progressBar.setProgress(Float(value), animated: true)
+        removeButton.isHidden = value != 1
     }
 }

@@ -41,4 +41,15 @@ struct Endpoints {
     
     // MARK: - Interests
     public static let interests = api.appendingPathComponent("interests/")
+    
+    // MARK: - Chunked Upload
+    public static let chunkedUpload = api.appendingPathComponent("chunk-uploads/")
+    public static func chunkedUploadFile(_ file: String?) -> URL {
+        guard let file = file else { return chunkedUpload }
+        let chunkedUpload = api.appendingPathComponent("chunk-uploads")
+        return chunkedUpload.appendingPathComponent("\(file)/")
+    }
+    
+    // MARK: - Teacher Network
+    public static let joinTN = user.appendingPathComponent("teacher-experiences/")
 }

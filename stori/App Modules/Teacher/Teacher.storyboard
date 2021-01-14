@@ -688,7 +688,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="bUM-fZ-B2N" kind="show" id="BzQ-Ap-iRc"/>
+                                    <segue destination="bUM-fZ-B2N" kind="show" identifier="finishRegistration" id="BzQ-Ap-iRc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -863,6 +863,10 @@
                     <connections>
                         <outlet property="activityIndicator" destination="TLf-ZS-6JZ" id="Fa7-dU-mdT"/>
                         <outlet property="activityView" destination="nyz-Qh-DMb" id="9Cp-G9-LGI"/>
+                        <outlet property="completionDescription" destination="GBk-lo-h26" id="Emp-Ld-27v"/>
+                        <outlet property="completionIcon" destination="UwI-9o-UPo" id="l4V-1G-7ft"/>
+                        <outlet property="completionSubtitle" destination="wxS-w7-ogg" id="dlC-So-5nI"/>
+                        <outlet property="completionTitle" destination="MG6-PW-dLn" id="kpE-mg-CBY"/>
                         <outlet property="completionView" destination="WM9-hQ-gII" id="1RT-ZT-tSb"/>
                     </connections>
                 </viewController>
