@@ -28,9 +28,16 @@
 "common_next_title" = "Next";
 "common_back_title" = "Back";
 "common_remove_title" = "Remove";
+"common_uploading" = "Uploading";
+"common_upload" = "Upload";
+"common_take_picture" = "Take a picture";
+"common_terms_and_conditions" = "Terms & Conditions";
+"common_privacy_policy" = "Privacy Policy";
+"common_nothing_to_show" = "Nothing to show";
 "common_error_message_something_went_wrong" = "Something went wrong. Please try again.";
 "common_empty_field" = "Please fill this field";
 "common_wrong_password_format" = "Please enter a valid password with at least 6 characters";
+"common_wrong_email_format" = "Wrong email format";
 "common_request_build_failed" = "Failed to build your request, please try again";
 "common_no_authentication" = "Not authorised";
 "common_server_error" = "Server error";
@@ -60,6 +67,7 @@
 "auth_vc_social_media_option_title" = "or Connect with";
 "auth_vc_button_title_signup" = "Sign up";
 "auth_vc_button_title_forgot_password" = "Forgot password";
+"auth_vc_agreement" = "By signing up to Stori app, you agree\nwith our Terms and Conditions";
 "auth_vc_button_title_log_in" = "Log in";
 "auth_vc_button_title_terms_and_conditions" = "Terms and Conditions";
 "auth_vc_error_languages_not_selected" = "Please select your languages";
@@ -92,9 +100,157 @@
 "select_interests_vc_page_subtitle" = "Get personalized story recommendations";
 "select_interests_vc_next_button" = "Ready? Start";
 
+
+"join_tn_agreement_navbar_title" = "Join our Teacher Network";
+"join_tn_agreement_title" = "Review Terms & Conditons";
+"join_tn_agreement_description" = "If you are a teacher, copywritter, content writter, a translator or a student, you can continue by tapping below and agreeing to our Terms of Use around teaching services, payments and that you have a valid Student ID, Diploma or Teacher Licencee to operate as such.";
+"join_tn_agreement_agree_button" = "Agree with this";
+"join_tn_agreement_decline_button" = "Decline";
+
+
+"join_tn_usertype_navbar_title" = "Join our Teacher Network as";
+"join_tn_usertype_student" = "Student";
+"join_tn_usertype_master" = "Master's Degree";
+"join_tn_usertype_teacher" = "Certified Teacher";
+
+
+"join_tn_document_personal_id" = "Personal ID";
+"join_tn_document_student_id" = "Student ID";
+"join_tn_document_master_degree" = "Master's Degree";
+"join_tn_document_teacher_certificate" = "Certified Teacher";
+"join_tn_document_selfie" = "Selfie with ID";
+"join_tn_document_personal_id_desc" = "Upload Government ID (Front & Back)";
+"join_tn_document_student_id_desc" = "Upload your student ID (Front & Back)";
+"join_tn_document_master_degree_desc" = "Upload your Masters Degree";
+"join_tn_document_teacher_certificate_desc" = "Upload your Teacher Certificate";
+"join_tn_document_selfie_desc" = "Upload a selfie with your ID next to you";
+"join_tn_document_submit_button" = "Submit for Review";
+
+
+"join_tn_message_success_navbartitle" = "Thank You!";
+"join_tn_message_success_title" = "Congratulations!";
+"join_tn_message_success_subtitle" = "We received your documents";
+"join_tn_message_success_description" = "Thank you so much for submission! Your account is in review and you should receive an email shortly.";
+"join_tn_message_error_navbartitle" = "Error!";
+"join_tn_message_error_title" = "Whoops...";
+"join_tn_message_error_subtitle" = "Something went wrong";
+"join_tn_message_error_description" = "Please try again to upload your documents.";
+"join_tn_message_error_button" = "Try Again!";
+
+
 "main_nav_controller_tab_title_learn" = "Learn";
 "main_nav_controller_tab_title_practice" = "Practice";
 "main_nav_controller_tab_title_vocabulary" = "Vocabulary";
 "main_nav_controller_tab_title_profile" = "Profile";
 "main_nav_controller_tip_title" = "Help Us";
 "main_nav_controller_tip_subtitle" = "Translate Stories";
+
+
+"vocabulary_vc_button_lets_train" = "Let's Train";
+"vocabulary_vc_button_lets_learn" = "Let's Learn";
+"vocabulary_vc_empty_list_message" = "You don’t have any words right now. Read a story and add words you don’t know to practice them here!";
+
+
+"change_learning_lang_vc_button_add_new_lang" = "Add New Language";
+
+
+"profile_vc_label_read_stories_count" = "Read stories";
+"profile_vc_header_account" = "ACCOUNT";
+"profile_vc_header_about" = "ABOUT";
+"profile_vc_cell_email_title" = "Email";
+"profile_vc_cell_language_title" = "Language";
+"profile_vc_cell_memebership_title" = "Membership";
+"profile_vc_cell_get_premium_title" = "GET PREMIUM";
+"profile_vc_cell_send_feedback_title" = "Send us your feedback";
+"profile_vc_cell_contact_us_title" = "Contact us";
+"profile_vc_cell_text_a_friend_title" = "Text to a friend";
+"profile_vc_cell_rate_us_title" = "Rate us on App Store";
+"profile_vc_cell_privacy_policy_title" = "Privacy Policy";
+"profile_vc_alert_message_sign_out" = "Are you sure want to sign out?";
+"profile_vc_alert_title_sign_out" = "Sign out";
+"profile_vc_alert_edit_title" = "Edit";
+"profile_vc_cell_memebership_type_premium" = "Premium";
+"profile_vc_cell_memebership_type_none" = "None";
+"profile_vc_share_message" = "Check out Stori app! Learn new languages through short stories.";
+
+
+"edit_profile_vc_title" = "Edit Profile";
+"edit_profile_vc_account_title" = "ACCOUNT";
+"edit_profile_vc_password_title" = "PASSWORD";
+"edit_profile_vc_username_title" = "Username";
+"edit_profile_vc_old_password_title" = "Old Password";
+"edit_profile_vc_new_password_title" = "New Password";
+"edit_profile_vc_confirm_password_title" = "Confirm Password";
+"edit_profile_vc_save_title" = "Save";
+"edit_vc_alert_pick_image_title" = "Upload photo from:";
+"edit_vc_alert_pick_image_option_camera" = "Camera";
+"edit_vc_alert_pick_image_option_gallery" = "Gallery";
+"edit_profile_vc_username_placeholder" = "Enter your full name";
+"edit_profile_vc_password_placeholder" = "Enter password";
+"edit_profile_vc_username_empty_error" = "Username field is empty";
+"edit_profile_vc_password_empty_error" = "Password field is empty";
+"edit_profile_vc_password_not_match_error" = "Entered passowrds did not match";
+"edit_profile_vc_avatar_updated" = "Your profile image was updated";
+"edit_profile_vc_profile_updated" = "Your profile was updated";
+
+
+"update_membership_vc_title" = "Get Premium";
+"update_membership_vc_feature_unlimited_words" = "Unlimited\nwords";
+"update_membership_vc_feature_no_ads" = "No\nAds";
+"update_membership_vc_feature_unlimited_stories" = "Unlimited\nStories";
+"update_membership_vc_payment_info" = "*Recurring billing, cancel anytime. If you choose to purchase the Premium App, payment will be charged to your iTunes account after 7 days of free trial, and your account will be charged for renewal within 24 hours prior to the end of the current period. Auto renewal may be turned off at any time by going to your Settings in the iTunes Store after purchase.";
+"update_membership_vc_button_get_trial" = "Subscribe";
+"update_membership_vc_button_choose_memberhip_lan" = "Choose a premium plan";
+"update_membership_vc_button_active_plan" = "%@ is active";
+"update_membership_vc_error_unknown_error" = "Unknown error. Please contact support";
+"update_membership_vc_error_not_allowed_make_payments" = "Not allowed to make the payment";
+"update_membership_vc_error_payment_failed" = "Payment failed";
+"update_membership_vc_error_invalid_product_id" = "The purchase identifier was invalid";
+"update_membership_vc_error_device_not_allowed_make_payments" = "The device is not allowed to make the payment";
+"update_membership_vc_error_product_not_available" = "The product is not available in the current storefront";
+"update_membership_vc_error_access_not_allowed" = "Access to cloud service information is not allowed";
+"update_membership_vc_error_cant_connect_to_network" = "Could not connect to the network";
+"update_membership_vc_error_user_revoke_permissions" = "User has revoked permission to use this cloud service";
+"update_membership_vc_alert_successful_purchase" = "Your purchase was successful";
+
+
+"search_stori_vc_placeholder_search_bar" = "Search";
+"search_stori_vc_placeholder_stori_suggestion" = "Stori Suggestion";
+
+
+"read_stori_vc_button_go_to_vocabulary" = "Preview Vocabulary";
+"read_stori_vc_button_listen" = "Listen";
+"read_stori_vc_button_read" = "Read";
+"read_stori_vc_button_pause" = "Pause";
+"read_stori_vc_button_finish" = "Finish";
+"read_stori_vc_button_next" = "Next";
+"read_stori_vc_button_play" = "Play";
+"read_stori_vc_error_can_load_audiofile" = "Can't load audio file. Please, try again later.";
+"read_stori_vc_error_failed_loading_audiofile" = "Failed loading audiofile. Please, try again.";
+"read_stori_vc_error_empty_words_list" = "The Story doesn't contain any words for now";
+
+
+"word_details_vc_button_add_to_vocabulary" = "Add to Vocabulary";
+"word_details_vc_alert_added_successfully" = "Added successfully";
+
+
+"read_stori_vocabulary_vc_empty_list_message" = "It seems you don’t have any words right now";
+
+
+"flashcard_game_vc_label_select_translation_title" = "Select the correct translation";
+"flashcard_game_vc_action_button_default_title" = "Check";
+"flashcard_game_vc_action_button_right_answer_title" = "Great, let’s continue";
+"flashcard_game_vc_action_button_wrong_answer_title" = "Oops, let's continue";
+"flashcard_game_vc_error_answer_not_selected" = "Please select an answer";
+
+
+"flashcard_score_vc_button_once_again" = "Once again?";
+"flashcard_score_vc_button_finish" = "Finish";
+"flashcard_score_vc_score_title_not_bad" = "Not Bad";
+"flashcard_score_vc_score_title_good" = "Good";
+"flashcard_score_vc_score_title_great" = "Great!";
+"flashcard_score_vc_score_title_you_can_better" = "You can do much better";
+
+
+
+

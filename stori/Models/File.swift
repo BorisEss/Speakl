@@ -82,7 +82,7 @@ class ChunkedFile: File {
         return data.count
     }
     var md5: String {
-        return Checksum.hash(data: data, using: .md5)
+        return Checksum.hash(data: data)
     }
     
     init(image: UIImage, name: String = String.uniqueName) {

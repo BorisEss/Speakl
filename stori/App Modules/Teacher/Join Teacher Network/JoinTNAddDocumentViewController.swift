@@ -41,23 +41,22 @@ class JoinTNAddDocumentViewController: UIViewController {
     }
 
     func setUpLanguage() {
-        // TODO: Finish Language update
         if let documentType = documentType,
            let userType = userType {
             switch documentType {
             case .personalId:
-                title = "Personal ID"
+                title = "join_tn_document_personal_id".localized
             case .document:
                 switch userType {
                 case .student:
-                    title = "Student ID"
+                    title = "join_tn_document_student_id".localized
                 case .master:
-                    title = "Master's Degree"
+                    title = "join_tn_document_master_degree".localized
                 case .teacher:
-                    title = "Certified Teacher"
+                    title = "join_tn_document_teacher_certificate".localized
                 }
             case .selfieWithId:
-                title = "Selfie with ID"
+                title = "join_tn_document_selfie".localized
             }
         }
     }

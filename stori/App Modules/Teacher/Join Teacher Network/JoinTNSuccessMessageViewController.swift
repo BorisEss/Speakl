@@ -55,9 +55,8 @@ class JoinTNSuccessMessageViewController: UIViewController {
         navigationController?.popToRootViewController(animated: false)
     }
     
-    // TODO: Add translations
     private func showLoading() {
-        title = "Uploading"
+        title = "common_uploading".localized
         activityView.alpha = 1
         completionView.alpha = 0
         activityIndicator.startAnimating()
@@ -66,15 +65,15 @@ class JoinTNSuccessMessageViewController: UIViewController {
     
     private func showSuccess() {
         completionIcon.image = UIImage(named: "check-circle")
-        completionTitle.text = "Congratulations!"
-        completionSubtitle.text = "We received your documents"
-        completionDescription.text = "Thank you so much for submission! Your account is in review and you should receive an email shortly."
+        completionTitle.text = "join_tn_message_success_title".localized
+        completionSubtitle.text = "join_tn_message_success_subtitle".localized
+        completionDescription.text = "join_tn_message_success_description".localized
         UIView.animate(withDuration: 0.7) { [self] in
             self.activityView.alpha = 0
             self.completionView.alpha = 1
-            self.title = "Thank You!"
+            self.title = "join_tn_message_success_navbartitle".localized
             
-            let doneButton = UIBarButtonItem(title: "Done",
+            let doneButton = UIBarButtonItem(title: "common_done_title".localized,
                                              style: UIBarButtonItem.Style.done,
                                              target: self,
                                              action: #selector(self.back(sender:)))
@@ -84,15 +83,15 @@ class JoinTNSuccessMessageViewController: UIViewController {
     
     private func showFailure() {
         completionIcon.image = UIImage(named: "error-circle")
-        completionTitle.text = "Whoops..."
-        completionSubtitle.text = "Something went wrong"
-        completionDescription.text = "Please try again to upload your documents."
+        completionTitle.text = "join_tn_message_error_title".localized
+        completionSubtitle.text = "join_tn_message_error_subtitle".localized
+        completionDescription.text = "join_tn_message_error_description".localized
         UIView.animate(withDuration: 0.7) { [self] in
             self.activityView.alpha = 0
             self.completionView.alpha = 1
-            self.title = "Error!"
+            self.title = "join_tn_message_error_navbartitle".localized
             
-            let doneButton = UIBarButtonItem(title: "Try Again!",
+            let doneButton = UIBarButtonItem(title: "join_tn_message_error_button".localized,
                                              style: UIBarButtonItem.Style.done,
                                              target: self,
                                              action: #selector(self.back(sender:)))

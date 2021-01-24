@@ -28,12 +28,12 @@ class JoinTNAgreementViewController: UIViewController {
         if segue.identifier == segueToTermsAndConditions,
            let webController = segue.destination as? WebBrowserViewController {
             webController.url = Endpoints.termsAndConditions
-            webController.title = "Terms & Conditions"
+            webController.title = "common_terms_and_conditions".localized
         }
         if segue.identifier == segueToPrivacyPolicy,
            let webController = segue.destination as? WebBrowserViewController {
             webController.url = Endpoints.privacyPolicy
-            webController.title = "Privacy Policy"
+            webController.title = "common_privacy_policy".localized
         }
     }
 
@@ -42,13 +42,16 @@ class JoinTNAgreementViewController: UIViewController {
     }
     
     func setUpLanguage() {
-        // TODO: Finish translations
-        title = "Join our Teacher Network"
-        titleLabel.text = "Review Terms & Conditons"
-//        descriptionLabel.text = ""
-        termsAndConditionsButton.setTitle("Terms & Conditions", for: .normal)
-        privacyPolicyButton.setTitle("Privacy Policy", for: .normal)
-        agreeButton.setTitle("Agree with this", for: .normal)
-        declineButton.setTitle("Decline", for: .normal)
+        title = "join_tn_agreement_navbar_title".localized
+        titleLabel.text = "join_tn_agreement_title".localized
+        descriptionLabel.text = "join_tn_agreement_description".localized
+        termsAndConditionsButton.setTitle("common_terms_and_conditions".localized,
+                                          for: .normal)
+        privacyPolicyButton.setTitle("common_privacy_policy".localized,
+                                     for: .normal)
+        agreeButton.setTitle("join_tn_agreement_agree_button".localized,
+                             for: .normal)
+        declineButton.setTitle("join_tn_agreement_decline_button".localized,
+                               for: .normal)
     }
 }

@@ -90,29 +90,30 @@ class JoinTNDocumentListViewController: UIViewController {
     }
     
     func setUpLanguage() {
-        // TODO: Finish language
-        personalIdTitleLabel.text = "Personal ID"
-        personalIdSubtitleLabel.text = "Upload Government ID (Front & Back)"
+        personalIdTitleLabel.text = "join_tn_document_personal_id".localized
+        personalIdSubtitleLabel.text = "join_tn_document_personal_id_desc".localized
         if let userType = userType {
             switch userType {
             case .student:
-                title = "Student"
-                documentTitleLabel.text = "Student ID"
-                documentSubtitleLabel.text = "Upload your student ID (Front & Back)"
+                title = "join_tn_usertype_student".localized
+                documentTitleLabel.text = "join_tn_document_student_id".localized
+                documentSubtitleLabel.text = "join_tn_document_student_id_desc".localized
             case .master:
-                title = "Master's Degree"
-                documentTitleLabel.text = "Master's Degree"
-                documentSubtitleLabel.text = "Upload your Masters Degree"
+                title = "join_tn_usertype_master".localized
+                documentTitleLabel.text = "join_tn_document_master_degree".localized
+                documentSubtitleLabel.text = "join_tn_document_master_degree_desc".localized
             case .teacher:
-                title = "Certified Teacher"
-                documentTitleLabel.text = "Certified Teacher"
-                documentSubtitleLabel.text = "Upload your Teacher Certificate"
+                title = "join_tn_usertype_teacher".localized
+                documentTitleLabel.text = "join_tn_document_teacher_certificate".localized
+                documentSubtitleLabel.text = "join_tn_document_teacher_certificate_desc".localized
             }
         }
-        selfieWithIdTitleLabel.text = "Selfie with ID"
-        selfieWithIdSubtitleLabel.text = "Upload a selfie with your ID next to you"
-        submitButton.setTitle("Submit for Review", for: .normal)
-        submitButton.setTitle("Submit for Review", for: .disabled)
+        selfieWithIdTitleLabel.text = "join_tn_document_selfie".localized
+        selfieWithIdSubtitleLabel.text = "join_tn_document_selfie_desc".localized
+        submitButton.setTitle("join_tn_document_submit_button".localized,
+                              for: .normal)
+        submitButton.setTitle("join_tn_document_submit_button".localized,
+                              for: .disabled)
     }
     
     func submissionCheck() {

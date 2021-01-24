@@ -35,8 +35,7 @@ class UploadFileTableViewCell: UITableViewCell, CustomTableViewCell {
     }
     
     func setUpLanguage() {
-        // TODO: Finish language
-        uploadLabel.text = "Upload"
-        takePictureLabel.text = "Take a picture"
+        uploadLabel.text = "common_upload".localized
+        takePictureLabel.text = "common_take_picture".localized
     }
 }

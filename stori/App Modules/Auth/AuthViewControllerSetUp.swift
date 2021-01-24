@@ -70,7 +70,7 @@ extension AuthViewController {
         repeatPasswordTextField.textContentType = .newPassword
         repeatPasswordTextField.passwordRules = rule
         firstBottomButton.setTitle("auth_vc_button_title_log_in".localized, for: .normal)
-        secondBottomButton.setTitle("auth_vc_button_title_terms_and_conditions".localized,
+        secondBottomButton.setTitle("common_terms_and_conditions".localized,
                                     for: .normal)
     }
     

@@ -43,10 +43,9 @@ class JoinTNSelectUserTypeViewController: UIViewController {
     }
     
     func setUpLanguage() {
-        // TODO: Finish language translation
-        title = "Join our Teacher Network as"
-        studentLabel.text = "Student"
-        masterLabel.text = "Master's Degree"
-        teacherLabel.text = "Certified Teacher"
+        title = "join_tn_usertype_navbar_title".localized
+        studentLabel.text = "join_tn_usertype_student".localized
+        masterLabel.text = "join_tn_usertype_master".localized
+        teacherLabel.text = "join_tn_usertype_teacher".localized
     }
 }
