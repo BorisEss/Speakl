@@ -25,17 +25,9 @@ class JoinTNDocumentListViewController: UIViewController {
     var documentList: [LocalFile] = []
     var selfieWithIdList: [LocalFile] = []
     
-    @IBOutlet weak var personalIdCheckImage: UIImageView!
-    @IBOutlet weak var personalIdTitleLabel: UILabel!
-    @IBOutlet weak var personalIdSubtitleLabel: UILabel!
-    
-    @IBOutlet weak var documentCheckImage: UIImageView!
-    @IBOutlet weak var documentTitleLabel: UILabel!
-    @IBOutlet weak var documentSubtitleLabel: UILabel!
-    
-    @IBOutlet weak var selfieWithIdCheckImage: UIImageView!
-    @IBOutlet weak var selfieWithIdTitleLabel: UILabel!
-    @IBOutlet weak var selfieWithIdSubtitleLabel: UILabel!
+    @IBOutlet weak var personalIdItem: ItemViewWithSubtitleAndCheckmark!
+    @IBOutlet weak var documentItem: ItemViewWithSubtitleAndCheckmark!
+    @IBOutlet weak var selfieWithIdItem: ItemViewWithSubtitleAndCheckmark!
     
     @IBOutlet weak var submitButton: RegularButton!
 
@@ -43,6 +35,7 @@ class JoinTNDocumentListViewController: UIViewController {
         super.viewDidLoad()
 
         setUpLanguage()
+        setUpActions()
         submissionCheck()
     }
     
@@ -82,44 +75,58 @@ class JoinTNDocumentListViewController: UIViewController {
         }
     }
     
-    @IBAction func uploadDocumentPressed(_ sender: UIButton) {
-        uploadingDocumentType = JoinTNDocumentType(rawValue: sender.tag)
-        if uploadingDocumentType != nil {
-            performSegue(withIdentifier: uploadDocumentSegue, sender: nil)
-        }
-    }
-    
     func setUpLanguage() {
-        personalIdTitleLabel.text = "join_tn_document_personal_id".localized
-        personalIdSubtitleLabel.text = "join_tn_document_personal_id_desc".localized
+        personalIdItem.setUp(title: "join_tn_document_personal_id".localized,
+                             subtitle: "join_tn_document_personal_id_desc".localized)
         if let userType = userType {
             switch userType {
             case .student:
                 title = "join_tn_usertype_student".localized
-                documentTitleLabel.text = "join_tn_document_student_id".localized
-                documentSubtitleLabel.text = "join_tn_document_student_id_desc".localized
+                documentItem.setUp(title: "join_tn_document_student_id".localized,
+                                   subtitle: "join_tn_document_student_id_desc".localized)
             case .master:
                 title = "join_tn_usertype_master".localized
-                documentTitleLabel.text = "join_tn_document_master_degree".localized
-                documentSubtitleLabel.text = "join_tn_document_master_degree_desc".localized
+                documentItem.setUp(title: "join_tn_document_master_degree".localized,
+                                   subtitle: "join_tn_document_master_degree_desc".localized)
             case .teacher:
                 title = "join_tn_usertype_teacher".localized
-                documentTitleLabel.text = "join_tn_document_teacher_certificate".localized
-                documentSubtitleLabel.text = "join_tn_document_teacher_certificate_desc".localized
+                documentItem.setUp(title: "join_tn_document_teacher_certificate".localized,
+                                   subtitle: "join_tn_document_teacher_certificate_desc".localized)
             }
         }
-        selfieWithIdTitleLabel.text = "join_tn_document_selfie".localized
-        selfieWithIdSubtitleLabel.text = "join_tn_document_selfie_desc".localized
+        selfieWithIdItem.setUp(title: "join_tn_document_selfie".localized,
+                               subtitle: "join_tn_document_selfie_desc".localized)
         submitButton.setTitle("join_tn_document_submit_button".localized,
                               for: .normal)
         submitButton.setTitle("join_tn_document_submit_button".localized,
                               for: .disabled)
     }
     
+    func setUpActions() {
+        personalIdItem.onClick = {
+            self.uploadingDocumentType = .personalId
+            if self.uploadingDocumentType != nil {
+                self.performSegue(withIdentifier: self.uploadDocumentSegue, sender: nil)
+            }
+        }
+        documentItem.onClick = {
+            self.uploadingDocumentType = .document
+            if self.uploadingDocumentType != nil {
+                self.performSegue(withIdentifier: self.uploadDocumentSegue, sender: nil)
+            }
+        }
+        selfieWithIdItem.onClick = {
+            self.uploadingDocumentType = .selfieWithId
+            if self.uploadingDocumentType != nil {
+                self.performSegue(withIdentifier: self.uploadDocumentSegue, sender: nil)
+            }
+        }
+    }
+    
     func submissionCheck() {
-        personalIdCheckImage.backgroundColor = personalIdList.isEmpty ? .accentColor : .clear
-        documentCheckImage.backgroundColor = documentList.isEmpty ? .accentColor : .clear
-        selfieWithIdCheckImage.backgroundColor = selfieWithIdList.isEmpty ? .accentColor : .clear
+        personalIdItem.isChecked = !personalIdList.isEmpty
+        documentItem.isChecked = !documentList.isEmpty
+        selfieWithIdItem.isChecked = !selfieWithIdList.isEmpty
         submitButton.isEnabled = !(personalIdList.isEmpty || documentList.isEmpty || selfieWithIdList.isEmpty)
     }
 }

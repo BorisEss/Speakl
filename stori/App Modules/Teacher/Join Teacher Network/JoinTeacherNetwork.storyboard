@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ow9-SK-P8t">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ow9-SK-P8t">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,9 +18,6 @@
         </array>
         <array key="IBMPlexSans-Regular.ttf">
             <string>IBMPlexSans</string>
-        </array>
-        <array key="IBMPlexSans-SemiBold.ttf">
-            <string>IBMPlexSans-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
@@ -391,278 +388,26 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LbJ-bs-gFQ">
                                 <rect key="frame" x="24" y="118" width="366" height="270"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kJ-bj-A5G">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgA-Wx-Kn0" customClass="ItemViewWithSubtitleAndCheckmark" customModule="stori" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="80"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nR-Jd-cpj">
-                                                <rect key="frame" x="19" y="20" width="40" height="40"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="cJd-Cs-VCm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                                        <color key="backgroundColor" name="AccentColor"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="A21-rF-65E"/>
-                                                    <constraint firstItem="cJd-Cs-VCm" firstAttribute="leading" secondItem="0nR-Jd-cpj" secondAttribute="leading" id="Joq-Eg-xAZ"/>
-                                                    <constraint firstItem="cJd-Cs-VCm" firstAttribute="top" secondItem="0nR-Jd-cpj" secondAttribute="top" id="S2A-Wv-QF5"/>
-                                                    <constraint firstAttribute="bottom" secondItem="cJd-Cs-VCm" secondAttribute="bottom" id="UeZ-rW-wUM"/>
-                                                    <constraint firstAttribute="trailing" secondItem="cJd-Cs-VCm" secondAttribute="trailing" id="ZQO-po-2HP"/>
-                                                    <constraint firstAttribute="height" constant="40" id="h7e-qY-xQR"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sJP-yu-hwI">
-                                                <rect key="frame" x="76" y="19" width="186" height="42.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8uR-p8-ibB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="186" height="17.5"/>
-                                                        <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="15"/>
-                                                        <color key="textColor" name="Text Black"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Government ID (Front &amp; Back)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ncg-jA-c77">
-                                                        <rect key="frame" x="0.0" y="29.5" width="186" height="13"/>
-                                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="11"/>
-                                                        <color key="textColor" name="Text Gray"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="BLB-0i-jtz">
-                                                <rect key="frame" x="334" y="26" width="28" height="28"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="La7-Nd-NRC">
-                                                <rect key="frame" x="0.0" y="0.0" width="366" height="80"/>
-                                                <connections>
-                                                    <action selector="uploadDocumentPressed:" destination="bUu-iC-BCn" eventType="touchUpInside" id="D58-v3-pgC"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="La7-Nd-NRC" firstAttribute="top" secondItem="1kJ-bj-A5G" secondAttribute="top" id="BIg-io-xBf"/>
-                                            <constraint firstAttribute="height" constant="80" id="JyY-lJ-kn6"/>
-                                            <constraint firstItem="La7-Nd-NRC" firstAttribute="leading" secondItem="1kJ-bj-A5G" secondAttribute="leading" id="NyU-3W-sYb"/>
-                                            <constraint firstAttribute="trailing" secondItem="BLB-0i-jtz" secondAttribute="trailing" constant="4" id="SlQ-bf-A9c"/>
-                                            <constraint firstItem="0nR-Jd-cpj" firstAttribute="centerY" secondItem="1kJ-bj-A5G" secondAttribute="centerY" id="YX1-qa-5cZ"/>
-                                            <constraint firstItem="BLB-0i-jtz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sJP-yu-hwI" secondAttribute="trailing" id="dfg-hh-You"/>
-                                            <constraint firstItem="BLB-0i-jtz" firstAttribute="centerY" secondItem="1kJ-bj-A5G" secondAttribute="centerY" id="h0A-sD-YLF"/>
-                                            <constraint firstAttribute="trailing" secondItem="La7-Nd-NRC" secondAttribute="trailing" id="iBY-yY-dJ8"/>
-                                            <constraint firstItem="sJP-yu-hwI" firstAttribute="leading" secondItem="0nR-Jd-cpj" secondAttribute="trailing" constant="17" id="k3w-g7-ass"/>
-                                            <constraint firstItem="0nR-Jd-cpj" firstAttribute="leading" secondItem="1kJ-bj-A5G" secondAttribute="leading" constant="19" id="qb6-yP-OsB"/>
-                                            <constraint firstAttribute="bottom" secondItem="La7-Nd-NRC" secondAttribute="bottom" id="vNf-Ka-mMa"/>
-                                            <constraint firstItem="sJP-yu-hwI" firstAttribute="centerY" secondItem="1kJ-bj-A5G" secondAttribute="centerY" id="vYC-nW-ZVG"/>
+                                            <constraint firstAttribute="height" constant="80" id="QjL-PO-gYY"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" red="0.1960784314" green="0.1960784314" blue="0.2784313725" alpha="0.16" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="32"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="0.0" height="24"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4AQ-H9-0aj">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBb-KV-HdP" customClass="ItemViewWithSubtitleAndCheckmark" customModule="stori" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="95" width="366" height="80"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIl-6X-oEU">
-                                                <rect key="frame" x="19" y="20" width="40" height="40"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="QYQ-RX-r8k">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                                        <color key="backgroundColor" name="AccentColor"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="0gI-NX-oHB"/>
-                                                    <constraint firstAttribute="trailing" secondItem="QYQ-RX-r8k" secondAttribute="trailing" id="8LY-hs-bwW"/>
-                                                    <constraint firstAttribute="width" constant="40" id="9GF-vv-yIJ"/>
-                                                    <constraint firstItem="QYQ-RX-r8k" firstAttribute="top" secondItem="WIl-6X-oEU" secondAttribute="top" id="YRY-LO-hCE"/>
-                                                    <constraint firstItem="QYQ-RX-r8k" firstAttribute="leading" secondItem="WIl-6X-oEU" secondAttribute="leading" id="jcp-Gs-paZ"/>
-                                                    <constraint firstAttribute="bottom" secondItem="QYQ-RX-r8k" secondAttribute="bottom" id="zg8-Zq-BX5"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Pyn-sH-Sfo">
-                                                <rect key="frame" x="76" y="19" width="187" height="42.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="07H-Ov-WRq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="17.5"/>
-                                                        <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="15"/>
-                                                        <color key="textColor" name="Text Black"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload your student ID (Front &amp; Back)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MIX-Wf-P6o">
-                                                        <rect key="frame" x="0.0" y="29.5" width="187" height="13"/>
-                                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="11"/>
-                                                        <color key="textColor" name="Text Gray"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="b07-Xg-83k">
-                                                <rect key="frame" x="334" y="26" width="28" height="28"/>
-                                            </imageView>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xo-PJ-2Cx">
-                                                <rect key="frame" x="0.0" y="0.0" width="366" height="80"/>
-                                                <connections>
-                                                    <action selector="uploadDocumentPressed:" destination="bUu-iC-BCn" eventType="touchUpInside" id="0jF-0M-FPF"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="b07-Xg-83k" secondAttribute="trailing" constant="4" id="3bM-I4-Tf8"/>
-                                            <constraint firstItem="5xo-PJ-2Cx" firstAttribute="leading" secondItem="4AQ-H9-0aj" secondAttribute="leading" id="M2g-Ep-YJv"/>
-                                            <constraint firstItem="Pyn-sH-Sfo" firstAttribute="centerY" secondItem="4AQ-H9-0aj" secondAttribute="centerY" id="PMy-gX-7mP"/>
-                                            <constraint firstItem="b07-Xg-83k" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pyn-sH-Sfo" secondAttribute="trailing" id="aCg-QP-t2X"/>
-                                            <constraint firstItem="Pyn-sH-Sfo" firstAttribute="leading" secondItem="WIl-6X-oEU" secondAttribute="trailing" constant="17" id="eWu-rn-1Fs"/>
-                                            <constraint firstAttribute="height" constant="80" id="g9p-bl-Wop"/>
-                                            <constraint firstAttribute="trailing" secondItem="5xo-PJ-2Cx" secondAttribute="trailing" id="lRG-3S-CRS"/>
-                                            <constraint firstItem="WIl-6X-oEU" firstAttribute="leading" secondItem="4AQ-H9-0aj" secondAttribute="leading" constant="19" id="nzC-ca-euL"/>
-                                            <constraint firstItem="WIl-6X-oEU" firstAttribute="centerY" secondItem="4AQ-H9-0aj" secondAttribute="centerY" id="poJ-Uu-Mlq"/>
-                                            <constraint firstItem="5xo-PJ-2Cx" firstAttribute="top" secondItem="4AQ-H9-0aj" secondAttribute="top" id="q8q-5F-T67"/>
-                                            <constraint firstItem="b07-Xg-83k" firstAttribute="centerY" secondItem="4AQ-H9-0aj" secondAttribute="centerY" id="wEc-cb-RTB"/>
-                                            <constraint firstAttribute="bottom" secondItem="5xo-PJ-2Cx" secondAttribute="bottom" id="xoo-pd-8Vh"/>
+                                            <constraint firstAttribute="height" constant="80" id="5Co-nG-dvF"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" red="0.1960784314" green="0.1960784314" blue="0.2784313725" alpha="0.16" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="32"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="0.0" height="24"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JcH-q2-8gl">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fm-jn-9PG" customClass="ItemViewWithSubtitleAndCheckmark" customModule="stori" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="190" width="366" height="80"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVL-yc-NJt">
-                                                <rect key="frame" x="19" y="20" width="40" height="40"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="1dD-jk-p0T">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                                        <color key="backgroundColor" name="AccentColor"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="1dD-jk-p0T" secondAttribute="bottom" id="Fbu-ez-EGq"/>
-                                                    <constraint firstItem="1dD-jk-p0T" firstAttribute="top" secondItem="TVL-yc-NJt" secondAttribute="top" id="FiD-5M-t2t"/>
-                                                    <constraint firstAttribute="width" constant="40" id="Oxb-NY-QKv"/>
-                                                    <constraint firstItem="1dD-jk-p0T" firstAttribute="leading" secondItem="TVL-yc-NJt" secondAttribute="leading" id="X8W-aX-E2J"/>
-                                                    <constraint firstAttribute="trailing" secondItem="1dD-jk-p0T" secondAttribute="trailing" id="bUc-uK-RWa"/>
-                                                    <constraint firstAttribute="height" constant="40" id="vmP-DH-Zpg"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="1G8-eH-rXi">
-                                                <rect key="frame" x="76" y="19" width="193" height="42.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selfie with ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2fA-FG-IJ7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="193" height="17.5"/>
-                                                        <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="15"/>
-                                                        <color key="textColor" name="Text Black"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload a selfie with your ID next to you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="afE-QG-evF">
-                                                        <rect key="frame" x="0.0" y="29.5" width="193" height="13"/>
-                                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="11"/>
-                                                        <color key="textColor" name="Text Gray"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="VUR-ow-Vqy">
-                                                <rect key="frame" x="334" y="26" width="28" height="28"/>
-                                            </imageView>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2w-2W-eRa">
-                                                <rect key="frame" x="0.0" y="0.0" width="366" height="80"/>
-                                                <connections>
-                                                    <action selector="uploadDocumentPressed:" destination="bUu-iC-BCn" eventType="touchUpInside" id="OEm-IE-Dgv"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="J2w-2W-eRa" secondAttribute="bottom" id="04a-wu-Yfx"/>
-                                            <constraint firstItem="J2w-2W-eRa" firstAttribute="top" secondItem="JcH-q2-8gl" secondAttribute="top" id="2cA-EF-dob"/>
-                                            <constraint firstAttribute="height" constant="80" id="6pb-pr-RxC"/>
-                                            <constraint firstAttribute="trailing" secondItem="J2w-2W-eRa" secondAttribute="trailing" id="D9U-Cg-Vft"/>
-                                            <constraint firstItem="VUR-ow-Vqy" firstAttribute="centerY" secondItem="JcH-q2-8gl" secondAttribute="centerY" id="Hc7-2b-TgY"/>
-                                            <constraint firstItem="J2w-2W-eRa" firstAttribute="leading" secondItem="JcH-q2-8gl" secondAttribute="leading" id="Ia5-ly-2Bd"/>
-                                            <constraint firstItem="VUR-ow-Vqy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1G8-eH-rXi" secondAttribute="trailing" id="JPp-dv-0ZT"/>
-                                            <constraint firstItem="1G8-eH-rXi" firstAttribute="centerY" secondItem="JcH-q2-8gl" secondAttribute="centerY" id="d3v-Ob-STG"/>
-                                            <constraint firstItem="TVL-yc-NJt" firstAttribute="leading" secondItem="JcH-q2-8gl" secondAttribute="leading" constant="19" id="niS-cm-ifw"/>
-                                            <constraint firstAttribute="trailing" secondItem="VUR-ow-Vqy" secondAttribute="trailing" constant="4" id="uPg-dq-fZb"/>
-                                            <constraint firstItem="TVL-yc-NJt" firstAttribute="centerY" secondItem="JcH-q2-8gl" secondAttribute="centerY" id="uqp-pc-0Fa"/>
-                                            <constraint firstItem="1G8-eH-rXi" firstAttribute="leading" secondItem="TVL-yc-NJt" secondAttribute="trailing" constant="17" id="wpL-JR-eFg"/>
+                                            <constraint firstAttribute="height" constant="80" id="3Ly-e2-y18"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" red="0.1960784314" green="0.1960784314" blue="0.2784313725" alpha="0.16" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="32"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="0.0" height="24"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -709,15 +454,9 @@
                     </view>
                     <navigationItem key="navigationItem" title=" " id="TKw-qC-Nfw"/>
                     <connections>
-                        <outlet property="documentCheckImage" destination="QYQ-RX-r8k" id="MZ7-td-DWb"/>
-                        <outlet property="documentSubtitleLabel" destination="MIX-Wf-P6o" id="OvX-ie-uOa"/>
-                        <outlet property="documentTitleLabel" destination="07H-Ov-WRq" id="SZd-Vm-rK3"/>
-                        <outlet property="personalIdCheckImage" destination="cJd-Cs-VCm" id="dcO-O9-iL8"/>
-                        <outlet property="personalIdSubtitleLabel" destination="Ncg-jA-c77" id="swF-n9-jmq"/>
-                        <outlet property="personalIdTitleLabel" destination="8uR-p8-ibB" id="wpP-OF-BGd"/>
-                        <outlet property="selfieWithIdCheckImage" destination="1dD-jk-p0T" id="L8h-Pc-GVA"/>
-                        <outlet property="selfieWithIdSubtitleLabel" destination="afE-QG-evF" id="jBf-kK-xRN"/>
-                        <outlet property="selfieWithIdTitleLabel" destination="2fA-FG-IJ7" id="2Pd-Jh-QLv"/>
+                        <outlet property="documentItem" destination="lBb-KV-HdP" id="jA3-Bu-MhO"/>
+                        <outlet property="personalIdItem" destination="PgA-Wx-Kn0" id="pIQ-wT-Hls"/>
+                        <outlet property="selfieWithIdItem" destination="7fm-jn-9PG" id="Pbt-7V-Bjy"/>
                         <outlet property="submitButton" destination="4qx-IY-FoH" id="Xfx-DC-eJ5"/>
                         <segue destination="jYx-w5-Z9i" kind="show" identifier="uploadDocument" id="gZ2-gb-NYE"/>
                     </connections>
@@ -883,10 +622,8 @@
         <image name="JoinTN_Student" width="60" height="60"/>
         <image name="JoinTN_Teacher" width="60" height="60"/>
         <image name="check-circle" width="160" height="160"/>
-        <image name="check_mark" width="80" height="80"/>
-        <image name="right_arrow" width="28" height="28"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.7839999794960022" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Background">
             <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
