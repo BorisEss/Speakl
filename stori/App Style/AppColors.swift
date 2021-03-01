@@ -42,4 +42,22 @@ extension UIColor {
                                              green: 0.602,
                                              blue: 0.602,
                                              alpha: 1)
+    
+    static var background = UIColor(red: 0.980,
+                                    green: 0.980,
+                                    blue: 0.980,
+                                    alpha: 1)
+    
+    static var textBlack = UIColor(red: 0.082,
+                                   green: 0.082,
+                                   blue: 0.133,
+                                   alpha: 1)
+    static var textGray = UIColor(red: 0.478,
+                                  green: 0.478,
+                                  blue: 0.478,
+                                  alpha: 1)
+    static var removeRed = UIColor(red: 1,
+                                   green: 0.392,
+                                   blue: 0.486,
+                                   alpha: 1)
 }

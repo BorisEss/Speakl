@@ -17,6 +17,10 @@ class Toast {
         showMessage(theme: Theme.error, message: message)
     }
     
+    static func warning(_ message: String) {
+        showMessage(theme: Theme.warning, message: message)
+    }
+    
     private static func showMessage(theme: Theme,
                                     duration: SwiftMessages.Duration = .seconds(seconds: 2),
                                     message: String) {
@@ -31,7 +35,7 @@ class Toast {
         messageView.configureTheme(theme)
         messageView.configureContent(title: "", body: message)
         
-        messageView.iconLabel?.isHidden = true
+        messageView.iconLabel?.isHidden = theme != .warning
         messageView.titleLabel?.isHidden = true
         messageView.button?.isHidden = true
         messageView.bodyLabel?.font = UIFont.IBMPlexSans()

@@ -46,6 +46,9 @@ struct CurrentUser: Decodable {
     }
     
     var interests: [Interest] {
+        if let currentLearningLanguage = currentLearningLanguage {
+            return currentLearningLanguage.interests
+        }
        return []
     }
 }

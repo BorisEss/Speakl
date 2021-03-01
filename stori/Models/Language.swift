@@ -10,7 +10,7 @@ import Foundation
 struct Language: Decodable, Equatable {
     var id: Int
     var name: String
-    var shortcut: String
+    var shortcut: String?
     var flag: String?
     
     enum CodingKeys: String, CodingKey {

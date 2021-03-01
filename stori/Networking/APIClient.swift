@@ -71,8 +71,6 @@ final class APIClient {
                     return NetworkError.unknownError
                 }
             case 403:
-                KeychainManager.shared.token = nil
-                Router.load()
                 return NetworkError.noAuthenticationProvided
             case 404:
                 if let errorString = parseError(data: data) {
@@ -107,29 +105,34 @@ final class APIClient {
         
         for (key, value) in data {
             if let data = value as? Data {
+                var newName: String = name ?? String.uniqueName
+                var mimeType: String = ""
                 switch type {
                 case .image:
-                    multipartFormData.append(data,
-                                             withName: key,
-                                             fileName: (name ?? String.uniqueName) + ".jpeg",
-                                             mimeType: "image/jpeg")
-                    if let localData = ((name ?? String.uniqueName) + ".jpeg").data(using: .utf8) {
-                        multipartFormData.append(localData, withName: "filename")
-                    }
+                    newName += ".jpeg"
+                    mimeType = "image/jpeg"
                 case .video:
-                    // TODO: Video upload
-                    break
-                case .audio:
-                    // TODO: Audio upload
-                    break
+                    newName += ".mov"
+                    mimeType = "video/quicktime"
+                case .audioMp3:
+                    newName += ".mp3"
+                    mimeType = "audio/mpeg3"
+                case .audioM4a:
+                    newName += ".m4a"
+                    mimeType = "audio/mp4"
                 case .pdf:
-                    // TODO: Doc upload
-                    break
+                    newName += ".pdf"
+                    mimeType = "application/pdf"
                 }
-            } else {
-                if let localData = ("\(value)").data(using: .utf8) {
-                    multipartFormData.append(localData, withName: key)
+                multipartFormData.append(data,
+                                         withName: key,
+                                         fileName: newName,
+                                         mimeType: mimeType)
+                if let localData = newName.data(using: .utf8) {
+                    multipartFormData.append(localData, withName: "filename")
                 }
+            } else if let localData = ("\(value)").data(using: .utf8) {
+                multipartFormData.append(localData, withName: key)
             }
         }
         

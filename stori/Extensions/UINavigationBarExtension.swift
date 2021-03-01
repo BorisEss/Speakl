@@ -23,3 +23,34 @@ extension UINavigationBar {
         titleTextAttributes = [NSAttributedString.Key.font: UIFont.IBMPlexSansBold(size: 16)]
     }
 }
+
+extension UINavigationItem {
+    func setTitleAndSubtitle(title: String, subtitle: String) {
+        let titleLabel = UILabel(frame: CGRect(x: 0,
+                                               y: -5,
+                                               width: 0,
+                                               height: 0))
+        
+        titleLabel.backgroundColor = UIColor.clear
+        titleLabel.textColor = UIColor.textBlack
+        titleLabel.font = UIFont.IBMPlexSansBold(size: 16)
+        titleLabel.text = title
+        titleLabel.sizeToFit()
+        
+        let subtitleLabel = UILabel(frame: CGRect(x: 0,
+                                                  y: 18,
+                                                  width: 0,
+                                                  height: 0))
+        subtitleLabel.backgroundColor = UIColor.clear
+        subtitleLabel.textColor = UIColor.textGray
+        subtitleLabel.font = UIFont.IBMPlexSans(size: 12)
+        subtitleLabel.text = subtitle
+        subtitleLabel.sizeToFit()
+
+        let titleStackView = UIStackView(arrangedSubviews: [titleLabel, subtitleLabel])
+        titleStackView.axis = .vertical
+        titleStackView.alignment = .center
+        
+        self.titleView = titleStackView
+    }
+}

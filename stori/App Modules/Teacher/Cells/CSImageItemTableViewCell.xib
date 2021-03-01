@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="CSImageItemTableViewCell" customModule="stori" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="193.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="193.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3g-3D-d15">
+                        <rect key="frame" x="20" y="28" width="280" height="157.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="AN1-SP-brr">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="157.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157.5" id="lVe-cO-dQ2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Nqa-XR-T8O">
+                                <rect key="frame" x="130" y="69" width="20" height="20"/>
+                                <color key="color" name="AccentColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="AN1-SP-brr" secondAttribute="bottom" id="Eam-v6-Iap"/>
+                            <constraint firstItem="AN1-SP-brr" firstAttribute="top" secondItem="Z3g-3D-d15" secondAttribute="top" id="RD9-BT-Q2z"/>
+                            <constraint firstItem="AN1-SP-brr" firstAttribute="leading" secondItem="Z3g-3D-d15" secondAttribute="leading" id="f8y-GA-J6q"/>
+                            <constraint firstItem="Nqa-XR-T8O" firstAttribute="centerX" secondItem="Z3g-3D-d15" secondAttribute="centerX" id="hH6-lB-rf8"/>
+                            <constraint firstAttribute="trailing" secondItem="AN1-SP-brr" secondAttribute="trailing" id="j03-UH-iOl"/>
+                            <constraint firstItem="Nqa-XR-T8O" firstAttribute="centerY" secondItem="Z3g-3D-d15" secondAttribute="centerY" id="pQD-Kn-r0l"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.1960784314" green="0.1960784314" blue="0.2784313725" alpha="0.16" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_image" translatesAutoresizingMaskIntoConstraints="NO" id="L2D-or-gSB">
+                        <rect key="frame" x="254" y="8" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.23277956250000001" green="0.2727110982" blue="0.43952089550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="7Al-6d-rNc"/>
+                            <constraint firstAttribute="height" constant="40" id="USV-ow-g9v"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btQ-6e-vDt">
+                        <rect key="frame" x="202" y="8" width="40" height="40"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="3bQ-So-8ob"/>
+                            <constraint firstAttribute="height" constant="40" id="ugh-KM-SEB"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="edit"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="editButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="q3E-V3-x5W"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Z3g-3D-d15" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="28" id="Asr-0I-XQn"/>
+                    <constraint firstItem="Z3g-3D-d15" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="FQx-eg-XjK"/>
+                    <constraint firstItem="L2D-or-gSB" firstAttribute="leading" secondItem="btQ-6e-vDt" secondAttribute="trailing" constant="12" id="J4H-nc-oPF"/>
+                    <constraint firstItem="L2D-or-gSB" firstAttribute="top" secondItem="Z3g-3D-d15" secondAttribute="top" constant="-20" id="Pye-CY-hjM"/>
+                    <constraint firstAttribute="bottom" secondItem="Z3g-3D-d15" secondAttribute="bottom" constant="8" id="TSh-pj-lbZ"/>
+                    <constraint firstItem="btQ-6e-vDt" firstAttribute="top" secondItem="Z3g-3D-d15" secondAttribute="top" constant="-20" id="iTa-Xx-jJk"/>
+                    <constraint firstAttribute="trailing" secondItem="Z3g-3D-d15" secondAttribute="trailing" constant="20" id="qAw-ti-epU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="L2D-or-gSB" secondAttribute="trailing" constant="10" id="zHA-aX-6PF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="editButton" destination="btQ-6e-vDt" id="dLd-td-osy"/>
+                <outlet property="imageHeight" destination="lVe-cO-dQ2" id="y79-QU-tBg"/>
+                <outlet property="itemImageView" destination="AN1-SP-brr" id="E4t-s7-EQ3"/>
+                <outlet property="progressActivityIndicator" destination="Nqa-XR-T8O" id="shB-qt-tuU"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="164.73214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_image" width="40.5" height="40"/>
+        <image name="edit" width="19" height="19"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

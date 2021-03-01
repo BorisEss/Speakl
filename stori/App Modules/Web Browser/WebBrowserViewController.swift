@@ -11,11 +11,12 @@ import WebKit
 class WebBrowserViewController: UIViewController {
     
     var url: URL?
+    var noDataTitle: String?
     var navbarWasHidden: Bool = false
     private var progressActivityIndicator: UIActivityIndicatorView!
 
-    @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var noDataLabel: UILabel!
+    @IBOutlet private weak var webView: WKWebView!
+    @IBOutlet private weak var noDataLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,13 @@ class WebBrowserViewController: UIViewController {
             let request = URLRequest(url: url)
             webView.load(request)
         } else {
-            noDataLabel.text = "common_nothing_to_show".localized
+            if let noDataTitle = noDataTitle {
+                noDataLabel.text = noDataTitle
+            } else {
+                noDataLabel.text = "common_nothing_to_show".localized
+            }
             noDataLabel.isHidden = false
+            webView.isHidden = true
         }
     }
     

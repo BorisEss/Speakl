@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Light.ttf">
+            <string>IBMPlexSans-Light</string>
+        </array>
+        <array key="IBMPlexSans-SemiBold.ttf">
+            <string>IBMPlexSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CSCoverCardCell" customModule="stori" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="441"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="441"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c16-Dq-F6d">
+                        <rect key="frame" x="0.0" y="0.0" width="310" height="441"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ifi-OO-1lT">
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="441"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV0-fH-08s" customClass="RegularButton" customModule="stori" customModuleProvider="target">
+                                <rect key="frame" x="20" y="361" width="164" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="999" constant="164" id="EMC-dg-SVB"/>
+                                    <constraint firstAttribute="height" constant="50" id="Xu3-fd-cwh"/>
+                                </constraints>
+                                <state key="normal" title="Choose"/>
+                                <connections>
+                                    <action selector="selectButtonIsSelected:" destination="gTV-IL-0wX" eventType="touchUpInside" id="eLw-d9-Pul"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bl9-BF-hhT">
+                                <rect key="frame" x="20" y="305.5" width="60" height="23.5"/>
+                                <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="20"/>
+                                <color key="textColor" name="Background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFZ-iG-j5O">
+                                <rect key="frame" x="20" y="277.5" width="63" height="28"/>
+                                <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="24"/>
+                                <color key="textColor" name="Background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ifi-OO-1lT" firstAttribute="top" secondItem="c16-Dq-F6d" secondAttribute="top" id="18S-cL-vT5"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bl9-BF-hhT" secondAttribute="trailing" constant="16" id="2og-5l-GR4"/>
+                            <constraint firstAttribute="bottom" secondItem="Ifi-OO-1lT" secondAttribute="bottom" id="Aws-u9-IIG"/>
+                            <constraint firstItem="jFZ-iG-j5O" firstAttribute="leading" secondItem="mV0-fH-08s" secondAttribute="leading" id="B80-GO-RLD"/>
+                            <constraint firstItem="mV0-fH-08s" firstAttribute="leading" secondItem="c16-Dq-F6d" secondAttribute="leading" constant="20" id="CDq-gV-Weg"/>
+                            <constraint firstItem="Bl9-BF-hhT" firstAttribute="top" secondItem="jFZ-iG-j5O" secondAttribute="bottom" id="JQf-U6-2it"/>
+                            <constraint firstAttribute="bottom" secondItem="mV0-fH-08s" secondAttribute="bottom" constant="30" id="SJR-ds-Qux"/>
+                            <constraint firstItem="mV0-fH-08s" firstAttribute="top" secondItem="Bl9-BF-hhT" secondAttribute="bottom" constant="32" id="SKT-WU-2Rp"/>
+                            <constraint firstItem="Bl9-BF-hhT" firstAttribute="leading" secondItem="mV0-fH-08s" secondAttribute="leading" id="Urk-HY-P0V"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jFZ-iG-j5O" secondAttribute="trailing" constant="16" id="aZy-qY-Eat"/>
+                            <constraint firstAttribute="trailing" secondItem="Ifi-OO-1lT" secondAttribute="trailing" id="dqS-Fq-SYz"/>
+                            <constraint firstItem="Ifi-OO-1lT" firstAttribute="leading" secondItem="c16-Dq-F6d" secondAttribute="leading" id="h81-10-R0q"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.1960784314" green="0.1960784314" blue="0.2784313725" alpha="0.16" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="c16-Dq-F6d" secondAttribute="bottom" id="6UV-ke-WOA"/>
+                <constraint firstAttribute="trailing" secondItem="c16-Dq-F6d" secondAttribute="trailing" id="DTA-ua-62T"/>
+                <constraint firstItem="c16-Dq-F6d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WPV-XZ-lec"/>
+                <constraint firstItem="c16-Dq-F6d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ciM-FM-DA2"/>
+            </constraints>
+            <size key="customSize" width="310" height="441"/>
+            <connections>
+                <outlet property="categoryLabel" destination="jFZ-iG-j5O" id="21Z-sv-Htc"/>
+                <outlet property="coverImageView" destination="Ifi-OO-1lT" id="dvC-bx-Lz5"/>
+                <outlet property="selectButton" destination="mV0-fH-08s" id="xSO-ON-GoO"/>
+                <outlet property="subCategoryLabel" destination="Bl9-BF-hhT" id="ai4-f7-GK7"/>
+            </connections>
+            <point key="canvasLocation" x="-475.36231884057975" y="211.94196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

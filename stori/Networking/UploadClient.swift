@@ -23,12 +23,14 @@ class Upload {
         let chunkedFile = ChunkedFile(image: image, name: name)
         upload(file: chunkedFile, progress: progress, completion: completion)
     }
-//    static func video() {
-//
-//    }
-//    static func file() {
-//
-//    }
+    static func media(url: URL,
+                      name: String,
+                      fileType: FileType,
+                      progress: @escaping (_ value: Double) -> Void,
+                      completion: @escaping (_ id: String) -> Void) {
+        let chunkedFile = ChunkedFile(url: url, name: name, type: fileType)
+        upload(file: chunkedFile, progress: progress, completion: completion)
+    }
     
     static func remove(file: LocalFile,
                        completion: @escaping (Bool) -> Void) {

@@ -34,7 +34,8 @@ class LanguageInterestsSelectionViewController: UIViewController {
         setUpView()
         setUpLanguage()
         
-        LanguagePresenter().getInterests()
+        guard let learningLanguage = learningLanguage else { return }
+        LanguagePresenter().getInterests(for: learningLanguage)
             .done { (interests) in
                 self.interests = interests
             }

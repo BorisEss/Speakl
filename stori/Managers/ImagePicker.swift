@@ -35,12 +35,17 @@ class ImagePicker {
         }
     }
     
-//    static func pickVideo(from screen: ImagePickerScreen?) {
-//        pick(screen: .library)
-//    }
+    static func pickVideo(from screen: ImagePickerScreen?,
+                          completion: @escaping (_ file: LocalFile) -> Void) {
+        pick(screen: .library,
+             frontCamera: false,
+             isVideo: true,
+             completion: completion)
+    }
     
     private static func pick(screen: YPPickerScreen?,
                              frontCamera: Bool,
+                             isVideo: Bool = false,
                              completion: @escaping (_ file: LocalFile) -> Void) {
         var config = YPImagePickerConfiguration()
         config.isScrollToChangeModesEnabled = false
@@ -52,6 +57,11 @@ class ImagePicker {
             config.screens = [.photo, .library]
         }
         config.showsCrop = .none
+        config.showsVideoTrimmer = true
+        config.library.mediaType = isVideo ? .video : .photo
+        config.video.libraryTimeLimit = .infinity
+        config.video.recordingTimeLimit = 30
+        config.video.trimmerMaxDuration = 30
         config.targetImageSize = YPImageSize.original
         config.overlayView = UIView()
         config.hidesStatusBar = false
@@ -66,10 +76,15 @@ class ImagePicker {
         let picker = YPImagePicker(configuration: config)
 
         picker.didFinishPicking { [unowned picker] items, _ in
-            if let screen = screen,
-               screen != .video,
-               let photo = items.singlePhoto {
-                completion(LocalFile(image: photo.image))
+            if isVideo {
+                if let video = items.singleVideo {
+                    completion(LocalFile(videoUrl: video.url.absoluteString,
+                                         thumbnail: video.thumbnail))
+                }
+            } else {
+                if let photo = items.singlePhoto {
+                    completion(LocalFile(image: photo.image))
+                }
             }
             picker.dismiss(animated: true, completion: nil)
         }

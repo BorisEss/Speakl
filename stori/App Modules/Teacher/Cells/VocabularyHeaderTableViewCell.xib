@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Bold.ttf">
+            <string>IBMPlexSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="VocabularyHeaderTableViewCell" customModule="stori" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zR-dT-9QL">
+                        <rect key="frame" x="24" y="10.5" width="49" height="23.5"/>
+                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="20"/>
+                        <color key="textColor" name="Text Black"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3zR-dT-9QL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="FKN-aq-8I1"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3zR-dT-9QL" secondAttribute="trailing" constant="24" id="HlS-6p-NNA"/>
+                    <constraint firstItem="3zR-dT-9QL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pgF-OD-f0z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="titleLabel" destination="3zR-dT-9QL" id="HYY-tM-RPA"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="104"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Text Black">
+            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

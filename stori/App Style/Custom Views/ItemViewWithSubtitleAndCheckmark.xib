@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Regular.ttf">
+            <string>IBMPlexSans</string>
+        </array>
+        <array key="IBMPlexSans-SemiBold.ttf">
+            <string>IBMPlexSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemViewWithSubtitleAndCheckmark" customModule="stori" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="4AX-iN-Try" id="QCU-il-eeL"/>
+                <outlet property="checkMarkImage" destination="IJA-wC-94t" id="Kv1-7m-zts"/>
+                <outlet property="contentView" destination="q4T-Uj-fzT" id="LWX-aI-TFQ"/>
+                <outlet property="subtitleLabel" destination="WLg-PI-xD5" id="8of-Sf-V9Q"/>
+                <outlet property="titleLabel" destination="YQp-rB-bcU" id="FzX-tc-FFu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4T-Uj-fzT">
+                    <rect key="frame" x="0.0" y="0.0" width="441" height="80"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSk-yq-ilj">
+                            <rect key="frame" x="19" y="20" width="40" height="40"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="IJA-wC-94t">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="IJA-wC-94t" firstAttribute="leading" secondItem="xSk-yq-ilj" secondAttribute="leading" id="2Sw-nJ-efz"/>
+                                <constraint firstAttribute="width" constant="40" id="J6C-Rt-UQ3"/>
+                                <constraint firstAttribute="trailing" secondItem="IJA-wC-94t" secondAttribute="trailing" id="a2c-8n-d0H"/>
+                                <constraint firstAttribute="bottom" secondItem="IJA-wC-94t" secondAttribute="bottom" id="aCX-1g-OhM"/>
+                                <constraint firstAttribute="height" constant="40" id="lP3-jj-Wi1"/>
+                                <constraint firstItem="IJA-wC-94t" firstAttribute="top" secondItem="xSk-yq-ilj" secondAttribute="top" id="nkw-HS-dzq"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="VP8-tr-kEF">
+                            <rect key="frame" x="76" y="4" width="187" height="72"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YQp-rB-bcU">
+                                    <rect key="frame" x="0.0" y="0.0" width="187" height="10"/>
+                                    <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="15"/>
+                                    <color key="textColor" name="Text Black"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WLg-PI-xD5">
+                                    <rect key="frame" x="0.0" y="22" width="187" height="50"/>
+                                    <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="11"/>
+                                    <color key="textColor" name="Text Gray"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="jKU-9q-kyh">
+                            <rect key="frame" x="409" y="26" width="28" height="28"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AX-iN-Try">
+                            <rect key="frame" x="0.0" y="0.0" width="441" height="80"/>
+                            <connections>
+                                <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="PFE-55-iA0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="jKU-9q-kyh" firstAttribute="centerY" secondItem="q4T-Uj-fzT" secondAttribute="centerY" id="F91-sz-p1C"/>
+                        <constraint firstAttribute="bottom" secondItem="4AX-iN-Try" secondAttribute="bottom" id="Ir0-nd-KVe"/>
+                        <constraint firstItem="VP8-tr-kEF" firstAttribute="leading" secondItem="xSk-yq-ilj" secondAttribute="trailing" constant="17" id="S9g-PL-64Y"/>
+                        <constraint firstAttribute="trailing" secondItem="jKU-9q-kyh" secondAttribute="trailing" constant="4" id="Xs0-Yk-Ov1"/>
+                        <constraint firstItem="jKU-9q-kyh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VP8-tr-kEF" secondAttribute="trailing" id="bir-tC-nGP"/>
+                        <constraint firstItem="VP8-tr-kEF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="q4T-Uj-fzT" secondAttribute="top" constant="4" id="dFr-An-BpA"/>
+                        <constraint firstAttribute="trailing" secondItem="4AX-iN-Try" secondAttribute="trailing" id="eeh-5k-w5W"/>
+                        <constraint firstItem="VP8-tr-kEF" firstAttribute="centerY" secondItem="q4T-Uj-fzT" secondAttribute="centerY" id="fdk-vF-ghz"/>
+                        <constraint firstItem="xSk-yq-ilj" firstAttribute="leading" secondItem="q4T-Uj-fzT" secondAttribute="leading" constant="19" id="i50-LF-BUj"/>
+                        <constraint firstItem="xSk-yq-ilj" firstAttribute="centerY" secondItem="q4T-Uj-fzT" secondAttribute="centerY" id="iHP-bK-R5Q"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VP8-tr-kEF" secondAttribute="bottom" constant="4" id="llz-r4-frf"/>
+                        <constraint firstItem="4AX-iN-Try" firstAttribute="leading" secondItem="q4T-Uj-fzT" secondAttribute="leading" id="rKF-xJ-xl3"/>
+                        <constraint firstItem="4AX-iN-Try" firstAttribute="top" secondItem="q4T-Uj-fzT" secondAttribute="top" id="zBG-y9-TBp"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.1960784314" green="0.1960784314" blue="0.2784313725" alpha="0.16" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="32"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="q4T-Uj-fzT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OMj-di-Pdh"/>
+                <constraint firstAttribute="bottom" secondItem="q4T-Uj-fzT" secondAttribute="bottom" id="XlY-sL-FgN"/>
+                <constraint firstItem="q4T-Uj-fzT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="keh-aB-cw1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="q4T-Uj-fzT" secondAttribute="trailing" id="mlz-91-Qux"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="157.24637681159422" y="-159.375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check_mark" width="80" height="80"/>
+        <image name="right_arrow" width="28" height="28"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.7839999794960022" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Black">
+            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Gray">
+            <color red="0.4779999852180481" green="0.4779999852180481" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -22,6 +22,7 @@
 "common_contact_us" = "Contact Us";
 "common_yes_title" = "Yes";
 "common_no_title" = "No";
+"common_ok" = "OK";
 "common_cancel_title" = "Cancel";
 "common_close_title" = "Close";
 "common_done_title" = "Done";
@@ -34,6 +35,9 @@
 "common_terms_and_conditions" = "Terms & Conditions";
 "common_privacy_policy" = "Privacy Policy";
 "common_nothing_to_show" = "Nothing to show";
+"common_no_items_to_show" = "No Items to show";
+"common_optional" = "Optional";
+"common_save" = "Save";
 "common_error_message_something_went_wrong" = "Something went wrong. Please try again.";
 "common_empty_field" = "Please fill this field";
 "common_wrong_password_format" = "Please enter a valid password with at least 6 characters";
@@ -136,6 +140,109 @@
 "join_tn_message_error_subtitle" = "Something went wrong";
 "join_tn_message_error_description" = "Please try again to upload your documents.";
 "join_tn_message_error_button" = "Try Again!";
+
+
+"teacher_network_title" = "Teacher Network";
+"teacher_network_create_story" = "Create My Story";
+"teacher_network_translate_story" = "Translate Existing Stories";
+
+
+"cs_story_title_navbar_title" = "Write your story";
+"cs_story_title_description" = "Please create the Story for a specific level selected. To meet the standards, please use the vocabulary from the word lists & grammar provided for each level.";
+"cs_story_title_chapter" = "Chapter %@";
+"cs_story_title_story_name_label" = "Story Name";
+"cs_story_title_story_name_placeholder" = "Enter Story Name";
+"cs_story_saved_to_drafts" = "Your story is saved to Drafts";
+
+"cs_main_list_topic_title" = "Topic";
+"cs_main_list_topic_subtitle" = "Select a topic";
+"cs_main_list_category_title" = "Category";
+"cs_main_list_category_subtitle" = "Select a category";
+"cs_main_list_sub_category_title" = "Sub-category";
+"cs_main_list_sub_category_subtitle" = "Select story's Sub-category";
+"cs_main_list_language_title" = "Language";
+"cs_main_list_language_subtitle" = "Story language";
+"cs_main_list_language_level_title" = "Language Level";
+"cs_main_list_language_level_subtitle" = "Select Language level";
+"cs_main_list_cover_title" = "Cover";
+"cs_main_list_cover_subtitle" = "Select story cover";
+"cs_main_list_bg_sound_title" = "Background Sound";
+"cs_main_list_bg_sound_subtitle" = "Name of Sound";
+"cs_main_list_story_text_title" = "Story Text";
+"cs_main_list_story_text_subtitle" = "Write your story";
+"cs_main_list_voice_over_title" = "Story Voice Over";
+"cs_main_list_voice_over_subtitle" = "Your story recording";
+"cs_main_list_create_story_button" = "Create Story";
+
+
+"cs_custom_item_topic_placeholder" = "Enter Topic";
+"cs_custom_item_category_placeholder" = "Enter Category";
+"cs_custom_item_sub_category_placeholder" = "Enter Sub-category";
+"cs_custom_item_language_placeholder" = "Enter Language";
+"cs_custom_item_language_level_placeholder" = "Enter Language Level";
+"cs_custom_item_topic_popup" = "Thanks for submitting a new topic!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
+"cs_custom_item_category_popup" = "Thanks for submitting a new category!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
+"cs_custom_item_sub_category_popup" = "Thanks for submitting a new sub-category!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
+"cs_custom_item_language_popup" = "Thanks for submitting a new language!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
+"cs_custom_item_language_level_popup" = "Thanks for submitting a new language level!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
+
+
+"cs_covers_title" = "Covers";
+"cs_covers_choose" = "Choose";
+"cs_covers_custom_popup" = "Thanks for submitting a new cover!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing covers.";
+
+
+"cs_background_music_title" = "Now Playing";
+"cs_background_music_not_playing" = "Not Playing";
+"cs_background_music_search_placehodler" = "Search";
+"cs_background_music_custom_popup" = "Thanks for submitting a new background sound!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing sounds.";
+
+
+"cs_text_title" = "Story Creation";
+"cs_text_vocabulary_list" = "Vocabulary List";
+"cs_text_grammar" = "Grammar";
+"cs_text_add_title_label_start" = "Start writing your story by adding a section";
+"cs_text_add_title_label_your_story" = "Your story";
+"cs_text_grammar_guide" = "Grammar Guide";
+"cs_text_grammar_missing" = "Specific gramar is missing.";
+"cs_text_grammar_word_missing" = "Specific gramar for selected word is missing.";
+"cs_text_add" = "Add";
+"cs_text_add_text" = "Text";
+"cs_text_add_image" = "Image";
+"cs_text_add_video" = "Video";
+"cs_text_merge" = "Merge";
+"cs_text_unmerge" = "Unmerge";
+"cs_text_remove_word" = "Remove %@ word";
+"cs_text_wait_until_finished" = "Please wait until upload is finished";
+
+
+"cs_vocabulary_list" = "Vocabulary List";
+"cs_vocabulary_word" = "word";
+"cs_vocabulary_words" = "words";
+"cs_vocabulary_search" = "Search";
+"cs_vocabulary_no_data" = "The Category and Sub-category you’ve chosen doesn’t have a specific vocabulary list. You may use your own vocabulary list to create this story.";
+
+
+"cs_recording_list_title" = "Record or Uplaod Voice-Over";
+"cs_recording_voice_over" = "Voice Over";
+"cs_recording_list_no_data_title" = "Upload or record voice over for your story";
+"cs_recording_screen_main_title" = "Record Voice";
+"cs_recording_screen_recording_title" = "Recording";
+"cs_recording_screen_recording_finished_title" = "Finished Recording";
+"cs_recording_screen_error_microphone" = "Can not access your microphone. Check your microphone permissions in settings.";
+
+
+"cs_message_loading_title" = "Loading";
+"cs_message_loading_subtitle" = "You're almost done!\nWe're creating your Story.";
+"cs_message_success_navbar" = "Thank You!";
+"cs_message_success_title" = "Congratulations!";
+"cs_message_success_subtitle" = "Your Story is Created";
+"cs_message_success_description" = "Thank you so much for sbmission! Your story is in review and should be live shortly.";
+"cs_message_error_navbar" = "Error!";
+"cs_message_error_title" = "Whoops...";
+"cs_message_error_subtitle" = "Something went wrong";
+"cs_message_error_description" = "Please check your story and try again";
+"cs_message_error_button" = "Go Back";
 
 
 "main_nav_controller_tab_title_learn" = "Learn";

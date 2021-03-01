@@ -14,21 +14,12 @@ class TeacherNetworkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setUpLanguage()
     }
     
-    @IBAction func createStoryButtonPressed(_ sender: Any) {
-        
-    }
-    
-    @IBAction func translateStoryButtonPressed(_ sender: Any) {
-        
-    }
-    
     private func setUpLanguage() {
-        title = "Teacher Network"
-        createStoryLabel.text = "Create My Story"
-        translateStoryLabel.text = "Translate Existing Stories"
+        title = "teacher_network_title".localized
+        createStoryLabel.text = "teacher_network_create_story".localized
+        translateStoryLabel.text = "teacher_network_translate_story".localized
     }
 }

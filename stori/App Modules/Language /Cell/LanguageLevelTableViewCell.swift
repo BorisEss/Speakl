@@ -35,7 +35,7 @@ class LanguageLevelTableViewCell: UITableViewCell, CustomTableViewCell {
     func setUp(level: LanguageLevel) {
         self.level = level
         levelIconView.backgroundColor = level.color
-        levelShortcutLabel.text = level.shortcut.uppercased()
+        levelShortcutLabel.attributedText = level.attributedShortcut
         levelTitleLabel.text = level.name
     }
 }

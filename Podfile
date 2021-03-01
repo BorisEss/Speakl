@@ -1,5 +1,7 @@
 platform :ios, '13.0'
 
+inhibit_all_warnings!
+
 target 'stori' do
   use_frameworks!
 
@@ -10,7 +12,6 @@ target 'stori' do
   pod 'GoogleSignIn'
   pod 'FBSDKCoreKit/Swift'
   pod 'FBSDKLoginKit/Swift'
-#  pod 'SwiftyJSON'
   
   # Google
 #  pod 'Firebase/Core'
@@ -18,7 +19,6 @@ target 'stori' do
 #  pod 'Firebase/Performance'
 #  pod 'Firebase/Crashlytics'
 #  pod 'Firebase/Firestore'
-#  pod 'Google-Mobile-Ads-SDK'
   
   # System Functionality
   pod 'SwiftLint'
@@ -26,8 +26,6 @@ target 'stori' do
   pod 'PromiseKit'
   pod 'KeychainSwift'
 #  pod 'SwiftyStoreKit'
-#  pod 'ReachabilitySwift'
-#  pod 'UITextView+Placeholder'
   
   #UI Pods
   pod 'UPCarouselFlowLayout'
@@ -36,6 +34,15 @@ target 'stori' do
   pod 'EasyTipView'
   pod 'NVActivityIndicatorView'
   pod 'YPImagePicker'
+  pod 'VerticalCardSwiper'
+  pod 'MarqueeLabel'
+  pod 'SwipeCellKit'
+  pod 'MobileVLCKit'
+  pod 'UITextView+Placeholder'
+  pod 'TagListView'
+  pod 'NewPopMenu'
+#  pod 'MenuItemKit'
+#  pod 'GrowingTextView'
 #  pod 'SideMenu'
 #  pod 'SimpleCheckbox'
 #  pod 'Cluster'

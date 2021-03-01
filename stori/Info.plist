@@ -18,12 +18,56 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb982791792066230</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.1086533177231-hbunp9rr9g5bq115bdlgonfpgtdos2s6</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FacebookAppID</key>
+	<string>982791792066230</string>
+	<key>FacebookDisplayName</key>
+	<string>Stori</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+		<string>mailto</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera is used to take photos when it is requested</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Michrophone is used while you record a video or voice recording</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Library access is needed to pick a photo from you library when it is requested</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>IBMPlexSans-Bold.ttf</string>
+		<string>IBMPlexSans-Regular.ttf</string>
+		<string>Sweet Pea.ttf</string>
+		<string>IBMPlexSans-Light.ttf</string>
+		<string>IBMPlexSans-SemiBold.ttf</string>
+		<string>IBMPlexSans-LightItalic.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -70,48 +114,5 @@
 	<string>Light</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-	<key>UIAppFonts</key>
-	<array>
-		<string>IBMPlexSans-Bold.ttf</string>
-		<string>IBMPlexSans-Regular.ttf</string>
-		<string>Sweet Pea.ttf</string>
-		<string>IBMPlexSans-Light.ttf</string>
-		<string>IBMPlexSans-SemiBold.ttf</string>
-	</array>
-	<key>FacebookAppID</key>
-	<string>982791792066230</string>
-	<key>FacebookDisplayName</key>
-	<string>Stori</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>fbapi</string>
-		<string>fb-messenger-share-api</string>
-		<string>fbauth2</string>
-		<string>fbshareextension</string>
-		<string>mailto</string>
-	</array>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>fb982791792066230</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.googleusercontent.apps.1086533177231-hbunp9rr9g5bq115bdlgonfpgtdos2s6</string>
-			</array>
-		</dict>
-	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>Camera is used to take photos when it is requested</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Library access is needed to pick a photo from you library when it is requested</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Michrophone is used while you record a video</string>
 </dict>
 </plist>

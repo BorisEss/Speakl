@@ -21,7 +21,7 @@ class Storage {
     var currentLanguage: Language? {
         didSet {
             if let lang = currentLanguage {
-                DefaultSettings.appLanguage = lang.shortcut
+                DefaultSettings.appLanguage = lang.shortcut ?? "en"
             }
         }
     }

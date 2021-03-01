@@ -72,12 +72,13 @@ class LanguagePresenter {
         }
     }
     
-    func getInterests() -> Promise<[Interest]> {
+    func getInterests(for language: Language) -> Promise<[Interest]> {
         return Promise<[Interest]> { promise in
             firstly {
                 return Request(endpoint: Endpoints.interests, method: .get)
                     .authorise()
                     .set(query: [
+                        "languages": "\(language.id)",
                         "page_size": "100"
                     ])
                     .build()
@@ -135,20 +136,6 @@ class LanguagePresenter {
                 }
             }
         }
-//        .then { _ -> Promise<URLRequest> in
-//            return Request(endpoint: Endpoints.updateInterests, method: .post)
-//                .set(body: [
-//                    "interest_ids": interests.map { $0.id }
-//                ])
-//                .authorise()
-//                .build()
-//        }
-//        .then { (request) -> Promise<SuccessMessage> in
-//            return APIClient.request(with: request)
-//        }
-//        .then { _ -> Promise<Void> in
-//            return UserClient.getCurrentUser()
-//        }
         .done { _ in
             completion(true)
         }
@@ -157,51 +144,4 @@ class LanguagePresenter {
             completion(false)
         }
     }
-//    func updateLanguages(native: Language,
-//                         learning: Language,
-//                         completion: @escaping (_ isSuccess: Bool) -> Void) {
-//        updateUser(body: [
-//            "native_lang": native.id,
-//            "lang_to_learn": learning.id
-//        ], completion: completion)
-//    }
-//
-//    func updateSkills(skills: [Skill],
-//                      completion: @escaping (_ isSuccess: Bool) -> Void) {
-//        updateUser(body: [
-//            "skill_ids": skills.map { $0.id }
-//        ], completion: completion)
-//    }
-//
-//    func updateLearningLanguageLevel(level: LanguageLevel,
-//                                     completion: @escaping (_ isSuccess: Bool) -> Void) {
-//        updateUser(body: [
-//            "lang_to_learn_level": level.id
-//        ], completion: completion)
-//    }
-//
-//    func updateInterests(interests: [Interest],
-//                         completion: @escaping (_ isSuccess: Bool) -> Void) {
-//        firstly {
-//            return Request(endpoint: Endpoints.updateInterests, method: .post)
-//                .set(body: [
-//                    "interest_ids": interests.map { $0.id }
-//                ])
-//                .authorise()
-//                .build()
-//        }
-//        .then { (request) -> Promise<SuccessMessage> in
-//            return APIClient.request(with: request)
-//        }
-//        .then { _ -> Promise<Void> in
-//            return UserClient.getCurrentUser()
-//        }
-//        .done { _ in
-//            completion(true)
-//        }
-//        .catch { (error) in
-//            error.parse()
-//            completion(false)
-//        }
-//    }
 }

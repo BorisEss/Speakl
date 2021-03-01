@@ -7,7 +7,6 @@
 
 import UIKit
 
-@IBDesignable
 class RegularButton: UIButton {
     @IBInspectable var darkStyle: Bool = false {
         didSet {

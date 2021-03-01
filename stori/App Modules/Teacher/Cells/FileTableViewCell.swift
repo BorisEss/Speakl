@@ -10,6 +10,7 @@ import UIKit
 class FileTableViewCell: UITableViewCell, CustomTableViewCell {
 
     var removeHadler: (() -> Void)?
+    var shouldRemove: Bool = true
     
     private var file: LocalFile?
     
@@ -31,9 +32,13 @@ class FileTableViewCell: UITableViewCell, CustomTableViewCell {
     }
     
     @IBAction func removeButtonPressed(_ sender: Any) {
-        guard let file = file else { return }
-        Upload.remove(file: file) { [weak self] (isSuccess) in
-            if isSuccess { self?.removeHadler?() }
+        if shouldRemove {
+            guard let file = file else { return }
+            Upload.remove(file: file) { [weak self] (isSuccess) in
+                if isSuccess { self?.removeHadler?() }
+            }
+        } else {
+            self.removeHadler?()
         }
     }
     
