@@ -10,6 +10,8 @@ import NVActivityIndicatorView
 
 class JoinTNSuccessMessageViewController: UIViewController {
     
+    var isCheck: Bool = false
+    
     var userType: JoinTNUserType?
     var personalIdList: [LocalFile] = []
     var documentList: [LocalFile] = []
@@ -27,6 +29,13 @@ class JoinTNSuccessMessageViewController: UIViewController {
         super.viewDidLoad()
 
         showLoading()
+        
+        if isCheck {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.showSuccess()
+            }
+            return
+        }
         
         guard let userType = userType else {
             navigationController?.popViewController(animated: true)

@@ -46,7 +46,7 @@ class MainTabBarViewController: UITabBarController {
         item3.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_profile".localized,
                                         image: UIImage(named: "profileTab"), tag: 0)
 
-        viewControllers = [item1, item2, item3]
+        viewControllers = [item1]// , item2, item3]
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.updateTitles),

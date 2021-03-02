@@ -14,7 +14,7 @@ struct CurrentUser: Decodable {
     private var nativeLangId: Int?
     private var currentLearningLanguage: LearningLanguage?
     private var learningLanguagesId: [Int]
-    private var teacherExperience: TeacherExperience?
+    private(set) var teacherExperience: TeacherExperience?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -54,14 +54,14 @@ struct CurrentUser: Decodable {
 }
 
 struct TeacherExperience: Decodable {
-    private var status: Int
+    private(set) var status: TNUserStatus
     
-    var tnUserStatus: TNUserStatus {
-        return TNUserStatus(rawValue: status) ?? .inReview
-    }
+//    var tnUserStatus: TNUserStatus {
+//        return TNUserStatus(rawValue: status) ?? .inReview
+//    }
 }
 
-enum TNUserStatus: Int {
+enum TNUserStatus: Int, Decodable {
     case inReview = 0
     case approved = 1
 }
