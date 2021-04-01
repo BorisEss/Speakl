@@ -114,16 +114,16 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ubv-14-3pR">
-                                <rect key="frame" x="112.5" y="205" width="189.5" height="159"/>
+                                <rect key="frame" x="104.5" y="229.5" width="205.5" height="134.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpd-ru-TEz">
-                                        <rect key="frame" x="0.0" y="0.0" width="189.5" height="22.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="205.5" height="20"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stori" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guw-gb-Ixd">
-                                        <rect key="frame" x="0.0" y="22.5" width="189.5" height="136.5"/>
+                                        <rect key="frame" x="0.0" y="20" width="205.5" height="114.5"/>
                                         <fontDescription key="fontDescription" name="Sweet_Pea" family="Sweet Pea" pointSize="98"/>
                                         <color key="textColor" name="GradientBottom"/>
                                         <nil key="highlightedColor"/>

@@ -69,7 +69,7 @@ class CSChapterPresenter {
     }
     
     func saveChapter(chapterId: Int) -> Promise<CSChapterModel> {
-        return updateChapter(chapterId: chapterId, body: ["status": 3])
+        return updateChapter(chapterId: chapterId, body: ["status": 4])
     }
 }
 
