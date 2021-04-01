@@ -20,6 +20,27 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.layer.shadowRadius = 8
         navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 8)
         
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(downloadAndUpdate),
+                                               name: UIApplication.didBecomeActiveNotification,
+                                               object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateData()
+        downloadAndUpdate()
+    }
+    
+    @objc private func downloadAndUpdate() {
+        UserClient.getCurrentUser()
+            .done { (_) in
+                self.updateData()
+            }
+            .cauterize()
+    }
+    
+    private func updateData() {
         if let tnStatus = Storage.shared.currentUser?.teacherExperience?.status {
             switch tnStatus {
             case .inReview:
