@@ -35,6 +35,7 @@ class CSItemsListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        page = 1
         itemList = []
         languageList = []
         languageLevelList = []
