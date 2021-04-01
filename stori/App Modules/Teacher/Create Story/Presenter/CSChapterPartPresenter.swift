@@ -183,7 +183,7 @@ class CSChapterPartPresenter {
             createMediaItem(chapterId: chapterId, body: [
                 "type": 1,
                 "value": videoId,
-                "thumbnail": thumbnailId
+                "thumbnail_id": thumbnailId
             ])
             .done { (section) in
                 promise.fulfill(section)
@@ -268,7 +268,7 @@ class CSChapterPartPresenter {
             guard let partId = part.id else { return }
             updateMediaitem(partId: partId, body: [
                 "value": videoId,
-                "thumbnail": thumbnailId
+                "thumbnail_id": thumbnailId
             ])
             .done { (section) in
                 promise.fulfill(section)

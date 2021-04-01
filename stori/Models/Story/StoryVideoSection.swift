@@ -68,7 +68,7 @@ class StoryVideoSection: StorySection {
                     self.thumbnail.finishedUpload = { _ in
                         self.finishedUpload = true
                         self.didFinishUpload?()
-                        CSPresenter.chapterPart.updateChapterPart(part: self)
+                        CSPresenter.chapterPart.createChapterPart(chapterId: chapterId, part: self)
                             .done { (section) in
                                 guard let videoSection = section as? StoryVideoSection else { return }
                                 self.file = videoSection.file
