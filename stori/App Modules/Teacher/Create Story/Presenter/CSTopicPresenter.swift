@@ -13,7 +13,7 @@ final class CSTopicPresenter {
         return Promise<ResponseObject<Topic>> { promise in
             firstly {
                 return Request(endpoint: Endpoints.topics, method: .get)
-                    .authorise()
+                    .authorise(language: language)
                     .set(query: [
                         "page": "\(page)",
                         "languages": "\(language.id)"

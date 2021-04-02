@@ -98,4 +98,13 @@ extension Request {
         set(headers: Headers().authorized)
         return self
     }
+    
+    @discardableResult
+    func authorise(language: Language) -> Self {
+        var headers = Headers().authorized
+        headers["Accept-Language"] = language.shortcut ?? "en"
+        print(headers)
+        set(headers: headers)
+        return self
+    }
 }

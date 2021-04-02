@@ -11,9 +11,9 @@ import PromiseKit
 class CSItemsListViewController: UIViewController {
 
     var listType: CSListType?
-    var topic: Topic? = CreateStoryObject.shared?.topic
-    var category: Category? = CreateStoryObject.shared?.category
-    var language: Language? = CreateStoryObject.shared?.language 
+    lazy var topic: Topic? = CreateStoryObject.shared?.topic
+    lazy var category: Category? = CreateStoryObject.shared?.category
+    lazy var language: Language? = CreateStoryObject.shared?.language
     
     private var itemList: [ItemProtocol] = []
     private var languageList: [Language] = []
@@ -145,13 +145,14 @@ class CSItemsListViewController: UIViewController {
             .cauterize()
     }
     private func loadCategories() {
-        guard let category = topic else {
+        guard let category = topic,
+              let language = language else {
             self.canContinueToNextPage = false
             self.progressActivityIndicator.stopAnimating()
             self.tableView.reloadData()
             return
         }
-        CSPresenter.category.getCategories(of: category, page: page)
+        CSPresenter.category.getCategories(of: category, with: language, page: page)
             .done { (response) in
                 self.canContinueToNextPage = response.next != nil
                 self.itemList.append(contentsOf: response.results)
@@ -164,13 +165,14 @@ class CSItemsListViewController: UIViewController {
             .cauterize()
     }
     private func loadSubCategories() {
-        guard let subCategory = category else {
+        guard let subCategory = category,
+              let language = language else {
             self.canContinueToNextPage = false
             self.progressActivityIndicator.stopAnimating()
             self.tableView.reloadData()
             return
         }
-        CSPresenter.subCategory.getSubCategories(of: subCategory, page: page)
+        CSPresenter.subCategory.getSubCategories(of: subCategory, with: language, page: page)
             .done { (response) in
                 self.canContinueToNextPage = response.next != nil
                 self.itemList.append(contentsOf: response.results)

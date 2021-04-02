@@ -10,11 +10,12 @@ import PromiseKit
 
 final class CSSubCategoryPresenter {
     func getSubCategories(of category: Category,
+                          with language: Language,
                           page: Int = 1) -> Promise<ResponseObject<SubCategory>> {
         return Promise<ResponseObject<SubCategory>> { promise in
             firstly {
                 return Request(endpoint: Endpoints.subCategories, method: .get)
-                    .authorise()
+                    .authorise(language: language)
                     .set(query: [
                         "page": "\(page)",
                         "category_id": "\(category.id)"

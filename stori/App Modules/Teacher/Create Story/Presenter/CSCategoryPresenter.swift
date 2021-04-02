@@ -10,11 +10,12 @@ import PromiseKit
 
 final class CSCategoryPresenter {
     func getCategories(of topic: Topic,
+                       with language: Language,
                        page: Int = 1) -> Promise<ResponseObject<Category>> {
         return Promise<ResponseObject<Category>> { promise in
             firstly {
                 return Request(endpoint: Endpoints.categories, method: .get)
-                    .authorise()
+                    .authorise(language: language)
                     .set(query: [
                         "topic_id": "\(topic.id)",
                         "page": "\(page)"
