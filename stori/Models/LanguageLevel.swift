@@ -33,16 +33,20 @@ struct LanguageLevel: Decodable {
             .font: UIFont.IBMPlexSans(size: 12),
             .foregroundColor: UIColor.black
         ]
-        if let prefix = shortcut?.first,
-           let suffix = shortcut?.dropFirst() {
-            let finalString = NSMutableAttributedString(string: String(prefix),
-                                                        attributes: boldAttributes)
-            let secondString = NSAttributedString(string: String(suffix),
-                                                  attributes: regularAttributes)
-            finalString.append(secondString)
-            return finalString
+        if !(shortcut ?? "").contains("HSK") {
+            if let prefix = shortcut?.first,
+               let suffix = shortcut?.dropFirst() {
+                let finalString = NSMutableAttributedString(string: String(prefix),
+                                                            attributes: boldAttributes)
+                let secondString = NSAttributedString(string: String(suffix),
+                                                      attributes: regularAttributes)
+                finalString.append(secondString)
+                return finalString
+            }
+        } else {
+            return NSAttributedString(string: shortcut ?? "",
+                                      attributes: regularAttributes)
         }
-        
         return NSAttributedString()
     }
 }
