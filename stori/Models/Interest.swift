@@ -7,4 +7,4 @@
 
 import Foundation
 
-typealias Interest = ThumbnailItem
+typealias Interest = Item
