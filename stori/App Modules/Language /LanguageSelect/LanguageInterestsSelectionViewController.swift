@@ -128,7 +128,7 @@ extension LanguageInterestsSelectionViewController: UICollectionViewDelegateFlow
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.frame.width - 10) / 2
+        let width = collectionView.frame.width
         return CGSize(width: width, height: InterestCollectionViewCell.height)
     }
     func collectionView(_ collectionView: UICollectionView,
