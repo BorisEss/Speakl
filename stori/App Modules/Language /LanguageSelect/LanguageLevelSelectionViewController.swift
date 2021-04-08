@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import TableFlip
 
 class LanguageLevelSelectionViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class LanguageLevelSelectionViewController: UIViewController {
     var levels: [LanguageLevel] = [] {
         didSet {
             tableView.reloadData()
+            tableView.animate(animation: TableViewAnimation.Cell.fade(duration: 0.6))
         }
     }
     var selectedLevel: LanguageLevel?

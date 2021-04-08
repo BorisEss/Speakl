@@ -41,6 +41,8 @@ target 'stori' do
   pod 'UITextView+Placeholder'
   pod 'TagListView'
   pod 'NewPopMenu'
+  pod 'PaginatedTableView'
+  pod 'TableFlip'
 #  pod 'MenuItemKit'
 #  pod 'GrowingTextView'
 #  pod 'SideMenu'

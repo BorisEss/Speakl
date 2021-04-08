@@ -83,8 +83,8 @@
                                 <rect key="frame" x="40" y="121.5" width="334" height="774.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="fYt-GH-fXU" id="4EE-0c-r5g"/>
-                                    <outlet property="delegate" destination="fYt-GH-fXU" id="0f5-Pe-c8c"/>
+                                    <outlet property="dataSource" destination="fYt-GH-fXU" id="vYd-TA-bNe"/>
+                                    <outlet property="delegate" destination="fYt-GH-fXU" id="eEQ-Nu-VrU"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKb-48-RH2" customClass="RegularButton" customModule="stori" customModuleProvider="target">
@@ -287,6 +287,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9bQ-gI-dBo">
+                                <rect key="frame" x="30" y="142" width="354" height="754"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vkr-hf-pjk" id="srl-KB-C7v"/>
+                                    <outlet property="delegate" destination="Vkr-hf-pjk" id="GJJ-y7-FyT"/>
+                                </connections>
+                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QT-xs-8LG">
                                 <rect key="frame" x="0.0" y="44" width="414" height="82"/>
                                 <subviews>
@@ -337,21 +345,6 @@
                                     <constraint firstItem="kjH-wb-nyS" firstAttribute="trailing" secondItem="9Cq-lJ-yeG" secondAttribute="trailing" id="rxO-tf-fIv"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GYb-XR-2X2">
-                                <rect key="frame" x="30" y="142" width="354" height="754"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="QrC-iw-O0N">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Vkr-hf-pjk" id="En5-4U-wQt"/>
-                                    <outlet property="delegate" destination="Vkr-hf-pjk" id="XZd-pj-uh0"/>
-                                </connections>
-                            </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Z2-EI-AXz" customClass="RegularButton" customModule="stori" customModuleProvider="target">
                                 <rect key="frame" x="44.5" y="780" width="325" height="50"/>
                                 <constraints>
@@ -378,20 +371,20 @@
                         <viewLayoutGuide key="safeArea" id="zgK-qw-cRu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GYb-XR-2X2" firstAttribute="leading" secondItem="zgK-qw-cRu" secondAttribute="leading" constant="30" id="5IX-vN-HpD"/>
-                            <constraint firstItem="GYb-XR-2X2" firstAttribute="top" secondItem="6QT-xs-8LG" secondAttribute="bottom" constant="16" id="5je-4j-exx"/>
+                            <constraint firstItem="9bQ-gI-dBo" firstAttribute="leading" secondItem="zgK-qw-cRu" secondAttribute="leading" constant="30" id="1Ls-ui-6kY"/>
                             <constraint firstItem="zgK-qw-cRu" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Z2-EI-AXz" secondAttribute="trailing" constant="25" id="9Zc-ke-DIY"/>
+                            <constraint firstItem="zgK-qw-cRu" firstAttribute="trailing" secondItem="9bQ-gI-dBo" secondAttribute="trailing" constant="30" id="LOj-Hg-q9T"/>
+                            <constraint firstItem="9bQ-gI-dBo" firstAttribute="top" secondItem="6QT-xs-8LG" secondAttribute="bottom" constant="16" id="Lr7-gJ-bab"/>
                             <constraint firstItem="qxw-7x-1Zg" firstAttribute="centerY" secondItem="2Z2-EI-AXz" secondAttribute="centerY" id="OSx-ft-xIy"/>
                             <constraint firstItem="tQY-ym-wpD" firstAttribute="centerY" secondItem="9Yf-fc-lR4" secondAttribute="centerY" id="PxL-sl-fmq"/>
                             <constraint firstItem="6QT-xs-8LG" firstAttribute="leading" secondItem="zgK-qw-cRu" secondAttribute="leading" id="SVj-2M-RDk"/>
                             <constraint firstItem="tQY-ym-wpD" firstAttribute="centerX" secondItem="9Yf-fc-lR4" secondAttribute="centerX" id="Zkq-XE-CZI"/>
                             <constraint firstItem="qxw-7x-1Zg" firstAttribute="centerX" secondItem="2Z2-EI-AXz" secondAttribute="centerX" id="azA-LB-KiB"/>
                             <constraint firstItem="2Z2-EI-AXz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zgK-qw-cRu" secondAttribute="leading" constant="25" id="dpn-ul-mFh"/>
+                            <constraint firstAttribute="bottom" secondItem="9bQ-gI-dBo" secondAttribute="bottom" id="drA-fV-ulT"/>
                             <constraint firstItem="2Z2-EI-AXz" firstAttribute="centerX" secondItem="9Yf-fc-lR4" secondAttribute="centerX" id="ftF-8d-Ten"/>
                             <constraint firstItem="zgK-qw-cRu" firstAttribute="bottom" secondItem="2Z2-EI-AXz" secondAttribute="bottom" constant="32" id="nFk-9N-UaI"/>
                             <constraint firstAttribute="trailing" secondItem="6QT-xs-8LG" secondAttribute="trailing" id="qNH-ES-EeJ"/>
-                            <constraint firstAttribute="bottom" secondItem="GYb-XR-2X2" secondAttribute="bottom" id="txP-Cu-eAp"/>
-                            <constraint firstItem="zgK-qw-cRu" firstAttribute="trailing" secondItem="GYb-XR-2X2" secondAttribute="trailing" constant="30" id="uRw-iZ-GMd"/>
                             <constraint firstItem="6QT-xs-8LG" firstAttribute="top" secondItem="zgK-qw-cRu" secondAttribute="top" id="uz6-Y1-wjC"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -405,17 +398,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="M3b-Ar-Dmi"/>
                     <connections>
-                        <outlet property="collectionView" destination="GYb-XR-2X2" id="c44-63-oLd"/>
                         <outlet property="nextButton" destination="2Z2-EI-AXz" id="VCU-3X-9MG"/>
                         <outlet property="nextProgressActivityIndicator" destination="qxw-7x-1Zg" id="Sfj-Na-Wmu"/>
                         <outlet property="progressActivityIndicator" destination="tQY-ym-wpD" id="ykR-Ng-2ge"/>
                         <outlet property="subtitleLabel" destination="9Su-Re-z2V" id="Whb-xL-0Yu"/>
+                        <outlet property="tableView" destination="9bQ-gI-dBo" id="ghX-Ow-jgk"/>
                         <outlet property="titleLabel" destination="9Cq-lJ-yeG" id="c7v-bV-ZeH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNk-zz-kvx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="206"/>
+            <point key="canvasLocation" x="1195.6521739130435" y="205.58035714285714"/>
         </scene>
     </scenes>
     <resources>

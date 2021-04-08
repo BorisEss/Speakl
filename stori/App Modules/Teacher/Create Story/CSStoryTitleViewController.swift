@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import PromiseKit
+import TableFlip
 
 class CSStoryTitleViewController: UIViewController {
     

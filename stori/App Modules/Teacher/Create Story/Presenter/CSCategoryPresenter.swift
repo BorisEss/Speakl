@@ -18,7 +18,8 @@ final class CSCategoryPresenter {
                     .authorise(language: language)
                     .set(query: [
                         "topic_id": "\(topic.id)",
-                        "page": "\(page)"
+                        "page": "\(page)",
+                        "page_size": "20"
                     ])
                     .build()
             }

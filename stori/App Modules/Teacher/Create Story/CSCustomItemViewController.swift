@@ -27,12 +27,6 @@ class CSCustomItemViewController: UIViewController {
             nextVc.listType = listType
             nextVc.completion = {
                 self.navigationController?.popViewController(animated: true)
-//                for controller in self.navigationController!.viewControllers as Array {
-//                    if controller.isKind(of: CSMainListViewController.self) {
-//                        _ =  self.navigationController!.popToViewController(controller, animated: true)
-//                        break
-//                    }
-//                }
             }
         }
     }

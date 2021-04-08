@@ -7,6 +7,8 @@
 
 import UIKit
 import PromiseKit
+import TableFlip
+import PaginatedTableView
 
 class CSSoundListSearchViewController: UIViewController {
     
@@ -17,13 +19,10 @@ class CSSoundListSearchViewController: UIViewController {
 
     private var audioList: [BackgroundAudio] = []
     
-    private var page: Int = 1
-    private var canContinueToNextPage: Bool = true
-    
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var cancelButton: UIButton!
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: PaginatedTableView!
     @IBOutlet weak var noDataLabel: UILabel!
     @IBOutlet weak var progressActivityIndicator: UIActivityIndicatorView!
     
@@ -46,7 +45,6 @@ class CSSoundListSearchViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         audioList = []
-        loadData(page: page)
         if let currentPlayingAudio = currentPlayingAudio {
             audioTitleLabel.text = currentPlayingAudio.name
         }
@@ -87,43 +85,21 @@ class CSSoundListSearchViewController: UIViewController {
     }
     
     private func setUpTableView() {
+        tableView.paginatedDelegate = self
+        tableView.paginatedDataSource = self
         tableView.register(CSAudioTableViewCell.nib(),
                            forCellReuseIdentifier: CSAudioTableViewCell.identifier)
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 80))
         tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 10))
+        tableView.loadData(refresh: true)
     }
     
-    private func loadData(page: Int) {
-        audioList = []
-        CSPresenter.backgroundSound.getAllSounds(page: page)
-            .done { (response) in
-                self.canContinueToNextPage = response.next != nil
-                self.audioList.append(contentsOf: response.results)
-            }
-            .ensure {
-                self.progressActivityIndicator.stopAnimating()
-                self.tableView.reloadData()
-            }
-            .cauterize()
-    }
-    private func searchSongs(page: Int) {
-        if page == 1 { canContinueToNextPage = true }
-        audioList = []
+    private func getData(page: Int) -> Promise<ResponseObject<BackgroundAudio>> {
         if let text = searchTextField.text,
            text.count >= 3 {
-            CSPresenter.backgroundSound.searchSounds(searchText: text, page: page)
-                .done { (response) in
-                    self.canContinueToNextPage = response.next != nil
-                    self.audioList.append(contentsOf: response.results)
-                }
-                .ensure {
-                    self.progressActivityIndicator.stopAnimating()
-                    self.tableView.reloadData()
-                }
-                .cauterize()
+            return CSPresenter.backgroundSound.searchSounds(searchText: text, page: page)
         } else {
-            canContinueToNextPage = false
-            tableView.reloadData()
+            return CSPresenter.backgroundSound.getAllSounds(page: page)
         }
     }
     
@@ -151,14 +127,41 @@ class CSSoundListSearchViewController: UIViewController {
     }
 }
 
-extension CSSoundListSearchViewController: UITableViewDelegate, UITableViewDataSource {
+extension CSSoundListSearchViewController: PaginatedTableViewDelegate, PaginatedTableViewDataSource {
+    func loadMore(_ pageNumber: Int, _ pageSize: Int, onSuccess: ((Bool) -> Void)?, onError: ((Error) -> Void)?) {
+        noDataLabel.isHidden = true
+        self.getData(page: pageNumber)
+            .ensure {
+                self.progressActivityIndicator.stopAnimating()
+            }
+            .done { (response) in
+                let canLoadMore: Bool = response.next != nil
+                if pageNumber == 1 {
+                    self.audioList = []
+                    if response.results.isEmpty {
+                        self.noDataLabel.isHidden = false
+                    }
+                }
+                self.audioList.append(contentsOf: response.results)
+                onSuccess?(canLoadMore)
+                if pageNumber == 1 {
+                    self.tableView.animate(animation: TableViewAnimation.Cell.fade(duration: 1))
+                }
+            }
+            .catch { (error) in
+                print(error.localizedDescription)
+                if pageNumber == 1 {
+                    self.noDataLabel.isHidden = false
+                }
+                onSuccess?(false)
+            }
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CSAudioTableViewCell.height
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        noDataLabel.isHidden = !(audioList.count == 0 && !canContinueToNextPage)
         return audioList.count
     }
     
@@ -178,15 +181,6 @@ extension CSSoundListSearchViewController: UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let radius = cell.contentView.layer.cornerRadius
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: radius).cgPath
-        
-        if canContinueToNextPage,
-           indexPath.section == audioList.count - 1 {
-            if searchTextField.text?.isEmpty ?? false {
-                loadData(page: page + 1)
-            } else {
-                searchSongs(page: page + 1)
-            }
-        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -194,37 +188,23 @@ extension CSSoundListSearchViewController: UITableViewDelegate, UITableViewDataS
         playPauseButton.isEnabled = true
         playAudio(item: audioList[indexPath.section])
     }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 8
-    }
-    
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerView = UIView()
-        footerView.backgroundColor = .clear
-        return footerView
-    }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 8
-    }
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = .clear
-        return headerView
-    }
 }
 
 extension CSSoundListSearchViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         dismissKeyboard()
-        searchSongs(page: page)
         return true
     }
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        searchSongs(page: page)
+        if let text = textField.text,
+           text.count > 3 {
+            tableView.loadData(refresh: true)
+        } else if let text = textField.text, text.isEmpty {
+            tableView.loadData(refresh: true)
+        }
     }
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        loadData(page: 1)
+        tableView.loadData(refresh: true)
         return true
     }
 }

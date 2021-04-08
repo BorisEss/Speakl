@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import PromiseKit
+import TableFlip
 
 class LanguageInterestsSelectionViewController: UIViewController {
 
@@ -16,7 +16,8 @@ class LanguageInterestsSelectionViewController: UIViewController {
     var selectedLevel: LanguageLevel?
     var interests: [Interest] = [] {
         didSet {
-            collectionView.reloadData()
+            tableView.reloadData()
+            tableView.animate(animation: TableViewAnimation.Cell.fade(duration: 0.6))
         }
     }
     
@@ -24,7 +25,7 @@ class LanguageInterestsSelectionViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var progressActivityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: RegularButton!
     @IBOutlet weak var nextProgressActivityIndicator: UIActivityIndicatorView!
     
@@ -56,19 +57,19 @@ class LanguageInterestsSelectionViewController: UIViewController {
     
     @IBAction func nextButtonPressed(_ sender: Any) {
         var selectedInterests: [Interest] = []
-        if let indexes = collectionView.indexPathsForSelectedItems {
+        if let indexes = tableView.indexPathsForSelectedRows {
             for index in indexes {
-                selectedInterests.append(interests[index.row])
+                selectedInterests.append(interests[index.section])
             }
         }
-        collectionView.isUserInteractionEnabled = false
+        tableView.isUserInteractionEnabled = false
         nextProgressActivityIndicator.startAnimating()
         nextButton.isHidden = true
         LanguagePresenter().updateLanguageDetails(nativeLanguage: nativeLanguage,
                                                   learningLanguage: learningLanguage,
                                                   learningLanguageLevel: selectedLevel,
                                                   interests: selectedInterests) { (isSuccess) in
-            self.collectionView.isUserInteractionEnabled = true
+            self.tableView.isUserInteractionEnabled = true
             self.nextProgressActivityIndicator.stopAnimating()
             self.nextButton.isHidden = false
             if isSuccess {
@@ -79,13 +80,13 @@ class LanguageInterestsSelectionViewController: UIViewController {
     
     // MARK: - UI Setup
     private func setUpView() {
-        setUpCollectionView()
+        setUpTableView()
     }
     
-    private func setUpCollectionView() {
-        collectionView.register(InterestCollectionViewCell.nib(),
-                                forCellWithReuseIdentifier: InterestCollectionViewCell.identifier)
-        collectionView.allowsMultipleSelection = true
+    private func setUpTableView() {
+        tableView.register(InterestTableViewCell.nib(),
+                           forCellReuseIdentifier: InterestTableViewCell.identifier)
+        tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 100))
     }
     
     private func setUpLanguage() {
@@ -95,45 +96,57 @@ class LanguageInterestsSelectionViewController: UIViewController {
     }
 }
 
-// MARK: - UICollectionViewDelegate, UICollectionViewDataSource
-extension LanguageInterestsSelectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+// MARK: - UITableViewDelegate, UITableViewDataSource
+extension LanguageInterestsSelectionViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return interests.count
     }
     
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: InterestCollectionViewCell.identifier,
-                                                         for: indexPath) as? InterestCollectionViewCell {
-            cell.setUp(interest: interests[indexPath.row])
-            return cell
-        }
-        return UICollectionViewCell()
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let mainCell = tableView.dequeueReusableCell(withIdentifier: InterestTableViewCell.identifier),
+           let cell = mainCell as? InterestTableViewCell {
+            cell.setUp(interest: interests[indexPath.section])
+            return cell
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        if (tableView.indexPathsForSelectedRows ?? []).contains(indexPath) {
+            tableView.deselectRow(at: indexPath, animated: true)
+            return nil
+        } else {
+            return indexPath
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         checkSelectedItems()
     }
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         checkSelectedItems()
     }
     
     private func checkSelectedItems() {
-        nextButton.isEnabled = !(collectionView.indexPathsForSelectedItems?.isEmpty ?? true)
+        nextButton.isEnabled = !(tableView.indexPathsForSelectedRows?.isEmpty ?? true)
     }
-}
-
-// MARK: - UICollectionViewDelegateFlowLayout
-extension LanguageInterestsSelectionViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.frame.width
-        return CGSize(width: width, height: InterestCollectionViewCell.height)
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return InterestTableViewCell.height
     }
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        referenceSizeForFooterInSection section: Int) -> CGSize {
-        return CGSize(width: 0, height: 100)
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = .clear
+        return headerView
     }
 }

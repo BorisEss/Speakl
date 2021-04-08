@@ -16,7 +16,7 @@ class CSItemTableViewCell: UITableViewCell, CustomTableViewCell {
         case languageLevel
     }
     
-    static var height: CGFloat = 80
+    static var height: CGFloat = 96
     
     var type: CSItemType?
     var titleText: String?

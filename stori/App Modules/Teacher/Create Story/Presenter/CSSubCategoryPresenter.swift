@@ -18,6 +18,7 @@ final class CSSubCategoryPresenter {
                     .authorise(language: language)
                     .set(query: [
                         "page": "\(page)",
+                        "page_size": "20",
                         "category_id": "\(category.id)"
                     ])
                     .build()

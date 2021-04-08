@@ -96,7 +96,7 @@
                                         <rect key="frame" x="0.0" y="29" width="366" height="81"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Story Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pQ-ym-bLA">
-                                                <rect key="frame" x="24" y="30" width="318" height="21.5"/>
+                                                <rect key="frame" x="24" y="8" width="318" height="65"/>
                                                 <color key="textColor" name="Text Black"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
@@ -107,8 +107,10 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="8pQ-ym-bLA" secondAttribute="bottom" constant="8" id="RFk-eb-C7E"/>
                                             <constraint firstItem="8pQ-ym-bLA" firstAttribute="leading" secondItem="FQh-2t-UYy" secondAttribute="leading" constant="24" id="SHc-0k-Tz2"/>
                                             <constraint firstAttribute="height" constant="81" id="T6W-94-Tks"/>
+                                            <constraint firstItem="8pQ-ym-bLA" firstAttribute="top" secondItem="FQh-2t-UYy" secondAttribute="top" constant="8" id="YJ6-LX-9QL"/>
                                             <constraint firstAttribute="trailing" secondItem="8pQ-ym-bLA" secondAttribute="trailing" constant="24" id="f0t-V2-WEJ"/>
                                             <constraint firstItem="8pQ-ym-bLA" firstAttribute="centerY" secondItem="FQh-2t-UYy" secondAttribute="centerY" id="i2r-4c-7nV"/>
                                         </constraints>
@@ -606,13 +608,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J3E-SM-UEd">
-                                <rect key="frame" x="25" y="414" width="364" height="482"/>
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J3E-SM-UEd" customClass="PaginatedTableView" customModule="PaginatedTableView">
+                                <rect key="frame" x="0.0" y="414" width="414" height="482"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="ZkI-DA-MiY" id="LD4-Jw-zRF"/>
-                                    <outlet property="delegate" destination="ZkI-DA-MiY" id="log-n6-aNv"/>
-                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJ0-4l-ffb">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
@@ -800,7 +798,7 @@
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="Uba-Jg-kxe" firstAttribute="leading" secondItem="jyx-qB-wIJ" secondAttribute="leading" id="0z2-Kv-xHk"/>
-                            <constraint firstItem="jyx-qB-wIJ" firstAttribute="trailing" secondItem="J3E-SM-UEd" secondAttribute="trailing" constant="25" id="AnA-eX-3NX"/>
+                            <constraint firstItem="jyx-qB-wIJ" firstAttribute="trailing" secondItem="J3E-SM-UEd" secondAttribute="trailing" id="AnA-eX-3NX"/>
                             <constraint firstItem="jyx-qB-wIJ" firstAttribute="trailing" secondItem="Uba-Jg-kxe" secondAttribute="trailing" id="CSu-vk-RHh"/>
                             <constraint firstItem="dHi-vd-L7y" firstAttribute="centerY" secondItem="J3E-SM-UEd" secondAttribute="centerY" id="D91-n3-j0i"/>
                             <constraint firstItem="Uba-Jg-kxe" firstAttribute="top" secondItem="jyx-qB-wIJ" secondAttribute="top" id="FET-qV-4xP"/>
@@ -814,7 +812,7 @@
                             <constraint firstItem="TJ0-4l-ffb" firstAttribute="top" secondItem="w6w-v7-6S8" secondAttribute="top" id="hrZ-Gk-M8G"/>
                             <constraint firstAttribute="bottom" secondItem="J3E-SM-UEd" secondAttribute="bottom" id="oIb-zh-4fJ"/>
                             <constraint firstItem="TJ0-4l-ffb" firstAttribute="leading" secondItem="jyx-qB-wIJ" secondAttribute="leading" id="onz-sr-yAR"/>
-                            <constraint firstItem="J3E-SM-UEd" firstAttribute="leading" secondItem="jyx-qB-wIJ" secondAttribute="leading" constant="25" id="pnd-ge-KtY"/>
+                            <constraint firstItem="J3E-SM-UEd" firstAttribute="leading" secondItem="jyx-qB-wIJ" secondAttribute="leading" id="pnd-ge-KtY"/>
                             <constraint firstItem="ct3-Rq-vJk" firstAttribute="centerY" secondItem="J3E-SM-UEd" secondAttribute="centerY" id="tsa-5p-aXo"/>
                         </constraints>
                     </view>
@@ -1186,13 +1184,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Arw-xq-tM5">
-                                <rect key="frame" x="25" y="88" width="364" height="701"/>
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Arw-xq-tM5" customClass="PaginatedTableView" customModule="PaginatedTableView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="701"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="jEe-cK-qhG" id="NsJ-o9-haw"/>
-                                    <outlet property="delegate" destination="jEe-cK-qhG" id="yyo-uc-cpH"/>
-                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKh-dO-AhH">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
@@ -1362,7 +1356,7 @@
                             <constraint firstItem="3cM-5j-RIS" firstAttribute="centerX" secondItem="Xfv-xA-yr8" secondAttribute="centerX" id="2Xp-Jy-jqs"/>
                             <constraint firstItem="jQy-Qh-eh0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sSc-Tx-NN6" secondAttribute="leading" constant="16" id="3Gx-zM-PfP"/>
                             <constraint firstItem="PJO-kB-c63" firstAttribute="leading" secondItem="sSc-Tx-NN6" secondAttribute="leading" id="3Yc-T4-sWQ"/>
-                            <constraint firstItem="sSc-Tx-NN6" firstAttribute="trailing" secondItem="Arw-xq-tM5" secondAttribute="trailing" constant="25" id="7B8-Ok-JtJ"/>
+                            <constraint firstItem="sSc-Tx-NN6" firstAttribute="trailing" secondItem="Arw-xq-tM5" secondAttribute="trailing" id="7B8-Ok-JtJ"/>
                             <constraint firstItem="sSc-Tx-NN6" firstAttribute="top" secondItem="CKh-dO-AhH" secondAttribute="bottom" constant="-44" id="93a-qz-c1Y"/>
                             <constraint firstItem="CKh-dO-AhH" firstAttribute="leading" secondItem="sSc-Tx-NN6" secondAttribute="leading" id="9ek-6Q-qiP"/>
                             <constraint firstItem="PJO-kB-c63" firstAttribute="trailing" secondItem="sSc-Tx-NN6" secondAttribute="trailing" id="AtA-xu-ZtQ"/>
@@ -1381,7 +1375,7 @@
                             <constraint firstItem="sSc-Tx-NN6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jQy-Qh-eh0" secondAttribute="trailing" constant="16" id="obU-u1-cOA"/>
                             <constraint firstItem="sSc-Tx-NN6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="94A-Y8-IYp" secondAttribute="trailing" constant="25" id="uBo-YK-Txh"/>
                             <constraint firstItem="3cM-5j-RIS" firstAttribute="centerY" secondItem="Xfv-xA-yr8" secondAttribute="centerY" id="wJk-hT-B0J"/>
-                            <constraint firstItem="Arw-xq-tM5" firstAttribute="leading" secondItem="sSc-Tx-NN6" secondAttribute="leading" constant="25" id="yJF-Pc-zKT"/>
+                            <constraint firstItem="Arw-xq-tM5" firstAttribute="leading" secondItem="sSc-Tx-NN6" secondAttribute="leading" id="yJF-Pc-zKT"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1416,18 +1410,14 @@
                                 <color key="textColor" name="Text Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ctp-6r-3Fy">
-                                <rect key="frame" x="24" y="88" width="366" height="808"/>
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ctp-6r-3Fy" customClass="PaginatedTableView" customModule="PaginatedTableView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="cKE-jC-bvg">
-                                    <rect key="frame" x="0.0" y="0.0" width="366" height="10"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
-                                <connections>
-                                    <outlet property="dataSource" destination="uZf-19-sCG" id="SWu-zN-0Dn"/>
-                                    <outlet property="delegate" destination="uZf-19-sCG" id="DCF-Lo-OCy"/>
-                                </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ilx-Df-hkI">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
@@ -1438,10 +1428,10 @@
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ctp-6r-3Fy" secondAttribute="bottom" id="AO5-76-kOb"/>
-                            <constraint firstItem="ctp-6r-3Fy" firstAttribute="trailing" secondItem="zCH-wB-flc" secondAttribute="trailing" constant="-24" id="BGr-0c-k7G"/>
+                            <constraint firstItem="ctp-6r-3Fy" firstAttribute="trailing" secondItem="zCH-wB-flc" secondAttribute="trailing" id="BGr-0c-k7G"/>
                             <constraint firstItem="zCH-wB-flc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0pr-El-z65" secondAttribute="trailing" constant="32" id="ISf-JO-oAv"/>
                             <constraint firstItem="ilx-Df-hkI" firstAttribute="centerY" secondItem="Zeu-eT-ICa" secondAttribute="centerY" id="N2B-mf-0UU"/>
-                            <constraint firstItem="ctp-6r-3Fy" firstAttribute="leading" secondItem="zCH-wB-flc" secondAttribute="leading" constant="24" id="QCT-jP-9h2"/>
+                            <constraint firstItem="ctp-6r-3Fy" firstAttribute="leading" secondItem="zCH-wB-flc" secondAttribute="leading" id="QCT-jP-9h2"/>
                             <constraint firstItem="ctp-6r-3Fy" firstAttribute="top" secondItem="zCH-wB-flc" secondAttribute="top" id="SjC-sE-Cx0"/>
                             <constraint firstItem="0pr-El-z65" firstAttribute="centerY" secondItem="Zeu-eT-ICa" secondAttribute="centerY" id="VmO-ct-LiT"/>
                             <constraint firstItem="0pr-El-z65" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zCH-wB-flc" secondAttribute="leading" constant="32" id="mP8-6u-jX0"/>
@@ -1928,7 +1918,7 @@ Please allow Stori the necessary time to review &amp; approve it. Meanwhile, you
         <designable name="bLr-31-wp0"/>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="N8a-Xh-BIc"/>
+        <segue reference="HBG-DV-7yO"/>
         <segue reference="aEJ-TN-y2p"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -11,7 +11,7 @@ class CSAudioTableViewCell: UITableViewCell, CustomTableViewCell {
     
     private var file: BackgroundAudio?
     
-    static let height: CGFloat = 80
+    static let height: CGFloat = 96
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!

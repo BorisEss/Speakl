@@ -23,8 +23,6 @@
 		FA16CE3625ED1231007B8354 /* CSChapterPartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16CE3525ED1231007B8354 /* CSChapterPartPresenter.swift */; };
 		FA1F714925BEF066009AE0D4 /* CreateStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1F714825BEF066009AE0D4 /* CreateStory.storyboard */; };
 		FA1F714D25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1F714C25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard */; };
-		FA22A7E52588E1D8001129E7 /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22A7E32588E1D8001129E7 /* InterestCollectionViewCell.swift */; };
-		FA22A7E62588E1D8001129E7 /* InterestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA22A7E42588E1D8001129E7 /* InterestCollectionViewCell.xib */; };
 		FA22A7EA2588E4C6001129E7 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22A7E92588E4C6001129E7 /* Interest.swift */; };
 		FA252CC925DB186000FF85E1 /* SwiftMessagesSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA252CC825DB186000FF85E1 /* SwiftMessagesSegues.swift */; };
 		FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */; };
@@ -144,6 +142,8 @@
 		FA9F70F325C69E3F00A16C61 /* CSAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9F70F125C69E3F00A16C61 /* CSAddTableViewCell.xib */; };
 		FAA60E0A25C1952D00522F8A /* IBMPlexSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA60E0925C1952D00522F8A /* IBMPlexSans-LightItalic.ttf */; };
 		FAA60E0D25C1A87300522F8A /* CSSoundListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA60E0C25C1A87300522F8A /* CSSoundListViewController.swift */; };
+		FAAA96D8261DE6A800B53D6C /* InterestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96D6261DE6A800B53D6C /* InterestTableViewCell.swift */; };
+		FAAA96D9261DE6A800B53D6C /* InterestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAA96D7261DE6A800B53D6C /* InterestTableViewCell.xib */; };
 		FAB47D8725C156CB00B55F58 /* CSCoverListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB47D8625C156CB00B55F58 /* CSCoverListViewController.swift */; };
 		FAB47D8C25C15A3F00B55F58 /* CSCoverCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB47D8A25C15A3F00B55F58 /* CSCoverCardCell.swift */; };
 		FAB47D8D25C15A3F00B55F58 /* CSCoverCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB47D8B25C15A3F00B55F58 /* CSCoverCardCell.xib */; };
@@ -209,8 +209,6 @@
 		FA16CE3525ED1231007B8354 /* CSChapterPartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterPartPresenter.swift; sourceTree = "<group>"; };
 		FA1F714825BEF066009AE0D4 /* CreateStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateStory.storyboard; sourceTree = "<group>"; };
 		FA1F714C25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JoinTeacherNetwork.storyboard; sourceTree = "<group>"; };
-		FA22A7E32588E1D8001129E7 /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
-		FA22A7E42588E1D8001129E7 /* InterestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA22A7E92588E4C6001129E7 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		FA252CC825DB186000FF85E1 /* SwiftMessagesSegues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMessagesSegues.swift; sourceTree = "<group>"; };
 		FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInterestsSelectionViewController.swift; sourceTree = "<group>"; };
@@ -333,6 +331,8 @@
 		FA9F70F125C69E3F00A16C61 /* CSAddTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSAddTableViewCell.xib; sourceTree = "<group>"; };
 		FAA60E0925C1952D00522F8A /* IBMPlexSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		FAA60E0C25C1A87300522F8A /* CSSoundListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSoundListViewController.swift; sourceTree = "<group>"; };
+		FAAA96D6261DE6A800B53D6C /* InterestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTableViewCell.swift; sourceTree = "<group>"; };
+		FAAA96D7261DE6A800B53D6C /* InterestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestTableViewCell.xib; sourceTree = "<group>"; };
 		FAB47D8625C156CB00B55F58 /* CSCoverListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCoverListViewController.swift; sourceTree = "<group>"; };
 		FAB47D8A25C15A3F00B55F58 /* CSCoverCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCoverCardCell.swift; sourceTree = "<group>"; };
 		FAB47D8B25C15A3F00B55F58 /* CSCoverCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSCoverCardCell.xib; sourceTree = "<group>"; };
@@ -781,8 +781,8 @@
 				FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */,
 				FA9F6C0E2582899800AC5197 /* LanguageLevelTableViewCell.xib */,
 				FA9F6C0D2582899800AC5197 /* LanguageLevelTableViewCell.swift */,
-				FA22A7E42588E1D8001129E7 /* InterestCollectionViewCell.xib */,
-				FA22A7E32588E1D8001129E7 /* InterestCollectionViewCell.swift */,
+				FAAA96D7261DE6A800B53D6C /* InterestTableViewCell.xib */,
+				FAAA96D6261DE6A800B53D6C /* InterestTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -928,7 +928,6 @@
 				FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */,
 				FA9F6C102582899800AC5197 /* LanguageLevelTableViewCell.xib in Resources */,
 				FA94560A25C557C9003E54F0 /* VocabularyItemTableViewCell.xib in Resources */,
-				FA22A7E62588E1D8001129E7 /* InterestCollectionViewCell.xib in Resources */,
 				FA1F714925BEF066009AE0D4 /* CreateStory.storyboard in Resources */,
 				FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */,
 				FA4B61A625753433005501BD /* Google-Credentials.plist in Resources */,
@@ -948,6 +947,7 @@
 				FA876C7D25C80E6800E65B95 /* CSTextItemTableViewCell.xib in Resources */,
 				FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */,
 				FAFF92C325A44C5900A604C3 /* UploadFileTableViewCell.xib in Resources */,
+				FAAA96D9261DE6A800B53D6C /* InterestTableViewCell.xib in Resources */,
 				FA3C26132569559C0089F646 /* Auth.storyboard in Resources */,
 				FA812D75256298440036F162 /* Main.storyboard in Resources */,
 				FAF2690E25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib in Resources */,
@@ -1057,6 +1057,7 @@
 				FA3553E425DD0FD2008DD1FF /* CSChapterPresenter.swift in Sources */,
 				FA4B619025752134005501BD /* MessageObject.swift in Sources */,
 				FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */,
+				FAAA96D8261DE6A800B53D6C /* InterestTableViewCell.swift in Sources */,
 				FAEBEA22258A05BE0077D942 /* SuccessMessage.swift in Sources */,
 				FA658317256E29D5007052D9 /* UITextFieldExtension.swift in Sources */,
 				FA3553C125DBA503008DD1FF /* CSCustomItemPopUpViewController.swift in Sources */,
@@ -1090,7 +1091,6 @@
 				FAFF82C325D442B400A9BE82 /* CSTopicPresenter.swift in Sources */,
 				FA4D445F257810C700398AE2 /* Language.swift in Sources */,
 				FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */,
-				FA22A7E52588E1D8001129E7 /* InterestCollectionViewCell.swift in Sources */,
 				FA85364F25AC6465002607EC /* Checksum.swift in Sources */,
 				FAB47D8725C156CB00B55F58 /* CSCoverListViewController.swift in Sources */,
 				FA50420525A5B957004E6EC9 /* FileTableViewCell.swift in Sources */,

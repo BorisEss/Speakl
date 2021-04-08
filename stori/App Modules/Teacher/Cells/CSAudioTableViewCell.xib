@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,18 +19,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="CSAudioTableViewCell" customModule="stori" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="CSAudioTableViewCell" customModule="stori" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4W-nU-vWu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                        <rect key="frame" x="25" y="8" width="270" height="61"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lpo-LO-8X6">
-                                <rect key="frame" x="24" y="15" width="278" height="40"/>
+                                <rect key="frame" x="24" y="10.5" width="228" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acU-5o-ZUW">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
@@ -39,17 +39,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="hA3-s6-pTh">
-                                        <rect key="frame" x="66" y="0.0" width="90" height="40"/>
+                                        <rect key="frame" x="66" y="0.0" width="40" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRx-P2-dXK">
-                                        <rect key="frame" x="172" y="0.0" width="50" height="40"/>
+                                        <rect key="frame" x="122" y="0.0" width="50" height="40"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                         <color key="textColor" name="Text Black"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="Qdi-Mh-lnt">
-                                        <rect key="frame" x="238" y="0.0" width="40" height="40"/>
+                                        <rect key="frame" x="188" y="0.0" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="1fy-O8-WL0"/>
                                             <constraint firstAttribute="height" constant="40" id="YUO-fd-fwF"/>
@@ -86,10 +86,10 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="G4W-nU-vWu" secondAttribute="trailing" id="L3Z-lJ-7OR"/>
-                    <constraint firstItem="G4W-nU-vWu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ryt-pL-JCK"/>
-                    <constraint firstAttribute="bottom" secondItem="G4W-nU-vWu" secondAttribute="bottom" id="SNY-am-xGG"/>
-                    <constraint firstItem="G4W-nU-vWu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nwN-mi-iSK"/>
+                    <constraint firstAttribute="trailing" secondItem="G4W-nU-vWu" secondAttribute="trailing" constant="25" id="L3Z-lJ-7OR"/>
+                    <constraint firstItem="G4W-nU-vWu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Ryt-pL-JCK"/>
+                    <constraint firstAttribute="bottom" secondItem="G4W-nU-vWu" secondAttribute="bottom" constant="8" id="SNY-am-xGG"/>
+                    <constraint firstItem="G4W-nU-vWu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="nwN-mi-iSK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -99,7 +99,7 @@
                 <outlet property="nameLabel" destination="acU-5o-ZUW" id="MEa-gY-xLD"/>
                 <outlet property="timeLabel" destination="xRx-P2-dXK" id="oDL-T4-kub"/>
             </connections>
-            <point key="canvasLocation" x="134.78260869565219" y="114.50892857142857"/>
+            <point key="canvasLocation" x="134.78260869565219" y="116.85267857142857"/>
         </tableViewCell>
     </objects>
     <resources>

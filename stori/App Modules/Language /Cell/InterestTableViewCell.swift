@@ -1,14 +1,14 @@
 //
-//  InterestCollectionViewCell.swift
+//  InterestTableViewCell.swift
 //  stori
 //
-//  Created by Alex on 15.12.2020.
+//  Created by Alex on 07.04.2021.
 //
 
 import UIKit
 
-class InterestCollectionViewCell: UICollectionViewCell, CustomCollectionViewCell {
-    
+class InterestTableViewCell: UITableViewCell, CustomTableViewCell {
+
     static var height: CGFloat = 40
     
     private var interest: Interest?
@@ -25,8 +25,8 @@ class InterestCollectionViewCell: UICollectionViewCell, CustomCollectionViewCell
         if let interest = interest {
             setUp(interest: interest)
         }
-        iconView.cornerRadius = InterestCollectionViewCell.height/2
-        iconHeightConstraint.constant = InterestCollectionViewCell.height
+        iconView.cornerRadius = InterestTableViewCell.height/2
+        iconHeightConstraint.constant = InterestTableViewCell.height
     }
 
     func setUp(interest: Interest) {
@@ -35,11 +35,9 @@ class InterestCollectionViewCell: UICollectionViewCell, CustomCollectionViewCell
         nameLabel.text = interest.name
     }
     
-    override var isSelected: Bool {
-        didSet {
-            checkMarkView.isHidden = !isSelected
-            nameUnderlineView.isHidden = !isSelected
-            iconImageView.isHidden = isSelected
-        }
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        checkMarkView.isHidden = !selected
+        nameUnderlineView.isHidden = !selected
+        iconImageView.isHidden = selected
     }
 }

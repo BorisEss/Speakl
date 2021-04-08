@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import TableFlip
 
 enum LanguageSelectionState {
     case native
@@ -98,6 +99,8 @@ class LanguageSelectViewController: UIViewController {
         tableView.register(LanguageTableViewCell.nib(),
                            forCellReuseIdentifier: LanguageTableViewCell.identifier)
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 100))
+        tableView.reloadData()
+        tableView.animate(animation: TableViewAnimation.Cell.fade(duration: 0.6))
     }
     
     private func setUpLanguage() {
@@ -105,21 +108,29 @@ class LanguageSelectViewController: UIViewController {
     }
     
     private func setUpNativeUI() {
-        backButton.isHidden = !shouldGoBack
-        titleLabel.text = "select_langs_vc_page_title_select_native_language".localized
-        nextButton.isEnabled = false
+        UIView.animate(withDuration: 0.3) {
+            self.backButton.isHidden = !self.shouldGoBack
+            self.titleLabel.text = "select_langs_vc_page_title_select_native_language".localized
+            self.nextButton.isEnabled = false
+            self.view.layoutIfNeeded()
+        }
+        
     }
     
     private func setUpLearningUI() {
-        backButton.isHidden = false
-        titleLabel.text = "select_langs_vc_page_title_select_learn_language".localized
-        if let nativeLang = nativeLanguage,
-           let index = languages.firstIndex(of: nativeLang),
-           let cell = tableView.cellForRow(at: IndexPath(row: index, section: 0)),
-           let languageCell = cell as? LanguageTableViewCell {
-            languageCell.disable()
+        UIView.animate(withDuration: 0.3) {
+            self.backButton.isHidden = false
+            self.titleLabel.text = "select_langs_vc_page_title_select_learn_language".localized
+            if let nativeLang = self.nativeLanguage,
+               let index = self.languages.firstIndex(of: nativeLang),
+               let cell = self.tableView.cellForRow(at: IndexPath(row: index, section: 0)),
+               let languageCell = cell as? LanguageTableViewCell {
+                languageCell.disable()
+            }
+            self.nextButton.isEnabled = false
+            self.view.layoutIfNeeded()
         }
-        nextButton.isEnabled = false
+        
     }
     
     func fillWith(language: Language,

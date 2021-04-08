@@ -7,6 +7,8 @@
 
 import UIKit
 import PromiseKit
+import PaginatedTableView
+import TableFlip
 
 class CSItemsListViewController: UIViewController {
 
@@ -15,14 +17,11 @@ class CSItemsListViewController: UIViewController {
     lazy var category: Category? = CreateStoryObject.shared?.category
     lazy var language: Language? = CreateStoryObject.shared?.language
     
-    private var itemList: [ItemProtocol] = []
-    private var languageList: [Language] = []
-    private var languageLevelList: [LanguageLevel] = []
-    
-    private var page: Int = 1
-    private var canContinueToNextPage: Bool = true
-    
-    @IBOutlet weak var tableView: UITableView!
+    private lazy var itemList: [ItemProtocol] = []
+    private lazy var languageList: [Language] = []
+    private lazy var languageLevelList: [LanguageLevel] = []
+        
+    @IBOutlet weak var tableView: PaginatedTableView!
     @IBOutlet weak var noDataLabel: UILabel!
     @IBOutlet weak var progressActivityIndicator: UIActivityIndicatorView!
     
@@ -33,35 +32,24 @@ class CSItemsListViewController: UIViewController {
         setUpTableView()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        page = 1
-        itemList = []
-        languageList = []
-        languageLevelList = []
-        loadData(page: page)
-    }
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         guard let index = tableView.indexPathForSelectedRow else { return }
         guard let listType = listType else { return }
         switch listType {
         case .topic:
-            CreateStoryObject.shared?.topic = itemList[index.section] as? Topic
+            CreateStoryObject.shared?.topic = itemList[index.row] as? Topic
         case .category:
-            CreateStoryObject.shared?.category = itemList[index.section] as? Category
+            CreateStoryObject.shared?.category = itemList[index.row] as? Category
         case .subCategory:
-            CreateStoryObject.shared?.subCategory = itemList[index.section] as? SubCategory
+            CreateStoryObject.shared?.subCategory = itemList[index.row] as? SubCategory
         case .language:
-            CreateStoryObject.shared?.language = languageList[index.section]
+            CreateStoryObject.shared?.language = languageList[index.row]
         case .languageLevel:
-            guard let storyId = CreateStoryObject.shared?.id else {
-                return
-            }
+            guard let storyId = CreateStoryObject.shared?.id else { return }
             if CreateStoryObject.shared?.chapter == nil {
                 CSPresenter.chapter.createChapter(storyId: storyId,
-                                                  languageLevelId: languageLevelList[index.section].id)
+                                                  languageLevelId: languageLevelList[index.row].id)
                     .done { (chapter) in
                         CreateStoryObject.shared?.chapter = chapter
                     }
@@ -69,7 +57,7 @@ class CSItemsListViewController: UIViewController {
             } else {
                 guard let chapterId = CreateStoryObject.shared?.chapter?.id else { return }
                 CSPresenter.chapter.updateChapter(chapterId: chapterId,
-                                                  languageLevelId: languageLevelList[index.section].id)
+                                                  languageLevelId: languageLevelList[index.row].id)
                     .done { (chapter) in
                         CreateStoryObject.shared?.chapter = chapter
                     }
@@ -106,111 +94,86 @@ class CSItemsListViewController: UIViewController {
     private func setUpTableView() {
         tableView.register(CSItemTableViewCell.nib(),
                            forCellReuseIdentifier: CSItemTableViewCell.identifier)
+        tableView.paginatedDelegate = self
+        tableView.paginatedDataSource = self
+        tableView.enablePullToRefresh = false
+        tableView.loadData(refresh: true)
+        
     }
     
-    private func loadData(page: Int) {
-        guard let listType = listType else {
-            self.canContinueToNextPage = false
-            self.progressActivityIndicator.stopAnimating()
-            self.tableView.reloadData()
-            return
-        }
-        self.page = page
-        switch listType {
-        case .topic:
-            loadTopics()
-        case .category:
-            loadCategories()
-        case .subCategory:
-            loadSubCategories()
-        case .language:
-            loadLanguages()
-        case .languageLevel:
-            loadLangaugeLevels()
+    private func loadData(listType: CSListType, page: Int) -> Promise<(items: [ItemProtocol], canContinue: Bool)> {
+        return Promise<(items: [ItemProtocol], canContinue: Bool)> { promise in
+            switch listType {
+            case .topic:
+                loadTopics(page: page)
+                    .done { (response) in
+                        promise.fulfill((items: response.results, canContinue: response.next != nil))
+                    }
+                    .catch { (error) in
+                        promise.reject(error)
+                    }
+            case .category:
+                loadCategories(page: page)
+                    .done { (response) in
+                        promise.fulfill((items: response.results, canContinue: response.next != nil))
+                    }.catch { (error) in
+                        promise.reject(error)
+                    }
+            case .subCategory:
+                loadSubCategories(page: page)
+                    .done { (response) in
+                        promise.fulfill((items: response.results, canContinue: response.next != nil))
+                    }
+                    .catch { (error) in
+                        promise.reject(error)
+                    }
+            case .language, .languageLevel:
+                promise.reject(NetworkError.notFound)
+            }
         }
     }
     
-    private func loadTopics() {
-        guard let language = CreateStoryObject.shared?.language else { return }
-        CSPresenter.topic.getTopics(for: language, page: page)
-            .done { (response) in
-                self.canContinueToNextPage = response.next != nil
-                self.itemList.append(contentsOf: response.results)
+    private func loadTopics(page: Int) -> Promise<ResponseObject<Topic>> {
+        guard let language = CreateStoryObject.shared?.language else {
+            return Promise<ResponseObject<Topic>> { promise in
+                promise.reject(NetworkError.requestBuilderFailed)
             }
-            .ensure {
-                self.progressActivityIndicator.stopAnimating()
-                self.tableView.reloadData()
-                self.checkAndSelectItem()
-            }
-            .cauterize()
+        }
+        return CSPresenter.topic.getTopics(for: language, page: page)
     }
-    private func loadCategories() {
+    private func loadCategories(page: Int) -> Promise<ResponseObject<Category>> {
         guard let category = topic,
               let language = language else {
-            self.canContinueToNextPage = false
-            self.progressActivityIndicator.stopAnimating()
-            self.tableView.reloadData()
-            return
+            return Promise<ResponseObject<Category>> { promise in
+                promise.reject(NetworkError.requestBuilderFailed)
+            }
         }
-        CSPresenter.category.getCategories(of: category, with: language, page: page)
-            .done { (response) in
-                self.canContinueToNextPage = response.next != nil
-                self.itemList.append(contentsOf: response.results)
-            }
-            .ensure {
-                self.progressActivityIndicator.stopAnimating()
-                self.tableView.reloadData()
-                self.checkAndSelectItem()
-            }
-            .cauterize()
+        return CSPresenter.category.getCategories(of: category, with: language, page: page)
     }
-    private func loadSubCategories() {
+    private func loadSubCategories(page: Int) -> Promise<ResponseObject<SubCategory>> {
         guard let subCategory = category,
               let language = language else {
-            self.canContinueToNextPage = false
-            self.progressActivityIndicator.stopAnimating()
-            self.tableView.reloadData()
-            return
+            return Promise<ResponseObject<SubCategory>> { promise in
+                promise.reject(NetworkError.requestBuilderFailed)
+            }
         }
-        CSPresenter.subCategory.getSubCategories(of: subCategory, with: language, page: page)
-            .done { (response) in
-                self.canContinueToNextPage = response.next != nil
-                self.itemList.append(contentsOf: response.results)
-            }
-            .ensure {
-                self.progressActivityIndicator.stopAnimating()
-                self.tableView.reloadData()
-                self.checkAndSelectItem()
-            }
-            .cauterize()
+        return CSPresenter.subCategory.getSubCategories(of: subCategory, with: language, page: page)
     }
-    private func loadLanguages() {
-        canContinueToNextPage = false
-        languageList = Storage.shared.languages
-        tableView.reloadData()
-        checkAndSelectItem()
-        progressActivityIndicator.stopAnimating()
-    }
-    private func loadLangaugeLevels() {
-        guard let language = language else {
-            self.canContinueToNextPage = false
-            self.progressActivityIndicator.stopAnimating()
-            self.tableView.reloadData()
-            return
+    private func loadLanguages() -> Promise<[Language]> {
+        return Promise<[Language]> { promise in
+            promise.fulfill(Storage.shared.languages)
         }
-        CSPresenter.languageLevel.getLanguageLevels(language: language)
-            .done { (response) in
-                self.canContinueToNextPage = false
-                self.languageLevelList.append(contentsOf: response)
+    }
+    private func loadLangaugeLevels() -> Promise<[LanguageLevel]> {
+        guard let language = CreateStoryObject.shared?.language else {
+            return Promise<[LanguageLevel]> { promise in
+                promise.reject(NetworkError.requestBuilderFailed)
             }
-            .ensure {
-                self.progressActivityIndicator.stopAnimating()
-                self.tableView.reloadData()
-                self.checkAndSelectItem()
-            }
-            .cauterize()
+        }
+        return CSPresenter.languageLevel.getLanguageLevels(language: language)
     }
     private func checkAndSelectItem() {
+        guard tableView.indexPathForSelectedRow == nil else { return }
         guard let listType = listType else { return }
         switch listType {
         case .topic:
@@ -228,48 +191,91 @@ class CSItemsListViewController: UIViewController {
     private func checkItem(item: ItemProtocol?) {
         guard let item = item,
               let firstIndex = itemList.firstIndex(where: {$0.id == item.id}) else { return }
-        tableView.selectRow(at: IndexPath(row: 0, section: firstIndex),
+        tableView.selectRow(at: IndexPath(row: firstIndex, section: 0),
                             animated: false, scrollPosition: .none)
     }
     private func checkLanguage() {
         guard let language = language,
               let firstIndex = languageList.firstIndex(where: {$0.id == language.id}) else { return }
-        tableView.selectRow(at: IndexPath(row: 0, section: firstIndex),
+        tableView.selectRow(at: IndexPath(row: firstIndex, section: 0),
                             animated: false, scrollPosition: .none)
     }
     private func checkLanguageLevel() {
         guard let languageLevel = CreateStoryObject.shared?.chapter?.languageLevel,
               let firstIndex = languageLevelList.firstIndex(where: {$0.id == languageLevel.id}) else { return }
-        tableView.selectRow(at: IndexPath(row: 0, section: firstIndex),
+        tableView.selectRow(at: IndexPath(row: firstIndex, section: 0),
                             animated: false, scrollPosition: .none)
     }
 }
 
-extension CSItemsListViewController: UITableViewDelegate, UITableViewDataSource {
+extension CSItemsListViewController: PaginatedTableViewDelegate, PaginatedTableViewDataSource {
+    func loadMore(_ pageNumber: Int, _ pageSize: Int, onSuccess: ((Bool) -> Void)?, onError: ((Error) -> Void)?) {
+        guard let listType = listType else {
+            progressActivityIndicator.stopAnimating()
+            noDataLabel.isHidden = false
+            return
+        }
+        noDataLabel.isHidden = true
+        switch listType {
+        case .topic, .category, .subCategory:
+            loadData(listType: listType, page: pageNumber)
+                .ensure { self.progressActivityIndicator.stopAnimating() }
+                .done { (response) in
+                    if pageNumber == 1 {
+                        self.itemList = []
+                        if response.items.isEmpty { self.noDataLabel.isHidden = false }
+                    }
+                    self.itemList.append(contentsOf: response.items)
+                    onSuccess?(response.canContinue)
+                    if pageNumber == 1 {
+                        self.tableView.animate(animation: TableViewAnimation.Cell.right(duration: 1))
+                    }
+                    self.checkAndSelectItem()
+                }.cauterize()
+        case .language:
+            loadLanguages()
+                .ensure { self.progressActivityIndicator.stopAnimating() }
+                .done { (languages) in
+                    if languages.isEmpty { self.noDataLabel.isHidden = false }
+                    self.languageList = languages
+                    onSuccess?(false)
+                    self.tableView.animate(animation: TableViewAnimation.Cell.right(duration: 1))
+                    self.checkAndSelectItem()
+                }.cauterize()
+        case .languageLevel:
+            loadLangaugeLevels()
+                .ensure { self.progressActivityIndicator.stopAnimating() }
+                .done { (levels) in
+                    if levels.isEmpty { self.noDataLabel.isHidden = false }
+                    self.languageLevelList = levels
+                    onSuccess?(false)
+                    self.tableView.animate(animation: TableViewAnimation.Cell.right(duration: 1))
+                    self.checkAndSelectItem()
+                }.cauterize()
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CSItemTableViewCell.height
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let listType = listType else {
             noDataLabel.isHidden = false
             return 0
         }
         switch listType {
         case .topic, .category, .subCategory:
-            noDataLabel.isHidden = !(itemList.count == 0 && !canContinueToNextPage)
             return itemList.count
         case .language:
-            noDataLabel.isHidden = !(languageList.count == 0 && !canContinueToNextPage)
             return languageList.count
         case .languageLevel:
-            noDataLabel.isHidden = !(languageLevelList.count == 0 && !canContinueToNextPage)
             return languageLevelList.count
         }
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -278,16 +284,15 @@ extension CSItemsListViewController: UITableViewDelegate, UITableViewDataSource 
            let listType = listType {
             switch listType {
             case .topic:
-                cell.setTitleAndImage(title: itemList[indexPath.section].name,
-                                      image: itemList[indexPath.section].image ?? "")
+                cell.setTitleAndImage(title: itemList[indexPath.row].name,
+                                      image: itemList[indexPath.row].image ?? "")
             case .category, .subCategory:
-                cell.setTitle(itemList[indexPath.section].name)
+                cell.setTitle(itemList[indexPath.row].name)
             case .language:
-                cell.setLanguage(language: languageList[indexPath.section])
+                cell.setLanguage(language: languageList[indexPath.row])
             case .languageLevel:
-                cell.setLanguageLevel(level: languageLevelList[indexPath.section])
+                cell.setLanguageLevel(level: languageLevelList[indexPath.row])
             }
-            
             return cell
         }
         return UITableViewCell()
@@ -296,32 +301,6 @@ extension CSItemsListViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let radius = cell.contentView.layer.cornerRadius
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: radius).cgPath
-        
-        if canContinueToNextPage,
-           let listType = listType {
-            switch listType {
-            case .topic, .category, .subCategory:
-                if indexPath.section == itemList.count - 1 { loadData(page: page + 1) }
-            case .language, .languageLevel:
-                break
-            }
-        }
     }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 8
-    }
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerView = UIView()
-        footerView.backgroundColor = .clear
-        return footerView
-    }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 8
-    }
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = .clear
-        return headerView
-    }
+
 }

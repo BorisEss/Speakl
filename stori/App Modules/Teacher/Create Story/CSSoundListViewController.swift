@@ -10,6 +10,8 @@ import MobileCoreServices
 import MarqueeLabel
 import PromiseKit
 import NVActivityIndicatorView
+import PaginatedTableView
+import TableFlip
 
 class CSSoundListViewController: UIViewController, UIGestureRecognizerDelegate {
 
@@ -52,9 +54,6 @@ class CSSoundListViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     var currentPlayingAudio: BackgroundAudio?
     
-    private var page: Int = 1
-    private var canContinueToNextPage: Bool = true
-    
     @IBOutlet weak var navBarTitleLabel: UILabel!
     
     @IBOutlet weak var albumNameLabel: UILabel!
@@ -66,7 +65,7 @@ class CSSoundListViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var audioProgressView: UIProgressView!
     @IBOutlet weak var audioCoverImageView: UIImageView!
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: PaginatedTableView!
     
     @IBOutlet weak var noDataLabel: UILabel!
     @IBOutlet weak var progressActivityIndicator: UIActivityIndicatorView!
@@ -81,7 +80,6 @@ class CSSoundListViewController: UIViewController, UIGestureRecognizerDelegate {
         setUpTableView()
         loadPreviewImage()
         audioList = []
-        loadData(page: page)
         currentPlayingAudioIndex = nil
     }
     
@@ -100,7 +98,7 @@ class CSSoundListViewController: UIViewController, UIGestureRecognizerDelegate {
             navigationController?.setNavigationBarHidden(false, animated: true)
             AudioPlayer.shared.stop()
             guard let selectedItem = tableView.indexPathForSelectedRow else { return }
-            CreateStoryObject.shared?.chapter?.backgroundSound = audioList[selectedItem.section]
+            CreateStoryObject.shared?.chapter?.backgroundSound = audioList[selectedItem.row]
         }
     }
     
@@ -140,23 +138,23 @@ class CSSoundListViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @IBAction func skipPreviousPressed(_ sender: Any) {
-        guard let section = currentPlayingAudioIndex else { return }
-        tableView.deselectRow(at: IndexPath(row: 0, section: section), animated: true)
-        tableView.selectRow(at: IndexPath(row: 0, section: section - 1),
+        guard let row = currentPlayingAudioIndex else { return }
+        tableView.deselectRow(at: IndexPath(row: row, section: 0), animated: true)
+        tableView.selectRow(at: IndexPath(row: row - 1, section: 0),
                             animated: true, scrollPosition: .middle)
-        self.currentPlayingAudioIndex = section - 1
-        playAudio(item: audioList[section - 1])
+        self.currentPlayingAudioIndex = row - 1
+        playAudio(item: audioList[row - 1])
     }
     @IBAction func playPausePressed(_ sender: Any) {
         AudioPlayer.shared.togglePlayPause()
     }
     @IBAction func skipNextPressed(_ sender: Any) {
-        guard let section = currentPlayingAudioIndex else { return }
-        tableView.deselectRow(at: IndexPath(row: 0, section: section), animated: true)
-        tableView.selectRow(at: IndexPath(row: 0, section: section + 1),
+        guard let row = currentPlayingAudioIndex else { return }
+        tableView.deselectRow(at: IndexPath(row: row, section: 0), animated: true)
+        tableView.selectRow(at: IndexPath(row: row + 1, section: 0),
                             animated: true, scrollPosition: .middle)
-        self.currentPlayingAudioIndex = section + 1
-        playAudio(item: audioList[section + 1])
+        self.currentPlayingAudioIndex = row + 1
+        playAudio(item: audioList[row + 1])
     }
     
     private func setUpLanguage() {
@@ -168,10 +166,13 @@ class CSSoundListViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     private func setUpTableView() {
+        tableView.paginatedDelegate = self
+        tableView.paginatedDataSource = self
         tableView.register(CSAudioTableViewCell.nib(),
                            forCellReuseIdentifier: CSAudioTableViewCell.identifier)
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 40))
         tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 10))
+        tableView.loadData(refresh: true)
     }
     
     private func setUpNavBar() {
@@ -179,25 +180,6 @@ class CSSoundListViewController: UIViewController, UIGestureRecognizerDelegate {
         navigationController?.setNavigationBarHidden(true, animated: true)
         navigationController?.interactivePopGestureRecognizer?.delegate = self
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
-    }
-    
-    private func loadData(page: Int) {
-        guard let subCategory = subCategory else {
-            self.canContinueToNextPage = false
-            self.progressActivityIndicator.stopAnimating()
-            self.tableView.reloadData()
-            return
-        }
-        CSPresenter.backgroundSound.getSounds(of: subCategory, page: page)
-            .done { (response) in
-                self.canContinueToNextPage = response.next != nil
-                self.audioList.append(contentsOf: response.results)
-            }
-            .ensure {
-                self.progressActivityIndicator.stopAnimating()
-                self.tableView.reloadData()
-            }
-            .cauterize()
     }
     
     private func loadPreviewImage() {
@@ -234,25 +216,58 @@ class CSSoundListViewController: UIViewController, UIGestureRecognizerDelegate {
     }
 }
 
-extension CSSoundListViewController: UITableViewDelegate, UITableViewDataSource {
+extension CSSoundListViewController: PaginatedTableViewDelegate, PaginatedTableViewDataSource {
+    func loadMore(_ pageNumber: Int, _ pageSize: Int, onSuccess: ((Bool) -> Void)?, onError: ((Error) -> Void)?) {
+        guard let subCategory = subCategory else {
+            self.progressActivityIndicator.stopAnimating()
+            noDataLabel.isHidden = false
+            onSuccess?(false)
+            return
+        }
+        noDataLabel.isHidden = true
+        CSPresenter.backgroundSound.getSounds(of: subCategory, page: pageNumber)
+            .ensure {
+                self.progressActivityIndicator.stopAnimating()
+            }
+            .done { (response) in
+                let canLoadMore: Bool = response.next != nil
+                if pageNumber == 1 {
+                    self.audioList = []
+                    if response.results.isEmpty {
+                        self.noDataLabel.isHidden = false
+                    }
+                }
+                self.audioList.append(contentsOf: response.results)
+                onSuccess?(canLoadMore)
+                if pageNumber == 1 {
+                    self.tableView.animate(animation: TableViewAnimation.Cell.right(duration: 1))
+                }
+            }
+            .catch { (error) in
+                print(error.localizedDescription)
+                if pageNumber == 1 {
+                    self.noDataLabel.isHidden = false
+                }
+                onSuccess?(false)
+            }
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CSAudioTableViewCell.height
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        noDataLabel.isHidden = !(audioList.count == 0 && !canContinueToNextPage)
-        return audioList.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return audioList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let mainCell = tableView.dequeueReusableCell(withIdentifier: CSAudioTableViewCell.identifier),
            let cell = mainCell as? CSAudioTableViewCell {
-            cell.setUpAudio(file: audioList[indexPath.section])
+            cell.setUpAudio(file: audioList[indexPath.row])
             return cell
         }
         return UITableViewCell()
@@ -261,33 +276,11 @@ extension CSSoundListViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let radius = cell.contentView.layer.cornerRadius
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: radius).cgPath
-        
-        if canContinueToNextPage {
-            if indexPath.section == audioList.count - 1 { loadData(page: page + 1) }
-        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        currentPlayingAudioIndex = indexPath.section
-        playAudio(item: audioList[indexPath.section])
-    }
-
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 8
-    }
-    
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerView = UIView()
-        footerView.backgroundColor = .clear
-        return footerView
-    }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 8
-    }
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = .clear
-        return headerView
+        currentPlayingAudioIndex = indexPath.row
+        playAudio(item: audioList[indexPath.row])
     }
 }
 
@@ -320,7 +313,7 @@ extension CSSoundListViewController: UIDocumentPickerDelegate {
                     })
                     .ensure {
                         self?.tableView.isHidden = false
-                        self?.tableView.reloadData()
+                        self?.tableView.loadData(refresh: true)
                         self?.uploadActivityIndicator.stopAnimating()
                     }
                     .cauterize()

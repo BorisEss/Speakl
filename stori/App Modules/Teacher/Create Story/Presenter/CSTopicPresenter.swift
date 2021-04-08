@@ -16,6 +16,7 @@ final class CSTopicPresenter {
                     .authorise(language: language)
                     .set(query: [
                         "page": "\(page)",
+                        "page_size": "20",
                         "languages": "\(language.id)"
                     ])
                     .build()
