@@ -46,7 +46,7 @@ class ViewController: UIViewController {
             case .inReview:
                 continueButton.setTitle("Check Status", for: .normal)
             case .approved:
-                continueButton.setTitle("Create Sotry", for: .normal)
+                continueButton.setTitle("Create Story", for: .normal)
             }
         } else {
             continueButton.setTitle("Register to Teacher Network", for: .normal)
