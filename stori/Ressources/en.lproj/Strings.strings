@@ -245,6 +245,48 @@
 "cs_message_error_button" = "Go Back";
 
 
+"settings_edit" = "Edit";
+"settings_choose_photo" = "Upload new photo from:";
+"settings_camera" = "Camera";
+"settings_library" = "Library";
+"settings_avatar_success" = "Your profile image was updated";
+"settings_avatar_failed" = "Could not process your request. Please try again.";
+"settings_account_settings" = "Account settings";
+"settings_personal_info_title" = "Personal Info";
+"settings_personal_info_subtitle" = "Username, Email";
+"settings_password_title" = "Password";
+"settings_password_subtitle" = "Change your current password";
+"settings_language_title" = "Language";
+"settings_language_subtitle" = "Change the app language";
+"settings_language_level_title" = "Language Level";
+"settings_language_level_subtitle" = "Change language level";
+"settings_notifications_title" = "Notifications";
+"settings_notifications_subtitle" = "Adjust notifications";
+"settings_learning" = "Learning";
+"settings_membership_title" = "Membership";
+"settings_membership_free" = "Freemium";
+"settings_membership_premium" = "Premium";
+"settings_membership_get_premium" = "Get Premium";
+"settings_become_teacher_title" = "Become a Teacher";
+"settings_become_teacher_subtitle" = "Join our Teacher Network";
+"settings_support" = "Support";
+"settings_feedback_title" = "Give us feedback";
+"settings_feedback_subtitle" = "Share your thoughts";
+"settings_rate_title" = "Rate our App on App Store";
+"settings_rate_subtitle" = "Rate & Review us";
+"settings_contact_us_title" = "Contact Us";
+"settings_contact_us_subtitle" = "Send us an email";
+"settings_referral" = "Referral";
+"settings_invite_frients_title" = "Invite friends";
+"settings_invite_friends_subtitle" = "When they join, both of you will get a prize ";
+"settings_redeem_code_title" = "Redeem Code";
+"settings_redeem_code_subtitle" = "Redeem code to get special prizes";
+"settings_legal" = "Legal";
+"settings_sign_out" = "Sign Out";
+"settings_version" = "VERSION %@";
+"settings_sign_out_question" = "Do you want to sign out?";
+
+
 "main_nav_controller_tab_title_learn" = "Learn";
 "main_nav_controller_tab_title_practice" = "Practice";
 "main_nav_controller_tab_title_vocabulary" = "Vocabulary";

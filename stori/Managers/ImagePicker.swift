@@ -16,21 +16,29 @@ enum ImagePickerScreen {
 class ImagePicker {
     static func pickImage(from screen: ImagePickerScreen? = nil,
                           frontCamera: Bool = false,
+                          isSquare: Bool = false,
+                          compress: Bool = false,
                           completion: @escaping (_ file: LocalFile) -> Void) {
         if let screen = screen {
             switch screen {
             case .camera:
                 pick(screen: .photo,
                      frontCamera: frontCamera,
+                     isSquare: isSquare,
+                     compress: compress,
                      completion: completion)
             case .library:
                 pick(screen: .library,
                      frontCamera: frontCamera,
+                     isSquare: isSquare,
+                     compress: compress,
                      completion: completion)
             }
         } else {
             pick(screen: nil,
                  frontCamera: frontCamera,
+                 isSquare: isSquare,
+                 compress: compress,
                  completion: completion)
         }
     }
@@ -46,6 +54,8 @@ class ImagePicker {
     private static func pick(screen: YPPickerScreen?,
                              frontCamera: Bool,
                              isVideo: Bool = false,
+                             isSquare: Bool = false,
+                             compress: Bool = false,
                              completion: @escaping (_ file: LocalFile) -> Void) {
         var config = YPImagePickerConfiguration()
         config.isScrollToChangeModesEnabled = false
@@ -56,13 +66,17 @@ class ImagePicker {
         } else {
             config.screens = [.photo, .library]
         }
-        config.showsCrop = .none
+        config.showsCrop = isSquare ? .rectangle(ratio: 1) : .none
         config.showsVideoTrimmer = true
         config.library.mediaType = isVideo ? .video : .photo
         config.video.libraryTimeLimit = .infinity
         config.video.recordingTimeLimit = 30
         config.video.trimmerMaxDuration = 30
-        config.targetImageSize = YPImageSize.original
+        if compress {
+            config.targetImageSize = YPImageSize.cappedTo(size: 1024)
+        } else {
+            config.targetImageSize = YPImageSize.original
+        }
         config.overlayView = UIView()
         config.hidesStatusBar = false
         config.hidesBottomBar = false
@@ -70,7 +84,7 @@ class ImagePicker {
         config.maxCameraZoomFactor = 1.0
         config.library.isSquareByDefault = false
         config.library.onlySquare = false
-        config.onlySquareImagesFromCamera = false
+        config.onlySquareImagesFromCamera = isSquare
         config.usesFrontCamera = frontCamera
         
         let picker = YPImagePicker(configuration: config)

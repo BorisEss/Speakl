@@ -51,7 +51,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fbe-ap-kLb">
-                                <rect key="frame" x="44.5" y="706" width="325" height="124"/>
+                                <rect key="frame" x="44.5" y="780" width="325" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmV-xB-I3I" customClass="RegularButton" customModule="stori" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
@@ -77,8 +77,8 @@
                                             <action selector="continueButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdB-Ec-fyF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRA-Ik-IEj" customClass="RegularButton" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="74" width="325" height="50"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRA-Ik-IEj" customClass="RegularButton" customModule="stori" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="pZl-Ow-osq"/>
                                         </constraints>

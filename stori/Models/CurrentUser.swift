@@ -11,19 +11,23 @@ struct CurrentUser: Decodable {
     private(set) var id: Int
     private(set) var username: String
     private(set) var email: String
+    private(set) var avatar: String
     private var nativeLangId: Int?
     private var currentLearningLanguage: LearningLanguage?
     private var learningLanguagesId: [Int]
     private(set) var teacherExperience: TeacherExperience?
+    private(set) var isPremium: Bool
     
     enum CodingKeys: String, CodingKey {
         case id
         case username
         case email
+        case avatar
         case nativeLangId = "native_lang"
         case currentLearningLanguage = "lang_to_learn"
         case learningLanguagesId = "languages"
         case teacherExperience = "teacher_experience"
+        case isPremium = "is_premium"
     }
     enum Status {
         case completed
@@ -55,10 +59,6 @@ struct CurrentUser: Decodable {
 
 struct TeacherExperience: Decodable {
     private(set) var status: TNUserStatus
-    
-//    var tnUserStatus: TNUserStatus {
-//        return TNUserStatus(rawValue: status) ?? .inReview
-//    }
 }
 
 enum TNUserStatus: Int, Decodable {

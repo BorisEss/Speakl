@@ -142,7 +142,9 @@ extension AuthViewController {
         if let user = Storage.shared.currentUser {
             switch user.userStatus {
             case .completed:
-                Router.load()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    Router.load()
+                }
             case .shouldUpdateLanguage:
                 performSegue(withIdentifier: Segues.continueSignUp.rawValue, sender: nil)
             }
