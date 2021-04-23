@@ -38,6 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Configure Facebook
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        // Configuring In App Purchase Manager and finishing unfinished previous transactions
+        InAppPurchaseManager.shared.completeTransactions()
+        
         // Hiding Back Button Title
         UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -1000.0, vertical: 0.0),
                                                                           for: .default)

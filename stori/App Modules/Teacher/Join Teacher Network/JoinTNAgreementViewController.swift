@@ -24,6 +24,18 @@ class JoinTNAgreementViewController: UIViewController {
         setUpLanguage()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if self.isMovingFromParent {
+            navigationController?.setNavigationBarHidden(true, animated: true)
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueToTermsAndConditions,
            let webController = segue.destination as? WebBrowserViewController {

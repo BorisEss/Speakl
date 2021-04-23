@@ -14,8 +14,12 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     
+    @IBOutlet weak var passwordSection: UIView!
+    
     @IBOutlet weak var membershipSubtitle: UILabel!
     @IBOutlet weak var getPremiumView: UIView!
+    
+    @IBOutlet weak var becomeATeacherSection: UIView!
     
     @IBOutlet weak var versionLabel: UILabel!
     
@@ -29,6 +33,13 @@ class SettingsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nextVc = segue.destination as? JoinTNSuccessMessageViewController {
+            nextVc.isCheck = true
+            nextVc.hidesBottomBarWhenPushed = true
+        }
     }
     
     @IBAction func editUserImageButtonPressed(_ sender: Any) {
@@ -64,6 +75,16 @@ class SettingsViewController: UIViewController {
         }
         pickerAlertController.addAction(libraryAction)
         self.present(pickerAlertController, animated: true)
+    }
+    
+    @IBAction func becomeATeacherButtonPressed(_ sender: Any) {
+        if let tnStatus = Storage.shared.currentUser?.teacherExperience?.status {
+            if tnStatus == .inReview {
+                performSegue(withIdentifier: "checkJoinTeacherNetwork", sender: nil)
+            }
+        } else {
+            performSegue(withIdentifier: "showJoinTeacherNetwork", sender: nil)
+        }
     }
     
     @IBAction func privacyPolicyButtonPressed(_ sender: Any) {
@@ -113,11 +134,23 @@ class SettingsViewController: UIViewController {
             userImageView.load(stringUrl: avatar)
         }
         userNameLabel.text = Storage.shared.currentUser?.username
+        passwordSection.isHidden = Storage.shared.currentUser?.userSignUpType != .email
         getPremiumView.isHidden = Storage.shared.currentUser?.isPremium ?? false
         if Storage.shared.currentUser?.isPremium ?? false {
-            membershipSubtitle.text = "settings_membership_premium".localized
+            let productList = InAppPurchaseManager.shared.products
+            if let currentId = Storage.shared.currentUser?.subscriptionId,
+               let premiumType = productList.first(where: {$0.productIdentifier == currentId}) {
+                membershipSubtitle.text = premiumType.localizedDescription
+            } else {
+                membershipSubtitle.text = "settings_membership_premium".localized
+            }
         } else {
             membershipSubtitle.text = "settings_membership_free".localized
+        }
+        if let tnStatus = Storage.shared.currentUser?.teacherExperience?.status {
+            becomeATeacherSection.isHidden = tnStatus == .approved
+        } else {
+            becomeATeacherSection.isHidden = false
         }
     }
     

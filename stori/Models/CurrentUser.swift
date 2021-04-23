@@ -16,7 +16,8 @@ struct CurrentUser: Decodable {
     private var currentLearningLanguage: LearningLanguage?
     private var learningLanguagesId: [Int]
     private(set) var teacherExperience: TeacherExperience?
-    private(set) var isPremium: Bool
+    private(set) var subscriptionId: String?
+    private(set) var userSignUpType: UserSignUpType
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -27,7 +28,8 @@ struct CurrentUser: Decodable {
         case currentLearningLanguage = "lang_to_learn"
         case learningLanguagesId = "languages"
         case teacherExperience = "teacher_experience"
-        case isPremium = "is_premium"
+        case subscriptionId = "subscription"
+        case userSignUpType = "signup_type"
     }
     enum Status {
         case completed
@@ -55,6 +57,10 @@ struct CurrentUser: Decodable {
         }
        return []
     }
+    
+    var isPremium: Bool {
+        return subscriptionId != nil
+    }
 }
 
 struct TeacherExperience: Decodable {
@@ -64,4 +70,11 @@ struct TeacherExperience: Decodable {
 enum TNUserStatus: Int, Decodable {
     case inReview = 0
     case approved = 1
+}
+
+enum UserSignUpType: Int, Decodable {
+    case email = 0
+    case facebook = 1
+    case google = 2
+    case apple = 3
 }

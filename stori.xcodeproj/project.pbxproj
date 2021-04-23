@@ -99,6 +99,8 @@
 		FA7B72E22566B493003F9A0C /* Sweet Pea.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA7B72E12566B493003F9A0C /* Sweet Pea.ttf */; };
 		FA7B72EA2566B814003F9A0C /* TutorialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72E82566B814003F9A0C /* TutorialCollectionViewCell.swift */; };
 		FA7B72EB2566B814003F9A0C /* TutorialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7B72E92566B814003F9A0C /* TutorialCollectionViewCell.xib */; };
+		FA7EF424262DAB2D00335CE6 /* Membership.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7EF423262DAB2D00335CE6 /* Membership.storyboard */; };
+		FA7EF427262DAB3B00335CE6 /* MembershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EF426262DAB3B00335CE6 /* MembershipViewController.swift */; };
 		FA812D6E256298440036F162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812D6D256298440036F162 /* AppDelegate.swift */; };
 		FA812D70256298440036F162 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812D6F256298440036F162 /* SceneDelegate.swift */; };
 		FA812D72256298440036F162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812D71256298440036F162 /* ViewController.swift */; };
@@ -118,6 +120,8 @@
 		FA8593DE25E1691D004CAC9E /* CSVocabularyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8593DD25E1691D004CAC9E /* CSVocabularyPresenter.swift */; };
 		FA8593E125E1692C004CAC9E /* CSGrammarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8593E025E1692C004CAC9E /* CSGrammarPresenter.swift */; };
 		FA8593E425E16DDB004CAC9E /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8593E325E16DDB004CAC9E /* Grammar.swift */; };
+		FA85A69A262EA255008E601C /* InAppPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85A699262EA254008E601C /* InAppPurchaseManager.swift */; };
+		FA85A702262F1F62008E601C /* MembershipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85A701262F1F62008E601C /* MembershipCollectionViewCell.swift */; };
 		FA876C7C25C80E6800E65B95 /* CSTextItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA876C7A25C80E6800E65B95 /* CSTextItemTableViewCell.swift */; };
 		FA876C7D25C80E6800E65B95 /* CSTextItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA876C7B25C80E6800E65B95 /* CSTextItemTableViewCell.xib */; };
 		FA876C8125C80E7C00E65B95 /* CSImageItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA876C7F25C80E7C00E65B95 /* CSImageItemTableViewCell.swift */; };
@@ -148,6 +152,8 @@
 		FAA60E0D25C1A87300522F8A /* CSSoundListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA60E0C25C1A87300522F8A /* CSSoundListViewController.swift */; };
 		FAAA96D8261DE6A800B53D6C /* InterestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96D6261DE6A800B53D6C /* InterestTableViewCell.swift */; };
 		FAAA96D9261DE6A800B53D6C /* InterestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAA96D7261DE6A800B53D6C /* InterestTableViewCell.xib */; };
+		FAAF7CBF26304B220007E63B /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF7CBE26304B220007E63B /* Vibration.swift */; };
+		FAAF7CC226306F0F0007E63B /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF7CC126306F0F0007E63B /* Number.swift */; };
 		FAB47D8725C156CB00B55F58 /* CSCoverListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB47D8625C156CB00B55F58 /* CSCoverListViewController.swift */; };
 		FAB47D8C25C15A3F00B55F58 /* CSCoverCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB47D8A25C15A3F00B55F58 /* CSCoverCardCell.swift */; };
 		FAB47D8D25C15A3F00B55F58 /* CSCoverCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB47D8B25C15A3F00B55F58 /* CSCoverCardCell.xib */; };
@@ -290,6 +296,8 @@
 		FA7B72E12566B493003F9A0C /* Sweet Pea.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sweet Pea.ttf"; sourceTree = "<group>"; };
 		FA7B72E82566B814003F9A0C /* TutorialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA7B72E92566B814003F9A0C /* TutorialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA7EF423262DAB2D00335CE6 /* Membership.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Membership.storyboard; sourceTree = "<group>"; };
+		FA7EF426262DAB3B00335CE6 /* MembershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipViewController.swift; sourceTree = "<group>"; };
 		FA812D6A256298440036F162 /* stori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA812D6D256298440036F162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA812D6F256298440036F162 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -311,6 +319,8 @@
 		FA8593DD25E1691D004CAC9E /* CSVocabularyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVocabularyPresenter.swift; sourceTree = "<group>"; };
 		FA8593E025E1692C004CAC9E /* CSGrammarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGrammarPresenter.swift; sourceTree = "<group>"; };
 		FA8593E325E16DDB004CAC9E /* Grammar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grammar.swift; sourceTree = "<group>"; };
+		FA85A699262EA254008E601C /* InAppPurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseManager.swift; sourceTree = "<group>"; };
+		FA85A701262F1F62008E601C /* MembershipCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA876C7A25C80E6800E65B95 /* CSTextItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTextItemTableViewCell.swift; sourceTree = "<group>"; };
 		FA876C7B25C80E6800E65B95 /* CSTextItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSTextItemTableViewCell.xib; sourceTree = "<group>"; };
 		FA876C7F25C80E7C00E65B95 /* CSImageItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSImageItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -341,6 +351,8 @@
 		FAA60E0C25C1A87300522F8A /* CSSoundListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSoundListViewController.swift; sourceTree = "<group>"; };
 		FAAA96D6261DE6A800B53D6C /* InterestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTableViewCell.swift; sourceTree = "<group>"; };
 		FAAA96D7261DE6A800B53D6C /* InterestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestTableViewCell.xib; sourceTree = "<group>"; };
+		FAAF7CBE26304B220007E63B /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
+		FAAF7CC126306F0F0007E63B /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		FAB47D8625C156CB00B55F58 /* CSCoverListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCoverListViewController.swift; sourceTree = "<group>"; };
 		FAB47D8A25C15A3F00B55F58 /* CSCoverCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCoverCardCell.swift; sourceTree = "<group>"; };
 		FAB47D8B25C15A3F00B55F58 /* CSCoverCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSCoverCardCell.xib; sourceTree = "<group>"; };
@@ -588,6 +600,7 @@
 			children = (
 				FA5608C5261F2CEF0062EE88 /* Settings.storyboard */,
 				FA5608C8261F2D150062EE88 /* SettingsViewController.swift */,
+				FA7EF422262DAB1900335CE6 /* Membership */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -612,6 +625,9 @@
 				FA85364E25AC6465002607EC /* Checksum.swift */,
 				FA04986E25C2E624004CF8B7 /* AudioPlayer.swift */,
 				FAE653F725C416A300CC25A1 /* VoiceRecorder.swift */,
+				FA85A699262EA254008E601C /* InAppPurchaseManager.swift */,
+				FAAF7CBE26304B220007E63B /* Vibration.swift */,
+				FAAF7CC126306F0F0007E63B /* Number.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -647,6 +663,16 @@
 				FA7B72E82566B814003F9A0C /* TutorialCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		FA7EF422262DAB1900335CE6 /* Membership */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EF423262DAB2D00335CE6 /* Membership.storyboard */,
+				FA7EF426262DAB3B00335CE6 /* MembershipViewController.swift */,
+				FA85A701262F1F62008E601C /* MembershipCollectionViewCell.swift */,
+			);
+			path = Membership;
 			sourceTree = "<group>";
 		};
 		FA812D61256298440036F162 = {
@@ -963,6 +989,7 @@
 				FA50420625A5B957004E6EC9 /* FileTableViewCell.xib in Resources */,
 				FA876C8825C80EA200E65B95 /* CSVideoItemTableViewCell.xib in Resources */,
 				FAB47D8D25C15A3F00B55F58 /* CSCoverCardCell.xib in Resources */,
+				FA7EF424262DAB2D00335CE6 /* Membership.storyboard in Resources */,
 				FA812D88256640BF0036F162 /* Tutorial.storyboard in Resources */,
 				FA7B72D825669A31003F9A0C /* IBMPlexSans-Regular.ttf in Resources */,
 				FAA60E0A25C1952D00522F8A /* IBMPlexSans-LightItalic.ttf in Resources */,
@@ -1069,6 +1096,7 @@
 				FA812DA725665DB90036F162 /* TutorialViewController.swift in Sources */,
 				FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */,
 				FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */,
+				FAAF7CC226306F0F0007E63B /* Number.swift in Sources */,
 				FA4B616F25713362005501BD /* DataExtension.swift in Sources */,
 				FA4B6144257015BE005501BD /* NetworkError.swift in Sources */,
 				FA417FC82590DE8B00F9D81B /* TeacherNetworkViewController.swift in Sources */,
@@ -1160,6 +1188,7 @@
 				FA4D446C2578D2B300398AE2 /* Router.swift in Sources */,
 				FAE653F025C4045000CC25A1 /* CSRecordVoiceListViewController.swift in Sources */,
 				FA0E896325BFF91D00D80027 /* CSItemsListViewController.swift in Sources */,
+				FA7EF427262DAB3B00335CE6 /* MembershipViewController.swift in Sources */,
 				FAFF82C025D4429300A9BE82 /* CSStoryPresenter.swift in Sources */,
 				FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */,
 				FA5608C9261F2D150062EE88 /* SettingsViewController.swift in Sources */,
@@ -1180,6 +1209,7 @@
 				FA08DF7225C6DAC1001EEF7E /* StorySection.swift in Sources */,
 				FA876C8D25C823EB00E65B95 /* CSTableViewCellBuilder.swift in Sources */,
 				FAD804C025BEC757005451B6 /* CSStoryTitleViewController.swift in Sources */,
+				FA85A69A262EA255008E601C /* InAppPurchaseManager.swift in Sources */,
 				FA4D4481257A9B3200398AE2 /* AuthViewController.swift in Sources */,
 				FA4D4499257E48CE00398AE2 /* LanguageSelectViewController.swift in Sources */,
 				FA63DA3F258D030900722CA6 /* NotificationExtension.swift in Sources */,
@@ -1187,12 +1217,14 @@
 				FAFF92C725A4941400A604C3 /* JoinTNAgreementViewController.swift in Sources */,
 				FA4B618B25750412005501BD /* CurrentUser.swift in Sources */,
 				FAFF82D325D4435E00A9BE82 /* CSLanguagePresenter.swift in Sources */,
+				FA85A702262F1F62008E601C /* MembershipCollectionViewCell.swift in Sources */,
 				FA876C8725C80EA200E65B95 /* CSVideoItemTableViewCell.swift in Sources */,
 				FA876C8125C80E7C00E65B95 /* CSImageItemTableViewCell.swift in Sources */,
 				FA46952025C0A0D300F347B1 /* CSCustomItemViewController.swift in Sources */,
 				FAB47D8C25C15A3F00B55F58 /* CSCoverCardCell.swift in Sources */,
 				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,
 				FAF2690B25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift in Sources */,
+				FAAF7CBF26304B220007E63B /* Vibration.swift in Sources */,
 				FA417FDE2590F40F00F9D81B /* UIApplicationExtension.swift in Sources */,
 				FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */,
 				FA4D44682578CF1E00398AE2 /* Storage.swift in Sources */,

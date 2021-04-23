@@ -677,6 +677,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qza-hW-LHe">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                                        <connections>
+                                                            <segue destination="cig-eB-yEJ" kind="show" id="GjJ-Gn-esa"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -754,6 +757,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlW-uT-0ft">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                                        <connections>
+                                                            <action selector="becomeATeacherButtonPressed:" destination="CpO-eI-rZC" eventType="touchUpInside" id="NVO-Vh-u8S"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1480,16 +1486,50 @@
                     <navigationItem key="navigationItem" id="VQG-am-Cne"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="becomeATeacherSection" destination="Pu7-zc-VbX" id="g5R-zE-lvZ"/>
                         <outlet property="getPremiumView" destination="kMw-JK-fcP" id="O5I-Ld-rFs"/>
                         <outlet property="membershipSubtitle" destination="2C7-vO-RDe" id="EDP-8M-nl4"/>
+                        <outlet property="passwordSection" destination="9Oz-hq-Gqb" id="CVb-Fe-3JG"/>
                         <outlet property="userImageView" destination="bOx-27-Pde" id="nEc-wP-olN"/>
                         <outlet property="userNameLabel" destination="JEG-bF-yTC" id="Dlj-Xa-urJ"/>
                         <outlet property="versionLabel" destination="deI-iu-15p" id="NGL-gq-fTd"/>
+                        <segue destination="DFX-pt-7hX" kind="show" identifier="showJoinTeacherNetwork" id="wN4-KD-Gsd"/>
+                        <segue destination="vbQ-tr-GvH" kind="show" identifier="checkJoinTeacherNetwork" id="U41-5G-CxU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mK-Te-ota" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="521.73913043478262" y="174.77678571428569"/>
+        </scene>
+        <!--Membership-->
+        <scene sceneID="7MP-9h-xPv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Membership" id="cig-eB-yEJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dlA-al-k0a"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBJ-6X-KLM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="271"/>
+        </scene>
+        <!--JoinTeacherNetwork-->
+        <scene sceneID="QiQ-9e-sCx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="JoinTeacherNetwork" id="DFX-pt-7hX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KS8-8x-xXx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1OX-6C-SyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352" y="336"/>
+        </scene>
+        <!--JoinTNSuccessMessageViewController-->
+        <scene sceneID="Chh-1c-Gd2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="JoinTeacherNetwork" referencedIdentifier="JoinTNSuccessMessageViewController" id="vbQ-tr-GvH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="d0W-Gw-WSO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zpk-Rq-XQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1433" y="401"/>
         </scene>
     </scenes>
     <resources>

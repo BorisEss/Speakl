@@ -58,4 +58,29 @@ class UserClient {
             }
         }
     }
+    
+    static func verifySubscription(receipt: String) -> Promise<Void> {
+        return Promise<Void> { promise in
+            firstly {
+                return Request(endpoint: Endpoints.verifyReceipt, method: .post)
+                    .set(headers: Headers().authorized)
+                    .set(body: [
+                        "receipt": receipt
+                    ])
+                    .build()
+            }
+            .then { (request) -> Promise<DiscardableResponse> in
+                return APIClient.request(with: request)
+            }
+            .then({ (_) -> Promise<Void> in
+                return UserClient.getCurrentUser()
+            })
+            .done { (_) in
+                promise.fulfill_()
+            }
+            .catch { (error) in
+                promise.reject(error)
+            }
+        }
+    }
 }

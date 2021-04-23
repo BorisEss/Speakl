@@ -25,7 +25,7 @@ target 'stori' do
   pod 'IQKeyboardManagerSwift'
   pod 'PromiseKit'
   pod 'KeychainSwift'
-#  pod 'SwiftyStoreKit'
+  pod 'SwiftyStoreKit'
   
   #UI Pods
   pod 'UPCarouselFlowLayout'

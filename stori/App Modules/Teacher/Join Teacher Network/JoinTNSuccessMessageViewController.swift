@@ -60,6 +60,18 @@ class JoinTNSuccessMessageViewController: UIViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if self.isMovingFromParent {
+            navigationController?.setNavigationBarHidden(true, animated: true)
+        }
+    }
+    
     @objc func back(sender: UIBarButtonItem) {
         navigationController?.popToRootViewController(animated: false)
     }

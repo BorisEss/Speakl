@@ -287,6 +287,15 @@
 "settings_sign_out_question" = "Do you want to sign out?";
 
 
+"membership_title" = "Get Premium";
+"membership_unlimited_stories" = "Unlimited\nStories";
+"membership_save_label" = "SAVE %@%%";
+"membership_active_label" = "ACTIVE";
+"membership_description" = "*Recurring billing, cancel anytime. If you choose to purchase the Premium App, payment will be charged to your iTunes account after 7 days of free trial, and your account will be charged for renewal within 24 hours prior to the end of the current period. Auto renewal may be turned off at any time by going to your Settings in the iTunes Store after purchase.";
+"membership_subscribe" = "Subscribe";
+"membership_success" = "Success!\nEnjoy your full access to all stories!";
+
+
 "main_nav_controller_tab_title_learn" = "Learn";
 "main_nav_controller_tab_title_practice" = "Practice";
 "main_nav_controller_tab_title_vocabulary" = "Vocabulary";

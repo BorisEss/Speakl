@@ -28,6 +28,9 @@ class JoinTNPresenter {
         .then { (request) -> Promise<DiscardableResponse> in
             return APIClient.request(with: request)
         }
+        .then { (_) -> Promise<Void> in
+            return UserClient.getCurrentUser()
+        }
         .done { _ in
             completion(true)
         }
