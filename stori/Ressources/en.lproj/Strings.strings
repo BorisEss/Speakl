@@ -27,6 +27,7 @@
 "common_close_title" = "Close";
 "common_done_title" = "Done";
 "common_next_title" = "Next";
+"common_edit_title" = "Edit";
 "common_back_title" = "Back";
 "common_remove_title" = "Remove";
 "common_uploading" = "Uploading";
@@ -285,6 +286,13 @@
 "settings_sign_out" = "Sign Out";
 "settings_version" = "VERSION %@";
 "settings_sign_out_question" = "Do you want to sign out?";
+
+
+"edit_personal_info_title" = "Edit Personal Info";
+"edit_personal_info_username" = "Username";
+"edit_personal_info_email" = "Email";
+"edit_personal_info_change_username" = "Change username";
+"edit_personal_info_username_placeholder" = "Enter your username";
 
 
 "membership_title" = "Get Premium";

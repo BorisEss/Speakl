@@ -176,6 +176,9 @@
 		FAE8AFB125E3E0FA00448AA4 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8AFB025E3E0FA00448AA4 /* SectionModel.swift */; };
 		FAEBEA22258A05BE0077D942 /* SuccessMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEBEA21258A05BE0077D942 /* SuccessMessage.swift */; };
 		FAEBEA3E258B4CC90077D942 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEBEA3D258B4CC90077D942 /* UIButtonExtension.swift */; };
+		FAF10ECA26369B3E001B650F /* EditPersonalInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF10EC926369B3E001B650F /* EditPersonalInfo.storyboard */; };
+		FAF10ECD26369B63001B650F /* EditPersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF10ECC26369B63001B650F /* EditPersonalInfoViewController.swift */; };
+		FAF10ED12636CD26001B650F /* EditUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF10ED02636CD26001B650F /* EditUsernameViewController.swift */; };
 		FAF2690B25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2690A25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift */; };
 		FAF2690E25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2690D25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib */; };
 		FAF2691225BF32AE00FFDE4A /* CSMainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2691125BF32AE00FFDE4A /* CSMainListViewController.swift */; };
@@ -375,6 +378,9 @@
 		FAE8AFB025E3E0FA00448AA4 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		FAEBEA21258A05BE0077D942 /* SuccessMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessMessage.swift; sourceTree = "<group>"; };
 		FAEBEA3D258B4CC90077D942 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		FAF10EC926369B3E001B650F /* EditPersonalInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditPersonalInfo.storyboard; sourceTree = "<group>"; };
+		FAF10ECC26369B63001B650F /* EditPersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonalInfoViewController.swift; sourceTree = "<group>"; };
+		FAF10ED02636CD26001B650F /* EditUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUsernameViewController.swift; sourceTree = "<group>"; };
 		FAF2690A25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewWithSubtitleAndCheckmark.swift; sourceTree = "<group>"; };
 		FAF2690D25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemViewWithSubtitleAndCheckmark.xib; sourceTree = "<group>"; };
 		FAF2691125BF32AE00FFDE4A /* CSMainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainListViewController.swift; sourceTree = "<group>"; };
@@ -600,6 +606,7 @@
 			children = (
 				FA5608C5261F2CEF0062EE88 /* Settings.storyboard */,
 				FA5608C8261F2D150062EE88 /* SettingsViewController.swift */,
+				FAF10EC826369B14001B650F /* Edit PersonalInfo */,
 				FA7EF422262DAB1900335CE6 /* Membership */,
 			);
 			path = Settings;
@@ -833,6 +840,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FAF10EC826369B14001B650F /* Edit PersonalInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FAF10EC926369B3E001B650F /* EditPersonalInfo.storyboard */,
+				FAF10ECC26369B63001B650F /* EditPersonalInfoViewController.swift */,
+				FAF10ED02636CD26001B650F /* EditUsernameViewController.swift */,
+			);
+			path = "Edit PersonalInfo";
+			sourceTree = "<group>";
+		};
 		FAFF82BE25D4427F00A9BE82 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -983,6 +1000,7 @@
 				FA876C8225C80E7C00E65B95 /* CSImageItemTableViewCell.xib in Resources */,
 				FA812D77256298450036F162 /* Assets.xcassets in Resources */,
 				FAE653EA25C3FB8600CC25A1 /* RecordButton.xib in Resources */,
+				FAF10ECA26369B3E001B650F /* EditPersonalInfo.storyboard in Resources */,
 				FA9F70F325C69E3F00A16C61 /* CSAddTableViewCell.xib in Resources */,
 				FA94561025C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib in Resources */,
 				FA8BB73A25C1ED6C001B6A22 /* CSAudioTableViewCell.xib in Resources */,
@@ -1093,6 +1111,7 @@
 				FA85365725B08EF6002607EC /* JoinTNPresenter.swift in Sources */,
 				FA04986F25C2E624004CF8B7 /* AudioPlayer.swift in Sources */,
 				FA7B72EA2566B814003F9A0C /* TutorialCollectionViewCell.swift in Sources */,
+				FAF10ECD26369B63001B650F /* EditPersonalInfoViewController.swift in Sources */,
 				FA812DA725665DB90036F162 /* TutorialViewController.swift in Sources */,
 				FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */,
 				FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */,
@@ -1229,6 +1248,7 @@
 				FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */,
 				FA4D44682578CF1E00398AE2 /* Storage.swift in Sources */,
 				FA7B72D0256690C1003F9A0C /* UIViewExtension.swift in Sources */,
+				FAF10ED12636CD26001B650F /* EditUsernameViewController.swift in Sources */,
 				FA417564257FDF6700CF416B /* Skill.swift in Sources */,
 				FA812D9C256659690036F162 /* AppColors.swift in Sources */,
 				FA94560025C546E6003E54F0 /* CSStoryTextViewController.swift in Sources */,

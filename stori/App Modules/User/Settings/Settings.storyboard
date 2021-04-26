@@ -253,6 +253,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diD-6m-VjZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                                        <connections>
+                                                            <segue destination="cpQ-hA-Kc3" kind="show" id="PDa-mw-ug9"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1500,6 +1503,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mK-Te-ota" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="521.73913043478262" y="174.77678571428569"/>
+        </scene>
+        <!--EditPersonalInfo-->
+        <scene sceneID="WDX-nr-eAl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EditPersonalInfo" id="cpQ-hA-Kc3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IB3-47-hpn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kK9-Zu-EZ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1335" y="38"/>
         </scene>
         <!--Membership-->
         <scene sceneID="7MP-9h-xPv">
