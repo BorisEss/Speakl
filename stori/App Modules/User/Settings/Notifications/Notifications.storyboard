@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Ip-dZ-2Ul">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Light.ttf">
+            <string>IBMPlexSans-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notifications View Controller-->
+        <scene sceneID="RGX-uP-ZL0">
+            <objects>
+                <viewController storyboardIdentifier="NotificationsViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Ip-dZ-2Ul" customClass="NotificationsViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O8k-4M-OIz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ztR-L9-0ZR">
+                                <rect key="frame" x="0.0" y="76" width="414" height="53"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="una-fk-KTM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="1HZ-Jt-9Qc">
+                                                <rect key="frame" x="16" y="16.5" width="138.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="17"/>
+                                                <color key="textColor" name="Text Black"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="edit_notifications_push_notifications"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkN-Sg-xj5">
+                                                <rect key="frame" x="0.0" y="52" width="414" height="1"/>
+                                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="nan-4N-ULF"/>
+                                                </constraints>
+                                            </view>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Fk-Qr-RhO">
+                                                <rect key="frame" x="345" y="11" width="51" height="31"/>
+                                                <color key="onTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="thumbTintColor" name="AccentColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="0.19607843137254902" green="0.19607843137254902" blue="0.27843137254901962" alpha="0.12" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="notificationsSwitchChanged:" destination="0Ip-dZ-2Ul" eventType="valueChanged" id="emN-3e-0xJ"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="9Fk-Qr-RhO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1HZ-Jt-9Qc" secondAttribute="trailing" constant="16" id="2hi-Xp-sJh"/>
+                                            <constraint firstAttribute="trailing" secondItem="wkN-Sg-xj5" secondAttribute="trailing" id="3YC-1m-fLe"/>
+                                            <constraint firstAttribute="bottom" secondItem="wkN-Sg-xj5" secondAttribute="bottom" id="FPb-ou-kMi"/>
+                                            <constraint firstItem="9Fk-Qr-RhO" firstAttribute="centerY" secondItem="una-fk-KTM" secondAttribute="centerY" id="JJ0-9S-hZ5"/>
+                                            <constraint firstItem="1HZ-Jt-9Qc" firstAttribute="leading" secondItem="una-fk-KTM" secondAttribute="leading" constant="16" id="MHy-IK-K4y"/>
+                                            <constraint firstItem="1HZ-Jt-9Qc" firstAttribute="centerY" secondItem="una-fk-KTM" secondAttribute="centerY" id="c3O-lE-BfB"/>
+                                            <constraint firstItem="wkN-Sg-xj5" firstAttribute="leading" secondItem="una-fk-KTM" secondAttribute="leading" id="c9Z-5Z-Wdy"/>
+                                            <constraint firstAttribute="trailing" secondItem="9Fk-Qr-RhO" secondAttribute="trailing" constant="20" id="i59-G3-fMj"/>
+                                            <constraint firstAttribute="height" constant="53" id="ow5-cR-xiJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hit-5C-5rz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ztR-L9-0ZR" firstAttribute="top" secondItem="hit-5C-5rz" secondAttribute="top" constant="32" id="0DD-R3-y9S"/>
+                            <constraint firstItem="ztR-L9-0ZR" firstAttribute="leading" secondItem="hit-5C-5rz" secondAttribute="leading" id="LBq-RQ-WFp"/>
+                            <constraint firstItem="hit-5C-5rz" firstAttribute="trailing" secondItem="ztR-L9-0ZR" secondAttribute="trailing" id="fk4-Ic-bWK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="notificationsSwitch" destination="9Fk-Qr-RhO" id="BUZ-hB-DIV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QQx-78-2M0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-432" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Black">
+            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

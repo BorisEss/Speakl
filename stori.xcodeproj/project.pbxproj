@@ -35,6 +35,8 @@
 		FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA417FC42590DD2F00F9D81B /* Teacher.storyboard */; };
 		FA417FC82590DE8B00F9D81B /* TeacherNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA417FC72590DE8B00F9D81B /* TeacherNetworkViewController.swift */; };
 		FA417FDE2590F40F00F9D81B /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA417FDD2590F40F00F9D81B /* UIApplicationExtension.swift */; };
+		FA4506062637FE5100000279 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4506052637FE5100000279 /* Notifications.storyboard */; };
+		FA4506092637FE5C00000279 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4506082637FE5C00000279 /* NotificationsViewController.swift */; };
 		FA46951825C0521B00F347B1 /* ItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46951725C0521B00F347B1 /* ItemProtocol.swift */; };
 		FA46951C25C0553E00F347B1 /* CSPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46951B25C0553E00F347B1 /* CSPresenter.swift */; };
 		FA46952025C0A0D300F347B1 /* CSCustomItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46951F25C0A0D300F347B1 /* CSCustomItemViewController.swift */; };
@@ -180,7 +182,7 @@
 		FAF10ECD26369B63001B650F /* EditPersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF10ECC26369B63001B650F /* EditPersonalInfoViewController.swift */; };
 		FAF10ED12636CD26001B650F /* EditUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF10ED02636CD26001B650F /* EditUsernameViewController.swift */; };
 		FAF10ED526371523001B650F /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF10ED426371523001B650F /* ChangePasswordViewController.swift */; };
-		FAF10ED92637152E001B650F /* ChangePasswordStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF10ED82637152E001B650F /* ChangePasswordStoryboard.storyboard */; };
+		FAF10ED92637152E001B650F /* ChangePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF10ED82637152E001B650F /* ChangePassword.storyboard */; };
 		FAF2690B25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2690A25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift */; };
 		FAF2690E25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2690D25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib */; };
 		FAF2691225BF32AE00FFDE4A /* CSMainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2691125BF32AE00FFDE4A /* CSMainListViewController.swift */; };
@@ -236,6 +238,8 @@
 		FA417FC42590DD2F00F9D81B /* Teacher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Teacher.storyboard; sourceTree = "<group>"; };
 		FA417FC72590DE8B00F9D81B /* TeacherNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherNetworkViewController.swift; sourceTree = "<group>"; };
 		FA417FDD2590F40F00F9D81B /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		FA4506052637FE5100000279 /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
+		FA4506082637FE5C00000279 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		FA46951725C0521B00F347B1 /* ItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProtocol.swift; sourceTree = "<group>"; };
 		FA46951B25C0553E00F347B1 /* CSPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSPresenter.swift; sourceTree = "<group>"; };
 		FA46951F25C0A0D300F347B1 /* CSCustomItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCustomItemViewController.swift; sourceTree = "<group>"; };
@@ -384,7 +388,7 @@
 		FAF10ECC26369B63001B650F /* EditPersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonalInfoViewController.swift; sourceTree = "<group>"; };
 		FAF10ED02636CD26001B650F /* EditUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUsernameViewController.swift; sourceTree = "<group>"; };
 		FAF10ED426371523001B650F /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
-		FAF10ED82637152E001B650F /* ChangePasswordStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePasswordStoryboard.storyboard; sourceTree = "<group>"; };
+		FAF10ED82637152E001B650F /* ChangePassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePassword.storyboard; sourceTree = "<group>"; };
 		FAF2690A25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewWithSubtitleAndCheckmark.swift; sourceTree = "<group>"; };
 		FAF2690D25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemViewWithSubtitleAndCheckmark.xib; sourceTree = "<group>"; };
 		FAF2691125BF32AE00FFDE4A /* CSMainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainListViewController.swift; sourceTree = "<group>"; };
@@ -519,6 +523,15 @@
 			path = Teacher;
 			sourceTree = "<group>";
 		};
+		FA4506042637FE3400000279 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				FA4506052637FE5100000279 /* Notifications.storyboard */,
+				FA4506082637FE5C00000279 /* NotificationsViewController.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		FA4B6114256F7BA5005501BD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -612,6 +625,7 @@
 				FA5608C8261F2D150062EE88 /* SettingsViewController.swift */,
 				FAF10EC826369B14001B650F /* Edit PersonalInfo */,
 				FAF10ED32637150E001B650F /* Change Password */,
+				FA4506042637FE3400000279 /* Notifications */,
 				FA7EF422262DAB1900335CE6 /* Membership */,
 			);
 			path = Settings;
@@ -858,7 +872,7 @@
 		FAF10ED32637150E001B650F /* Change Password */ = {
 			isa = PBXGroup;
 			children = (
-				FAF10ED82637152E001B650F /* ChangePasswordStoryboard.storyboard */,
+				FAF10ED82637152E001B650F /* ChangePassword.storyboard */,
 				FAF10ED426371523001B650F /* ChangePasswordViewController.swift */,
 			);
 			path = "Change Password";
@@ -990,7 +1004,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF10ED92637152E001B650F /* ChangePasswordStoryboard.storyboard in Resources */,
+				FAF10ED92637152E001B650F /* ChangePassword.storyboard in Resources */,
 				FAC1F4BB25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf in Resources */,
 				FA7B72EB2566B814003F9A0C /* TutorialCollectionViewCell.xib in Resources */,
 				FA63DA39258CF3D400722CA6 /* MainTabBar.storyboard in Resources */,
@@ -1019,6 +1033,7 @@
 				FA9F70F325C69E3F00A16C61 /* CSAddTableViewCell.xib in Resources */,
 				FA94561025C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib in Resources */,
 				FA8BB73A25C1ED6C001B6A22 /* CSAudioTableViewCell.xib in Resources */,
+				FA4506062637FE5100000279 /* Notifications.storyboard in Resources */,
 				FA50420625A5B957004E6EC9 /* FileTableViewCell.xib in Resources */,
 				FA876C8825C80EA200E65B95 /* CSVideoItemTableViewCell.xib in Resources */,
 				FAB47D8D25C15A3F00B55F58 /* CSCoverCardCell.xib in Resources */,
@@ -1129,6 +1144,7 @@
 				FAF10ECD26369B63001B650F /* EditPersonalInfoViewController.swift in Sources */,
 				FA812DA725665DB90036F162 /* TutorialViewController.swift in Sources */,
 				FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */,
+				FA4506092637FE5C00000279 /* NotificationsViewController.swift in Sources */,
 				FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */,
 				FAAF7CC226306F0F0007E63B /* Number.swift in Sources */,
 				FA4B616F25713362005501BD /* DataExtension.swift in Sources */,

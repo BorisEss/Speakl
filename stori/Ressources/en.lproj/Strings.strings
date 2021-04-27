@@ -303,6 +303,10 @@
 "edit_password_success" = "Your password was updated!";
 
 
+"edit_notifications_title" = "Notifications";
+"edit_notifications_push_notifications" = "Push Notifications";
+
+
 "membership_title" = "Get Premium";
 "membership_unlimited_stories" = "Unlimited\nStories";
 "membership_save_label" = "SAVE %@%%";

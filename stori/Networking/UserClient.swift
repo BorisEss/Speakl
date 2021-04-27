@@ -85,28 +85,7 @@ class UserClient {
     }
     
     static func updateUsername(username: String) -> Promise<Void> {
-        return Promise<Void> { promise in
-            firstly {
-                return Request(endpoint: Endpoints.currentUser, method: .patch)
-                    .set(headers: Headers().authorized)
-                    .set(body: [
-                        "username": username
-                    ])
-                    .build()
-            }
-            .then { (request) -> Promise<DiscardableResponse> in
-                return APIClient.request(with: request)
-            }
-            .then({ (_) -> Promise<Void> in
-                return UserClient.getCurrentUser()
-            })
-            .done { (_) in
-                promise.fulfill_()
-            }
-            .catch { (error) in
-                promise.reject(error)
-            }
-        }
+        return updateUserData(body: [ "username": username ])
     }
     
     static func changePassword(oldPassword: String,
@@ -125,6 +104,33 @@ class UserClient {
             .then { (request) -> Promise<DiscardableResponse> in
                 return APIClient.request(with: request)
             }
+            .done { (_) in
+                promise.fulfill_()
+            }
+            .catch { (error) in
+                promise.reject(error)
+            }
+        }
+    }
+    
+    static func updateNotifications(enabled: Bool) -> Promise<Void> {
+        return updateUserData(body: [ "receive_notifications": enabled ])
+    }
+    
+    private static func updateUserData(body: ParametersDict) -> Promise<Void> {
+        return Promise<Void> { promise in
+            firstly {
+                return Request(endpoint: Endpoints.currentUser, method: .patch)
+                    .set(headers: Headers().authorized)
+                    .set(body: body)
+                    .build()
+            }
+            .then { (request) -> Promise<DiscardableResponse> in
+                return APIClient.request(with: request)
+            }
+            .then({ (_) -> Promise<Void> in
+                return UserClient.getCurrentUser()
+            })
             .done { (_) in
                 promise.fulfill_()
             }
