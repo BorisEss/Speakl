@@ -29,6 +29,7 @@ struct Endpoints {
     private static let user = api.appendingPathComponent("users")
     public static let currentUser = user.appendingPathComponent("me/")
     public static let updateInterests = user.appendingPathComponent("set-interests/")
+    public static let changePassword = auth.appendingPathComponent("change-password/")
     
     // MARK: - Subscriptions
     public static let verifyReceipt = user.appendingPathComponent("check-receipt/")

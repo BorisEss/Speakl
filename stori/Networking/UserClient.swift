@@ -108,4 +108,29 @@ class UserClient {
             }
         }
     }
+    
+    static func changePassword(oldPassword: String,
+                               newPassword: String) -> Promise<Void> {
+        return Promise<Void> { promise in
+            firstly {
+                return Request(endpoint: Endpoints.changePassword, method: .post)
+                    .set(headers: Headers().authorized)
+                    .set(body: [
+                        "old_password": oldPassword,
+                        "password": newPassword,
+                        "password_c": newPassword
+                    ])
+                    .build()
+            }
+            .then { (request) -> Promise<DiscardableResponse> in
+                return APIClient.request(with: request)
+            }
+            .done { (_) in
+                promise.fulfill_()
+            }
+            .catch { (error) in
+                promise.reject(error)
+            }
+        }
+    }
 }

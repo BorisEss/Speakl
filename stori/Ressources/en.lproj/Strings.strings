@@ -295,6 +295,14 @@
 "edit_personal_info_username_placeholder" = "Enter your username";
 
 
+"edit_password_title" = "Change password";
+"edit_password_old_password" = "Old password";
+"edit_password_new_password" = "New password";
+"edit_password_new_password_confirm" = "Confirm password";
+"edit_password_placeholder" = "Enter password";
+"edit_password_success" = "Your password was updated!";
+
+
 "membership_title" = "Get Premium";
 "membership_unlimited_stories" = "Unlimited\nStories";
 "membership_save_label" = "SAVE %@%%";

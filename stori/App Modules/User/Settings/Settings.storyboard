@@ -332,6 +332,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjG-oM-Bh3">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                                        <connections>
+                                                            <segue destination="Y2E-wq-Jfo" kind="show" id="2Ry-Wu-9sl"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1513,6 +1516,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kK9-Zu-EZ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1335" y="38"/>
+        </scene>
+        <!--ChangePasswordStoryboard-->
+        <scene sceneID="qJU-DJ-6Eh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChangePasswordStoryboard" id="Y2E-wq-Jfo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Pir-QF-gHc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Vk-Hf-Gei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1359" y="85"/>
         </scene>
         <!--Membership-->
         <scene sceneID="7MP-9h-xPv">

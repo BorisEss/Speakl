@@ -26,9 +26,34 @@ class EditUsernameViewController: UIViewController {
         super.viewDidAppear(animated)
         usernameTextField.becomeFirstResponder()
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self,
+                                                  name: UIResponder.keyboardWillShowNotification,
+                                                  object: nil)
+        NotificationCenter.default.removeObserver(self,
+                                                  name: UIResponder.keyboardWillHideNotification,
+                                                  object: nil)
+    }
 
     @IBAction func saveButtonPressed(_ sender: Any) {
-        saveNewUsername()
+        if let username = usernameTextField.text {
+            progressActivityIndicator.startAnimating()
+            usernameTextField.isEnabled = false
+            saveButton.isHidden = true
+            UserClient.updateUsername(username: username)
+                .ensure {
+                    self.progressActivityIndicator.stopAnimating()
+                    self.usernameTextField.isEnabled = true
+                    self.saveButton.isHidden = false
+                }
+                .done { (_) in
+                    self.navigationController?.popViewController(animated: true)
+                }
+                .catch { (error) in
+                    error.parse()
+                }
+        }
     }
     
     private func setUpLanguage() {
@@ -89,24 +114,6 @@ class EditUsernameViewController: UIViewController {
         UIView.animate(withDuration: 0.7) {
             self.bottomButtonConstraint.constant = 20
             self.view.layoutIfNeeded()
-        }
-    }
-    
-    private func saveNewUsername() {
-        if let username = usernameTextField.text {
-            progressActivityIndicator.startAnimating()
-            usernameTextField.isEnabled = false
-            saveButton.isHidden = true
-            UserClient.updateUsername(username: username)
-                .done { (_) in
-                    self.progressActivityIndicator.stopAnimating()
-                    self.usernameTextField.isEnabled = true
-                    self.saveButton.isHidden = false
-                    self.navigationController?.popViewController(animated: true)
-                }
-                .catch { (error) in
-                    error.parse()
-                }
         }
     }
 }
