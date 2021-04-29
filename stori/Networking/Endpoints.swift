@@ -14,6 +14,7 @@ struct Endpoints {
     // MARK: - Others
     public static let termsAndConditions = URL(string: "https://readstori.com/terms-and-conditions")!
     public static let privacyPolicy = URL(string: "https://readstori.com/privacy-policy")!
+    public static let appStore = "https://apps.apple.com/us/app/stori-learn-languages/id1450607876"
     
     // MARK: - Auth
     private static let auth = api.appendingPathComponent("auth")
@@ -97,4 +98,7 @@ struct Endpoints {
     
     // MARK: - Feedback
     public static var feedback = api.appendingPathComponent("feedback/")
+    
+    // MARK: - Redeem Code
+    public static var redeemCode = user.appendingPathComponent("reedem-code/")
 }

@@ -43,6 +43,7 @@ target 'stori' do
   pod 'NewPopMenu'
   pod 'PaginatedTableView'
   pod 'TableFlip'
+  pod 'QRCodeReader.swift'
 #  pod 'MenuItemKit'
 #  pod 'GrowingTextView'
 #  pod 'SideMenu'

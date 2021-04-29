@@ -19,6 +19,7 @@ struct CurrentUser: Decodable {
     private(set) var subscriptionId: String?
     private(set) var userSignUpType: UserSignUpType
     private(set) var notificationsEnabled: Bool
+    private(set) var referralCode: Int
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -32,6 +33,7 @@ struct CurrentUser: Decodable {
         case subscriptionId = "subscription"
         case userSignUpType = "signup_type"
         case notificationsEnabled = "receive_notifications"
+        case referralCode = "code"
     }
     enum Status {
         case completed

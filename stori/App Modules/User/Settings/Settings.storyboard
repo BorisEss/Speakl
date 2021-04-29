@@ -1124,6 +1124,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNJ-a8-Ug7">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                                        <connections>
+                                                            <segue destination="TdI-Pk-jSI" kind="show" id="6Jk-Mh-7rd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1200,6 +1203,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQS-Ez-IbE">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                                        <connections>
+                                                            <segue destination="KP8-LW-RvN" kind="show" id="f2v-bW-4QZ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1568,7 +1574,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1OX-6C-SyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352" y="336"/>
+            <point key="canvasLocation" x="1351" y="297"/>
         </scene>
         <!--JoinTNSuccessMessageViewController-->
         <scene sceneID="Chh-1c-Gd2">
@@ -1578,7 +1584,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zpk-Rq-XQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="401"/>
+            <point key="canvasLocation" x="1433" y="327"/>
         </scene>
         <!--WebBrowser-->
         <scene sceneID="des-zJ-uYt">
@@ -1590,6 +1596,16 @@
             </objects>
             <point key="canvasLocation" x="1318" y="455"/>
         </scene>
+        <!--InviteFriendsViewController-->
+        <scene sceneID="fiV-ea-xdz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Referral" referencedIdentifier="InviteFriendsViewController" id="TdI-Pk-jSI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jcN-hY-O9r"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0a5-JZ-1Hw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1383" y="365"/>
+        </scene>
         <!--ShareFeedback-->
         <scene sceneID="HVF-DX-te1">
             <objects>
@@ -1598,7 +1614,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZuN-Rb-Vhu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1330" y="298"/>
+            <point key="canvasLocation" x="1330" y="427"/>
+        </scene>
+        <!--RedeemCodeViewController-->
+        <scene sceneID="NUm-5m-Eju">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Referral" referencedIdentifier="RedeemCodeViewController" id="KP8-LW-RvN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5xL-BF-UX8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ttk-b9-v0E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="394"/>
         </scene>
     </scenes>
     <resources>

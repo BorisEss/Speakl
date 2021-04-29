@@ -27,7 +27,7 @@
                                 <rect key="frame" x="25" y="64" width="364" height="768"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNg-2N-axP">
-                                        <rect key="frame" x="0.0" y="0.0" width="364" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="40"/>
                                         <string key="text">How satisfied are you 
 with Stori app?</string>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
@@ -38,7 +38,7 @@ with Stori app?</string>
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haM-tq-HEe">
-                                        <rect key="frame" x="0.0" y="143" width="364" height="64"/>
+                                        <rect key="frame" x="0.0" y="140.5" width="364" height="64"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpL-lX-mby">
                                                 <rect key="frame" x="22" y="0.0" width="320" height="64"/>
@@ -126,7 +126,7 @@ with Stori app?</string>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs1-n4-9Ph">
-                                        <rect key="frame" x="0.0" y="305" width="364" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="305" width="364" height="40"/>
                                         <string key="text">What would you like to 
 share with us?</string>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
@@ -137,7 +137,7 @@ share with us?</string>
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3b3-Ze-tQa">
-                                        <rect key="frame" x="0.0" y="448" width="364" height="172"/>
+                                        <rect key="frame" x="0.0" y="445.5" width="364" height="172"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fao-cO-B1i">
                                                 <rect key="frame" x="24" y="16" width="316" height="140"/>
@@ -223,7 +223,7 @@ share with us?</string>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="e0v-Bf-2jg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="CcU-xc-kLk"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="e0v-Bf-2jg" secondAttribute="bottom" constant="30" id="Kbd-df-Fs0"/>

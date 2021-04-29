@@ -144,6 +144,7 @@
 		FA94560A25C557C9003E54F0 /* VocabularyItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA94560825C557C9003E54F0 /* VocabularyItemTableViewCell.xib */; };
 		FA94560F25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94560D25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.swift */; };
 		FA94561025C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA94560E25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib */; };
+		FA960AB4263A9CF3001ACB21 /* RedeemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA960AB3263A9CF3001ACB21 /* RedeemPresenter.swift */; };
 		FA999D922568F30B00B694FA /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */; };
 		FA999D9825694D3E00B694FA /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA999D9A25694D3E00B694FA /* Strings.strings */; };
 		FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999D9C25694D6800B694FA /* StringExtension.swift */; };
@@ -166,6 +167,9 @@
 		FAB47D8D25C15A3F00B55F58 /* CSCoverCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB47D8B25C15A3F00B55F58 /* CSCoverCardCell.xib */; };
 		FAB47D9125C1725200B55F58 /* CoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB47D9025C1725200B55F58 /* CoverImage.swift */; };
 		FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB670C125DE623100DA5CA8 /* CSChapterModel.swift */; };
+		FAB8E01A263A7A36000AE9FE /* Referral.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB8E019263A7A36000AE9FE /* Referral.storyboard */; };
+		FAB8E01C263A7B96000AE9FE /* InviteFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8E01B263A7B96000AE9FE /* InviteFriendsViewController.swift */; };
+		FAB8E01E263A7BA8000AE9FE /* RedeemCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8E01D263A7BA8000AE9FE /* RedeemCodeViewController.swift */; };
 		FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */; };
 		FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */; };
 		FAC1F4BB25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC1F4BA25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf */; };
@@ -355,6 +359,7 @@
 		FA94560825C557C9003E54F0 /* VocabularyItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VocabularyItemTableViewCell.xib; sourceTree = "<group>"; };
 		FA94560D25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		FA94560E25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VocabularyHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		FA960AB3263A9CF3001ACB21 /* RedeemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemPresenter.swift; sourceTree = "<group>"; };
 		FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA999D9925694D3E00B694FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
 		FA999D9C25694D6800B694FA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -377,6 +382,9 @@
 		FAB47D8B25C15A3F00B55F58 /* CSCoverCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSCoverCardCell.xib; sourceTree = "<group>"; };
 		FAB47D9025C1725200B55F58 /* CoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImage.swift; sourceTree = "<group>"; };
 		FAB670C125DE623100DA5CA8 /* CSChapterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterModel.swift; sourceTree = "<group>"; };
+		FAB8E019263A7A36000AE9FE /* Referral.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Referral.storyboard; sourceTree = "<group>"; };
+		FAB8E01B263A7B96000AE9FE /* InviteFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewController.swift; sourceTree = "<group>"; };
+		FAB8E01D263A7BA8000AE9FE /* RedeemCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemCodeViewController.swift; sourceTree = "<group>"; };
 		FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguagePopup.storyboard; sourceTree = "<group>"; };
 		FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePopupViewController.swift; sourceTree = "<group>"; };
 		FAC1F4BA25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -648,6 +656,7 @@
 				FA4506042637FE3400000279 /* Notifications */,
 				FA7EF422262DAB1900335CE6 /* Membership */,
 				FA3A467326381A6100BF0CB5 /* Feedback */,
+				FAB8E018263A7976000AE9FE /* Referral */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -860,6 +869,17 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		FAB8E018263A7976000AE9FE /* Referral */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8E019263A7A36000AE9FE /* Referral.storyboard */,
+				FAB8E01B263A7B96000AE9FE /* InviteFriendsViewController.swift */,
+				FAB8E01D263A7BA8000AE9FE /* RedeemCodeViewController.swift */,
+				FA960AB3263A9CF3001ACB21 /* RedeemPresenter.swift */,
+			);
+			path = Referral;
+			sourceTree = "<group>";
+		};
 		FABB63A9257672F0008B3FAB /* LanguagePopup */ = {
 			isa = PBXGroup;
 			children = (
@@ -1040,6 +1060,7 @@
 				FA1F714D25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard in Resources */,
 				FA50421025A611F4004E6EC9 /* ImagePreview.storyboard in Resources */,
 				FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */,
+				FAB8E01A263A7A36000AE9FE /* Referral.storyboard in Resources */,
 				FA6853F72599FA47008A7D63 /* IBMPlexSans-Light.ttf in Resources */,
 				FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */,
 				FA9F6C102582899800AC5197 /* LanguageLevelTableViewCell.xib in Resources */,
@@ -1165,6 +1186,7 @@
 				FA4B61A925753487005501BD /* Constants.swift in Sources */,
 				FA85365725B08EF6002607EC /* JoinTNPresenter.swift in Sources */,
 				FA04986F25C2E624004CF8B7 /* AudioPlayer.swift in Sources */,
+				FAB8E01C263A7B96000AE9FE /* InviteFriendsViewController.swift in Sources */,
 				FA7B72EA2566B814003F9A0C /* TutorialCollectionViewCell.swift in Sources */,
 				FAF10ECD26369B63001B650F /* EditPersonalInfoViewController.swift in Sources */,
 				FA812DA725665DB90036F162 /* TutorialViewController.swift in Sources */,
@@ -1187,6 +1209,7 @@
 				FAEBEA22258A05BE0077D942 /* SuccessMessage.swift in Sources */,
 				FA658317256E29D5007052D9 /* UITextFieldExtension.swift in Sources */,
 				FA3553C125DBA503008DD1FF /* CSCustomItemPopUpViewController.swift in Sources */,
+				FA960AB4263A9CF3001ACB21 /* RedeemPresenter.swift in Sources */,
 				FAB47D9125C1725200B55F58 /* CoverImage.swift in Sources */,
 				FA4B61732574C45E005501BD /* AuthModel.swift in Sources */,
 				FA0E897125C0444F00D80027 /* Item.swift in Sources */,
@@ -1230,6 +1253,7 @@
 				FA5041E325A5A578004E6EC9 /* ImagePicker.swift in Sources */,
 				FAF2691225BF32AE00FFDE4A /* CSMainListViewController.swift in Sources */,
 				FA63DA3C258CF3EC00722CA6 /* MainTabBarViewController.swift in Sources */,
+				FAB8E01E263A7BA8000AE9FE /* RedeemCodeViewController.swift in Sources */,
 				FA252CC925DB186000FF85E1 /* SwiftMessagesSegues.swift in Sources */,
 				FA0E897425C0445F00D80027 /* ThumbnailItem.swift in Sources */,
 				FAE653ED25C3FB9700CC25A1 /* RecordButton.swift in Sources */,

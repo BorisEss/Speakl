@@ -48,6 +48,7 @@ PODS:
   - PromiseKit/UIKit (6.13.1):
     - PromiseKit/CorePromise
   - PryntTrimmerView (4.0.2)
+  - QRCodeReader.swift (10.1.0)
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
@@ -83,6 +84,7 @@ DEPENDENCIES:
   - NVActivityIndicatorView
   - PaginatedTableView
   - PromiseKit
+  - QRCodeReader.swift
   - SDWebImage
   - SwiftLint
   - SwiftMessages
@@ -116,6 +118,7 @@ SPEC REPOS:
     - PaginatedTableView
     - PromiseKit
     - PryntTrimmerView
+    - QRCodeReader.swift
     - SDWebImage
     - SteviaLayout
     - SwiftLint
@@ -149,6 +152,7 @@ SPEC CHECKSUMS:
   PaginatedTableView: 294d9831d5ddf5c0dcfbb4a281d4fcfb8d12f55a
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
@@ -163,6 +167,6 @@ SPEC CHECKSUMS:
   VerticalCardSwiper: 68df635b354500f86934ea044ade37a264c044c6
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: 84584c3a3b67bfd913d7ebb7682d5ddef3743f74
+PODFILE CHECKSUM: eec6e5011c42b10262703025f00cd130d9be9430
 
 COCOAPODS: 1.10.1

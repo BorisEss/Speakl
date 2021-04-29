@@ -325,6 +325,22 @@
 "feedback_success_message" = "Thanks for submitting your feedback";
 
 
+"invite_friends_title" = "Invite Friends";
+"invite_friends_code_label" = "or enter code";
+"invite_friends_description" = "Sharing this code will give you and your friend one month free of premium content";
+"invite_friends_share_button" = "Share";
+"invite_friends_code_copied_to_clipboard" = "The code has been copied to the clipboard";
+"invite_friends_share_message" = "Hey! %@ invited you to start learning new languages with Stori app.\nDownload app: %@\nRedeem your gift code after sign up in settings: %@\nStart learning with Stori!";
+
+
+"redeem_code_title" = "Redeem Code";
+"redeem_code_description" = "To redeem a prize please enter received code below or just scan the QR code";
+"redeem_code_placeholder" = "Code";
+"redeem_code_scan_button" = "Scan QR Code";
+"redeem_code_redeem_button" = "Redeem";
+"redeem_code_success_message" = "Your code was redeemed sucessfully. You should receive the steps to activate your prize shortly.";
+
+
 "main_nav_controller_tab_title_learn" = "Learn";
 "main_nav_controller_tab_title_practice" = "Practice";
 "main_nav_controller_tab_title_vocabulary" = "Vocabulary";
