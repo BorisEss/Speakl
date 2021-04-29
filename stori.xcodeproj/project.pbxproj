@@ -28,6 +28,11 @@
 		FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */; };
 		FA3553C125DBA503008DD1FF /* CSCustomItemPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */; };
 		FA3553E425DD0FD2008DD1FF /* CSChapterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553E325DD0FD2008DD1FF /* CSChapterPresenter.swift */; };
+		FA3A467526381A7A00BF0CB5 /* ShareFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */; };
+		FA3A467726381A8300BF0CB5 /* ShareFeedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */; };
+		FA3A467926381F5100BF0CB5 /* ShareFeedbackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467826381F5100BF0CB5 /* ShareFeedbackPresenter.swift */; };
+		FA3A467B26397BDA00BF0CB5 /* RatingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3A467A26397BD900BF0CB5 /* RatingButton.xib */; };
+		FA3A467D26397CFE00BF0CB5 /* RatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467C26397CFE00BF0CB5 /* RatingButton.swift */; };
 		FA3C26132569559C0089F646 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3C26122569559C0089F646 /* Auth.storyboard */; };
 		FA3C2626256A52320089F646 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C2625256A52320089F646 /* UIViewControllerExtension.swift */; };
 		FA3C27DF256BDBFD0089F646 /* RegularTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */; };
@@ -231,6 +236,11 @@
 		FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInterestsSelectionViewController.swift; sourceTree = "<group>"; };
 		FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCustomItemPopUpViewController.swift; sourceTree = "<group>"; };
 		FA3553E325DD0FD2008DD1FF /* CSChapterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterPresenter.swift; sourceTree = "<group>"; };
+		FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFeedbackViewController.swift; sourceTree = "<group>"; };
+		FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareFeedback.storyboard; sourceTree = "<group>"; };
+		FA3A467826381F5100BF0CB5 /* ShareFeedbackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFeedbackPresenter.swift; sourceTree = "<group>"; };
+		FA3A467A26397BD900BF0CB5 /* RatingButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingButton.xib; sourceTree = "<group>"; };
+		FA3A467C26397CFE00BF0CB5 /* RatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingButton.swift; sourceTree = "<group>"; };
 		FA3C26122569559C0089F646 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		FA3C2625256A52320089F646 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularTextField.swift; sourceTree = "<group>"; };
@@ -475,6 +485,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		FA3A467326381A6100BF0CB5 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */,
+				FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */,
+				FA3A467826381F5100BF0CB5 /* ShareFeedbackPresenter.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
 		FA3BA05525BDE32300B7C071 /* Create Story */ = {
 			isa = PBXGroup;
 			children = (
@@ -627,6 +647,7 @@
 				FAF10ED32637150E001B650F /* Change Password */,
 				FA4506042637FE3400000279 /* Notifications */,
 				FA7EF422262DAB1900335CE6 /* Membership */,
+				FA3A467326381A6100BF0CB5 /* Feedback */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -814,6 +835,8 @@
 				FAF2690A25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift */,
 				FAE653E925C3FB8600CC25A1 /* RecordButton.xib */,
 				FAE653EC25C3FB9700CC25A1 /* RecordButton.swift */,
+				FA3A467A26397BD900BF0CB5 /* RatingButton.xib */,
+				FA3A467C26397CFE00BF0CB5 /* RatingButton.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -1028,6 +1051,7 @@
 				FA5608C6261F2CEF0062EE88 /* Settings.storyboard in Resources */,
 				FA876C8225C80E7C00E65B95 /* CSImageItemTableViewCell.xib in Resources */,
 				FA812D77256298450036F162 /* Assets.xcassets in Resources */,
+				FA3A467B26397BDA00BF0CB5 /* RatingButton.xib in Resources */,
 				FAE653EA25C3FB8600CC25A1 /* RecordButton.xib in Resources */,
 				FAF10ECA26369B3E001B650F /* EditPersonalInfo.storyboard in Resources */,
 				FA9F70F325C69E3F00A16C61 /* CSAddTableViewCell.xib in Resources */,
@@ -1035,6 +1059,7 @@
 				FA8BB73A25C1ED6C001B6A22 /* CSAudioTableViewCell.xib in Resources */,
 				FA4506062637FE5100000279 /* Notifications.storyboard in Resources */,
 				FA50420625A5B957004E6EC9 /* FileTableViewCell.xib in Resources */,
+				FA3A467726381A8300BF0CB5 /* ShareFeedback.storyboard in Resources */,
 				FA876C8825C80EA200E65B95 /* CSVideoItemTableViewCell.xib in Resources */,
 				FAB47D8D25C15A3F00B55F58 /* CSCoverCardCell.xib in Resources */,
 				FA7EF424262DAB2D00335CE6 /* Membership.storyboard in Resources */,
@@ -1253,6 +1278,7 @@
 				FA6B0015258116B700438E80 /* LanguageLevelSelectionViewController.swift in Sources */,
 				FA9F6C0F2582899800AC5197 /* LanguageLevelTableViewCell.swift in Sources */,
 				FA812DAA256682F70036F162 /* RegularButton.swift in Sources */,
+				FA3A467D26397CFE00BF0CB5 /* RatingButton.swift in Sources */,
 				FA94560925C557C9003E54F0 /* VocabularyItemTableViewCell.swift in Sources */,
 				FA4B613725700749005501BD /* Commons.swift in Sources */,
 				FA94560F25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.swift in Sources */,
@@ -1270,6 +1296,7 @@
 				FAFF82D325D4435E00A9BE82 /* CSLanguagePresenter.swift in Sources */,
 				FA85A702262F1F62008E601C /* MembershipCollectionViewCell.swift in Sources */,
 				FA876C8725C80EA200E65B95 /* CSVideoItemTableViewCell.swift in Sources */,
+				FA3A467926381F5100BF0CB5 /* ShareFeedbackPresenter.swift in Sources */,
 				FA876C8125C80E7C00E65B95 /* CSImageItemTableViewCell.swift in Sources */,
 				FA46952025C0A0D300F347B1 /* CSCustomItemViewController.swift in Sources */,
 				FAB47D8C25C15A3F00B55F58 /* CSCoverCardCell.swift in Sources */,
@@ -1278,6 +1305,7 @@
 				FAAF7CBF26304B220007E63B /* Vibration.swift in Sources */,
 				FA417FDE2590F40F00F9D81B /* UIApplicationExtension.swift in Sources */,
 				FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */,
+				FA3A467526381A7A00BF0CB5 /* ShareFeedbackViewController.swift in Sources */,
 				FA4D44682578CF1E00398AE2 /* Storage.swift in Sources */,
 				FA7B72D0256690C1003F9A0C /* UIViewExtension.swift in Sources */,
 				FAF10ED12636CD26001B650F /* EditUsernameViewController.swift in Sources */,

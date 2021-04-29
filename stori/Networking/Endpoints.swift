@@ -94,4 +94,7 @@ struct Endpoints {
     public static func checkWords(chapterId: Int) -> URL {
         return api.appendingPathComponent("stories/\(chapterId)/parts/check/")
     }
+    
+    // MARK: - Feedback
+    public static var feedback = api.appendingPathComponent("feedback/")
 }

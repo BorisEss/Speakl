@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.4.2)
+  - Alamofire (5.4.3)
   - AlamofireNetworkActivityLogger (3.4.0):
     - Alamofire (~> 5.4.0)
   - AppAuth (1.4.0):
@@ -48,9 +48,9 @@ PODS:
   - PromiseKit/UIKit (6.13.1):
     - PromiseKit/CorePromise
   - PryntTrimmerView (4.0.2)
-  - SDWebImage (5.11.0):
-    - SDWebImage/Core (= 5.11.0)
-  - SDWebImage/Core (5.11.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - SteviaLayout (4.7.3)
   - SwiftLint (0.43.1)
   - SwiftMessages (9.0.2):
@@ -131,7 +131,7 @@ SPEC REPOS:
     - YPImagePicker
 
 SPEC CHECKSUMS:
-  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   AlamofireNetworkActivityLogger: 162ab8aee00e6267a4304d7cc134e13ccfe3bcc5
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   EasyTipView: a92b6edc377b81c5ac18e9fd35d5ee78e9409488
@@ -149,7 +149,7 @@ SPEC CHECKSUMS:
   PaginatedTableView: 294d9831d5ddf5c0dcfbb4a281d4fcfb8d12f55a
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
-  SDWebImage: 7acbb57630ac7db4a495547fb73916ff3e432f6b
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   SwiftMessages: 77b847d1405f99046ffbd0d856bc7d73e6892686
@@ -163,6 +163,6 @@ SPEC CHECKSUMS:
   VerticalCardSwiper: 68df635b354500f86934ea044ade37a264c044c6
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: bf6311f0c626f33df30396001c54aaff479d19af
+PODFILE CHECKSUM: 84584c3a3b67bfd913d7ebb7682d5ddef3743f74
 
 COCOAPODS: 1.10.1

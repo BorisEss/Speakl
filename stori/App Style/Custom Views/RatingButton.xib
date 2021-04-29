@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingButton" customModule="stori" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonImageView" destination="iba-0c-DjB" id="fiF-gO-zK1"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ORn-ql-djS"/>
+                <outlet property="imageCircleView" destination="K6X-vb-iDo" id="TbP-Ea-fvx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSc-C6-Ua9">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6X-vb-iDo">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="Y1P-5J-O3h"/>
+                                <constraint firstAttribute="width" secondItem="K6X-vb-iDo" secondAttribute="height" multiplier="1:1" id="skU-S9-gZx"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.22352941179999999" green="0.43137254899999999" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="32"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iba-0c-DjB">
+                            <rect key="frame" x="8" y="8" width="48" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="K6X-vb-iDo" firstAttribute="top" secondItem="wSc-C6-Ua9" secondAttribute="top" id="1Xe-ne-LfB"/>
+                        <constraint firstAttribute="trailing" secondItem="K6X-vb-iDo" secondAttribute="trailing" id="Fjo-nG-t0k"/>
+                        <constraint firstItem="K6X-vb-iDo" firstAttribute="leading" secondItem="wSc-C6-Ua9" secondAttribute="leading" id="h7S-cm-fxe"/>
+                        <constraint firstAttribute="trailing" secondItem="iba-0c-DjB" secondAttribute="trailing" constant="8" id="lqT-Co-ZkV"/>
+                        <constraint firstAttribute="bottom" secondItem="iba-0c-DjB" secondAttribute="bottom" constant="8" id="mEg-nq-bFr"/>
+                        <constraint firstItem="iba-0c-DjB" firstAttribute="top" secondItem="wSc-C6-Ua9" secondAttribute="top" constant="8" id="mc4-AB-Gx8"/>
+                        <constraint firstAttribute="bottom" secondItem="K6X-vb-iDo" secondAttribute="bottom" id="rip-vR-TE8"/>
+                        <constraint firstItem="iba-0c-DjB" firstAttribute="leading" secondItem="wSc-C6-Ua9" secondAttribute="leading" constant="8" id="ucZ-P7-wMq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" button="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="wSc-C6-Ua9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Kv-WC-cTM"/>
+                <constraint firstItem="wSc-C6-Ua9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fpc-sW-MCA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wSc-C6-Ua9" secondAttribute="trailing" id="hFJ-FZ-wEp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wSc-C6-Ua9" secondAttribute="bottom" id="n6y-Q9-xHU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="86"/>
+        </view>
+    </objects>
+</document>

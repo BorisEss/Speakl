@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Regular.ttf">
+            <string>IBMPlexSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Share Feedback View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ShareFeedbackViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="ShareFeedbackViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="e0v-Bf-2jg">
+                                <rect key="frame" x="25" y="64" width="364" height="768"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNg-2N-axP">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="44.5"/>
+                                        <string key="text">How satisfied are you 
+with Stori app?</string>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
+                                        <color key="textColor" name="Text Gray"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="feedback_rate_question"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haM-tq-HEe">
+                                        <rect key="frame" x="0.0" y="143" width="364" height="64"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpL-lX-mby">
+                                                <rect key="frame" x="22" y="0.0" width="320" height="64"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSO-EI-dP7" customClass="RatingButton" customModule="stori" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="64" id="I5M-bi-rgv"/>
+                                                            <constraint firstAttribute="width" secondItem="wSO-EI-dP7" secondAttribute="height" multiplier="1:1" id="p9o-Nz-X46"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="rating_1"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="ratingButtonSelected:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6Pd-mV-ORp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI4-8g-GHC" customClass="RatingButton" customModule="stori" customModuleProvider="target">
+                                                        <rect key="frame" x="64" y="0.0" width="64" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="64" id="95e-9K-YnR"/>
+                                                            <constraint firstAttribute="width" secondItem="eI4-8g-GHC" secondAttribute="height" multiplier="1:1" id="iNW-Jn-nsS"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="rating_2"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="ratingButtonSelected:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="poB-kV-0If"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ug-QA-LkY" customClass="RatingButton" customModule="stori" customModuleProvider="target">
+                                                        <rect key="frame" x="128" y="0.0" width="64" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="2Ug-QA-LkY" secondAttribute="height" multiplier="1:1" id="HwH-5n-ZBP"/>
+                                                            <constraint firstAttribute="height" constant="64" id="pba-36-HVy"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="rating_3"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="ratingButtonSelected:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eHl-lz-Qya"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ic8-2U-V1j" customClass="RatingButton" customModule="stori" customModuleProvider="target">
+                                                        <rect key="frame" x="192" y="0.0" width="64" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="64" id="Uez-E7-rQ5"/>
+                                                            <constraint firstAttribute="width" secondItem="ic8-2U-V1j" secondAttribute="height" multiplier="1:1" id="XpY-9a-9jm"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="rating_4"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="ratingButtonSelected:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KF0-tZ-eFf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsm-fJ-Qza" customClass="RatingButton" customModule="stori" customModuleProvider="target">
+                                                        <rect key="frame" x="256" y="0.0" width="64" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="jsm-fJ-Qza" secondAttribute="height" multiplier="1:1" id="7vW-dA-KlY"/>
+                                                            <constraint firstAttribute="height" constant="64" id="H10-8N-ejk"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="rating_5"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="ratingButtonSelected:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4rs-Pl-BB0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="jsm-fJ-Qza" firstAttribute="width" secondItem="jsm-fJ-Qza" secondAttribute="height" multiplier="1:1" id="MlV-Wp-2vw"/>
+                                                    <constraint firstItem="2Ug-QA-LkY" firstAttribute="width" secondItem="2Ug-QA-LkY" secondAttribute="height" multiplier="1:1" id="RhW-Ud-AUS"/>
+                                                    <constraint firstItem="ic8-2U-V1j" firstAttribute="width" secondItem="ic8-2U-V1j" secondAttribute="height" multiplier="1:1" id="YYL-OQ-8aW"/>
+                                                    <constraint firstItem="eI4-8g-GHC" firstAttribute="width" secondItem="eI4-8g-GHC" secondAttribute="height" multiplier="1:1" id="jbg-Xe-4Jj"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="0A5-Uy-Y7b"/>
+                                            <constraint firstItem="gpL-lX-mby" firstAttribute="centerX" secondItem="haM-tq-HEe" secondAttribute="centerX" id="X8n-z6-5Pb"/>
+                                            <constraint firstItem="gpL-lX-mby" firstAttribute="top" secondItem="haM-tq-HEe" secondAttribute="top" id="cCm-r6-4Zi"/>
+                                            <constraint firstAttribute="bottom" secondItem="gpL-lX-mby" secondAttribute="bottom" id="hVm-7R-eaC"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs1-n4-9Ph">
+                                        <rect key="frame" x="0.0" y="305" width="364" height="44.5"/>
+                                        <string key="text">What would you like to 
+share with us?</string>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
+                                        <color key="textColor" name="Text Gray"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="feedback_message_question"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3b3-Ze-tQa">
+                                        <rect key="frame" x="0.0" y="448" width="364" height="172"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fao-cO-B1i">
+                                                <rect key="frame" x="24" y="16" width="316" height="140"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" name="Text Black"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Help us improve..."/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" name="Text Gray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="IKg-oQ-kwu"/>
+                                                </connections>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="fao-cO-B1i" firstAttribute="leading" secondItem="3b3-Ze-tQa" secondAttribute="leading" constant="24" id="6du-Rk-jdy"/>
+                                            <constraint firstAttribute="trailing" secondItem="fao-cO-B1i" secondAttribute="trailing" constant="24" id="8yv-O7-iIi"/>
+                                            <constraint firstItem="fao-cO-B1i" firstAttribute="top" secondItem="3b3-Ze-tQa" secondAttribute="top" constant="16" id="B64-1T-ZcP"/>
+                                            <constraint firstAttribute="height" constant="172" id="CcK-ga-tyL"/>
+                                            <constraint firstAttribute="bottom" secondItem="fao-cO-B1i" secondAttribute="bottom" constant="16" id="ImZ-rn-6Rn"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="AccentColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCI-ge-9EJ">
+                                        <rect key="frame" x="0.0" y="718" width="364" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWP-0k-zaj" customClass="RegularButton" customModule="stori" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="NEd-CI-YYH"/>
+                                                </constraints>
+                                                <state key="normal" title="Submit"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="0.1960784314" green="0.1960784314" blue="0.2784313725" alpha="0.14000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="feedback_submit"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="submitButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Q5p-tU-Mxr"/>
+                                                </connections>
+                                            </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="UAP-mH-P4e">
+                                                <rect key="frame" x="172" y="15" width="20" height="20"/>
+                                                <color key="color" name="AccentColor"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="nWP-0k-zaj" firstAttribute="leading" secondItem="PCI-ge-9EJ" secondAttribute="leading" id="0w2-6q-cjG"/>
+                                            <constraint firstAttribute="bottom" secondItem="nWP-0k-zaj" secondAttribute="bottom" id="Ec8-ei-wTg"/>
+                                            <constraint firstAttribute="trailing" secondItem="nWP-0k-zaj" secondAttribute="trailing" id="Uf7-tL-VyP"/>
+                                            <constraint firstItem="UAP-mH-P4e" firstAttribute="centerX" secondItem="nWP-0k-zaj" secondAttribute="centerX" id="YOk-sm-ep2"/>
+                                            <constraint firstItem="nWP-0k-zaj" firstAttribute="top" secondItem="PCI-ge-9EJ" secondAttribute="top" id="bHi-9X-dJi"/>
+                                            <constraint firstItem="UAP-mH-P4e" firstAttribute="centerY" secondItem="nWP-0k-zaj" secondAttribute="centerY" id="bRS-I0-0zg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e0v-Bf-2jg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="CcU-xc-kLk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="e0v-Bf-2jg" secondAttribute="bottom" constant="30" id="Kbd-df-Fs0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="e0v-Bf-2jg" secondAttribute="trailing" constant="25" id="WYI-Gy-dHi"/>
+                            <constraint firstItem="e0v-Bf-2jg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="fad-eY-qzf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageTextView" destination="fao-cO-B1i" id="YAG-CL-kPA"/>
+                        <outlet property="progressActivityIndicator" destination="UAP-mH-P4e" id="9EI-Py-Rgs"/>
+                        <outlet property="submitButton" destination="nWP-0k-zaj" id="keg-6R-rb8"/>
+                        <outletCollection property="ratingButtons" destination="wSO-EI-dP7" collectionClass="NSMutableArray" id="VbB-6H-Kw8"/>
+                        <outletCollection property="ratingButtons" destination="eI4-8g-GHC" collectionClass="NSMutableArray" id="4tD-h4-Zjk"/>
+                        <outletCollection property="ratingButtons" destination="2Ug-QA-LkY" collectionClass="NSMutableArray" id="jAM-R5-8Ew"/>
+                        <outletCollection property="ratingButtons" destination="ic8-2U-V1j" collectionClass="NSMutableArray" id="Y6Q-pa-gH5"/>
+                        <outletCollection property="ratingButtons" destination="jsm-fJ-Qza" collectionClass="NSMutableArray" id="45a-kz-KaK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rating_1" width="48" height="48"/>
+        <image name="rating_2" width="48" height="48"/>
+        <image name="rating_3" width="48" height="48"/>
+        <image name="rating_4" width="48" height="48"/>
+        <image name="rating_5" width="48" height="48"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Black">
+            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Gray">
+            <color red="0.4779999852180481" green="0.4779999852180481" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

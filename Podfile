@@ -48,7 +48,6 @@ target 'stori' do
 #  pod 'SideMenu'
 #  pod 'SimpleCheckbox'
 #  pod 'Cluster'
-#  pod 'Cosmos'
 #  pod 'Cards'
 #  pod 'ImageSlideshow'
 #  pod 'ImageSlideshow/Kingfisher'

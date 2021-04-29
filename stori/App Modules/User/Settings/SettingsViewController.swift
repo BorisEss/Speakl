@@ -11,6 +11,13 @@ import GoogleSignIn
 
 class SettingsViewController: UIViewController {
     
+    private enum BrowserType {
+        case termsAndConditions
+        case privacyPolicy
+    }
+    
+    private var browserType: BrowserType = .termsAndConditions
+    
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     
@@ -36,9 +43,16 @@ class SettingsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let nextVc = segue.destination as? JoinTNSuccessMessageViewController {
-            nextVc.isCheck = true
-            nextVc.hidesBottomBarWhenPushed = true
+        if let nextVc = segue.destination as? WebBrowserViewController {
+            nextVc.navbarWasHidden = true
+            switch browserType {
+            case .termsAndConditions:
+                nextVc.title = "common_terms_and_conditions".localized
+                nextVc.url = Endpoints.termsAndConditions
+            case .privacyPolicy:
+                nextVc.title = "common_privacy_policy".localized
+                nextVc.url = Endpoints.privacyPolicy
+            }
         }
     }
     
@@ -87,12 +101,22 @@ class SettingsViewController: UIViewController {
         }
     }
     
+    @IBAction func rateUsButtonPressed(_ sender: Any) {
+        SKStoreReviewController.requestReview()
+    }
+    
+    @IBAction func contactUsButtonPressed(_ sender: Any) {
+        sendEmail(emailAddress: contactEmail)
+    }
+    
     @IBAction func privacyPolicyButtonPressed(_ sender: Any) {
-        
+        browserType = .privacyPolicy
+        performSegue(withIdentifier: "showWebBrowser", sender: nil)
     }
     
     @IBAction func termsAndConditionsButtonPressed(_ sender: Any) {
-        
+        browserType = .termsAndConditions
+        performSegue(withIdentifier: "showWebBrowser", sender: nil)
     }
     
     @IBAction func signOutButtonPressed(_ sender: Any) {

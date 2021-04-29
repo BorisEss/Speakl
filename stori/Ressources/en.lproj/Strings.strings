@@ -49,6 +49,7 @@
 "common_not_found" = "Not found";
 "common_failed_deconding_response" = "Failed to decode server response";
 "common_failed_facebook" = "Failed to authenticate with Facebook";
+"common_email_error" = "Could not open your Email Application";
 
 
 "start_tutorial_vc_page_one_title" = "Enrich your vocabulary anytime, anywhere.";
@@ -314,6 +315,14 @@
 "membership_description" = "*Recurring billing, cancel anytime. If you choose to purchase the Premium App, payment will be charged to your iTunes account after 7 days of free trial, and your account will be charged for renewal within 24 hours prior to the end of the current period. Auto renewal may be turned off at any time by going to your Settings in the iTunes Store after purchase.";
 "membership_subscribe" = "Subscribe";
 "membership_success" = "Success!\nEnjoy your full access to all stories!";
+
+
+"feedback_title" = "Give Us Feedback";
+"feedback_rate_question" = "How satisfied are you\nwith Stori app?";
+"feedback_message_question" = "What would you like to\nshare with us?";
+"feedback_message_placeholder" = "Help us improve…";
+"feedback_submit" = "Submit";
+"feedback_success_message" = "Thanks for submitting your feedback";
 
 
 "main_nav_controller_tab_title_learn" = "Learn";

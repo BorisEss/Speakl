@@ -28,8 +28,11 @@ extension UIViewController {
     /// - Parameter emailAddress: Email Address which will be loaded inside the new email screen.
     ///
     func sendEmail(emailAddress: String) {
-        if let url = URL(string: "mailto:\(emailAddress)") {
+        if let url = URL(string: "mailto:\(emailAddress)"),
+           UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url)
+        } else {
+            Toast.error("common_email_error".localized)
         }
     }
 }
