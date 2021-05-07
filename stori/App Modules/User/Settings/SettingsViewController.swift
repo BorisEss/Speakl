@@ -64,6 +64,12 @@ class SettingsViewController: UIViewController {
            let nextVc = segue.destination as? UpdateLanguageViewController {
             nextVc.type = .learning
         }
+        
+        if segue.identifier == "checkJoinTeacherNetwork",
+           let nextVc = segue.destination as? JoinTNSuccessMessageViewController {
+            nextVc.isCheck = true
+            nextVc.hidesBottomBarWhenPushed = true
+        }
     }
     
     @IBAction func editUserImageButtonPressed(_ sender: Any) {
