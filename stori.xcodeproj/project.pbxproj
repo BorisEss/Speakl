@@ -11,6 +11,8 @@
 		FA04986C25C2C8EA004CF8B7 /* BackgroundAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04986B25C2C8EA004CF8B7 /* BackgroundAudio.swift */; };
 		FA04986F25C2E624004CF8B7 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04986E25C2E624004CF8B7 /* AudioPlayer.swift */; };
 		FA08DF7225C6DAC1001EEF7E /* StorySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08DF7125C6DAC1001EEF7E /* StorySection.swift */; };
+		FA09A5CA263C2AC000DB7450 /* UpdateLevelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09A5C8263C2AC000DB7450 /* UpdateLevelTableViewCell.swift */; };
+		FA09A5CB263C2AC000DB7450 /* UpdateLevelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA09A5C9263C2AC000DB7450 /* UpdateLevelTableViewCell.xib */; };
 		FA0E895E25BF47C400D80027 /* CSItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E895C25BF47C400D80027 /* CSItemTableViewCell.swift */; };
 		FA0E895F25BF47C400D80027 /* CSItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0E895D25BF47C400D80027 /* CSItemTableViewCell.xib */; };
 		FA0E896325BFF91D00D80027 /* CSItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E896225BFF91D00D80027 /* CSItemsListViewController.swift */; };
@@ -25,6 +27,7 @@
 		FA1F714D25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1F714C25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard */; };
 		FA22A7EA2588E4C6001129E7 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22A7E92588E4C6001129E7 /* Interest.swift */; };
 		FA252CC925DB186000FF85E1 /* SwiftMessagesSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA252CC825DB186000FF85E1 /* SwiftMessagesSegues.swift */; };
+		FA270C00263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */; };
 		FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */; };
 		FA3553C125DBA503008DD1FF /* CSCustomItemPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */; };
 		FA3553E425DD0FD2008DD1FF /* CSChapterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553E325DD0FD2008DD1FF /* CSChapterPresenter.swift */; };
@@ -145,10 +148,17 @@
 		FA94560F25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94560D25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.swift */; };
 		FA94561025C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA94560E25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib */; };
 		FA960AB4263A9CF3001ACB21 /* RedeemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA960AB3263A9CF3001ACB21 /* RedeemPresenter.swift */; };
+		FA960AB7263AC48B001ACB21 /* UpdateLanguage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA960AB6263AC48B001ACB21 /* UpdateLanguage.storyboard */; };
+		FA960AB9263AC4A8001ACB21 /* UpdateLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA960AB8263AC4A8001ACB21 /* UpdateLanguageViewController.swift */; };
 		FA999D922568F30B00B694FA /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */; };
 		FA999D9825694D3E00B694FA /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA999D9A25694D3E00B694FA /* Strings.strings */; };
 		FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999D9C25694D6800B694FA /* StringExtension.swift */; };
 		FA999DA12569514C00B694FA /* DefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999DA02569514C00B694FA /* DefaultSettings.swift */; };
+		FA9BCB4A26417BB0009B1DDB /* VocabularyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4926417BB0009B1DDB /* VocabularyClient.swift */; };
+		FA9BCB4C26417BC5009B1DDB /* GrammarClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4B26417BC5009B1DDB /* GrammarClient.swift */; };
+		FA9BCB4E26417D3D009B1DDB /* UpdateLanguageLevelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4D26417D3D009B1DDB /* UpdateLanguageLevelPresenter.swift */; };
+		FA9BCB5026417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4F26417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift */; };
+		FA9BCB5226417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB5126417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift */; };
 		FA9F6C0B2582882700AC5197 /* LanguageLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F6C0A2582882700AC5197 /* LanguageLevel.swift */; };
 		FA9F6C0F2582899800AC5197 /* LanguageLevelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F6C0D2582899800AC5197 /* LanguageLevelTableViewCell.swift */; };
 		FA9F6C102582899800AC5197 /* LanguageLevelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9F6C0E2582899800AC5197 /* LanguageLevelTableViewCell.xib */; };
@@ -198,6 +208,7 @@
 		FAF4162325C1D8E1005EE455 /* CSSoundListSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4162225C1D8E1005EE455 /* CSSoundListSearchViewController.swift */; };
 		FAF452F125D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF452F025D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift */; };
 		FAFC99F625C9757000D60AB4 /* CSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC99F525C9757000D60AB4 /* CSTableViewCell.swift */; };
+		FAFD404F263C136800305326 /* UpdateLanguageLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD404E263C136800305326 /* UpdateLanguageLevelViewController.swift */; };
 		FAFF81BA25D277D300A9BE82 /* CreateStoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF81B925D277D300A9BE82 /* CreateStoryModel.swift */; };
 		FAFF81BD25D2830100A9BE82 /* CreateStoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF81BC25D2830100A9BE82 /* CreateStoryObject.swift */; };
 		FAFF82C025D4429300A9BE82 /* CSStoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82BF25D4429300A9BE82 /* CSStoryPresenter.swift */; };
@@ -223,6 +234,8 @@
 		FA04986B25C2C8EA004CF8B7 /* BackgroundAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAudio.swift; sourceTree = "<group>"; };
 		FA04986E25C2E624004CF8B7 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		FA08DF7125C6DAC1001EEF7E /* StorySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorySection.swift; sourceTree = "<group>"; };
+		FA09A5C8263C2AC000DB7450 /* UpdateLevelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLevelTableViewCell.swift; sourceTree = "<group>"; };
+		FA09A5C9263C2AC000DB7450 /* UpdateLevelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateLevelTableViewCell.xib; sourceTree = "<group>"; };
 		FA0E895C25BF47C400D80027 /* CSItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSItemTableViewCell.swift; sourceTree = "<group>"; };
 		FA0E895D25BF47C400D80027 /* CSItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSItemTableViewCell.xib; sourceTree = "<group>"; };
 		FA0E896225BFF91D00D80027 /* CSItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSItemsListViewController.swift; sourceTree = "<group>"; };
@@ -237,6 +250,7 @@
 		FA1F714C25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JoinTeacherNetwork.storyboard; sourceTree = "<group>"; };
 		FA22A7E92588E4C6001129E7 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		FA252CC825DB186000FF85E1 /* SwiftMessagesSegues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMessagesSegues.swift; sourceTree = "<group>"; };
+		FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelDetailsViewController.swift; sourceTree = "<group>"; };
 		FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInterestsSelectionViewController.swift; sourceTree = "<group>"; };
 		FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCustomItemPopUpViewController.swift; sourceTree = "<group>"; };
 		FA3553E325DD0FD2008DD1FF /* CSChapterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterPresenter.swift; sourceTree = "<group>"; };
@@ -360,10 +374,17 @@
 		FA94560D25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		FA94560E25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VocabularyHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		FA960AB3263A9CF3001ACB21 /* RedeemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemPresenter.swift; sourceTree = "<group>"; };
+		FA960AB6263AC48B001ACB21 /* UpdateLanguage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateLanguage.storyboard; sourceTree = "<group>"; };
+		FA960AB8263AC4A8001ACB21 /* UpdateLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageViewController.swift; sourceTree = "<group>"; };
 		FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA999D9925694D3E00B694FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
 		FA999D9C25694D6800B694FA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		FA999DA02569514C00B694FA /* DefaultSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSettings.swift; sourceTree = "<group>"; };
+		FA9BCB4926417BB0009B1DDB /* VocabularyClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyClient.swift; sourceTree = "<group>"; };
+		FA9BCB4B26417BC5009B1DDB /* GrammarClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarClient.swift; sourceTree = "<group>"; };
+		FA9BCB4D26417D3D009B1DDB /* UpdateLanguageLevelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelPresenter.swift; sourceTree = "<group>"; };
+		FA9BCB4F26417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelVocabularyVC.swift; sourceTree = "<group>"; };
+		FA9BCB5126417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelGrammarViewController.swift; sourceTree = "<group>"; };
 		FA9F6C0A2582882700AC5197 /* LanguageLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLevel.swift; sourceTree = "<group>"; };
 		FA9F6C0D2582899800AC5197 /* LanguageLevelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLevelTableViewCell.swift; sourceTree = "<group>"; };
 		FA9F6C0E2582899800AC5197 /* LanguageLevelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageLevelTableViewCell.xib; sourceTree = "<group>"; };
@@ -414,6 +435,7 @@
 		FAF452F025D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSuccessMessageViewController.swift; sourceTree = "<group>"; };
 		FAFC99F525C9757000D60AB4 /* CSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTableViewCell.swift; sourceTree = "<group>"; };
 		FAFC9A3425C987E700D60AB4 /* Stori-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stori-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAFD404E263C136800305326 /* UpdateLanguageLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelViewController.swift; sourceTree = "<group>"; };
 		FAFF81B925D277D300A9BE82 /* CreateStoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStoryModel.swift; sourceTree = "<group>"; };
 		FAFF81BC25D2830100A9BE82 /* CreateStoryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStoryObject.swift; sourceTree = "<group>"; };
 		FAFF82BF25D4429300A9BE82 /* CSStoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSStoryPresenter.swift; sourceTree = "<group>"; };
@@ -461,6 +483,15 @@
 				FFAC3C6735F7BC1D8397254E /* Pods_stori.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA09A5C7263C2A4900DB7450 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA09A5C9263C2AC000DB7450 /* UpdateLevelTableViewCell.xib */,
+				FA09A5C8263C2AC000DB7450 /* UpdateLevelTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FA0E896625C0418700D80027 /* Story */ = {
@@ -569,6 +600,8 @@
 				FA4D447025790C1300398AE2 /* UserClient.swift */,
 				FA4D447425790C2700398AE2 /* LanguageClient.swift */,
 				FA85364B25AC644D002607EC /* UploadClient.swift */,
+				FA9BCB4926417BB0009B1DDB /* VocabularyClient.swift */,
+				FA9BCB4B26417BC5009B1DDB /* GrammarClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -653,6 +686,7 @@
 				FA5608C8261F2D150062EE88 /* SettingsViewController.swift */,
 				FAF10EC826369B14001B650F /* Edit PersonalInfo */,
 				FAF10ED32637150E001B650F /* Change Password */,
+				FA960AB5263AC46D001ACB21 /* Language */,
 				FA4506042637FE3400000279 /* Notifications */,
 				FA7EF422262DAB1900335CE6 /* Membership */,
 				FA3A467326381A6100BF0CB5 /* Feedback */,
@@ -859,6 +893,21 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		FA960AB5263AC46D001ACB21 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				FA09A5C7263C2A4900DB7450 /* Cells */,
+				FA960AB6263AC48B001ACB21 /* UpdateLanguage.storyboard */,
+				FA960AB8263AC4A8001ACB21 /* UpdateLanguageViewController.swift */,
+				FAFD404E263C136800305326 /* UpdateLanguageLevelViewController.swift */,
+				FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */,
+				FA9BCB4F26417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift */,
+				FA9BCB5126417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift */,
+				FA9BCB4D26417D3D009B1DDB /* UpdateLanguageLevelPresenter.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
 		FA999D9F2569513E00B694FA /* Storage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1061,6 +1110,7 @@
 				FA50421025A611F4004E6EC9 /* ImagePreview.storyboard in Resources */,
 				FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */,
 				FAB8E01A263A7A36000AE9FE /* Referral.storyboard in Resources */,
+				FA960AB7263AC48B001ACB21 /* UpdateLanguage.storyboard in Resources */,
 				FA6853F72599FA47008A7D63 /* IBMPlexSans-Light.ttf in Resources */,
 				FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */,
 				FA9F6C102582899800AC5197 /* LanguageLevelTableViewCell.xib in Resources */,
@@ -1093,6 +1143,7 @@
 				FAAA96D9261DE6A800B53D6C /* InterestTableViewCell.xib in Resources */,
 				FA3C26132569559C0089F646 /* Auth.storyboard in Resources */,
 				FA812D75256298440036F162 /* Main.storyboard in Resources */,
+				FA09A5CB263C2AC000DB7450 /* UpdateLevelTableViewCell.xib in Resources */,
 				FAF2690E25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib in Resources */,
 				FA0E895F25BF47C400D80027 /* CSItemTableViewCell.xib in Resources */,
 			);
@@ -1190,6 +1241,7 @@
 				FA7B72EA2566B814003F9A0C /* TutorialCollectionViewCell.swift in Sources */,
 				FAF10ECD26369B63001B650F /* EditPersonalInfoViewController.swift in Sources */,
 				FA812DA725665DB90036F162 /* TutorialViewController.swift in Sources */,
+				FA270C00263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift in Sources */,
 				FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */,
 				FA4506092637FE5C00000279 /* NotificationsViewController.swift in Sources */,
 				FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */,
@@ -1236,8 +1288,10 @@
 				FA4B61342570036C005501BD /* APIClient.swift in Sources */,
 				FA5041E625A5B3B0004E6EC9 /* File.swift in Sources */,
 				FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */,
+				FA9BCB4A26417BB0009B1DDB /* VocabularyClient.swift in Sources */,
 				FA4B61BE25753CF2005501BD /* FacebookManager.swift in Sources */,
 				FAFF82C325D442B400A9BE82 /* CSTopicPresenter.swift in Sources */,
+				FAFD404F263C136800305326 /* UpdateLanguageLevelViewController.swift in Sources */,
 				FA4D445F257810C700398AE2 /* Language.swift in Sources */,
 				FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */,
 				FA85364F25AC6465002607EC /* Checksum.swift in Sources */,
@@ -1248,6 +1302,7 @@
 				FAE653F825C416A300CC25A1 /* VoiceRecorder.swift in Sources */,
 				FA812D6E256298440036F162 /* AppDelegate.swift in Sources */,
 				FAFF92D325A494F300A604C3 /* JoinTNSuccessMessageViewController.swift in Sources */,
+				FA9BCB5226417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift in Sources */,
 				FAF4162325C1D8E1005EE455 /* CSSoundListSearchViewController.swift in Sources */,
 				FA4D447125790C1300398AE2 /* UserClient.swift in Sources */,
 				FA5041E325A5A578004E6EC9 /* ImagePicker.swift in Sources */,
@@ -1270,6 +1325,7 @@
 				FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */,
 				FA16CE2F25ECE62E007B8354 /* StoryImageSection.swift in Sources */,
 				FA812DA425665AB10036F162 /* RootViewController.swift in Sources */,
+				FA9BCB5026417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift in Sources */,
 				FA7B72DF25669C54003F9A0C /* AppFonts.swift in Sources */,
 				FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */,
 				FA4B6112256EAEA1005501BD /* AuthPresenter.swift in Sources */,
@@ -1293,6 +1349,7 @@
 				FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */,
 				FA5608C9261F2D150062EE88 /* SettingsViewController.swift in Sources */,
 				FA666A27259CAA9900FD6462 /* LearningLanguage.swift in Sources */,
+				FA960AB9263AC4A8001ACB21 /* UpdateLanguageViewController.swift in Sources */,
 				FA4B613E257007B1005501BD /* RequestProtocol.swift in Sources */,
 				FA4B613A25700765005501BD /* Headers.swift in Sources */,
 				FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */,
@@ -1315,6 +1372,7 @@
 				FA4D4499257E48CE00398AE2 /* LanguageSelectViewController.swift in Sources */,
 				FA63DA3F258D030900722CA6 /* NotificationExtension.swift in Sources */,
 				FA812D8E256641940036F162 /* UIGradientView.swift in Sources */,
+				FA9BCB4C26417BC5009B1DDB /* GrammarClient.swift in Sources */,
 				FAFF92C725A4941400A604C3 /* JoinTNAgreementViewController.swift in Sources */,
 				FA4B618B25750412005501BD /* CurrentUser.swift in Sources */,
 				FAFF82D325D4435E00A9BE82 /* CSLanguagePresenter.swift in Sources */,
@@ -1330,6 +1388,7 @@
 				FA417FDE2590F40F00F9D81B /* UIApplicationExtension.swift in Sources */,
 				FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */,
 				FA3A467526381A7A00BF0CB5 /* ShareFeedbackViewController.swift in Sources */,
+				FA09A5CA263C2AC000DB7450 /* UpdateLevelTableViewCell.swift in Sources */,
 				FA4D44682578CF1E00398AE2 /* Storage.swift in Sources */,
 				FA7B72D0256690C1003F9A0C /* UIViewExtension.swift in Sources */,
 				FAF10ED12636CD26001B650F /* EditUsernameViewController.swift in Sources */,
@@ -1339,6 +1398,7 @@
 				FACF0AA825E2A6DD00F3298B /* VocabularyId.swift in Sources */,
 				FA8593E125E1692C004CAC9E /* CSGrammarPresenter.swift in Sources */,
 				FAA60E0D25C1A87300522F8A /* CSSoundListViewController.swift in Sources */,
+				FA9BCB4E26417D3D009B1DDB /* UpdateLanguageLevelPresenter.swift in Sources */,
 				FA812D70256298440036F162 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

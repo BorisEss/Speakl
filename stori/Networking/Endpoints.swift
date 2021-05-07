@@ -84,6 +84,7 @@ struct Endpoints {
     public static func vocabulary(by id: Int) -> URL {
         return api.appendingPathComponent("words/lists/\(id)/words/")
     }
+    public static let vocabularyWords = api.appendingPathComponent("words/lists/words/")
     
     // MARK: - Story parts
     public static func storyParts(chapterId: Int) -> URL {

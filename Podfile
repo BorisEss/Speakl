@@ -44,6 +44,7 @@ target 'stori' do
   pod 'PaginatedTableView'
   pod 'TableFlip'
   pod 'QRCodeReader.swift'
+  pod 'MBCircularProgressBar'
 #  pod 'MenuItemKit'
 #  pod 'GrowingTextView'
 #  pod 'SideMenu'

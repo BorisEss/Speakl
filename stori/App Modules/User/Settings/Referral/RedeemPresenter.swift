@@ -28,7 +28,6 @@ class RedeemPresenter {
             .catch { (error) in
                 promise.reject(error)
             }
-            promise.fulfill_()
         }
     }
 }

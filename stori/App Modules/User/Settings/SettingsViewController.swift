@@ -54,6 +54,16 @@ class SettingsViewController: UIViewController {
                 nextVc.url = Endpoints.privacyPolicy
             }
         }
+        
+        if segue.identifier == "changeNativeLanguage",
+           let nextVc = segue.destination as? UpdateLanguageViewController {
+            nextVc.type = .native
+        }
+        
+        if segue.identifier == "changeLearningLevel",
+           let nextVc = segue.destination as? UpdateLanguageViewController {
+            nextVc.type = .learning
+        }
     }
     
     @IBAction func editUserImageButtonPressed(_ sender: Any) {

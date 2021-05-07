@@ -32,6 +32,7 @@ PODS:
   - IQKeyboardManagerSwift (6.5.6)
   - KeychainSwift (19.0.0)
   - MarqueeLabel (4.0.5)
+  - MBCircularProgressBar (0.3.5)
   - MobileVLCKit (3.3.16.3)
   - NewPopMenu (2.1.2)
   - NVActivityIndicatorView (5.1.1):
@@ -79,6 +80,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - KeychainSwift
   - MarqueeLabel
+  - MBCircularProgressBar
   - MobileVLCKit
   - NewPopMenu
   - NVActivityIndicatorView
@@ -112,6 +114,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - KeychainSwift
     - MarqueeLabel
+    - MBCircularProgressBar
     - MobileVLCKit
     - NewPopMenu
     - NVActivityIndicatorView
@@ -146,6 +149,7 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
   MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
   MobileVLCKit: 2b408a9c5cc327353afab418fafbc942780b248a
   NewPopMenu: c6129e08e8192f6257ceb5f9a4357e1b59c6e2e7
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
@@ -167,6 +171,6 @@ SPEC CHECKSUMS:
   VerticalCardSwiper: 68df635b354500f86934ea044ade37a264c044c6
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: eec6e5011c42b10262703025f00cd130d9be9430
+PODFILE CHECKSUM: 0a701be1d19ac2045567699c2f72778d7a8531b1
 
 COCOAPODS: 1.10.1

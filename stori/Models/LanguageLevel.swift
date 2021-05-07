@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct LanguageLevel: Decodable {
+struct LanguageLevel: Decodable, Equatable {
     var id: Int
     var name: String
     var shortcut: String?
@@ -48,5 +48,9 @@ struct LanguageLevel: Decodable {
                                       attributes: regularAttributes)
         }
         return NSAttributedString()
+    }
+    
+    static func == (lhs: LanguageLevel, rhs: LanguageLevel) -> Bool {
+        return lhs.id == rhs.id
     }
 }

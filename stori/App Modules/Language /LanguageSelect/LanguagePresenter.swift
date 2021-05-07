@@ -12,23 +12,14 @@ class LanguagePresenter {
     
     private func updateUser(body: ParametersDict,
                             completion: @escaping (_ isSuccess: Bool) -> Void) {
-        firstly {
-            return Request(endpoint: Endpoints.currentUser, method: .patch)
-                .set(body: body)
-                .authorise()
-                .build()
-        }
-        .then { (request) -> Promise<CurrentUser> in
-            return APIClient.request(with: request)
-        }
-        .done { user in
-            Storage.shared.currentUser = user
-            completion(true)
-        }
-        .catch { (error) in
-            error.parse()
-            completion(false)
-        }
+        UserClient.updateUserData(body: body)
+            .done { _ in
+                completion(true)
+            }
+            .catch { (error) in
+                error.parse()
+                completion(false)
+            }
     }
     
     func getSkills() -> Promise<[Skill]> {

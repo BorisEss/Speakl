@@ -14,7 +14,7 @@ struct LearningLanguage: Decodable {
     
     enum CodingKeys: String, CodingKey {
         case langId = "lang_id"
-        case level = "level_id"
+        case level = "level"
         case interests = "topics"
     }
 }

@@ -55,6 +55,10 @@ struct CurrentUser: Decodable {
         return Storage.shared.languageBy(id: currentLearningLanguage?.langId ?? 0)
     }
     
+    var learningLanguageLevel: LanguageLevel? {
+        return currentLearningLanguage?.level
+    }
+    
     var interests: [Interest] {
         if let currentLearningLanguage = currentLearningLanguage {
             return currentLearningLanguage.interests
@@ -64,6 +68,16 @@ struct CurrentUser: Decodable {
     
     var isPremium: Bool {
         return subscriptionId != nil
+    }
+    
+    var learningLanguages: [Language] {
+        var learningLanguages: [Language] = []
+        for item in learningLanguagesId {
+            if let language = Storage.shared.languageBy(id: item) {
+                learningLanguages.append(language)
+            }
+        }
+        return learningLanguages
     }
 }
 

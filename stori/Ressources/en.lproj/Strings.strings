@@ -304,6 +304,20 @@
 "edit_password_success" = "Your password was updated!";
 
 
+"edit_native_language_title" = "Your Native Language";
+"edit_native_language_confirmation_title" = "Warning";
+"edit_native_language_confirmation_message" = "Selecting new language will reload application and change language. Do you wish to continue?";
+"edit_native_language_confirm" = "Confirm";
+
+
+"edit_learning_language_title" = "Choose Learning Language";
+"edit_learning_level_title" = "Language Levels";
+"edit_learning_level_subtitle" = "Get personalized stories & vocabulary\nbased on your level";
+"edit_learning_level_progress" = "%d%% progress - %d words";
+"edit_learning_level_success" = "Your language level was updated";
+
+
+
 "edit_notifications_title" = "Notifications";
 "edit_notifications_push_notifications" = "Push Notifications";
 

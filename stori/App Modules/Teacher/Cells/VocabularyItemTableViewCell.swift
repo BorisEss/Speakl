@@ -15,6 +15,7 @@ class VocabularyItemTableViewCell: UITableViewCell, CustomTableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var rightArrowImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,5 +28,6 @@ class VocabularyItemTableViewCell: UITableViewCell, CustomTableViewCell {
         self.word = word
         titleLabel.text = word.word
         subtitleLabel.text = word.definition
+        rightArrowImage.isHidden = word.url == nil
     }
 }

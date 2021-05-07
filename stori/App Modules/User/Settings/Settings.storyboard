@@ -411,6 +411,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7l-kW-ami">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                                        <connections>
+                                                            <segue destination="xOZ-Za-tTM" kind="show" identifier="changeNativeLanguage" id="oEx-cD-ZNM"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -487,6 +490,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDg-fk-rLM">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                                        <connections>
+                                                            <segue destination="xOZ-Za-tTM" kind="show" identifier="changeLearningLevel" id="m2D-UW-3vg"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1544,7 +1550,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Vk-Hf-Gei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1338" y="83"/>
+            <point key="canvasLocation" x="1338" y="80"/>
+        </scene>
+        <!--UpdateLanguage-->
+        <scene sceneID="OhI-TZ-fQW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UpdateLanguage" id="xOZ-Za-tTM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8EZ-4U-8Jx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMi-52-JRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1337" y="140"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="Ewa-Qj-QaK">
@@ -1627,6 +1643,9 @@
             <point key="canvasLocation" x="1386" y="394"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="m2D-UW-3vg"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="navbarShadow" width="375" height="14"/>
         <image name="s_feedback" width="28" height="28.5"/>

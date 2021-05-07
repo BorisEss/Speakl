@@ -113,11 +113,23 @@ class UserClient {
         }
     }
     
+    static func updateUserNativeLanguage(language: Language) -> Promise<Void> {
+        return updateUserData(body: ["native_lang": language.id])
+    }
+    
+    static func updateLanguageLevel(language: Language,
+                                    level: LanguageLevel) -> Promise<Void> {
+        return updateUserData(body: [
+            "learn_lang_id": language.id,
+            "level_id": level.id
+        ])
+    }
+    
     static func updateNotifications(enabled: Bool) -> Promise<Void> {
         return updateUserData(body: [ "receive_notifications": enabled ])
     }
     
-    private static func updateUserData(body: ParametersDict) -> Promise<Void> {
+    static func updateUserData(body: ParametersDict) -> Promise<Void> {
         return Promise<Void> { promise in
             firstly {
                 return Request(endpoint: Endpoints.currentUser, method: .patch)
