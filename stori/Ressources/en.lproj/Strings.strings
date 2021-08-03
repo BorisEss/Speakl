@@ -58,7 +58,7 @@
 "start_tutorial_vc_button_title_start" = "Get Started";
 
 
-"auth_vc_page_title" = "Stori";
+"auth_vc_page_title" = "Speakl";
 "auth_vc_page_signin_subtitle" = "The app\nfor enriching\nyour vocabulary";
 "auth_vc_page_login_subtitle" = "Login";
 "auth_vc_page_signup_subtitle" = "Sign up";
@@ -73,7 +73,7 @@
 "auth_vc_social_media_option_title" = "or Connect with";
 "auth_vc_button_title_signup" = "Sign up";
 "auth_vc_button_title_forgot_password" = "Forgot password";
-"auth_vc_agreement" = "By signing up to Stori app, you agree\nwith our Terms and Conditions";
+"auth_vc_agreement" = "By signing up to Speakl app, you agree\nwith our Terms and Conditions";
 "auth_vc_button_title_log_in" = "Log in";
 "auth_vc_button_title_terms_and_conditions" = "Terms and Conditions";
 "auth_vc_error_languages_not_selected" = "Please select your languages";
@@ -182,22 +182,22 @@
 "cs_custom_item_sub_category_placeholder" = "Enter Sub-category";
 "cs_custom_item_language_placeholder" = "Enter Language";
 "cs_custom_item_language_level_placeholder" = "Enter Language Level";
-"cs_custom_item_topic_popup" = "Thanks for submitting a new topic!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
-"cs_custom_item_category_popup" = "Thanks for submitting a new category!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
-"cs_custom_item_sub_category_popup" = "Thanks for submitting a new sub-category!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
-"cs_custom_item_language_popup" = "Thanks for submitting a new language!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
-"cs_custom_item_language_level_popup" = "Thanks for submitting a new language level!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
+"cs_custom_item_topic_popup" = "Thanks for submitting a new topic!\nPlease allow Speakl the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
+"cs_custom_item_category_popup" = "Thanks for submitting a new category!\nPlease allow Speakl the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
+"cs_custom_item_sub_category_popup" = "Thanks for submitting a new sub-category!\nPlease allow Speakl the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
+"cs_custom_item_language_popup" = "Thanks for submitting a new language!\nPlease allow Speakl the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
+"cs_custom_item_language_level_popup" = "Thanks for submitting a new language level!\nPlease allow Speakl the necessary time to review & approve it. Meanwhile, you can create stories using the existing categories.";
 
 
 "cs_covers_title" = "Covers";
 "cs_covers_choose" = "Choose";
-"cs_covers_custom_popup" = "Thanks for submitting a new cover!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing covers.";
+"cs_covers_custom_popup" = "Thanks for submitting a new cover!\nPlease allow Speakl the necessary time to review & approve it. Meanwhile, you can create stories using the existing covers.";
 
 
 "cs_background_music_title" = "Now Playing";
 "cs_background_music_not_playing" = "Not Playing";
 "cs_background_music_search_placehodler" = "Search";
-"cs_background_music_custom_popup" = "Thanks for submitting a new background sound!\nPlease allow Stori the necessary time to review & approve it. Meanwhile, you can create stories using the existing sounds.";
+"cs_background_music_custom_popup" = "Thanks for submitting a new background sound!\nPlease allow Speakl the necessary time to review & approve it. Meanwhile, you can create stories using the existing sounds.";
 
 
 "cs_text_title" = "Story Creation";
@@ -332,7 +332,7 @@
 
 
 "feedback_title" = "Give Us Feedback";
-"feedback_rate_question" = "How satisfied are you\nwith Stori app?";
+"feedback_rate_question" = "How satisfied are you\nwith Speakl app?";
 "feedback_message_question" = "What would you like to\nshare with us?";
 "feedback_message_placeholder" = "Help us improve…";
 "feedback_submit" = "Submit";
@@ -344,7 +344,7 @@
 "invite_friends_description" = "Sharing this code will give you and your friend one month free of premium content";
 "invite_friends_share_button" = "Share";
 "invite_friends_code_copied_to_clipboard" = "The code has been copied to the clipboard";
-"invite_friends_share_message" = "Hey! %@ invited you to start learning new languages with Stori app.\nDownload app: %@\nRedeem your gift code after sign up in settings: %@\nStart learning with Stori!";
+"invite_friends_share_message" = "Hey! %@ invited you to start learning new languages with Speakl app.\nDownload app: %@\nRedeem your gift code after sign up in settings: %@\nStart learning with Speakl!";
 
 
 "redeem_code_title" = "Redeem Code";
@@ -388,7 +388,7 @@
 "profile_vc_alert_edit_title" = "Edit";
 "profile_vc_cell_memebership_type_premium" = "Premium";
 "profile_vc_cell_memebership_type_none" = "None";
-"profile_vc_share_message" = "Check out Stori app! Learn new languages through short stories.";
+"profile_vc_share_message" = "Check out Speakl app! Learn new languages through short stories.";
 
 
 "edit_profile_vc_title" = "Edit Profile";

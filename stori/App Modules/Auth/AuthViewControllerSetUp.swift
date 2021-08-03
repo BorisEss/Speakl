@@ -116,7 +116,6 @@ extension AuthViewController {
 // MARK: - Other types of set up
 extension AuthViewController {
     func setUpLanguage() {
-        logoLabel.text = "auth_vc_page_title".localized
         usernameTextField.placeholder = "auth_vc_field_placeholder_username".localized
         emailTextField.placeholder = "auth_vc_field_placeholder_email".localized
         codeTextField.placeholder = "auth_vc_field_placeholder_otp_code".localized

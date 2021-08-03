@@ -13,13 +13,13 @@
       "size" : "20x20"
     },
     {
-      "filename" : "iphone-spotlight-settings-29pt@2x.png",
+      "filename" : "iphone-settings-29pt@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "iphone-spotlight-settings-29pt@3x.png",
+      "filename" : "iphone-settings-29pt@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
@@ -49,13 +49,13 @@
       "size" : "60x60"
     },
     {
-      "filename" : "ipad-notifications-20pt@1x.png",
+      "filename" : "ipad-notification-20pt@1x.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
-      "filename" : "ipad-notifications-20pt@2x.png",
+      "filename" : "ipad-notification-20pt@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
@@ -103,7 +103,7 @@
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "iTunesArtwork@2x.png",
+      "filename" : "app-store-1024pt@1x.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

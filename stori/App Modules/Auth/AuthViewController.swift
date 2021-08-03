@@ -39,7 +39,6 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
     
     @IBOutlet weak var logoSection: UIStackView!
-    @IBOutlet weak var logoLabel: UILabel!
     @IBOutlet weak var languageButton: UIButton!
     
     @IBOutlet weak var titleLabel: UILabel!

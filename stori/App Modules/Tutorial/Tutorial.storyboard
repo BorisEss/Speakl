@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oWR-Gz-BDX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oWR-Gz-BDX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Sweet Pea.ttf">
-            <string>Sweet_Pea</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Tutorial View Controller-->
         <scene sceneID="ibq-p2-kpx">
@@ -24,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="uiR-FK-HAw">
-                                <rect key="frame" x="145.5" y="744" width="123" height="28"/>
+                                <rect key="frame" x="146.5" y="744" width="121.5" height="28"/>
                             </pageControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DVr-aO-rRH">
-                                <rect key="frame" x="0.0" y="142" width="414" height="586"/>
+                                <rect key="frame" x="0.0" y="136" width="414" height="592"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="mqD-hw-8oc">
                                     <size key="itemSize" width="340" height="371"/>
@@ -57,28 +52,29 @@
                                     <action selector="nextButtonPressed:" destination="oWR-Gz-BDX" eventType="touchUpInside" id="sVy-lr-DW6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="Sos-Lr-mdX">
-                                <rect key="frame" x="134" y="60" width="146.5" height="82"/>
-                                <fontDescription key="fontDescription" name="Sweet_Pea" family="Sweet Pea" pointSize="70"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpeaklLogo" translatesAutoresizingMaskIntoConstraints="NO" id="WvQ-lS-icu">
+                                <rect key="frame" x="103" y="76" width="208" height="60"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="B3H-O9-few"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xzU-aa-Qhu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DVr-aO-rRH" firstAttribute="top" secondItem="Sos-Lr-mdX" secondAttribute="bottom" id="83U-b3-hK0"/>
                             <constraint firstItem="xzU-aa-Qhu" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wfu-kw-T1v" secondAttribute="trailing" constant="26" id="F93-1H-u1j"/>
                             <constraint firstItem="DVr-aO-rRH" firstAttribute="leading" secondItem="xzU-aa-Qhu" secondAttribute="leading" id="NBx-hg-Kgq"/>
+                            <constraint firstItem="WvQ-lS-icu" firstAttribute="centerX" secondItem="YvS-xS-14o" secondAttribute="centerX" id="Ydy-YW-clR"/>
                             <constraint firstItem="uiR-FK-HAw" firstAttribute="centerX" secondItem="YvS-xS-14o" secondAttribute="centerX" id="bWh-SL-B1a"/>
                             <constraint firstItem="wfu-kw-T1v" firstAttribute="centerX" secondItem="YvS-xS-14o" secondAttribute="centerX" id="dKO-fL-gxc"/>
+                            <constraint firstItem="DVr-aO-rRH" firstAttribute="top" secondItem="WvQ-lS-icu" secondAttribute="bottom" id="gbc-LM-HbE"/>
+                            <constraint firstItem="WvQ-lS-icu" firstAttribute="top" secondItem="xzU-aa-Qhu" secondAttribute="top" constant="32" id="kHz-fy-jQJ"/>
                             <constraint firstItem="uiR-FK-HAw" firstAttribute="top" secondItem="DVr-aO-rRH" secondAttribute="bottom" constant="16" id="kWV-gZ-Pcd"/>
                             <constraint firstItem="xzU-aa-Qhu" firstAttribute="bottom" secondItem="wfu-kw-T1v" secondAttribute="bottom" constant="24" id="oEf-yI-mRZ"/>
                             <constraint firstItem="wfu-kw-T1v" firstAttribute="top" secondItem="uiR-FK-HAw" secondAttribute="bottom" constant="16" id="p2s-4c-Ixd"/>
                             <constraint firstItem="wfu-kw-T1v" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xzU-aa-Qhu" secondAttribute="leading" constant="26" id="p5H-P5-Hpj"/>
-                            <constraint firstItem="Sos-Lr-mdX" firstAttribute="top" secondItem="xzU-aa-Qhu" secondAttribute="top" constant="16" id="tRw-bY-8rq"/>
                             <constraint firstItem="xzU-aa-Qhu" firstAttribute="trailing" secondItem="DVr-aO-rRH" secondAttribute="trailing" id="ukt-h9-uOm"/>
-                            <constraint firstItem="Sos-Lr-mdX" firstAttribute="centerX" secondItem="YvS-xS-14o" secondAttribute="centerX" id="yF6-Yu-dTE"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="startColor">
@@ -100,14 +96,10 @@
             <point key="canvasLocation" x="-536.231884057971" y="199.55357142857142"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="wfu-kw-T1v">
-            <size key="intrinsicContentSize" width="36" height="33"/>
-        </designable>
-    </designables>
     <resources>
+        <image name="SpeaklLogo" width="208" height="67.5"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.7839999794960022" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="GradientBottom">
             <color red="0.082000002264976501" green="0.10999999940395355" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
