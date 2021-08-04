@@ -80,6 +80,11 @@ class AuthViewController: UIViewController {
         setUpLanguage()
         setUpLanguageButton()
         authType = .login
+        if #available(iOS 13.0, *) {
+            appleButton.isHidden = false
+        } else {
+            appleButton.isHidden = true
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -148,22 +153,50 @@ class AuthViewController: UIViewController {
     @IBAction func googlePressed(_ sender: Any) {
         googleButton.isHidden = true
         googleActivityIndicator.startAnimating()
-        GIDSignIn.sharedInstance()?.presentingViewController = self
-        GIDSignIn.sharedInstance().delegate = self
-        GIDSignIn.sharedInstance().signIn()
+        let signInConfig = GIDConfiguration.init(clientID: googleSignInClientId)
+        GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
+            if let error = error {
+                #if DEBUG
+                print("\(error.localizedDescription)")
+                #endif
+                self.googleButton.isHidden = false
+                self.googleActivityIndicator.stopAnimating()
+                return
+            }
+            if let token = user?.authentication.idToken {
+                #if DEBUG
+                print("Logged in with Google:")
+                print(user?.authentication.idToken ?? "") // Safe to send to the server
+                print(user?.userID ?? "")              // For client-side use only!
+                print(user?.profile?.name ?? "")
+                print(user?.profile?.email ?? "")
+                #endif
+                AuthPresenter().googleAuth(token: token) { (isSuccess) in
+                    self.googleButton.isHidden = false
+                    self.googleActivityIndicator.stopAnimating()
+                    if isSuccess { self.continueToNextScreen() }
+                }
+            } else {
+                self.googleButton.isHidden = false
+                self.googleActivityIndicator.stopAnimating()
+            }
+        }
     }
     
     @IBAction func applePressed(_ sender: Any) {
-        appleButton.isHidden = true
-        appleActivityIndicator.startAnimating()
-        let appleSignInRequest = ASAuthorizationAppleIDProvider().createRequest()
-        appleSignInRequest.requestedScopes = [.fullName, .email]
-
-        let controller = ASAuthorizationController(authorizationRequests: [appleSignInRequest])
-        controller.delegate = self
-        controller.presentationContextProvider = self
-
-        controller.performRequests()
+        if #available(iOS 13.0, *) {
+            appleButton.isHidden = true
+            appleActivityIndicator.startAnimating()
+            let appleSignInRequest = ASAuthorizationAppleIDProvider().createRequest()
+            
+            appleSignInRequest.requestedScopes = [.fullName, .email]
+            
+            let controller = ASAuthorizationController(authorizationRequests: [appleSignInRequest])
+            controller.delegate = self
+            controller.presentationContextProvider = self
+            
+            controller.performRequests()
+        }
     }
     
     @IBAction func firstBottomButtonPressed(_ sender: Any) {

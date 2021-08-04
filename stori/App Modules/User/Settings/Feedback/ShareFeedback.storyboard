@@ -28,7 +28,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNg-2N-axP">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="40"/>
-                                        <string key="text">How satisfied are you 
+                                        <string key="text">How satisfied are you
 with Stori app?</string>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                         <color key="textColor" name="Text Gray"/>
@@ -127,7 +127,7 @@ with Stori app?</string>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs1-n4-9Ph">
                                         <rect key="frame" x="0.0" y="305" width="364" height="40"/>
-                                        <string key="text">What would you like to 
+                                        <string key="text">What would you like to
 share with us?</string>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                         <color key="textColor" name="Text Gray"/>
@@ -204,7 +204,7 @@ share with us?</string>
                                                     <action selector="submitButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Q5p-tU-Mxr"/>
                                                 </connections>
                                             </button>
-                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="UAP-mH-P4e">
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="UAP-mH-P4e">
                                                 <rect key="frame" x="172" y="15" width="20" height="20"/>
                                                 <color key="color" name="AccentColor"/>
                                             </activityIndicatorView>

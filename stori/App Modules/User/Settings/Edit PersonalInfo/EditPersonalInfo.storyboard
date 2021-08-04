@@ -307,7 +307,7 @@
                                     <action selector="saveButtonPressed:" destination="Ita-AY-L6V" eventType="touchUpInside" id="NV4-eN-bKr"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Kt3-h6-vAK">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Kt3-h6-vAK">
                                 <rect key="frame" x="197" y="753" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>

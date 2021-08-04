@@ -100,42 +100,8 @@ extension AuthViewController: KeyboardApperenceHandlerDelegate {
     }
 }
 
-// MARK: - GIDSignInDelegate
-extension AuthViewController: GIDSignInDelegate {
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            #if DEBUG
-            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
-                print("The user has not signed in before or they have since signed out.")
-            } else {
-                print("\(error.localizedDescription)")
-            }
-            #endif
-            googleButton.isHidden = false
-            googleActivityIndicator.stopAnimating()
-            return
-        }
-        if let token = user.authentication.idToken {
-            #if DEBUG
-            print("Logged in with Google:")
-            print(user.authentication.idToken ?? "") // Safe to send to the server
-            print(user.userID ?? "")              // For client-side use only!
-            print(user.profile.name ?? "")
-            print(user.profile.email ?? "")
-            #endif
-            AuthPresenter().googleAuth(token: token) { (isSuccess) in
-                self.googleButton.isHidden = false
-                self.googleActivityIndicator.stopAnimating()
-                if isSuccess { self.continueToNextScreen() }
-            }
-        } else {
-            googleButton.isHidden = false
-            googleActivityIndicator.stopAnimating()
-        }
-    }
-}
-
 // MARK: ASAuthorizationControllerDelegate
+@available(iOS 13.0, *)
 extension AuthViewController: ASAuthorizationControllerDelegate {
     // Authorization Failed
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
@@ -179,6 +145,7 @@ extension AuthViewController: ASAuthorizationControllerDelegate {
 }
 
 // MARK: ASAuthorizationControllerPresentationContextProviding
+@available(iOS 13.0, *)
 extension AuthViewController: ASAuthorizationControllerPresentationContextProviding {
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return self.view.window!

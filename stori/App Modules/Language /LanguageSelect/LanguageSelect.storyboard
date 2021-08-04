@@ -102,7 +102,7 @@
                                     <action selector="nextButtonPressed:" destination="fYt-GH-fXU" eventType="touchUpInside" id="Ieh-Ic-9Pm"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="lSr-5G-bWE">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lSr-5G-bWE">
                                 <rect key="frame" x="197" y="795" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>
@@ -227,11 +227,11 @@
                                     <action selector="nextButtonPressed:" destination="IMv-Fh-p2l" eventType="touchUpInside" id="phR-uY-guN"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="w0z-J0-nqm">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="w0z-J0-nqm">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="OKZ-KS-Uwd">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="OKZ-KS-Uwd">
                                 <rect key="frame" x="197" y="795" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>
@@ -359,11 +359,11 @@
                                     <action selector="nextButtonPressed:" destination="Vkr-hf-pjk" eventType="touchUpInside" id="KPy-SD-aoI"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="tQY-ym-wpD">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tQY-ym-wpD">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="qxw-7x-1Zg">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qxw-7x-1Zg">
                                 <rect key="frame" x="197" y="795" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>

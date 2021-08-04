@@ -16,12 +16,12 @@ import SDWebImage
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        KeychainManager.shared.token = nil
-        
+                
         // MARK: IQKeyboardManager Set Up
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.toolbarTintColor = .systemBlue
@@ -34,8 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
         
         // Configuring Google Sign In
-        GIDSignIn.sharedInstance().clientID = googleSignInClientId
-        GIDSignIn.sharedInstance().delegate = self
+//        GIDSignIn.sharedInstance.clientID = googleSignInClientId
+//        GIDSignIn.sharedInstance().delegate = self
         
         // Configure Facebook
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
@@ -50,6 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: UISceneSession Lifecycle
+    @available(iOS 13.0, *)
     func application(_ application: UIApplication,
                      configurationForConnecting connectingSceneSession: UISceneSession,
                      options: UIScene.ConnectionOptions) -> UISceneConfiguration {
@@ -58,6 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
+    @available(iOS 13.0, *)
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running,
@@ -68,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 // MARK: Google Sign In
-extension AppDelegate: GIDSignInDelegate {
+extension AppDelegate {//: GIDSignInDelegate {
     @available(iOS 9.0, *)
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
         let facebook = ApplicationDelegate.shared.application(app,
@@ -80,40 +82,40 @@ extension AppDelegate: GIDSignInDelegate {
                                                                 UIApplication.OpenURLOptionsKey.annotation
             ])
 
-        let google = GIDSignIn.sharedInstance().handle(url)
+        let google = GIDSignIn.sharedInstance.handle(url)
         return facebook || google
     }
     
     func application(_ application: UIApplication,
                      open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        return GIDSignIn.sharedInstance().handle(url)
+        return GIDSignIn.sharedInstance.handle(url)
     }
     
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
-              withError error: Error!) {
-        if let error = error {
-            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
-                print("The user has not signed in before or they have since signed out.")
-            } else {
-                print("\(error.localizedDescription)")
-            }
-            return
-        }
-        // Perform any operations on signed in user here.
-        _ = user.userID                  // For client-side use only!
-        _ = user.authentication.idToken // Safe to send to the server
-        _ = user.profile.name
-        _ = user.profile.givenName
-        _ = user.profile.familyName
-        _ = user.profile.email
-        // ...
-        
-        print(user ?? "")
-    }
-    
-    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
-              withError error: Error!) {
-        // Perform any operations when the user disconnects from app here.
-        // ...
-    }
+//    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+//              withError error: Error!) {
+//        if let error = error {
+//            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+//                print("The user has not signed in before or they have since signed out.")
+//            } else {
+//                print("\(error.localizedDescription)")
+//            }
+//            return
+//        }
+//        // Perform any operations on signed in user here.
+//        _ = user.userID                  // For client-side use only!
+//        _ = user.authentication.idToken // Safe to send to the server
+//        _ = user.profile.name
+//        _ = user.profile.givenName
+//        _ = user.profile.familyName
+//        _ = user.profile.email
+//        // ...
+//
+//        print(user ?? "")
+//    }
+//
+//    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
+//              withError error: Error!) {
+//        // Perform any operations when the user disconnects from app here.
+//        // ...
+//    }
 }

@@ -57,7 +57,11 @@ class WebBrowserViewController: UIViewController {
     
     private func addActivityIndicator() {
         progressActivityIndicator = UIActivityIndicatorView()
-        progressActivityIndicator.style = .medium
+        if #available(iOS 13.0, *) {
+            progressActivityIndicator.style = .medium
+        } else {
+            progressActivityIndicator.style = .gray
+        }
         progressActivityIndicator.hidesWhenStopped = true
         let loading = UIBarButtonItem(customView: progressActivityIndicator)
         navigationItem.rightBarButtonItem = loading

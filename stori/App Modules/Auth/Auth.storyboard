@@ -113,7 +113,7 @@
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNs-RS-W7f">
                                         <rect key="frame" x="0.0" y="123.5" width="358" height="87.5"/>
-                                        <string key="text">The app 
+                                        <string key="text">The app
 for enriching
 your vocabulary</string>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="25"/>
@@ -236,7 +236,7 @@ your vocabulary</string>
                                                     <action selector="nextButtonPressed:" destination="Lry-uT-T8C" eventType="touchUpInside" id="SAv-IA-zFj"/>
                                                 </connections>
                                             </button>
-                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="D9o-eS-v8y">
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="D9o-eS-v8y">
                                                 <rect key="frame" x="15" y="15" width="20" height="20"/>
                                                 <color key="color" name="AccentColor"/>
                                             </activityIndicatorView>
@@ -251,7 +251,7 @@ your vocabulary</string>
                                             <constraint firstItem="Dxd-jU-aAL" firstAttribute="top" secondItem="3D3-Bu-wAe" secondAttribute="top" id="sg8-xi-4kt"/>
                                         </constraints>
                                     </view>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing up to Stori app, you agree  with our Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywe-Yn-E7C">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing up to Stori app, you agree with our Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywe-Yn-E7C">
                                         <rect key="frame" x="0.0" y="529" width="358" height="0.0"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -282,7 +282,7 @@ your vocabulary</string>
                                                                     <action selector="facebookPressed:" destination="Lry-uT-T8C" eventType="touchUpInside" id="7Mj-S1-rde"/>
                                                                 </connections>
                                                             </button>
-                                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="V3c-nQ-pp9">
+                                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="V3c-nQ-pp9">
                                                                 <rect key="frame" x="10" y="10" width="20" height="20"/>
                                                                 <color key="color" name="AccentColor"/>
                                                             </activityIndicatorView>
@@ -310,7 +310,7 @@ your vocabulary</string>
                                                                     <action selector="googlePressed:" destination="Lry-uT-T8C" eventType="touchUpInside" id="AAo-XA-tHN"/>
                                                                 </connections>
                                                             </button>
-                                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="YH7-aS-VWL">
+                                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="YH7-aS-VWL">
                                                                 <rect key="frame" x="10" y="10" width="20" height="20"/>
                                                                 <color key="color" name="AccentColor"/>
                                                             </activityIndicatorView>
@@ -338,7 +338,7 @@ your vocabulary</string>
                                                                     <action selector="applePressed:" destination="Lry-uT-T8C" eventType="touchUpInside" id="RZ5-j1-YMR"/>
                                                                 </connections>
                                                             </button>
-                                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="pQM-T7-YK9">
+                                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pQM-T7-YK9">
                                                                 <rect key="frame" x="10" y="10" width="20" height="20"/>
                                                                 <color key="color" name="AccentColor"/>
                                                             </activityIndicatorView>

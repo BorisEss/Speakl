@@ -10,13 +10,20 @@ import PromiseKit
 
 class RootViewController: UIViewController {
     
+    private var tripleTap = UITapGestureRecognizer()
+    
+    @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var retryButton: UIButton!
     @IBOutlet weak var contactUsButton: UIButton!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-                
+              
+        tripleTap = UITapGestureRecognizer(target: self, action: #selector(goToAuthScreen))
+        tripleTap.numberOfTapsRequired = 3
+        logoImageView.addGestureRecognizer(tripleTap)
+        
         retryButton.setTitle("common_retry".localized, for: .normal)
         contactUsButton.setTitle("common_contact_us".localized, for: .normal)
         load()
@@ -61,5 +68,10 @@ class RootViewController: UIViewController {
             self.contactUsButton.isHidden = false
             error.parse()
         }
+    }
+    
+    @objc private func goToAuthScreen() {
+        KeychainManager.shared.token = nil
+        Router.load()
     }
 }

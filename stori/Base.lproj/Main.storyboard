@@ -31,6 +31,9 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ENS-H3-qy3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rd4-Hd-aSm"/>
                     </connections>
@@ -111,16 +114,16 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ubv-14-3pR">
-                                <rect key="frame" x="103" y="252.5" width="208" height="95.5"/>
+                                <rect key="frame" x="103" y="250" width="208" height="98"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpd-ru-TEz">
-                                        <rect key="frame" x="0.0" y="0.0" width="208" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="22.5"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpeaklLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ANT-J8-D2A">
-                                        <rect key="frame" x="0.0" y="28" width="208" height="67.5"/>
+                                        <rect key="frame" x="0.0" y="30.5" width="208" height="67.5"/>
                                         <color key="tintColor" name="GradientTop"/>
                                     </imageView>
                                 </subviews>

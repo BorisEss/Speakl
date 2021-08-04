@@ -1048,7 +1048,6 @@
 				FA812D982566437E0036F162 /* ShellScript */,
 				FA812D68256298440036F162 /* Resources */,
 				495E83DCC8467CCAC9FAD7F2 /* [CP] Embed Pods Frameworks */,
-				4A993576BC95F51217BE0263 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1167,23 +1166,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stori/Pods-stori-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A993576BC95F51217BE0263 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-stori/Pods-stori-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-stori/Pods-stori-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stori/Pods-stori-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C4F0937FE79398F5F37B6586 /* [CP] Check Pods Manifest.lock */ = {
@@ -1561,7 +1543,7 @@
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1586,7 +1568,7 @@
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

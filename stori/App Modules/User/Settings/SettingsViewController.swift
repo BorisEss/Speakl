@@ -152,7 +152,7 @@ class SettingsViewController: UIViewController {
         
         let destroyAction = UIAlertAction(title: "settings_sign_out".localized, style: .destructive) { _ in
             Facebook.logOut()
-            GIDSignIn.sharedInstance().signOut()
+//            GIDSignIn.sharedInstance().signOut()
             Storage.shared.currentUser = nil
             KeychainManager.shared.token = nil
             Router.load()

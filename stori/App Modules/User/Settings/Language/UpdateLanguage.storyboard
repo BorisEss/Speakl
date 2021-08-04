@@ -75,7 +75,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="common_nothing_to_show"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="PNm-PB-tSS">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PNm-PB-tSS">
                                 <rect key="frame" x="197" y="411" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>
@@ -89,7 +89,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="svf-IX-6eK">
                                             <rect key="frame" x="32" y="22" width="350" height="28"/>
-                                            <string key="text">Get personalized stories &amp; vocabulary 
+                                            <string key="text">Get personalized stories &amp; vocabulary
 based on your level</string>
                                             <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="14"/>
                                             <color key="textColor" name="Text Black"/>
@@ -194,7 +194,7 @@ based on your level</string>
                                             <action selector="saveButtonPressed:" destination="ycP-Ma-qyQ" eventType="touchUpInside" id="2l7-mV-htM"/>
                                         </connections>
                                     </button>
-                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="HCr-0S-caF">
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HCr-0S-caF">
                                         <rect key="frame" x="197" y="29" width="20" height="20"/>
                                         <color key="color" name="AccentColor"/>
                                     </activityIndicatorView>
@@ -437,7 +437,7 @@ based on your level</string>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="common_nothing_to_show"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-wh-N1D">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-wh-N1D">
                                 <rect key="frame" x="197" y="318" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>

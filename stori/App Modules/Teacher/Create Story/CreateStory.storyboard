@@ -134,7 +134,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="jgv-iu-nXA">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jgv-iu-nXA">
                                 <rect key="frame" x="197" y="795" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
@@ -548,7 +548,7 @@
                                 <color key="textColor" name="Text Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="gPQ-kI-pL1">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gPQ-kI-pL1">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                                 <color key="color" name="Text Gray"/>
                             </activityIndicatorView>
@@ -776,7 +776,7 @@
                                 <color key="textColor" name="Text Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="dHi-vd-L7y">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dHi-vd-L7y">
                                 <rect key="frame" x="197" y="645" width="20" height="20"/>
                                 <color key="color" name="Text Gray"/>
                             </activityIndicatorView>
@@ -1125,7 +1125,7 @@
                                     <outlet property="delegate" destination="YiY-TY-dUk" id="KB2-Lu-l7g"/>
                                 </connections>
                             </tableView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="chz-mx-hoo">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="chz-mx-hoo">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                                 <color key="color" name="Text Gray"/>
                             </activityIndicatorView>
@@ -1320,7 +1320,7 @@
                                 <color key="textColor" name="Text Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="3cM-5j-RIS">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3cM-5j-RIS">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                                 <color key="color" name="Text Gray"/>
                             </activityIndicatorView>
@@ -1419,7 +1419,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                             </tableView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ilx-Df-hkI">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ilx-Df-hkI">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                                 <color key="color" name="Text Gray"/>
                             </activityIndicatorView>
@@ -1578,7 +1578,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZ2-Dh-FDY">
                                         <rect key="frame" x="12" y="69" width="216" height="92"/>
-                                        <string key="text">Thanks for submitting a new category! 
+                                        <string key="text">Thanks for submitting a new category!
 Please allow Stori the necessary time to review &amp; approve it. Meanwhile, you can create stories using the existing categories.</string>
                                         <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
