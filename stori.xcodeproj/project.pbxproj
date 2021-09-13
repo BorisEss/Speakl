@@ -113,8 +113,6 @@
 		FA7EF427262DAB3B00335CE6 /* MembershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EF426262DAB3B00335CE6 /* MembershipViewController.swift */; };
 		FA812D6E256298440036F162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812D6D256298440036F162 /* AppDelegate.swift */; };
 		FA812D70256298440036F162 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812D6F256298440036F162 /* SceneDelegate.swift */; };
-		FA812D72256298440036F162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812D71256298440036F162 /* ViewController.swift */; };
-		FA812D75256298440036F162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA812D73256298440036F162 /* Main.storyboard */; };
 		FA812D77256298450036F162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA812D76256298450036F162 /* Assets.xcassets */; };
 		FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA812D78256298450036F162 /* LaunchScreen.storyboard */; };
 		FA812D88256640BF0036F162 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA812D87256640BF0036F162 /* Tutorial.storyboard */; };
@@ -177,12 +175,21 @@
 		FAB47D8D25C15A3F00B55F58 /* CSCoverCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB47D8B25C15A3F00B55F58 /* CSCoverCardCell.xib */; };
 		FAB47D9125C1725200B55F58 /* CoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB47D9025C1725200B55F58 /* CoverImage.swift */; };
 		FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB670C125DE623100DA5CA8 /* CSChapterModel.swift */; };
+		FAB84DC426CFAE1F00B9C5A0 /* StoryVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB84DC326CFAE1F00B9C5A0 /* StoryVideoListViewController.swift */; };
+		FAB84DC626CFE73C00B9C5A0 /* video.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB84DC526CFE73C00B9C5A0 /* video.json */; };
+		FAB84DC826CFEA3B00B9C5A0 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB84DC726CFEA3B00B9C5A0 /* Video.swift */; };
 		FAB8E01A263A7A36000AE9FE /* Referral.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB8E019263A7A36000AE9FE /* Referral.storyboard */; };
 		FAB8E01C263A7B96000AE9FE /* InviteFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8E01B263A7B96000AE9FE /* InviteFriendsViewController.swift */; };
 		FAB8E01E263A7BA8000AE9FE /* RedeemCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8E01D263A7BA8000AE9FE /* RedeemCodeViewController.swift */; };
 		FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */; };
 		FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */; };
 		FAC1F4BB25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC1F4BA25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf */; };
+		FAC93A6126DFBC50003FACDA /* StoryLearningButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC93A6026DFBC50003FACDA /* StoryLearningButton.swift */; };
+		FAC93A6326DFCB3B003FACDA /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC93A6226DFCB3B003FACDA /* VideoPlayerView.swift */; };
+		FAC93A6526DFCB52003FACDA /* VideoPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC93A6426DFCB52003FACDA /* VideoPlayerView.xib */; };
+		FAC97F8226CE8E1D008B2CEF /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC97F8126CE8E1D008B2CEF /* LearnViewController.swift */; };
+		FAC97F8426CE8E43008B2CEF /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC97F8326CE8E43008B2CEF /* Learn.storyboard */; };
+		FAC97F8626CE96D9008B2CEF /* StoryVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC97F8526CE96D9008B2CEF /* StoryVideoViewController.swift */; };
 		FACF0AA825E2A6DD00F3298B /* VocabularyId.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF0AA725E2A6DD00F3298B /* VocabularyId.swift */; };
 		FAD804C025BEC757005451B6 /* CSStoryTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD804BF25BEC757005451B6 /* CSStoryTitleViewController.swift */; };
 		FADA06BF257F67CB000333FF /* LanguagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA06BE257F67CB000333FF /* LanguagePresenter.swift */; };
@@ -338,8 +345,6 @@
 		FA812D6A256298440036F162 /* stori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA812D6D256298440036F162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA812D6F256298440036F162 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA812D71256298440036F162 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA812D74256298440036F162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA812D76256298450036F162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA812D79256298450036F162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA812D7B256298450036F162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -403,12 +408,21 @@
 		FAB47D8B25C15A3F00B55F58 /* CSCoverCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSCoverCardCell.xib; sourceTree = "<group>"; };
 		FAB47D9025C1725200B55F58 /* CoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImage.swift; sourceTree = "<group>"; };
 		FAB670C125DE623100DA5CA8 /* CSChapterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterModel.swift; sourceTree = "<group>"; };
+		FAB84DC326CFAE1F00B9C5A0 /* StoryVideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVideoListViewController.swift; sourceTree = "<group>"; };
+		FAB84DC526CFE73C00B9C5A0 /* video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video.json; sourceTree = "<group>"; };
+		FAB84DC726CFEA3B00B9C5A0 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		FAB8E019263A7A36000AE9FE /* Referral.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Referral.storyboard; sourceTree = "<group>"; };
 		FAB8E01B263A7B96000AE9FE /* InviteFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewController.swift; sourceTree = "<group>"; };
 		FAB8E01D263A7BA8000AE9FE /* RedeemCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemCodeViewController.swift; sourceTree = "<group>"; };
 		FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguagePopup.storyboard; sourceTree = "<group>"; };
 		FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePopupViewController.swift; sourceTree = "<group>"; };
 		FAC1F4BA25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		FAC93A6026DFBC50003FACDA /* StoryLearningButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryLearningButton.swift; sourceTree = "<group>"; };
+		FAC93A6226DFCB3B003FACDA /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		FAC93A6426DFCB52003FACDA /* VideoPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerView.xib; sourceTree = "<group>"; };
+		FAC97F8126CE8E1D008B2CEF /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		FAC97F8326CE8E43008B2CEF /* Learn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
+		FAC97F8526CE96D9008B2CEF /* StoryVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVideoViewController.swift; sourceTree = "<group>"; };
 		FACF0AA725E2A6DD00F3298B /* VocabularyId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyId.swift; sourceTree = "<group>"; };
 		FAD804BF25BEC757005451B6 /* CSStoryTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSStoryTitleViewController.swift; sourceTree = "<group>"; };
 		FADA06BE257F67CB000333FF /* LanguagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePresenter.swift; sourceTree = "<group>"; };
@@ -700,6 +714,7 @@
 			children = (
 				FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */,
 				FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */,
+				FAC97F8026CE8DEC008B2CEF /* Learn */,
 				FA5608C4261F2CAB0062EE88 /* Settings */,
 			);
 			path = User;
@@ -795,8 +810,6 @@
 				FA812D8B256640F30036F162 /* App Modules */,
 				FA7B72D525669A08003F9A0C /* Ressources */,
 				FA999D9F2569513E00B694FA /* Storage */,
-				FA812D71256298440036F162 /* ViewController.swift */,
-				FA812D73256298440036F162 /* Main.storyboard */,
 				FA812D6D256298440036F162 /* AppDelegate.swift */,
 				FA812D6F256298440036F162 /* SceneDelegate.swift */,
 				FA4B61A525753433005501BD /* Google-Credentials.plist */,
@@ -869,17 +882,16 @@
 		FA812D9A2566593D0036F162 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAC93A6826DFCD22003FACDA /* Rating Button */,
+				FAC93A6726DFCCFA003FACDA /* Record Button */,
+				FAC93A6626DFCCE1003FACDA /* Item View With Subtitle And Checkmark */,
+				FAC93A6926DFCD39003FACDA /* Video Player View */,
 				FA812D8D256641940036F162 /* UIGradientView.swift */,
 				FA812DA9256682F70036F162 /* RegularButton.swift */,
 				FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */,
 				FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */,
 				FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */,
-				FAF2690D25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib */,
-				FAF2690A25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift */,
-				FAE653E925C3FB8600CC25A1 /* RecordButton.xib */,
-				FAE653EC25C3FB9700CC25A1 /* RecordButton.swift */,
-				FA3A467A26397BD900BF0CB5 /* RatingButton.xib */,
-				FA3A467C26397CFE00BF0CB5 /* RatingButton.swift */,
+				FAC93A6026DFBC50003FACDA /* StoryLearningButton.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -949,6 +961,55 @@
 				FAAA96D6261DE6A800B53D6C /* InterestTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		FAC93A6626DFCCE1003FACDA /* Item View With Subtitle And Checkmark */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2690D25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib */,
+				FAF2690A25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift */,
+			);
+			path = "Item View With Subtitle And Checkmark";
+			sourceTree = "<group>";
+		};
+		FAC93A6726DFCCFA003FACDA /* Record Button */ = {
+			isa = PBXGroup;
+			children = (
+				FAE653E925C3FB8600CC25A1 /* RecordButton.xib */,
+				FAE653EC25C3FB9700CC25A1 /* RecordButton.swift */,
+			);
+			path = "Record Button";
+			sourceTree = "<group>";
+		};
+		FAC93A6826DFCD22003FACDA /* Rating Button */ = {
+			isa = PBXGroup;
+			children = (
+				FA3A467A26397BD900BF0CB5 /* RatingButton.xib */,
+				FA3A467C26397CFE00BF0CB5 /* RatingButton.swift */,
+			);
+			path = "Rating Button";
+			sourceTree = "<group>";
+		};
+		FAC93A6926DFCD39003FACDA /* Video Player View */ = {
+			isa = PBXGroup;
+			children = (
+				FAC93A6426DFCB52003FACDA /* VideoPlayerView.xib */,
+				FAC93A6226DFCB3B003FACDA /* VideoPlayerView.swift */,
+			);
+			path = "Video Player View";
+			sourceTree = "<group>";
+		};
+		FAC97F8026CE8DEC008B2CEF /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				FAB84DC526CFE73C00B9C5A0 /* video.json */,
+				FAB84DC726CFEA3B00B9C5A0 /* Video.swift */,
+				FAC97F8326CE8E43008B2CEF /* Learn.storyboard */,
+				FAC97F8126CE8E1D008B2CEF /* LearnViewController.swift */,
+				FAB84DC326CFAE1F00B9C5A0 /* StoryVideoListViewController.swift */,
+				FAC97F8526CE96D9008B2CEF /* StoryVideoViewController.swift */,
+			);
+			path = Learn;
 			sourceTree = "<group>";
 		};
 		FAF10EC826369B14001B650F /* Edit PersonalInfo */ = {
@@ -1110,6 +1171,7 @@
 				FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */,
 				FAB8E01A263A7A36000AE9FE /* Referral.storyboard in Resources */,
 				FA960AB7263AC48B001ACB21 /* UpdateLanguage.storyboard in Resources */,
+				FAC93A6526DFCB52003FACDA /* VideoPlayerView.xib in Resources */,
 				FA6853F72599FA47008A7D63 /* IBMPlexSans-Light.ttf in Resources */,
 				FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */,
 				FA9F6C102582899800AC5197 /* LanguageLevelTableViewCell.xib in Resources */,
@@ -1138,12 +1200,13 @@
 				FAA60E0A25C1952D00522F8A /* IBMPlexSans-LightItalic.ttf in Resources */,
 				FA876C7D25C80E6800E65B95 /* CSTextItemTableViewCell.xib in Resources */,
 				FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */,
+				FAC97F8426CE8E43008B2CEF /* Learn.storyboard in Resources */,
 				FAFF92C325A44C5900A604C3 /* UploadFileTableViewCell.xib in Resources */,
 				FAAA96D9261DE6A800B53D6C /* InterestTableViewCell.xib in Resources */,
 				FA3C26132569559C0089F646 /* Auth.storyboard in Resources */,
-				FA812D75256298440036F162 /* Main.storyboard in Resources */,
 				FA09A5CB263C2AC000DB7450 /* UpdateLevelTableViewCell.xib in Resources */,
 				FAF2690E25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib in Resources */,
+				FAB84DC626CFE73C00B9C5A0 /* video.json in Resources */,
 				FA0E895F25BF47C400D80027 /* CSItemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1214,11 +1277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA812D72256298440036F162 /* ViewController.swift in Sources */,
+				FAC97F8626CE96D9008B2CEF /* StoryVideoViewController.swift in Sources */,
 				FA9F70E825C5ADD400A16C61 /* Word.swift in Sources */,
 				FA4B61A925753487005501BD /* Constants.swift in Sources */,
 				FA85365725B08EF6002607EC /* JoinTNPresenter.swift in Sources */,
 				FA04986F25C2E624004CF8B7 /* AudioPlayer.swift in Sources */,
+				FAC97F8226CE8E1D008B2CEF /* LearnViewController.swift in Sources */,
 				FAB8E01C263A7B96000AE9FE /* InviteFriendsViewController.swift in Sources */,
 				FA7B72EA2566B814003F9A0C /* TutorialCollectionViewCell.swift in Sources */,
 				FAF10ECD26369B63001B650F /* EditPersonalInfoViewController.swift in Sources */,
@@ -1263,6 +1327,7 @@
 				FA4D448B257C172F00398AE2 /* UIImageViewExtension.swift in Sources */,
 				FA16CE2C25ECE60D007B8354 /* StoryTextSection.swift in Sources */,
 				FA3C2626256A52320089F646 /* UIViewControllerExtension.swift in Sources */,
+				FAC93A6326DFCB3B003FACDA /* VideoPlayerView.swift in Sources */,
 				FAFF82D025D4433D00A9BE82 /* CSBackgroundSoundPresenter.swift in Sources */,
 				FA4D447525790C2700398AE2 /* LanguageClient.swift in Sources */,
 				FA4D44622578BE0700398AE2 /* ResponseObject.swift in Sources */,
@@ -1322,6 +1387,7 @@
 				FA85364C25AC644D002607EC /* UploadClient.swift in Sources */,
 				FA16CE3625ED1231007B8354 /* CSChapterPartPresenter.swift in Sources */,
 				FAFC99F625C9757000D60AB4 /* CSTableViewCell.swift in Sources */,
+				FAC93A6126DFBC50003FACDA /* StoryLearningButton.swift in Sources */,
 				FA50420B25A611DE004E6EC9 /* ImagePreviewViewController.swift in Sources */,
 				FA4D446C2578D2B300398AE2 /* Router.swift in Sources */,
 				FAE653F025C4045000CC25A1 /* CSRecordVoiceListViewController.swift in Sources */,
@@ -1361,12 +1427,14 @@
 				FA85A702262F1F62008E601C /* MembershipCollectionViewCell.swift in Sources */,
 				FA876C8725C80EA200E65B95 /* CSVideoItemTableViewCell.swift in Sources */,
 				FA3A467926381F5100BF0CB5 /* ShareFeedbackPresenter.swift in Sources */,
+				FAB84DC826CFEA3B00B9C5A0 /* Video.swift in Sources */,
 				FA876C8125C80E7C00E65B95 /* CSImageItemTableViewCell.swift in Sources */,
 				FA46952025C0A0D300F347B1 /* CSCustomItemViewController.swift in Sources */,
 				FAB47D8C25C15A3F00B55F58 /* CSCoverCardCell.swift in Sources */,
 				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,
 				FAF2690B25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift in Sources */,
 				FAAF7CBF26304B220007E63B /* Vibration.swift in Sources */,
+				FAB84DC426CFAE1F00B9C5A0 /* StoryVideoListViewController.swift in Sources */,
 				FA417FDE2590F40F00F9D81B /* UIApplicationExtension.swift in Sources */,
 				FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */,
 				FA3A467526381A7A00BF0CB5 /* ShareFeedbackViewController.swift in Sources */,
@@ -1388,14 +1456,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA812D73256298440036F162 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA812D74256298440036F162 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA812D78256298450036F162 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Regular.ttf">
+            <string>IBMPlexSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoPlayerView" customModule="stori" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="VJO-gl-Df8" id="FNu-pb-VMH"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="FhH-MG-psN"/>
+                <outlet property="noDataLabel" destination="c4I-H9-NlH" id="oxl-wj-UvU"/>
+                <outlet property="videoView" destination="p52-ns-C8b" id="x4j-u1-wQK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="459"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Could not load video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-H9-NlH">
+                    <rect key="frame" x="138.5" y="220" width="137.5" height="19.5"/>
+                    <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
+                    <color key="textColor" name="Placeholder Gray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="VJO-gl-Df8">
+                    <rect key="frame" x="197" y="219.5" width="20" height="20"/>
+                    <color key="color" name="AccentColor"/>
+                </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p52-ns-C8b">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="459"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VJO-gl-Df8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="62G-3V-MyM"/>
+                <constraint firstItem="c4I-H9-NlH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9yj-Ed-Mwx"/>
+                <constraint firstItem="VJO-gl-Df8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="EEu-Bw-072"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c4I-H9-NlH" secondAttribute="trailing" constant="16" id="EXz-3d-tN8"/>
+                <constraint firstItem="p52-ns-C8b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F2A-3R-rYj"/>
+                <constraint firstItem="p52-ns-C8b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ipo-4s-JP0"/>
+                <constraint firstItem="p52-ns-C8b" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="LFE-jP-yx5"/>
+                <constraint firstItem="c4I-H9-NlH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="P1P-Qq-Kn5"/>
+                <constraint firstItem="c4I-H9-NlH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aQp-0B-mAb"/>
+                <constraint firstItem="p52-ns-C8b" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="yua-cJ-GbG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="-15.736607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Placeholder Gray">
+            <color red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

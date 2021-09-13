@@ -9,6 +9,8 @@ target 'stori' do
   pod 'Alamofire'
   pod 'AlamofireNetworkActivityLogger', :configurations => ['Debug']
   pod 'SDWebImage'
+  
+  # Social Auth
   pod 'GoogleSignIn'
   pod 'FBSDKCoreKit/Swift'
   pod 'FBSDKLoginKit/Swift'
@@ -45,11 +47,10 @@ target 'stori' do
   pod 'TableFlip'
   pod 'QRCodeReader.swift'
   pod 'MBCircularProgressBar'
-#  pod 'MenuItemKit'
+  pod 'SwipeMenuViewController'
 #  pod 'GrowingTextView'
 #  pod 'SideMenu'
 #  pod 'SimpleCheckbox'
-#  pod 'Cluster'
 #  pod 'Cards'
 #  pod 'ImageSlideshow'
 #  pod 'ImageSlideshow/Kingfisher'

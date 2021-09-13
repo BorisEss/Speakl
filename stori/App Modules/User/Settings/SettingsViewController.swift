@@ -42,6 +42,11 @@ class SettingsViewController: UIViewController {
         loadData()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        (tabBarController as? MainTabBarViewController)?.setNonTransparent()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let nextVc = segue.destination as? WebBrowserViewController {
             nextVc.navbarWasHidden = true

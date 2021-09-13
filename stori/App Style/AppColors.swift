@@ -60,4 +60,13 @@ extension UIColor {
                                    green: 0.392,
                                    blue: 0.486,
                                    alpha: 1)
+    
+    static var inProgressYellow = UIColor(red: 0.967,
+                                          green: 0.672,
+                                          blue: 0.173,
+                                          alpha: 1)
+    static var completedPurple = UIColor(red: 0.468,
+                                         green: 0.286,
+                                         blue: 0.554,
+                                         alpha: 1)
 }

@@ -88,7 +88,7 @@
                                                                         <rect key="frame" x="0.0" y="92" width="116" height="24"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fB-Qm-LON">
-                                                                                <rect key="frame" x="47.5" y="3" width="21.5" height="16"/>
+                                                                                <rect key="frame" x="47.5" y="3" width="21" height="14"/>
                                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="12"/>
                                                                                 <color key="textColor" name="Text Black"/>
                                                                                 <nil key="highlightedColor"/>
@@ -179,7 +179,7 @@
                                                 <rect key="frame" x="0.0" y="198" width="414" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="hWu-tB-YBo">
-                                                        <rect key="frame" x="16" y="29.5" width="127.5" height="22.5"/>
+                                                        <rect key="frame" x="16" y="32" width="128" height="20"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                                         <color key="textColor" name="Text Black"/>
                                                         <nil key="highlightedColor"/>
@@ -222,10 +222,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="yVf-3L-4pg">
-                                                        <rect key="frame" x="74" y="0.0" width="322" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="322" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="HZf-AM-RSG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -234,7 +234,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username, Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="YW9-WO-CV0">
-                                                                <rect key="frame" x="0.0" y="23.5" width="322" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="322" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -301,10 +301,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gS4-qg-i9E">
-                                                        <rect key="frame" x="74" y="0.0" width="322" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="322" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="8Fe-QN-XIl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -313,7 +313,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change your current password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="v7E-3g-IZe">
-                                                                <rect key="frame" x="0.0" y="23.5" width="322" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="322" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -380,10 +380,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="GZ6-14-XpR">
-                                                        <rect key="frame" x="74" y="0.0" width="322" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="322" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="ZIW-WH-h3N">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -392,7 +392,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change the app language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="cYJ-Ff-Xh6">
-                                                                <rect key="frame" x="0.0" y="23.5" width="322" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="322" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -459,10 +459,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="VOy-Pn-737">
-                                                        <rect key="frame" x="74" y="0.0" width="322" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="322" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="UTX-Rs-nl3">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -471,7 +471,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change language level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="WML-Uu-2i5">
-                                                                <rect key="frame" x="0.0" y="23.5" width="322" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="322" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -538,10 +538,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="IiD-th-NcQ">
-                                                        <rect key="frame" x="74" y="0.0" width="322" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="322" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="gvJ-0Z-p12">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -550,7 +550,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adjust notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="nRz-gz-ikh">
-                                                                <rect key="frame" x="0.0" y="23.5" width="322" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="322" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -595,7 +595,7 @@
                                                 <rect key="frame" x="0.0" y="571" width="414" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-nE-qCC">
-                                                        <rect key="frame" x="16" y="29.5" width="66" height="22.5"/>
+                                                        <rect key="frame" x="16" y="32" width="66.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                                         <color key="textColor" name="Text Black"/>
                                                         <nil key="highlightedColor"/>
@@ -638,10 +638,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MLF-Ua-dYM">
-                                                        <rect key="frame" x="74" y="0.0" width="84.5" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="84" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Membership" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="5cf-Fa-0iH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="84.5" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="84" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -650,7 +650,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freemium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="2C7-vO-RDe">
-                                                                <rect key="frame" x="0.0" y="23.5" width="84.5" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="84" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -668,7 +668,7 @@
                                                         <rect key="frame" x="313" y="9" width="89" height="22"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Premium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yg-xM-qVz">
-                                                                <rect key="frame" x="12" y="4" width="65" height="14.5"/>
+                                                                <rect key="frame" x="12" y="4.5" width="65" height="13"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="11"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -741,10 +741,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iDt-xB-uK4">
-                                                        <rect key="frame" x="74" y="0.0" width="322" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="322" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Become a Teacher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="ZLP-0O-dEs">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -753,7 +753,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join our Teacher Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="qI9-5v-aPK">
-                                                                <rect key="frame" x="0.0" y="23.5" width="322" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="322" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -798,7 +798,7 @@
                                                 <rect key="frame" x="0.0" y="761" width="414" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="Peg-uh-5gy">
-                                                        <rect key="frame" x="16" y="29.5" width="61.5" height="22.5"/>
+                                                        <rect key="frame" x="16" y="32" width="61.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                                         <color key="textColor" name="Text Black"/>
                                                         <nil key="highlightedColor"/>
@@ -841,10 +841,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="BFX-Ev-sA2">
-                                                        <rect key="frame" x="74" y="0.0" width="322" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="322" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give us feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="Yhj-Wq-4j2">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -853,7 +853,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share your thoughts" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04R-bn-aAs">
-                                                                <rect key="frame" x="0.0" y="23.5" width="322" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="322" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -920,10 +920,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZXc-bf-SRR">
-                                                        <rect key="frame" x="74" y="0.0" width="322" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="322" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate our App on App Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="bTT-AP-1ua">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -932,7 +932,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate &amp; Review us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="Aez-VF-lSx">
-                                                                <rect key="frame" x="0.0" y="23.5" width="322" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="322" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -999,10 +999,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="O0j-M7-ZtH">
-                                                        <rect key="frame" x="74" y="0.0" width="322" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="322" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="PHd-9R-p5D">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -1011,7 +1011,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send us an email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="sC0-ch-jIR">
-                                                                <rect key="frame" x="0.0" y="23.5" width="322" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="322" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -1056,7 +1056,7 @@
                                                 <rect key="frame" x="0.0" y="1012" width="414" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Referral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="bmU-gs-MF1">
-                                                        <rect key="frame" x="16" y="29.5" width="61" height="22.5"/>
+                                                        <rect key="frame" x="16" y="32" width="59.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                                         <color key="textColor" name="Text Black"/>
                                                         <nil key="highlightedColor"/>
@@ -1099,10 +1099,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4pU-14-Q3b">
-                                                        <rect key="frame" x="74" y="0.0" width="322" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="322" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="Xj9-Y7-B4P">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -1111,7 +1111,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When they join, both of you will get a prize " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="87Z-6W-RJO">
-                                                                <rect key="frame" x="0.0" y="23.5" width="322" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="322" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -1178,10 +1178,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dEl-oa-GDX">
-                                                        <rect key="frame" x="74" y="0.0" width="322" height="40.5"/>
+                                                        <rect key="frame" x="74" y="0.0" width="322" height="37"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="MMf-ix-RoC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -1190,7 +1190,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem code to get special prizes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="geN-hr-5hP">
-                                                                <rect key="frame" x="0.0" y="23.5" width="322" height="17"/>
+                                                                <rect key="frame" x="0.0" y="21.5" width="322" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                                 <color key="textColor" name="Text Gray"/>
                                                                 <nil key="highlightedColor"/>
@@ -1235,7 +1235,7 @@
                                                 <rect key="frame" x="0.0" y="1202" width="414" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="wvS-1g-Ky4">
-                                                        <rect key="frame" x="16" y="29.5" width="40.5" height="22.5"/>
+                                                        <rect key="frame" x="16" y="32" width="41.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                                         <color key="textColor" name="Text Black"/>
                                                         <nil key="highlightedColor"/>
@@ -1278,10 +1278,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="wlz-3M-F7E">
-                                                        <rect key="frame" x="74" y="10.5" width="322" height="19.5"/>
+                                                        <rect key="frame" x="74" y="11.5" width="322" height="17.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="gCe-kn-kcI">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -1348,10 +1348,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JBx-Bm-KX5">
-                                                        <rect key="frame" x="74" y="10.5" width="322" height="19.5"/>
+                                                        <rect key="frame" x="74" y="11.5" width="322" height="17.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="FeA-sH-KDR">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -1425,10 +1425,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="z3M-rj-ukd">
-                                                        <rect key="frame" x="74" y="10.5" width="322" height="19.5"/>
+                                                        <rect key="frame" x="74" y="11.5" width="322" height="17.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="2OZ-DR-a0L">
-                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="322" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                                 <color key="textColor" name="Text Black"/>
                                                                 <nil key="highlightedColor"/>
@@ -1473,7 +1473,7 @@
                                                 <rect key="frame" x="0.0" y="1481" width="414" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VERSION 1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deI-iu-15p">
-                                                        <rect key="frame" x="165.5" y="8" width="83.5" height="26"/>
+                                                        <rect key="frame" x="166" y="8" width="82" height="26"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="12"/>
                                                         <color key="textColor" name="Text Gray"/>
                                                         <nil key="highlightedColor"/>

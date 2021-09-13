@@ -1070,7 +1070,7 @@
                                             <rect key="frame" x="25" y="18" width="364" height="54"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wd4-oW-IFb">
-                                                    <rect key="frame" x="52" y="17" width="296" height="20.5"/>
+                                                    <rect key="frame" x="52" y="16.5" width="296" height="21"/>
                                                     <color key="textColor" name="Text Black"/>
                                                     <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
@@ -1211,7 +1211,7 @@
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pya-4p-dgw">
-                                        <rect key="frame" x="61" y="55.5" width="277" height="20.5"/>
+                                        <rect key="frame" x="61" y="55" width="277" height="21"/>
                                         <color key="tintColor" name="AccentColor"/>
                                         <color key="textColor" name="Text Black"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="15"/>
@@ -1494,7 +1494,7 @@
                                 <rect key="frame" x="25" y="106" width="364" height="81"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Story Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nvs-Hr-mMq">
-                                        <rect key="frame" x="24" y="29" width="316" height="23.5"/>
+                                        <rect key="frame" x="24" y="28.5" width="316" height="24"/>
                                         <color key="textColor" name="Text Black"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>

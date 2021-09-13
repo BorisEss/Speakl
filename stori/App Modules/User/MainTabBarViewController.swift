@@ -13,36 +13,31 @@ class MainTabBarViewController: UITabBarController {
     private var addButton = UIButton()
     private var tipView: EasyTipView?
     
-    let item1 = UIStoryboard(name: "Main",
-                             bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
-    let item2 = UIStoryboard(name: "Main",
-                             bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
+    let item1 = UIStoryboard(name: "Learn",
+                             bundle: nil).instantiateViewController(withIdentifier: "MainViewController")
+//    let item2 = UIStoryboard(name: "Learn",
+//                             bundle: nil).instantiateViewController(withIdentifier: "LearnViewController")
     let item3 = UIStoryboard(name: "Settings",
                              bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tabBar.shadowImage = UIImage()
-        tabBar.backgroundImage = UIImage()
-        tabBar.shadow = true
-        tabBar.layer.shadowColor = UIColor.black.cgColor
-        tabBar.layer.shadowOpacity = 0.15
+        setTransparent()
 
         loadTabButtons()
-//        loadAddButton()
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        addButton.center = CGPoint(x: UIScreen.main.bounds.width / 2, y: 15)
+        addButton.center = CGPoint(x: UIScreen.main.bounds.width / 2, y: 25)
     }
     
     private func loadTabButtons() {
         item1.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_learn".localized,
                                         image: UIImage(named: "learnTab"), tag: 0)
-        item2.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_vocabulary".localized,
-                                        image: UIImage(named: "vocabularyTab"), tag: 0)
+//        item2.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_vocabulary".localized,
+//                                        image: UIImage(named: "vocabularyTab"), tag: 0)
         item3.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_profile".localized,
                                         image: UIImage(named: "profileTab"), tag: 0)
 
@@ -52,17 +47,19 @@ class MainTabBarViewController: UITabBarController {
                                                selector: #selector(self.updateTitles),
                                                name: .updateLanguage,
                                                object: nil)
+        loadAddButton()
     }
     
     private func loadAddButton() {
         guard let tabItems = tabBar.items else { return }
-        tabItems[0].titlePositionAdjustment = UIOffset(horizontal: -5, vertical: 0)
-        tabItems[1].titlePositionAdjustment = UIOffset(horizontal: -20, vertical: 0)
-        tabItems[2].titlePositionAdjustment = UIOffset(horizontal: 20, vertical: 0)
-        tabItems[3].titlePositionAdjustment = UIOffset(horizontal: 5, vertical: 0)
-        addButton.frame.size = CGSize(width: 71, height: 70)
-        addButton.setImage(UIImage(named: "add_stori_icon"), for: .normal)
-        addButton.center = CGPoint(x: UIScreen.main.bounds.width / 2, y: 15)
+        tabItems[0].titlePositionAdjustment = UIOffset(horizontal: -10, vertical: 0) // -5
+        tabItems[1].titlePositionAdjustment = UIOffset(horizontal: 10, vertical: 0) // 5
+//        tabItems[1].titlePositionAdjustment = UIOffset(horizontal: -20, vertical: 0)
+//        tabItems[2].titlePositionAdjustment = UIOffset(horizontal: 20, vertical: 0)
+//        tabItems[3].titlePositionAdjustment = UIOffset(horizontal: 5, vertical: 0)
+        addButton.frame.size = CGSize(width: 50, height: 50)
+        addButton.setImage(UIImage(named: "add_stori_icon_white"), for: .normal)
+        addButton.center = CGPoint(x: UIScreen.main.bounds.width / 2, y: 25)
         tabBar.addSubview(addButton)
         
         addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
@@ -125,7 +122,7 @@ class MainTabBarViewController: UITabBarController {
     
     @objc func updateTitles() {
         item1.title = "main_nav_controller_tab_title_learn".localized
-        item2.title = "main_nav_controller_tab_title_vocabulary".localized
+//        item2.title = "main_nav_controller_tab_title_vocabulary".localized
         item3.title = "main_nav_controller_tab_title_profile".localized
     }
     
@@ -137,5 +134,28 @@ class MainTabBarViewController: UITabBarController {
         if let nextScreen = controller as? TeacherNetworkViewController {
             UIApplication.getTopViewController()?.navigationController?.pushViewController(nextScreen, animated: true)
         }
+    }
+    
+    func setTransparent() {
+        tabBar.isTranslucent = true
+        tabBar.shadowImage = UIImage()
+        tabBar.backgroundImage = UIImage()
+        tabBar.backgroundColor = .clear
+        tabBar.barTintColor = .clear
+        tabBar.tintColor = .white
+        tabBar.unselectedItemTintColor = .white.withAlphaComponent(0.5)
+        addButton.setImage(UIImage(named: "add_stori_icon_white"), for: .normal)
+    }
+    
+    func setNonTransparent() {
+        tabBar.isTranslucent = true
+        tabBar.shadow = true
+        tabBar.layer.shadowColor = UIColor.black.cgColor
+        tabBar.layer.shadowOpacity = 0.15
+        tabBar.backgroundColor = .white
+        tabBar.tintColor = .accentColor
+        tabBar.barTintColor = .white
+        tabBar.unselectedItemTintColor = .lightGray
+        addButton.setImage(UIImage(named: "add_stori_icon_yellow"), for: .normal)
     }
 }
