@@ -89,6 +89,9 @@ class ImagePicker {
         
         let picker = YPImagePicker(configuration: config)
 
+        picker.modalPresentationStyle = .formSheet
+        picker.navigationBar.backgroundColor = .white
+        
         picker.didFinishPicking { [unowned picker] items, _ in
             if isVideo {
                 if let video = items.singleVideo {

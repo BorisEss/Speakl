@@ -17,6 +17,18 @@ class TeacherNetworkViewController: UIViewController {
         setUpLanguage()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if isMovingFromParent {
+            navigationController?.setNavigationBarHidden(true, animated: true)
+        }
+    }
+    
     private func setUpLanguage() {
         title = "teacher_network_title".localized
         createStoryLabel.text = "teacher_network_create_story".localized

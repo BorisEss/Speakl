@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QZP-0K-1gC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QZP-0K-1gC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,6 +15,9 @@
         </array>
         <array key="IBMPlexSans-Light.ttf">
             <string>IBMPlexSans-Light</string>
+        </array>
+        <array key="IBMPlexSans-Medium.ttf">
+            <string>IBMPlexSans-Medium</string>
         </array>
         <array key="IBMPlexSans-Regular.ttf">
             <string>IBMPlexSans</string>
@@ -182,17 +185,17 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjk-Lt-DG8">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="994"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="899"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FR1-cS-9g6">
-                                                <rect key="frame" x="63" y="38" width="2" height="800"/>
+                                                <rect key="frame" x="63" y="38" width="2" height="705"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="2" id="pYb-nb-ZSV"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5Nb-Uy-Xy2">
-                                                <rect key="frame" x="25" y="18" width="364" height="840"/>
+                                                <rect key="frame" x="25" y="18" width="364" height="745"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7g-Xn-Ejh" customClass="ItemViewWithSubtitleAndCheckmark" customModule="stori" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="80"/>
@@ -283,24 +286,8 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBv-Lq-SBX" customClass="ItemViewWithSubtitleAndCheckmark" customModule="stori" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="570" width="364" height="80"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="80" id="0dl-zu-d1a"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Background Sound"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="Name of Sound"/>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="10"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOptional" value="YES"/>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isEnabled" value="NO"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nN0-OJ-nMM" customClass="ItemViewWithSubtitleAndCheckmark" customModule="stori" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="665" width="364" height="80"/>
+                                                        <rect key="frame" x="0.0" y="570" width="364" height="80"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="bfu-fD-DZY"/>
@@ -315,7 +302,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xH3-zz-zEg" customClass="ItemViewWithSubtitleAndCheckmark" customModule="stori" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="760" width="364" height="80"/>
+                                                        <rect key="frame" x="0.0" y="665" width="364" height="80"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="A1p-Il-amR"/>
@@ -395,7 +382,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="7PK-99-yZ4"/>
                     <connections>
-                        <outlet property="backgroundSoundItem" destination="sBv-Lq-SBX" id="mvY-Fh-NpE"/>
                         <outlet property="categoryItem" destination="7g0-y1-Fz0" id="bpz-QN-TpD"/>
                         <outlet property="coverItem" destination="IYO-94-n16" id="bMM-1o-F7U"/>
                         <outlet property="createStoryButton" destination="bbN-Lb-rmP" id="pi8-qY-JEH"/>
@@ -406,11 +392,10 @@
                         <outlet property="subCategoryitem" destination="NGY-O4-7DW" id="vm4-29-eZ5"/>
                         <outlet property="topicItem" destination="sV8-xP-0Yg" id="5bn-Lb-4dl"/>
                         <segue destination="uZf-19-sCG" kind="show" identifier="showItemsList" id="pcZ-ae-y6f"/>
-                        <segue destination="xBS-qU-ku2" kind="show" identifier="showCoverList" id="d2m-CV-Nry"/>
-                        <segue destination="ZkI-DA-MiY" kind="show" identifier="showSoundList" id="ns1-eA-sIS"/>
                         <segue destination="vDX-yz-XZ0" kind="show" identifier="showVoiceOver" id="u0d-FW-vvQ"/>
                         <segue destination="WRE-MI-UA3" kind="show" identifier="showStoryText" id="4Yp-SK-VL9"/>
                         <segue destination="Ll9-ug-iq2" kind="show" identifier="showCreateStory" id="ebR-v3-cwe"/>
+                        <segue destination="aYS-yk-oKV" kind="show" identifier="showUploadCover" id="9Lx-7c-Dlj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mkI-7Q-gh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -598,7 +583,133 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TK6-nr-0AA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2560.8695652173915" y="557.8125"/>
+            <point key="canvasLocation" x="3264" y="558"/>
+        </scene>
+        <!--Upload Cover View Controller-->
+        <scene sceneID="ILO-t3-KXh">
+            <objects>
+                <viewController storyboardIdentifier="CSUploadCoverViewController" id="aYS-yk-oKV" customClass="CSUploadCoverViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DqH-iK-rFM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBJ-p1-xtB">
+                                <rect key="frame" x="30.5" y="114.5" width="353" height="627"/>
+                                <subviews>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lDJ-CU-skz">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="627"/>
+                                    </imageView>
+                                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztO-mw-qvr">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="627"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="YfL-X6-G3K">
+                                        <rect key="frame" x="101.5" y="189" width="150" height="249"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RXq-V6-fCd">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="8EA-qS-8OJ"/>
+                                                    <constraint firstAttribute="width" secondItem="RXq-V6-fCd" secondAttribute="height" multiplier="1:1" id="jeg-R4-PCk"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbi-lw-4Cq" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                                <rect key="frame" x="0.0" y="162" width="150" height="150"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Kbi-lw-4Cq" secondAttribute="height" multiplier="1:1" id="hBt-MH-uL9"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="circleStrokeSpin"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" name="AccentColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEU-Vj-3q3">
+                                                <rect key="frame" x="0.0" y="174" width="150" height="35"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="17"/>
+                                                <state key="normal" title="Choose Cover">
+                                                    <color key="titleColor" name="Text Gray"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="coverActionButtonPressed:" destination="aYS-yk-oKV" eventType="touchUpInside" id="m2T-nX-cCi"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Image or Video)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5s-ma-eys">
+                                                <rect key="frame" x="0.0" y="233" width="150" height="16"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="12"/>
+                                                <color key="textColor" name="Text Gray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Kbi-lw-4Cq" firstAttribute="width" secondItem="Kbi-lw-4Cq" secondAttribute="height" multiplier="1:1" id="6PJ-9f-HUa"/>
+                                            <constraint firstItem="DEU-Vj-3q3" firstAttribute="width" secondItem="RXq-V6-fCd" secondAttribute="width" id="ABb-3a-9n6"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lDJ-CU-skz" firstAttribute="leading" secondItem="QBJ-p1-xtB" secondAttribute="leading" id="6yp-wx-vRN"/>
+                                    <constraint firstAttribute="trailing" secondItem="ztO-mw-qvr" secondAttribute="trailing" id="7dX-uX-ILU"/>
+                                    <constraint firstAttribute="width" secondItem="QBJ-p1-xtB" secondAttribute="height" multiplier="9:16" id="Hup-SD-nMU"/>
+                                    <constraint firstItem="YfL-X6-G3K" firstAttribute="centerX" secondItem="QBJ-p1-xtB" secondAttribute="centerX" id="N3D-WT-yjl"/>
+                                    <constraint firstItem="lDJ-CU-skz" firstAttribute="top" secondItem="QBJ-p1-xtB" secondAttribute="top" id="cIk-8p-9j0"/>
+                                    <constraint firstAttribute="bottom" secondItem="ztO-mw-qvr" secondAttribute="bottom" id="hY3-qo-MRG"/>
+                                    <constraint firstItem="ztO-mw-qvr" firstAttribute="top" secondItem="QBJ-p1-xtB" secondAttribute="top" id="hr1-6f-sIz"/>
+                                    <constraint firstAttribute="trailing" secondItem="lDJ-CU-skz" secondAttribute="trailing" id="mfQ-ML-SB4"/>
+                                    <constraint firstItem="YfL-X6-G3K" firstAttribute="centerY" secondItem="QBJ-p1-xtB" secondAttribute="centerY" id="mn1-aP-LhW"/>
+                                    <constraint firstAttribute="bottom" secondItem="lDJ-CU-skz" secondAttribute="bottom" id="tzI-Ck-4bC"/>
+                                    <constraint firstItem="ztO-mw-qvr" firstAttribute="leading" secondItem="QBJ-p1-xtB" secondAttribute="leading" id="zkn-25-jlP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.47843137254901957" green="0.4779999852180481" blue="0.4779999852180481" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHx-Is-UYM">
+                                <rect key="frame" x="179.5" y="757.5" width="55" height="30"/>
+                                <state key="normal" title="Remove">
+                                    <color key="titleColor" name="Remove Red"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeButtonPressed:" destination="aYS-yk-oKV" eventType="touchUpInside" id="mtb-XF-gtr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lyQ-9i-8rc"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="kHx-Is-UYM" firstAttribute="centerX" secondItem="DqH-iK-rFM" secondAttribute="centerX" id="3Gy-YJ-IKS"/>
+                            <constraint firstItem="QBJ-p1-xtB" firstAttribute="height" secondItem="DqH-iK-rFM" secondAttribute="height" multiplier="0.7" id="Qs5-M8-DBV"/>
+                            <constraint firstItem="QBJ-p1-xtB" firstAttribute="centerX" secondItem="DqH-iK-rFM" secondAttribute="centerX" id="SiR-GG-H1F"/>
+                            <constraint firstItem="QBJ-p1-xtB" firstAttribute="centerY" secondItem="DqH-iK-rFM" secondAttribute="centerY" constant="-20" id="b4e-X3-3Pg"/>
+                            <constraint firstItem="kHx-Is-UYM" firstAttribute="top" secondItem="QBJ-p1-xtB" secondAttribute="bottom" constant="16" id="hjc-GS-6jJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oYu-qM-1kw"/>
+                    <connections>
+                        <outlet property="chooseCoverStackView" destination="YfL-X6-G3K" id="oU9-4S-WDg"/>
+                        <outlet property="coverActionButton" destination="DEU-Vj-3q3" id="kzU-eK-JrQ"/>
+                        <outlet property="coverButtonDescription" destination="W5s-ma-eys" id="RSa-76-lTz"/>
+                        <outlet property="coverImageView" destination="lDJ-CU-skz" id="Sv4-pu-hWi"/>
+                        <outlet property="coverVideoView" destination="ztO-mw-qvr" id="6pY-gP-8c9"/>
+                        <outlet property="removeButton" destination="kHx-Is-UYM" id="Vyy-pb-AyR"/>
+                        <outlet property="uploadIcon" destination="RXq-V6-fCd" id="bsl-6j-4Ld"/>
+                        <outlet property="uploadingActivityIndicator" destination="Kbi-lw-4Cq" id="VqJ-5B-x12"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MwQ-2y-l23" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2561" y="558"/>
         </scene>
         <!--Sound List View Controller-->
         <scene sceneID="Iq0-vm-lbU">
@@ -1563,7 +1674,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23e-MW-XL4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3328" y="-157"/>
+            <point key="canvasLocation" x="3264" y="-157"/>
         </scene>
         <!--Custom Item Pop Up View Controller-->
         <scene sceneID="MjC-qV-Xxf">
@@ -1918,7 +2029,7 @@ Please allow Stori the necessary time to review &amp; approve it. Meanwhile, you
         <designable name="bLr-31-wp0"/>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="HBG-DV-7yO"/>
+        <segue reference="Hku-MC-qDt"/>
         <segue reference="aEJ-TN-y2p"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1946,6 +2057,9 @@ Please allow Stori the necessary time to review &amp; approve it. Meanwhile, you
         </namedColor>
         <namedColor name="GradientTop">
             <color red="0.19599999487400055" green="0.27500000596046448" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Remove Red">
+            <color red="1" green="0.3919999897480011" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text Black">
             <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

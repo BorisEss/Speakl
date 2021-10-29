@@ -88,9 +88,12 @@
 		FA5608C6261F2CEF0062EE88 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5608C5261F2CEF0062EE88 /* Settings.storyboard */; };
 		FA5608C9261F2D150062EE88 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5608C8261F2D150062EE88 /* SettingsViewController.swift */; };
 		FA5608E6262034070062EE88 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5608E5262034070062EE88 /* IBMPlexSans-Medium.ttf */; };
+		FA5BCFBE27038CE8004A6B08 /* AppShadowNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BCFBD27038CE8004A6B08 /* AppShadowNavigationViewController.swift */; };
 		FA63DA39258CF3D400722CA6 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */; };
 		FA63DA3C258CF3EC00722CA6 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */; };
 		FA63DA3F258D030900722CA6 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63DA3E258D030900722CA6 /* NotificationExtension.swift */; };
+		FA652B5E26F239D900CEEA35 /* CSUploadCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA652B5D26F239D900CEEA35 /* CSUploadCoverViewController.swift */; };
+		FA652B6026F3513C00CEEA35 /* uploadIcon.gif in Resources */ = {isa = PBXBuildFile; fileRef = FA652B5F26F3513B00CEEA35 /* uploadIcon.gif */; };
 		FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830B256D544E007052D9 /* UILabelExtension.swift */; };
 		FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */; };
 		FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */; };
@@ -98,7 +101,6 @@
 		FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65831A256E7805007052D9 /* AuthViewControllerSetUp.swift */; };
 		FA666A27259CAA9900FD6462 /* LearningLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA666A26259CAA9900FD6462 /* LearningLanguage.swift */; };
 		FA6853F72599FA47008A7D63 /* IBMPlexSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6853F62599FA47008A7D63 /* IBMPlexSans-Light.ttf */; };
-		FA6853FA259B0B65008A7D63 /* AuthNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6853F9259B0B65008A7D63 /* AuthNavigationController.swift */; };
 		FA6853FE259B0DE3008A7D63 /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6853FD259B0DE3008A7D63 /* UINavigationBarExtension.swift */; };
 		FA6B0015258116B700438E80 /* LanguageLevelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0014258116B700438E80 /* LanguageLevelSelectionViewController.swift */; };
 		FA7B72D0256690C1003F9A0C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72CF256690C1003F9A0C /* UIViewExtension.swift */; };
@@ -319,9 +321,12 @@
 		FA5608C5261F2CEF0062EE88 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		FA5608C8261F2D150062EE88 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FA5608E5262034070062EE88 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		FA5BCFBD27038CE8004A6B08 /* AppShadowNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShadowNavigationViewController.swift; sourceTree = "<group>"; };
 		FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
 		FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FA63DA3E258D030900722CA6 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+		FA652B5D26F239D900CEEA35 /* CSUploadCoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUploadCoverViewController.swift; sourceTree = "<group>"; };
+		FA652B5F26F3513B00CEEA35 /* uploadIcon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = uploadIcon.gif; sourceTree = "<group>"; };
 		FA65830B256D544E007052D9 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardApperenceHandler.swift; sourceTree = "<group>"; };
 		FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerDelegates.swift; sourceTree = "<group>"; };
@@ -329,7 +334,6 @@
 		FA65831A256E7805007052D9 /* AuthViewControllerSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerSetUp.swift; sourceTree = "<group>"; };
 		FA666A26259CAA9900FD6462 /* LearningLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningLanguage.swift; sourceTree = "<group>"; };
 		FA6853F62599FA47008A7D63 /* IBMPlexSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Light.ttf"; sourceTree = "<group>"; };
-		FA6853F9259B0B65008A7D63 /* AuthNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationController.swift; sourceTree = "<group>"; };
 		FA6853FD259B0DE3008A7D63 /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		FA6B0014258116B700438E80 /* LanguageLevelSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLevelSelectionViewController.swift; sourceTree = "<group>"; };
 		FA7B72CF256690C1003F9A0C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -557,6 +561,7 @@
 				FA0E896225BFF91D00D80027 /* CSItemsListViewController.swift */,
 				FA46951F25C0A0D300F347B1 /* CSCustomItemViewController.swift */,
 				FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */,
+				FA652B5D26F239D900CEEA35 /* CSUploadCoverViewController.swift */,
 				FAB47D8625C156CB00B55F58 /* CSCoverListViewController.swift */,
 				FAA60E0C25C1A87300522F8A /* CSSoundListViewController.swift */,
 				FAF4162225C1D8E1005EE455 /* CSSoundListSearchViewController.swift */,
@@ -574,7 +579,6 @@
 			isa = PBXGroup;
 			children = (
 				FA3C26122569559C0089F646 /* Auth.storyboard */,
-				FA6853F9259B0B65008A7D63 /* AuthNavigationController.swift */,
 				FA4D4480257A9B3200398AE2 /* AuthViewController.swift */,
 				FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */,
 				FA65831A256E7805007052D9 /* AuthViewControllerSetUp.swift */,
@@ -742,6 +746,7 @@
 			children = (
 				FA7B72D625669A10003F9A0C /* Fonts */,
 				FA812D76256298450036F162 /* Assets.xcassets */,
+				FA652B5F26F3513B00CEEA35 /* uploadIcon.gif */,
 				FA999D9A25694D3E00B694FA /* Strings.strings */,
 			);
 			path = Ressources;
@@ -848,6 +853,7 @@
 				FA6853FD259B0DE3008A7D63 /* UINavigationBarExtension.swift */,
 				FA252CC825DB186000FF85E1 /* SwiftMessagesSegues.swift */,
 				FA4B709326209F2A00DE2582 /* LocalizationExtension.swift */,
+				FA5BCFBD27038CE8004A6B08 /* AppShadowNavigationViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1197,6 +1203,7 @@
 				FA7EF424262DAB2D00335CE6 /* Membership.storyboard in Resources */,
 				FA812D88256640BF0036F162 /* Tutorial.storyboard in Resources */,
 				FA7B72D825669A31003F9A0C /* IBMPlexSans-Regular.ttf in Resources */,
+				FA652B6026F3513C00CEEA35 /* uploadIcon.gif in Resources */,
 				FAA60E0A25C1952D00522F8A /* IBMPlexSans-LightItalic.ttf in Resources */,
 				FA876C7D25C80E6800E65B95 /* CSTextItemTableViewCell.xib in Resources */,
 				FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */,
@@ -1317,6 +1324,7 @@
 				FA4D4488257AA81900398AE2 /* Toast.swift in Sources */,
 				FA9F6C142583677400AC5197 /* UIColorExtension.swift in Sources */,
 				FA4B61882574F3EF005501BD /* KeychainManager.swift in Sources */,
+				FA5BCFBE27038CE8004A6B08 /* AppShadowNavigationViewController.swift in Sources */,
 				FA6853FE259B0DE3008A7D63 /* UINavigationBarExtension.swift in Sources */,
 				FAFF81BD25D2830100A9BE82 /* CreateStoryObject.swift in Sources */,
 				FA22A7EA2588E4C6001129E7 /* Interest.swift in Sources */,
@@ -1359,7 +1367,6 @@
 				FA252CC925DB186000FF85E1 /* SwiftMessagesSegues.swift in Sources */,
 				FA0E897425C0445F00D80027 /* ThumbnailItem.swift in Sources */,
 				FAE653ED25C3FB9700CC25A1 /* RecordButton.swift in Sources */,
-				FA6853FA259B0B65008A7D63 /* AuthNavigationController.swift in Sources */,
 				FA999DA12569514C00B694FA /* DefaultSettings.swift in Sources */,
 				FAFF82CD25D4431F00A9BE82 /* CSCoverPresenter.swift in Sources */,
 				FAFF92C225A44C5900A604C3 /* UploadFileTableViewCell.swift in Sources */,
@@ -1386,6 +1393,7 @@
 				FAFF92CD25A494AA00A604C3 /* JoinTNDocumentListViewController.swift in Sources */,
 				FA85364C25AC644D002607EC /* UploadClient.swift in Sources */,
 				FA16CE3625ED1231007B8354 /* CSChapterPartPresenter.swift in Sources */,
+				FA652B5E26F239D900CEEA35 /* CSUploadCoverViewController.swift in Sources */,
 				FAFC99F625C9757000D60AB4 /* CSTableViewCell.swift in Sources */,
 				FAC93A6126DFBC50003FACDA /* StoryLearningButton.swift in Sources */,
 				FA50420B25A611DE004E6EC9 /* ImagePreviewViewController.swift in Sources */,
@@ -1599,7 +1607,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;
@@ -1624,7 +1632,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;

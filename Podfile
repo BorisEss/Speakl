@@ -48,6 +48,7 @@ target 'stori' do
   pod 'QRCodeReader.swift'
   pod 'MBCircularProgressBar'
   pod 'SwipeMenuViewController'
+  pod 'SwiftyGif'
 #  pod 'GrowingTextView'
 #  pod 'SideMenu'
 #  pod 'SimpleCheckbox'

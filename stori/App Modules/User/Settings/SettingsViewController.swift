@@ -167,10 +167,6 @@ class SettingsViewController: UIViewController {
     }
     
     private func setUpNavigationBar() {
-        navigationController?.navigationBar.layer.shadowColor = UIColor.lightGray.cgColor
-        navigationController?.navigationBar.layer.shadowOpacity = 0.2
-        navigationController?.navigationBar.layer.shadowRadius = 8
-        navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 8)
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tXl-4H-KE3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qGc-HK-uLm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -275,10 +275,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPw-wW-xmt">
-                                                <rect key="frame" x="47" y="0.0" width="50" height="24"/>
+                                                <rect key="frame" x="47" y="0.0" width="94" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IN PROGRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYd-R0-j7m">
-                                                        <rect key="frame" x="8" y="4" width="34" height="16"/>
+                                                        <rect key="frame" x="8" y="4" width="78" height="16"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -297,10 +297,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LtT-KU-boh">
-                                                <rect key="frame" x="101" y="0.0" width="50" height="24"/>
+                                                <rect key="frame" x="145" y="0.0" width="85" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPLETED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nj3-rT-k3i">
-                                                        <rect key="frame" x="8" y="4" width="34" height="16"/>
+                                                        <rect key="frame" x="8" y="4" width="69" height="16"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -319,10 +319,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPF-j4-X1O">
-                                                <rect key="frame" x="155" y="0.0" width="52" height="24"/>
+                                                <rect key="frame" x="234" y="0.0" width="86.5" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★ PREMIUM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vB4-Ql-sfL">
-                                                        <rect key="frame" x="8" y="4" width="36" height="16"/>
+                                                        <rect key="frame" x="8" y="4" width="70.5" height="16"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -341,7 +341,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTN-2Q-g3T">
-                                                <rect key="frame" x="211" y="0.0" width="163" height="24"/>
+                                                <rect key="frame" x="324.5" y="0.0" width="49.5" height="24"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
@@ -708,28 +708,38 @@
             </objects>
             <point key="canvasLocation" x="2547.826086956522" y="47.544642857142854"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="3mB-QV-8B4">
+        <!--App Shadow Navigation View Controller-->
+        <scene sceneID="tMM-ke-X01">
             <objects>
-                <navigationController storyboardIdentifier="MainViewController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="tXl-4H-KE3" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ve1-sj-I2p">
+                <navigationController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="qGc-HK-uLm" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="xGE-Qr-jbn">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Text Black"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                        </textAttributes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </navigationBar>
-                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ggo-xd-V1e">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="zAd-Gn-qBE" kind="relationship" relationship="rootViewController" id="T8t-di-RI8"/>
+                        <segue destination="zAd-Gn-qBE" kind="relationship" relationship="rootViewController" id="iA3-Kx-3Gs"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A0N-S8-wGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTU-nw-VQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56.521739130434788" y="47.544642857142854"/>
+            <point key="canvasLocation" x="61" y="48"/>
         </scene>
     </scenes>
     <resources>
         <image name="bottom_video_shadow" width="375" height="166"/>
         <image name="comment" width="22" height="21"/>
         <image name="like" width="24" height="23"/>
+        <image name="navbarShadow" width="375" height="14"/>
         <image name="plus" width="8" height="8"/>
         <image name="share" width="14.5" height="18"/>
         <image name="test_user" width="96" height="96"/>
@@ -748,6 +758,9 @@
         </namedColor>
         <namedColor name="Tag Yellow">
             <color red="0.96470588235294119" green="0.6705882352941176" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Black">
+            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

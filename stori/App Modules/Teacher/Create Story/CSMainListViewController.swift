@@ -18,7 +18,7 @@ enum CSListType {
 class CSMainListViewController: UIViewController {
     
     private var showItemsListSegue: String = "showItemsList"
-    private var showCoverListSegue: String = "showCoverList"
+    private var showUploadCoverSegue: String = "showUploadCover"
     private var showSoundListSegue: String = "showSoundList"
     private var showStoryTextSegue: String = "showStoryText"
     private var showVoiceOverSegue: String = "showVoiceOver"
@@ -32,7 +32,6 @@ class CSMainListViewController: UIViewController {
     @IBOutlet weak var subCategoryitem: ItemViewWithSubtitleAndCheckmark!
     @IBOutlet weak var languageLevelItem: ItemViewWithSubtitleAndCheckmark!
     @IBOutlet weak var coverItem: ItemViewWithSubtitleAndCheckmark!
-    @IBOutlet weak var backgroundSoundItem: ItemViewWithSubtitleAndCheckmark!
     @IBOutlet weak var storyTextItem: ItemViewWithSubtitleAndCheckmark!
     @IBOutlet weak var storyVoiceOverItem: ItemViewWithSubtitleAndCheckmark!
     @IBOutlet weak var createStoryButton: RegularButton!
@@ -72,9 +71,6 @@ class CSMainListViewController: UIViewController {
                                 subtitle: "cs_main_list_language_level_subtitle".localized)
         coverItem.setUp(title: "cs_main_list_cover_title".localized,
                         subtitle: "cs_main_list_cover_subtitle".localized)
-        backgroundSoundItem.setUp(title: "cs_main_list_bg_sound_title".localized,
-                                  subtitle: "cs_main_list_bg_sound_subtitle".localized,
-                                  isOptional: true)
         storyTextItem.setUp(title: "cs_main_list_story_text_title".localized,
                             subtitle: "cs_main_list_story_text_subtitle".localized)
         storyVoiceOverItem.setUp(title: "cs_main_list_voice_over_title".localized,
@@ -107,10 +103,7 @@ class CSMainListViewController: UIViewController {
             self.performSegue(withIdentifier: self.showItemsListSegue, sender: nil)
         }
         coverItem.onClick = {
-            self.performSegue(withIdentifier: self.showCoverListSegue, sender: nil)
-        }
-        backgroundSoundItem.onClick = {
-            self.performSegue(withIdentifier: self.showSoundListSegue, sender: nil)
+            self.performSegue(withIdentifier: self.showUploadCoverSegue, sender: nil)
         }
         storyTextItem.onClick = {
             self.performSegue(withIdentifier: self.showStoryTextSegue, sender: nil)
@@ -157,12 +150,6 @@ class CSMainListViewController: UIViewController {
         } else {
             coverItem.subtitle = "cs_main_list_cover_subtitle".localized
         }
-        backgroundSoundItem.isChecked = CreateStoryObject.shared?.chapter?.backgroundSound != nil
-        if backgroundSoundItem.isChecked {
-            backgroundSoundItem.subtitle = CreateStoryObject.shared?.chapter?.backgroundSound?.name
-        } else {
-            backgroundSoundItem.subtitle = "cs_main_list_bg_sound_subtitle".localized
-        }
         storyTextItem.isChecked = !(CreateStoryObject.shared?.chapterStoryParts?.isEmpty ?? true)
         storyVoiceOverItem.isChecked = CreateStoryObject.shared?.chapter?.voiceOver != nil
     }
@@ -174,7 +161,6 @@ class CSMainListViewController: UIViewController {
         subCategoryitem.isEnabled = categoryItem.isChecked
         languageLevelItem.isEnabled = subCategoryitem.isChecked
         coverItem.isEnabled = languageLevelItem.isChecked
-        backgroundSoundItem.isEnabled = coverItem.isChecked
         storyTextItem.isEnabled = languageLevelItem.isChecked
         storyVoiceOverItem.isEnabled = languageLevelItem.isChecked
         if !languageItem.isChecked {
