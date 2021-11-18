@@ -1,5 +1,5 @@
 //
-//  AuthPresenter.swift
+//  AuthService.swift
 //  stori
 //
 //  Created by Alex on 25.11.2020.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-class AuthPresenter {
+class AuthService {
     
     func logIn(email: String,
                password: String,

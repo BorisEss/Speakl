@@ -14,4 +14,13 @@ struct CreateStoryModel: Decodable {
     var topic: Topic?
     var category: Category?
     var subCategory: SubCategory?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case language
+        case topic
+        case category
+        case subCategory = "sub_category"
+    }
 }

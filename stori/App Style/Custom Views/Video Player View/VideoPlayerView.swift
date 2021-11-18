@@ -8,6 +8,8 @@
 import UIKit
 import AVKit
 
+/// This is a custom made Video Player View, which loads AVPlayer to play a video inside the view.
+///
 class VideoPlayerView: UIView {
 
     // MARK: - View initializers
@@ -47,6 +49,42 @@ class VideoPlayerView: UIView {
         if isLoaded {
             playerLayer?.frame = self.videoView.bounds
         }
+    }
+    
+    // MARK: - Loading data & actions
+    
+    func load(file: LocalFile) {
+        if file.fileType == .video,
+           let urlString = file.url,
+           let url = URL(string: urlString) {
+            let item = AVPlayerItem(url: url)
+            player.replaceCurrentItem(with: item)
+        } else {
+            return
+        }
+    }
+    
+    func load(player: AVPlayer,
+              isMuted: Bool = false,
+              autoReplay: Bool = false,
+              shouldPlay: Bool = false) {
+        
+    }
+    
+    func play() {
+        player.play()
+    }
+    
+    func pause() {
+        player.pause()
+    }
+    
+    func clear() {
+        
+    }
+    
+    func mute(_ isMuted: Bool) {
+        
     }
     
     deinit {

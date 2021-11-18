@@ -1,5 +1,5 @@
 //
-//  CSSubCategoryPresenter.swift
+//  CSSubCategoryService.swift
 //  stori
 //
 //  Created by Alex on 10.02.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-final class CSSubCategoryPresenter {
+final class CSSubCategoryService {
     func getSubCategories(of category: Category,
                           with language: Language,
                           page: Int = 1) -> Promise<ResponseObject<SubCategory>> {

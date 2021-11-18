@@ -1,5 +1,5 @@
 //
-//  JoinTNPresenter.swift
+//  JoinTNService.swift
 //  stori
 //
 //  Created by Alex on 14.01.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-class JoinTNPresenter {
+class JoinTNService {
     func join(personalId: [LocalFile],
               documentId: [LocalFile],
               selfie: [LocalFile],

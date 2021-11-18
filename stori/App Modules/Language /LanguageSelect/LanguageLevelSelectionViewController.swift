@@ -37,7 +37,7 @@ class LanguageLevelSelectionViewController: UIViewController {
         setUpLanguage()
 
         if let language = learningLanguage {
-            LanguagePresenter().getLanguageLevels(language: language)
+            LanguageService().getLanguageLevels(language: language)
                 .done { (levels) in
                     self.levels = levels
                 }

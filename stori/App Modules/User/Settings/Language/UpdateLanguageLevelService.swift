@@ -1,5 +1,5 @@
 //
-//  UpdateLanguageLevelPresenter.swift
+//  UpdateLanguageLevelService.swift
 //  stori
 //
 //  Created by Alex on 04.05.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-class UpdateLanguageLevelPresenter {
+class UpdateLanguageLevelService {
     func getGrammar(language: Language,
                     languageLevel: LanguageLevel) -> Promise<String> {
         return GrammarClient().getGrammar(query: [

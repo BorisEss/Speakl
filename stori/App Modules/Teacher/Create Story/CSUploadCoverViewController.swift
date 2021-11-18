@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftyGif
 import NVActivityIndicatorView
 
 enum CSUploadCoverState {
@@ -19,6 +18,8 @@ enum CSUploadCoverState {
 
 class CSUploadCoverViewController: UIViewController {
     
+    lazy var cover = CreateStoryObject.shared?.chapter?.cover
+        
     var state: CSUploadCoverState = .empty {
         didSet {
             switch state {
@@ -27,23 +28,23 @@ class CSUploadCoverViewController: UIViewController {
                 coverImageView.isHidden = true
                 coverVideoView.isHidden = true
                 chooseCoverStackView.isHidden = false
-                uploadIcon.isHidden = false
-                uploadingActivityIndicator.isHidden = true
+                uploadIconView.isHidden = false
+                uploadingActivityIndicatorView.isHidden = true
                 uploadingActivityIndicator.stopAnimating()
+                coverActionButton.setTitle("Upload Cover", for: .normal)
                 coverActionButton.isHidden = false
                 coverButtonDescription.isHidden = false
-                coverButtonDescription.text = "(Image or Video)"
+                coverButtonDescription.text = "Static image or video\n720x1280 resolution or higher\nUp to 30 seconds"
             case .uploadingImage:
                 removeButton.isHidden = true
                 coverImageView.isHidden = false
                 coverImageView.alpha = 0.1
                 coverVideoView.isHidden = true
                 chooseCoverStackView.isHidden = false
-                uploadIcon.isHidden = true
-                uploadingActivityIndicator.isHidden = false
+                uploadIconView.isHidden = true
+                uploadingActivityIndicatorView.isHidden = false
                 uploadingActivityIndicator.startAnimating()
-                coverActionButton.setTitle("Cancel", for: .normal)
-                coverButtonDescription.isHidden = false
+                coverButtonDescription.isHidden = true
                 coverButtonDescription.text = "Please wait until upload is finished"
             case .uploadingVideo:
                 removeButton.isHidden = true
@@ -51,11 +52,10 @@ class CSUploadCoverViewController: UIViewController {
                 coverVideoView.isHidden = false
                 coverVideoView.alpha = 0.1
                 chooseCoverStackView.isHidden = false
-                uploadIcon.isHidden = true
-                uploadingActivityIndicator.isHidden = false
+                uploadIconView.isHidden = true
+                uploadingActivityIndicatorView.isHidden = false
                 uploadingActivityIndicator.startAnimating()
-                coverActionButton.setTitle("Cancel", for: .normal)
-                coverButtonDescription.isHidden = false
+                coverButtonDescription.isHidden = true
                 coverButtonDescription.text = "Please wait until upload is finished"
             case .finishedImage:
                 removeButton.isHidden = false
@@ -78,27 +78,34 @@ class CSUploadCoverViewController: UIViewController {
     private var pickedFile: LocalFile?
 
     @IBOutlet weak var chooseCoverStackView: UIStackView!
+    @IBOutlet weak var uploadIconView: UIView!
     @IBOutlet weak var uploadIcon: UIImageView!
+    @IBOutlet weak var uploadingActivityIndicatorView: UIView!
     @IBOutlet weak var uploadingActivityIndicator: NVActivityIndicatorView!
     @IBOutlet weak var coverActionButton: UIButton!
     @IBOutlet weak var coverButtonDescription: UILabel!
     @IBOutlet weak var coverImageView: UIImageView!
-    @IBOutlet weak var coverVideoView: UIView!
+    @IBOutlet weak var coverVideoView: VideoPlayerView!
     
     @IBOutlet weak var removeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "cs_main_list_cover_title".localized
-
-        if let gif = try? UIImage(gifName: "uploadIcon.gif") {
-            uploadIcon.setGifImage(gif)
-        }
         
         state = .empty
         
-        // TODO: Remove this line
-        Toast.warning("This screen isn't completed, here only UI is ready, functional to upload cover is in progress")
+        checkForSavedCover()
+    }
+    
+    private func savePickedMedia() {
+        guard let chapterId = CreateStoryObject.shared?.chapter?.id else { return }
+        CSPresenter.chapter.updateChapter(chapterId: chapterId,
+                                          coverId: pickedFile?.id)
+            .done { (chapter) in
+                CreateStoryObject.shared?.chapter = chapter
+            }
+            .cauterize()
     }
 
     @IBAction func coverActionButtonPressed(_ sender: Any) {
@@ -106,11 +113,11 @@ class CSUploadCoverViewController: UIViewController {
         case .empty:
             let imagePickerController: UIAlertController
             if UIDevice.current.userInterfaceIdiom == .pad {
-                imagePickerController = UIAlertController(title: nil,
+                imagePickerController = UIAlertController(title: "Choose media type",
                                                           message: nil,
                                                           preferredStyle: .alert)
             } else {
-                imagePickerController = UIAlertController(title: nil,
+                imagePickerController = UIAlertController(title: "Choose media type",
                                                           message: nil,
                                                           preferredStyle: .actionSheet)
             }
@@ -123,22 +130,32 @@ class CSUploadCoverViewController: UIViewController {
                     self.pickedFile = file
                     self.coverImageView.image = file.image
                     self.state = .uploadingImage
+                    file.upload()
+                    file.finishedUpload = { fileId in
+                        self.state = .finishedImage
+                        self.savePickedMedia()
+                    }
                 }
             }
             imagePickerController.addAction(imageAction)
             let videoAction = UIAlertAction(title: "Video", style: .default) { _ in
                 ImagePicker.pickVideo(from: .library, completion: { file in
                     self.pickedFile = file
+                    self.coverImageView.image = file.image
                     self.state = .uploadingVideo
+                    file.upload()
+                    file.finishedUpload = { fileId in
+                        self.state = .finishedVideo
+                        self.savePickedMedia()
+                        self.coverImageView.isHidden = true
+                        self.coverVideoView.load(file: file)
+                        self.coverVideoView.play()
+                    }
                 })
             }
             imagePickerController.addAction(videoAction)
             self.present(imagePickerController, animated: true)
-        case .uploadingImage:
-            state = .finishedImage
-        case .uploadingVideo:
-            state = .finishedVideo
-        case .finishedImage, .finishedVideo:
+        case .uploadingImage, .uploadingVideo, .finishedImage, .finishedVideo:
             break
         }
     }
@@ -146,5 +163,12 @@ class CSUploadCoverViewController: UIViewController {
     @IBAction func removeButtonPressed(_ sender: Any) {
         pickedFile = nil
         state = .empty
+        savePickedMedia()
+    }
+    
+    private func checkForSavedCover() {
+        guard let cover = cover else {
+            return
+        }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  CSVocabularyPresenter.swift
+//  CSVocabularyService.swift
 //  stori
 //
 //  Created by Alex on 20.02.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-class CSVocabularyPresenter {
+class CSVocabularyService {
     func getVocabularyId(language: Language,
                          languageLevel: LanguageLevel,
                          subCategory: SubCategory) -> Promise<Int> {

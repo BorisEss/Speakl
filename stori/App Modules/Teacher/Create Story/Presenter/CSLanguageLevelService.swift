@@ -1,5 +1,5 @@
 //
-//  CSLanguageLevelPresenter.swift
+//  CSLanguageLevelService.swift
 //  stori
 //
 //  Created by Alex on 10.02.2021.
@@ -8,9 +8,9 @@
 import Foundation
 import PromiseKit
 
-final class CSLanguageLevelPresenter {
+final class CSLanguageLevelService {
     func getLanguageLevels(language: Language) -> Promise<[LanguageLevel]> {
-        return LanguagePresenter().getLanguageLevels(language: language)
+        return LanguageService().getLanguageLevels(language: language)
     }
     
     func createLanguageLevel(levelName: String) -> Promise<LanguageLevel> {

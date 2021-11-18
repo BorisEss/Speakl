@@ -24,7 +24,7 @@ extension AuthViewController {
         firstBottomButton.isEnabled = false
         secondBottomButton.isEnabled = false
         
-        AuthPresenter().logIn(email: email,
+        AuthService().logIn(email: email,
                               password: password) { isSuccess in
             self.nextButton.isHidden = false
             self.progressActivityIndicator.stopAnimating()
@@ -59,7 +59,7 @@ extension AuthViewController {
             repeatPasswordTextField.isEnabled = false
             firstBottomButton.isEnabled = false
             secondBottomButton.isEnabled = false
-            AuthPresenter().signUp(username: username,
+            AuthService().signUp(username: username,
                                    email: email,
                                    password: password) { isSuccess in
                 self.nextButton.isHidden = false
@@ -86,7 +86,7 @@ extension AuthViewController {
         firstBottomButton.isEnabled = false
         secondBottomButton.isEnabled = false
         
-        AuthPresenter().forgotPassword(email: email) { isSuccess in
+        AuthService().forgotPassword(email: email) { isSuccess in
             self.nextButton.isHidden = false
             self.progressActivityIndicator.stopAnimating()
             self.emailTextField.isEnabled = true
@@ -120,7 +120,7 @@ extension AuthViewController {
             firstBottomButton.isEnabled = false
             secondBottomButton.isEnabled = false
             
-            AuthPresenter().resetPassword(code: code,
+            AuthService().resetPassword(code: code,
                                           password: password) { (isSuccess) in
                 self.nextButton.isHidden = false
                 self.progressActivityIndicator.stopAnimating()

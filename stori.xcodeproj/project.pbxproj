@@ -22,7 +22,7 @@
 		FA16CE2C25ECE60D007B8354 /* StoryTextSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16CE2B25ECE60D007B8354 /* StoryTextSection.swift */; };
 		FA16CE2F25ECE62E007B8354 /* StoryImageSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16CE2E25ECE62E007B8354 /* StoryImageSection.swift */; };
 		FA16CE3325ECE65C007B8354 /* StoryVideoSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16CE3225ECE65C007B8354 /* StoryVideoSection.swift */; };
-		FA16CE3625ED1231007B8354 /* CSChapterPartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16CE3525ED1231007B8354 /* CSChapterPartPresenter.swift */; };
+		FA16CE3625ED1231007B8354 /* CSChapterPartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16CE3525ED1231007B8354 /* CSChapterPartService.swift */; };
 		FA1F714925BEF066009AE0D4 /* CreateStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1F714825BEF066009AE0D4 /* CreateStory.storyboard */; };
 		FA1F714D25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1F714C25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard */; };
 		FA22A7EA2588E4C6001129E7 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22A7E92588E4C6001129E7 /* Interest.swift */; };
@@ -30,10 +30,10 @@
 		FA270C00263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */; };
 		FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */; };
 		FA3553C125DBA503008DD1FF /* CSCustomItemPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */; };
-		FA3553E425DD0FD2008DD1FF /* CSChapterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553E325DD0FD2008DD1FF /* CSChapterPresenter.swift */; };
+		FA3553E425DD0FD2008DD1FF /* CSChapterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553E325DD0FD2008DD1FF /* CSChapterService.swift */; };
 		FA3A467526381A7A00BF0CB5 /* ShareFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */; };
 		FA3A467726381A8300BF0CB5 /* ShareFeedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */; };
-		FA3A467926381F5100BF0CB5 /* ShareFeedbackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467826381F5100BF0CB5 /* ShareFeedbackPresenter.swift */; };
+		FA3A467926381F5100BF0CB5 /* ShareFeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467826381F5100BF0CB5 /* ShareFeedbackService.swift */; };
 		FA3A467B26397BDA00BF0CB5 /* RatingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3A467A26397BD900BF0CB5 /* RatingButton.xib */; };
 		FA3A467D26397CFE00BF0CB5 /* RatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467C26397CFE00BF0CB5 /* RatingButton.swift */; };
 		FA3C26132569559C0089F646 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3C26122569559C0089F646 /* Auth.storyboard */; };
@@ -48,7 +48,7 @@
 		FA46951825C0521B00F347B1 /* ItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46951725C0521B00F347B1 /* ItemProtocol.swift */; };
 		FA46951C25C0553E00F347B1 /* CSPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46951B25C0553E00F347B1 /* CSPresenter.swift */; };
 		FA46952025C0A0D300F347B1 /* CSCustomItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46951F25C0A0D300F347B1 /* CSCustomItemViewController.swift */; };
-		FA4B6112256EAEA1005501BD /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B6111256EAEA1005501BD /* AuthPresenter.swift */; };
+		FA4B6112256EAEA1005501BD /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B6111256EAEA1005501BD /* AuthService.swift */; };
 		FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B6115256F7BE7005501BD /* Endpoints.swift */; };
 		FA4B61342570036C005501BD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B61332570036C005501BD /* APIClient.swift */; };
 		FA4B613725700749005501BD /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B613625700749005501BD /* Commons.swift */; };
@@ -93,7 +93,6 @@
 		FA63DA3C258CF3EC00722CA6 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */; };
 		FA63DA3F258D030900722CA6 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63DA3E258D030900722CA6 /* NotificationExtension.swift */; };
 		FA652B5E26F239D900CEEA35 /* CSUploadCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA652B5D26F239D900CEEA35 /* CSUploadCoverViewController.swift */; };
-		FA652B6026F3513C00CEEA35 /* uploadIcon.gif in Resources */ = {isa = PBXBuildFile; fileRef = FA652B5F26F3513B00CEEA35 /* uploadIcon.gif */; };
 		FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830B256D544E007052D9 /* UILabelExtension.swift */; };
 		FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */; };
 		FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */; };
@@ -126,9 +125,9 @@
 		FA812DAA256682F70036F162 /* RegularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812DA9256682F70036F162 /* RegularButton.swift */; };
 		FA85364C25AC644D002607EC /* UploadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85364B25AC644D002607EC /* UploadClient.swift */; };
 		FA85364F25AC6465002607EC /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85364E25AC6465002607EC /* Checksum.swift */; };
-		FA85365725B08EF6002607EC /* JoinTNPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85365625B08EF6002607EC /* JoinTNPresenter.swift */; };
-		FA8593DE25E1691D004CAC9E /* CSVocabularyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8593DD25E1691D004CAC9E /* CSVocabularyPresenter.swift */; };
-		FA8593E125E1692C004CAC9E /* CSGrammarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8593E025E1692C004CAC9E /* CSGrammarPresenter.swift */; };
+		FA85365725B08EF6002607EC /* JoinTNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85365625B08EF6002607EC /* JoinTNService.swift */; };
+		FA8593DE25E1691D004CAC9E /* CSVocabularyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8593DD25E1691D004CAC9E /* CSVocabularyService.swift */; };
+		FA8593E125E1692C004CAC9E /* CSGrammarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8593E025E1692C004CAC9E /* CSGrammarService.swift */; };
 		FA8593E425E16DDB004CAC9E /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8593E325E16DDB004CAC9E /* Grammar.swift */; };
 		FA85A69A262EA255008E601C /* InAppPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85A699262EA254008E601C /* InAppPurchaseManager.swift */; };
 		FA85A702262F1F62008E601C /* MembershipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85A701262F1F62008E601C /* MembershipCollectionViewCell.swift */; };
@@ -147,7 +146,7 @@
 		FA94560A25C557C9003E54F0 /* VocabularyItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA94560825C557C9003E54F0 /* VocabularyItemTableViewCell.xib */; };
 		FA94560F25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94560D25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.swift */; };
 		FA94561025C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA94560E25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib */; };
-		FA960AB4263A9CF3001ACB21 /* RedeemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA960AB3263A9CF3001ACB21 /* RedeemPresenter.swift */; };
+		FA960AB4263A9CF3001ACB21 /* RedeemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA960AB3263A9CF3001ACB21 /* RedeemService.swift */; };
 		FA960AB7263AC48B001ACB21 /* UpdateLanguage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA960AB6263AC48B001ACB21 /* UpdateLanguage.storyboard */; };
 		FA960AB9263AC4A8001ACB21 /* UpdateLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA960AB8263AC4A8001ACB21 /* UpdateLanguageViewController.swift */; };
 		FA999D922568F30B00B694FA /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */; };
@@ -156,7 +155,7 @@
 		FA999DA12569514C00B694FA /* DefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999DA02569514C00B694FA /* DefaultSettings.swift */; };
 		FA9BCB4A26417BB0009B1DDB /* VocabularyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4926417BB0009B1DDB /* VocabularyClient.swift */; };
 		FA9BCB4C26417BC5009B1DDB /* GrammarClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4B26417BC5009B1DDB /* GrammarClient.swift */; };
-		FA9BCB4E26417D3D009B1DDB /* UpdateLanguageLevelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4D26417D3D009B1DDB /* UpdateLanguageLevelPresenter.swift */; };
+		FA9BCB4E26417D3D009B1DDB /* UpdateLanguageLevelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4D26417D3D009B1DDB /* UpdateLanguageLevelService.swift */; };
 		FA9BCB5026417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4F26417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift */; };
 		FA9BCB5226417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB5126417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift */; };
 		FA9F6C0B2582882700AC5197 /* LanguageLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F6C0A2582882700AC5197 /* LanguageLevel.swift */; };
@@ -167,14 +166,10 @@
 		FA9F70F225C69E3F00A16C61 /* CSAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F70F025C69E3F00A16C61 /* CSAddTableViewCell.swift */; };
 		FA9F70F325C69E3F00A16C61 /* CSAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9F70F125C69E3F00A16C61 /* CSAddTableViewCell.xib */; };
 		FAA60E0A25C1952D00522F8A /* IBMPlexSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA60E0925C1952D00522F8A /* IBMPlexSans-LightItalic.ttf */; };
-		FAA60E0D25C1A87300522F8A /* CSSoundListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA60E0C25C1A87300522F8A /* CSSoundListViewController.swift */; };
 		FAAA96D8261DE6A800B53D6C /* InterestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96D6261DE6A800B53D6C /* InterestTableViewCell.swift */; };
 		FAAA96D9261DE6A800B53D6C /* InterestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAA96D7261DE6A800B53D6C /* InterestTableViewCell.xib */; };
 		FAAF7CBF26304B220007E63B /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF7CBE26304B220007E63B /* Vibration.swift */; };
 		FAAF7CC226306F0F0007E63B /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF7CC126306F0F0007E63B /* Number.swift */; };
-		FAB47D8725C156CB00B55F58 /* CSCoverListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB47D8625C156CB00B55F58 /* CSCoverListViewController.swift */; };
-		FAB47D8C25C15A3F00B55F58 /* CSCoverCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB47D8A25C15A3F00B55F58 /* CSCoverCardCell.swift */; };
-		FAB47D8D25C15A3F00B55F58 /* CSCoverCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB47D8B25C15A3F00B55F58 /* CSCoverCardCell.xib */; };
 		FAB47D9125C1725200B55F58 /* CoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB47D9025C1725200B55F58 /* CoverImage.swift */; };
 		FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB670C125DE623100DA5CA8 /* CSChapterModel.swift */; };
 		FAB84DC426CFAE1F00B9C5A0 /* StoryVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB84DC326CFAE1F00B9C5A0 /* StoryVideoListViewController.swift */; };
@@ -194,7 +189,7 @@
 		FAC97F8626CE96D9008B2CEF /* StoryVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC97F8526CE96D9008B2CEF /* StoryVideoViewController.swift */; };
 		FACF0AA825E2A6DD00F3298B /* VocabularyId.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF0AA725E2A6DD00F3298B /* VocabularyId.swift */; };
 		FAD804C025BEC757005451B6 /* CSStoryTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD804BF25BEC757005451B6 /* CSStoryTitleViewController.swift */; };
-		FADA06BF257F67CB000333FF /* LanguagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA06BE257F67CB000333FF /* LanguagePresenter.swift */; };
+		FADA06BF257F67CB000333FF /* LanguageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA06BE257F67CB000333FF /* LanguageService.swift */; };
 		FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */; };
 		FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */; };
 		FAE2105925768C2100A3D971 /* LanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */; };
@@ -214,20 +209,17 @@
 		FAF2690B25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2690A25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift */; };
 		FAF2690E25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2690D25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib */; };
 		FAF2691225BF32AE00FFDE4A /* CSMainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2691125BF32AE00FFDE4A /* CSMainListViewController.swift */; };
-		FAF4162325C1D8E1005EE455 /* CSSoundListSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4162225C1D8E1005EE455 /* CSSoundListSearchViewController.swift */; };
 		FAF452F125D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF452F025D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift */; };
 		FAFC99F625C9757000D60AB4 /* CSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC99F525C9757000D60AB4 /* CSTableViewCell.swift */; };
 		FAFD404F263C136800305326 /* UpdateLanguageLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD404E263C136800305326 /* UpdateLanguageLevelViewController.swift */; };
 		FAFF81BA25D277D300A9BE82 /* CreateStoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF81B925D277D300A9BE82 /* CreateStoryModel.swift */; };
 		FAFF81BD25D2830100A9BE82 /* CreateStoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF81BC25D2830100A9BE82 /* CreateStoryObject.swift */; };
-		FAFF82C025D4429300A9BE82 /* CSStoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82BF25D4429300A9BE82 /* CSStoryPresenter.swift */; };
-		FAFF82C325D442B400A9BE82 /* CSTopicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82C225D442B400A9BE82 /* CSTopicPresenter.swift */; };
-		FAFF82C625D442D100A9BE82 /* CSCategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82C525D442D100A9BE82 /* CSCategoryPresenter.swift */; };
-		FAFF82CA25D4430000A9BE82 /* CSSubCategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82C925D4430000A9BE82 /* CSSubCategoryPresenter.swift */; };
-		FAFF82CD25D4431F00A9BE82 /* CSCoverPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82CC25D4431F00A9BE82 /* CSCoverPresenter.swift */; };
-		FAFF82D025D4433D00A9BE82 /* CSBackgroundSoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82CF25D4433D00A9BE82 /* CSBackgroundSoundPresenter.swift */; };
-		FAFF82D325D4435E00A9BE82 /* CSLanguagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82D225D4435E00A9BE82 /* CSLanguagePresenter.swift */; };
-		FAFF82D625D4437A00A9BE82 /* CSLanguageLevelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82D525D4437A00A9BE82 /* CSLanguageLevelPresenter.swift */; };
+		FAFF82C025D4429300A9BE82 /* CSStoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82BF25D4429300A9BE82 /* CSStoryService.swift */; };
+		FAFF82C325D442B400A9BE82 /* CSTopicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82C225D442B400A9BE82 /* CSTopicService.swift */; };
+		FAFF82C625D442D100A9BE82 /* CSCategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82C525D442D100A9BE82 /* CSCategoryService.swift */; };
+		FAFF82CA25D4430000A9BE82 /* CSSubCategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82C925D4430000A9BE82 /* CSSubCategoryService.swift */; };
+		FAFF82D325D4435E00A9BE82 /* CSLanguageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82D225D4435E00A9BE82 /* CSLanguageService.swift */; };
+		FAFF82D625D4437A00A9BE82 /* CSLanguageLevelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82D525D4437A00A9BE82 /* CSLanguageLevelService.swift */; };
 		FAFF92C225A44C5900A604C3 /* UploadFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF92C025A44C5900A604C3 /* UploadFileTableViewCell.swift */; };
 		FAFF92C325A44C5900A604C3 /* UploadFileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFF92C125A44C5900A604C3 /* UploadFileTableViewCell.xib */; };
 		FAFF92C725A4941400A604C3 /* JoinTNAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF92C625A4941400A604C3 /* JoinTNAgreementViewController.swift */; };
@@ -254,7 +246,7 @@
 		FA16CE2B25ECE60D007B8354 /* StoryTextSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTextSection.swift; sourceTree = "<group>"; };
 		FA16CE2E25ECE62E007B8354 /* StoryImageSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryImageSection.swift; sourceTree = "<group>"; };
 		FA16CE3225ECE65C007B8354 /* StoryVideoSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVideoSection.swift; sourceTree = "<group>"; };
-		FA16CE3525ED1231007B8354 /* CSChapterPartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterPartPresenter.swift; sourceTree = "<group>"; };
+		FA16CE3525ED1231007B8354 /* CSChapterPartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterPartService.swift; sourceTree = "<group>"; };
 		FA1F714825BEF066009AE0D4 /* CreateStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateStory.storyboard; sourceTree = "<group>"; };
 		FA1F714C25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JoinTeacherNetwork.storyboard; sourceTree = "<group>"; };
 		FA22A7E92588E4C6001129E7 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
@@ -262,10 +254,10 @@
 		FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelDetailsViewController.swift; sourceTree = "<group>"; };
 		FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInterestsSelectionViewController.swift; sourceTree = "<group>"; };
 		FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCustomItemPopUpViewController.swift; sourceTree = "<group>"; };
-		FA3553E325DD0FD2008DD1FF /* CSChapterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterPresenter.swift; sourceTree = "<group>"; };
+		FA3553E325DD0FD2008DD1FF /* CSChapterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterService.swift; sourceTree = "<group>"; };
 		FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFeedbackViewController.swift; sourceTree = "<group>"; };
 		FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareFeedback.storyboard; sourceTree = "<group>"; };
-		FA3A467826381F5100BF0CB5 /* ShareFeedbackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFeedbackPresenter.swift; sourceTree = "<group>"; };
+		FA3A467826381F5100BF0CB5 /* ShareFeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFeedbackService.swift; sourceTree = "<group>"; };
 		FA3A467A26397BD900BF0CB5 /* RatingButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingButton.xib; sourceTree = "<group>"; };
 		FA3A467C26397CFE00BF0CB5 /* RatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingButton.swift; sourceTree = "<group>"; };
 		FA3C26122569559C0089F646 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
@@ -280,7 +272,7 @@
 		FA46951725C0521B00F347B1 /* ItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProtocol.swift; sourceTree = "<group>"; };
 		FA46951B25C0553E00F347B1 /* CSPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSPresenter.swift; sourceTree = "<group>"; };
 		FA46951F25C0A0D300F347B1 /* CSCustomItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCustomItemViewController.swift; sourceTree = "<group>"; };
-		FA4B6111256EAEA1005501BD /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		FA4B6111256EAEA1005501BD /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FA4B6115256F7BE7005501BD /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		FA4B61332570036C005501BD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		FA4B613625700749005501BD /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
@@ -326,7 +318,6 @@
 		FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FA63DA3E258D030900722CA6 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
 		FA652B5D26F239D900CEEA35 /* CSUploadCoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUploadCoverViewController.swift; sourceTree = "<group>"; };
-		FA652B5F26F3513B00CEEA35 /* uploadIcon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = uploadIcon.gif; sourceTree = "<group>"; };
 		FA65830B256D544E007052D9 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		FA65830E256E2063007052D9 /* KeyboardApperenceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardApperenceHandler.swift; sourceTree = "<group>"; };
 		FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerDelegates.swift; sourceTree = "<group>"; };
@@ -361,9 +352,9 @@
 		FA812DA9256682F70036F162 /* RegularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularButton.swift; sourceTree = "<group>"; };
 		FA85364B25AC644D002607EC /* UploadClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadClient.swift; sourceTree = "<group>"; };
 		FA85364E25AC6465002607EC /* Checksum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
-		FA85365625B08EF6002607EC /* JoinTNPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTNPresenter.swift; sourceTree = "<group>"; };
-		FA8593DD25E1691D004CAC9E /* CSVocabularyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVocabularyPresenter.swift; sourceTree = "<group>"; };
-		FA8593E025E1692C004CAC9E /* CSGrammarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGrammarPresenter.swift; sourceTree = "<group>"; };
+		FA85365625B08EF6002607EC /* JoinTNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTNService.swift; sourceTree = "<group>"; };
+		FA8593DD25E1691D004CAC9E /* CSVocabularyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVocabularyService.swift; sourceTree = "<group>"; };
+		FA8593E025E1692C004CAC9E /* CSGrammarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGrammarService.swift; sourceTree = "<group>"; };
 		FA8593E325E16DDB004CAC9E /* Grammar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grammar.swift; sourceTree = "<group>"; };
 		FA85A699262EA254008E601C /* InAppPurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseManager.swift; sourceTree = "<group>"; };
 		FA85A701262F1F62008E601C /* MembershipCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -382,7 +373,7 @@
 		FA94560825C557C9003E54F0 /* VocabularyItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VocabularyItemTableViewCell.xib; sourceTree = "<group>"; };
 		FA94560D25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		FA94560E25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VocabularyHeaderTableViewCell.xib; sourceTree = "<group>"; };
-		FA960AB3263A9CF3001ACB21 /* RedeemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemPresenter.swift; sourceTree = "<group>"; };
+		FA960AB3263A9CF3001ACB21 /* RedeemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemService.swift; sourceTree = "<group>"; };
 		FA960AB6263AC48B001ACB21 /* UpdateLanguage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateLanguage.storyboard; sourceTree = "<group>"; };
 		FA960AB8263AC4A8001ACB21 /* UpdateLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageViewController.swift; sourceTree = "<group>"; };
 		FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -391,7 +382,7 @@
 		FA999DA02569514C00B694FA /* DefaultSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSettings.swift; sourceTree = "<group>"; };
 		FA9BCB4926417BB0009B1DDB /* VocabularyClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyClient.swift; sourceTree = "<group>"; };
 		FA9BCB4B26417BC5009B1DDB /* GrammarClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarClient.swift; sourceTree = "<group>"; };
-		FA9BCB4D26417D3D009B1DDB /* UpdateLanguageLevelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelPresenter.swift; sourceTree = "<group>"; };
+		FA9BCB4D26417D3D009B1DDB /* UpdateLanguageLevelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelService.swift; sourceTree = "<group>"; };
 		FA9BCB4F26417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelVocabularyVC.swift; sourceTree = "<group>"; };
 		FA9BCB5126417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelGrammarViewController.swift; sourceTree = "<group>"; };
 		FA9F6C0A2582882700AC5197 /* LanguageLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLevel.swift; sourceTree = "<group>"; };
@@ -402,14 +393,10 @@
 		FA9F70F025C69E3F00A16C61 /* CSAddTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAddTableViewCell.swift; sourceTree = "<group>"; };
 		FA9F70F125C69E3F00A16C61 /* CSAddTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSAddTableViewCell.xib; sourceTree = "<group>"; };
 		FAA60E0925C1952D00522F8A /* IBMPlexSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		FAA60E0C25C1A87300522F8A /* CSSoundListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSoundListViewController.swift; sourceTree = "<group>"; };
 		FAAA96D6261DE6A800B53D6C /* InterestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTableViewCell.swift; sourceTree = "<group>"; };
 		FAAA96D7261DE6A800B53D6C /* InterestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestTableViewCell.xib; sourceTree = "<group>"; };
 		FAAF7CBE26304B220007E63B /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
 		FAAF7CC126306F0F0007E63B /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
-		FAB47D8625C156CB00B55F58 /* CSCoverListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCoverListViewController.swift; sourceTree = "<group>"; };
-		FAB47D8A25C15A3F00B55F58 /* CSCoverCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCoverCardCell.swift; sourceTree = "<group>"; };
-		FAB47D8B25C15A3F00B55F58 /* CSCoverCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSCoverCardCell.xib; sourceTree = "<group>"; };
 		FAB47D9025C1725200B55F58 /* CoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImage.swift; sourceTree = "<group>"; };
 		FAB670C125DE623100DA5CA8 /* CSChapterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterModel.swift; sourceTree = "<group>"; };
 		FAB84DC326CFAE1F00B9C5A0 /* StoryVideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVideoListViewController.swift; sourceTree = "<group>"; };
@@ -429,7 +416,7 @@
 		FAC97F8526CE96D9008B2CEF /* StoryVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVideoViewController.swift; sourceTree = "<group>"; };
 		FACF0AA725E2A6DD00F3298B /* VocabularyId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyId.swift; sourceTree = "<group>"; };
 		FAD804BF25BEC757005451B6 /* CSStoryTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSStoryTitleViewController.swift; sourceTree = "<group>"; };
-		FADA06BE257F67CB000333FF /* LanguagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePresenter.swift; sourceTree = "<group>"; };
+		FADA06BE257F67CB000333FF /* LanguageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageService.swift; sourceTree = "<group>"; };
 		FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableViewCell.xib; sourceTree = "<group>"; };
@@ -449,21 +436,18 @@
 		FAF2690A25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewWithSubtitleAndCheckmark.swift; sourceTree = "<group>"; };
 		FAF2690D25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemViewWithSubtitleAndCheckmark.xib; sourceTree = "<group>"; };
 		FAF2691125BF32AE00FFDE4A /* CSMainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainListViewController.swift; sourceTree = "<group>"; };
-		FAF4162225C1D8E1005EE455 /* CSSoundListSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSoundListSearchViewController.swift; sourceTree = "<group>"; };
 		FAF452F025D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSuccessMessageViewController.swift; sourceTree = "<group>"; };
 		FAFC99F525C9757000D60AB4 /* CSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTableViewCell.swift; sourceTree = "<group>"; };
 		FAFC9A3425C987E700D60AB4 /* Stori-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stori-Bridging-Header.h"; sourceTree = "<group>"; };
 		FAFD404E263C136800305326 /* UpdateLanguageLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelViewController.swift; sourceTree = "<group>"; };
 		FAFF81B925D277D300A9BE82 /* CreateStoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStoryModel.swift; sourceTree = "<group>"; };
 		FAFF81BC25D2830100A9BE82 /* CreateStoryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStoryObject.swift; sourceTree = "<group>"; };
-		FAFF82BF25D4429300A9BE82 /* CSStoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSStoryPresenter.swift; sourceTree = "<group>"; };
-		FAFF82C225D442B400A9BE82 /* CSTopicPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTopicPresenter.swift; sourceTree = "<group>"; };
-		FAFF82C525D442D100A9BE82 /* CSCategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCategoryPresenter.swift; sourceTree = "<group>"; };
-		FAFF82C925D4430000A9BE82 /* CSSubCategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSubCategoryPresenter.swift; sourceTree = "<group>"; };
-		FAFF82CC25D4431F00A9BE82 /* CSCoverPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCoverPresenter.swift; sourceTree = "<group>"; };
-		FAFF82CF25D4433D00A9BE82 /* CSBackgroundSoundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSBackgroundSoundPresenter.swift; sourceTree = "<group>"; };
-		FAFF82D225D4435E00A9BE82 /* CSLanguagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLanguagePresenter.swift; sourceTree = "<group>"; };
-		FAFF82D525D4437A00A9BE82 /* CSLanguageLevelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLanguageLevelPresenter.swift; sourceTree = "<group>"; };
+		FAFF82BF25D4429300A9BE82 /* CSStoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSStoryService.swift; sourceTree = "<group>"; };
+		FAFF82C225D442B400A9BE82 /* CSTopicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTopicService.swift; sourceTree = "<group>"; };
+		FAFF82C525D442D100A9BE82 /* CSCategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCategoryService.swift; sourceTree = "<group>"; };
+		FAFF82C925D4430000A9BE82 /* CSSubCategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSubCategoryService.swift; sourceTree = "<group>"; };
+		FAFF82D225D4435E00A9BE82 /* CSLanguageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLanguageService.swift; sourceTree = "<group>"; };
+		FAFF82D525D4437A00A9BE82 /* CSLanguageLevelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLanguageLevelService.swift; sourceTree = "<group>"; };
 		FAFF92C025A44C5900A604C3 /* UploadFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileTableViewCell.swift; sourceTree = "<group>"; };
 		FAFF92C125A44C5900A604C3 /* UploadFileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadFileTableViewCell.xib; sourceTree = "<group>"; };
 		FAFF92C625A4941400A604C3 /* JoinTNAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTNAgreementViewController.swift; sourceTree = "<group>"; };
@@ -547,7 +531,7 @@
 			children = (
 				FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */,
 				FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */,
-				FA3A467826381F5100BF0CB5 /* ShareFeedbackPresenter.swift */,
+				FA3A467826381F5100BF0CB5 /* ShareFeedbackService.swift */,
 			);
 			path = Feedback;
 			sourceTree = "<group>";
@@ -562,9 +546,6 @@
 				FA46951F25C0A0D300F347B1 /* CSCustomItemViewController.swift */,
 				FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */,
 				FA652B5D26F239D900CEEA35 /* CSUploadCoverViewController.swift */,
-				FAB47D8625C156CB00B55F58 /* CSCoverListViewController.swift */,
-				FAA60E0C25C1A87300522F8A /* CSSoundListViewController.swift */,
-				FAF4162225C1D8E1005EE455 /* CSSoundListSearchViewController.swift */,
 				FA9455FF25C546E5003E54F0 /* CSStoryTextViewController.swift */,
 				FA94560325C54BE8003E54F0 /* CSVocabularyListViewController.swift */,
 				FAE653EF25C4045000CC25A1 /* CSRecordVoiceListViewController.swift */,
@@ -583,7 +564,7 @@
 				FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */,
 				FA65831A256E7805007052D9 /* AuthViewControllerSetUp.swift */,
 				FA4D4483257A9B6000398AE2 /* AuthViewControllerActions.swift */,
-				FA4B6111256EAEA1005501BD /* AuthPresenter.swift */,
+				FA4B6111256EAEA1005501BD /* AuthService.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -683,7 +664,7 @@
 				FA4D4498257E48CE00398AE2 /* LanguageSelectViewController.swift */,
 				FA6B0014258116B700438E80 /* LanguageLevelSelectionViewController.swift */,
 				FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */,
-				FADA06BE257F67CB000333FF /* LanguagePresenter.swift */,
+				FADA06BE257F67CB000333FF /* LanguageService.swift */,
 			);
 			path = LanguageSelect;
 			sourceTree = "<group>";
@@ -746,7 +727,6 @@
 			children = (
 				FA7B72D625669A10003F9A0C /* Fonts */,
 				FA812D76256298450036F162 /* Assets.xcassets */,
-				FA652B5F26F3513B00CEEA35 /* uploadIcon.gif */,
 				FA999D9A25694D3E00B694FA /* Strings.strings */,
 			);
 			path = Ressources;
@@ -921,7 +901,7 @@
 				FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */,
 				FA9BCB4F26417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift */,
 				FA9BCB5126417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift */,
-				FA9BCB4D26417D3D009B1DDB /* UpdateLanguageLevelPresenter.swift */,
+				FA9BCB4D26417D3D009B1DDB /* UpdateLanguageLevelService.swift */,
 			);
 			path = Language;
 			sourceTree = "<group>";
@@ -942,7 +922,7 @@
 				FAB8E019263A7A36000AE9FE /* Referral.storyboard */,
 				FAB8E01B263A7B96000AE9FE /* InviteFriendsViewController.swift */,
 				FAB8E01D263A7BA8000AE9FE /* RedeemCodeViewController.swift */,
-				FA960AB3263A9CF3001ACB21 /* RedeemPresenter.swift */,
+				FA960AB3263A9CF3001ACB21 /* RedeemService.swift */,
 			);
 			path = Referral;
 			sourceTree = "<group>";
@@ -1041,18 +1021,16 @@
 			isa = PBXGroup;
 			children = (
 				FA46951B25C0553E00F347B1 /* CSPresenter.swift */,
-				FAFF82BF25D4429300A9BE82 /* CSStoryPresenter.swift */,
-				FAFF82C225D442B400A9BE82 /* CSTopicPresenter.swift */,
-				FAFF82C525D442D100A9BE82 /* CSCategoryPresenter.swift */,
-				FAFF82C925D4430000A9BE82 /* CSSubCategoryPresenter.swift */,
-				FAFF82CC25D4431F00A9BE82 /* CSCoverPresenter.swift */,
-				FAFF82CF25D4433D00A9BE82 /* CSBackgroundSoundPresenter.swift */,
-				FAFF82D225D4435E00A9BE82 /* CSLanguagePresenter.swift */,
-				FAFF82D525D4437A00A9BE82 /* CSLanguageLevelPresenter.swift */,
-				FA3553E325DD0FD2008DD1FF /* CSChapterPresenter.swift */,
-				FA16CE3525ED1231007B8354 /* CSChapterPartPresenter.swift */,
-				FA8593DD25E1691D004CAC9E /* CSVocabularyPresenter.swift */,
-				FA8593E025E1692C004CAC9E /* CSGrammarPresenter.swift */,
+				FAFF82BF25D4429300A9BE82 /* CSStoryService.swift */,
+				FAFF82C225D442B400A9BE82 /* CSTopicService.swift */,
+				FAFF82C525D442D100A9BE82 /* CSCategoryService.swift */,
+				FAFF82C925D4430000A9BE82 /* CSSubCategoryService.swift */,
+				FAFF82D225D4435E00A9BE82 /* CSLanguageService.swift */,
+				FAFF82D525D4437A00A9BE82 /* CSLanguageLevelService.swift */,
+				FA3553E325DD0FD2008DD1FF /* CSChapterService.swift */,
+				FA16CE3525ED1231007B8354 /* CSChapterPartService.swift */,
+				FA8593DD25E1691D004CAC9E /* CSVocabularyService.swift */,
+				FA8593E025E1692C004CAC9E /* CSGrammarService.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -1066,8 +1044,6 @@
 				FA50420325A5B957004E6EC9 /* FileTableViewCell.swift */,
 				FA0E895D25BF47C400D80027 /* CSItemTableViewCell.xib */,
 				FA0E895C25BF47C400D80027 /* CSItemTableViewCell.swift */,
-				FAB47D8B25C15A3F00B55F58 /* CSCoverCardCell.xib */,
-				FAB47D8A25C15A3F00B55F58 /* CSCoverCardCell.swift */,
 				FA8BB73825C1ED6C001B6A22 /* CSAudioTableViewCell.xib */,
 				FA8BB73725C1ED6C001B6A22 /* CSAudioTableViewCell.swift */,
 				FA94560825C557C9003E54F0 /* VocabularyItemTableViewCell.xib */,
@@ -1097,7 +1073,7 @@
 				FAFF92CC25A494AA00A604C3 /* JoinTNDocumentListViewController.swift */,
 				FAFF92CF25A494BB00A604C3 /* JoinTNAddDocumentViewController.swift */,
 				FAFF92D225A494F300A604C3 /* JoinTNSuccessMessageViewController.swift */,
-				FA85365625B08EF6002607EC /* JoinTNPresenter.swift */,
+				FA85365625B08EF6002607EC /* JoinTNService.swift */,
 			);
 			path = "Join Teacher Network";
 			sourceTree = "<group>";
@@ -1199,11 +1175,9 @@
 				FA50420625A5B957004E6EC9 /* FileTableViewCell.xib in Resources */,
 				FA3A467726381A8300BF0CB5 /* ShareFeedback.storyboard in Resources */,
 				FA876C8825C80EA200E65B95 /* CSVideoItemTableViewCell.xib in Resources */,
-				FAB47D8D25C15A3F00B55F58 /* CSCoverCardCell.xib in Resources */,
 				FA7EF424262DAB2D00335CE6 /* Membership.storyboard in Resources */,
 				FA812D88256640BF0036F162 /* Tutorial.storyboard in Resources */,
 				FA7B72D825669A31003F9A0C /* IBMPlexSans-Regular.ttf in Resources */,
-				FA652B6026F3513C00CEEA35 /* uploadIcon.gif in Resources */,
 				FAA60E0A25C1952D00522F8A /* IBMPlexSans-LightItalic.ttf in Resources */,
 				FA876C7D25C80E6800E65B95 /* CSTextItemTableViewCell.xib in Resources */,
 				FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */,
@@ -1287,7 +1261,7 @@
 				FAC97F8626CE96D9008B2CEF /* StoryVideoViewController.swift in Sources */,
 				FA9F70E825C5ADD400A16C61 /* Word.swift in Sources */,
 				FA4B61A925753487005501BD /* Constants.swift in Sources */,
-				FA85365725B08EF6002607EC /* JoinTNPresenter.swift in Sources */,
+				FA85365725B08EF6002607EC /* JoinTNService.swift in Sources */,
 				FA04986F25C2E624004CF8B7 /* AudioPlayer.swift in Sources */,
 				FAC97F8226CE8E1D008B2CEF /* LearnViewController.swift in Sources */,
 				FAB8E01C263A7B96000AE9FE /* InviteFriendsViewController.swift in Sources */,
@@ -1307,20 +1281,20 @@
 				FA4D4484257A9B6000398AE2 /* AuthViewControllerActions.swift in Sources */,
 				FA04986C25C2C8EA004CF8B7 /* BackgroundAudio.swift in Sources */,
 				FA0E895E25BF47C400D80027 /* CSItemTableViewCell.swift in Sources */,
-				FA3553E425DD0FD2008DD1FF /* CSChapterPresenter.swift in Sources */,
+				FA3553E425DD0FD2008DD1FF /* CSChapterService.swift in Sources */,
 				FA4B619025752134005501BD /* MessageObject.swift in Sources */,
 				FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */,
 				FAAA96D8261DE6A800B53D6C /* InterestTableViewCell.swift in Sources */,
 				FAEBEA22258A05BE0077D942 /* SuccessMessage.swift in Sources */,
 				FA658317256E29D5007052D9 /* UITextFieldExtension.swift in Sources */,
 				FA3553C125DBA503008DD1FF /* CSCustomItemPopUpViewController.swift in Sources */,
-				FA960AB4263A9CF3001ACB21 /* RedeemPresenter.swift in Sources */,
+				FA960AB4263A9CF3001ACB21 /* RedeemService.swift in Sources */,
 				FAB47D9125C1725200B55F58 /* CoverImage.swift in Sources */,
 				FA4B61732574C45E005501BD /* AuthModel.swift in Sources */,
 				FA0E897125C0444F00D80027 /* Item.swift in Sources */,
 				FAFF81BA25D277D300A9BE82 /* CreateStoryModel.swift in Sources */,
 				FA9F6C0B2582882700AC5197 /* LanguageLevel.swift in Sources */,
-				FADA06BF257F67CB000333FF /* LanguagePresenter.swift in Sources */,
+				FADA06BF257F67CB000333FF /* LanguageService.swift in Sources */,
 				FA4D4488257AA81900398AE2 /* Toast.swift in Sources */,
 				FA9F6C142583677400AC5197 /* UIColorExtension.swift in Sources */,
 				FA4B61882574F3EF005501BD /* KeychainManager.swift in Sources */,
@@ -1330,13 +1304,12 @@
 				FA22A7EA2588E4C6001129E7 /* Interest.swift in Sources */,
 				FA999D922568F30B00B694FA /* CustomCollectionViewCell.swift in Sources */,
 				FAE8AFB125E3E0FA00448AA4 /* SectionModel.swift in Sources */,
-				FAFF82D625D4437A00A9BE82 /* CSLanguageLevelPresenter.swift in Sources */,
+				FAFF82D625D4437A00A9BE82 /* CSLanguageLevelService.swift in Sources */,
 				FA4B6141257008A2005501BD /* Request.swift in Sources */,
 				FA4D448B257C172F00398AE2 /* UIImageViewExtension.swift in Sources */,
 				FA16CE2C25ECE60D007B8354 /* StoryTextSection.swift in Sources */,
 				FA3C2626256A52320089F646 /* UIViewControllerExtension.swift in Sources */,
 				FAC93A6326DFCB3B003FACDA /* VideoPlayerView.swift in Sources */,
-				FAFF82D025D4433D00A9BE82 /* CSBackgroundSoundPresenter.swift in Sources */,
 				FA4D447525790C2700398AE2 /* LanguageClient.swift in Sources */,
 				FA4D44622578BE0700398AE2 /* ResponseObject.swift in Sources */,
 				FA46951825C0521B00F347B1 /* ItemProtocol.swift in Sources */,
@@ -1345,12 +1318,11 @@
 				FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */,
 				FA9BCB4A26417BB0009B1DDB /* VocabularyClient.swift in Sources */,
 				FA4B61BE25753CF2005501BD /* FacebookManager.swift in Sources */,
-				FAFF82C325D442B400A9BE82 /* CSTopicPresenter.swift in Sources */,
+				FAFF82C325D442B400A9BE82 /* CSTopicService.swift in Sources */,
 				FAFD404F263C136800305326 /* UpdateLanguageLevelViewController.swift in Sources */,
 				FA4D445F257810C700398AE2 /* Language.swift in Sources */,
 				FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */,
 				FA85364F25AC6465002607EC /* Checksum.swift in Sources */,
-				FAB47D8725C156CB00B55F58 /* CSCoverListViewController.swift in Sources */,
 				FA50420525A5B957004E6EC9 /* FileTableViewCell.swift in Sources */,
 				FA0E896825C0419900D80027 /* Definitions.swift in Sources */,
 				FA8593E425E16DDB004CAC9E /* Grammar.swift in Sources */,
@@ -1358,7 +1330,6 @@
 				FA812D6E256298440036F162 /* AppDelegate.swift in Sources */,
 				FAFF92D325A494F300A604C3 /* JoinTNSuccessMessageViewController.swift in Sources */,
 				FA9BCB5226417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift in Sources */,
-				FAF4162325C1D8E1005EE455 /* CSSoundListSearchViewController.swift in Sources */,
 				FA4D447125790C1300398AE2 /* UserClient.swift in Sources */,
 				FA5041E325A5A578004E6EC9 /* ImagePicker.swift in Sources */,
 				FAF2691225BF32AE00FFDE4A /* CSMainListViewController.swift in Sources */,
@@ -1368,10 +1339,9 @@
 				FA0E897425C0445F00D80027 /* ThumbnailItem.swift in Sources */,
 				FAE653ED25C3FB9700CC25A1 /* RecordButton.swift in Sources */,
 				FA999DA12569514C00B694FA /* DefaultSettings.swift in Sources */,
-				FAFF82CD25D4431F00A9BE82 /* CSCoverPresenter.swift in Sources */,
 				FAFF92C225A44C5900A604C3 /* UploadFileTableViewCell.swift in Sources */,
 				FA3C27DF256BDBFD0089F646 /* RegularTextField.swift in Sources */,
-				FAFF82CA25D4430000A9BE82 /* CSSubCategoryPresenter.swift in Sources */,
+				FAFF82CA25D4430000A9BE82 /* CSSubCategoryService.swift in Sources */,
 				FA9F70F225C69E3F00A16C61 /* CSAddTableViewCell.swift in Sources */,
 				FA7B72D325669962003F9A0C /* UIImageExtension.swift in Sources */,
 				FA876C7C25C80E6800E65B95 /* CSTextItemTableViewCell.swift in Sources */,
@@ -1382,17 +1352,17 @@
 				FA9BCB5026417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift in Sources */,
 				FA7B72DF25669C54003F9A0C /* AppFonts.swift in Sources */,
 				FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */,
-				FA4B6112256EAEA1005501BD /* AuthPresenter.swift in Sources */,
+				FA4B6112256EAEA1005501BD /* AuthService.swift in Sources */,
 				FA8BB73925C1ED6C001B6A22 /* CSAudioTableViewCell.swift in Sources */,
 				FA46951C25C0553E00F347B1 /* CSPresenter.swift in Sources */,
 				FAEBEA3E258B4CC90077D942 /* UIButtonExtension.swift in Sources */,
 				FA16CE3325ECE65C007B8354 /* StoryVideoSection.swift in Sources */,
-				FAFF82C625D442D100A9BE82 /* CSCategoryPresenter.swift in Sources */,
+				FAFF82C625D442D100A9BE82 /* CSCategoryService.swift in Sources */,
 				FAF452F125D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift in Sources */,
 				FAE653F325C4046400CC25A1 /* CSRecordVoiceViewController.swift in Sources */,
 				FAFF92CD25A494AA00A604C3 /* JoinTNDocumentListViewController.swift in Sources */,
 				FA85364C25AC644D002607EC /* UploadClient.swift in Sources */,
-				FA16CE3625ED1231007B8354 /* CSChapterPartPresenter.swift in Sources */,
+				FA16CE3625ED1231007B8354 /* CSChapterPartService.swift in Sources */,
 				FA652B5E26F239D900CEEA35 /* CSUploadCoverViewController.swift in Sources */,
 				FAFC99F625C9757000D60AB4 /* CSTableViewCell.swift in Sources */,
 				FAC93A6126DFBC50003FACDA /* StoryLearningButton.swift in Sources */,
@@ -1401,7 +1371,7 @@
 				FAE653F025C4045000CC25A1 /* CSRecordVoiceListViewController.swift in Sources */,
 				FA0E896325BFF91D00D80027 /* CSItemsListViewController.swift in Sources */,
 				FA7EF427262DAB3B00335CE6 /* MembershipViewController.swift in Sources */,
-				FAFF82C025D4429300A9BE82 /* CSStoryPresenter.swift in Sources */,
+				FAFF82C025D4429300A9BE82 /* CSStoryService.swift in Sources */,
 				FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */,
 				FA5608C9261F2D150062EE88 /* SettingsViewController.swift in Sources */,
 				FA666A27259CAA9900FD6462 /* LearningLanguage.swift in Sources */,
@@ -1410,7 +1380,7 @@
 				FA4B613A25700765005501BD /* Headers.swift in Sources */,
 				FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */,
 				FA94560425C54BE8003E54F0 /* CSVocabularyListViewController.swift in Sources */,
-				FA8593DE25E1691D004CAC9E /* CSVocabularyPresenter.swift in Sources */,
+				FA8593DE25E1691D004CAC9E /* CSVocabularyService.swift in Sources */,
 				FAFF92CA25A4944500A604C3 /* JoinTNSelectUserTypeViewController.swift in Sources */,
 				FA6B0015258116B700438E80 /* LanguageLevelSelectionViewController.swift in Sources */,
 				FA9F6C0F2582899800AC5197 /* LanguageLevelTableViewCell.swift in Sources */,
@@ -1431,14 +1401,13 @@
 				FA9BCB4C26417BC5009B1DDB /* GrammarClient.swift in Sources */,
 				FAFF92C725A4941400A604C3 /* JoinTNAgreementViewController.swift in Sources */,
 				FA4B618B25750412005501BD /* CurrentUser.swift in Sources */,
-				FAFF82D325D4435E00A9BE82 /* CSLanguagePresenter.swift in Sources */,
+				FAFF82D325D4435E00A9BE82 /* CSLanguageService.swift in Sources */,
 				FA85A702262F1F62008E601C /* MembershipCollectionViewCell.swift in Sources */,
 				FA876C8725C80EA200E65B95 /* CSVideoItemTableViewCell.swift in Sources */,
-				FA3A467926381F5100BF0CB5 /* ShareFeedbackPresenter.swift in Sources */,
+				FA3A467926381F5100BF0CB5 /* ShareFeedbackService.swift in Sources */,
 				FAB84DC826CFEA3B00B9C5A0 /* Video.swift in Sources */,
 				FA876C8125C80E7C00E65B95 /* CSImageItemTableViewCell.swift in Sources */,
 				FA46952025C0A0D300F347B1 /* CSCustomItemViewController.swift in Sources */,
-				FAB47D8C25C15A3F00B55F58 /* CSCoverCardCell.swift in Sources */,
 				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,
 				FAF2690B25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift in Sources */,
 				FAAF7CBF26304B220007E63B /* Vibration.swift in Sources */,
@@ -1454,9 +1423,8 @@
 				FA812D9C256659690036F162 /* AppColors.swift in Sources */,
 				FA94560025C546E6003E54F0 /* CSStoryTextViewController.swift in Sources */,
 				FACF0AA825E2A6DD00F3298B /* VocabularyId.swift in Sources */,
-				FA8593E125E1692C004CAC9E /* CSGrammarPresenter.swift in Sources */,
-				FAA60E0D25C1A87300522F8A /* CSSoundListViewController.swift in Sources */,
-				FA9BCB4E26417D3D009B1DDB /* UpdateLanguageLevelPresenter.swift in Sources */,
+				FA8593E125E1692C004CAC9E /* CSGrammarService.swift in Sources */,
+				FA9BCB4E26417D3D009B1DDB /* UpdateLanguageLevelService.swift in Sources */,
 				FA812D70256298440036F162 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

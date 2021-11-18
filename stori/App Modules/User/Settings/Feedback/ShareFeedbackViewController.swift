@@ -48,7 +48,7 @@ class ShareFeedbackViewController: UIViewController {
             messageTextView.isUserInteractionEnabled = false
             submitButton.isHidden = true
             progressActivityIndicator.startAnimating()
-            ShareFeedbackPresenter.sendFeedback(rating: checkedRating.tag, message: message)
+            ShareFeedbackService.sendFeedback(rating: checkedRating.tag, message: message)
                 .ensure {
                     for item in self.ratingButtons { item.isEnabled = true }
                     self.messageTextView.isUserInteractionEnabled = true

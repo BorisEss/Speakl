@@ -29,7 +29,7 @@ class UpdateLanguageLevelGrammarViewController: UIViewController {
     private func loadData() {
         if let language = language,
            let level = level {
-            UpdateLanguageLevelPresenter().getGrammar(language: language, languageLevel: level)
+            UpdateLanguageLevelService().getGrammar(language: language, languageLevel: level)
                 .ensure {
                     self.progressActivityIndicator.stopAnimating()
                 }

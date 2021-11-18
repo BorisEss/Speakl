@@ -1,5 +1,5 @@
 //
-//  CSGrammarPresenter.swift
+//  CSGrammarService.swift
 //  stori
 //
 //  Created by Alex on 20.02.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-class CSGrammarPresenter {
+class CSGrammarService {
     func getGrammar(language: Language,
                     languageLevel: LanguageLevel,
                     subCategory: SubCategory) -> Promise<String> {

@@ -1,5 +1,5 @@
 //
-//  CSLanguagePresenter.swift
+//  CSLanguageService.swift
 //  stori
 //
 //  Created by Alex on 10.02.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-internal class CSLanguagePresenter {
+internal class CSLanguageService {
     func createLanguage(language: String) -> Promise<Language> {
         return Promise<Language> { promise in
             firstly {

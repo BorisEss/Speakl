@@ -1,5 +1,5 @@
 //
-//  ShareFeedbackPresenter.swift
+//  ShareFeedbackService.swift
 //  stori
 //
 //  Created by Alex on 27.04.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-class ShareFeedbackPresenter {
+class ShareFeedbackService {
     static func sendFeedback(rating: Int, message: String) -> Promise<Void> {
         return Promise<Void> { promise in
             firstly {

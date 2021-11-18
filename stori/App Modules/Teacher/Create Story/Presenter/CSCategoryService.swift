@@ -1,5 +1,5 @@
 //
-//  CSCategoryPresenter.swift
+//  CSCategoryService.swift
 //  stori
 //
 //  Created by Alex on 10.02.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-final class CSCategoryPresenter {
+final class CSCategoryService {
     func getCategories(of topic: Topic,
                        with language: Language,
                        page: Int = 1) -> Promise<ResponseObject<Category>> {

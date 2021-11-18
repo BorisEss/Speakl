@@ -28,7 +28,7 @@ class CreateStoryObject {
             if topic?.id != newValue?.id, topic != nil {
                 category = nil
             }
-            CSPresenter.story.updateStory(id: id, topicId: newValue?.id)
+            CSPresenter.story.updateStory(id: id, topicId: newValue?.id, language: language)
                 .cauterize()
         }
     }
@@ -37,7 +37,7 @@ class CreateStoryObject {
             if category?.id != newValue?.id, category != nil {
                 subCategory = nil
             }
-            CSPresenter.story.updateStory(id: id, categoryId: newValue?.id)
+            CSPresenter.story.updateStory(id: id, categoryId: newValue?.id, language: language)
                 .cauterize()
         }
     }
@@ -46,7 +46,7 @@ class CreateStoryObject {
             if subCategory?.id != newValue?.id, subCategory != nil {
                 chapter?.cover = nil
             }
-            CSPresenter.story.updateStory(id: id, subCategoryId: newValue?.id)
+            CSPresenter.story.updateStory(id: id, subCategoryId: newValue?.id, language: language)
                 .cauterize()
         }
     }

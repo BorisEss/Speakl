@@ -1,5 +1,5 @@
 //
-//  LanguagePresenter.swift
+//  LanguageService.swift
 //  stori
 //
 //  Created by Alex on 08.12.2020.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-class LanguagePresenter {
+class LanguageService {
     
     private func updateUser(body: ParametersDict,
                             completion: @escaping (_ isSuccess: Bool) -> Void) {
@@ -46,7 +46,7 @@ class LanguagePresenter {
         return Promise<[LanguageLevel]> { promise in
             firstly {
                 return Request(endpoint: Endpoints.languageLevel(langId: language.id), method: .get)
-                    .authorise()
+                    .authorise(language: language)
                     .build()
             }
             .then { (request) -> Promise<[LanguageLevel]> in

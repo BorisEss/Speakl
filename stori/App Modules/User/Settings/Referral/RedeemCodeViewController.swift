@@ -65,7 +65,7 @@ class RedeemCodeViewController: UIViewController {
             scanButton.isEnabled = false
             redeemButton.isHidden = true
             progressActivityIndicator.startAnimating()
-            RedeemPresenter.redeemCode(code: code)
+            RedeemService.redeemCode(code: code)
                 .ensure {
                     self.codeTextField.isEnabled = true
                     self.scanButton.isEnabled = true

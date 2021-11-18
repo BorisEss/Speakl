@@ -1,5 +1,5 @@
 //
-//  CSTopicPresenter.swift
+//  CSTopicService.swift
 //  stori
 //
 //  Created by Alex on 10.02.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-final class CSTopicPresenter {
+final class CSTopicService {
     func getTopics(for language: Language, page: Int = 1) -> Promise<ResponseObject<Topic>> {
         return Promise<ResponseObject<Topic>> { promise in
             firstly {
@@ -40,7 +40,7 @@ final class CSTopicPresenter {
                     .authorise()
                     .set(body: [
                         "name": [Storage.shared.currentLanguage?.shortcut ?? "en": name],
-                        "language_ids": language.id
+                        "language_ids": [language.id]
                     ])
                     .build()
             }

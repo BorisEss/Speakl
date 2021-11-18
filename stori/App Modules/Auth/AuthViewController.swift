@@ -141,7 +141,7 @@ class AuthViewController: UIViewController {
             self.facebookActivityIndicator.stopAnimating()
             switch result {
             case .success(let token):
-                AuthPresenter().facebookAuth(token: token) { (isSuccess) in
+                AuthService().facebookAuth(token: token) { (isSuccess) in
                     if isSuccess { self.continueToNextScreen() }
                 }
             case .failure(let error):
@@ -171,7 +171,7 @@ class AuthViewController: UIViewController {
                 print(user?.profile?.name ?? "")
                 print(user?.profile?.email ?? "")
                 #endif
-                AuthPresenter().googleAuth(token: token) { (isSuccess) in
+                AuthService().googleAuth(token: token) { (isSuccess) in
                     self.googleButton.isHidden = false
                     self.googleActivityIndicator.stopAnimating()
                     if isSuccess { self.continueToNextScreen() }

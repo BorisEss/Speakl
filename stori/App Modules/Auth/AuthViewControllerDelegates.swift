@@ -131,7 +131,7 @@ extension AuthViewController: ASAuthorizationControllerDelegate {
                 name += credential.fullName?.givenName ?? ""
                 if !name.isEmpty { name += " " }
                 name += credential.fullName?.familyName ?? ""
-                AuthPresenter().appleAuth(name: name.isEmpty ? nil : name,
+                AuthService().appleAuth(name: name.isEmpty ? nil : name,
                                           code: code) { (isSuccess) in
                     self.appleButton.isHidden = false
                     self.appleActivityIndicator.stopAnimating()

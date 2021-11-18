@@ -1,5 +1,5 @@
 //
-//  CSChapterPartPresenter.swift
+//  CSChapterPartService.swift
 //  stori
 //
 //  Created by Alex on 01.03.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-class CSChapterPartPresenter {
+class CSChapterPartService {
     func getChapterParts(chapterId: Int) -> Promise<[StorySection]> {
         return Promise<[StorySection]> { promise in
             firstly {

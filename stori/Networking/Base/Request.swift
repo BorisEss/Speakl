@@ -94,17 +94,26 @@ public class Request: RequestProtocol {
 
 extension Request {
     @discardableResult
-    func authorise() -> Self {
+    private func authorise() -> Self {
         set(headers: Headers().authorized)
         return self
     }
     
     @discardableResult
-    func authorise(language: Language) -> Self {
+    private func authorise(language: Language) -> Self {
         var headers = Headers().authorized
         headers["Accept-Language"] = language.shortcut ?? "en"
         print(headers)
         set(headers: headers)
         return self
+    }
+    
+    @discardableResult
+    func authorise(language: Language? = nil) -> Self {
+        if let language = language {
+            return authorise(language: language)
+        } else {
+            return authorise()
+        }
     }
 }

@@ -70,7 +70,7 @@ class UpdateLanguageLevelVocabularyVC: UIViewController {
             self.tableView.reloadData()
             return
         }
-        UpdateLanguageLevelPresenter().getWords(language: language,
+        UpdateLanguageLevelService().getWords(language: language,
                                                 languageLevel: level,
                                                 page: page)
             .done { (response) in

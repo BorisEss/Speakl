@@ -36,7 +36,7 @@ class LanguageInterestsSelectionViewController: UIViewController {
         setUpLanguage()
         
         guard let learningLanguage = learningLanguage else { return }
-        LanguagePresenter().getInterests(for: learningLanguage)
+        LanguageService().getInterests(for: learningLanguage)
             .done { (interests) in
                 self.interests = interests
             }
@@ -65,7 +65,7 @@ class LanguageInterestsSelectionViewController: UIViewController {
         tableView.isUserInteractionEnabled = false
         nextProgressActivityIndicator.startAnimating()
         nextButton.isHidden = true
-        LanguagePresenter().updateLanguageDetails(nativeLanguage: nativeLanguage,
+        LanguageService().updateLanguageDetails(nativeLanguage: nativeLanguage,
                                                   learningLanguage: learningLanguage,
                                                   learningLanguageLevel: selectedLevel,
                                                   interests: selectedInterests) { (isSuccess) in

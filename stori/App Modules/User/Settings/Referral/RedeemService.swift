@@ -1,5 +1,5 @@
 //
-//  RedeemPresenter.swift
+//  RedeemService.swift
 //  stori
 //
 //  Created by Alex on 29.04.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-class RedeemPresenter {
+class RedeemService {
     static func redeemCode(code: String) -> Promise<Void> {
         return Promise<Void> { promise in
             firstly {

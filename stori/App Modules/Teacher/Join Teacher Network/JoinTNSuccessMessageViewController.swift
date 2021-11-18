@@ -44,7 +44,7 @@ class JoinTNSuccessMessageViewController: UIViewController {
 
         checkUploadedList { isSuccess in
             if isSuccess {
-                JoinTNPresenter().join(personalId: self.personalIdList,
+                JoinTNService().join(personalId: self.personalIdList,
                                        documentId: self.documentList,
                                        selfie: self.selfieWithIdList,
                                        type: userType) { (isSuccess) in

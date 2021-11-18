@@ -1,5 +1,5 @@
 //
-//  CSChapterPresenter.swift
+//  CSChapterService.swift
 //  stori
 //
 //  Created by Alex on 17.02.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-class CSChapterPresenter {
+class CSChapterService {
     func createChapter(storyId: Int, languageLevelId: Int) -> Promise<CSChapterModel> {
         return Promise<CSChapterModel> { promise in
             firstly {
@@ -34,12 +34,8 @@ class CSChapterPresenter {
         return updateChapter(chapterId: chapterId, body: ["level_id": languageLevelId])
     }
     
-    func updateChapter(chapterId: Int, coverId: Int?) -> Promise<CSChapterModel> {
+    func updateChapter(chapterId: Int, coverId: String?) -> Promise<CSChapterModel> {
         return updateChapter(chapterId: chapterId, body: ["cover_id": coverId])
-    }
-    
-    func updateChapter(chapterId: Int, backgroundAudioId: Int?) -> Promise<CSChapterModel> {
-        return updateChapter(chapterId: chapterId, body: ["background_music_id": backgroundAudioId])
     }
     
     func updateChapter(chapterId: Int, voiceOverId: String?) -> Promise<CSChapterModel> {

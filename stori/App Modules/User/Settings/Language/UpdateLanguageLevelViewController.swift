@@ -48,7 +48,7 @@ class UpdateLanguageLevelViewController: UIViewController {
     private func loadData() {
         if let language = language {
             progressActivityIndicator.startAnimating()
-            LanguagePresenter().getLanguageLevels(language: language)
+            LanguageService().getLanguageLevels(language: language)
                 .ensure {
                     self.progressActivityIndicator.stopAnimating()
                 }

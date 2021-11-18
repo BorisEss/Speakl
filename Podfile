@@ -36,7 +36,6 @@ target 'stori' do
   pod 'EasyTipView'
   pod 'NVActivityIndicatorView'
   pod 'YPImagePicker'
-  pod 'VerticalCardSwiper'
   pod 'MarqueeLabel'
   pod 'SwipeCellKit'
   pod 'MobileVLCKit'
@@ -48,7 +47,7 @@ target 'stori' do
   pod 'QRCodeReader.swift'
   pod 'MBCircularProgressBar'
   pod 'SwipeMenuViewController'
-  pod 'SwiftyGif'
+  
 #  pod 'GrowingTextView'
 #  pod 'SideMenu'
 #  pod 'SimpleCheckbox'
