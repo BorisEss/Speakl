@@ -18,6 +18,16 @@ class DefaultSettings {
         }
     }
     
+    public static var hasShownInProgressTutorial: Bool {
+        get {
+            return UserDefaults.standard.bool(forKey: "hasShownInProgressTutorial")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "hasShownInProgressTutorial")
+            UserDefaults.standard.synchronize()
+        }
+    }
+    
     public static var appLanguage: String {
         get {
             if let lang = UserDefaults.standard.string(forKey: "appLanguage") {

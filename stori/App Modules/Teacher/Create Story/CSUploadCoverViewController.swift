@@ -131,7 +131,7 @@ class CSUploadCoverViewController: UIViewController {
                     self.coverImageView.image = file.image
                     self.state = .uploadingImage
                     file.upload()
-                    file.finishedUpload = { fileId in
+                    file.finishedUpload = { _ in // fileId in
                         self.state = .finishedImage
                         self.savePickedMedia()
                     }
@@ -144,7 +144,7 @@ class CSUploadCoverViewController: UIViewController {
                     self.coverImageView.image = file.image
                     self.state = .uploadingVideo
                     file.upload()
-                    file.finishedUpload = { fileId in
+                    file.finishedUpload = { _ in // fileId in
                         self.state = .finishedVideo
                         self.savePickedMedia()
                         self.coverImageView.isHidden = true
@@ -167,8 +167,8 @@ class CSUploadCoverViewController: UIViewController {
     }
     
     private func checkForSavedCover() {
-        guard let cover = cover else {
-            return
-        }
+//        guard let cover = cover else {
+//            return
+//        }
     }
 }

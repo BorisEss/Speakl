@@ -1,4 +1,4 @@
-platform :ios, '12.3'
+platform :ios, '12.0'
 
 inhibit_all_warnings!
 
@@ -6,14 +6,14 @@ target 'stori' do
   use_frameworks!
 
   # Network and Caching
-  pod 'Alamofire'
+  pod 'Alamofire'                 # Networking library
   pod 'AlamofireNetworkActivityLogger', :configurations => ['Debug']
-  pod 'SDWebImage'
+  pod 'SDWebImage'                # Image caching library
   
   # Social Auth
-  pod 'GoogleSignIn'
-  pod 'FBSDKCoreKit/Swift'
-  pod 'FBSDKLoginKit/Swift'
+  pod 'GoogleSignIn'              # Google Sign In library
+  pod 'FBSDKCoreKit/Swift'        # Facebook core libarry
+  pod 'FBSDKLoginKit/Swift'       # Facebook authentification library
   
   # Google
 #  pod 'Firebase/Core'
@@ -23,31 +23,36 @@ target 'stori' do
 #  pod 'Firebase/Firestore'
   
   # System Functionality
-  pod 'SwiftLint'
-  pod 'IQKeyboardManagerSwift'
-  pod 'PromiseKit'
-  pod 'KeychainSwift'
-  pod 'SwiftyStoreKit'
+  pod 'SwiftLint'                 # Code quality check library
+  pod 'IQKeyboardManagerSwift'    # Keyboard manager to lift up screen and manage content when keyboard appears/hides
+  pod 'PromiseKit'                # Promises functional inside the application
+  pod 'KeychainSwift'             # Keychain manager for storing items(token) into System's Keychain
+  pod 'SwiftyStoreKit'            # App Store library for managing In App purchases
+  pod 'Mute'                      # Library to detect if the device is has mute switch on or off
   
   #UI Pods
-  pod 'UPCarouselFlowLayout'
-  pod 'TextFieldEffects'
-  pod 'SwiftMessages'
-  pod 'EasyTipView'
-  pod 'NVActivityIndicatorView'
-  pod 'YPImagePicker'
-  pod 'MarqueeLabel'
-  pod 'SwipeCellKit'
-  pod 'MobileVLCKit'
-  pod 'UITextView+Placeholder'
-  pod 'TagListView'
-  pod 'NewPopMenu'
-  pod 'PaginatedTableView'
-  pod 'TableFlip'
-  pod 'QRCodeReader.swift'
-  pod 'MBCircularProgressBar'
-  pod 'SwipeMenuViewController'
+  pod 'UPCarouselFlowLayout'      # Carousel animation(used on tutorial screen)
+  pod 'TextFieldEffects'          # Text field effects(used on auth screens)
+  pod 'SwiftMessages'             # Popup animated messages(use for success or error messages)
+  pod 'EasyTipView'               # Tooltip view(shown abouv tab bar informing user about creating new story)
+  pod 'NVActivityIndicatorView'   # Custom activity indicator library
+  pod 'YPImagePicker'             # Image picker library for picking image/video from Library or Camera
+  pod 'SwipeCellKit'              # Library for custom remove/edit actions for UITabelViewCell
+  pod 'NewPopMenu'                # Menu view with button options, this is used when usser will click on a word in Teacher Section
+  pod 'PaginatedTableView'        # Custom Table view with infinite scrolling(pagination)
+  pod 'TableFlip'                 # UITableView animations for presenting a tableview content
+  pod 'QRCodeReader.swift'        # QR Code reader library
+  pod 'TagListView'               # View with tags(circular view for words)
+  pod 'ExpandableLabel'           # Expandable UILabel(adding "read more/less button to a label"
+  pod 'UITextView+Placeholder'    # Placeholder for UITextView
+  pod 'SwiftyGif'                 # Library for loading GIF images in UIImageView
+  pod 'KILabel'                   # Checks text in label and creates links, hashtags, handlers
   
+  # Should be deleted
+#  pod 'MarqueeLabel'
+  pod 'MobileVLCKit'              # Maybe will be used for audio player
+  pod 'MBCircularProgressBar'     # A circular progress bar(used in teacher section when teached finishes uploading a story)
+
 #  pod 'GrowingTextView'
 #  pod 'SideMenu'
 #  pod 'SimpleCheckbox'
@@ -56,16 +61,5 @@ target 'stori' do
 #  pod 'ImageSlideshow/Kingfisher'
 #  pod 'youtube-ios-player-helper'
 #  pod 'PhoneNumberKit'
-  
-  post_install do |installer|
-    installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-        config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
-        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
-        config.build_settings['EXCLUDED_ARCHS[sdk=watchsimulator*]'] = 'arm64'
-        config.build_settings['EXCLUDED_ARCHS[sdk=appletvsimulator*]'] = 'arm64'
-      end
-    end
-  end
   
 end

@@ -17,8 +17,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoPlayerView" customModule="stori" customModuleProvider="target">
             <connections>
-                <outlet property="activityIndicator" destination="VJO-gl-Df8" id="FNu-pb-VMH"/>
+                <outlet property="activityIndicator" destination="mA2-Ph-iZX" id="dvl-6H-eMH"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="FhH-MG-psN"/>
+                <outlet property="muteUnmuteButton" destination="jhL-md-8Ak" id="yTz-9L-htA"/>
+                <outlet property="muteUnmuteImageView" destination="jWt-la-IAA" id="1Sb-7R-WC6"/>
+                <outlet property="muteUnmuteView" destination="jqJ-eY-2DN" id="YXO-p8-B04"/>
                 <outlet property="noDataLabel" destination="c4I-H9-NlH" id="oxl-wj-UvU"/>
                 <outlet property="videoView" destination="p52-ns-C8b" id="x4j-u1-wQK"/>
             </connections>
@@ -28,40 +31,78 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="459"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Could not load video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-H9-NlH">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p52-ns-C8b">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="459"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jqJ-eY-2DN">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="459"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_mute" translatesAutoresizingMaskIntoConstraints="NO" id="jWt-la-IAA">
+                            <rect key="frame" x="174" y="196.5" width="66" height="66"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="jWt-la-IAA" secondAttribute="height" multiplier="1:1" id="JOi-Kg-hhv"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="jWt-la-IAA" firstAttribute="centerY" secondItem="jqJ-eY-2DN" secondAttribute="centerY" id="BkD-fd-PmJ"/>
+                        <constraint firstItem="jWt-la-IAA" firstAttribute="width" secondItem="jqJ-eY-2DN" secondAttribute="width" multiplier="0.16" id="i6O-ZM-KSa"/>
+                        <constraint firstItem="jWt-la-IAA" firstAttribute="centerX" secondItem="jqJ-eY-2DN" secondAttribute="centerX" id="wah-vw-4PD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mA2-Ph-iZX" customClass="AppActivityIndicator" customModule="stori" customModuleProvider="target">
+                    <rect key="frame" x="192" y="214.5" width="30" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="u8N-5r-4Nu"/>
+                        <constraint firstAttribute="width" secondItem="mA2-Ph-iZX" secondAttribute="height" multiplier="1:1" id="xfC-BW-blo"/>
+                    </constraints>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Could not load video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-H9-NlH">
                     <rect key="frame" x="138.5" y="220" width="137.5" height="19.5"/>
                     <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                     <color key="textColor" name="Placeholder Gray"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="VJO-gl-Df8">
-                    <rect key="frame" x="197" y="219.5" width="20" height="20"/>
-                    <color key="color" name="AccentColor"/>
-                </activityIndicatorView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p52-ns-C8b">
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhL-md-8Ak">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="459"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </view>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="muteUnmuteButtonPressed:" destination="-1" eventType="touchUpInside" id="ZeA-F8-ulg"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="VJO-gl-Df8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="62G-3V-MyM"/>
+                <constraint firstItem="mA2-Ph-iZX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4We-UI-89h"/>
                 <constraint firstItem="c4I-H9-NlH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9yj-Ed-Mwx"/>
-                <constraint firstItem="VJO-gl-Df8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="EEu-Bw-072"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c4I-H9-NlH" secondAttribute="trailing" constant="16" id="EXz-3d-tN8"/>
                 <constraint firstItem="p52-ns-C8b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F2A-3R-rYj"/>
                 <constraint firstItem="p52-ns-C8b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ipo-4s-JP0"/>
-                <constraint firstItem="p52-ns-C8b" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="LFE-jP-yx5"/>
+                <constraint firstItem="jhL-md-8Ak" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="JEa-ro-b2S"/>
+                <constraint firstItem="p52-ns-C8b" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="LFE-jP-yx5"/>
+                <constraint firstAttribute="trailing" secondItem="jqJ-eY-2DN" secondAttribute="trailing" id="Out-bC-wMq"/>
                 <constraint firstItem="c4I-H9-NlH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="P1P-Qq-Kn5"/>
+                <constraint firstAttribute="bottom" secondItem="jqJ-eY-2DN" secondAttribute="bottom" id="QbX-po-Ef2"/>
+                <constraint firstItem="jhL-md-8Ak" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="VnX-Fd-WUx"/>
                 <constraint firstItem="c4I-H9-NlH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aQp-0B-mAb"/>
-                <constraint firstItem="p52-ns-C8b" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="yua-cJ-GbG"/>
+                <constraint firstItem="jhL-md-8Ak" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fBc-b0-kph"/>
+                <constraint firstItem="jqJ-eY-2DN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ho7-vw-LPY"/>
+                <constraint firstItem="jqJ-eY-2DN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="o9f-Vs-7Gh"/>
+                <constraint firstItem="jhL-md-8Ak" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sDx-tf-Cfu"/>
+                <constraint firstItem="mA2-Ph-iZX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vTG-Cz-MUl"/>
+                <constraint firstItem="p52-ns-C8b" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="yua-cJ-GbG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="131.8840579710145" y="-15.736607142857142"/>
         </view>
     </objects>
     <resources>
+        <image name="video_mute" width="88" height="88"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

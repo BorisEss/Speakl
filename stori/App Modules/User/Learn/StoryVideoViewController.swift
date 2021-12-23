@@ -7,14 +7,13 @@
 
 import UIKit
 import AVKit
+import KILabel
 
 class StoryVideoViewController: UIViewController {
-
-    var player: AVPlayer = AVPlayer()
     
     var video: Video?
     
-    @IBOutlet weak var videoView: UIView!
+    @IBOutlet weak var videoView: VideoPlayerView!
     
     @IBOutlet weak var tagListView: UIStackView!
     @IBOutlet weak var newTagView: UIView!
@@ -41,6 +40,8 @@ class StoryVideoViewController: UIViewController {
     
     @IBOutlet weak var detailsLabel: UILabel!
     
+    @IBOutlet weak var hashtagsLabel: KILabel!
+    
     @IBOutlet weak var listenSection: UIStackView!
     @IBOutlet weak var listenButton: StoryLearningButton!
     @IBOutlet weak var listenPercentageLabel: UILabel!
@@ -59,30 +60,34 @@ class StoryVideoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        videoView.muteChanged = { isMuted in
+            learnTabIsMuted = isMuted
+        }
+        
+        hashtagsLabel.hashtagLinkTapHandler = { _, hashtag, _ in
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Learn", bundle: nil)
+            let nextScreen = storyBoard.instantiateViewController(withIdentifier: "HashtagVideoListViewController")
+            if let unwrappedNextScreen = nextScreen as? HashtagVideoListViewController {
+                unwrappedNextScreen.hashtag = Hashtag(name: hashtag, popularity: 0)
+                self.navigationController?.pushViewController(unwrappedNextScreen, animated: true)
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         guard let video = video else { return }
         titleLabel.text = video.title
-        let asset = AVAsset(url: URL(string: video.sources)!)
-        let playerItem = AVPlayerItem(asset: asset)
-        player = AVPlayer(playerItem: playerItem)
-        let playerLayer = AVPlayerLayer(player: player)
-        DispatchQueue.main.async {
-            playerLayer.frame = self.videoView.frame
-        }
-        playerLayer.videoGravity = .resizeAspectFill
-        playerLayer.backgroundColor = UIColor.black.cgColor
-        self.videoView.layer.addSublayer(playerLayer)
+        videoView.load(url: video.sources,
+                       isMuted: learnTabIsMuted,
+                       autoReplay: true,
+                       muteAction: true)
         print("play: \(video.sources)")
-        player.play()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        player.pause()
+        videoView.pause()
         guard let video = video else { return }
         print("pause: \(video.sources)")
     }

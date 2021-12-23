@@ -47,7 +47,7 @@ class MainTabBarViewController: UITabBarController {
                                                selector: #selector(self.updateTitles),
                                                name: .updateLanguage,
                                                object: nil)
-        loadAddButton()
+//        loadAddButton()
     }
     
     private func loadAddButton() {

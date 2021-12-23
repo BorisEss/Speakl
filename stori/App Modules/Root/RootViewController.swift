@@ -7,6 +7,7 @@
 
 import UIKit
 import PromiseKit
+import Mute
 
 class RootViewController: UIViewController {
     
@@ -42,6 +43,15 @@ class RootViewController: UIViewController {
         retryButton.isHidden = true
         contactUsButton.isHidden = true
         firstly {
+            return Promise<Void> { promise in
+                Mute.shared.check()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    learnTabIsMuted = Mute.shared.isMute
+                    promise.fulfill_()
+                }
+            }
+        }
+        .then { _ -> Promise<Void> in
             return LanguageClient.getLanguages()
         }
         .then { _ -> Promise<Void> in

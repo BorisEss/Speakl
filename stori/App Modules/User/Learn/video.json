@@ -2,54 +2,67 @@
     "videos": [
         {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+            "cover": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg",
             "title": "Big Buck Bunny"
         },
         {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+            "cover": "https://images-na.ssl-images-amazon.com/images/I/71bmYbywCtL._RI_.jpg",
             "title": "Elephant Dream"
         },
         {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+            "cover": "https://d6u22qyv3ngwz.cloudfront.net/ad/76Ab/google-chromecast-bigger-blazes-small-7.jpg",
             "title": "For Bigger Blazes"
         },
         {
             "sources":"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+            "cover": "https://d2z1w4aiblvrwu.cloudfront.net/ad/76Ab/google-chromecast-bigger-blazes-small-1.jpg",
             "title": "For Bigger Escape"
         },
         {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+            "cover": "https://i.ytimg.com/vi/DAUKV5zf7Qk/maxresdefault.jpg",
             "title": "For Bigger Fun"
         },
         {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+            "cover": "https://d2z1w4aiblvrwu.cloudfront.net/ad/7TK8/default-large.jpg",
             "title": "For Bigger Joyrides"
         },
         {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+            "cover": "https://d2z1w4aiblvrwu.cloudfront.net/ad/75GS/google-chromecast-bigger-meltdowns-small-6.jpg",
             "title": "For Bigger Meltdowns"
         },
         {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+            "cover": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Sintel_poster.jpg",
             "title": "Sintel"
         },
         {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+            "cover": "https://i.pinimg.com/originals/e5/c3/1b/e5c31b9b4c0e2599537d1c055cb983d9.jpg",
             "title": "Subaru Outback On Street And Dirt"
         },
         {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+            "cover": "https://www.themoviedb.org/t/p/w500/8qy3jRmaHR7f8VZh3iXCqCWfFsH.jpg",
             "title": "Tears of Steel"
         },
         {
             "sources":"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+            "cover": "https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1614933362/autoexpress/2021/03/28889-GOLF8GTICLUBSPORTPUREWHITEJORDANBUTTERS7.jpg",
             "title": "Volkswagen GTI Review"
         },
         {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+            "cover": "https://images.moneycontrol.com/static-mcnews/2021/05/wallstreet-bull_04022021-770x433.jpg?impolicy=website&width=770&height=431",
             "title": "We Are Going On Bullrun"
         },
         {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
+            "cover": "https://images-na.ssl-images-amazon.com/images/I/617EtXLjDfL.jpg",
             "title": "What care can you get for a grand?"
         }
     ]
