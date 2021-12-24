@@ -31,7 +31,6 @@ target 'stori' do
   pod 'Mute'                      # Library to detect if the device is has mute switch on or off
   
   #UI Pods
-  pod 'UPCarouselFlowLayout'      # Carousel animation(used on tutorial screen)
   pod 'TextFieldEffects'          # Text field effects(used on auth screens)
   pod 'SwiftMessages'             # Popup animated messages(use for success or error messages)
   pod 'EasyTipView'               # Tooltip view(shown abouv tab bar informing user about creating new story)

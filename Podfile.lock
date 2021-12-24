@@ -67,7 +67,6 @@ PODS:
   - TagListView (1.4.1)
   - TextFieldEffects (1.6.0)
   - "UITextView+Placeholder (1.4.0)"
-  - UPCarouselFlowLayout (1.1.2)
   - YPImagePicker (5.0.0):
     - PryntTrimmerView (= 4.0.2)
     - SteviaLayout (= 4.7.3)
@@ -101,7 +100,6 @@ DEPENDENCIES:
   - TagListView
   - TextFieldEffects
   - "UITextView+Placeholder"
-  - UPCarouselFlowLayout
   - YPImagePicker
 
 SPEC REPOS:
@@ -139,7 +137,6 @@ SPEC REPOS:
     - TagListView
     - TextFieldEffects
     - "UITextView+Placeholder"
-    - UPCarouselFlowLayout
     - YPImagePicker
 
 SPEC CHECKSUMS:
@@ -176,9 +173,8 @@ SPEC CHECKSUMS:
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
-  UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
   YPImagePicker: 1463a19a36244e209dcb03c30e63559c5afa9602
 
-PODFILE CHECKSUM: e245ba25f729fcd5a78426f8f3750127c62aded5
+PODFILE CHECKSUM: 30c25c6423d4e1e694dd59a960352806811fb3bc
 
 COCOAPODS: 1.11.2

@@ -227,6 +227,8 @@
 		FAF398CD2772585900F1A55A /* HashtagVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF398CC2772585900F1A55A /* HashtagVideoListViewController.swift */; };
 		FAF398CF2773888000F1A55A /* HastagVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF398CE2773887F00F1A55A /* HastagVideoCollectionViewCell.swift */; };
 		FAF398D127745B5600F1A55A /* MainStoryVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF398D027745B5600F1A55A /* MainStoryVideoListViewController.swift */; };
+		FAF398D32774752600F1A55A /* TutorialPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF398D22774752600F1A55A /* TutorialPagesViewController.swift */; };
+		FAF398D52774753F00F1A55A /* TutorialItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF398D42774753F00F1A55A /* TutorialItemViewController.swift */; };
 		FAF452F125D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF452F025D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift */; };
 		FAFC99F625C9757000D60AB4 /* CSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC99F525C9757000D60AB4 /* CSTableViewCell.swift */; };
 		FAFD404F263C136800305326 /* UpdateLanguageLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD404E263C136800305326 /* UpdateLanguageLevelViewController.swift */; };
@@ -472,6 +474,8 @@
 		FAF398CC2772585900F1A55A /* HashtagVideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagVideoListViewController.swift; sourceTree = "<group>"; };
 		FAF398CE2773887F00F1A55A /* HastagVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastagVideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAF398D027745B5600F1A55A /* MainStoryVideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryVideoListViewController.swift; sourceTree = "<group>"; };
+		FAF398D22774752600F1A55A /* TutorialPagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPagesViewController.swift; sourceTree = "<group>"; };
+		FAF398D42774753F00F1A55A /* TutorialItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialItemViewController.swift; sourceTree = "<group>"; };
 		FAF452F025D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSuccessMessageViewController.swift; sourceTree = "<group>"; };
 		FAFC99F525C9757000D60AB4 /* CSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTableViewCell.swift; sourceTree = "<group>"; };
 		FAFC9A3425C987E700D60AB4 /* Stori-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stori-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -848,6 +852,8 @@
 				FA7B72ED2566B857003F9A0C /* Cell */,
 				FA812D87256640BF0036F162 /* Tutorial.storyboard */,
 				FA812DA625665DB90036F162 /* TutorialViewController.swift */,
+				FAF398D22774752600F1A55A /* TutorialPagesViewController.swift */,
+				FAF398D42774753F00F1A55A /* TutorialItemViewController.swift */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -1445,6 +1451,7 @@
 				FA8BB73925C1ED6C001B6A22 /* CSAudioTableViewCell.swift in Sources */,
 				FA46951C25C0553E00F347B1 /* CSPresenter.swift in Sources */,
 				FAEBEA3E258B4CC90077D942 /* UIButtonExtension.swift in Sources */,
+				FAF398D52774753F00F1A55A /* TutorialItemViewController.swift in Sources */,
 				FA16CE3325ECE65C007B8354 /* StoryVideoSection.swift in Sources */,
 				FAFF82C625D442D100A9BE82 /* CSCategoryService.swift in Sources */,
 				FAAEA0C82762465900E8B750 /* NothingFoundViewController.swift in Sources */,
@@ -1488,6 +1495,7 @@
 				FA876C8D25C823EB00E65B95 /* CSTableViewCellBuilder.swift in Sources */,
 				FAD804C025BEC757005451B6 /* CSStoryTitleViewController.swift in Sources */,
 				FA85A69A262EA255008E601C /* InAppPurchaseManager.swift in Sources */,
+				FAF398D32774752600F1A55A /* TutorialPagesViewController.swift in Sources */,
 				FA4D4481257A9B3200398AE2 /* AuthViewController.swift in Sources */,
 				FA4D4499257E48CE00398AE2 /* LanguageSelectViewController.swift in Sources */,
 				FA63DA3F258D030900722CA6 /* NotificationExtension.swift in Sources */,

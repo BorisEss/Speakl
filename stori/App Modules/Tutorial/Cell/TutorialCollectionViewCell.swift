@@ -7,7 +7,7 @@
 
 import UIKit
 
-typealias TutorialValue = (image: UIImage?, description: String?)
+typealias TutorialValue = (id: Int, image: UIImage?, description: String?)
 
 class TutorialCollectionViewCell: UICollectionViewCell, CustomCollectionViewCell {
 
