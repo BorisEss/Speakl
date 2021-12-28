@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Oz-DH-Zwv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,11 +23,11 @@
             <objects>
                 <viewController storyboardIdentifier="UpdateLanguageViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="UpdateLanguageViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZsY-E5-o7P">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="591-7a-KMf">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="8"/>
@@ -49,6 +49,7 @@
                             <constraint firstItem="ZsY-E5-o7P" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="f63-tM-28X"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="GVc-ay-CkK"/>
                     <connections>
                         <outlet property="tableView" destination="ZsY-E5-o7P" id="2EJ-5j-6Cc"/>
                         <segue destination="Gy5-aq-CdU" kind="show" identifier="showLanguageLevels" id="UcI-52-CLV"/>
@@ -63,11 +64,11 @@
             <objects>
                 <viewController storyboardIdentifier="UpdateLanguageLevelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gy5-aq-CdU" customClass="UpdateLanguageLevelViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Cd-FV-ZAB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to show" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skh-to-8Dn">
-                                <rect key="frame" x="144.5" y="411" width="125" height="20"/>
+                                <rect key="frame" x="145" y="393" width="124" height="22.5"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -76,11 +77,11 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PNm-PB-tSS">
-                                <rect key="frame" x="197" y="411" width="20" height="20"/>
+                                <rect key="frame" x="197" y="394" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rwj-C2-VLw">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="HOY-In-QzP">
@@ -146,26 +147,26 @@ based on your level</string>
             <objects>
                 <viewController storyboardIdentifier="UpdateLanguageLevelDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ycP-Ma-qyQ" customClass="UpdateLanguageLevelDetailsViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qd2-hP-h6t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FP-Zh-kd8">
-                                <rect key="frame" x="0.0" y="42" width="414" height="658"/>
+                                <rect key="frame" x="0.0" y="42" width="414" height="622"/>
                                 <connections>
                                     <segue destination="hNu-Ky-jsN" kind="embed" identifier="embededWebView" id="MJX-U7-Urn"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phn-2Q-coA">
-                                <rect key="frame" x="0.0" y="42" width="414" height="658"/>
+                                <rect key="frame" x="0.0" y="42" width="414" height="622"/>
                                 <connections>
                                     <segue destination="lJq-WV-1Y5" kind="embed" id="p6n-pm-oM6"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9af-5L-93f">
-                                <rect key="frame" x="0.0" y="700" width="414" height="108"/>
+                                <rect key="frame" x="0.0" y="664" width="414" height="110"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your can change this anytime in Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="JMD-Sx-t3h">
-                                        <rect key="frame" x="98" y="78" width="218" height="14"/>
+                                        <rect key="frame" x="98.5" y="78" width="217" height="16"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="12"/>
                                         <color key="textColor" name="Text Gray"/>
                                         <nil key="highlightedColor"/>
@@ -359,11 +360,11 @@ based on your level</string>
             <objects>
                 <viewController storyboardIdentifier="UpdateLanguageLevelVocabularyVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lJq-WV-1Y5" customClass="UpdateLanguageLevelVocabularyVC" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="epB-CR-cUs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="622"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xvo-BO-Mxd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="612"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="578"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -372,7 +373,7 @@ based on your level</string>
                                 </connections>
                             </tableView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No items to show" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Oa-d5-nIx">
-                                <rect key="frame" x="140.5" y="318" width="133.5" height="20"/>
+                                <rect key="frame" x="141" y="300" width="132.5" height="22.5"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                 <color key="textColor" name="Text Gray"/>
                                 <nil key="highlightedColor"/>
@@ -418,18 +419,18 @@ based on your level</string>
             <objects>
                 <viewController storyboardIdentifier="UpdateLanguageLevelGrammarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hNu-Ky-jsN" customClass="UpdateLanguageLevelGrammarViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ee-bl-VeL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="622"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REN-xH-Whm">
-                                <rect key="frame" x="0.0" y="44" width="414" height="612"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="578"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to show" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6f-Qr-tTk">
-                                <rect key="frame" x="144.5" y="318" width="125" height="20"/>
+                                <rect key="frame" x="145" y="300" width="124" height="22.5"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                 <color key="textColor" name="Text Gray"/>
                                 <nil key="highlightedColor"/>
@@ -438,7 +439,7 @@ based on your level</string>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-wh-N1D">
-                                <rect key="frame" x="197" y="318" width="20" height="20"/>
+                                <rect key="frame" x="197" y="301" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>
                         </subviews>
@@ -467,8 +468,32 @@ based on your level</string>
             </objects>
             <point key="canvasLocation" x="2775" y="317"/>
         </scene>
+        <!--App Shadow Navigation View Controller-->
+        <scene sceneID="Zlo-uX-Ldb">
+            <objects>
+                <navigationController storyboardIdentifier="UpdateLanguageMainViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Oz-DH-Zwv" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="ehE-6D-Rfz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Text Black"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="eMJ-rf-wNh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUu-73-agp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-691" y="117"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="navbarShadow" width="375" height="14"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

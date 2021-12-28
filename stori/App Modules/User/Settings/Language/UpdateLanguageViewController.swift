@@ -8,12 +8,12 @@
 import UIKit
 import TableFlip
 
+enum UpdateLanguageType {
+    case native
+    case learning
+}
+
 class UpdateLanguageViewController: UIViewController {
-    
-    enum UpdateLanguageType {
-        case native
-        case learning
-    }
     
     var type: UpdateLanguageType = .native
     

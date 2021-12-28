@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Ip-dZ-2Ul">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6sP-MT-Xe5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,17 +20,17 @@
             <objects>
                 <viewController storyboardIdentifier="NotificationsViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Ip-dZ-2Ul" customClass="NotificationsViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O8k-4M-OIz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ztR-L9-0ZR">
-                                <rect key="frame" x="0.0" y="76" width="414" height="53"/>
+                                <rect key="frame" x="0.0" y="32" width="414" height="53"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="una-fk-KTM">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="1HZ-Jt-9Qc">
-                                                <rect key="frame" x="16" y="16.5" width="138.5" height="20"/>
+                                                <rect key="frame" x="16" y="15.5" width="136.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="17"/>
                                                 <color key="textColor" name="Text Black"/>
                                                 <nil key="highlightedColor"/>
@@ -92,6 +92,7 @@
                             <constraint firstItem="hit-5C-5rz" firstAttribute="trailing" secondItem="ztR-L9-0ZR" secondAttribute="trailing" id="fk4-Ic-bWK"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lgu-Ya-NHG"/>
                     <connections>
                         <outlet property="notificationsSwitch" destination="9Fk-Qr-RhO" id="BUZ-hB-DIV"/>
                     </connections>
@@ -100,8 +101,32 @@
             </objects>
             <point key="canvasLocation" x="-432" y="65"/>
         </scene>
+        <!--App Shadow Navigation View Controller-->
+        <scene sceneID="qHs-Kp-hNK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6sP-MT-Xe5" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="mAb-9N-J0l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Text Black"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Ip-dZ-2Ul" kind="relationship" relationship="rootViewController" id="Z1s-jT-pdq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDe-2g-VhP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1142" y="65"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="navbarShadow" width="375" height="14"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -40,6 +40,8 @@ class SettingsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadData()
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -48,31 +50,35 @@ class SettingsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let nextVc = segue.destination as? WebBrowserViewController {
-            nextVc.navbarWasHidden = true
+        if let nextVc = segue.destination as? AppShadowNavigationViewController,
+           let firstVc = nextVc.viewControllers.first as? WebBrowserViewController {
+            firstVc.navbarWasHidden = true
             switch browserType {
             case .termsAndConditions:
-                nextVc.title = "common_terms_and_conditions".localized
-                nextVc.url = Endpoints.termsAndConditions
+                firstVc.title = "common_terms_and_conditions".localized
+                firstVc.url = Endpoints.termsAndConditions
             case .privacyPolicy:
-                nextVc.title = "common_privacy_policy".localized
-                nextVc.url = Endpoints.privacyPolicy
+                firstVc.title = "common_privacy_policy".localized
+                firstVc.url = Endpoints.privacyPolicy
             }
         }
         
         if segue.identifier == "changeNativeLanguage",
-           let nextVc = segue.destination as? UpdateLanguageViewController {
-            nextVc.type = .native
+           let nextVc = segue.destination as? AppShadowNavigationViewController,
+           let firstVc = nextVc.viewControllers.first as? UpdateLanguageViewController {
+            firstVc.type = .native
         }
         
         if segue.identifier == "changeLearningLevel",
-           let nextVc = segue.destination as? UpdateLanguageViewController {
-            nextVc.type = .learning
+           let nextVc = segue.destination as? AppShadowNavigationViewController,
+           let firstVc = nextVc.viewControllers.first as? UpdateLanguageViewController {
+            firstVc.type = .learning
         }
         
         if segue.identifier == "checkJoinTeacherNetwork",
-           let nextVc = segue.destination as? JoinTNSuccessMessageViewController {
-            nextVc.isCheck = true
+           let nextVc = segue.destination as? AppShadowNavigationViewController,
+           let firstVc = nextVc.viewControllers.first as? JoinTNSuccessMessageViewController {
+            firstVc.isCheck = true
             nextVc.hidesBottomBarWhenPushed = true
         }
     }
@@ -168,6 +174,7 @@ class SettingsViewController: UIViewController {
     
     private func setUpNavigationBar() {
         navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     private func loadData() {

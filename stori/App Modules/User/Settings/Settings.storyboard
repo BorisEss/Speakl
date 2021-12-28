@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zQw-tG-hXC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zQw-tG-hXC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -24,7 +24,7 @@
         <!--App Shadow Navigation View Controller-->
         <scene sceneID="4mT-XW-CDd">
             <objects>
-                <navigationController storyboardIdentifier="MainNavigationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zQw-tG-hXC" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController useStoryboardIdentifierAsRestorationIdentifier="YES" id="zQw-tG-hXC" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="50W-iV-0q9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -38,17 +38,17 @@
                         </userDefinedRuntimeAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="CpO-eI-rZC" kind="relationship" relationship="rootViewController" id="mrw-pr-lYq"/>
+                        <segue destination="CpO-eI-rZC" kind="relationship" relationship="rootViewController" id="VT0-vD-vn2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGl-H5-gs0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="175"/>
+            <point key="canvasLocation" x="-328" y="175"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Profile-->
         <scene sceneID="0jq-30-hsR">
             <objects>
-                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CpO-eI-rZC" customClass="SettingsViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" title="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CpO-eI-rZC" customClass="SettingsViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z9y-UN-eQX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -254,7 +254,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diD-6m-VjZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                                         <connections>
-                                                            <segue destination="cpQ-hA-Kc3" kind="show" id="PDa-mw-ug9"/>
+                                                            <segue destination="cpQ-hA-Kc3" kind="showDetail" id="flL-7Y-9vd"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -333,7 +333,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjG-oM-Bh3">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                                         <connections>
-                                                            <segue destination="Y2E-wq-Jfo" kind="show" id="2Ry-Wu-9sl"/>
+                                                            <segue destination="Y2E-wq-Jfo" kind="showDetail" id="nV4-R6-rZw"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -412,7 +412,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7l-kW-ami">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                                         <connections>
-                                                            <segue destination="xOZ-Za-tTM" kind="show" identifier="changeNativeLanguage" id="oEx-cD-ZNM"/>
+                                                            <segue destination="xOZ-Za-tTM" kind="showDetail" identifier="changeNativeLanguage" id="oEx-cD-ZNM"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -491,7 +491,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDg-fk-rLM">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                                         <connections>
-                                                            <segue destination="xOZ-Za-tTM" kind="show" identifier="changeLearningLevel" id="m2D-UW-3vg"/>
+                                                            <segue destination="xOZ-Za-tTM" kind="showDetail" identifier="changeLearningLevel" id="m2D-UW-3vg"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -570,7 +570,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lw3-vW-n6P">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                                         <connections>
-                                                            <segue destination="7Xb-fJ-5DA" kind="show" id="cek-G4-oeX"/>
+                                                            <segue destination="7Xb-fJ-5DA" kind="showDetail" id="cek-G4-oeX"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -693,7 +693,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qza-hW-LHe">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                                         <connections>
-                                                            <segue destination="cig-eB-yEJ" kind="show" id="GjJ-Gn-esa"/>
+                                                            <segue destination="cig-eB-yEJ" kind="showDetail" id="GjJ-Gn-esa"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -873,7 +873,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNb-25-SSH">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                                         <connections>
-                                                            <segue destination="FEf-e1-z9f" kind="show" id="hWn-BH-mVm"/>
+                                                            <segue destination="FEf-e1-z9f" kind="showDetail" id="hWn-BH-mVm"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1131,7 +1131,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNJ-a8-Ug7">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                                         <connections>
-                                                            <segue destination="TdI-Pk-jSI" kind="show" id="6Jk-Mh-7rd"/>
+                                                            <segue destination="TdI-Pk-jSI" kind="showDetail" id="6Jk-Mh-7rd"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1210,7 +1210,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQS-Ez-IbE">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                                         <connections>
-                                                            <segue destination="KP8-LW-RvN" kind="show" id="f2v-bW-4QZ"/>
+                                                            <segue destination="KP8-LW-RvN" kind="showDetail" id="f2v-bW-4QZ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1508,9 +1508,9 @@
                         <constraints>
                             <constraint firstItem="4Gq-jK-rbv" firstAttribute="top" secondItem="Z9y-UN-eQX" secondAttribute="top" id="F9s-aC-Qx0"/>
                             <constraint firstItem="4Gq-jK-rbv" firstAttribute="leading" secondItem="VA2-3q-WIb" secondAttribute="leading" id="M9x-eu-4gw"/>
+                            <constraint firstItem="518-SL-XjF" firstAttribute="width" secondItem="VA2-3q-WIb" secondAttribute="width" id="YxK-NL-Ovb"/>
                             <constraint firstItem="4Gq-jK-rbv" firstAttribute="trailing" secondItem="VA2-3q-WIb" secondAttribute="trailing" id="t0E-IR-FOI"/>
                             <constraint firstAttribute="bottom" secondItem="4Gq-jK-rbv" secondAttribute="bottom" id="tcF-wY-s6V"/>
-                            <constraint firstItem="518-SL-XjF" firstAttribute="width" secondItem="Z9y-UN-eQX" secondAttribute="width" id="yvV-0G-EWy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VQG-am-Cne"/>
@@ -1523,9 +1523,9 @@
                         <outlet property="userImageView" destination="bOx-27-Pde" id="nEc-wP-olN"/>
                         <outlet property="userNameLabel" destination="JEG-bF-yTC" id="Dlj-Xa-urJ"/>
                         <outlet property="versionLabel" destination="deI-iu-15p" id="NGL-gq-fTd"/>
-                        <segue destination="DFX-pt-7hX" kind="show" identifier="showJoinTeacherNetwork" id="wN4-KD-Gsd"/>
-                        <segue destination="vbQ-tr-GvH" kind="show" identifier="checkJoinTeacherNetwork" id="U41-5G-CxU"/>
-                        <segue destination="L4P-Ll-enB" kind="show" identifier="showWebBrowser" id="H7d-mE-cjU"/>
+                        <segue destination="w4o-lS-gbI" kind="showDetail" identifier="showWebBrowser" id="vNO-dd-rRQ"/>
+                        <segue destination="RGG-45-bB5" kind="showDetail" identifier="checkJoinTeacherNetwork" id="ZEY-3m-Dik"/>
+                        <segue destination="ep5-Ka-fer" kind="showDetail" identifier="showJoinTeacherNetwork" id="AQI-Fx-tSb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mK-Te-ota" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1540,7 +1540,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kK9-Zu-EZ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1335" y="38"/>
+            <point key="canvasLocation" x="1335" y="-1"/>
         </scene>
         <!--ChangePassword-->
         <scene sceneID="qJU-DJ-6Eh">
@@ -1550,7 +1550,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Vk-Hf-Gei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1338" y="80"/>
+            <point key="canvasLocation" x="1338" y="61"/>
         </scene>
         <!--UpdateLanguage-->
         <scene sceneID="OhI-TZ-fQW">
@@ -1590,7 +1590,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1OX-6C-SyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1351" y="297"/>
+            <point key="canvasLocation" x="2906" y="-550"/>
         </scene>
         <!--JoinTNSuccessMessageViewController-->
         <scene sceneID="Chh-1c-Gd2">
@@ -1600,7 +1600,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zpk-Rq-XQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="327"/>
+            <point key="canvasLocation" x="2987" y="175"/>
         </scene>
         <!--WebBrowser-->
         <scene sceneID="des-zJ-uYt">
@@ -1610,17 +1610,74 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfX-uS-qpy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1318" y="455"/>
+            <point key="canvasLocation" x="2872" y="933"/>
         </scene>
-        <!--InviteFriendsViewController-->
+        <!--Settings Second View Controller-->
+        <scene sceneID="SlY-sx-FJD">
+            <objects>
+                <viewController id="3gR-I0-Jg6" customClass="SettingsSecondViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yRV-lP-lVV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jIf-fW-vIl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2u-Tv-Bj6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-328" y="1743"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1EQ-Oz-20n">
+            <objects>
+                <viewController storyboardIdentifier="MainNavigationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zwv-xx-uob" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E57-w7-LMH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNd-W7-GmD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="A3z-wW-d9M" kind="embed" id="TiP-e7-CAB"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E1j-Sw-fjA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tNd-W7-GmD" firstAttribute="leading" secondItem="E1j-Sw-fjA" secondAttribute="leading" id="Nup-Ba-krP"/>
+                            <constraint firstItem="tNd-W7-GmD" firstAttribute="trailing" secondItem="E1j-Sw-fjA" secondAttribute="trailing" id="VYp-Zc-eQ8"/>
+                            <constraint firstItem="tNd-W7-GmD" firstAttribute="top" secondItem="E57-w7-LMH" secondAttribute="top" id="tcH-9A-j0d"/>
+                            <constraint firstAttribute="bottom" secondItem="tNd-W7-GmD" secondAttribute="bottom" id="xBb-Oj-2aS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIQ-Vj-JGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1993" y="1440"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="WqW-Hv-dl1">
+            <objects>
+                <splitViewController allowDoubleColumnStyle="YES" preferredDisplayMode="twoBeside" presentsWithGesture="NO" id="A3z-wW-d9M" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="3gR-I0-Jg6" kind="relationship" relationship="detailViewController" id="A4g-z5-vWv"/>
+                        <segue destination="zQw-tG-hXC" kind="relationship" relationship="masterViewController" id="N6m-jz-97f"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWE-WP-7rm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1217" y="1440"/>
+        </scene>
+        <!--MainInviteFriendsViewController-->
         <scene sceneID="fiV-ea-xdz">
             <objects>
-                <viewControllerPlaceholder storyboardName="Referral" referencedIdentifier="InviteFriendsViewController" id="TdI-Pk-jSI" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Referral" referencedIdentifier="MainInviteFriendsViewController" id="TdI-Pk-jSI" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="jcN-hY-O9r"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0a5-JZ-1Hw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="365"/>
+            <point key="canvasLocation" x="1403" y="365"/>
         </scene>
         <!--ShareFeedback-->
         <scene sceneID="HVF-DX-te1">
@@ -1630,21 +1687,90 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZuN-Rb-Vhu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1330" y="427"/>
+            <point key="canvasLocation" x="1328" y="427"/>
         </scene>
-        <!--RedeemCodeViewController-->
+        <!--MainRedeemCodeViewController-->
         <scene sceneID="NUm-5m-Eju">
             <objects>
-                <viewControllerPlaceholder storyboardName="Referral" referencedIdentifier="RedeemCodeViewController" id="KP8-LW-RvN" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Referral" referencedIdentifier="MainRedeemCodeViewController" id="KP8-LW-RvN" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5xL-BF-UX8"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ttk-b9-v0E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1386" y="394"/>
+            <point key="canvasLocation" x="1404" y="394"/>
+        </scene>
+        <!--App Shadow Navigation View Controller-->
+        <scene sceneID="2pC-75-bzV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w4o-lS-gbI" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="gjm-gR-0a5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Text Black"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L4P-Ll-enB" kind="relationship" relationship="rootViewController" id="gcW-c7-1iE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqr-kc-jko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2258" y="933"/>
+        </scene>
+        <!--App Shadow Navigation View Controller-->
+        <scene sceneID="DwG-JA-wuH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RGG-45-bB5" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="r9X-fk-blj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Text Black"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vbQ-tr-GvH" kind="relationship" relationship="rootViewController" id="OZq-m6-M1U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jm-vt-ZrO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2259" y="175"/>
+        </scene>
+        <!--App Shadow Navigation View Controller-->
+        <scene sceneID="eNh-tS-9Uw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ep5-Ka-fer" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="fUA-WA-nD8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Text Black"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DFX-pt-7hX" kind="relationship" relationship="rootViewController" id="do6-Op-adX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYr-ng-ohF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2257" y="-550"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="m2D-UW-3vg"/>
+        <segue reference="oEx-cD-ZNM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="navbarShadow" width="375" height="14"/>

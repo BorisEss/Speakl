@@ -25,6 +25,9 @@
 		FA16CE3625ED1231007B8354 /* CSChapterPartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16CE3525ED1231007B8354 /* CSChapterPartService.swift */; };
 		FA186515275B7A0B004981AA /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA186514275B7A0B004981AA /* UIScrollViewExtension.swift */; };
 		FA186517275BD81D004981AA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA186516275BD81D004981AA /* SearchViewController.swift */; };
+		FA187B892779BFFC00086245 /* Read.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA187B882779BFFC00086245 /* Read.storyboard */; };
+		FA187B8B2779C00900086245 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA187B8A2779C00900086245 /* ReadViewController.swift */; };
+		FA187B8F277B044400086245 /* SettingsSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA187B8E277B044400086245 /* SettingsSecondViewController.swift */; };
 		FA1F714925BEF066009AE0D4 /* CreateStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1F714825BEF066009AE0D4 /* CreateStory.storyboard */; };
 		FA1F714D25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1F714C25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard */; };
 		FA22A7EA2588E4C6001129E7 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22A7E92588E4C6001129E7 /* Interest.swift */; };
@@ -269,6 +272,9 @@
 		FA16CE3525ED1231007B8354 /* CSChapterPartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterPartService.swift; sourceTree = "<group>"; };
 		FA186514275B7A0B004981AA /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		FA186516275BD81D004981AA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FA187B882779BFFC00086245 /* Read.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Read.storyboard; sourceTree = "<group>"; };
+		FA187B8A2779C00900086245 /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		FA187B8E277B044400086245 /* SettingsSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSecondViewController.swift; sourceTree = "<group>"; };
 		FA1F714825BEF066009AE0D4 /* CreateStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateStory.storyboard; sourceTree = "<group>"; };
 		FA1F714C25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JoinTeacherNetwork.storyboard; sourceTree = "<group>"; };
 		FA22A7E92588E4C6001129E7 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
@@ -566,6 +572,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		FA187B872779BFED00086245 /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				FA187B882779BFFC00086245 /* Read.storyboard */,
+				FA187B8A2779C00900086245 /* ReadViewController.swift */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
 		FA3A467326381A6100BF0CB5 /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,6 +738,7 @@
 			children = (
 				FA5608C5261F2CEF0062EE88 /* Settings.storyboard */,
 				FA5608C8261F2D150062EE88 /* SettingsViewController.swift */,
+				FA187B8E277B044400086245 /* SettingsSecondViewController.swift */,
 				FAF10EC826369B14001B650F /* Edit PersonalInfo */,
 				FAF10ED32637150E001B650F /* Change Password */,
 				FA960AB5263AC46D001ACB21 /* Language */,
@@ -1057,6 +1073,7 @@
 		FAC97F8026CE8DEC008B2CEF /* Learn */ = {
 			isa = PBXGroup;
 			children = (
+				FA187B872779BFED00086245 /* Read */,
 				FAAEA0C2275FB2DB00E8B750 /* Cells */,
 				FAB84DC526CFE73C00B9C5A0 /* video.json */,
 				FAB84DC726CFEA3B00B9C5A0 /* Video.swift */,
@@ -1230,6 +1247,7 @@
 				FA812DA125665AA70036F162 /* Root.storyboard in Resources */,
 				FA4D4479257940BA00398AE2 /* WebBrowser.storyboard in Resources */,
 				FAD2BCA22768AFA400BE6A85 /* UnderlinedButton.xib in Resources */,
+				FA187B892779BFFC00086245 /* Read.storyboard in Resources */,
 				FA4D4496257E48B700398AE2 /* LanguageSelect.storyboard in Resources */,
 				FA5608E6262034070062EE88 /* IBMPlexSans-Medium.ttf in Resources */,
 				FA999D9825694D3E00B694FA /* Strings.strings in Resources */,
@@ -1455,6 +1473,7 @@
 				FA16CE3325ECE65C007B8354 /* StoryVideoSection.swift in Sources */,
 				FAFF82C625D442D100A9BE82 /* CSCategoryService.swift in Sources */,
 				FAAEA0C82762465900E8B750 /* NothingFoundViewController.swift in Sources */,
+				FA187B8F277B044400086245 /* SettingsSecondViewController.swift in Sources */,
 				FAF452F125D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift in Sources */,
 				FAE653F325C4046400CC25A1 /* CSRecordVoiceViewController.swift in Sources */,
 				FAFF92CD25A494AA00A604C3 /* JoinTNDocumentListViewController.swift in Sources */,
@@ -1511,6 +1530,7 @@
 				FA876C8125C80E7C00E65B95 /* CSImageItemTableViewCell.swift in Sources */,
 				FA46952025C0A0D300F347B1 /* CSCustomItemViewController.swift in Sources */,
 				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,
+				FA187B8B2779C00900086245 /* ReadViewController.swift in Sources */,
 				FAF2690B25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift in Sources */,
 				FAAF7CBF26304B220007E63B /* Vibration.swift in Sources */,
 				FAB84DC426CFAE1F00B9C5A0 /* StoryVideoListViewController.swift in Sources */,

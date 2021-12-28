@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UzI-Xy-Z23">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,11 +23,11 @@
             <objects>
                 <viewController storyboardIdentifier="InviteFriendsViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="InviteFriendsViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="E6E-pY-b7y">
-                                <rect key="frame" x="25" y="79" width="364" height="753"/>
+                                <rect key="frame" x="25" y="35" width="364" height="709"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dtM-td-TBo">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="292.5"/>
@@ -99,7 +99,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sharing this code will give you and your friend one month free of premium content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fb-0e-Sxa">
-                                        <rect key="frame" x="0.0" y="479.5" width="364" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="457.5" width="364" height="36.5"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
                                         <color key="textColor" name="Text Gray"/>
                                         <nil key="highlightedColor"/>
@@ -108,7 +108,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpf-4U-B5f" customClass="RegularButton" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="703" width="364" height="50"/>
+                                        <rect key="frame" x="0.0" y="659" width="364" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="gY3-y2-L92"/>
                                         </constraints>
@@ -145,6 +145,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="E6E-pY-b7y" secondAttribute="trailing" constant="25" id="kOd-mq-chb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Zyo-lh-Vim"/>
                     <connections>
                         <outlet property="codeButton" destination="Gec-dj-a2u" id="Pr5-aW-Qge"/>
                         <outlet property="qrCodeImageView" destination="hgg-fz-4Sq" id="vZW-VP-AOD"/>
@@ -159,11 +160,11 @@
             <objects>
                 <viewController storyboardIdentifier="RedeemCodeViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E2b-6w-tmk" customClass="RedeemCodeViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e2c-yN-vNJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vdi-Mo-SKu">
-                                <rect key="frame" x="25" y="60" width="364" height="772"/>
+                                <rect key="frame" x="25" y="16" width="364" height="728"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CQh-Ju-NQU">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="186.5"/>
@@ -195,7 +196,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="dDg-98-iXz">
-                                        <rect key="frame" x="0.0" y="393" width="364" height="123"/>
+                                        <rect key="frame" x="0.0" y="371" width="364" height="123"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bn-wO-2vg">
                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="35"/>
@@ -278,7 +279,7 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I45-5C-35y">
-                                        <rect key="frame" x="0.0" y="722" width="364" height="50"/>
+                                        <rect key="frame" x="0.0" y="678" width="364" height="50"/>
                                         <subviews>
                                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gka-rb-lVQ">
                                                 <rect key="frame" x="172" y="15" width="20" height="20"/>
@@ -332,6 +333,7 @@
                             <constraint firstItem="vdi-Mo-SKu" firstAttribute="leading" secondItem="g2h-mn-g5x" secondAttribute="leading" constant="25" id="Zbz-KI-cRI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="STj-BD-TD5"/>
                     <connections>
                         <outlet property="codeTextField" destination="ipm-Wh-KgP" id="La7-0g-ItA"/>
                         <outlet property="progressActivityIndicator" destination="gka-rb-lVQ" id="NcH-rv-yfV"/>
@@ -343,9 +345,56 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="744.64285714285711"/>
         </scene>
+        <!--App Shadow Navigation View Controller-->
+        <scene sceneID="VPI-9W-Nhv">
+            <objects>
+                <navigationController storyboardIdentifier="MainInviteFriendsViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UzI-Xy-Z23" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="ljW-by-XPY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Text Black"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="0UF-BL-XlZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZPl-CY-X2b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="54"/>
+        </scene>
+        <!--App Shadow Navigation View Controller-->
+        <scene sceneID="Iyw-g6-D6s">
+            <objects>
+                <navigationController storyboardIdentifier="MainRedeemCodeViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tsy-z3-Sd4" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="Toe-iw-lAm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Text Black"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="E2b-6w-tmk" kind="relationship" relationship="rootViewController" id="hYi-Jk-mE5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wdN-aC-0gm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-581" y="745"/>
+        </scene>
     </scenes>
     <resources>
         <image name="gift" width="149" height="149"/>
+        <image name="navbarShadow" width="375" height="14"/>
         <image name="qr-code" width="21" height="21"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

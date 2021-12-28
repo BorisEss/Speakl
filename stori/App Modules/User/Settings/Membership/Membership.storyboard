@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Ua-mc-CcJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xrL-98-zBk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -40,16 +40,16 @@
                                                 <rect key="frame" x="109" y="0.0" width="160" height="160"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GhG-IN-sLh">
-                                                        <rect key="frame" x="44" y="36" width="72.5" height="88"/>
+                                                        <rect key="frame" x="41.5" y="34" width="77.5" height="92.5"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unlimited_stories" translatesAutoresizingMaskIntoConstraints="NO" id="S0C-bt-QRc">
-                                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="40"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="77.5" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="ESb-9w-yLL"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited Stories" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="1ZZ-sD-7eg">
-                                                                <rect key="frame" x="0.0" y="48" width="72.5" height="40"/>
+                                                                <rect key="frame" x="0.0" y="48" width="77.5" height="44.5"/>
                                                                 <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="17"/>
                                                                 <color key="textColor" name="GradientBottom"/>
                                                                 <nil key="highlightedColor"/>
@@ -88,7 +88,7 @@
                                         </constraints>
                                     </view>
                                     <collectionView multipleTouchEnabled="YES" contentMode="center" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fDF-5H-1DE">
-                                        <rect key="frame" x="0.0" y="262.5" width="378" height="142"/>
+                                        <rect key="frame" x="0.0" y="260" width="378" height="142"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="142" id="zkf-oK-28n"/>
@@ -219,7 +219,7 @@
                                         </connections>
                                     </collectionView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="iVs-EH-1op">
-                                        <rect key="frame" x="0.0" y="507" width="378" height="64.5"/>
+                                        <rect key="frame" x="0.0" y="502.5" width="378" height="71.5"/>
                                         <string key="text">*Recurring billing, cancel anytime. If you choose to purchase the Premium App, payment will be charged to your iTunes account after 7 days of free trial, and your account will be charged for renewal within 24 hours prior to the end of the current period. Auto renewal may be turned off at any time by going to your Settings in the iTunes Store after purchase.</string>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="11"/>
                                         <color key="textColor" name="Text Gray"/>
@@ -268,7 +268,7 @@
                                 </subviews>
                             </stackView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="X4g-ms-1br">
-                                <rect key="frame" x="197" y="435.5" width="20" height="20"/>
+                                <rect key="frame" x="197" y="433" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hrz-J6-rTG">
@@ -289,6 +289,7 @@
                             <constraint firstItem="hrz-J6-rTG" firstAttribute="centerY" secondItem="Riw-jc-cec" secondAttribute="centerY" id="zdV-wl-rWv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Agd-Oo-FSY"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="loadingActivityIndicator" destination="X4g-ms-1br" id="SFz-nS-Ne3"/>
@@ -301,14 +302,41 @@
             </objects>
             <point key="canvasLocation" x="-481.15942028985512" y="103.79464285714285"/>
         </scene>
+        <!--App Shadow Navigation View Controller-->
+        <scene sceneID="N0b-YQ-HBF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xrL-98-zBk" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="vsR-na-whE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Text Black"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Ua-mc-CcJ" kind="relationship" relationship="rootViewController" id="fRy-GL-9fC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ai-hI-AYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1177" y="104"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="navbarShadow" width="375" height="14"/>
         <image name="unlimited_stories" width="30" height="24"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="GradientBottom">
             <color red="0.082000002264976501" green="0.10999999940395355" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Black">
+            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text Gray">
             <color red="0.4779999852180481" green="0.4779999852180481" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
