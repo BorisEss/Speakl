@@ -30,8 +30,15 @@
 		FA187B8F277B044400086245 /* SettingsSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA187B8E277B044400086245 /* SettingsSecondViewController.swift */; };
 		FA1F714925BEF066009AE0D4 /* CreateStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1F714825BEF066009AE0D4 /* CreateStory.storyboard */; };
 		FA1F714D25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1F714C25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard */; };
+		FA210B1E2785AA6600732440 /* WEPronunciationAudioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA210B1D2785AA6600732440 /* WEPronunciationAudioCollectionViewCell.swift */; };
+		FA210B202785AA7600732440 /* WEPronunciationStyleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA210B1F2785AA7600732440 /* WEPronunciationStyleCollectionViewCell.swift */; };
 		FA22A7EA2588E4C6001129E7 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22A7E92588E4C6001129E7 /* Interest.swift */; };
 		FA252CC925DB186000FF85E1 /* SwiftMessagesSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA252CC825DB186000FF85E1 /* SwiftMessagesSegues.swift */; };
+		FA26C0DF278442060021AFB1 /* SelectedWordExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26C0DE278442060021AFB1 /* SelectedWordExplanationViewController.swift */; };
+		FA26C0E1278476B60021AFB1 /* WEDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26C0E0278476B60021AFB1 /* WEDictionaryViewController.swift */; };
+		FA26C0E3278476D20021AFB1 /* WEPronunciationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26C0E2278476D20021AFB1 /* WEPronunciationViewController.swift */; };
+		FA26C0E5278477150021AFB1 /* WEExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26C0E4278477150021AFB1 /* WEExamplesViewController.swift */; };
+		FA26C0E72784772F0021AFB1 /* WEExpressionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26C0E62784772F0021AFB1 /* WEExpressionsViewController.swift */; };
 		FA270C00263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */; };
 		FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */; };
 		FA3553C125DBA503008DD1FF /* CSCustomItemPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */; };
@@ -116,6 +123,9 @@
 		FA7B72E22566B493003F9A0C /* Sweet Pea.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA7B72E12566B493003F9A0C /* Sweet Pea.ttf */; };
 		FA7B72EA2566B814003F9A0C /* TutorialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72E82566B814003F9A0C /* TutorialCollectionViewCell.swift */; };
 		FA7B72EB2566B814003F9A0C /* TutorialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7B72E92566B814003F9A0C /* TutorialCollectionViewCell.xib */; };
+		FA7E25322782EF5A00DEB6A0 /* SelectedWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E25312782EF5A00DEB6A0 /* SelectedWordViewController.swift */; };
+		FA7E25342783376300DEB6A0 /* SelectedWordMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E25332783376300DEB6A0 /* SelectedWordMenuCollectionViewCell.swift */; };
+		FA7E253727843C3C00DEB6A0 /* WordExplanation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7E253627843C3C00DEB6A0 /* WordExplanation.storyboard */; };
 		FA7EF424262DAB2D00335CE6 /* Membership.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7EF423262DAB2D00335CE6 /* Membership.storyboard */; };
 		FA7EF427262DAB3B00335CE6 /* MembershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EF426262DAB3B00335CE6 /* MembershipViewController.swift */; };
 		FA812D6E256298440036F162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812D6D256298440036F162 /* AppDelegate.swift */; };
@@ -277,8 +287,15 @@
 		FA187B8E277B044400086245 /* SettingsSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSecondViewController.swift; sourceTree = "<group>"; };
 		FA1F714825BEF066009AE0D4 /* CreateStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateStory.storyboard; sourceTree = "<group>"; };
 		FA1F714C25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JoinTeacherNetwork.storyboard; sourceTree = "<group>"; };
+		FA210B1D2785AA6600732440 /* WEPronunciationAudioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEPronunciationAudioCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA210B1F2785AA7600732440 /* WEPronunciationStyleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEPronunciationStyleCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA22A7E92588E4C6001129E7 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		FA252CC825DB186000FF85E1 /* SwiftMessagesSegues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMessagesSegues.swift; sourceTree = "<group>"; };
+		FA26C0DE278442060021AFB1 /* SelectedWordExplanationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedWordExplanationViewController.swift; sourceTree = "<group>"; };
+		FA26C0E0278476B60021AFB1 /* WEDictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEDictionaryViewController.swift; sourceTree = "<group>"; };
+		FA26C0E2278476D20021AFB1 /* WEPronunciationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEPronunciationViewController.swift; sourceTree = "<group>"; };
+		FA26C0E4278477150021AFB1 /* WEExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEExamplesViewController.swift; sourceTree = "<group>"; };
+		FA26C0E62784772F0021AFB1 /* WEExpressionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEExpressionsViewController.swift; sourceTree = "<group>"; };
 		FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelDetailsViewController.swift; sourceTree = "<group>"; };
 		FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInterestsSelectionViewController.swift; sourceTree = "<group>"; };
 		FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCustomItemPopUpViewController.swift; sourceTree = "<group>"; };
@@ -364,6 +381,9 @@
 		FA7B72E12566B493003F9A0C /* Sweet Pea.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sweet Pea.ttf"; sourceTree = "<group>"; };
 		FA7B72E82566B814003F9A0C /* TutorialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA7B72E92566B814003F9A0C /* TutorialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA7E25312782EF5A00DEB6A0 /* SelectedWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedWordViewController.swift; sourceTree = "<group>"; };
+		FA7E25332783376300DEB6A0 /* SelectedWordMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedWordMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA7E253627843C3C00DEB6A0 /* WordExplanation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WordExplanation.storyboard; sourceTree = "<group>"; };
 		FA7EF423262DAB2D00335CE6 /* Membership.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Membership.storyboard; sourceTree = "<group>"; };
 		FA7EF426262DAB3B00335CE6 /* MembershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipViewController.swift; sourceTree = "<group>"; };
 		FA812D6A256298440036F162 /* stori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stori.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -812,6 +832,31 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FA7E253527843C2500DEB6A0 /* Word Explanation */ = {
+			isa = PBXGroup;
+			children = (
+				FA7E253827843C7600DEB6A0 /* Cells */,
+				FA7E253627843C3C00DEB6A0 /* WordExplanation.storyboard */,
+				FA7E25312782EF5A00DEB6A0 /* SelectedWordViewController.swift */,
+				FA26C0E0278476B60021AFB1 /* WEDictionaryViewController.swift */,
+				FA26C0E2278476D20021AFB1 /* WEPronunciationViewController.swift */,
+				FA26C0E4278477150021AFB1 /* WEExamplesViewController.swift */,
+				FA26C0E62784772F0021AFB1 /* WEExpressionsViewController.swift */,
+				FA26C0DE278442060021AFB1 /* SelectedWordExplanationViewController.swift */,
+			);
+			path = "Word Explanation";
+			sourceTree = "<group>";
+		};
+		FA7E253827843C7600DEB6A0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA7E25332783376300DEB6A0 /* SelectedWordMenuCollectionViewCell.swift */,
+				FA210B1D2785AA6600732440 /* WEPronunciationAudioCollectionViewCell.swift */,
+				FA210B1F2785AA7600732440 /* WEPronunciationStyleCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		FA7EF422262DAB1900335CE6 /* Membership */ = {
 			isa = PBXGroup;
 			children = (
@@ -1073,6 +1118,7 @@
 		FAC97F8026CE8DEC008B2CEF /* Learn */ = {
 			isa = PBXGroup;
 			children = (
+				FA7E253527843C2500DEB6A0 /* Word Explanation */,
 				FA187B872779BFED00086245 /* Read */,
 				FAAEA0C2275FB2DB00E8B750 /* Cells */,
 				FAB84DC526CFE73C00B9C5A0 /* video.json */,
@@ -1271,6 +1317,7 @@
 				FA812D77256298450036F162 /* Assets.xcassets in Resources */,
 				FA3A467B26397BDA00BF0CB5 /* RatingButton.xib in Resources */,
 				FAE653EA25C3FB8600CC25A1 /* RecordButton.xib in Resources */,
+				FA7E253727843C3C00DEB6A0 /* WordExplanation.storyboard in Resources */,
 				FAF10ECA26369B3E001B650F /* EditPersonalInfo.storyboard in Resources */,
 				FA9F70F325C69E3F00A16C61 /* CSAddTableViewCell.xib in Resources */,
 				FA94561025C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib in Resources */,
@@ -1378,6 +1425,7 @@
 				FA4506092637FE5C00000279 /* NotificationsViewController.swift in Sources */,
 				FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */,
 				FAAF7CC226306F0F0007E63B /* Number.swift in Sources */,
+				FA7E25342783376300DEB6A0 /* SelectedWordMenuCollectionViewCell.swift in Sources */,
 				FA4B616F25713362005501BD /* DataExtension.swift in Sources */,
 				FA4B6144257015BE005501BD /* NetworkError.swift in Sources */,
 				FA417FC82590DE8B00F9D81B /* TeacherNetworkViewController.swift in Sources */,
@@ -1389,6 +1437,7 @@
 				FA3553E425DD0FD2008DD1FF /* CSChapterService.swift in Sources */,
 				FA4B619025752134005501BD /* MessageObject.swift in Sources */,
 				FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */,
+				FA26C0E5278477150021AFB1 /* WEExamplesViewController.swift in Sources */,
 				FAAA96D8261DE6A800B53D6C /* InterestTableViewCell.swift in Sources */,
 				FAEBEA22258A05BE0077D942 /* SuccessMessage.swift in Sources */,
 				FA658317256E29D5007052D9 /* UITextFieldExtension.swift in Sources */,
@@ -1421,7 +1470,9 @@
 				FA4D44622578BE0700398AE2 /* ResponseObject.swift in Sources */,
 				FA46951825C0521B00F347B1 /* ItemProtocol.swift in Sources */,
 				FAD2BCA42768B07E00BE6A85 /* UnderlinedButton.swift in Sources */,
+				FA7E25322782EF5A00DEB6A0 /* SelectedWordViewController.swift in Sources */,
 				FAAEA0C4275FB30800E8B750 /* LearnCategoryCollectionViewCell.swift in Sources */,
+				FA26C0E1278476B60021AFB1 /* WEDictionaryViewController.swift in Sources */,
 				FA4B61342570036C005501BD /* APIClient.swift in Sources */,
 				FA5041E625A5B3B0004E6EC9 /* File.swift in Sources */,
 				FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */,
@@ -1431,6 +1482,7 @@
 				FAD2BCA62768D1B200BE6A85 /* SearchHeaderTableViewCell.swift in Sources */,
 				FAFD404F263C136800305326 /* UpdateLanguageLevelViewController.swift in Sources */,
 				FAAEA0C1275F591500E8B750 /* AppActivityIndicator.swift in Sources */,
+				FA26C0E72784772F0021AFB1 /* WEExpressionsViewController.swift in Sources */,
 				FA4D445F257810C700398AE2 /* Language.swift in Sources */,
 				FA65830F256E2063007052D9 /* KeyboardApperenceHandler.swift in Sources */,
 				FA85364F25AC6465002607EC /* Checksum.swift in Sources */,
@@ -1442,6 +1494,7 @@
 				FA812D6E256298440036F162 /* AppDelegate.swift in Sources */,
 				FAFF92D325A494F300A604C3 /* JoinTNSuccessMessageViewController.swift in Sources */,
 				FA9BCB5226417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift in Sources */,
+				FA26C0E3278476D20021AFB1 /* WEPronunciationViewController.swift in Sources */,
 				FA4D447125790C1300398AE2 /* UserClient.swift in Sources */,
 				FA5041E325A5A578004E6EC9 /* ImagePicker.swift in Sources */,
 				FAF2691225BF32AE00FFDE4A /* CSMainListViewController.swift in Sources */,
@@ -1469,6 +1522,7 @@
 				FA8BB73925C1ED6C001B6A22 /* CSAudioTableViewCell.swift in Sources */,
 				FA46951C25C0553E00F347B1 /* CSPresenter.swift in Sources */,
 				FAEBEA3E258B4CC90077D942 /* UIButtonExtension.swift in Sources */,
+				FA210B1E2785AA6600732440 /* WEPronunciationAudioCollectionViewCell.swift in Sources */,
 				FAF398D52774753F00F1A55A /* TutorialItemViewController.swift in Sources */,
 				FA16CE3325ECE65C007B8354 /* StoryVideoSection.swift in Sources */,
 				FAFF82C625D442D100A9BE82 /* CSCategoryService.swift in Sources */,
@@ -1528,6 +1582,7 @@
 				FA3A467926381F5100BF0CB5 /* ShareFeedbackService.swift in Sources */,
 				FAB84DC826CFEA3B00B9C5A0 /* Video.swift in Sources */,
 				FA876C8125C80E7C00E65B95 /* CSImageItemTableViewCell.swift in Sources */,
+				FA26C0DF278442060021AFB1 /* SelectedWordExplanationViewController.swift in Sources */,
 				FA46952025C0A0D300F347B1 /* CSCustomItemViewController.swift in Sources */,
 				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,
 				FA187B8B2779C00900086245 /* ReadViewController.swift in Sources */,
@@ -1535,6 +1590,7 @@
 				FAAF7CBF26304B220007E63B /* Vibration.swift in Sources */,
 				FAB84DC426CFAE1F00B9C5A0 /* StoryVideoListViewController.swift in Sources */,
 				FA186515275B7A0B004981AA /* UIScrollViewExtension.swift in Sources */,
+				FA210B202785AA7600732440 /* WEPronunciationStyleCollectionViewCell.swift in Sources */,
 				FA186517275BD81D004981AA /* SearchViewController.swift in Sources */,
 				FA417FDE2590F40F00F9D81B /* UIApplicationExtension.swift in Sources */,
 				FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */,

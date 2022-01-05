@@ -46,6 +46,7 @@ target 'stori' do
   pod 'UITextView+Placeholder'    # Placeholder for UITextView
   pod 'SwiftyGif'                 # Library for loading GIF images in UIImageView
   pod 'KILabel'                   # Checks text in label and creates links, hashtags, handlers
+  pod 'StepSlider'                # Custom UISlider with stepping control
   
   # Should be deleted
 #  pod 'MarqueeLabel'

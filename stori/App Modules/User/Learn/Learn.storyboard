@@ -743,6 +743,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="readPressed:" destination="DPp-yt-Xfc" eventType="touchUpInside" id="A78-uh-Rgc"/>
+                                                            <segue destination="ygH-nl-l5l" kind="showDetail" id="kaJ-YX-hSm"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQO-Sf-qUB">
@@ -1296,6 +1297,16 @@
             </objects>
             <point key="canvasLocation" x="2547.826086956522" y="47.544642857142854"/>
         </scene>
+        <!--Read-->
+        <scene sceneID="66p-77-7li">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Read" id="ygH-nl-l5l" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Zc2-H1-vdh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LBY-W9-qYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3462" y="-16"/>
+        </scene>
         <!--Nothing Found View Controller-->
         <scene sceneID="Ccx-xj-r07">
             <objects>
@@ -1474,6 +1485,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="dIa-dZ-eGj"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="fgC-A2-iy8" secondAttribute="bottom" id="58W-HU-SVf"/>

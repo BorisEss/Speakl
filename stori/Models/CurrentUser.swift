@@ -12,7 +12,7 @@ struct CurrentUser: Decodable {
     private(set) var username: String
     private(set) var email: String
     private(set) var avatar: String
-    private var nativeLangId: Int?
+    private var nativeLang: NativeLang?
     private var currentLearningLanguage: LearningLanguage?
     private var learningLanguagesId: [Int]
     private(set) var teacherExperience: TeacherExperience?
@@ -26,7 +26,7 @@ struct CurrentUser: Decodable {
         case username
         case email
         case avatar
-        case nativeLangId = "native_lang"
+        case nativeLang = "native_lang"
         case currentLearningLanguage = "lang_to_learn"
         case learningLanguagesId = "languages"
         case teacherExperience = "teacher_experience"
@@ -41,14 +41,14 @@ struct CurrentUser: Decodable {
     }
     
     var userStatus: Status {
-        if nativeLangId == nil || currentLearningLanguage == nil {
+        if nativeLang?.id == nil || currentLearningLanguage == nil {
             return .shouldUpdateLanguage
         }
         return .completed
     }
     
     var nativeLanguage: Language? {
-        return Storage.shared.languageBy(id: nativeLangId ?? 0)
+        return Storage.shared.languageBy(id: nativeLang?.id ?? 0)
     }
     
     var learningLanguage: Language? {
@@ -95,4 +95,14 @@ enum UserSignUpType: Int, Decodable {
     case facebook = 1
     case google = 2
     case apple = 3
+}
+
+struct NativeLang: Decodable {
+    var id: Int
+    var name: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "lang_id"
+        case name = "name"
+    }
 }

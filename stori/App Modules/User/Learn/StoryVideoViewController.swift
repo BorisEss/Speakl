@@ -92,6 +92,16 @@ class StoryVideoViewController: UIViewController {
         print("pause: \(video.sources)")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nextVc = segue.destination as? UINavigationController,
+           let firstVc = nextVc.viewControllers.first as? ReadViewController {
+            firstVc.completion = {
+                self.videoView.play()
+            }
+        }
+        super.prepare(for: segue, sender: sender)
+    }
+    
     @IBAction func userPressed(_ sender: Any) {
         // TODO: Open user page
         let vcc = UIViewController()
@@ -188,10 +198,11 @@ class StoryVideoViewController: UIViewController {
     }
     
     @IBAction func readPressed(_ sender: Any) {
+        videoView.pause()
         // TODO: Open Read controller
-        let vcc = UIViewController()
-        vcc.view.backgroundColor = .white
-        present(vcc, animated: true, completion: nil)
+//        let vcc = UIViewController()
+//        vcc.view.backgroundColor = .white
+//        present(vcc, animated: true, completion: nil)
         readButton.inProgress()
     }
     

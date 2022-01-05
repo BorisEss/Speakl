@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g2W-Pe-W4V">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Bold.ttf">
+            <string>IBMPlexSans-Bold</string>
+        </array>
+        <array key="IBMPlexSans-Medium.ttf">
+            <string>IBMPlexSans-Medium</string>
+        </array>
+        <array key="IBMPlexSans-Regular.ttf">
+            <string>IBMPlexSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Read View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ReadViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Nu-bM-R15">
+                                <rect key="frame" x="0.0" y="124" width="414" height="772"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Niy-ln-t8f">
+                                        <rect key="frame" x="0.0" y="16" width="414" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3S-zg-eMX">
+                                                <rect key="frame" x="40" y="9.5" width="58" height="31.5"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="24"/>
+                                                <color key="textColor" name="Text Black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nUd-vg-lFd">
+                                                <rect key="frame" x="269" y="9.5" width="105" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="German" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCX-Dz-KPl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="31"/>
+                                                        <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="12"/>
+                                                        <color key="textColor" name="Text Black"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cEx-Ko-BfQ">
+                                                        <rect key="frame" x="56" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="languageSwitchChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="xvX-gK-trM"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="r3S-zg-eMX" firstAttribute="centerY" secondItem="Niy-ln-t8f" secondAttribute="centerY" id="7iD-Lg-mL3"/>
+                                            <constraint firstItem="nUd-vg-lFd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r3S-zg-eMX" secondAttribute="trailing" constant="8" id="L6d-uJ-ygS"/>
+                                            <constraint firstItem="r3S-zg-eMX" firstAttribute="leading" secondItem="Niy-ln-t8f" secondAttribute="leading" constant="40" id="LV6-xM-A3U"/>
+                                            <constraint firstAttribute="trailing" secondItem="nUd-vg-lFd" secondAttribute="trailing" constant="40" id="Qx6-lz-lCf"/>
+                                            <constraint firstItem="nUd-vg-lFd" firstAttribute="centerY" secondItem="Niy-ln-t8f" secondAttribute="centerY" id="YHN-rE-vhE"/>
+                                            <constraint firstAttribute="height" constant="50" id="sAx-QH-bMY"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B3b-tP-nMb">
+                                        <rect key="frame" x="44" y="80" width="326" height="678"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Christstollen is a Christmas cake. It has a long tradition and consists of yeast dough, sugar, spices and dried fruits. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3X0-iM-qXW">
+                                                <rect key="frame" x="0.0" y="0.0" width="326" height="678"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="Text Gray"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="NSE-vn-pzh">
+                                        <rect key="frame" x="20" y="80" width="374" height="644"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bou-3O-4OA" customClass="TagListView" customModule="TagListView">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="476"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="Text Black"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                        <color key="value" name="Text Black"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tagHighlightedBackgroundColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                                        <real key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gPb-Xw-F8E">
+                                                <rect key="frame" x="0.0" y="500" width="374" height="60"/>
+                                                <subviews>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqG-Un-WCT" customClass="StoryLearningButton" customModule="stori" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Previous">
+                                                            <color key="titleColor" name="Text Gray"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" systemColor="systemGray5Color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="previousButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1ND-ko-XXg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKe-9n-GBq" customClass="StoryLearningButton" customModule="stori" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Next">
+                                                            <color key="titleColor" name="Text Gray"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" systemColor="systemGray5Color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="nextButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SOH-kh-AgL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOa-m4-Otv" customClass="StoryLearningButton" customModule="stori" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Finish">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="finishButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EdV-3q-odf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="gAj-6I-7Mb"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7b1-D0-jG7">
+                                                <rect key="frame" x="0.0" y="584" width="374" height="60"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14d-iX-7a2" customClass="StepSlider">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" name="Text Black"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="5Ai-vK-km1"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxCount">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                                                <integer key="value" value="0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="trackHeight">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="trackCircleRadius">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="sliderCircleRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                                <color key="value" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="sliderCircleColor">
+                                                                <color key="value" name="Text Black"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="pageSliderBegin:" destination="Y6W-OH-hqX" eventType="touchDown" id="t5m-Ed-L3i"/>
+                                                            <action selector="pageSliderChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="E4t-Kd-qfK"/>
+                                                            <action selector="pageSliderEnd:" destination="Y6W-OH-hqX" eventType="touchUpOutside" id="IB1-m4-SX6"/>
+                                                            <action selector="pageSliderEnd:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KDb-nA-GnO"/>
+                                                        </connections>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 of 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEW-dh-eak">
+                                                        <rect key="frame" x="0.0" y="44" width="374" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="Kse-lE-G6f"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="12"/>
+                                                        <color key="textColor" name="GradientBottom"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsB-E2-0Br">
+                                        <rect key="frame" x="32" y="618" width="350" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paragraph #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYf-ab-wyk">
+                                                <rect key="frame" x="124" y="12.5" width="102" height="21"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Text Black"/>
+                                        <constraints>
+                                            <constraint firstItem="OYf-ab-wyk" firstAttribute="centerY" secondItem="fsB-E2-0Br" secondAttribute="centerY" id="5e1-ib-3g4"/>
+                                            <constraint firstItem="OYf-ab-wyk" firstAttribute="centerX" secondItem="fsB-E2-0Br" secondAttribute="centerX" id="6cM-ok-GgX"/>
+                                            <constraint firstAttribute="height" constant="46" id="Zab-lL-8jM"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fsB-E2-0Br" secondAttribute="trailing" constant="32" id="6lm-UQ-s2L"/>
+                                    <constraint firstItem="Niy-ln-t8f" firstAttribute="leading" secondItem="4Nu-bM-R15" secondAttribute="leading" id="9Xm-EN-WNX"/>
+                                    <constraint firstItem="NSE-vn-pzh" firstAttribute="top" secondItem="Niy-ln-t8f" secondAttribute="bottom" constant="14" id="EfK-on-ydZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Niy-ln-t8f" secondAttribute="trailing" id="FSU-09-eXG"/>
+                                    <constraint firstAttribute="trailing" secondItem="B3b-tP-nMb" secondAttribute="trailing" constant="44" id="e8z-9H-NFj"/>
+                                    <constraint firstItem="fsB-E2-0Br" firstAttribute="leading" secondItem="4Nu-bM-R15" secondAttribute="leading" constant="32" id="jCE-OP-cuL"/>
+                                    <constraint firstAttribute="bottom" secondItem="B3b-tP-nMb" secondAttribute="bottom" constant="14" id="npZ-Kp-jZf"/>
+                                    <constraint firstItem="Niy-ln-t8f" firstAttribute="top" secondItem="4Nu-bM-R15" secondAttribute="top" constant="16" id="ojk-uv-pi8"/>
+                                    <constraint firstItem="fsB-E2-0Br" firstAttribute="bottom" secondItem="14d-iX-7a2" secondAttribute="top" id="pDY-EW-QWL"/>
+                                    <constraint firstItem="B3b-tP-nMb" firstAttribute="leading" secondItem="4Nu-bM-R15" secondAttribute="leading" constant="44" id="pZb-im-Ipu"/>
+                                    <constraint firstItem="NSE-vn-pzh" firstAttribute="leading" secondItem="4Nu-bM-R15" secondAttribute="leading" constant="20" id="qvd-FS-gju"/>
+                                    <constraint firstItem="B3b-tP-nMb" firstAttribute="top" secondItem="Niy-ln-t8f" secondAttribute="bottom" constant="14" id="soO-Cu-ofC"/>
+                                    <constraint firstAttribute="trailing" secondItem="NSE-vn-pzh" secondAttribute="trailing" constant="20" id="wGk-34-q5y"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQ0-ez-p6B">
+                                <rect key="frame" x="16" y="60" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ftb-mI-YHP"/>
+                                    <constraint firstAttribute="width" secondItem="pQ0-ez-p6B" secondAttribute="height" multiplier="1:1" id="vu9-Cc-NEj"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="white_close"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LfJ-qD-d6x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NSE-vn-pzh" secondAttribute="bottom" constant="14" id="D6N-DY-ICO"/>
+                            <constraint firstAttribute="bottom" secondItem="4Nu-bM-R15" secondAttribute="bottom" id="GRJ-GO-1AD"/>
+                            <constraint firstItem="4Nu-bM-R15" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Gow-Um-s7A"/>
+                            <constraint firstItem="4Nu-bM-R15" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="IPp-eH-vcm"/>
+                            <constraint firstItem="4Nu-bM-R15" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="IXL-fx-f13"/>
+                            <constraint firstItem="4Nu-bM-R15" firstAttribute="top" secondItem="pQ0-ez-p6B" secondAttribute="bottom" constant="16" id="KW0-0V-drb"/>
+                            <constraint firstItem="pQ0-ez-p6B" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="NfM-Bl-OfR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QGN-Rc-fPQ"/>
+                    <connections>
+                        <outlet property="cardView" destination="4Nu-bM-R15" id="p7J-af-mMA"/>
+                        <outlet property="finishButton" destination="UOa-m4-Otv" id="H5N-XD-kJI"/>
+                        <outlet property="languageLabel" destination="OCX-Dz-KPl" id="Dzi-NP-Jba"/>
+                        <outlet property="languageSwitch" destination="cEx-Ko-BfQ" id="sZn-hs-bPF"/>
+                        <outlet property="learningLanguageView" destination="NSE-vn-pzh" id="zds-6g-YcN"/>
+                        <outlet property="learningLanguageWordsView" destination="bou-3O-4OA" id="vPb-0x-dCf"/>
+                        <outlet property="nativeLanguageTextView" destination="3X0-iM-qXW" id="huZ-NH-Bml"/>
+                        <outlet property="nativeLanguageView" destination="B3b-tP-nMb" id="hon-Pg-9ge"/>
+                        <outlet property="nextButton" destination="YKe-9n-GBq" id="AZw-mO-8EW"/>
+                        <outlet property="pageLabel" destination="JEW-dh-eak" id="zMx-Ga-lTJ"/>
+                        <outlet property="pageSectionView" destination="7b1-D0-jG7" id="zIF-pQ-pqq"/>
+                        <outlet property="pageSlider" destination="14d-iX-7a2" id="7aw-2F-yUW"/>
+                        <outlet property="paragraphLabel" destination="OYf-ab-wyk" id="gLc-HL-Gtm"/>
+                        <outlet property="paragraphView" destination="fsB-E2-0Br" id="dIf-I9-gJ2"/>
+                        <outlet property="previousButton" destination="YqG-Un-WCT" id="f76-YR-bIH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mla-Vi-hOg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overFullScreen" navigationBarHidden="YES" id="g2W-Pe-W4V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="5KR-Ef-yML">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="xor-A0-6Nu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5D-jC-j1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="14d-iX-7a2">
+            <size key="intrinsicContentSize" width="374" height="44"/>
+        </designable>
+        <designable name="bou-3O-4OA">
+            <size key="intrinsicContentSize" width="374" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="white_close" width="48" height="48"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GradientBottom">
+            <color red="0.082000002264976501" green="0.10999999940395355" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Black">
+            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Gray">
+            <color red="0.4779999852180481" green="0.4779999852180481" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
