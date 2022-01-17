@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yBX-FG-ynj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Bold.ttf">
+            <string>IBMPlexSans-Bold</string>
+        </array>
+        <array key="IBMPlexSans-Medium.ttf">
+            <string>IBMPlexSans-Medium</string>
+        </array>
+        <array key="IBMPlexSans-Regular.ttf">
+            <string>IBMPlexSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Listen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ListenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="ListenViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsv-ZE-VNh">
+                                <rect key="frame" x="0.0" y="124" width="414" height="772"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rle-dV-sFP">
+                                        <rect key="frame" x="0.0" y="16" width="414" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91p-nD-PN2">
+                                                <rect key="frame" x="40" y="9.5" width="68.5" height="31.5"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="24"/>
+                                                <color key="textColor" name="Text Black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="fAI-vv-yFm">
+                                                <rect key="frame" x="269" y="9.5" width="105" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="German" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os5-lw-8Y6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="31"/>
+                                                        <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="12"/>
+                                                        <color key="textColor" name="Text Black"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9D-sv-MFO">
+                                                        <rect key="frame" x="56" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="languageSwitchChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="9F1-fr-5d1"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstItem="fAI-vv-yFm" firstAttribute="centerY" secondItem="rle-dV-sFP" secondAttribute="centerY" id="3mf-4H-la0"/>
+                                            <constraint firstItem="91p-nD-PN2" firstAttribute="centerY" secondItem="rle-dV-sFP" secondAttribute="centerY" id="Eqm-1v-agb"/>
+                                            <constraint firstItem="91p-nD-PN2" firstAttribute="leading" secondItem="rle-dV-sFP" secondAttribute="leading" constant="40" id="kms-hS-2f9"/>
+                                            <constraint firstAttribute="height" constant="50" id="lgU-Wd-3zN"/>
+                                            <constraint firstItem="fAI-vv-yFm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="91p-nD-PN2" secondAttribute="trailing" constant="8" id="r1o-Ng-j8Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="fAI-vv-yFm" secondAttribute="trailing" constant="40" id="xxn-LP-Rs3"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Rmv-8w-8SN">
+                                        <rect key="frame" x="20" y="658" width="374" height="60"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAB-h3-X7u" customClass="StoryLearningButton" customModule="stori" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="aAB-h3-X7u" secondAttribute="height" multiplier="1:1" id="fkY-fd-cQe"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="skip-back-filled">
+                                                    <color key="titleColor" name="Text Gray"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="systemGray5Color"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="restartButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6Sa-nk-R5b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyg-E3-4gw" customClass="StoryLearningButton" customModule="stori" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Start">
+                                                    <color key="titleColor" name="Text Gray"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="systemGray5Color"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="startButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aMJ-K2-eqJ"/>
+                                                </connections>
+                                            </button>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01G-u2-fAH">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfe-qy-HdA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhO-Yp-VBQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="xhO-Yp-VBQ" secondAttribute="height" multiplier="1:1" id="dWk-RM-8Ou"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="goback_2sec">
+                                                                    <color key="titleColor" name="Text Gray"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="goBack2SecondsPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4bm-HD-xvD"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqk-KC-T4d">
+                                                                <rect key="frame" x="60" y="0.0" width="0.0" height="60"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Pause">
+                                                                    <color key="titleColor" name="Text Gray"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pauseButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xGs-xR-j8B"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nny-9e-ZGb">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Nny-9e-ZGb" secondAttribute="height" multiplier="1:1" id="Qjz-wo-L0E"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="goforward_2sec">
+                                                                    <color key="titleColor" name="Text Gray"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="goNext2SecondsPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="geL-wy-xHv"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Nny-9e-ZGb" firstAttribute="width" secondItem="Nny-9e-ZGb" secondAttribute="height" multiplier="1:1" id="vQv-JU-ldS"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="wfe-qy-HdA" firstAttribute="top" secondItem="01G-u2-fAH" secondAttribute="top" id="7Ik-jQ-W5k"/>
+                                                    <constraint firstItem="wfe-qy-HdA" firstAttribute="leading" secondItem="01G-u2-fAH" secondAttribute="leading" id="A7l-ah-Dek"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wfe-qy-HdA" secondAttribute="trailing" id="NXI-m5-exN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="wfe-qy-HdA" secondAttribute="bottom" id="SWq-IS-Sad"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="systemGray5Color"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC3-ei-aX0" customClass="StoryLearningButton" customModule="stori" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Finish">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="finishButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HvA-hc-TmR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="AiD-DI-KVX"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4P-fZ-vhG">
+                                        <rect key="frame" x="0.0" y="80" width="414" height="72"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="U0X-JA-VOP">
+                                                <rect key="frame" x="38" y="8" width="338" height="32"/>
+                                                <color key="minimumTrackTintColor" name="AccentColor"/>
+                                                <color key="maximumTrackTintColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="thumbTintColor" name="AccentColor"/>
+                                                <connections>
+                                                    <action selector="timelineSliderChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="v0O-dg-TZh"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vo-K8-owD">
+                                                <rect key="frame" x="40" y="47" width="27.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="13"/>
+                                                <color key="textColor" name="Text Gray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgG-NJ-dv5">
+                                                <rect key="frame" x="346.5" y="47" width="27.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="13"/>
+                                                <color key="textColor" name="Text Gray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="JgG-NJ-dv5" secondAttribute="bottom" constant="8" id="0rK-Ab-qRM"/>
+                                            <constraint firstItem="2vo-K8-owD" firstAttribute="leading" secondItem="u4P-fZ-vhG" secondAttribute="leading" constant="40" id="3bK-uX-YgO"/>
+                                            <constraint firstAttribute="trailing" secondItem="U0X-JA-VOP" secondAttribute="trailing" constant="40" id="7rB-7n-AQc"/>
+                                            <constraint firstItem="JgG-NJ-dv5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2vo-K8-owD" secondAttribute="trailing" constant="32" id="EMn-3W-XUW"/>
+                                            <constraint firstItem="2vo-K8-owD" firstAttribute="top" secondItem="U0X-JA-VOP" secondAttribute="bottom" constant="8" id="HTA-Yf-dZN"/>
+                                            <constraint firstAttribute="trailing" secondItem="JgG-NJ-dv5" secondAttribute="trailing" constant="40" id="I1W-S7-Upa"/>
+                                            <constraint firstAttribute="height" constant="72" id="LLh-Ke-2uC"/>
+                                            <constraint firstItem="U0X-JA-VOP" firstAttribute="leading" secondItem="u4P-fZ-vhG" secondAttribute="leading" constant="40" id="MNo-In-D5h"/>
+                                            <constraint firstAttribute="bottom" secondItem="2vo-K8-owD" secondAttribute="bottom" constant="8" id="Utb-ey-fFK"/>
+                                            <constraint firstItem="JgG-NJ-dv5" firstAttribute="top" secondItem="U0X-JA-VOP" secondAttribute="bottom" constant="8" id="XlQ-Bx-Vzc"/>
+                                            <constraint firstItem="U0X-JA-VOP" firstAttribute="top" secondItem="u4P-fZ-vhG" secondAttribute="top" constant="8" id="jbA-TT-rKl"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFC-e2-6jl" customClass="TagListView" customModule="TagListView">
+                                        <rect key="frame" x="20" y="166" width="374" height="478"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" name="Text Black"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                <color key="value" name="Text Black"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="tagHighlightedBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" red="0.79607843140000001" green="0.79607843140000001" blue="0.79607843140000001" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Christstollen is a Christmas cake. It has a long tradition and consists of yeast dough, sugar, spices and dried fruits. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwY-i4-xjB">
+                                        <rect key="frame" x="44" y="166" width="326" height="478"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="Text Gray"/>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstItem="XwY-i4-xjB" firstAttribute="top" secondItem="u4P-fZ-vhG" secondAttribute="bottom" constant="14" id="0l1-Ly-ST4"/>
+                                    <constraint firstItem="XwY-i4-xjB" firstAttribute="leading" secondItem="bsv-ZE-VNh" secondAttribute="leading" constant="44" id="2ik-qP-HR6"/>
+                                    <constraint firstItem="Rmv-8w-8SN" firstAttribute="top" secondItem="xFC-e2-6jl" secondAttribute="bottom" constant="14" id="51q-Qg-Ihm"/>
+                                    <constraint firstItem="u4P-fZ-vhG" firstAttribute="top" secondItem="rle-dV-sFP" secondAttribute="bottom" constant="14" id="BWf-6V-gqC"/>
+                                    <constraint firstItem="xFC-e2-6jl" firstAttribute="leading" secondItem="bsv-ZE-VNh" secondAttribute="leading" constant="20" id="Ulv-iD-MuE"/>
+                                    <constraint firstItem="rle-dV-sFP" firstAttribute="top" secondItem="bsv-ZE-VNh" secondAttribute="top" constant="16" id="WsN-zh-fj3"/>
+                                    <constraint firstAttribute="trailing" secondItem="XwY-i4-xjB" secondAttribute="trailing" constant="44" id="atz-ZF-5ta"/>
+                                    <constraint firstItem="Rmv-8w-8SN" firstAttribute="top" secondItem="XwY-i4-xjB" secondAttribute="bottom" constant="14" id="bJI-dc-751"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rmv-8w-8SN" secondAttribute="trailing" constant="20" id="gwD-4P-8xY"/>
+                                    <constraint firstItem="u4P-fZ-vhG" firstAttribute="leading" secondItem="bsv-ZE-VNh" secondAttribute="leading" id="jhM-ov-6If"/>
+                                    <constraint firstAttribute="trailing" secondItem="rle-dV-sFP" secondAttribute="trailing" id="l7O-Y1-ubG"/>
+                                    <constraint firstAttribute="trailing" secondItem="xFC-e2-6jl" secondAttribute="trailing" constant="20" id="n7D-Ze-sbZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="u4P-fZ-vhG" secondAttribute="trailing" id="p8T-ai-5j7"/>
+                                    <constraint firstItem="xFC-e2-6jl" firstAttribute="top" secondItem="u4P-fZ-vhG" secondAttribute="bottom" constant="14" id="vSw-Fd-Z5r"/>
+                                    <constraint firstItem="Rmv-8w-8SN" firstAttribute="leading" secondItem="bsv-ZE-VNh" secondAttribute="leading" constant="20" id="wmq-eA-Ifs"/>
+                                    <constraint firstItem="rle-dV-sFP" firstAttribute="leading" secondItem="bsv-ZE-VNh" secondAttribute="leading" id="ygG-Jn-2Ty"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-Ee-f3T">
+                                <rect key="frame" x="16" y="60" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Cek-pL-bKA"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="white_close"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IEl-8d-ePY"/>
+                                </connections>
+                            </button>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pen-A4-HcV">
+                                <rect key="frame" x="238" y="60" width="160" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id3-30-Tlp">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Utk-1K-8wH"/>
+                                            <constraint firstAttribute="width" secondItem="id3-30-Tlp" secondAttribute="height" multiplier="1:1" id="uHM-lD-X2g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="0.5">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="AccentColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="slowSpeedButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JJm-b7-MSd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEo-PR-Xhd">
+                                        <rect key="frame" x="56" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vEo-PR-Xhd" secondAttribute="height" multiplier="1:1" id="IIb-5E-tgJ"/>
+                                            <constraint firstAttribute="height" constant="48" id="jlI-8m-pHG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="AccentColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="normalSpeedButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="arb-Z8-vt4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfj-on-Z0r">
+                                        <rect key="frame" x="112" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Qfj-on-Z0r" secondAttribute="height" multiplier="1:1" id="5wc-QX-Wwh"/>
+                                            <constraint firstAttribute="height" constant="48" id="igy-O5-BDY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="AccentColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="quickSpeedButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ztc-QR-hcw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vEo-PR-Xhd" firstAttribute="width" secondItem="vEo-PR-Xhd" secondAttribute="height" multiplier="1:1" id="QlI-1Y-nCn"/>
+                                    <constraint firstItem="Qfj-on-Z0r" firstAttribute="width" secondItem="Qfj-on-Z0r" secondAttribute="height" multiplier="1:1" id="x2g-XN-OqQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bsv-ZE-VNh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="3yW-j7-k2h"/>
+                            <constraint firstItem="RCc-Ee-f3T" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Je9-fb-zKU"/>
+                            <constraint firstItem="RCc-Ee-f3T" firstAttribute="width" secondItem="RCc-Ee-f3T" secondAttribute="height" multiplier="1:1" id="MsE-JU-hir"/>
+                            <constraint firstItem="bsv-ZE-VNh" firstAttribute="top" secondItem="RCc-Ee-f3T" secondAttribute="bottom" constant="16" id="iWp-du-vGA"/>
+                            <constraint firstAttribute="bottom" secondItem="bsv-ZE-VNh" secondAttribute="bottom" id="mEd-5m-17k"/>
+                            <constraint firstItem="bsv-ZE-VNh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pgi-TX-3i5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Rmv-8w-8SN" secondAttribute="bottom" constant="20" id="rpz-lz-wvm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bsv-ZE-VNh" secondAttribute="trailing" id="wnf-88-Qei"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Pen-A4-HcV" secondAttribute="trailing" constant="16" id="yiW-El-Kkc"/>
+                            <constraint firstItem="bsv-ZE-VNh" firstAttribute="top" secondItem="Pen-A4-HcV" secondAttribute="bottom" constant="16" id="zx8-8G-MKi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eWz-j1-SBU"/>
+                    <connections>
+                        <outlet property="cardView" destination="bsv-ZE-VNh" id="lgG-Qo-sKi"/>
+                        <outlet property="finishButton" destination="XC3-ei-aX0" id="TIu-MU-Mah"/>
+                        <outlet property="languageLabel" destination="Os5-lw-8Y6" id="9hY-lt-qbD"/>
+                        <outlet property="languageSwitch" destination="Z9D-sv-MFO" id="Jnr-7v-UkV"/>
+                        <outlet property="learningLanguageView" destination="xFC-e2-6jl" id="bOk-Ic-dSs"/>
+                        <outlet property="maxTimeSliderLabel" destination="JgG-NJ-dv5" id="79c-Bn-y3R"/>
+                        <outlet property="minTimeSliderLabel" destination="2vo-K8-owD" id="2du-jz-UQG"/>
+                        <outlet property="nativeLanguageTextView" destination="XwY-i4-xjB" id="FYP-zI-Apc"/>
+                        <outlet property="normalSpeedButton" destination="vEo-PR-Xhd" id="38v-ic-tkN"/>
+                        <outlet property="playingView" destination="01G-u2-fAH" id="N7l-mg-usd"/>
+                        <outlet property="quickSpeedButton" destination="Qfj-on-Z0r" id="71R-aw-oXz"/>
+                        <outlet property="restartButton" destination="aAB-h3-X7u" id="d8c-Tp-sxB"/>
+                        <outlet property="slowSpeedButton" destination="id3-30-Tlp" id="J1M-q0-qMe"/>
+                        <outlet property="speedButtonsView" destination="Pen-A4-HcV" id="iNi-eU-UYM"/>
+                        <outlet property="startButton" destination="nyg-E3-4gw" id="Yck-Pj-LEv"/>
+                        <outlet property="timelineSlider" destination="U0X-JA-VOP" id="ejs-fS-skO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="91.741071428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fce-Y4-IwA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overFullScreen" navigationBarHidden="YES" id="yBX-FG-ynj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="aFo-yr-kbn">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="T3h-tJ-nnv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0w7-iL-yDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-636" y="92"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="xFC-e2-6jl">
+            <size key="intrinsicContentSize" width="374" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="goback_2sec" width="32" height="32"/>
+        <image name="goforward_2sec" width="32" height="32"/>
+        <image name="skip-back-filled" width="17" height="17"/>
+        <image name="white_close" width="48" height="48"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Black">
+            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Gray">
+            <color red="0.4779999852180481" green="0.4779999852180481" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

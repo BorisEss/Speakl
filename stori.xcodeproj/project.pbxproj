@@ -39,6 +39,7 @@
 		FA26C0E3278476D20021AFB1 /* WEPronunciationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26C0E2278476D20021AFB1 /* WEPronunciationViewController.swift */; };
 		FA26C0E5278477150021AFB1 /* WEExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26C0E4278477150021AFB1 /* WEExamplesViewController.swift */; };
 		FA26C0E72784772F0021AFB1 /* WEExpressionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26C0E62784772F0021AFB1 /* WEExpressionsViewController.swift */; };
+		FA26F7FC27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA26F7FB27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 */; };
 		FA270C00263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */; };
 		FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */; };
 		FA3553C125DBA503008DD1FF /* CSCustomItemPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */; };
@@ -115,6 +116,8 @@
 		FA6853FE259B0DE3008A7D63 /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6853FD259B0DE3008A7D63 /* UINavigationBarExtension.swift */; };
 		FA6B0015258116B700438E80 /* LanguageLevelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0014258116B700438E80 /* LanguageLevelSelectionViewController.swift */; };
 		FA6EDD2E27466D940028EC91 /* AVPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EDD2D27466D940028EC91 /* AVPlayerExtension.swift */; };
+		FA7690A5278F090A001221B7 /* Listen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7690A4278F090A001221B7 /* Listen.storyboard */; };
+		FA7690A7278F094A001221B7 /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7690A6278F094A001221B7 /* ListenViewController.swift */; };
 		FA7B72D0256690C1003F9A0C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72CF256690C1003F9A0C /* UIViewExtension.swift */; };
 		FA7B72D325669962003F9A0C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72D225669962003F9A0C /* UIImageExtension.swift */; };
 		FA7B72D825669A31003F9A0C /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA7B72D725669A31003F9A0C /* IBMPlexSans-Regular.ttf */; };
@@ -296,6 +299,7 @@
 		FA26C0E2278476D20021AFB1 /* WEPronunciationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEPronunciationViewController.swift; sourceTree = "<group>"; };
 		FA26C0E4278477150021AFB1 /* WEExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEExamplesViewController.swift; sourceTree = "<group>"; };
 		FA26C0E62784772F0021AFB1 /* WEExpressionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEExpressionsViewController.swift; sourceTree = "<group>"; };
+		FA26F7FB27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Californian_s_Tale_-_By_Mark_Twain.mp3"; sourceTree = "<group>"; };
 		FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelDetailsViewController.swift; sourceTree = "<group>"; };
 		FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInterestsSelectionViewController.swift; sourceTree = "<group>"; };
 		FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCustomItemPopUpViewController.swift; sourceTree = "<group>"; };
@@ -373,6 +377,8 @@
 		FA6853FD259B0DE3008A7D63 /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		FA6B0014258116B700438E80 /* LanguageLevelSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLevelSelectionViewController.swift; sourceTree = "<group>"; };
 		FA6EDD2D27466D940028EC91 /* AVPlayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerExtension.swift; sourceTree = "<group>"; };
+		FA7690A4278F090A001221B7 /* Listen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Listen.storyboard; sourceTree = "<group>"; };
+		FA7690A6278F094A001221B7 /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
 		FA7B72CF256690C1003F9A0C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		FA7B72D225669962003F9A0C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		FA7B72D725669A31003F9A0C /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -798,6 +804,15 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		FA7690A3278F08EE001221B7 /* Listen */ = {
+			isa = PBXGroup;
+			children = (
+				FA7690A4278F090A001221B7 /* Listen.storyboard */,
+				FA7690A6278F094A001221B7 /* ListenViewController.swift */,
+			);
+			path = Listen;
+			sourceTree = "<group>";
+		};
 		FA7B72D525669A08003F9A0C /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
@@ -805,6 +820,7 @@
 				FA812D76256298450036F162 /* Assets.xcassets */,
 				FAAEA0C92762573800E8B750 /* eyes.gif */,
 				FA999D9A25694D3E00B694FA /* Strings.strings */,
+				FA26F7FB27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -1120,6 +1136,7 @@
 			children = (
 				FA7E253527843C2500DEB6A0 /* Word Explanation */,
 				FA187B872779BFED00086245 /* Read */,
+				FA7690A3278F08EE001221B7 /* Listen */,
 				FAAEA0C2275FB2DB00E8B750 /* Cells */,
 				FAB84DC526CFE73C00B9C5A0 /* video.json */,
 				FAB84DC726CFEA3B00B9C5A0 /* Video.swift */,
@@ -1296,6 +1313,7 @@
 				FA187B892779BFFC00086245 /* Read.storyboard in Resources */,
 				FA4D4496257E48B700398AE2 /* LanguageSelect.storyboard in Resources */,
 				FA5608E6262034070062EE88 /* IBMPlexSans-Medium.ttf in Resources */,
+				FA7690A5278F090A001221B7 /* Listen.storyboard in Resources */,
 				FA999D9825694D3E00B694FA /* Strings.strings in Resources */,
 				FA1F714D25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard in Resources */,
 				FA50421025A611F4004E6EC9 /* ImagePreview.storyboard in Resources */,
@@ -1311,6 +1329,7 @@
 				FA1F714925BEF066009AE0D4 /* CreateStory.storyboard in Resources */,
 				FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */,
 				FA4B61A625753433005501BD /* Google-Credentials.plist in Resources */,
+				FA26F7FC27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 in Resources */,
 				FAE2105925768C2100A3D971 /* LanguageTableViewCell.xib in Resources */,
 				FA5608C6261F2CEF0062EE88 /* Settings.storyboard in Resources */,
 				FA876C8225C80E7C00E65B95 /* CSImageItemTableViewCell.xib in Resources */,
@@ -1553,6 +1572,7 @@
 				FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */,
 				FA94560425C54BE8003E54F0 /* CSVocabularyListViewController.swift in Sources */,
 				FA8593DE25E1691D004CAC9E /* CSVocabularyService.swift in Sources */,
+				FA7690A7278F094A001221B7 /* ListenViewController.swift in Sources */,
 				FAF398CD2772585900F1A55A /* HashtagVideoListViewController.swift in Sources */,
 				FAFF92CA25A4944500A604C3 /* JoinTNSelectUserTypeViewController.swift in Sources */,
 				FA6B0015258116B700438E80 /* LanguageLevelSelectionViewController.swift in Sources */,
