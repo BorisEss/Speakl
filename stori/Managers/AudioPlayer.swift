@@ -164,11 +164,11 @@ class AudioPlayer {
     func setSpeed(speed: PlayingSpeed) {
         switch speed {
         case .slow:
-            player.playImmediately(atRate: 0.5)
+            player.playImmediately(atRate: 0.7)
         case .normal:
             player.playImmediately(atRate: 1)
         case .quick:
-            player.playImmediately(atRate: 2)
+            player.playImmediately(atRate: 1.5)
         }
     }
     

@@ -157,10 +157,14 @@ class ListenViewController: UIViewController {
         finishButton.isHidden = true
         learningLanguageView.isHidden = false
         player.play()
+        startButton.setTitle("Continue", for: .normal)
     }
     
     @IBAction func restartButtonPressed(_ sender: Any) {
         player.returnFromBeginning()
+        if !player.isPlaying {
+            startButton.setTitle("Start", for: .normal)
+        }
         if !player.isPlaying {
             startButton.isHidden = false
             restartButton.isHidden = true
