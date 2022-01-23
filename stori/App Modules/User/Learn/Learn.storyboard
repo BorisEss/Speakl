@@ -510,14 +510,14 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LearnCategoryCollectionViewCell" id="fJk-Vw-c8z" customClass="LearnCategoryCollectionViewCell" customModule="stori" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="92.5" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="knK-EC-GBa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="92.5" height="50"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lrT-jg-Xuy">
-                                                            <rect key="frame" x="8" y="15" width="74" height="20"/>
+                                                            <rect key="frame" x="9.5" y="15" width="74" height="20"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmT-iD-H8O">
                                                                     <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -552,9 +552,9 @@
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="lrT-jg-Xuy" secondAttribute="trailing" constant="8" id="Vke-bU-c0J"/>
+                                                        <constraint firstItem="lrT-jg-Xuy" firstAttribute="width" secondItem="knK-EC-GBa" secondAttribute="width" multiplier="0.8" priority="250" id="8pr-OT-G40"/>
+                                                        <constraint firstItem="lrT-jg-Xuy" firstAttribute="centerX" secondItem="knK-EC-GBa" secondAttribute="centerX" id="CDG-Kl-MI6"/>
                                                         <constraint firstItem="lrT-jg-Xuy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="knK-EC-GBa" secondAttribute="top" id="c97-Bd-yqD"/>
-                                                        <constraint firstItem="lrT-jg-Xuy" firstAttribute="leading" secondItem="knK-EC-GBa" secondAttribute="leading" constant="8" id="cPy-kJ-20c"/>
                                                         <constraint firstItem="lrT-jg-Xuy" firstAttribute="centerY" secondItem="knK-EC-GBa" secondAttribute="centerY" id="kfH-7g-e3f"/>
                                                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lrT-jg-Xuy" secondAttribute="bottom" id="tNi-3L-9i8"/>
                                                     </constraints>
@@ -1520,7 +1520,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="C74-eV-tfF"/>
+        <segue reference="rw2-nj-Yjn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="SpeaklLogo" width="208" height="67.5"/>

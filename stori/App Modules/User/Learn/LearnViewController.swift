@@ -168,7 +168,6 @@ extension LearnViewController: UICollectionViewDelegate, UICollectionViewDataSou
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
             previousIndexPath = indexPath
         }
-        collectionView.collectionViewLayout.invalidateLayout()
     }
 }
 
