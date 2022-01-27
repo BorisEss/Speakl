@@ -483,11 +483,6 @@
             <point key="canvasLocation" x="-636" y="92"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="xFC-e2-6jl">
-            <size key="intrinsicContentSize" width="374" height="28"/>
-        </designable>
-    </designables>
     <resources>
         <image name="goback_2sec" width="32" height="32"/>
         <image name="goforward_2sec" width="32" height="32"/>

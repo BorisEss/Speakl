@@ -106,6 +106,13 @@ class StoryVideoViewController: UIViewController {
                 self.videoView.play()
             }
         }
+        
+        if let nextVc = segue.destination as? UINavigationController,
+           let firstVc = nextVc.viewControllers.first as? WritingViewController {
+            firstVc.completion = {
+                self.videoView.play()
+            }
+        }
         super.prepare(for: segue, sender: sender)
     }
     
@@ -215,10 +222,11 @@ class StoryVideoViewController: UIViewController {
     }
     
     @IBAction func writePressed(_ sender: Any) {
+        videoView.pause()
         // TODO: Open Write controller
-        let vcc = UIViewController()
-        vcc.view.backgroundColor = .white
-        present(vcc, animated: true, completion: nil)
+//        let vcc = UIViewController()
+//        vcc.view.backgroundColor = .white
+//        present(vcc, animated: true, completion: nil)
         writeButton.inProgress()
     }
     
