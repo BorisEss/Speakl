@@ -146,6 +146,7 @@
 		FA812DA425665AB10036F162 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812DA325665AB10036F162 /* RootViewController.swift */; };
 		FA812DA725665DB90036F162 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812DA625665DB90036F162 /* TutorialViewController.swift */; };
 		FA812DAA256682F70036F162 /* RegularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA812DA9256682F70036F162 /* RegularButton.swift */; };
+		FA81724427A3F5BB005759B8 /* RandomElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81724327A3F5BB005759B8 /* RandomElements.swift */; };
 		FA85364C25AC644D002607EC /* UploadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85364B25AC644D002607EC /* UploadClient.swift */; };
 		FA85364F25AC6465002607EC /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85364E25AC6465002607EC /* Checksum.swift */; };
 		FA85365725B08EF6002607EC /* JoinTNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85365625B08EF6002607EC /* JoinTNService.swift */; };
@@ -415,6 +416,7 @@
 		FA812DA325665AB10036F162 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		FA812DA625665DB90036F162 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		FA812DA9256682F70036F162 /* RegularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularButton.swift; sourceTree = "<group>"; };
+		FA81724327A3F5BB005759B8 /* RandomElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomElements.swift; sourceTree = "<group>"; };
 		FA85364B25AC644D002607EC /* UploadClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadClient.swift; sourceTree = "<group>"; };
 		FA85364E25AC6465002607EC /* Checksum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
 		FA85365625B08EF6002607EC /* JoinTNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTNService.swift; sourceTree = "<group>"; };
@@ -971,6 +973,7 @@
 				FA5BCFBD27038CE8004A6B08 /* AppShadowNavigationViewController.swift */,
 				FA6EDD2D27466D940028EC91 /* AVPlayerExtension.swift */,
 				FA67EE2927A2A1320045C0B9 /* TopLeftCellsFlowLayout.swift */,
+				FA81724327A3F5BB005759B8 /* RandomElements.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1602,6 +1605,7 @@
 				FA4B613A25700765005501BD /* Headers.swift in Sources */,
 				FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */,
 				FA94560425C54BE8003E54F0 /* CSVocabularyListViewController.swift in Sources */,
+				FA81724427A3F5BB005759B8 /* RandomElements.swift in Sources */,
 				FA8593DE25E1691D004CAC9E /* CSVocabularyService.swift in Sources */,
 				FA7690A7278F094A001221B7 /* ListenViewController.swift in Sources */,
 				FAF398CD2772585900F1A55A /* HashtagVideoListViewController.swift in Sources */,

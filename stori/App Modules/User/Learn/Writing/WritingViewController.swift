@@ -7,27 +7,50 @@
 
 import UIKit
 
+enum WritingLebel {
+    case easy
+    case hard
+    case expert
+}
+
 class WritingViewController: UIViewController {
     
     var words: [WritingWord] = [
         WritingWord(word: "Christstollen", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "ist", isEmpty: true, wasEmpty: true),
+        WritingWord(word: "ist", isEmpty: false, wasEmpty: false),
         WritingWord(word: "ein", isEmpty: false, wasEmpty: false),
         WritingWord(word: "Weihnachtskuchen", isEmpty: false, wasEmpty: false),
         WritingWord(word: "Er", isEmpty: false, wasEmpty: false),
         WritingWord(word: "hat", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "eine", isEmpty: true, wasEmpty: true),
+        WritingWord(word: "eine", isEmpty: false, wasEmpty: false),
         WritingWord(word: "lange", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "Tradition", isEmpty: true, wasEmpty: true),
+        WritingWord(word: "Tradition", isEmpty: false, wasEmpty: false),
         WritingWord(word: "und", isEmpty: false, wasEmpty: false),
         WritingWord(word: "besteht", isEmpty: false, wasEmpty: false),
         WritingWord(word: "aus", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "Hefeteig", isEmpty: true, wasEmpty: true),
+        WritingWord(word: "Hefeteig", isEmpty: false, wasEmpty: false),
         WritingWord(word: "Zucker", isEmpty: false, wasEmpty: false),
         WritingWord(word: "Gewürzen", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "und", isEmpty: true, wasEmpty: true),
+        WritingWord(word: "und", isEmpty: false, wasEmpty: false),
         WritingWord(word: "Trockenfrüchten", isEmpty: false, wasEmpty: false)
     ]
+    
+    var level: WritingLebel = .easy {
+        didSet {
+            var missingWordsCount: Int = 0
+            switch level {
+            case .easy: missingWordsCount = Int(Double(words.count) * 0.25)
+            case .hard: missingWordsCount = Int(Double(words.count) * 0.5)
+            case .expert: missingWordsCount = Int(Double(words.count) * 0.75)
+            }
+            let randomIndexes: [Int] = (0..<words.count).randomElements(missingWordsCount)
+            for index in randomIndexes {
+                words[index].isEmpty = true
+                words[index].wasEmpty = true
+            }
+            tagsCollectionView.reloadData()
+        }
+    }
     
     private var player: AudioPlayer = AudioPlayer()
     
@@ -110,9 +133,15 @@ class WritingViewController: UIViewController {
         dismiss(animated: true)
     }
     
-    @IBAction func levelSelected(_ sender: Any) {
+    @IBAction func levelSelected(_ sender: UIButton) {
         self.listenView.alpha = 0
         self.listenView.isHidden = false
+        switch sender.tag {
+        case 0: level = .easy
+        case 1: level = .hard
+        case 2: level = .expert
+        default: break
+        }
         UIView.animate(withDuration: 0.3) {
             self.topCardSpacing.constant = 80
             self.listenView.alpha = 1
@@ -218,15 +247,6 @@ extension WritingViewController: UICollectionViewDelegate, UICollectionViewDataS
                     }
                 }
             }
-//            if !words[indexPath.item].isEmpty {
-//                let controller = UIStoryboard(name: "Writing",
-//                                              bundle: nil)
-//                    .instantiateViewController(withIdentifier: "WritingAlertViewController")
-//                if let alertController = controller as? WritingAlertViewController {
-//                    alertController.word = words[indexPath.item]
-//                    present(alertController, animated: true, completion: nil)
-//                }
-//            }
         } else {
             let storyBoard: UIStoryboard = UIStoryboard(name: "WordExplanation", bundle: nil)
             let nextScreen = storyBoard.instantiateViewController(withIdentifier: "SelectedWordViewController")

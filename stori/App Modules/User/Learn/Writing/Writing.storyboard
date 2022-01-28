@@ -135,9 +135,11 @@
                                                                                     <subviews>
                                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vYs-qJ-5cz">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="104" height="20"/>
+                                                                                            <color key="tintColor" name="GradientBottom"/>
                                                                                             <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="14"/>
                                                                                             <textInputTraits key="textInputTraits" returnKeyType="continue"/>
                                                                                             <connections>
+                                                                                                <action selector="fieldBeginAction:" destination="L9b-eg-0fX" eventType="editingDidBegin" id="YF8-VG-AJT"/>
                                                                                                 <action selector="fieldEndAction:" destination="L9b-eg-0fX" eventType="editingDidEnd" id="RlO-7y-FDb"/>
                                                                                             </connections>
                                                                                         </textField>

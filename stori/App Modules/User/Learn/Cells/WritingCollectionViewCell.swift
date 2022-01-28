@@ -76,6 +76,10 @@ class WritingCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    @IBAction func fieldBeginAction(_ sender: Any) {
+        cellView.borderColor = UIColor(named: "GradientBottom")
+        cellView.borderWidth = 2
+    }
     @IBAction func fieldEndAction(_ sender: Any) {
         check()
     }
