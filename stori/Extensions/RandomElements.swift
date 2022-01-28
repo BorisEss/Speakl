@@ -7,7 +7,8 @@
 
 import Foundation
 
-/// Based on this link it is created the randomizing function to create a random array from another array with specific number of elements
+/// Based on this link it is created the randomizing function to create a random array
+/// from another array with specific number of elements
 /// https://stackoverflow.com/a/28140271
 ///
 extension RangeExpression where Bound: FixedWidthInteger {
