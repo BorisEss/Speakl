@@ -204,13 +204,29 @@ extension WritingViewController: UICollectionViewDelegate, UICollectionViewDataS
             playPauseButton.setImage(UIImage(named: "speaker_circled_icon"), for: .normal)
         }
         if words[indexPath.item].wasEmpty {
-            let controller = UIStoryboard(name: "Writing",
-                                          bundle: nil)
-                .instantiateViewController(withIdentifier: "WritingAlertViewController")
-            if let alertController = controller as? WritingAlertViewController {
-                alertController.word = words[indexPath.item]
-                present(alertController, animated: true, completion: nil)
+            if let cell = collectionView.cellForItem(at: indexPath) as? WritingCollectionViewCell {
+                if cell.state == .correct || cell.state == .incorrect {
+                    let controller = UIStoryboard(name: "Writing",
+                                                  bundle: nil)
+                        .instantiateViewController(withIdentifier: "WritingAlertViewController")
+                    if let alertController = controller as? WritingAlertViewController {
+                        alertController.word = words[indexPath.item]
+                        if cell.state == .incorrect {
+                            alertController.itIsCorrect = false
+                        }
+                        present(alertController, animated: true, completion: nil)
+                    }
+                }
             }
+//            if !words[indexPath.item].isEmpty {
+//                let controller = UIStoryboard(name: "Writing",
+//                                              bundle: nil)
+//                    .instantiateViewController(withIdentifier: "WritingAlertViewController")
+//                if let alertController = controller as? WritingAlertViewController {
+//                    alertController.word = words[indexPath.item]
+//                    present(alertController, animated: true, completion: nil)
+//                }
+//            }
         } else {
             let storyBoard: UIStoryboard = UIStoryboard(name: "WordExplanation", bundle: nil)
             let nextScreen = storyBoard.instantiateViewController(withIdentifier: "SelectedWordViewController")

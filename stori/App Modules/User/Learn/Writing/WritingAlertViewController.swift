@@ -11,6 +11,7 @@ import Speech
 class WritingAlertViewController: UIViewController {
 
     var word: WritingWord?
+    var itIsCorrect: Bool = true
     
     let synthesizer = AVSpeechSynthesizer()
     
@@ -32,6 +33,8 @@ class WritingAlertViewController: UIViewController {
             return
         }
         wordButton.setTitle(word.word, for: .normal)
+        correctView.isHidden = !itIsCorrect
+        incorrectView.isHidden = itIsCorrect
     }
 
     override func viewWillLayoutSubviews() {
