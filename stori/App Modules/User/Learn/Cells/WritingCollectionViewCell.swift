@@ -65,11 +65,15 @@ class WritingCollectionViewCell: UICollectionViewCell {
     }
     
     func check() {
-        if !(inputTextField.text?.isEmpty ?? true),
-           !(wordLabel.text?.isEmpty ?? true),
-            inputTextField.text == wordLabel.text {
+        guard let inputText = inputTextField.text,
+              let labelText = wordLabel.text else { return }
+        guard !inputText.isEmpty,
+              !labelText.isEmpty else { return }
+        let mText = inputText.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        if mText == labelText.uppercased() {
             state = .correct
             inputTextField.isEnabled = false
+            inputTextField.text = wordLabel.text
             completion?()
         } else {
             state = .incorrect
@@ -81,7 +85,13 @@ class WritingCollectionViewCell: UICollectionViewCell {
         cellView.borderWidth = 2
     }
     @IBAction func fieldEndAction(_ sender: Any) {
-        check()
+        if let inputText = inputTextField.text,
+           inputText.isEmpty {
+            cellView.borderColor = .clear
+            cellView.borderWidth = 0
+        } else {
+            check()
+        }
     }
 }
 
