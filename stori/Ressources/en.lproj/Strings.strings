@@ -344,7 +344,7 @@
 "invite_friends_description" = "Sharing this code will give you and your friend one month free of premium content";
 "invite_friends_share_button" = "Share";
 "invite_friends_code_copied_to_clipboard" = "The code has been copied to the clipboard";
-"invite_friends_share_message" = "Hey! %@ invited you to start learning new languages with Speakl app.\nDownload app: %@\nRedeem your gift code after sign up in settings: %@\nStart learning with Speakl!";
+"invite_friends_share_message" = "Hey!\n%@ invited you to start learning new languages with Speakl app.\nDownload app: %@\nAfter signing up, go to Settings and redeem your gift code (%@) to enjoy one month free of premium content.\nStart learning with Speakl!";
 
 
 "redeem_code_title" = "Redeem Code";
