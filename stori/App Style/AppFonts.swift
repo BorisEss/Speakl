@@ -14,8 +14,11 @@ extension UIFont {
     static func IBMPlexSansBold(size: CGFloat = 16) -> UIFont {
         return UIFont(name: "IBMPlexSans-Bold", size: size) ?? .boldSystemFont(ofSize: size)
     }
+    static func IBMPlexSansLight(size: CGFloat = 16) -> UIFont {
+        return UIFont(name: "IBMPlexSans-Light", size: size) ?? .systemFont(ofSize: size)
+    }
     static func IBMPlexSansLightItalic(size: CGFloat = 16) -> UIFont {
-        return UIFont(name: "IBMPlexSans-LightItalic", size: size) ?? .boldSystemFont(ofSize: size)
+        return UIFont(name: "IBMPlexSans-LightItalic", size: size) ?? .systemFont(ofSize: size)
     }
     static func sweetPea(size: CGFloat = 16) -> UIFont {
         return UIFont(name: "Sweet_Pea", size: size) ?? .systemFont(ofSize: size)

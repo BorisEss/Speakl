@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum WritingLebel {
+enum WritingLevel {
     case easy
     case hard
     case expert
@@ -16,26 +16,28 @@ enum WritingLebel {
 class WritingViewController: UIViewController {
     
     var words: [WritingWord] = [
-        WritingWord(word: "Christstollen", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "ist", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "ein", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "Weihnachtskuchen", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "Er", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "hat", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "eine", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "lange", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "Tradition", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "und", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "besteht", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "aus", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "Hefeteig", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "Zucker", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "Gewürzen", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "und", isEmpty: false, wasEmpty: false),
-        WritingWord(word: "Trockenfrüchten", isEmpty: false, wasEmpty: false)
+        WritingWord(word: "When", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "I", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "was", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "young", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "I", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "went", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "looking", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "for", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "gold", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "in", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "California", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "I", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "never", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "found", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "enough", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "to", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "make", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "me", isEmpty: false, wasEmpty: false),
+        WritingWord(word: "rich", isEmpty: false, wasEmpty: false)
     ]
     
-    var level: WritingLebel = .easy {
+    var level: WritingLevel = .easy {
         didSet {
             var missingWordsCount: Int = 0
             switch level {
@@ -88,7 +90,7 @@ class WritingViewController: UIViewController {
         columnLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         tagsCollectionView.collectionViewLayout = columnLayout
 
-        if let url = Bundle.main.url(forResource: "short_story",
+        if let url = Bundle.main.url(forResource: "writing",
                                      withExtension: ".mp3") {
             player.load(url: url)
             player.didUpdateProgress = { value in

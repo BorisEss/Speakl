@@ -65,11 +65,14 @@ class ListenViewController: UIViewController {
         navigationController?.modalPresentationCapturesStatusBarAppearance = true
         learningLanguageView.delegate = self
         learningLanguageView.textFont = .IBMPlexSans(size: 14)
-        learningLanguageView.addTags(["Christstollen", "ist", "ein", "Weihnachtskuchen", "Er",
-                                      "hat", "eine", "lange", "Tradition", "und", "besteht", "aus", "Hefeteig",
-                                      "Zucker", "Gewürzen", "und", "Trockenfrüchten"])
+        learningLanguageView.addTags(["When", "I", "was", "young,", "I", "went", "looking", "for", "gold",
+                                      "in", "California.", "I", "never", "found", "enough", "to", "make", "me",
+                                      "rich.", "But", "I", "did", "discover", "a", "beautiful", "part", "of", "the",
+                                      "country.", "It", "was", "called", "“the", "Stanislau.”", "The", "Stanislau", "was",
+                                      "like", "Heaven", "on", "Earth.", "It", "had", "bright", "green", "hills", "and",
+                                      "deep", "forests", "where", "soft", "winds", "touched", "the", "trees."])
         
-        if let url = Bundle.main.url(forResource: "The_Californian_s_Tale_-_By_Mark_Twain",
+        if let url = Bundle.main.url(forResource: "paragraph",
                                      withExtension: ".mp3") {
             player.load(url: url)
             player.didUpdateProgress = { value in

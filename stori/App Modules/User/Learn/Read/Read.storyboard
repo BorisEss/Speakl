@@ -72,9 +72,10 @@
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B3b-tP-nMb">
                                         <rect key="frame" x="44" y="80" width="326" height="678"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Christstollen is a Christmas cake. It has a long tradition and consists of yeast dough, sugar, spices and dried fruits. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3X0-iM-qXW">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3X0-iM-qXW">
                                                 <rect key="frame" x="0.0" y="0.0" width="326" height="678"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">When I was young, I went looking for gold in California. I never found enough to make me rich. But I did discover a beautiful part of the country. It was called “the Stanislau.” The Stanislau was like Heaven on Earth. It had bright green hills and deep forests where soft winds touched the trees.</string>
                                                 <color key="textColor" name="Text Gray"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

@@ -53,9 +53,12 @@ class VoiceRecorder {
             audioRecorder.isMeteringEnabled = true
             waveTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
                 self.audioRecorder.updateMeters()
-                let lowerLimit: Float = -100
+//                let lowerLimit: Float = -100
                 let power = self.audioRecorder.averagePower(forChannel: 0)
-                self.waveForm?(exp((power - lowerLimit) * 0.075))
+                let currentAmplitude = 1 - pow(10, power / 20)
+                self.waveForm?(currentAmplitude)
+                // This was used for Teacher Section
+//                self.waveForm?(exp((power - lowerLimit) * 0.075))
                 
             }
         } catch {

@@ -52,3 +52,14 @@ extension String {
         return String(Date().timeIntervalSince1970).replacingOccurrences(of: ".", with: "")
     }
 }
+
+
+extension String {
+    /// This function removes all punctuation characters from a string
+    ///
+    /// - Returns: `String` without punctuation characters
+    /// 
+    func trimTrailingPunctuation() -> String {
+        return self.components(separatedBy: CharacterSet.punctuationCharacters).joined(separator: "")
+    }
+}

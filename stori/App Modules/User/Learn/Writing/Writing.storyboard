@@ -73,7 +73,7 @@
                                             <constraint firstItem="DYp-Bg-DFP" firstAttribute="centerY" secondItem="u4x-Ww-uPf" secondAttribute="centerY" id="xhx-WT-Wol"/>
                                         </constraints>
                                     </view>
-                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Christstollen is a Christmas cake. It has a long tradition and consists of yeast dough, sugar, spices and dried fruits. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6K-0U-GF7">
+                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="When I was young, I went looking for gold in California. I never found enough to make me rich. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6K-0U-GF7">
                                         <rect key="frame" x="44" y="80" width="326" height="658"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" name="Text Gray"/>

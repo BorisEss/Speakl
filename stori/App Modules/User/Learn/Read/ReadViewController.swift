@@ -11,7 +11,15 @@ import TagListView
 
 class ReadViewController: UIViewController {
     
-    var paragraphs: [String] = ["Test1", "Test2", "Test3"]
+    var paragraphs: [[String]] = [
+        ["When", "I", "was", "young,", "I", "went", "looking", "for", "gold", "in", "California."],
+        ["I", "never", "found", "enough", "to", "make", "me", "rich."],
+        ["But", "I", "did", "discover", "a", "beautiful", "part", "of", "the", "country."],
+        ["It", "was", "called", "“the", "Stanislau.”"],
+        ["The", "Stanislau", "was", "like", "Heaven", "on", "Earth."],
+        ["It", "had", "bright", "green", "hills", "and", "deep", "forests", "where", "soft",
+         "winds", "touched", "the", "trees."]
+    ]
     var currentParagraph: Int = 0 {
         didSet {
             if paragraphs.count == 0 {
@@ -39,7 +47,10 @@ class ReadViewController: UIViewController {
             }
             pageLabel.text = "\(currentParagraph + 1) of \(paragraphs.count)"
             pageSlider.setIndex(UInt(currentParagraph), animated: true)
-            
+            learningLanguageWordsView.removeAllTags()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                self.learningLanguageWordsView.addTags(self.paragraphs[self.currentParagraph])
+            }
         }
     }
     
@@ -72,17 +83,15 @@ class ReadViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
         navigationController?.modalPresentationCapturesStatusBarAppearance = true
+        currentParagraph = 0
+        pageSlider.maxCount = UInt(paragraphs.count)
         learningLanguageWordsView.delegate = self
         learningLanguageWordsView.textFont = .IBMPlexSans(size: 14)
-        learningLanguageWordsView.addTags(["Christstollen", "ist", "ein", "Weihnachtskuchen", "Er",
-                                          "hat", "eine", "lange", "Tradition", "und", "besteht", "aus", "Hefeteig",
-                                          "Zucker", "Gewürzen", "und", "Trockenfrüchten"])
+        learningLanguageWordsView.addTags(paragraphs[currentParagraph])
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        pageSlider.maxCount = UInt(paragraphs.count)
-        currentParagraph = 0
     }
     
     override func viewDidAppear(_ animated: Bool) {

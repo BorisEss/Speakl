@@ -656,20 +656,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h0u-R0-NgU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom_video_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="C5Z-rZ-aYY">
                                 <rect key="frame" x="0.0" y="752" width="414" height="144"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aiz-Wh-OaH">
-                                <rect key="frame" x="20" y="681" width="374" height="165"/>
+                                <rect key="frame" x="20" y="712" width="374" height="134"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English • A1 • Animals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgb-ko-hDF">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English • A2• Lifestyle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgb-ko-hDF">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="16"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#lovequotes #daybyday #hot #hashtagsimpledimple #bastianschweinsteiger #feelthebeat #sync #anotherbiglongverrylonghashtag" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFM-Ve-wiB" customClass="KILabel">
-                                        <rect key="frame" x="0.0" y="32" width="374" height="47"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#hot #marktwain #california #tale #storytale" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFM-Ve-wiB" customClass="KILabel">
+                                        <rect key="frame" x="0.0" y="32" width="374" height="16"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -681,7 +684,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pTY-mZ-KT8">
-                                        <rect key="frame" x="0.0" y="95" width="374" height="70"/>
+                                        <rect key="frame" x="0.0" y="64" width="374" height="70"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Bzf-fy-Lz3">
                                                 <rect key="frame" x="0.0" y="0.0" width="81.5" height="70"/>
@@ -816,6 +819,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="speakPressed:" destination="DPp-yt-Xfc" eventType="touchUpInside" id="abN-jC-qN5"/>
+                                                            <segue destination="VTm-Qr-T2r" kind="show" id="llH-sZ-JgJ"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iat-n0-MdA">
@@ -1244,10 +1248,14 @@
                             <constraint firstItem="aiz-Wh-OaH" firstAttribute="leading" secondItem="h5K-cH-o4o" secondAttribute="leading" constant="20" id="E5l-ho-jD8"/>
                             <constraint firstItem="rXv-Ir-XCJ" firstAttribute="leading" secondItem="h5K-cH-o4o" secondAttribute="leading" id="Uzo-DT-c1O"/>
                             <constraint firstItem="koy-p6-Kdq" firstAttribute="leading" secondItem="h5K-cH-o4o" secondAttribute="leading" id="XJd-uc-tMw"/>
+                            <constraint firstItem="h0u-R0-NgU" firstAttribute="leading" secondItem="h5K-cH-o4o" secondAttribute="leading" id="XqW-wZ-fMK"/>
+                            <constraint firstItem="h0u-R0-NgU" firstAttribute="trailing" secondItem="h5K-cH-o4o" secondAttribute="trailing" id="YvL-7H-fGX"/>
+                            <constraint firstItem="h0u-R0-NgU" firstAttribute="top" secondItem="TNR-3a-lQq" secondAttribute="top" id="bce-a4-wn3"/>
                             <constraint firstAttribute="bottom" secondItem="C5Z-rZ-aYY" secondAttribute="bottom" id="fbA-ad-01W"/>
                             <constraint firstItem="koy-p6-Kdq" firstAttribute="bottom" secondItem="h5K-cH-o4o" secondAttribute="top" constant="230" id="hNe-1z-lIX"/>
                             <constraint firstItem="C5Z-rZ-aYY" firstAttribute="leading" secondItem="h5K-cH-o4o" secondAttribute="leading" id="irp-iv-tHj"/>
                             <constraint firstItem="koy-p6-Kdq" firstAttribute="top" secondItem="TNR-3a-lQq" secondAttribute="top" id="jTD-zA-9sO"/>
+                            <constraint firstAttribute="bottom" secondItem="h0u-R0-NgU" secondAttribute="bottom" id="nko-VE-iUN"/>
                             <constraint firstItem="S1M-tK-xxG" firstAttribute="leading" secondItem="h5K-cH-o4o" secondAttribute="leading" constant="20" id="nqq-Xe-ygv"/>
                             <constraint firstAttribute="bottom" secondItem="rXv-Ir-XCJ" secondAttribute="bottom" id="oFI-Wo-3UI"/>
                             <constraint firstItem="S1M-tK-xxG" firstAttribute="top" secondItem="h5K-cH-o4o" secondAttribute="top" constant="70" id="pKg-IO-Lwi"/>
@@ -1265,6 +1273,7 @@
                         <outlet property="commentsIconView" destination="4k0-O6-PEl" id="cDH-ad-dOK"/>
                         <outlet property="commentsView" destination="BnL-Xt-2II" id="xfe-7t-k24"/>
                         <outlet property="completedTagView" destination="LtT-KU-boh" id="WQH-Lw-xHx"/>
+                        <outlet property="coverImageView" destination="h0u-R0-NgU" id="uOu-KJ-8hf"/>
                         <outlet property="detailsLabel" destination="kgb-ko-hDF" id="LBm-eE-mSC"/>
                         <outlet property="hashtagsLabel" destination="wFM-Ve-wiB" id="9A9-sf-A12"/>
                         <outlet property="inProgressTagView" destination="kPw-wW-xmt" id="Rg6-Uj-Gc8"/>
@@ -1307,7 +1316,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LBY-W9-qYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3462" y="47"/>
+            <point key="canvasLocation" x="3459" y="23"/>
         </scene>
         <!--Listen-->
         <scene sceneID="fKj-kP-khJ">
@@ -1317,7 +1326,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvf-xH-5s2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3466" y="3"/>
+            <point key="canvasLocation" x="3463" y="-21"/>
         </scene>
         <!--Writing-->
         <scene sceneID="001-In-fKj">
@@ -1327,7 +1336,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugk-YM-VSd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3472" y="94"/>
+            <point key="canvasLocation" x="3469" y="70"/>
+        </scene>
+        <!--Speak-->
+        <scene sceneID="ziT-Hg-C4u">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Speak" id="VTm-Qr-T2r" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="msW-LV-9rv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Az8-70-eOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3464" y="117"/>
         </scene>
         <!--Nothing Found View Controller-->
         <scene sceneID="Ccx-xj-r07">
@@ -1527,7 +1546,7 @@
     </scenes>
     <designables>
         <designable name="wFM-Ve-wiB">
-            <size key="intrinsicContentSize" width="733" height="16"/>
+            <size key="intrinsicContentSize" width="253" height="16"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>

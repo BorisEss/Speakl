@@ -18,6 +18,7 @@ class AudioPlayer {
     
     var didUpdatePlayPause: ((_ isPlaying: Bool) -> Void)?
     var didUpdateProgress: ((_ progress: Double) -> Void)?
+    var didUpdateProgressTime: ((_ seconds: Double) -> Void)?
     var didReturnTime: ((_ min: String, _ max: String) -> Void)?
     var didFinishPlaying: (() -> Void)?
     
@@ -37,7 +38,8 @@ class AudioPlayer {
     }
     var maxTime: String? {
         if let currentTime = self.player.currentItem?.currentTime().seconds,
-           let duration = self.player.currentItem?.duration.seconds {
+           let duration = self.player.currentItem?.duration.seconds,
+           !duration.isNaN, !currentTime.isNaN {
             let remainingTime = duration - currentTime
             let remainingTimeSec: Int = Int(remainingTime) % 60
             let remainingTimeMin: Int = Int(remainingTime) / 60
@@ -93,10 +95,18 @@ class AudioPlayer {
     }
     
     func play() {
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(AVAudioSession.Category.playAndRecord,
+                                         mode: .spokenAudio,
+                                         options: .defaultToSpeaker)
+            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        } catch { }
         player.play()
         progressTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
             if let currentTime = self.player.currentItem?.currentTime().seconds,
                let duration = self.player.currentItem?.duration.seconds {
+                self.didUpdateProgressTime?(currentTime)
                 self.didUpdateProgress?(currentTime/duration)
                 
                 let currentTimeSec: Int = Int(currentTime) % 60

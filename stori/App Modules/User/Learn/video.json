@@ -1,6 +1,12 @@
 {
     "videos": [
         {
+            "cover": "https://i.ibb.co/Yd5G7LF/the-californian-s-tale.jpg",
+            "title": "The Californian's Tale\nby Mark Twain"
+        }
+    ],
+    "videos1": [
+        {
             "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
             "cover": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg",
             "title": "Big Buck Bunny"

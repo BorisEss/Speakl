@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -57,6 +57,14 @@
 		FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA417FC42590DD2F00F9D81B /* Teacher.storyboard */; };
 		FA417FC82590DE8B00F9D81B /* TeacherNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA417FC72590DE8B00F9D81B /* TeacherNetworkViewController.swift */; };
 		FA417FDE2590F40F00F9D81B /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA417FDD2590F40F00F9D81B /* UIApplicationExtension.swift */; };
+		FA43D84927BEAD8100BBEF07 /* sentence5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA43D84227BEAD8100BBEF07 /* sentence5.mp3 */; };
+		FA43D84A27BEAD8100BBEF07 /* paragraph.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA43D84327BEAD8100BBEF07 /* paragraph.mp3 */; };
+		FA43D84B27BEAD8100BBEF07 /* sentence4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA43D84427BEAD8100BBEF07 /* sentence4.mp3 */; };
+		FA43D84C27BEAD8100BBEF07 /* sentence6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA43D84527BEAD8100BBEF07 /* sentence6.mp3 */; };
+		FA43D84D27BEAD8100BBEF07 /* sentence1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA43D84627BEAD8100BBEF07 /* sentence1.mp3 */; };
+		FA43D84E27BEAD8100BBEF07 /* sentence3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA43D84727BEAD8100BBEF07 /* sentence3.mp3 */; };
+		FA43D84F27BEAD8100BBEF07 /* sentence2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA43D84827BEAD8100BBEF07 /* sentence2.mp3 */; };
+		FA43D85127BEB25A00BBEF07 /* writing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA43D85027BEB25A00BBEF07 /* writing.mp3 */; };
 		FA4506062637FE5100000279 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4506052637FE5100000279 /* Notifications.storyboard */; };
 		FA4506092637FE5C00000279 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4506082637FE5C00000279 /* NotificationsViewController.swift */; };
 		FA46951825C0521B00F347B1 /* ItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46951725C0521B00F347B1 /* ItemProtocol.swift */; };
@@ -115,7 +123,6 @@
 		FA666A27259CAA9900FD6462 /* LearningLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA666A26259CAA9900FD6462 /* LearningLanguage.swift */; };
 		FA67EE2627A1681B0045C0B9 /* WritingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA67EE2527A1681B0045C0B9 /* WritingCollectionViewCell.swift */; };
 		FA67EE2A27A2A1320045C0B9 /* TopLeftCellsFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA67EE2927A2A1320045C0B9 /* TopLeftCellsFlowLayout.swift */; };
-		FA67EE2E27A324A30045C0B9 /* short_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA67EE2D27A324A30045C0B9 /* short_story.mp3 */; };
 		FA6853F72599FA47008A7D63 /* IBMPlexSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6853F62599FA47008A7D63 /* IBMPlexSans-Light.ttf */; };
 		FA6853FE259B0DE3008A7D63 /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6853FD259B0DE3008A7D63 /* UINavigationBarExtension.swift */; };
 		FA6B0015258116B700438E80 /* LanguageLevelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0014258116B700438E80 /* LanguageLevelSelectionViewController.swift */; };
@@ -164,6 +171,9 @@
 		FA876C8D25C823EB00E65B95 /* CSTableViewCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA876C8C25C823EB00E65B95 /* CSTableViewCellBuilder.swift */; };
 		FA8BB73925C1ED6C001B6A22 /* CSAudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BB73725C1ED6C001B6A22 /* CSAudioTableViewCell.swift */; };
 		FA8BB73A25C1ED6C001B6A22 /* CSAudioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8BB73825C1ED6C001B6A22 /* CSAudioTableViewCell.xib */; };
+		FA8F2CD027A9222E00701B23 /* Speak.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8F2CCF27A9222E00701B23 /* Speak.storyboard */; };
+		FA8F2CD427A9227F00701B23 /* SpeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F2CD327A9227F00701B23 /* SpeakViewController.swift */; };
+		FA8F2CD627A924CC00701B23 /* SpeakAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F2CD527A924CC00701B23 /* SpeakAlertViewController.swift */; };
 		FA94560025C546E6003E54F0 /* CSStoryTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9455FF25C546E5003E54F0 /* CSStoryTextViewController.swift */; };
 		FA94560425C54BE8003E54F0 /* CSVocabularyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94560325C54BE8003E54F0 /* CSVocabularyListViewController.swift */; };
 		FA94560925C557C9003E54F0 /* VocabularyItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94560725C557C9003E54F0 /* VocabularyItemTableViewCell.swift */; };
@@ -210,6 +220,8 @@
 		FAB8E01E263A7BA8000AE9FE /* RedeemCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8E01D263A7BA8000AE9FE /* RedeemCodeViewController.swift */; };
 		FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */; };
 		FABB63AC25767305008B3FAB /* LanguagePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */; };
+		FABD3A0827BFD3F300F408A0 /* SpeakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD3A0727BFD3F300F408A0 /* SpeakTableViewCell.swift */; };
+		FABD3A1827C0163B00F408A0 /* DSWaveformImage in Frameworks */ = {isa = PBXBuildFile; productRef = FABD3A1727C0163B00F408A0 /* DSWaveformImage */; };
 		FAC1F4BB25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC1F4BA25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf */; };
 		FAC93A6126DFBC50003FACDA /* StoryLearningButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC93A6026DFBC50003FACDA /* StoryLearningButton.swift */; };
 		FAC93A6326DFCB3B003FACDA /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC93A6226DFCB3B003FACDA /* VideoPlayerView.swift */; };
@@ -218,6 +230,7 @@
 		FAC97F8426CE8E43008B2CEF /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC97F8326CE8E43008B2CEF /* Learn.storyboard */; };
 		FAC97F8626CE96D9008B2CEF /* StoryVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC97F8526CE96D9008B2CEF /* StoryVideoViewController.swift */; };
 		FACF0AA825E2A6DD00F3298B /* VocabularyId.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF0AA725E2A6DD00F3298B /* VocabularyId.swift */; };
+		FAD254A327BA6A1A00DADE67 /* SpeakCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD254A227BA6A1A00DADE67 /* SpeakCollectionViewCell.swift */; };
 		FAD2BCA22768AFA400BE6A85 /* UnderlinedButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD2BCA12768AFA400BE6A85 /* UnderlinedButton.xib */; };
 		FAD2BCA42768B07E00BE6A85 /* UnderlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2BCA32768B07E00BE6A85 /* UnderlinedButton.swift */; };
 		FAD2BCA62768D1B200BE6A85 /* SearchHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2BCA52768D1B200BE6A85 /* SearchHeaderTableViewCell.swift */; };
@@ -324,6 +337,14 @@
 		FA417FC42590DD2F00F9D81B /* Teacher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Teacher.storyboard; sourceTree = "<group>"; };
 		FA417FC72590DE8B00F9D81B /* TeacherNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherNetworkViewController.swift; sourceTree = "<group>"; };
 		FA417FDD2590F40F00F9D81B /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		FA43D84227BEAD8100BBEF07 /* sentence5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sentence5.mp3; sourceTree = "<group>"; };
+		FA43D84327BEAD8100BBEF07 /* paragraph.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = paragraph.mp3; sourceTree = "<group>"; };
+		FA43D84427BEAD8100BBEF07 /* sentence4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sentence4.mp3; sourceTree = "<group>"; };
+		FA43D84527BEAD8100BBEF07 /* sentence6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sentence6.mp3; sourceTree = "<group>"; };
+		FA43D84627BEAD8100BBEF07 /* sentence1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sentence1.mp3; sourceTree = "<group>"; };
+		FA43D84727BEAD8100BBEF07 /* sentence3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sentence3.mp3; sourceTree = "<group>"; };
+		FA43D84827BEAD8100BBEF07 /* sentence2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sentence2.mp3; sourceTree = "<group>"; };
+		FA43D85027BEB25A00BBEF07 /* writing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = writing.mp3; sourceTree = "<group>"; };
 		FA4506052637FE5100000279 /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		FA4506082637FE5C00000279 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		FA46951725C0521B00F347B1 /* ItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProtocol.swift; sourceTree = "<group>"; };
@@ -383,7 +404,6 @@
 		FA666A26259CAA9900FD6462 /* LearningLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningLanguage.swift; sourceTree = "<group>"; };
 		FA67EE2527A1681B0045C0B9 /* WritingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA67EE2927A2A1320045C0B9 /* TopLeftCellsFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeftCellsFlowLayout.swift; sourceTree = "<group>"; };
-		FA67EE2D27A324A30045C0B9 /* short_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = short_story.mp3; sourceTree = "<group>"; };
 		FA6853F62599FA47008A7D63 /* IBMPlexSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Light.ttf"; sourceTree = "<group>"; };
 		FA6853FD259B0DE3008A7D63 /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		FA6B0014258116B700438E80 /* LanguageLevelSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLevelSelectionViewController.swift; sourceTree = "<group>"; };
@@ -434,6 +454,9 @@
 		FA876C8C25C823EB00E65B95 /* CSTableViewCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTableViewCellBuilder.swift; sourceTree = "<group>"; };
 		FA8BB73725C1ED6C001B6A22 /* CSAudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAudioTableViewCell.swift; sourceTree = "<group>"; };
 		FA8BB73825C1ED6C001B6A22 /* CSAudioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSAudioTableViewCell.xib; sourceTree = "<group>"; };
+		FA8F2CCF27A9222E00701B23 /* Speak.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Speak.storyboard; sourceTree = "<group>"; };
+		FA8F2CD327A9227F00701B23 /* SpeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakViewController.swift; sourceTree = "<group>"; };
+		FA8F2CD527A924CC00701B23 /* SpeakAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakAlertViewController.swift; sourceTree = "<group>"; };
 		FA9455FF25C546E5003E54F0 /* CSStoryTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSStoryTextViewController.swift; sourceTree = "<group>"; };
 		FA94560325C54BE8003E54F0 /* CSVocabularyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVocabularyListViewController.swift; sourceTree = "<group>"; };
 		FA94560725C557C9003E54F0 /* VocabularyItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -480,6 +503,7 @@
 		FAB8E01D263A7BA8000AE9FE /* RedeemCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemCodeViewController.swift; sourceTree = "<group>"; };
 		FABB63A6257672EC008B3FAB /* LanguagePopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguagePopup.storyboard; sourceTree = "<group>"; };
 		FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePopupViewController.swift; sourceTree = "<group>"; };
+		FABD3A0727BFD3F300F408A0 /* SpeakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakTableViewCell.swift; sourceTree = "<group>"; };
 		FAC1F4BA25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		FAC93A6026DFBC50003FACDA /* StoryLearningButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryLearningButton.swift; sourceTree = "<group>"; };
 		FAC93A6226DFCB3B003FACDA /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
@@ -488,6 +512,7 @@
 		FAC97F8326CE8E43008B2CEF /* Learn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		FAC97F8526CE96D9008B2CEF /* StoryVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVideoViewController.swift; sourceTree = "<group>"; };
 		FACF0AA725E2A6DD00F3298B /* VocabularyId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyId.swift; sourceTree = "<group>"; };
+		FAD254A227BA6A1A00DADE67 /* SpeakCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAD2BCA12768AFA400BE6A85 /* UnderlinedButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnderlinedButton.xib; sourceTree = "<group>"; };
 		FAD2BCA32768B07E00BE6A85 /* UnderlinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedButton.swift; sourceTree = "<group>"; };
 		FAD2BCA52768D1B200BE6A85 /* SearchHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderTableViewCell.swift; sourceTree = "<group>"; };
@@ -549,6 +574,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABD3A1827C0163B00F408A0 /* DSWaveformImage in Frameworks */,
 				BD21B89ECB3395B7D26BCECC /* Pods_stori.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -835,7 +861,14 @@
 				FAAEA0C92762573800E8B750 /* eyes.gif */,
 				FA999D9A25694D3E00B694FA /* Strings.strings */,
 				FA26F7FB27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 */,
-				FA67EE2D27A324A30045C0B9 /* short_story.mp3 */,
+				FA43D85027BEB25A00BBEF07 /* writing.mp3 */,
+				FA43D84327BEAD8100BBEF07 /* paragraph.mp3 */,
+				FA43D84627BEAD8100BBEF07 /* sentence1.mp3 */,
+				FA43D84827BEAD8100BBEF07 /* sentence2.mp3 */,
+				FA43D84727BEAD8100BBEF07 /* sentence3.mp3 */,
+				FA43D84427BEAD8100BBEF07 /* sentence4.mp3 */,
+				FA43D84227BEAD8100BBEF07 /* sentence5.mp3 */,
+				FA43D84527BEAD8100BBEF07 /* sentence6.mp3 */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -1033,6 +1066,16 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		FA8F2CCE27A9221B00701B23 /* Speak */ = {
+			isa = PBXGroup;
+			children = (
+				FA8F2CCF27A9222E00701B23 /* Speak.storyboard */,
+				FA8F2CD327A9227F00701B23 /* SpeakViewController.swift */,
+				FA8F2CD527A924CC00701B23 /* SpeakAlertViewController.swift */,
+			);
+			path = Speak;
+			sourceTree = "<group>";
+		};
 		FA960AB5263AC46D001ACB21 /* Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -1076,6 +1119,8 @@
 				FAD2BCA92768D1CA00BE6A85 /* SearchHashtagTableViewCell.swift */,
 				FAF398CE2773887F00F1A55A /* HastagVideoCollectionViewCell.swift */,
 				FA67EE2527A1681B0045C0B9 /* WritingCollectionViewCell.swift */,
+				FAD254A227BA6A1A00DADE67 /* SpeakCollectionViewCell.swift */,
+				FABD3A0727BFD3F300F408A0 /* SpeakTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1156,6 +1201,7 @@
 				FA187B872779BFED00086245 /* Read */,
 				FA7690A3278F08EE001221B7 /* Listen */,
 				FAF12807279E89D3001F7643 /* Writing */,
+				FA8F2CCE27A9221B00701B23 /* Speak */,
 				FAAEA0C2275FB2DB00E8B750 /* Cells */,
 				FAB84DC526CFE73C00B9C5A0 /* video.json */,
 				FAB84DC726CFEA3B00B9C5A0 /* Video.swift */,
@@ -1290,6 +1336,9 @@
 			dependencies = (
 			);
 			name = stori;
+			packageProductDependencies = (
+				FABD3A1727C0163B00F408A0 /* DSWaveformImage */,
+			);
 			productName = stori;
 			productReference = FA812D6A256298440036F162 /* stori.app */;
 			productType = "com.apple.product-type.application";
@@ -1317,6 +1366,9 @@
 				Base,
 			);
 			mainGroup = FA812D61256298440036F162;
+			packageReferences = (
+				FABD3A1627C0163B00F408A0 /* XCRemoteSwiftPackageReference "DSWaveformImage" */,
+			);
 			productRefGroup = FA812D6B256298440036F162 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1344,16 +1396,21 @@
 				FA5608E6262034070062EE88 /* IBMPlexSans-Medium.ttf in Resources */,
 				FA7690A5278F090A001221B7 /* Listen.storyboard in Resources */,
 				FA999D9825694D3E00B694FA /* Strings.strings in Resources */,
-				FA67EE2E27A324A30045C0B9 /* short_story.mp3 in Resources */,
 				FA1F714D25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard in Resources */,
+				FA43D84E27BEAD8100BBEF07 /* sentence3.mp3 in Resources */,
 				FA50421025A611F4004E6EC9 /* ImagePreview.storyboard in Resources */,
 				FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */,
 				FAF12809279E89EA001F7643 /* Writing.storyboard in Resources */,
 				FAB8E01A263A7A36000AE9FE /* Referral.storyboard in Resources */,
 				FAAEA0C0275F591500E8B750 /* AppActivityIndicator.xib in Resources */,
+				FA43D84B27BEAD8100BBEF07 /* sentence4.mp3 in Resources */,
+				FA43D85127BEB25A00BBEF07 /* writing.mp3 in Resources */,
 				FA960AB7263AC48B001ACB21 /* UpdateLanguage.storyboard in Resources */,
+				FA43D84927BEAD8100BBEF07 /* sentence5.mp3 in Resources */,
 				FAC93A6526DFCB52003FACDA /* VideoPlayerView.xib in Resources */,
 				FA6853F72599FA47008A7D63 /* IBMPlexSans-Light.ttf in Resources */,
+				FA43D84D27BEAD8100BBEF07 /* sentence1.mp3 in Resources */,
+				FA8F2CD027A9222E00701B23 /* Speak.storyboard in Resources */,
 				FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */,
 				FA9F6C102582899800AC5197 /* LanguageLevelTableViewCell.xib in Resources */,
 				FA94560A25C557C9003E54F0 /* VocabularyItemTableViewCell.xib in Resources */,
@@ -1384,8 +1441,11 @@
 				FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */,
 				FAC97F8426CE8E43008B2CEF /* Learn.storyboard in Resources */,
 				FAFF92C325A44C5900A604C3 /* UploadFileTableViewCell.xib in Resources */,
+				FA43D84A27BEAD8100BBEF07 /* paragraph.mp3 in Resources */,
 				FAAA96D9261DE6A800B53D6C /* InterestTableViewCell.xib in Resources */,
+				FA43D84C27BEAD8100BBEF07 /* sentence6.mp3 in Resources */,
 				FAAEA0CA2762573800E8B750 /* eyes.gif in Resources */,
+				FA43D84F27BEAD8100BBEF07 /* sentence2.mp3 in Resources */,
 				FA3C26132569559C0089F646 /* Auth.storyboard in Resources */,
 				FA09A5CB263C2AC000DB7450 /* UpdateLevelTableViewCell.xib in Resources */,
 				FAF2690E25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib in Resources */,
@@ -1508,6 +1568,7 @@
 				FA6853FE259B0DE3008A7D63 /* UINavigationBarExtension.swift in Sources */,
 				FAD2BCAA2768D1CA00BE6A85 /* SearchHashtagTableViewCell.swift in Sources */,
 				FAFF81BD25D2830100A9BE82 /* CreateStoryObject.swift in Sources */,
+				FAD254A327BA6A1A00DADE67 /* SpeakCollectionViewCell.swift in Sources */,
 				FA22A7EA2588E4C6001129E7 /* Interest.swift in Sources */,
 				FA999D922568F30B00B694FA /* CustomCollectionViewCell.swift in Sources */,
 				FAE8AFB125E3E0FA00448AA4 /* SectionModel.swift in Sources */,
@@ -1524,10 +1585,12 @@
 				FA7E25322782EF5A00DEB6A0 /* SelectedWordViewController.swift in Sources */,
 				FAAEA0C4275FB30800E8B750 /* LearnCategoryCollectionViewCell.swift in Sources */,
 				FA26C0E1278476B60021AFB1 /* WEDictionaryViewController.swift in Sources */,
+				FA8F2CD427A9227F00701B23 /* SpeakViewController.swift in Sources */,
 				FA4B61342570036C005501BD /* APIClient.swift in Sources */,
 				FA5041E625A5B3B0004E6EC9 /* File.swift in Sources */,
 				FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */,
 				FA9BCB4A26417BB0009B1DDB /* VocabularyClient.swift in Sources */,
+				FABD3A0827BFD3F300F408A0 /* SpeakTableViewCell.swift in Sources */,
 				FA4B61BE25753CF2005501BD /* FacebookManager.swift in Sources */,
 				FAFF82C325D442B400A9BE82 /* CSTopicService.swift in Sources */,
 				FAD2BCA62768D1B200BE6A85 /* SearchHeaderTableViewCell.swift in Sources */,
@@ -1583,6 +1646,7 @@
 				FAF452F125D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift in Sources */,
 				FAE653F325C4046400CC25A1 /* CSRecordVoiceViewController.swift in Sources */,
 				FAFF92CD25A494AA00A604C3 /* JoinTNDocumentListViewController.swift in Sources */,
+				FA8F2CD627A924CC00701B23 /* SpeakAlertViewController.swift in Sources */,
 				FA85364C25AC644D002607EC /* UploadClient.swift in Sources */,
 				FAD2BCA82768D1BE00BE6A85 /* SearchUserTableViewCell.swift in Sources */,
 				FA16CE3625ED1231007B8354 /* CSChapterPartService.swift in Sources */,
@@ -1811,7 +1875,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 54;
+				CURRENT_PROJECT_VERSION = 55;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;
@@ -1836,7 +1900,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 54;
+				CURRENT_PROJECT_VERSION = 55;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;
@@ -1876,6 +1940,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FABD3A1627C0163B00F408A0 /* XCRemoteSwiftPackageReference "DSWaveformImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmrschmidt/DSWaveformImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FABD3A1727C0163B00F408A0 /* DSWaveformImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FABD3A1627C0163B00F408A0 /* XCRemoteSwiftPackageReference "DSWaveformImage" */;
+			productName = DSWaveformImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA812D62256298440036F162 /* Project object */;
 }

@@ -302,9 +302,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Christstollen is a Christmas cake. It has a long tradition and consists of yeast dough, sugar, spices and dried fruits. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwY-i4-xjB">
+                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwY-i4-xjB">
                                         <rect key="frame" x="44" y="166" width="326" height="478"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">When I was young, I went looking for gold in California. I never found enough to make me rich. But I did discover a beautiful part of the country. It was called “the Stanislau.” The Stanislau was like Heaven on Earth. It had bright green hills and deep forests where soft winds touched the trees.</string>
                                         <color key="textColor" name="Text Gray"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -483,6 +484,11 @@
             <point key="canvasLocation" x="-636" y="92"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="xFC-e2-6jl">
+            <size key="intrinsicContentSize" width="374" height="28"/>
+        </designable>
+    </designables>
     <resources>
         <image name="goback_2sec" width="32" height="32"/>
         <image name="goforward_2sec" width="32" height="32"/>

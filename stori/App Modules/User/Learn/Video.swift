@@ -12,7 +12,7 @@ struct JsonVideo: Decodable {
 }
 
 struct Video: Decodable {
-    var sources: String
+    var sources: String?
     var cover: String
     var title: String
 }

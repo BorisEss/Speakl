@@ -15,6 +15,8 @@ class StoryVideoViewController: UIViewController {
     
     @IBOutlet weak var videoView: VideoPlayerView!
     
+    @IBOutlet weak var coverImageView: UIImageView!
+    
     @IBOutlet weak var tagListView: UIStackView!
     @IBOutlet weak var newTagView: UIView!
     @IBOutlet weak var inProgressTagView: UIView!
@@ -72,45 +74,71 @@ class StoryVideoViewController: UIViewController {
                 self.navigationController?.pushViewController(unwrappedNextScreen, animated: true)
             }
         }
+        inProgressTagView.isHidden = true
+        completedTagView.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         guard let video = video else { return }
         titleLabel.text = video.title
-        videoView.load(url: video.sources,
-                       isMuted: learnTabIsMuted,
-                       autoReplay: true,
-                       muteAction: true)
-        print("play: \(video.sources)")
+        videoView.isHidden = video.sources == nil
+        coverImageView.isHidden = video.sources != nil
+        if let videoSource = video.sources {
+            videoView.load(url: videoSource,
+                           isMuted: learnTabIsMuted,
+                           autoReplay: true,
+                           muteAction: true)
+            print("play: \(videoSource)")
+        } else {
+            coverImageView.load(stringUrl: video.cover)
+        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        videoView.pause()
+        if video?.sources != nil {
+            videoView.pause()
+        }
         guard let video = video else { return }
-        print("pause: \(video.sources)")
+        print("pause: \(video.sources ?? "(nil)")")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let nextVc = segue.destination as? UINavigationController,
            let firstVc = nextVc.viewControllers.first as? ReadViewController {
             firstVc.completion = {
-                self.videoView.play()
+                if self.video?.sources != nil {
+                    self.videoView.play()
+                }
             }
         }
         
         if let nextVc = segue.destination as? UINavigationController,
            let firstVc = nextVc.viewControllers.first as? ListenViewController {
             firstVc.completion = {
-                self.videoView.play()
+                if self.video?.sources != nil {
+                    self.videoView.play()
+                }
             }
         }
         
         if let nextVc = segue.destination as? UINavigationController,
            let firstVc = nextVc.viewControllers.first as? WritingViewController {
             firstVc.completion = {
-                self.videoView.play()
+                if self.video?.sources != nil {
+                    self.videoView.play()
+                }
+            }
+        }
+        
+        if let nextVc = segue.destination as? UINavigationController,
+           let firstVc = nextVc.viewControllers.first as? SpeakViewController {
+            firstVc.completion = {
+                if self.video?.sources != nil {
+                    self.videoView.play()
+                }
             }
         }
         super.prepare(for: segue, sender: sender)
@@ -204,38 +232,59 @@ class StoryVideoViewController: UIViewController {
     }
     
     @IBAction func listenPressed(_ sender: Any) {
-        videoView.pause()
+        if video?.sources != nil {
+            videoView.pause()
+        }
         // TODO: Open Listen controller
 //        let vcc = UIViewController()
 //        vcc.view.backgroundColor = .white
 //        present(vcc, animated: true, completion: nil)
-        listenButton.inProgress()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+            listenButton.finished()
+            listenPercentageLabel.text = "100%"
+        }
     }
     
     @IBAction func readPressed(_ sender: Any) {
-        videoView.pause()
+        if video?.sources != nil {
+            videoView.pause()
+        }
         // TODO: Open Read controller
 //        let vcc = UIViewController()
 //        vcc.view.backgroundColor = .white
 //        present(vcc, animated: true, completion: nil)
-        readButton.inProgress()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+            readButton.finished()
+            readPercentageLabel.text = "100%"
+        }
     }
     
     @IBAction func writePressed(_ sender: Any) {
-        videoView.pause()
+        if video?.sources != nil {
+            videoView.pause()
+        }
         // TODO: Open Write controller
 //        let vcc = UIViewController()
 //        vcc.view.backgroundColor = .white
 //        present(vcc, animated: true, completion: nil)
-        writeButton.inProgress()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+            writeButton.finished()
+            writePercentageLabel.text = "100%"
+        }
     }
     
     @IBAction func speakPressed(_ sender: Any) {
+        if video?.sources != nil {
+            videoView.pause()
+        }
         // TODO: Open Speak controller
-        let vcc = UIViewController()
-        vcc.view.backgroundColor = .white
-        present(vcc, animated: true, completion: nil)
-        speakButton.inProgress()
+//        let vcc = UIViewController()
+//        vcc.view.backgroundColor = .white
+//        present(vcc, animated: true, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+            speakButton.finished()
+            speakPercentageLabel.text = "100%"
+        }
     }
     
     func setVideo(video: Video) {
