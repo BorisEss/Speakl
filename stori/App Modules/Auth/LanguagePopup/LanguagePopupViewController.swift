@@ -9,18 +9,22 @@ import UIKit
 
 class LanguagePopupViewController: UIViewController {
     
+    // MARK: - Variables
     var languages: [Language]?
     var selectedLanguage: Language?
     var completion: ((_ language: Language) -> Void)?
 
+    // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
     
+    // MARK: - ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTableView()
     }
     
+    // MARK: - Set Up Methods
     private func setUpTableView() {
         tableView.register(LanguageTableViewCell.nib(),
                            forCellReuseIdentifier: LanguageTableViewCell.identifier)
@@ -35,6 +39,7 @@ class LanguagePopupViewController: UIViewController {
     }
 }
 
+// MARK: UITableViewDelegate, UITableViewDataSource
 extension LanguagePopupViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return LanguageTableViewCell.height

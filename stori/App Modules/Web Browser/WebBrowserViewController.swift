@@ -10,14 +10,17 @@ import WebKit
 
 class WebBrowserViewController: UIViewController {
     
+    // MARK: - Variables
     var url: URL?
     var noDataTitle: String?
     var navbarWasHidden: Bool = false
     private var progressActivityIndicator: UIActivityIndicatorView!
 
+    // MARK: - IBOutlets
     @IBOutlet private weak var webView: WKWebView!
     @IBOutlet private weak var noDataLabel: UILabel!
     
+    // MARK: - ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         addActivityIndicator()
@@ -55,6 +58,7 @@ class WebBrowserViewController: UIViewController {
         }
     }
     
+    // MARK: - Set Up Methods
     private func addActivityIndicator() {
         progressActivityIndicator = UIActivityIndicatorView()
         if #available(iOS 13.0, *) {
@@ -68,6 +72,7 @@ class WebBrowserViewController: UIViewController {
     }
 }
 
+// MARK: - WKNavigationDelegate
 extension WebBrowserViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         progressActivityIndicator.startAnimating()

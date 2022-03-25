@@ -8,16 +8,20 @@
 import UIKit
 import StoreKit
 import GoogleSignIn
+import SPPermissions
 
 class SettingsViewController: UIViewController {
     
+    // MARK: - Custom Enum declarations
     private enum BrowserType {
         case termsAndConditions
         case privacyPolicy
     }
     
+    // MARK: - Variables
     private var browserType: BrowserType = .termsAndConditions
     
+    // MARK: - IBOutlets
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     
@@ -30,6 +34,7 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var versionLabel: UILabel!
     
+    // MARK: - ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -83,39 +88,20 @@ class SettingsViewController: UIViewController {
         }
     }
     
+    // MARK: - Button Actions
     @IBAction func editUserImageButtonPressed(_ sender: Any) {
-        let pickerAlertController: UIAlertController
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            pickerAlertController = UIAlertController(title: nil,
-                                                      message: "settings_choose_photo".localized,
-                                                      preferredStyle: .alert)
+        if SPPermissions.Permission.camera.status != .authorized ||
+            SPPermissions.Permission.photoLibrary.status != .authorized {
+            let permissions: [SPPermissions.Permission] = [.camera, .photoLibrary]
+            let controller = SPPermissions.list(permissions)
+            controller.showCloseButton = true
+            controller.allowSwipeDismiss = true
+            controller.delegate = self
+            controller.dismissCondition = .allPermissionsAuthorized
+            controller.present(on: self)
         } else {
-            pickerAlertController = UIAlertController(title: nil,
-                                                      message: "settings_choose_photo".localized,
-                                                      preferredStyle: .actionSheet)
+            loadAvatarPicker()
         }
-        
-        let cancelAction = UIAlertAction(title: "common_cancel_title".localized, style: .cancel) { _ in }
-        pickerAlertController.addAction(cancelAction)
-        
-        let cameraAction = UIAlertAction(title: "settings_camera".localized, style: .default) { _ in
-            ImagePicker.pickImage(from: .camera,
-                                  frontCamera: true,
-                                  isSquare: true,
-                                  compress: true) { [weak self] (file) in
-                self?.uploadAvatar(image: file.image)
-            }
-        }
-        pickerAlertController.addAction(cameraAction)
-        let libraryAction = UIAlertAction(title: "settings_library".localized, style: .default) { _ in
-            ImagePicker.pickImage(from: .library,
-                                  isSquare: true,
-                                  compress: true) { [weak self] (file) in
-                self?.uploadAvatar(image: file.image)
-            }
-        }
-        pickerAlertController.addAction(libraryAction)
-        self.present(pickerAlertController, animated: true)
     }
     
     @IBAction func becomeATeacherButtonPressed(_ sender: Any) {
@@ -130,6 +116,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func rateUsButtonPressed(_ sender: Any) {
         SKStoreReviewController.requestReview()
+        // TODO: Armchair show popup
     }
     
     @IBAction func contactUsButtonPressed(_ sender: Any) {
@@ -157,12 +144,13 @@ class SettingsViewController: UIViewController {
                                                       message: "settings_sign_out_question".localized,
                                                       preferredStyle: .actionSheet)
         }
-        
+
         let cancelAction = UIAlertAction(title: "common_cancel_title".localized, style: .cancel) { _ in }
         logoutAlertController.addAction(cancelAction)
-        
+
         let destroyAction = UIAlertAction(title: "settings_sign_out".localized, style: .destructive) { _ in
             Facebook.logOut()
+            GIDSignIn.sharedInstance.signOut()
 //            GIDSignIn.sharedInstance().signOut()
             Storage.shared.currentUser = nil
             KeychainManager.shared.token = nil
@@ -172,6 +160,7 @@ class SettingsViewController: UIViewController {
         self.present(logoutAlertController, animated: true)
     }
     
+    // MARK: - Set Up Methods
     private func setUpNavigationBar() {
         navigationController?.setNavigationBarHidden(true, animated: true)
         navigationController?.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -210,6 +199,55 @@ class SettingsViewController: UIViewController {
         }
     }
     
+    private func loadAvatarPicker() {
+        var pickerAlertController: UIAlertController
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            pickerAlertController = UIAlertController(title: nil,
+                                                      message: "settings_choose_photo".localized,
+                                                      preferredStyle: .alert)
+        } else {
+            pickerAlertController = UIAlertController(title: nil,
+                                                      message: "settings_choose_photo".localized,
+                                                      preferredStyle: .actionSheet)
+        }
+
+        let cancelAction = UIAlertAction(title: "common_cancel_title".localized, style: .cancel) { _ in }
+        pickerAlertController.addAction(cancelAction)
+
+        if SPPermissions.Permission.camera.status == .authorized {
+            let cameraAction = UIAlertAction(title: "settings_camera".localized, style: .default) { _ in
+                ImagePicker.pickImage(from: .camera,
+                                      frontCamera: true,
+                                      isSquare: true,
+                                      compress: true) { [weak self] (file) in
+                    self?.uploadAvatar(image: file.image)
+                }
+            }
+            pickerAlertController.addAction(cameraAction)
+        }
+        if SPPermissions.Permission.photoLibrary.status == .authorized {
+            let libraryAction = UIAlertAction(title: "settings_library".localized, style: .default) { _ in
+                ImagePicker.pickImage(from: .library,
+                                      isSquare: true,
+                                      compress: true) { [weak self] (file) in
+                    self?.uploadAvatar(image: file.image)
+                }
+            }
+            pickerAlertController.addAction(libraryAction)
+        }
+        if SPPermissions.Permission.photoLibrary.status != .authorized,
+           SPPermissions.Permission.camera.status != .authorized {
+            // TODO: Update Language variables
+            pickerAlertController = UIAlertController(title: "Lack of permissions",
+                                                      message: "You haven't gave the necessary perrmissions to get access to camera or/and photo library." +
+                                                      " Please give us these permissions then try again.",
+                                                      preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "I got it!", style: .cancel) { _ in }
+            pickerAlertController.addAction(okAction)
+        }
+        self.present(pickerAlertController, animated: true)
+    }
+    
     private func uploadAvatar(image: UIImage?) {
         if let image = image {
             UserClient.updateUserImage(image: image)
@@ -224,6 +262,14 @@ class SettingsViewController: UIViewController {
                 }
         } else {
             Toast.error("settings_avatar_failed".localized)
+        }
+    }
+}
+
+extension SettingsViewController: SPPermissionsDelegate {
+    func didHidePermissions(_ permissions: [SPPermissions.Permission]) {
+        if !permissions.filter({ $0.status == .authorized }).isEmpty {
+            loadAvatarPicker()
         }
     }
 }

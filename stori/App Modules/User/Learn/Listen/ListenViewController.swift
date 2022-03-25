@@ -16,6 +16,7 @@ enum PlayingSpeed {
 
 class ListenViewController: UIViewController {
 
+    // MARK: - Variables
     lazy var completion: (() -> Void)? = nil
     
     private var playingSpeed: PlayingSpeed = .normal {
@@ -30,6 +31,14 @@ class ListenViewController: UIViewController {
     
     private var player: AudioPlayer = AudioPlayer()
     
+    var words: [String] = ["When", "I", "was", "young,", "I", "went", "looking", "for", "gold",
+                           "in", "California.", "I", "never", "found", "enough", "to", "make", "me",
+                           "rich.", "But", "I", "did", "discover", "a", "beautiful", "part", "of", "the",
+                           "country.", "It", "was", "called", "“the", "Stanislau.”", "The", "Stanislau",
+                           "was", "like", "Heaven", "on", "Earth.", "It", "had", "bright", "green", "hills",
+                           "and", "deep", "forests", "where", "soft", "winds", "touched", "the", "trees."]
+    
+    // MARK: - IBOutlets
     @IBOutlet weak var speedButtonsView: UIStackView!
     @IBOutlet weak var slowSpeedButton: UIButton!
     @IBOutlet weak var normalSpeedButton: UIButton!
@@ -46,13 +55,14 @@ class ListenViewController: UIViewController {
     @IBOutlet weak var maxTimeSliderLabel: UILabel!
     
     @IBOutlet weak var nativeLanguageTextView: UITextView!
-    @IBOutlet weak var learningLanguageView: TagListView!
     
+    @IBOutlet weak var learningLanguageCollectionView: UICollectionView!
     @IBOutlet weak var startButton: StoryLearningButton!
     @IBOutlet weak var restartButton: StoryLearningButton!
     @IBOutlet weak var playingView: UIView!
     @IBOutlet weak var finishButton: StoryLearningButton!
     
+    // MARK: - ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -61,17 +71,18 @@ class ListenViewController: UIViewController {
         timelineSlider.setThumbImage(UIImage(named: "slider_thumb_enabled"), for: .highlighted)
         timelineSlider.isEnabled = false
         
+        let columnLayout = TopLeftCellsFlowLayout()
+        columnLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        columnLayout.minimumInteritemSpacing = 10
+        columnLayout.minimumLineSpacing = 10
+        columnLayout.footerReferenceSize = CGSize(width: learningLanguageCollectionView.bounds.width, height: 24)
+        learningLanguageCollectionView.collectionViewLayout = columnLayout
+        learningLanguageCollectionView.register(WordCollectionViewCell.nib(),
+                                                forCellWithReuseIdentifier: WordCollectionViewCell.identifier)
+        
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
         navigationController?.modalPresentationCapturesStatusBarAppearance = true
-        learningLanguageView.delegate = self
-        learningLanguageView.textFont = .IBMPlexSans(size: 14)
-        learningLanguageView.addTags(["When", "I", "was", "young,", "I", "went", "looking", "for", "gold",
-                                      "in", "California.", "I", "never", "found", "enough", "to", "make", "me",
-                                      "rich.", "But", "I", "did", "discover", "a", "beautiful", "part", "of", "the",
-                                      "country.", "It", "was", "called", "“the", "Stanislau.”", "The", "Stanislau", "was",
-                                      "like", "Heaven", "on", "Earth.", "It", "had", "bright", "green", "hills", "and",
-                                      "deep", "forests", "where", "soft", "winds", "touched", "the", "trees."])
-        
+
         if let url = Bundle.main.url(forResource: "paragraph",
                                      withExtension: ".mp3") {
             player.load(url: url)
@@ -113,6 +124,7 @@ class ListenViewController: UIViewController {
         return .lightContent
     }
 
+    // MARK: - Button Actions
     @IBAction func closeButtonPressed(_ sender: Any) {
         player.stop()
         view.backgroundColor = .clear
@@ -134,8 +146,8 @@ class ListenViewController: UIViewController {
     }
     
     @IBAction func languageSwitchChanged(_ sender: UISwitch) {
-        UIView.transition(from: sender.isOn ? nativeLanguageTextView : learningLanguageView,
-                          to: sender.isOn ? learningLanguageView : nativeLanguageTextView,
+        UIView.transition(from: sender.isOn ? nativeLanguageTextView : learningLanguageCollectionView,
+                          to: sender.isOn ? learningLanguageCollectionView : nativeLanguageTextView,
                           duration: 0.3,
                           options: [.transitionCrossDissolve, .showHideTransitionViews]) { _ in }
     }
@@ -158,7 +170,8 @@ class ListenViewController: UIViewController {
         playingView.isHidden = false
         speedButtonsView.isHidden = false
         finishButton.isHidden = true
-        learningLanguageView.isHidden = false
+        languageSwitch.setOn(true, animated: true)
+        languageSwitchChanged(languageSwitch)
         player.play()
         startButton.setTitle("Continue", for: .normal)
     }
@@ -182,6 +195,7 @@ class ListenViewController: UIViewController {
     }
     
     @IBAction func pauseButtonPressed(_ sender: Any) {
+        timelineSlider.isEnabled = false
         startButton.isHidden = false
         restartButton.isHidden = true
         playingView.isHidden = true
@@ -202,14 +216,30 @@ class ListenViewController: UIViewController {
     
 }
 
-extension ListenViewController: TagListViewDelegate {
-    func tagPressed(_ title: String, tagView: TagView, sender: TagListView) {
+// MARK: - UICollectionViewDelegate, UICollectionViewDataSource
+extension ListenViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        return words.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let mainCell = collectionView.dequeueReusableCell(withReuseIdentifier: WordCollectionViewCell.identifier,
+                                                          for: indexPath)
+        if let cell = mainCell as? WordCollectionViewCell {
+            cell.setUp(word: words[indexPath.item])
+        }
+        return mainCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "WordExplanation", bundle: nil)
         let nextScreen = storyBoard.instantiateViewController(withIdentifier: "SelectedWordViewController")
         if let unwrappedNextScreen = nextScreen as? SelectedWordViewController {
 //            unwrappedNextScreen.hashtag = Hashtag(name: hashtag, popularity: 0)
-            
             self.navigationController?.pushViewController(unwrappedNextScreen, animated: true)
         }
     }
+    
 }

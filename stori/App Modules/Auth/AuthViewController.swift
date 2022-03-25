@@ -9,19 +9,20 @@ import UIKit
 import GoogleSignIn
 import AuthenticationServices
 
-enum AuthScreenType {
-    case login
-    case signup
-    case forgotPassword
-    case resetPassword
-}
-
 class AuthViewController: UIViewController {
     
+    // MARK: - Internal Enums declarations
     enum Segues: String {
         case languageSelector = "showLanguagePopup"
         case termsAndConditions = "showTermsAndConditions"
         case continueSignUp = "continueSignUp"
+    }
+    
+    enum AuthScreenType {
+        case login
+        case signup
+        case forgotPassword
+        case resetPassword
     }
     
     // MARK: - Internal proprietes
@@ -73,7 +74,7 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var firstBottomButton: UIButton!
     @IBOutlet weak var secondBottomButton: UIButton!
     
-    // MARK: - Lifecycle
+    // MARK: - View Controller lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -122,14 +123,10 @@ class AuthViewController: UIViewController {
     @IBAction func nextButtonPressed(_ sender: Any) {
         dismissKeyboard()
         switch authType {
-        case .login:
-            logIn()
-        case .signup:
-            signUp()
-        case .forgotPassword:
-            forgotPassword()
-        case .resetPassword:
-            resetPassword()
+        case .login: logIn()
+        case .signup: signUp()
+        case .forgotPassword: forgotPassword()
+        case .resetPassword: resetPassword()
         }
     }
     

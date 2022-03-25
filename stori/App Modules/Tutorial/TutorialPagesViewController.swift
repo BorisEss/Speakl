@@ -7,10 +7,15 @@
 
 import UIKit
 
+// MARK: - Tutorial Protocol
 protocol TutorialPagesViewControllerDelegate: AnyObject {
     func didChangeIndex(index: Int)
 }
 
+// MARK: - Tutorial Value definition
+typealias TutorialValue = (id: Int, image: UIImage?, description: String)
+
+// MARK: - TutorialPagesViewController
 class TutorialPagesViewController: UIPageViewController {
 
     // MARK: - Variables
@@ -22,6 +27,7 @@ class TutorialPagesViewController: UIPageViewController {
     
     weak var tutorialPagesDelegate: TutorialPagesViewControllerDelegate?
     
+    // MARK: - ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,6 +45,7 @@ class TutorialPagesViewController: UIPageViewController {
 
 }
 
+// MARK: - UIPageViewControllerDelegate, UIPageViewControllerDataSource
 extension TutorialPagesViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerBefore viewController: UIViewController) -> UIViewController? {

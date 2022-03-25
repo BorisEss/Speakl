@@ -9,13 +9,16 @@ import UIKit
 
 class ImagePreviewViewController: UIViewController {
 
+    // MARK: - Variables
     var image: UIImage?
     
+    // MARK: - IBOutlets
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var noDataLabel: UILabel!
     
+    // MARK: ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = image
@@ -30,6 +33,7 @@ class ImagePreviewViewController: UIViewController {
     }
 }
 
+// MARK: - UIScrollViewDelegate
 extension ImagePreviewViewController: UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView

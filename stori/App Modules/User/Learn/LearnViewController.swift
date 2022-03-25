@@ -40,12 +40,15 @@ class LearnViewController: UIViewController {
         super.viewDidLoad()
         
         previousIndexPath = IndexPath(item: 2, section: 0)
-        swipeMenuCollectionView.selectItem(at: previousIndexPath,
-                                           animated: false,
-                                           scrollPosition: [])
-        swipeMenuCollectionView.scrollToItem(at: IndexPath(item: 1, section: 0),
-                                             at: .left,
-                                             animated: false)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+            self.swipeMenuCollectionView.selectItem(at: self.previousIndexPath,
+                                               animated: false,
+                                               scrollPosition: [])
+            self.swipeMenuCollectionView.scrollToItem(at: IndexPath(item: 1, section: 0),
+                                                 at: .left,
+                                                 animated: false)
+        }
+        
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
         
         cView.alpha = 0

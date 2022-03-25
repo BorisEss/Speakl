@@ -7,6 +7,7 @@
 
 import UIKit
 import TableFlip
+import SPPermissions
 
 class LanguageInterestsSelectionViewController: UIViewController {
 
@@ -20,11 +21,13 @@ class LanguageInterestsSelectionViewController: UIViewController {
             tableView.animate(animation: TableViewAnimation.Cell.fade(duration: 0.6))
         }
     }
+    var dataLoaded: Bool = false
     
     // MARK: - Outlets
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var progressActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var noDataLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: RegularButton!
     @IBOutlet weak var nextProgressActivityIndicator: UIActivityIndicatorView!
@@ -37,11 +40,17 @@ class LanguageInterestsSelectionViewController: UIViewController {
         
         guard let learningLanguage = learningLanguage else { return }
         LanguageService().getInterests(for: learningLanguage)
+            .ensure {
+                self.dataLoaded = true
+                self.progressActivityIndicator.stopAnimating()
+            }
             .done { (interests) in
                 self.interests = interests
-            }
-            .ensure {
-                self.progressActivityIndicator.stopAnimating()
+                if self.interests.isEmpty, self.dataLoaded {
+                    self.noDataLabel.isHidden = false
+                } else {
+                    self.noDataLabel.isHidden = true
+                }
             }
             .cauterize()
     }
@@ -73,7 +82,16 @@ class LanguageInterestsSelectionViewController: UIViewController {
             self.nextProgressActivityIndicator.stopAnimating()
             self.nextButton.isHidden = false
             if isSuccess {
-                Router.load()
+                if SPPermissions.Permission.notification.notDetermined {
+                    let permissions: [SPPermissions.Permission] = [.notification]
+                    let controller = SPPermissions.list(permissions)
+                    controller.showCloseButton = true
+                    controller.allowSwipeDismiss = true
+                    controller.delegate = self
+                    controller.present(on: self)
+                } else {
+                    Router.load()
+                }
             }
         }
     }
@@ -93,6 +111,7 @@ class LanguageInterestsSelectionViewController: UIViewController {
         titleLabel.text = "select_interests_vc_page_title".localized
         subtitleLabel.text = "select_interests_vc_page_subtitle".localized
         nextButton.setTitle("select_interests_vc_next_button".localized, for: .normal)
+        noDataLabel.text = "common_nothing_to_show".localized
     }
 }
 
@@ -148,5 +167,18 @@ extension LanguageInterestsSelectionViewController: UITableViewDelegate, UITable
         let headerView = UIView()
         headerView.backgroundColor = .clear
         return headerView
+    }
+}
+
+// MARK: - SPPermissionsDelegate
+extension LanguageInterestsSelectionViewController: SPPermissionsDelegate {
+    func didHidePermissions(_ permissions: [SPPermissions.Permission]) {
+        Router.load()
+    }
+    func didDeniedPermission(_ permission: SPPermissions.Permission) {
+        Router.load()
+    }
+    func didAllowPermission(_ permission: SPPermissions.Permission) {
+        Router.load()
     }
 }

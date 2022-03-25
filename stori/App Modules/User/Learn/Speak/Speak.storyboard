@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fbV-sU-TIe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fbV-sU-TIe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -797,16 +797,16 @@
                                 <rect key="frame" x="0.0" y="60" width="414" height="836"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="FFd-ed-WxC">
-                                        <rect key="frame" x="20" y="24" width="374" height="758"/>
+                                        <rect key="frame" x="20" y="32" width="374" height="750"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdO-06-EzH">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="674"/>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="bdO-06-EzH">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="666"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="so5-qs-iQJ">
-                                                        <rect key="frame" x="20" y="0.0" width="334" height="674"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="so5-qs-iQJ">
+                                                        <rect key="frame" x="16" y="0.0" width="342" height="666"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AP6-Hy-zv3">
-                                                                <rect key="frame" x="0.0" y="0.0" width="334" height="32"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="32"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="9ge-kY-0hB">
                                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -816,7 +816,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTj-Ri-fKK">
-                                                                        <rect key="frame" x="40" y="0.0" width="294" height="32"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="302" height="32"/>
                                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="24"/>
                                                                         <color key="textColor" name="Tag Green"/>
                                                                         <nil key="highlightedColor"/>
@@ -824,7 +824,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LRn-8T-CDo">
-                                                                <rect key="frame" x="0.0" y="40" width="334" height="32"/>
+                                                                <rect key="frame" x="0.0" y="44" width="342" height="32"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="ajp-p8-ccj">
                                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -834,7 +834,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TZ-Ij-WnD">
-                                                                        <rect key="frame" x="40" y="0.0" width="294" height="32"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="302" height="32"/>
                                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="24"/>
                                                                         <color key="textColor" name="Tag Red"/>
                                                                         <nil key="highlightedColor"/>
@@ -842,22 +842,22 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="trB-yz-Nya">
-                                                                <rect key="frame" x="0.0" y="80" width="334" height="287"/>
+                                                                <rect key="frame" x="0.0" y="88" width="342" height="346"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCR-Pt-bYI">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="33"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="171"/>
                                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="12"/>
                                                                         <color key="textColor" name="Text Gray"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0q-4x-JFU">
-                                                                        <rect key="frame" x="0.0" y="41" width="334" height="246"/>
+                                                                        <rect key="frame" x="0.0" y="179" width="342" height="167"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="o8a-Bj-jdK">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="334" height="246"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="167"/>
                                                                                 <subviews>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghj-Rv-bTS">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="16" height="246"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="16" height="167"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speaker_icon" translatesAutoresizingMaskIntoConstraints="NO" id="8H1-IZ-izY">
                                                                                                 <rect key="frame" x="0.0" y="2" width="16" height="16"/>
@@ -874,8 +874,8 @@
                                                                                             <constraint firstItem="8H1-IZ-izY" firstAttribute="top" secondItem="ghj-Rv-bTS" secondAttribute="top" constant="2" id="pDq-v1-nJH"/>
                                                                                         </constraints>
                                                                                     </view>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christstollen ist ein Weihnachtskuchen. Er hat eine lange Tradition un besteht aus Hefeteig Zucked Gewürzen und Trockenfrüchten" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQR-lP-Yk4">
-                                                                                        <rect key="frame" x="24" y="0.0" width="310" height="246"/>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christstollen ist ein Weihnachtskuchen. Er hat eine lange Tradition un besteht aus Hefeteig Zucked Gewürzen und Trockenfrüchten" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="OQR-lP-Yk4">
+                                                                                        <rect key="frame" x="24" y="0.0" width="318" height="167"/>
                                                                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="16"/>
                                                                                         <color key="textColor" name="GradientBottom"/>
                                                                                         <nil key="highlightedColor"/>
@@ -883,7 +883,7 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKV-Z2-Gtj">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="334" height="246"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="167"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                                 <state key="normal">
                                                                                     <color key="titleColor" name="Text Black"/>
@@ -908,22 +908,22 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l3K-WF-0Ub">
-                                                                <rect key="frame" x="0.0" y="375" width="334" height="299"/>
+                                                                <rect key="frame" x="0.0" y="446" width="342" height="220"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awj-jK-y8B">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="16"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="16"/>
                                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="12"/>
                                                                         <color key="textColor" name="Text Gray"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zd2-T8-uaS">
-                                                                        <rect key="frame" x="0.0" y="24" width="334" height="246"/>
+                                                                        <rect key="frame" x="0.0" y="24" width="342" height="167"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XMt-ak-I6H">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="334" height="246"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="167"/>
                                                                                 <subviews>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAZ-AZ-MyN">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="16" height="246"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="16" height="167"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speaker_icon" translatesAutoresizingMaskIntoConstraints="NO" id="QQi-7m-qLv">
                                                                                                 <rect key="frame" x="0.0" y="2" width="16" height="16"/>
@@ -940,8 +940,8 @@
                                                                                             <constraint firstItem="QQi-7m-qLv" firstAttribute="top" secondItem="oAZ-AZ-MyN" secondAttribute="top" constant="2" id="h7g-JO-3zV"/>
                                                                                         </constraints>
                                                                                     </view>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christstollen ist ein Weihnachtskuchen. Er hat eine lange Tradition un besteht aus Hefeteig Zucked Gewürzen und Trockenfrüchten" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmM-gF-t4L">
-                                                                                        <rect key="frame" x="24" y="0.0" width="310" height="246"/>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christstollen ist ein Weihnachtskuchen. Er hat eine lange Tradition un besteht aus Hefeteig Zucked Gewürzen und Trockenfrüchten" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="xmM-gF-t4L">
+                                                                                        <rect key="frame" x="24" y="0.0" width="318" height="167"/>
                                                                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="16"/>
                                                                                         <color key="textColor" name="GradientBottom"/>
                                                                                         <nil key="highlightedColor"/>
@@ -949,7 +949,7 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nD-18-a0J">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="334" height="246"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="167"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                                 <state key="normal">
                                                                                     <color key="titleColor" name="Text Black"/>
@@ -972,7 +972,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christmas cake" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8v-Yz-Yc7">
-                                                                        <rect key="frame" x="0.0" y="278" width="334" height="21"/>
+                                                                        <rect key="frame" x="0.0" y="199" width="342" height="21"/>
                                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="16"/>
                                                                         <color key="textColor" name="Text Gray"/>
                                                                         <nil key="highlightedColor"/>
@@ -980,18 +980,21 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="XMt-ak-I6H" firstAttribute="height" secondItem="o8a-Bj-jdK" secondAttribute="height" priority="750" id="qnf-XN-743"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="so5-qs-iQJ" firstAttribute="top" secondItem="bdO-06-EzH" secondAttribute="top" id="Ann-Nf-gpZ"/>
-                                                    <constraint firstAttribute="bottom" secondItem="so5-qs-iQJ" secondAttribute="bottom" id="gAm-ii-Rmf"/>
-                                                    <constraint firstItem="so5-qs-iQJ" firstAttribute="leading" secondItem="bdO-06-EzH" secondAttribute="leading" constant="20" id="zYY-Q6-0sm"/>
-                                                    <constraint firstItem="so5-qs-iQJ" firstAttribute="centerX" secondItem="bdO-06-EzH" secondAttribute="centerX" id="zjN-GV-i6h"/>
+                                                    <constraint firstAttribute="trailing" secondItem="so5-qs-iQJ" secondAttribute="trailing" constant="16" id="6yJ-h7-nha"/>
+                                                    <constraint firstAttribute="bottom" secondItem="so5-qs-iQJ" secondAttribute="bottom" id="GFt-Gd-J98"/>
+                                                    <constraint firstItem="so5-qs-iQJ" firstAttribute="top" secondItem="bdO-06-EzH" secondAttribute="top" id="Mcz-0u-KK3"/>
+                                                    <constraint firstItem="so5-qs-iQJ" firstAttribute="leading" secondItem="bdO-06-EzH" secondAttribute="leading" constant="16" id="neA-wK-Uth"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rKK-eB-ydI">
-                                                <rect key="frame" x="0.0" y="698" width="374" height="60"/>
+                                                <rect key="frame" x="0.0" y="690" width="374" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiS-Yx-l3B">
                                                         <rect key="frame" x="0.0" y="0.0" width="114" height="60"/>
@@ -1067,9 +1070,9 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="FFd-ed-WxC" firstAttribute="top" secondItem="24H-a4-hgq" secondAttribute="top" constant="24" id="WfQ-vl-kDZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="FFd-ed-WxC" secondAttribute="trailing" constant="20" id="jIC-xD-7L8"/>
-                                    <constraint firstItem="FFd-ed-WxC" firstAttribute="leading" secondItem="24H-a4-hgq" secondAttribute="leading" constant="20" id="tTf-He-otr"/>
+                                    <constraint firstItem="FFd-ed-WxC" firstAttribute="leading" secondItem="24H-a4-hgq" secondAttribute="leading" constant="20" id="FS1-Hj-mVd"/>
+                                    <constraint firstAttribute="trailing" secondItem="FFd-ed-WxC" secondAttribute="trailing" constant="20" id="ezz-Fy-LMX"/>
+                                    <constraint firstItem="FFd-ed-WxC" firstAttribute="top" secondItem="24H-a4-hgq" secondAttribute="top" constant="32" id="hLa-SI-fvn"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1077,9 +1080,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="24H-a4-hgq" secondAttribute="bottom" id="6B4-3G-89s"/>
+                            <constraint firstItem="i08-za-YdQ" firstAttribute="bottom" secondItem="FFd-ed-WxC" secondAttribute="bottom" constant="20" id="K2F-SN-G5n"/>
                             <constraint firstItem="24H-a4-hgq" firstAttribute="trailing" secondItem="i08-za-YdQ" secondAttribute="trailing" id="P3P-hE-Kmz"/>
-                            <constraint firstItem="i08-za-YdQ" firstAttribute="bottom" secondItem="FFd-ed-WxC" secondAttribute="bottom" constant="20" id="jDl-iH-PRK"/>
-                            <constraint firstItem="24H-a4-hgq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i08-za-YdQ" secondAttribute="top" constant="16" id="pZk-oa-eOJ"/>
+                            <constraint firstItem="24H-a4-hgq" firstAttribute="top" secondItem="i08-za-YdQ" secondAttribute="top" priority="250" constant="16" id="pZk-oa-eOJ"/>
                             <constraint firstItem="24H-a4-hgq" firstAttribute="leading" secondItem="i08-za-YdQ" secondAttribute="leading" id="wrS-gk-fee"/>
                         </constraints>
                     </view>
@@ -1110,7 +1113,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="gMl-Xg-rY1"/>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="z8y-tL-fFg"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3Z-fB-X9K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

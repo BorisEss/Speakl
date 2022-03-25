@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SPPermissions
 
 extension AuthViewController {
     // MARK: - Auth Actions
@@ -143,11 +144,26 @@ extension AuthViewController {
             switch user.userStatus {
             case .completed:
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                    Router.load()
+                    if SPPermissions.Permission.notification.notDetermined {
+                        let permissions: [SPPermissions.Permission] = [.notification]
+                        let controller = SPPermissions.list(permissions)
+                        controller.showCloseButton = true
+                        controller.allowSwipeDismiss = true
+                        controller.delegate = self
+                        controller.present(on: self)
+                    } else {
+                        Router.load()
+                    }
                 }
             case .shouldUpdateLanguage:
                 performSegue(withIdentifier: Segues.continueSignUp.rawValue, sender: nil)
             }
         }
+    }
+}
+
+extension AuthViewController: SPPermissionsDelegate {
+    func didHidePermissions(_ permissions: [SPPermissions.Permission]) {
+        Router.load()
     }
 }

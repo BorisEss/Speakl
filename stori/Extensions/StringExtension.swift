@@ -53,7 +53,6 @@ extension String {
     }
 }
 
-
 extension String {
     /// This function removes all punctuation characters from a string
     ///

@@ -29,6 +29,14 @@ target 'stori' do
   pod 'KeychainSwift'             # Keychain manager for storing items(token) into System's Keychain
   pod 'SwiftyStoreKit'            # App Store library for managing In App purchases
   pod 'Mute'                      # Library to detect if the device is has mute switch on or off
+  pod 'MobileVLCKit'              # It is used for Audio Player to play audio files uploadded or registered recordings from the user
+  
+  # Permissions
+  pod 'SPPermissions/Camera'            # The permission module to use Camera
+  pod 'SPPermissions/PhotoLibrary'      # The permission module to access Library
+  pod 'SPPermissions/Notification'      # The permission module to request push Notifications
+  pod 'SPPermissions/Microphone'        # The permission module to access Microphone to record user's speech
+  pod 'SPPermissions/SpeechRecognizer'  # The permission module to use Speech Recognizer to transfrom user's speech into text
   
   #UI Pods
   pod 'TextFieldEffects'          # Text field effects(used on auth screens)
@@ -47,11 +55,12 @@ target 'stori' do
   pod 'SwiftyGif'                 # Library for loading GIF images in UIImageView
   pod 'KILabel'                   # Checks text in label and creates links, hashtags, handlers
   pod 'StepSlider'                # Custom UISlider with stepping control
+  pod 'MBCircularProgressBar'     # A circular progress bar(it is used in Speak Module to show the progres of the audio over the 'Speaker' button)
+
   
   # Should be deleted
 #  pod 'MarqueeLabel'
-  pod 'MobileVLCKit'              # Maybe will be used for audio player
-  pod 'MBCircularProgressBar'     # A circular progress bar(used in teacher section when teached finishes uploading a story)
+  
 
 #  pod 'GrowingTextView'
 #  pod 'SideMenu'

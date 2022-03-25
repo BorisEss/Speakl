@@ -64,6 +64,8 @@
 	<string>Michrophone is used while you record a video or voice recording</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Library access is needed to pick a photo from you library when it is requested</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Speech Reognition is required to transform your speeck to text and check your pronunciation.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>IBMPlexSans-Bold.ttf</string>

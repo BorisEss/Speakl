@@ -42,6 +42,8 @@
 		FA26C0E72784772F0021AFB1 /* WEExpressionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26C0E62784772F0021AFB1 /* WEExpressionsViewController.swift */; };
 		FA26F7FC27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA26F7FB27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 */; };
 		FA270C00263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */; };
+		FA333DAC27EC89E700E6B5A1 /* WordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA333DAA27EC89E700E6B5A1 /* WordCollectionViewCell.swift */; };
+		FA333DAD27EC89E700E6B5A1 /* WordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA333DAB27EC89E700E6B5A1 /* WordCollectionViewCell.xib */; };
 		FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */; };
 		FA3553C125DBA503008DD1FF /* CSCustomItemPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */; };
 		FA3553E425DD0FD2008DD1FF /* CSChapterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553E325DD0FD2008DD1FF /* CSChapterService.swift */; };
@@ -135,8 +137,6 @@
 		FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA7B72DA25669BEF003F9A0C /* IBMPlexSans-Bold.ttf */; };
 		FA7B72DF25669C54003F9A0C /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72DE25669C54003F9A0C /* AppFonts.swift */; };
 		FA7B72E22566B493003F9A0C /* Sweet Pea.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA7B72E12566B493003F9A0C /* Sweet Pea.ttf */; };
-		FA7B72EA2566B814003F9A0C /* TutorialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72E82566B814003F9A0C /* TutorialCollectionViewCell.swift */; };
-		FA7B72EB2566B814003F9A0C /* TutorialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7B72E92566B814003F9A0C /* TutorialCollectionViewCell.xib */; };
 		FA7E25322782EF5A00DEB6A0 /* SelectedWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E25312782EF5A00DEB6A0 /* SelectedWordViewController.swift */; };
 		FA7E25342783376300DEB6A0 /* SelectedWordMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E25332783376300DEB6A0 /* SelectedWordMenuCollectionViewCell.swift */; };
 		FA7E253727843C3C00DEB6A0 /* WordExplanation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7E253627843C3C00DEB6A0 /* WordExplanation.storyboard */; };
@@ -230,6 +230,7 @@
 		FAC97F8426CE8E43008B2CEF /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC97F8326CE8E43008B2CEF /* Learn.storyboard */; };
 		FAC97F8626CE96D9008B2CEF /* StoryVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC97F8526CE96D9008B2CEF /* StoryVideoViewController.swift */; };
 		FACF0AA825E2A6DD00F3298B /* VocabularyId.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF0AA725E2A6DD00F3298B /* VocabularyId.swift */; };
+		FAD1824827E64C3100901A76 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1824727E64C3100901A76 /* UITableViewExtension.swift */; };
 		FAD254A327BA6A1A00DADE67 /* SpeakCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD254A227BA6A1A00DADE67 /* SpeakCollectionViewCell.swift */; };
 		FAD2BCA22768AFA400BE6A85 /* UnderlinedButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD2BCA12768AFA400BE6A85 /* UnderlinedButton.xib */; };
 		FAD2BCA42768B07E00BE6A85 /* UnderlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2BCA32768B07E00BE6A85 /* UnderlinedButton.swift */; };
@@ -322,6 +323,8 @@
 		FA26C0E62784772F0021AFB1 /* WEExpressionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEExpressionsViewController.swift; sourceTree = "<group>"; };
 		FA26F7FB27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Californian_s_Tale_-_By_Mark_Twain.mp3"; sourceTree = "<group>"; };
 		FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelDetailsViewController.swift; sourceTree = "<group>"; };
+		FA333DAA27EC89E700E6B5A1 /* WordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA333DAB27EC89E700E6B5A1 /* WordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInterestsSelectionViewController.swift; sourceTree = "<group>"; };
 		FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCustomItemPopUpViewController.swift; sourceTree = "<group>"; };
 		FA3553E325DD0FD2008DD1FF /* CSChapterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterService.swift; sourceTree = "<group>"; };
@@ -416,8 +419,6 @@
 		FA7B72DA25669BEF003F9A0C /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
 		FA7B72DE25669C54003F9A0C /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		FA7B72E12566B493003F9A0C /* Sweet Pea.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sweet Pea.ttf"; sourceTree = "<group>"; };
-		FA7B72E82566B814003F9A0C /* TutorialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCell.swift; sourceTree = "<group>"; };
-		FA7B72E92566B814003F9A0C /* TutorialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA7E25312782EF5A00DEB6A0 /* SelectedWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedWordViewController.swift; sourceTree = "<group>"; };
 		FA7E25332783376300DEB6A0 /* SelectedWordMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedWordMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA7E253627843C3C00DEB6A0 /* WordExplanation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WordExplanation.storyboard; sourceTree = "<group>"; };
@@ -512,6 +513,7 @@
 		FAC97F8326CE8E43008B2CEF /* Learn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		FAC97F8526CE96D9008B2CEF /* StoryVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVideoViewController.swift; sourceTree = "<group>"; };
 		FACF0AA725E2A6DD00F3298B /* VocabularyId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyId.swift; sourceTree = "<group>"; };
+		FAD1824727E64C3100901A76 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		FAD254A227BA6A1A00DADE67 /* SpeakCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAD2BCA12768AFA400BE6A85 /* UnderlinedButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnderlinedButton.xib; sourceTree = "<group>"; };
 		FAD2BCA32768B07E00BE6A85 /* UnderlinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedButton.swift; sourceTree = "<group>"; };
@@ -680,6 +682,7 @@
 		FA3C26112569558B0089F646 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				FABB63A9257672F0008B3FAB /* LanguagePopup */,
 				FA3C26122569559C0089F646 /* Auth.storyboard */,
 				FA4D4480257A9B3200398AE2 /* AuthViewController.swift */,
 				FA658311256E27DA007052D9 /* AuthViewControllerDelegates.swift */,
@@ -772,7 +775,6 @@
 			isa = PBXGroup;
 			children = (
 				FABB63AF2576736B008B3FAB /* Cell */,
-				FABB63A9257672F0008B3FAB /* LanguagePopup */,
 				FA4D4494257E489A00398AE2 /* LanguageSelect */,
 			);
 			path = "Language ";
@@ -887,15 +889,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		FA7B72ED2566B857003F9A0C /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				FA7B72E92566B814003F9A0C /* TutorialCollectionViewCell.xib */,
-				FA7B72E82566B814003F9A0C /* TutorialCollectionViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		FA7E253527843C2500DEB6A0 /* Word Explanation */ = {
 			isa = PBXGroup;
 			children = (
@@ -974,7 +967,6 @@
 		FA812D86256640AB0036F162 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				FA7B72ED2566B857003F9A0C /* Cell */,
 				FA812D87256640BF0036F162 /* Tutorial.storyboard */,
 				FA812DA625665DB90036F162 /* TutorialViewController.swift */,
 				FAF398D22774752600F1A55A /* TutorialPagesViewController.swift */,
@@ -1001,6 +993,7 @@
 				FA6853FD259B0DE3008A7D63 /* UINavigationBarExtension.swift */,
 				FA186514275B7A0B004981AA /* UIScrollViewExtension.swift */,
 				FAAEA0C5276215B200E8B750 /* UICollectionViewExtension.swift */,
+				FAD1824727E64C3100901A76 /* UITableViewExtension.swift */,
 				FA252CC825DB186000FF85E1 /* SwiftMessagesSegues.swift */,
 				FA4B709326209F2A00DE2582 /* LocalizationExtension.swift */,
 				FA5BCFBD27038CE8004A6B08 /* AppShadowNavigationViewController.swift */,
@@ -1104,8 +1097,8 @@
 		FAAEA0BD275F58E100E8B750 /* Activity Indicator */ = {
 			isa = PBXGroup;
 			children = (
-				FAAEA0BF275F591500E8B750 /* AppActivityIndicator.swift */,
 				FAAEA0BE275F591500E8B750 /* AppActivityIndicator.xib */,
+				FAAEA0BF275F591500E8B750 /* AppActivityIndicator.swift */,
 			);
 			path = "Activity Indicator";
 			sourceTree = "<group>";
@@ -1121,6 +1114,8 @@
 				FA67EE2527A1681B0045C0B9 /* WritingCollectionViewCell.swift */,
 				FAD254A227BA6A1A00DADE67 /* SpeakCollectionViewCell.swift */,
 				FABD3A0727BFD3F300F408A0 /* SpeakTableViewCell.swift */,
+				FA333DAB27EC89E700E6B5A1 /* WordCollectionViewCell.xib */,
+				FA333DAA27EC89E700E6B5A1 /* WordCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1385,7 +1380,6 @@
 			files = (
 				FAF10ED92637152E001B650F /* ChangePassword.storyboard in Resources */,
 				FAC1F4BB25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf in Resources */,
-				FA7B72EB2566B814003F9A0C /* TutorialCollectionViewCell.xib in Resources */,
 				FA63DA39258CF3D400722CA6 /* MainTabBar.storyboard in Resources */,
 				FA7B72E22566B493003F9A0C /* Sweet Pea.ttf in Resources */,
 				FA812DA125665AA70036F162 /* Root.storyboard in Resources */,
@@ -1422,6 +1416,7 @@
 				FA5608C6261F2CEF0062EE88 /* Settings.storyboard in Resources */,
 				FA876C8225C80E7C00E65B95 /* CSImageItemTableViewCell.xib in Resources */,
 				FA812D77256298450036F162 /* Assets.xcassets in Resources */,
+				FA333DAD27EC89E700E6B5A1 /* WordCollectionViewCell.xib in Resources */,
 				FA3A467B26397BDA00BF0CB5 /* RatingButton.xib in Resources */,
 				FAE653EA25C3FB8600CC25A1 /* RecordButton.xib in Resources */,
 				FA7E253727843C3C00DEB6A0 /* WordExplanation.storyboard in Resources */,
@@ -1527,10 +1522,10 @@
 				FA04986F25C2E624004CF8B7 /* AudioPlayer.swift in Sources */,
 				FAC97F8226CE8E1D008B2CEF /* LearnViewController.swift in Sources */,
 				FAB8E01C263A7B96000AE9FE /* InviteFriendsViewController.swift in Sources */,
-				FA7B72EA2566B814003F9A0C /* TutorialCollectionViewCell.swift in Sources */,
 				FAF10ECD26369B63001B650F /* EditPersonalInfoViewController.swift in Sources */,
 				FA812DA725665DB90036F162 /* TutorialViewController.swift in Sources */,
 				FA270C00263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift in Sources */,
+				FA333DAC27EC89E700E6B5A1 /* WordCollectionViewCell.swift in Sources */,
 				FA658312256E27DA007052D9 /* AuthViewControllerDelegates.swift in Sources */,
 				FA4506092637FE5C00000279 /* NotificationsViewController.swift in Sources */,
 				FA65830C256D544E007052D9 /* UILabelExtension.swift in Sources */,
@@ -1661,6 +1656,7 @@
 				FA7EF427262DAB3B00335CE6 /* MembershipViewController.swift in Sources */,
 				FA67EE2A27A2A1320045C0B9 /* TopLeftCellsFlowLayout.swift in Sources */,
 				FAFF82C025D4429300A9BE82 /* CSStoryService.swift in Sources */,
+				FAD1824827E64C3100901A76 /* UITableViewExtension.swift in Sources */,
 				FA65831B256E7805007052D9 /* AuthViewControllerSetUp.swift in Sources */,
 				FA5608C9261F2D150062EE88 /* SettingsViewController.swift in Sources */,
 				FA666A27259CAA9900FD6462 /* LearningLanguage.swift in Sources */,
@@ -1875,7 +1871,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 55;
+				CURRENT_PROJECT_VERSION = 56;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;
@@ -1900,7 +1896,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 55;
+				CURRENT_PROJECT_VERSION = 56;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;

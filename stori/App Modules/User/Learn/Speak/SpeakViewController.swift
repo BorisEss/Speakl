@@ -356,13 +356,15 @@ class SpeakViewController: UIViewController {
             recordingActivityIndicatorMainView.isHidden = false
             recordingActivityIndicator.startAnimating()
             recognizeText(file: file) { result in
+                guard !result.isEmpty else {
+                    Toast.error("We couldn't detect your speech or words.\nPlease try again!")
+                    self.deleteButtonPressed(self.deleteButton)
+                    return
+                }
                 switch self.level {
-                case .oneWord, .wordByWord:
-                    self.checkTexts(initial: self.speakWords[self.currentIndex].word, final: result)
-                case .sentence:
-                    self.checkTexts(initial: self.sentences[self.currentIndex].1.word, final: result)
-                case .paragraph:
-                    self.checkTexts(initial: self.paragraph.word, final: result)
+                case .oneWord, .wordByWord: self.checkTexts(initial: self.speakWords[self.currentIndex].word, final: result)
+                case .sentence: self.checkTexts(initial: self.sentences[self.currentIndex].1.word, final: result)
+                case .paragraph: self.checkTexts(initial: self.paragraph.word, final: result)
                 }
             }
         }
@@ -388,34 +390,28 @@ class SpeakViewController: UIViewController {
     func stopTimer() {
         recorder.stopRecording()
         timer?.invalidate()
-        recordingLeftButton.alpha = 1
         liveIconTimer?.invalidate()
+        recordingLeftButton.alpha = 1
         timer = nil
+        liveIconTimer = nil
     }
     
     func recognizeText(file: URL, completion: @escaping ((String) -> Void)) {
         // process recorded file to speech-to-text
         
-        guard let myRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US")) else {
-            // A recognizer is not supported for the current locale
-            return
-        }
+        // A recognizer is not supported for the current locale
+        guard let myRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US")) else { return }
         
-        if !myRecognizer.isAvailable {
-            // The recognizer is not available right now
-            return
-        }
+        // The recognizer is not available right now
+        if !myRecognizer.isAvailable { return }
         
         let request = SFSpeechURLRecognitionRequest(url: file)
-        myRecognizer.recognitionTask(with: request) { (result, _) in
-            guard let result = result else {
-                // Recognition failed, so check error for details and handle it
-                return
-            }
+        myRecognizer.recognitionTask(with: request) { (result, error) in
+            // Recognition failed, so check error for details and handle it
+            if error != nil { completion("") }
+            guard let result = result else { return }
             // Print the speech that has been recognized so far
-            if result.isFinal {
-                completion(result.bestTranscription.formattedString)
-            }
+            if result.isFinal { completion(result.bestTranscription.formattedString) }
         }
     }
     
@@ -456,6 +452,7 @@ class SpeakViewController: UIViewController {
             controller.itIsLastWord = currentIndex == speakWords.count - 1
             controller.speakAgainCompletionHandler = { [self] in
                 tableView.reloadData()
+                tableView.scrollToBottom()
                 deleteButtonPressed(deleteButton)
             }
             controller.nextCompletionHandler = { [self] in
@@ -467,6 +464,7 @@ class SpeakViewController: UIViewController {
                     currentIndex += 1
                 }
                 tableView.reloadData()
+                tableView.scrollToBottom()
             }
         case .sentence:
             controller.userAudio = recorder.getRecordedAudio()
@@ -504,6 +502,7 @@ class SpeakViewController: UIViewController {
                 dismiss(animated: true, completion: nil)
             }
         }
+        if #available(iOS 13.0, *) { controller.isModalInPresentation = true }
         self.present(controller, animated: true) {
             self.recordingRightButton.isHidden = false
             self.recordingActivityIndicatorMainView.isHidden = true
@@ -529,10 +528,8 @@ extension SpeakViewController: UICollectionViewDelegate, UICollectionViewDataSou
                                                           for: indexPath)
         if let cell = mainCell as? SpeakCollectionViewCell {
             switch level {
-            case .oneWord:
-                cell.setUp(word: speakWords[indexPath.item])
-            case .wordByWord, .sentence, .paragraph:
-                cell.setUp(word: SpeakWord(word: ""))
+            case .oneWord: cell.setUp(word: speakWords[indexPath.item])
+            case .wordByWord, .sentence, .paragraph: cell.setUp(word: SpeakWord(word: ""))
             }
             return cell
         }

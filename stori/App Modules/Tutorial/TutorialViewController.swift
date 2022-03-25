@@ -20,7 +20,7 @@ class TutorialViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var nextButton: RegularButton!
     
-    // MARK: - Controller life cycle
+    // MARK: - Controller lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpLanguage()

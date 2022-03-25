@@ -33,10 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NetworkActivityLogger.shared.level = .debug
         #endif
         
-        // Configuring Google Sign In
-//        GIDSignIn.sharedInstance.clientID = googleSignInClientId
-//        GIDSignIn.sharedInstance().delegate = self
-        
         // Configure Facebook
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
@@ -70,7 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 // MARK: Google Sign In
-extension AppDelegate {//: GIDSignInDelegate {
+extension AppDelegate {
     @available(iOS 9.0, *)
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
         let facebook = ApplicationDelegate.shared.application(app,
@@ -90,32 +86,4 @@ extension AppDelegate {//: GIDSignInDelegate {
                      open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         return GIDSignIn.sharedInstance.handle(url)
     }
-    
-//    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
-//              withError error: Error!) {
-//        if let error = error {
-//            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
-//                print("The user has not signed in before or they have since signed out.")
-//            } else {
-//                print("\(error.localizedDescription)")
-//            }
-//            return
-//        }
-//        // Perform any operations on signed in user here.
-//        _ = user.userID                  // For client-side use only!
-//        _ = user.authentication.idToken // Safe to send to the server
-//        _ = user.profile.name
-//        _ = user.profile.givenName
-//        _ = user.profile.familyName
-//        _ = user.profile.email
-//        // ...
-//
-//        print(user ?? "")
-//    }
-//
-//    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
-//              withError error: Error!) {
-//        // Perform any operations when the user disconnects from app here.
-//        // ...
-//    }
 }

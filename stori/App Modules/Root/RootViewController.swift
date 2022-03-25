@@ -11,13 +11,16 @@ import Mute
 
 class RootViewController: UIViewController {
     
+    // MARK: - Variables
     private var tripleTap = UITapGestureRecognizer()
     
+    // MARK: - Outlets
     @IBOutlet weak var logoImageView: UIImageView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var activityIndicator: AppActivityIndicator!
     @IBOutlet weak var retryButton: UIButton!
     @IBOutlet weak var contactUsButton: UIButton!
     
+    // MARK: - Controller lifecycle
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
               
@@ -30,6 +33,7 @@ class RootViewController: UIViewController {
         load()
     }
     
+    // MARK: - Button Actions
     @IBAction func contactUsButtonPressed(_ sender: Any) {
         sendEmail(emailAddress: contactEmail)
     }
@@ -38,6 +42,7 @@ class RootViewController: UIViewController {
         load()
     }
     
+    // MARK: - Functions
     private func load() {
         activityIndicator.startAnimating()
         retryButton.isHidden = true
@@ -81,7 +86,9 @@ class RootViewController: UIViewController {
     }
     
     @objc private func goToAuthScreen() {
-        KeychainManager.shared.token = nil
-        Router.load()
+        if !activityIndicator.isAnimating {
+            KeychainManager.shared.token = nil
+            Router.load()
+        }
     }
 }

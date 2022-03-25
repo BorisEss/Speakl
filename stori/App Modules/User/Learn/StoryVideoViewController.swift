@@ -8,6 +8,7 @@
 import UIKit
 import AVKit
 import KILabel
+import SPPermissions
 
 class StoryVideoViewController: UIViewController {
     
@@ -277,17 +278,52 @@ class StoryVideoViewController: UIViewController {
         if video?.sources != nil {
             videoView.pause()
         }
+        if SPPermissions.Permission.microphone.status != .authorized ||
+            SPPermissions.Permission.speech.status != .authorized {
+            let permissions: [SPPermissions.Permission] = [.microphone, .speech]
+            let controller = SPPermissions.list(permissions)
+            controller.showCloseButton = true
+            controller.allowSwipeDismiss = true
+            controller.delegate = self
+            controller.dismissCondition = .allPermissionsAuthorized
+            controller.present(on: self)
+        } else {
+            performSegue(withIdentifier: "showSpeak", sender: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+                speakButton.finished()
+                speakPercentageLabel.text = "100%"
+            }
+        }
         // TODO: Open Speak controller
 //        let vcc = UIViewController()
 //        vcc.view.backgroundColor = .white
 //        present(vcc, animated: true, completion: nil)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
-            speakButton.finished()
-            speakPercentageLabel.text = "100%"
-        }
+        
     }
     
     func setVideo(video: Video) {
         self.video = video
+    }
+}
+
+extension StoryVideoViewController: SPPermissionsDelegate {
+    func didHidePermissions(_ permissions: [SPPermissions.Permission]) {
+        if permissions.filter({ $0.status != .authorized }).isEmpty {
+            performSegue(withIdentifier: "showSpeak", sender: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+                speakButton.finished()
+                speakPercentageLabel.text = "100%"
+            }
+        } else {
+            var pickerAlertController: UIAlertController
+            // TODO: - Update language titles
+            pickerAlertController = UIAlertController(title: "Lack of permissions",
+                                                      message: "You haven't gave the necessary perrmissions to get access, without them you can't continue to \"Speak\" section." +
+                                                      " Please give us these permissions then try again.",
+                                                      preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "I got it!", style: .cancel) { _ in }
+            pickerAlertController.addAction(okAction)
+            self.present(pickerAlertController, animated: true)
+        }
     }
 }

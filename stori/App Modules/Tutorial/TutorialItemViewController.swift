@@ -9,11 +9,14 @@ import UIKit
 
 class TutorialItemViewController: UIViewController {
 
+    // MARK: - Variables
     var item: TutorialValue?
     
+    // MARK: - IBOutlets
     @IBOutlet weak var tutorialIcon: UIImageView!
     @IBOutlet weak var tutorialLabel: UILabel!
     
+    // MARK: - ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +27,7 @@ class TutorialItemViewController: UIViewController {
         self.tutorialLabel.text = item.description
     }
 
+    // MARK: - Set Up Methods
     func setUp(_ value: TutorialValue) {
         self.item = value
     }

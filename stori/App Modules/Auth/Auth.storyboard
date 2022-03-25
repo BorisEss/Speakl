@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wT9-MH-dnx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wT9-MH-dnx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -39,30 +41,46 @@
             <objects>
                 <viewController storyboardIdentifier="AuthViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Lry-uT-T8C" customClass="AuthViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6je-Lx-K9N" customClass="UIGradientView" customModule="stori" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auth_image" translatesAutoresizingMaskIntoConstraints="NO" id="o04-cm-uSK">
-                                <rect key="frame" x="499.5" y="19" width="285.5" height="562"/>
+                                <rect key="frame" x="203" y="63" width="396" height="780"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="o04-cm-uSK" secondAttribute="height" multiplier="32:63" id="JnD-0P-zT8"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="bvY-lD-UdV">
-                                <rect key="frame" x="28" y="8" width="544" height="564"/>
+                                <rect key="frame" x="28" y="52" width="358" height="782"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="B6H-hl-dnQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="544" height="67.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="58"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpeaklLogo" translatesAutoresizingMaskIntoConstraints="NO" id="JG3-Ss-hdN">
-                                                <rect key="frame" x="0.0" y="0.0" width="208" height="67.5"/>
-                                                <color key="tintColor" name="AccentColor"/>
-                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GaJ-vj-M8G">
+                                                <rect key="frame" x="0.0" y="0.0" width="155" height="58"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lc5-Rf-GZU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="155" height="8"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="8" id="jtq-bH-peS"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpeaklLogo" translatesAutoresizingMaskIntoConstraints="NO" id="JG3-Ss-hdN">
+                                                        <rect key="frame" x="0.0" y="8" width="155" height="50"/>
+                                                        <color key="tintColor" name="AccentColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="HdP-SY-it5"/>
+                                                            <constraint firstAttribute="width" secondItem="JG3-Ss-hdN" secondAttribute="height" multiplier="208:67" id="NNJ-0Q-A7z"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDg-3i-yEs">
-                                                <rect key="frame" x="512" y="0.0" width="32" height="67.5"/>
+                                                <rect key="frame" x="326" y="0.0" width="32" height="58"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03d-b5-Rcg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                        <rect key="frame" x="0.0" y="15" width="32" height="32"/>
                                                         <subviews>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft4-fp-pJC">
                                                                 <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -103,14 +121,16 @@
                                                 <constraints>
                                                     <constraint firstItem="03d-b5-Rcg" firstAttribute="leading" secondItem="xDg-3i-yEs" secondAttribute="leading" id="dAi-4q-LEa"/>
                                                     <constraint firstAttribute="trailing" secondItem="03d-b5-Rcg" secondAttribute="trailing" id="fhq-eR-7RH"/>
-                                                    <constraint firstItem="03d-b5-Rcg" firstAttribute="top" secondItem="xDg-3i-yEs" secondAttribute="top" id="mBA-LN-ZbG"/>
                                                     <constraint firstAttribute="width" constant="32" id="uHb-a7-3bD"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="03d-b5-Rcg" firstAttribute="centerY" secondItem="JG3-Ss-hdN" secondAttribute="centerY" constant="-2" id="TTZ-8a-vO3"/>
+                                        </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNs-RS-W7f">
-                                        <rect key="frame" x="0.0" y="87" width="544" height="87.5"/>
+                                        <rect key="frame" x="0.0" y="113.5" width="358" height="97.5"/>
                                         <string key="text">The app
 for enriching
 your vocabulary</string>
@@ -119,7 +139,7 @@ your vocabulary</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-ep-V1D" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="174.5" width="544" height="50"/>
+                                        <rect key="frame" x="0.0" y="211" width="358" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="UWr-r4-uEP"/>
                                         </constraints>
@@ -139,7 +159,7 @@ your vocabulary</string>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFc-CR-ZWK" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="194.5" width="544" height="50"/>
+                                        <rect key="frame" x="0.0" y="267" width="358" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="yAN-G2-N4c"/>
                                         </constraints>
@@ -159,7 +179,7 @@ your vocabulary</string>
                                         </connections>
                                     </textField>
                                     <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qb9-Xi-82l" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="244.5" width="544" height="50"/>
+                                        <rect key="frame" x="0.0" y="317" width="358" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="SHH-bG-tcx"/>
                                         </constraints>
@@ -179,7 +199,7 @@ your vocabulary</string>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BRw-B7-GmL" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="264" width="544" height="50"/>
+                                        <rect key="frame" x="0.0" y="372.5" width="358" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="uAl-yK-OZY"/>
                                         </constraints>
@@ -199,7 +219,7 @@ your vocabulary</string>
                                         </connections>
                                     </textField>
                                     <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Repeat password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="osF-Ee-XLd" customClass="RegularTextField" customModule="stori" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="314" width="544" height="50"/>
+                                        <rect key="frame" x="0.0" y="422.5" width="358" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="tBU-o2-Tg6"/>
                                         </constraints>
@@ -221,7 +241,7 @@ your vocabulary</string>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3D3-Bu-wAe">
-                                        <rect key="frame" x="0.0" y="333.5" width="544" height="50"/>
+                                        <rect key="frame" x="0.0" y="478" width="358" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxd-jU-aAL">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -250,22 +270,22 @@ your vocabulary</string>
                                         </constraints>
                                     </view>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing up to Stori app, you agree with our Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywe-Yn-E7C">
-                                        <rect key="frame" x="0.0" y="383.5" width="544" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="528" width="358" height="0.0"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-BS-4pe">
-                                        <rect key="frame" x="0.0" y="403.5" width="544" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="584" width="358" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or Connect with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUt-1J-AfY">
-                                                <rect key="frame" x="0.0" y="0.0" width="544" height="15.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="17"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="13"/>
                                                 <color key="textColor" white="1" alpha="0.26000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="wdW-XR-2QM">
-                                                <rect key="frame" x="0.0" y="33.5" width="544" height="40"/>
+                                                <rect key="frame" x="0.0" y="35" width="358" height="40"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShC-TQ-lGh">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -352,7 +372,7 @@ your vocabulary</string>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4i8-iV-ZSo">
-                                                        <rect key="frame" x="207" y="0.0" width="337" height="40"/>
+                                                        <rect key="frame" x="207" y="0.0" width="151" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                 </subviews>
@@ -363,10 +383,10 @@ your vocabulary</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="GzA-16-NNp">
-                                        <rect key="frame" x="0.0" y="496.5" width="544" height="67.5"/>
+                                        <rect key="frame" x="0.0" y="714.5" width="358" height="67.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5K-14-eF5">
-                                                <rect key="frame" x="0.0" y="0.0" width="52" height="67.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="67.5"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                 <state key="normal" title="Sign up">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -376,13 +396,13 @@ your vocabulary</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWJ-fK-Pbq">
-                                                <rect key="frame" x="68" y="0.0" width="6" height="67.5"/>
+                                                <rect key="frame" x="16" y="0.0" width="0.0" height="67.5"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEp-y5-V3O">
-                                                <rect key="frame" x="90" y="0.0" width="114" height="67.5"/>
+                                                <rect key="frame" x="32" y="0.0" width="0.0" height="67.5"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
                                                 <state key="normal" title="Forgot password">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -392,7 +412,7 @@ your vocabulary</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZSI-DM-jku">
-                                                <rect key="frame" x="220" y="0.0" width="324" height="67.5"/>
+                                                <rect key="frame" x="48" y="0.0" width="310" height="67.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
@@ -454,7 +474,7 @@ your vocabulary</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR6-0B-Dcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2278" y="5"/>
+            <point key="canvasLocation" x="-2278.2608695652175" y="4.6875"/>
         </scene>
         <!--WebBrowser-->
         <scene sceneID="0hN-CK-cLl">
@@ -472,7 +492,6 @@ your vocabulary</string>
                 <navigationController storyboardIdentifier="AuthNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="wT9-MH-dnx" customClass="AppShadowNavigationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0WF-Tm-f3R">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -485,6 +504,23 @@ your vocabulary</string>
             <point key="canvasLocation" x="-3188" y="5"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="BRw-B7-GmL">
+            <size key="intrinsicContentSize" width="78.5" height="24"/>
+        </designable>
+        <designable name="Qb9-Xi-82l">
+            <size key="intrinsicContentSize" width="42" height="25"/>
+        </designable>
+        <designable name="WFc-CR-ZWK">
+            <size key="intrinsicContentSize" width="45.5" height="25"/>
+        </designable>
+        <designable name="osF-Ee-XLd">
+            <size key="intrinsicContentSize" width="140" height="24"/>
+        </designable>
+        <designable name="wBa-ep-V1D">
+            <size key="intrinsicContentSize" width="83" height="25"/>
+        </designable>
+    </designables>
     <resources>
         <image name="SpeaklLogo" width="208" height="67.5"/>
         <image name="apple_auth" width="40" height="40"/>
