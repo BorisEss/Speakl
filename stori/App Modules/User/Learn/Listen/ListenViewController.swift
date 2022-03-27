@@ -31,12 +31,7 @@ class ListenViewController: UIViewController {
     
     private var player: AudioPlayer = AudioPlayer()
     
-    var words: [String] = ["When", "I", "was", "young,", "I", "went", "looking", "for", "gold",
-                           "in", "California.", "I", "never", "found", "enough", "to", "make", "me",
-                           "rich.", "But", "I", "did", "discover", "a", "beautiful", "part", "of", "the",
-                           "country.", "It", "was", "called", "“the", "Stanislau.”", "The", "Stanislau",
-                           "was", "like", "Heaven", "on", "Earth.", "It", "had", "bright", "green", "hills",
-                           "and", "deep", "forests", "where", "soft", "winds", "touched", "the", "trees."]
+    var words: [String] = []
     
     // MARK: - IBOutlets
     @IBOutlet weak var speedButtonsView: UIStackView!
@@ -45,6 +40,7 @@ class ListenViewController: UIViewController {
     @IBOutlet weak var quickSpeedButton: UIButton!
     
     @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var activityIndicator: AppActivityIndicator!
     
     @IBOutlet weak var languageLabel: UILabel!
     
@@ -106,12 +102,23 @@ class ListenViewController: UIViewController {
             }
         }
         
+        activityIndicator.startAnimating()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 0.3) {
             self.view.backgroundColor = .black.withAlphaComponent(0.6)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.words = ["When", "I", "was", "young,", "I", "went", "looking", "for", "gold",
+                     "in", "California.", "I", "never", "found", "enough", "to", "make", "me",
+                     "rich.", "But", "I", "did", "discover", "a", "beautiful", "part", "of", "the",
+                     "country.", "It", "was", "called", "“the", "Stanislau.”", "The", "Stanislau",
+                     "was", "like", "Heaven", "on", "Earth.", "It", "had", "bright", "green", "hills",
+                     "and", "deep", "forests", "where", "soft", "winds", "touched", "the", "trees."]
+            self.learningLanguageCollectionView.reloadData()
+            self.activityIndicator.stopAnimating()
         }
     }
     

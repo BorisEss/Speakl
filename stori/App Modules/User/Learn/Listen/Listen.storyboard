@@ -32,6 +32,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsv-ZE-VNh">
                                 <rect key="frame" x="0.0" y="124" width="414" height="772"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1B2-qT-L5B" customClass="AppActivityIndicator" customModule="stori" customModuleProvider="target">
+                                        <rect key="frame" x="192" y="371" width="30" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="GradientTop"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="GYQ-Rd-yCy"/>
+                                            <constraint firstAttribute="width" secondItem="1B2-qT-L5B" secondAttribute="height" multiplier="1:1" id="pUY-dy-wJH"/>
+                                        </constraints>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rle-dV-sFP">
                                         <rect key="frame" x="0.0" y="16" width="414" height="50"/>
                                         <subviews>
@@ -289,6 +298,8 @@
                                     <constraint firstItem="XwY-i4-xjB" firstAttribute="top" secondItem="u4P-fZ-vhG" secondAttribute="bottom" constant="14" id="0l1-Ly-ST4"/>
                                     <constraint firstItem="XwY-i4-xjB" firstAttribute="leading" secondItem="bsv-ZE-VNh" secondAttribute="leading" constant="44" id="2ik-qP-HR6"/>
                                     <constraint firstItem="u4P-fZ-vhG" firstAttribute="top" secondItem="rle-dV-sFP" secondAttribute="bottom" constant="14" id="BWf-6V-gqC"/>
+                                    <constraint firstItem="1B2-qT-L5B" firstAttribute="centerX" secondItem="bsv-ZE-VNh" secondAttribute="centerX" id="Gyq-HU-5Ew"/>
+                                    <constraint firstItem="1B2-qT-L5B" firstAttribute="centerY" secondItem="bsv-ZE-VNh" secondAttribute="centerY" id="Js9-bs-vBJ"/>
                                     <constraint firstItem="Mpy-1b-zK5" firstAttribute="top" secondItem="u4P-fZ-vhG" secondAttribute="bottom" constant="14" id="UMh-uI-jdo"/>
                                     <constraint firstItem="rle-dV-sFP" firstAttribute="top" secondItem="bsv-ZE-VNh" secondAttribute="top" constant="16" id="WsN-zh-fj3"/>
                                     <constraint firstAttribute="trailing" secondItem="XwY-i4-xjB" secondAttribute="trailing" constant="44" id="atz-ZF-5ta"/>
@@ -417,6 +428,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="eWz-j1-SBU"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="1B2-qT-L5B" id="8xk-la-ZK5"/>
                         <outlet property="cardView" destination="bsv-ZE-VNh" id="lgG-Qo-sKi"/>
                         <outlet property="finishButton" destination="XC3-ei-aX0" id="TIu-MU-Mah"/>
                         <outlet property="languageLabel" destination="Os5-lw-8Y6" id="9hY-lt-qbD"/>
@@ -467,6 +479,9 @@
         </namedColor>
         <namedColor name="Background">
             <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GradientTop">
+            <color red="0.19599999487400055" green="0.27500000596046448" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text Black">
             <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

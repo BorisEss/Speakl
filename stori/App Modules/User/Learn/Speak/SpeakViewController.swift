@@ -154,9 +154,7 @@ class SpeakViewController: UIViewController {
         player.didUpdateProgress = { value in
             UIView.animate(withDuration: 1, delay: 0, options: [.curveLinear]) {
                 self.listeningProgressView.value = value * 100
-            } completion: { _ in
-                
-            }
+            } completion: { _ in }
         }
         player.didFinishPlaying = { [self] in
             self.player.returnFromBeginning()
@@ -167,9 +165,7 @@ class SpeakViewController: UIViewController {
         collectionView.collectionViewLayout = columnLayout
         
         waveformLiveView.configuration = waveformLiveView.configuration
-            .with(style: .striped(.init(color: .white,
-                                        width: 2,
-                                        spacing: 2)),
+            .with(style: .striped(.init(color: .white, width: 2, spacing: 2)),
                   dampening: waveformLiveView.configuration.dampening?.with(percentage: 0),
                   verticalScalingFactor: 0.7
             )
@@ -320,6 +316,9 @@ class SpeakViewController: UIViewController {
     @IBAction func deleteButtonPressed(_ sender: UIButton) {
         speakButton.isHidden = false
         deleteButton.isHidden = true
+        recordingRightButton.isHidden = false
+        recordingActivityIndicatorMainView.isHidden = true
+        recordingActivityIndicator.stopAnimating()
         recordingView.isHidden = true
     }
     
@@ -379,9 +378,7 @@ class SpeakViewController: UIViewController {
             UIView.animate(withDuration: 1) {
                 self.recordingLeftButton.alpha = 0.3
             } completion: { _ in
-                UIView.animate(withDuration: 1) {
-                    self.recordingLeftButton.alpha = 1
-                }
+                UIView.animate(withDuration: 1) { self.recordingLeftButton.alpha = 1 }
             }
         })
         recorder.startRecording()
