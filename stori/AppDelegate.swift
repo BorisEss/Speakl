@@ -26,7 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.toolbarTintColor = .systemBlue
         IQKeyboardManager.shared.enableAutoToolbar = false
-        IQKeyboardManager.shared.disabledDistanceHandlingClasses = [AuthViewController.self]
+        IQKeyboardManager.shared.disabledDistanceHandlingClasses = [
+            AuthViewController.self, CommentsViewController.self
+        ]
 
         #if DEBUG
         NetworkActivityLogger.shared.startLogging()

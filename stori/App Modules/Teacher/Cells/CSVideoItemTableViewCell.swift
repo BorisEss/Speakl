@@ -96,7 +96,7 @@ class CSVideoItemTableViewCell: CSTableViewCell {
 }
 
 extension CSVideoItemTableViewCell: VLCMediaPlayerDelegate {
-    func mediaPlayerStateChanged(_ aNotification: Notification!) {
+    func mediaPlayerStateChanged(_ aNotification: Notification) {
         guard let state = (aNotification.object as? VLCMediaPlayer)?.state else {
             return
         }

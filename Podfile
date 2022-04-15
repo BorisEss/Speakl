@@ -56,6 +56,7 @@ target 'stori' do
   pod 'KILabel'                   # Checks text in label and creates links, hashtags, handlers
   pod 'StepSlider'                # Custom UISlider with stepping control
   pod 'MBCircularProgressBar'     # A circular progress bar(it is used in Speak Module to show the progres of the audio over the 'Speaker' button)
+  pod 'GrowingTextView'           # Growing UITextView for comments text view
 
   
   # Should be deleted

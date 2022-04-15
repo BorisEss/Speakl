@@ -147,9 +147,11 @@ class StoryVideoViewController: UIViewController {
     
     @IBAction func userPressed(_ sender: Any) {
         // TODO: Open user page
-        let vcc = UIViewController()
-        vcc.view.backgroundColor = .white
-        self.navigationController?.pushViewController(vcc, animated: true)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "UserProfile", bundle: nil)
+        let nextScreen = storyBoard.instantiateViewController(withIdentifier: "UserProfileViewController")
+        if let unwrappedNextScreen = nextScreen as? UserProfileViewController {
+            self.navigationController?.pushViewController(unwrappedNextScreen, animated: true)
+        }
     }
     
     @IBAction func userBadgePressed(_ sender: Any) {
@@ -197,9 +199,12 @@ class StoryVideoViewController: UIViewController {
     
     @IBAction func commentsPressed(_ sender: Any) {
         // TODO: Finish comments view
-        let vcc = UIViewController()
-        vcc.view.backgroundColor = .white
-        present(vcc, animated: true, completion: nil)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Comments", bundle: nil)
+        let nextScreen = storyBoard.instantiateViewController(withIdentifier: "CommentsViewController")
+        if let unwrappedNextScreen = nextScreen as? CommentsViewController {
+            unwrappedNextScreen.isModalInPresentation = true
+            self.present(unwrappedNextScreen, animated: true)
+        }
     }
     
     @IBAction func likeButtonPressed(_ sender: Any) {

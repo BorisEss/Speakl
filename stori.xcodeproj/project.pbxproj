@@ -25,6 +25,10 @@
 		FA16CE3625ED1231007B8354 /* CSChapterPartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16CE3525ED1231007B8354 /* CSChapterPartService.swift */; };
 		FA186515275B7A0B004981AA /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA186514275B7A0B004981AA /* UIScrollViewExtension.swift */; };
 		FA186517275BD81D004981AA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA186516275BD81D004981AA /* SearchViewController.swift */; };
+		FA186A2F2806D27200FA0479 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA186A2E2806D27200FA0479 /* UserProfile.storyboard */; };
+		FA186A312806D28700FA0479 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA186A302806D28700FA0479 /* UserProfileViewController.swift */; };
+		FA186A34280701BD00FA0479 /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA186A33280701BD00FA0479 /* Comments.storyboard */; };
+		FA186A36280701C700FA0479 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA186A35280701C700FA0479 /* CommentsViewController.swift */; };
 		FA187B892779BFFC00086245 /* Read.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA187B882779BFFC00086245 /* Read.storyboard */; };
 		FA187B8B2779C00900086245 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA187B8A2779C00900086245 /* ReadViewController.swift */; };
 		FA187B8F277B044400086245 /* SettingsSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA187B8E277B044400086245 /* SettingsSecondViewController.swift */; };
@@ -223,6 +227,9 @@
 		FABD3A0827BFD3F300F408A0 /* SpeakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD3A0727BFD3F300F408A0 /* SpeakTableViewCell.swift */; };
 		FABD3A1827C0163B00F408A0 /* DSWaveformImage in Frameworks */ = {isa = PBXBuildFile; productRef = FABD3A1727C0163B00F408A0 /* DSWaveformImage */; };
 		FAC1F4BB25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC1F4BA25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf */; };
+		FAC581FF28089FA700C3EE38 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC581FD28089FA700C3EE38 /* CommentTableViewCell.swift */; };
+		FAC5820028089FA700C3EE38 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC581FE28089FA700C3EE38 /* CommentTableViewCell.xib */; };
+		FAC5820228096C3E00C3EE38 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5820128096C3E00C3EE38 /* DateExtension.swift */; };
 		FAC93A6126DFBC50003FACDA /* StoryLearningButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC93A6026DFBC50003FACDA /* StoryLearningButton.swift */; };
 		FAC93A6326DFCB3B003FACDA /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC93A6226DFCB3B003FACDA /* VideoPlayerView.swift */; };
 		FAC93A6526DFCB52003FACDA /* VideoPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC93A6426DFCB52003FACDA /* VideoPlayerView.xib */; };
@@ -306,6 +313,10 @@
 		FA16CE3525ED1231007B8354 /* CSChapterPartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterPartService.swift; sourceTree = "<group>"; };
 		FA186514275B7A0B004981AA /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		FA186516275BD81D004981AA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FA186A2E2806D27200FA0479 /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		FA186A302806D28700FA0479 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		FA186A33280701BD00FA0479 /* Comments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comments.storyboard; sourceTree = "<group>"; };
+		FA186A35280701C700FA0479 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		FA187B882779BFFC00086245 /* Read.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Read.storyboard; sourceTree = "<group>"; };
 		FA187B8A2779C00900086245 /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		FA187B8E277B044400086245 /* SettingsSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSecondViewController.swift; sourceTree = "<group>"; };
@@ -506,6 +517,9 @@
 		FABB63AB25767305008B3FAB /* LanguagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePopupViewController.swift; sourceTree = "<group>"; };
 		FABD3A0727BFD3F300F408A0 /* SpeakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakTableViewCell.swift; sourceTree = "<group>"; };
 		FAC1F4BA25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		FAC581FD28089FA700C3EE38 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		FAC581FE28089FA700C3EE38 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		FAC5820128096C3E00C3EE38 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		FAC93A6026DFBC50003FACDA /* StoryLearningButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryLearningButton.swift; sourceTree = "<group>"; };
 		FAC93A6226DFCB3B003FACDA /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		FAC93A6426DFCB52003FACDA /* VideoPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerView.xib; sourceTree = "<group>"; };
@@ -638,6 +652,25 @@
 				FA0E897325C0445F00D80027 /* ThumbnailItem.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		FA186A2D2806D25C00FA0479 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				FA186A2E2806D27200FA0479 /* UserProfile.storyboard */,
+				FA186A302806D28700FA0479 /* UserProfileViewController.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		FA186A32280701AF00FA0479 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				FAC581FA28089F6B00C3EE38 /* Cells */,
+				FA186A33280701BD00FA0479 /* Comments.storyboard */,
+				FA186A35280701C700FA0479 /* CommentsViewController.swift */,
+			);
+			path = Comments;
 			sourceTree = "<group>";
 		};
 		FA187B872779BFED00086245 /* Read */ = {
@@ -825,6 +858,8 @@
 				FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */,
 				FAC97F8026CE8DEC008B2CEF /* Learn */,
 				FA5608C4261F2CAB0062EE88 /* Settings */,
+				FA186A32280701AF00FA0479 /* Comments */,
+				FA186A2D2806D25C00FA0479 /* UserProfile */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -1000,6 +1035,7 @@
 				FA6EDD2D27466D940028EC91 /* AVPlayerExtension.swift */,
 				FA67EE2927A2A1320045C0B9 /* TopLeftCellsFlowLayout.swift */,
 				FA81724327A3F5BB005759B8 /* RandomElements.swift */,
+				FAC5820128096C3E00C3EE38 /* DateExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1151,6 +1187,15 @@
 				FAAA96D6261DE6A800B53D6C /* InterestTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		FAC581FA28089F6B00C3EE38 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAC581FE28089FA700C3EE38 /* CommentTableViewCell.xib */,
+				FAC581FD28089FA700C3EE38 /* CommentTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FAC93A6626DFCCE1003FACDA /* Item View With Subtitle And Checkmark */ = {
@@ -1424,6 +1469,7 @@
 				FA9F70F325C69E3F00A16C61 /* CSAddTableViewCell.xib in Resources */,
 				FA94561025C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib in Resources */,
 				FA8BB73A25C1ED6C001B6A22 /* CSAudioTableViewCell.xib in Resources */,
+				FA186A34280701BD00FA0479 /* Comments.storyboard in Resources */,
 				FA4506062637FE5100000279 /* Notifications.storyboard in Resources */,
 				FA50420625A5B957004E6EC9 /* FileTableViewCell.xib in Resources */,
 				FA3A467726381A8300BF0CB5 /* ShareFeedback.storyboard in Resources */,
@@ -1435,9 +1481,11 @@
 				FA876C7D25C80E6800E65B95 /* CSTextItemTableViewCell.xib in Resources */,
 				FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */,
 				FAC97F8426CE8E43008B2CEF /* Learn.storyboard in Resources */,
+				FAC5820028089FA700C3EE38 /* CommentTableViewCell.xib in Resources */,
 				FAFF92C325A44C5900A604C3 /* UploadFileTableViewCell.xib in Resources */,
 				FA43D84A27BEAD8100BBEF07 /* paragraph.mp3 in Resources */,
 				FAAA96D9261DE6A800B53D6C /* InterestTableViewCell.xib in Resources */,
+				FA186A2F2806D27200FA0479 /* UserProfile.storyboard in Resources */,
 				FA43D84C27BEAD8100BBEF07 /* sentence6.mp3 in Resources */,
 				FAAEA0CA2762573800E8B750 /* eyes.gif in Resources */,
 				FA43D84F27BEAD8100BBEF07 /* sentence2.mp3 in Resources */,
@@ -1582,12 +1630,14 @@
 				FA26C0E1278476B60021AFB1 /* WEDictionaryViewController.swift in Sources */,
 				FA8F2CD427A9227F00701B23 /* SpeakViewController.swift in Sources */,
 				FA4B61342570036C005501BD /* APIClient.swift in Sources */,
+				FAC581FF28089FA700C3EE38 /* CommentTableViewCell.swift in Sources */,
 				FA5041E625A5B3B0004E6EC9 /* File.swift in Sources */,
 				FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */,
 				FA9BCB4A26417BB0009B1DDB /* VocabularyClient.swift in Sources */,
 				FABD3A0827BFD3F300F408A0 /* SpeakTableViewCell.swift in Sources */,
 				FA4B61BE25753CF2005501BD /* FacebookManager.swift in Sources */,
 				FAFF82C325D442B400A9BE82 /* CSTopicService.swift in Sources */,
+				FA186A312806D28700FA0479 /* UserProfileViewController.swift in Sources */,
 				FAD2BCA62768D1B200BE6A85 /* SearchHeaderTableViewCell.swift in Sources */,
 				FAFD404F263C136800305326 /* UpdateLanguageLevelViewController.swift in Sources */,
 				FAAEA0C1275F591500E8B750 /* AppActivityIndicator.swift in Sources */,
@@ -1692,6 +1742,8 @@
 				FA9BCB4C26417BC5009B1DDB /* GrammarClient.swift in Sources */,
 				FAFF92C725A4941400A604C3 /* JoinTNAgreementViewController.swift in Sources */,
 				FA4B618B25750412005501BD /* CurrentUser.swift in Sources */,
+				FA186A36280701C700FA0479 /* CommentsViewController.swift in Sources */,
+				FAC5820228096C3E00C3EE38 /* DateExtension.swift in Sources */,
 				FAFF82D325D4435E00A9BE82 /* CSLanguageService.swift in Sources */,
 				FA85A702262F1F62008E601C /* MembershipCollectionViewCell.swift in Sources */,
 				FA876C8725C80EA200E65B95 /* CSVideoItemTableViewCell.swift in Sources */,
@@ -1871,11 +1923,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 58;
+				CURRENT_PROJECT_VERSION = 59;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1896,11 +1948,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 58;
+				CURRENT_PROJECT_VERSION = 59;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

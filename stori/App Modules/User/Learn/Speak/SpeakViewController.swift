@@ -317,6 +317,7 @@ class SpeakViewController: UIViewController {
         speakButton.isHidden = false
         deleteButton.isHidden = true
         recordingRightButton.isHidden = false
+        recordingLeftButton.isEnabled = true
         recordingActivityIndicatorMainView.isHidden = true
         recordingActivityIndicator.stopAnimating()
         recordingView.isHidden = true
