@@ -360,12 +360,35 @@
                                     <outlet property="delegate" destination="7GR-Xl-s9z" id="JcL-CZ-9mo"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEv-pX-III">
+                                <rect key="frame" x="133" y="800" width="148" height="46"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="Omg-af-kGf"/>
+                                    <constraint firstAttribute="height" constant="46" id="mdn-S4-dl4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Follow">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="followButtonPressed:" destination="7GR-Xl-s9z" eventType="touchUpInside" id="ZPX-n7-SUY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jDo-Ud-Ibe"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
+                            <constraint firstItem="fEv-pX-III" firstAttribute="centerX" secondItem="4QD-6r-hDR" secondAttribute="centerX" id="1Hz-Mj-pjB"/>
                             <constraint firstItem="jDo-Ud-Ibe" firstAttribute="trailing" secondItem="sRV-Kq-Ani" secondAttribute="trailing" id="3mv-Rf-RtV"/>
                             <constraint firstItem="iik-Xg-jwT" firstAttribute="top" secondItem="jDo-Ud-Ibe" secondAttribute="top" id="99l-Zd-1iL"/>
+                            <constraint firstItem="jDo-Ud-Ibe" firstAttribute="bottom" secondItem="fEv-pX-III" secondAttribute="bottom" constant="16" id="Lx4-EE-qaH"/>
                             <constraint firstItem="sRV-Kq-Ani" firstAttribute="leading" secondItem="jDo-Ud-Ibe" secondAttribute="leading" id="M2s-9a-f3c"/>
                             <constraint firstItem="iik-Xg-jwT" firstAttribute="trailing" secondItem="jDo-Ud-Ibe" secondAttribute="trailing" id="NFa-Mw-kXg"/>
                             <constraint firstItem="sRV-Kq-Ani" firstAttribute="top" secondItem="iik-Xg-jwT" secondAttribute="bottom" id="X8P-rT-ecq"/>
@@ -375,6 +398,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="sRV-Kq-Ani" id="IeI-rn-pw6"/>
+                        <outlet property="followButton" destination="fEv-pX-III" id="OWg-yU-FgF"/>
                         <outlet property="titleLabel" destination="xT1-yz-3Gs" id="DVZ-Ha-3QB"/>
                     </connections>
                 </viewController>

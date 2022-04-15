@@ -16,6 +16,7 @@ class HashtagVideoListViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var followButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class HashtagVideoListViewController: UIViewController {
 
         titleLabel.text = hashtag.name
         loadJson()
+        followButton.backgroundColor = .accentColor
     }
     
     private func loadJson() {
@@ -46,6 +48,18 @@ class HashtagVideoListViewController: UIViewController {
 
     @IBAction func backButtonPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func followButtonPressed(_ sender: UIButton) {
+        if sender.backgroundColor == .accentColor {
+            sender.backgroundColor = .white
+            sender.setTitleColor(.gradientTop, for: .normal)
+            sender.setTitle("Following", for: .normal)
+        } else {
+            sender.backgroundColor = .accentColor
+            sender.setTitleColor(.white, for: .normal)
+            sender.setTitle("Follow", for: .normal)
+        }
     }
 }
 
