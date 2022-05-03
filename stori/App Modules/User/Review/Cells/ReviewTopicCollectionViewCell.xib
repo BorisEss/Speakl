@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Medium.ttf">
+            <string>IBMPlexSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReviewTopicCollectionViewCell" id="gTV-IL-0wX" customClass="ReviewTopicCollectionViewCell" customModule="stori" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="165"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IDB-1f-Qc3">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="165"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="g0z-r6-iMn"/>
+                            <constraint firstAttribute="height" constant="165" id="wYo-kJ-NaN"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom_video_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="BYq-pN-3zI">
+                        <rect key="frame" x="0.0" y="110" width="125" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="ZxE-Vl-b57"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86e-e2-VN0">
+                        <rect key="frame" x="40" y="137" width="45" height="16"/>
+                        <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="86e-e2-VN0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="3ZX-co-Udk"/>
+                <constraint firstAttribute="bottom" secondItem="86e-e2-VN0" secondAttribute="bottom" constant="12" id="7jp-xz-aMa"/>
+                <constraint firstItem="86e-e2-VN0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="A3f-9E-R3Z"/>
+                <constraint firstAttribute="trailing" secondItem="IDB-1f-Qc3" secondAttribute="trailing" id="WRZ-8c-zfF"/>
+                <constraint firstItem="BYq-pN-3zI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WlS-aX-Idm"/>
+                <constraint firstItem="IDB-1f-Qc3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aE7-ye-gAD"/>
+                <constraint firstItem="IDB-1f-Qc3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bfZ-LL-xHd"/>
+                <constraint firstAttribute="trailing" secondItem="BYq-pN-3zI" secondAttribute="trailing" id="oZI-Jm-TDy"/>
+                <constraint firstAttribute="bottom" secondItem="IDB-1f-Qc3" secondAttribute="bottom" id="oa8-T9-fJy"/>
+                <constraint firstAttribute="bottom" secondItem="BYq-pN-3zI" secondAttribute="bottom" id="utu-g6-ndY"/>
+            </constraints>
+            <connections>
+                <outlet property="topicImageView" destination="IDB-1f-Qc3" id="Ifh-57-D0w"/>
+                <outlet property="topicNameLabel" destination="86e-e2-VN0" id="VdG-9T-kVp"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="131"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bottom_video_shadow" width="375" height="166"/>
+    </resources>
+</document>

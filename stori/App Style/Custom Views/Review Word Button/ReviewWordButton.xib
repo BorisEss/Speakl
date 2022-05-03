@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-SemiBold.ttf">
+            <string>IBMPlexSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewWordButton" customModule="stori" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="MgB-lt-qMZ"/>
+                <outlet property="iconImageView" destination="PWw-Wh-cTg" id="lbh-in-yhq"/>
+                <outlet property="iconView" destination="oTv-PJ-ofR" id="eQZ-zO-Xew"/>
+                <outlet property="wordLabel" destination="dKF-vO-cii" id="wz2-bV-rgU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oTv-PJ-ofR">
+                    <rect key="frame" x="20" y="14" width="32" height="32"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PWw-Wh-cTg">
+                            <rect key="frame" x="5" y="5" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="Ck8-7p-iUm"/>
+                                <constraint firstAttribute="width" secondItem="PWw-Wh-cTg" secondAttribute="height" multiplier="1:1" id="z0f-bT-8sF"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="PWw-Wh-cTg" firstAttribute="centerX" secondItem="oTv-PJ-ofR" secondAttribute="centerX" id="7M8-ou-qSc"/>
+                        <constraint firstAttribute="width" secondItem="oTv-PJ-ofR" secondAttribute="height" multiplier="1:1" id="LMR-yp-k9L"/>
+                        <constraint firstAttribute="height" constant="32" id="fJ9-fa-gk0"/>
+                        <constraint firstItem="PWw-Wh-cTg" firstAttribute="centerY" secondItem="oTv-PJ-ofR" secondAttribute="centerY" id="h7v-Qx-KUP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="Review Gray"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKF-vO-cii">
+                    <rect key="frame" x="189.5" y="20.5" width="35.5" height="19.5"/>
+                    <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="15"/>
+                    <color key="textColor" name="Text Black"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="Background"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" button="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="dKF-vO-cii" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oTv-PJ-ofR" secondAttribute="trailing" constant="8" id="WDb-yC-fdK"/>
+                <constraint firstItem="oTv-PJ-ofR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YmE-4t-XHh"/>
+                <constraint firstItem="dKF-vO-cii" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jFF-oz-XCd"/>
+                <constraint firstItem="oTv-PJ-ofR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="msx-9u-L8I"/>
+                <constraint firstItem="dKF-vO-cii" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oM2-jh-0zl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="30"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" name="AccentColor"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="32"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                    <size key="value" width="0.0" height="24"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                    <color key="value" red="0.1960784314" green="0.1960784314" blue="0.2784313725" alpha="0.16" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="132" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Review Gray">
+            <color red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Black">
+            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -46,11 +46,19 @@
 		FA26C0E72784772F0021AFB1 /* WEExpressionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26C0E62784772F0021AFB1 /* WEExpressionsViewController.swift */; };
 		FA26F7FC27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA26F7FB27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 */; };
 		FA270C00263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */; };
+		FA29BE6D281FF134006524EC /* ReviewWordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29BE6C281FF134006524EC /* ReviewWordButton.swift */; };
+		FA29BE6F281FF13B006524EC /* ReviewWordButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA29BE6E281FF13B006524EC /* ReviewWordButton.xib */; };
+		FA2AB11B281AF58000D05940 /* ReviewTopicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2AB119281AF58000D05940 /* ReviewTopicCollectionViewCell.swift */; };
+		FA2AB11C281AF58000D05940 /* ReviewTopicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2AB11A281AF58000D05940 /* ReviewTopicCollectionViewCell.xib */; };
 		FA333DAC27EC89E700E6B5A1 /* WordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA333DAA27EC89E700E6B5A1 /* WordCollectionViewCell.swift */; };
 		FA333DAD27EC89E700E6B5A1 /* WordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA333DAB27EC89E700E6B5A1 /* WordCollectionViewCell.xib */; };
 		FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */; };
 		FA3553C125DBA503008DD1FF /* CSCustomItemPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */; };
 		FA3553E425DD0FD2008DD1FF /* CSChapterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3553E325DD0FD2008DD1FF /* CSChapterService.swift */; };
+		FA36E567281F0A3E00000477 /* ReviewTrainingLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36E566281F0A3E00000477 /* ReviewTrainingLevelViewController.swift */; };
+		FA36E569281F0A4800000477 /* ReviewTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36E568281F0A4800000477 /* ReviewTrainingViewController.swift */; };
+		FA36E56B281F0A5400000477 /* ReviewTrainingGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36E56A281F0A5400000477 /* ReviewTrainingGameViewController.swift */; };
+		FA36E56D281F0A6100000477 /* ReviewTrainingScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36E56C281F0A6100000477 /* ReviewTrainingScoreViewController.swift */; };
 		FA3A467526381A7A00BF0CB5 /* ShareFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */; };
 		FA3A467726381A8300BF0CB5 /* ShareFeedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */; };
 		FA3A467926381F5100BF0CB5 /* ShareFeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467826381F5100BF0CB5 /* ShareFeedbackService.swift */; };
@@ -59,6 +67,12 @@
 		FA3C26132569559C0089F646 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3C26122569559C0089F646 /* Auth.storyboard */; };
 		FA3C2626256A52320089F646 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C2625256A52320089F646 /* UIViewControllerExtension.swift */; };
 		FA3C27DF256BDBFD0089F646 /* RegularTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */; };
+		FA3CA395281AAC8000141F19 /* ReviewHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CA393281AAC8000141F19 /* ReviewHeaderTableViewCell.swift */; };
+		FA3CA396281AAC8000141F19 /* ReviewHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3CA394281AAC8000141F19 /* ReviewHeaderTableViewCell.xib */; };
+		FA3CA399281AACEE00141F19 /* ReviewTopicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CA397281AACEE00141F19 /* ReviewTopicsTableViewCell.swift */; };
+		FA3CA39A281AACEE00141F19 /* ReviewTopicsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3CA398281AACEE00141F19 /* ReviewTopicsTableViewCell.xib */; };
+		FA3CA39F281AAD2000141F19 /* ReviewWordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CA39D281AAD2000141F19 /* ReviewWordTableViewCell.swift */; };
+		FA3CA3A0281AAD2000141F19 /* ReviewWordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3CA39E281AAD2000141F19 /* ReviewWordTableViewCell.xib */; };
 		FA417564257FDF6700CF416B /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA417563257FDF6700CF416B /* Skill.swift */; };
 		FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA417FC42590DD2F00F9D81B /* Teacher.storyboard */; };
 		FA417FC82590DE8B00F9D81B /* TeacherNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA417FC72590DE8B00F9D81B /* TeacherNetworkViewController.swift */; };
@@ -191,6 +205,7 @@
 		FA999D9825694D3E00B694FA /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA999D9A25694D3E00B694FA /* Strings.strings */; };
 		FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999D9C25694D6800B694FA /* StringExtension.swift */; };
 		FA999DA12569514C00B694FA /* DefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA999DA02569514C00B694FA /* DefaultSettings.swift */; };
+		FA9A0F6E28204C77000CA94F /* UnderlinedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9A0F6D28204C77000CA94F /* UnderlinedLabel.swift */; };
 		FA9BCB4A26417BB0009B1DDB /* VocabularyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4926417BB0009B1DDB /* VocabularyClient.swift */; };
 		FA9BCB4C26417BC5009B1DDB /* GrammarClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4B26417BC5009B1DDB /* GrammarClient.swift */; };
 		FA9BCB4E26417D3D009B1DDB /* UpdateLanguageLevelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BCB4D26417D3D009B1DDB /* UpdateLanguageLevelService.swift */; };
@@ -230,6 +245,8 @@
 		FAC581FF28089FA700C3EE38 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC581FD28089FA700C3EE38 /* CommentTableViewCell.swift */; };
 		FAC5820028089FA700C3EE38 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC581FE28089FA700C3EE38 /* CommentTableViewCell.xib */; };
 		FAC5820228096C3E00C3EE38 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5820128096C3E00C3EE38 /* DateExtension.swift */; };
+		FAC58248280DB50A00C3EE38 /* Review.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC58247280DB50A00C3EE38 /* Review.storyboard */; };
+		FAC5824A280DB52000C3EE38 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC58249280DB52000C3EE38 /* ReviewViewController.swift */; };
 		FAC93A6126DFBC50003FACDA /* StoryLearningButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC93A6026DFBC50003FACDA /* StoryLearningButton.swift */; };
 		FAC93A6326DFCB3B003FACDA /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC93A6226DFCB3B003FACDA /* VideoPlayerView.swift */; };
 		FAC93A6526DFCB52003FACDA /* VideoPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC93A6426DFCB52003FACDA /* VideoPlayerView.xib */; };
@@ -276,6 +293,7 @@
 		FAF452F125D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF452F025D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift */; };
 		FAFC99F625C9757000D60AB4 /* CSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC99F525C9757000D60AB4 /* CSTableViewCell.swift */; };
 		FAFD404F263C136800305326 /* UpdateLanguageLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD404E263C136800305326 /* UpdateLanguageLevelViewController.swift */; };
+		FAFE8B262817C4810074F050 /* LearningLanguagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE8B252817C4810074F050 /* LearningLanguagesListViewController.swift */; };
 		FAFF81BA25D277D300A9BE82 /* CreateStoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF81B925D277D300A9BE82 /* CreateStoryModel.swift */; };
 		FAFF81BD25D2830100A9BE82 /* CreateStoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF81BC25D2830100A9BE82 /* CreateStoryObject.swift */; };
 		FAFF82C025D4429300A9BE82 /* CSStoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82BF25D4429300A9BE82 /* CSStoryService.swift */; };
@@ -334,11 +352,19 @@
 		FA26C0E62784772F0021AFB1 /* WEExpressionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEExpressionsViewController.swift; sourceTree = "<group>"; };
 		FA26F7FB27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The_Californian_s_Tale_-_By_Mark_Twain.mp3"; sourceTree = "<group>"; };
 		FA270BFF263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelDetailsViewController.swift; sourceTree = "<group>"; };
+		FA29BE6C281FF134006524EC /* ReviewWordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWordButton.swift; sourceTree = "<group>"; };
+		FA29BE6E281FF13B006524EC /* ReviewWordButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewWordButton.xib; sourceTree = "<group>"; };
+		FA2AB119281AF58000D05940 /* ReviewTopicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTopicCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA2AB11A281AF58000D05940 /* ReviewTopicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTopicCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA333DAA27EC89E700E6B5A1 /* WordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA333DAB27EC89E700E6B5A1 /* WordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInterestsSelectionViewController.swift; sourceTree = "<group>"; };
 		FA3553C025DBA503008DD1FF /* CSCustomItemPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCustomItemPopUpViewController.swift; sourceTree = "<group>"; };
 		FA3553E325DD0FD2008DD1FF /* CSChapterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterService.swift; sourceTree = "<group>"; };
+		FA36E566281F0A3E00000477 /* ReviewTrainingLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTrainingLevelViewController.swift; sourceTree = "<group>"; };
+		FA36E568281F0A4800000477 /* ReviewTrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTrainingViewController.swift; sourceTree = "<group>"; };
+		FA36E56A281F0A5400000477 /* ReviewTrainingGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTrainingGameViewController.swift; sourceTree = "<group>"; };
+		FA36E56C281F0A6100000477 /* ReviewTrainingScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTrainingScoreViewController.swift; sourceTree = "<group>"; };
 		FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFeedbackViewController.swift; sourceTree = "<group>"; };
 		FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareFeedback.storyboard; sourceTree = "<group>"; };
 		FA3A467826381F5100BF0CB5 /* ShareFeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFeedbackService.swift; sourceTree = "<group>"; };
@@ -347,6 +373,12 @@
 		FA3C26122569559C0089F646 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		FA3C2625256A52320089F646 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularTextField.swift; sourceTree = "<group>"; };
+		FA3CA393281AAC8000141F19 /* ReviewHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		FA3CA394281AAC8000141F19 /* ReviewHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		FA3CA397281AACEE00141F19 /* ReviewTopicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTopicsTableViewCell.swift; sourceTree = "<group>"; };
+		FA3CA398281AACEE00141F19 /* ReviewTopicsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTopicsTableViewCell.xib; sourceTree = "<group>"; };
+		FA3CA39D281AAD2000141F19 /* ReviewWordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWordTableViewCell.swift; sourceTree = "<group>"; };
+		FA3CA39E281AAD2000141F19 /* ReviewWordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewWordTableViewCell.xib; sourceTree = "<group>"; };
 		FA417563257FDF6700CF416B /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		FA417FC42590DD2F00F9D81B /* Teacher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Teacher.storyboard; sourceTree = "<group>"; };
 		FA417FC72590DE8B00F9D81B /* TeacherNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherNetworkViewController.swift; sourceTree = "<group>"; };
@@ -482,6 +514,7 @@
 		FA999D9925694D3E00B694FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
 		FA999D9C25694D6800B694FA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		FA999DA02569514C00B694FA /* DefaultSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSettings.swift; sourceTree = "<group>"; };
+		FA9A0F6D28204C77000CA94F /* UnderlinedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedLabel.swift; sourceTree = "<group>"; };
 		FA9BCB4926417BB0009B1DDB /* VocabularyClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyClient.swift; sourceTree = "<group>"; };
 		FA9BCB4B26417BC5009B1DDB /* GrammarClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarClient.swift; sourceTree = "<group>"; };
 		FA9BCB4D26417D3D009B1DDB /* UpdateLanguageLevelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelService.swift; sourceTree = "<group>"; };
@@ -520,6 +553,8 @@
 		FAC581FD28089FA700C3EE38 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		FAC581FE28089FA700C3EE38 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		FAC5820128096C3E00C3EE38 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		FAC58247280DB50A00C3EE38 /* Review.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Review.storyboard; sourceTree = "<group>"; };
+		FAC58249280DB52000C3EE38 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		FAC93A6026DFBC50003FACDA /* StoryLearningButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryLearningButton.swift; sourceTree = "<group>"; };
 		FAC93A6226DFCB3B003FACDA /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		FAC93A6426DFCB52003FACDA /* VideoPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerView.xib; sourceTree = "<group>"; };
@@ -567,6 +602,7 @@
 		FAFC99F525C9757000D60AB4 /* CSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTableViewCell.swift; sourceTree = "<group>"; };
 		FAFC9A3425C987E700D60AB4 /* Stori-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stori-Bridging-Header.h"; sourceTree = "<group>"; };
 		FAFD404E263C136800305326 /* UpdateLanguageLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelViewController.swift; sourceTree = "<group>"; };
+		FAFE8B252817C4810074F050 /* LearningLanguagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningLanguagesListViewController.swift; sourceTree = "<group>"; };
 		FAFF81B925D277D300A9BE82 /* CreateStoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStoryModel.swift; sourceTree = "<group>"; };
 		FAFF81BC25D2830100A9BE82 /* CreateStoryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStoryObject.swift; sourceTree = "<group>"; };
 		FAFF82BF25D4429300A9BE82 /* CSStoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSStoryService.swift; sourceTree = "<group>"; };
@@ -682,6 +718,15 @@
 			path = Read;
 			sourceTree = "<group>";
 		};
+		FA29BE6B281FF113006524EC /* Review Word Button */ = {
+			isa = PBXGroup;
+			children = (
+				FA29BE6E281FF13B006524EC /* ReviewWordButton.xib */,
+				FA29BE6C281FF134006524EC /* ReviewWordButton.swift */,
+			);
+			path = "Review Word Button";
+			sourceTree = "<group>";
+		};
 		FA3A467326381A6100BF0CB5 /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
@@ -724,6 +769,21 @@
 				FA4B6111256EAEA1005501BD /* AuthService.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		FA3CA390281AABA900141F19 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA3CA394281AAC8000141F19 /* ReviewHeaderTableViewCell.xib */,
+				FA3CA393281AAC8000141F19 /* ReviewHeaderTableViewCell.swift */,
+				FA3CA398281AACEE00141F19 /* ReviewTopicsTableViewCell.xib */,
+				FA3CA397281AACEE00141F19 /* ReviewTopicsTableViewCell.swift */,
+				FA3CA39E281AAD2000141F19 /* ReviewWordTableViewCell.xib */,
+				FA3CA39D281AAD2000141F19 /* ReviewWordTableViewCell.swift */,
+				FA2AB11A281AF58000D05940 /* ReviewTopicCollectionViewCell.xib */,
+				FA2AB119281AF58000D05940 /* ReviewTopicCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FA417FC22590D86600F9D81B /* Teacher */ = {
@@ -857,6 +917,7 @@
 				FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */,
 				FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */,
 				FAC97F8026CE8DEC008B2CEF /* Learn */,
+				FAC58246280DB4F000C3EE38 /* Review */,
 				FA5608C4261F2CAB0062EE88 /* Settings */,
 				FA186A32280701AF00FA0479 /* Comments */,
 				FA186A2D2806D25C00FA0479 /* UserProfile */,
@@ -1070,6 +1131,7 @@
 		FA812D9A2566593D0036F162 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				FA29BE6B281FF113006524EC /* Review Word Button */,
 				FAAEA0BD275F58E100E8B750 /* Activity Indicator */,
 				FAC93A6826DFCD22003FACDA /* Rating Button */,
 				FAC93A6726DFCCFA003FACDA /* Record Button */,
@@ -1082,6 +1144,7 @@
 				FA999D912568F30B00B694FA /* CustomCollectionViewCell.swift */,
 				FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */,
 				FAC93A6026DFBC50003FACDA /* StoryLearningButton.swift */,
+				FA9A0F6D28204C77000CA94F /* UnderlinedLabel.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -1196,6 +1259,21 @@
 				FAC581FD28089FA700C3EE38 /* CommentTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAC58246280DB4F000C3EE38 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				FA3CA390281AABA900141F19 /* Cells */,
+				FAC58247280DB50A00C3EE38 /* Review.storyboard */,
+				FAC58249280DB52000C3EE38 /* ReviewViewController.swift */,
+				FAFE8B252817C4810074F050 /* LearningLanguagesListViewController.swift */,
+				FA36E566281F0A3E00000477 /* ReviewTrainingLevelViewController.swift */,
+				FA36E568281F0A4800000477 /* ReviewTrainingViewController.swift */,
+				FA36E56A281F0A5400000477 /* ReviewTrainingGameViewController.swift */,
+				FA36E56C281F0A6100000477 /* ReviewTrainingScoreViewController.swift */,
+			);
+			path = Review;
 			sourceTree = "<group>";
 		};
 		FAC93A6626DFCCE1003FACDA /* Item View With Subtitle And Checkmark */ = {
@@ -1434,6 +1512,7 @@
 				FA4D4496257E48B700398AE2 /* LanguageSelect.storyboard in Resources */,
 				FA5608E6262034070062EE88 /* IBMPlexSans-Medium.ttf in Resources */,
 				FA7690A5278F090A001221B7 /* Listen.storyboard in Resources */,
+				FA3CA396281AAC8000141F19 /* ReviewHeaderTableViewCell.xib in Resources */,
 				FA999D9825694D3E00B694FA /* Strings.strings in Resources */,
 				FA1F714D25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard in Resources */,
 				FA43D84E27BEAD8100BBEF07 /* sentence3.mp3 in Resources */,
@@ -1441,6 +1520,7 @@
 				FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */,
 				FAF12809279E89EA001F7643 /* Writing.storyboard in Resources */,
 				FAB8E01A263A7A36000AE9FE /* Referral.storyboard in Resources */,
+				FAC58248280DB50A00C3EE38 /* Review.storyboard in Resources */,
 				FAAEA0C0275F591500E8B750 /* AppActivityIndicator.xib in Resources */,
 				FA43D84B27BEAD8100BBEF07 /* sentence4.mp3 in Resources */,
 				FA43D85127BEB25A00BBEF07 /* writing.mp3 in Resources */,
@@ -1455,6 +1535,7 @@
 				FA94560A25C557C9003E54F0 /* VocabularyItemTableViewCell.xib in Resources */,
 				FA1F714925BEF066009AE0D4 /* CreateStory.storyboard in Resources */,
 				FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */,
+				FA2AB11C281AF58000D05940 /* ReviewTopicCollectionViewCell.xib in Resources */,
 				FA4B61A625753433005501BD /* Google-Credentials.plist in Resources */,
 				FA26F7FC27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 in Resources */,
 				FAE2105925768C2100A3D971 /* LanguageTableViewCell.xib in Resources */,
@@ -1468,8 +1549,11 @@
 				FAF10ECA26369B3E001B650F /* EditPersonalInfo.storyboard in Resources */,
 				FA9F70F325C69E3F00A16C61 /* CSAddTableViewCell.xib in Resources */,
 				FA94561025C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib in Resources */,
+				FA3CA39A281AACEE00141F19 /* ReviewTopicsTableViewCell.xib in Resources */,
 				FA8BB73A25C1ED6C001B6A22 /* CSAudioTableViewCell.xib in Resources */,
 				FA186A34280701BD00FA0479 /* Comments.storyboard in Resources */,
+				FA29BE6F281FF13B006524EC /* ReviewWordButton.xib in Resources */,
+				FA3CA3A0281AAD2000141F19 /* ReviewWordTableViewCell.xib in Resources */,
 				FA4506062637FE5100000279 /* Notifications.storyboard in Resources */,
 				FA50420625A5B957004E6EC9 /* FileTableViewCell.xib in Resources */,
 				FA3A467726381A8300BF0CB5 /* ShareFeedback.storyboard in Resources */,
@@ -1570,7 +1654,9 @@
 				FA04986F25C2E624004CF8B7 /* AudioPlayer.swift in Sources */,
 				FAC97F8226CE8E1D008B2CEF /* LearnViewController.swift in Sources */,
 				FAB8E01C263A7B96000AE9FE /* InviteFriendsViewController.swift in Sources */,
+				FA29BE6D281FF134006524EC /* ReviewWordButton.swift in Sources */,
 				FAF10ECD26369B63001B650F /* EditPersonalInfoViewController.swift in Sources */,
+				FA36E56D281F0A6100000477 /* ReviewTrainingScoreViewController.swift in Sources */,
 				FA812DA725665DB90036F162 /* TutorialViewController.swift in Sources */,
 				FA270C00263C7B93002AFA9D /* UpdateLanguageLevelDetailsViewController.swift in Sources */,
 				FA333DAC27EC89E700E6B5A1 /* WordCollectionViewCell.swift in Sources */,
@@ -1606,7 +1692,9 @@
 				FADA06BF257F67CB000333FF /* LanguageService.swift in Sources */,
 				FA4D4488257AA81900398AE2 /* Toast.swift in Sources */,
 				FA9F6C142583677400AC5197 /* UIColorExtension.swift in Sources */,
+				FA3CA399281AACEE00141F19 /* ReviewTopicsTableViewCell.swift in Sources */,
 				FA4B61882574F3EF005501BD /* KeychainManager.swift in Sources */,
+				FA3CA395281AAC8000141F19 /* ReviewHeaderTableViewCell.swift in Sources */,
 				FA5BCFBE27038CE8004A6B08 /* AppShadowNavigationViewController.swift in Sources */,
 				FA6853FE259B0DE3008A7D63 /* UINavigationBarExtension.swift in Sources */,
 				FAD2BCAA2768D1CA00BE6A85 /* SearchHashtagTableViewCell.swift in Sources */,
@@ -1650,6 +1738,7 @@
 				FA0E896825C0419900D80027 /* Definitions.swift in Sources */,
 				FA8593E425E16DDB004CAC9E /* Grammar.swift in Sources */,
 				FAE653F825C416A300CC25A1 /* VoiceRecorder.swift in Sources */,
+				FA36E569281F0A4800000477 /* ReviewTrainingViewController.swift in Sources */,
 				FA812D6E256298440036F162 /* AppDelegate.swift in Sources */,
 				FAFF92D325A494F300A604C3 /* JoinTNSuccessMessageViewController.swift in Sources */,
 				FA9BCB5226417DD6009B1DDB /* UpdateLanguageLevelGrammarViewController.swift in Sources */,
@@ -1668,6 +1757,7 @@
 				FA3C27DF256BDBFD0089F646 /* RegularTextField.swift in Sources */,
 				FAFF82CA25D4430000A9BE82 /* CSSubCategoryService.swift in Sources */,
 				FA9F70F225C69E3F00A16C61 /* CSAddTableViewCell.swift in Sources */,
+				FA36E56B281F0A5400000477 /* ReviewTrainingGameViewController.swift in Sources */,
 				FA7B72D325669962003F9A0C /* UIImageExtension.swift in Sources */,
 				FAAEA0C6276215B200E8B750 /* UICollectionViewExtension.swift in Sources */,
 				FA876C7C25C80E6800E65B95 /* CSTextItemTableViewCell.swift in Sources */,
@@ -1677,11 +1767,14 @@
 				FA812DA425665AB10036F162 /* RootViewController.swift in Sources */,
 				FA9BCB5026417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift in Sources */,
 				FA7B72DF25669C54003F9A0C /* AppFonts.swift in Sources */,
+				FAC5824A280DB52000C3EE38 /* ReviewViewController.swift in Sources */,
+				FA9A0F6E28204C77000CA94F /* UnderlinedLabel.swift in Sources */,
 				FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */,
 				FA4B6112256EAEA1005501BD /* AuthService.swift in Sources */,
 				FA8BB73925C1ED6C001B6A22 /* CSAudioTableViewCell.swift in Sources */,
 				FA46951C25C0553E00F347B1 /* CSPresenter.swift in Sources */,
 				FAEBEA3E258B4CC90077D942 /* UIButtonExtension.swift in Sources */,
+				FAFE8B262817C4810074F050 /* LearningLanguagesListViewController.swift in Sources */,
 				FA210B1E2785AA6600732440 /* WEPronunciationAudioCollectionViewCell.swift in Sources */,
 				FAF398D52774753F00F1A55A /* TutorialItemViewController.swift in Sources */,
 				FA16CE3325ECE65C007B8354 /* StoryVideoSection.swift in Sources */,
@@ -1696,6 +1789,7 @@
 				FAD2BCA82768D1BE00BE6A85 /* SearchUserTableViewCell.swift in Sources */,
 				FA16CE3625ED1231007B8354 /* CSChapterPartService.swift in Sources */,
 				FA652B5E26F239D900CEEA35 /* CSUploadCoverViewController.swift in Sources */,
+				FA3CA39F281AAD2000141F19 /* ReviewWordTableViewCell.swift in Sources */,
 				FAFC99F625C9757000D60AB4 /* CSTableViewCell.swift in Sources */,
 				FAC93A6126DFBC50003FACDA /* StoryLearningButton.swift in Sources */,
 				FAF398D127745B5600F1A55A /* MainStoryVideoListViewController.swift in Sources */,
@@ -1711,6 +1805,7 @@
 				FA5608C9261F2D150062EE88 /* SettingsViewController.swift in Sources */,
 				FA666A27259CAA9900FD6462 /* LearningLanguage.swift in Sources */,
 				FA960AB9263AC4A8001ACB21 /* UpdateLanguageViewController.swift in Sources */,
+				FA36E567281F0A3E00000477 /* ReviewTrainingLevelViewController.swift in Sources */,
 				FA4B613E257007B1005501BD /* RequestProtocol.swift in Sources */,
 				FA4B613A25700765005501BD /* Headers.swift in Sources */,
 				FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */,
@@ -1751,6 +1846,7 @@
 				FAB84DC826CFEA3B00B9C5A0 /* Video.swift in Sources */,
 				FA876C8125C80E7C00E65B95 /* CSImageItemTableViewCell.swift in Sources */,
 				FA26C0DF278442060021AFB1 /* SelectedWordExplanationViewController.swift in Sources */,
+				FA2AB11B281AF58000D05940 /* ReviewTopicCollectionViewCell.swift in Sources */,
 				FA46952025C0A0D300F347B1 /* CSCustomItemViewController.swift in Sources */,
 				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,
 				FA187B8B2779C00900086245 /* ReadViewController.swift in Sources */,
@@ -1923,7 +2019,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 60;
+				CURRENT_PROJECT_VERSION = 62;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;
@@ -1948,7 +2044,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 60;
+				CURRENT_PROJECT_VERSION = 62;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;

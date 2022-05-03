@@ -15,8 +15,8 @@ class MainTabBarViewController: UITabBarController {
     
     let item1 = UIStoryboard(name: "Learn",
                              bundle: nil).instantiateViewController(withIdentifier: "MainViewController")
-//    let item2 = UIStoryboard(name: "Learn",
-//                             bundle: nil).instantiateViewController(withIdentifier: "LearnViewController")
+    let item2 = UIStoryboard(name: "Review",
+                             bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
     let item3 = UIStoryboard(name: "Settings",
                              bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
 
@@ -36,12 +36,13 @@ class MainTabBarViewController: UITabBarController {
     private func loadTabButtons() {
         item1.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_learn".localized,
                                         image: UIImage(named: "learnTab"), tag: 0)
-//        item2.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_vocabulary".localized,
-//                                        image: UIImage(named: "vocabularyTab"), tag: 0)
+        // TODO: Update Localization
+        item2.tabBarItem = UITabBarItem(title: "Review", // "main_nav_controller_tab_title_vocabulary".localized,
+                                        image: UIImage(named: "vocabularyTab"), tag: 0)
         item3.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_profile".localized,
                                         image: UIImage(named: "profileTab"), tag: 0)
 
-        viewControllers = [item1, item3]// , item2, item3]
+        viewControllers = [item1, item2, item3]
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.updateTitles),
@@ -51,9 +52,9 @@ class MainTabBarViewController: UITabBarController {
     }
     
     private func loadAddButton() {
-        guard let tabItems = tabBar.items else { return }
-        tabItems[0].titlePositionAdjustment = UIOffset(horizontal: -10, vertical: 0) // -5
-        tabItems[1].titlePositionAdjustment = UIOffset(horizontal: 10, vertical: 0) // 5
+//        guard let tabItems = tabBar.items else { return }
+//        tabItems[0].titlePositionAdjustment = UIOffset(horizontal: -10, vertical: 0) // -5
+//        tabItems[1].titlePositionAdjustment = UIOffset(horizontal: 10, vertical: 0) // 5
 //        tabItems[1].titlePositionAdjustment = UIOffset(horizontal: -20, vertical: 0)
 //        tabItems[2].titlePositionAdjustment = UIOffset(horizontal: 20, vertical: 0)
 //        tabItems[3].titlePositionAdjustment = UIOffset(horizontal: 5, vertical: 0)
@@ -122,7 +123,8 @@ class MainTabBarViewController: UITabBarController {
     
     @objc func updateTitles() {
         item1.title = "main_nav_controller_tab_title_learn".localized
-//        item2.title = "main_nav_controller_tab_title_vocabulary".localized
+        // TODO: Update Localization
+        item2.title = "Review"
         item3.title = "main_nav_controller_tab_title_profile".localized
     }
     

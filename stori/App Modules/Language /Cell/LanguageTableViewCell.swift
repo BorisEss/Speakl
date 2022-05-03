@@ -28,6 +28,13 @@ class LanguageTableViewCell: UITableViewCell, CustomTableViewCell {
             }
         }
     }
+    var isBlackStyle: Bool = false {
+        didSet {
+            DispatchQueue.main.async {
+                self.languageNameLabel.textColor = self.isBlackStyle ? .black : .white
+            }
+        }
+    }
     
     static var height: CGFloat = 60
     

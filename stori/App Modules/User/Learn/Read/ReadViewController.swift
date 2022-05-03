@@ -87,7 +87,6 @@ class ReadViewController: UIViewController {
         pageSlider.maxCount = UInt(paragraphs.count)
         learningLanguageWordsView.delegate = self
         learningLanguageWordsView.textFont = .IBMPlexSans(size: 14)
-        learningLanguageWordsView.addTags(paragraphs[currentParagraph])
     }
     
     override func viewWillAppear(_ animated: Bool) {

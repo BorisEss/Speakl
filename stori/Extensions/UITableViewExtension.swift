@@ -9,12 +9,12 @@ import UIKit
 
 extension UITableView {
     func scrollToBottom(isAnimated: Bool = true) {
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [self] in
             let indexPath = IndexPath(
-                row: self.numberOfRows(inSection:  self.numberOfSections - 1) - 1,
-                section: self.numberOfSections - 1)
-            if self.hasRowAtIndexPath(indexPath: indexPath) {
-                self.scrollToRow(at: indexPath, at: .bottom, animated: isAnimated)
+                row: numberOfRows(inSection: numberOfSections - 1) - 1,
+                section: numberOfSections - 1)
+            if hasRowAtIndexPath(indexPath: indexPath) {
+                scrollToRow(at: indexPath, at: .bottom, animated: isAnimated)
             }
         }
     }
@@ -29,6 +29,6 @@ extension UITableView {
     }
 
     func hasRowAtIndexPath(indexPath: IndexPath) -> Bool {
-        return indexPath.section < self.numberOfSections && indexPath.row < self.numberOfRows(inSection: indexPath.section)
+        return indexPath.section < numberOfSections && indexPath.row < numberOfRows(inSection: indexPath.section)
     }
 }
