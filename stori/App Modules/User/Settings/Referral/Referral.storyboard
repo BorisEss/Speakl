@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UzI-Xy-Z23">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UzI-Xy-Z23">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -40,13 +39,13 @@
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hgg-fz-4Sq">
                                                                 <rect key="frame" x="8" y="8" width="184" height="184"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" name="White"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="hgg-fz-4Sq" secondAttribute="height" multiplier="1:1" id="hmN-NL-oS0"/>
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="White"/>
                                                         <constraints>
                                                             <constraint firstItem="hgg-fz-4Sq" firstAttribute="top" secondItem="QH7-gh-w1n" secondAttribute="top" constant="8" id="6Ko-Cg-JyZ"/>
                                                             <constraint firstAttribute="bottom" secondItem="hgg-fz-4Sq" secondAttribute="bottom" constant="8" id="7wI-XX-Pb9"/>
@@ -69,7 +68,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="White"/>
                                                 <constraints>
                                                     <constraint firstItem="QH7-gh-w1n" firstAttribute="centerX" secondItem="1kH-59-lDm" secondAttribute="centerX" id="ZAJ-gr-Aul"/>
                                                     <constraint firstAttribute="bottom" secondItem="QH7-gh-w1n" secondAttribute="bottom" id="aCl-vi-T2D"/>
@@ -80,7 +79,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or enter code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu5-bx-Ueh">
                                                 <rect key="frame" x="0.0" y="215" width="364" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
-                                                <color key="textColor" name="Text Gray"/>
+                                                <color key="textColor" name="Text Color"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="invite_friends_code_label"/>
@@ -90,7 +89,7 @@
                                                 <rect key="frame" x="0.0" y="248.5" width="364" height="44"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="24"/>
                                                 <state key="normal">
-                                                    <color key="titleColor" name="Text Black"/>
+                                                    <color key="titleColor" name="Black"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="codeButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="q3P-LB-t62"/>
@@ -101,7 +100,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sharing this code will give you and your friend one month free of premium content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fb-0e-Sxa">
                                         <rect key="frame" x="0.0" y="457.5" width="364" height="36.5"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
-                                        <color key="textColor" name="Text Gray"/>
+                                        <color key="textColor" name="Text Color"/>
                                         <nil key="highlightedColor"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="invite_friends_description"/>
@@ -137,7 +136,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="E6E-pY-b7y" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="35" id="Bl0-84-c2q"/>
                             <constraint firstItem="E6E-pY-b7y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="Sup-N4-Fiy"/>
@@ -190,7 +189,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To redeem a prize please enter received code below or just scan the QR code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbt-OP-I5T">
                                                 <rect key="frame" x="0.0" y="150" width="364" height="36.5"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
-                                                <color key="textColor" name="Text Gray"/>
+                                                <color key="textColor" name="Text Color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -206,7 +205,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="Ci5-yb-FLT"/>
                                                         </constraints>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" name="Black"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="24"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                         <userDefinedRuntimeAttributes>
@@ -218,14 +217,14 @@
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1F2-Ra-MCK">
                                                         <rect key="frame" x="37" y="34" width="290" height="1"/>
-                                                        <color key="backgroundColor" name="Text Gray"/>
+                                                        <color key="backgroundColor" name="Text Color"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="Ig7-5S-lOa"/>
                                                             <constraint firstAttribute="width" constant="290" id="JwV-HQ-pmA"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="White"/>
                                                 <constraints>
                                                     <constraint firstItem="ipm-Wh-KgP" firstAttribute="trailing" secondItem="1F2-Ra-MCK" secondAttribute="trailing" id="6KM-57-bEf"/>
                                                     <constraint firstItem="ipm-Wh-KgP" firstAttribute="top" secondItem="4bn-wO-2vg" secondAttribute="top" id="BiD-d0-tqv"/>
@@ -244,7 +243,7 @@
                                                             <constraint firstAttribute="width" constant="210" id="E4d-6d-asX"/>
                                                             <constraint firstAttribute="height" constant="50" id="H4Z-er-Kjz"/>
                                                         </constraints>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" name="White"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
                                                         <state key="normal" title="Scan QR Code" image="qr-code"/>
                                                         <userDefinedRuntimeAttributes>
@@ -268,7 +267,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="White"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="N7f-IU-Hlg" secondAttribute="bottom" id="I3d-9h-7pI"/>
                                                     <constraint firstItem="N7f-IU-Hlg" firstAttribute="centerX" secondItem="XyX-g4-Jq8" secondAttribute="centerX" id="LdV-so-4Qk"/>
@@ -311,7 +310,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" name="White"/>
                                         <constraints>
                                             <constraint firstItem="gka-rb-lVQ" firstAttribute="centerX" secondItem="I45-5C-35y" secondAttribute="centerX" id="0dK-pE-yAe"/>
                                             <constraint firstAttribute="bottom" secondItem="0UI-Oj-1W5" secondAttribute="bottom" id="8f9-HR-CHx"/>
@@ -325,7 +324,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g2h-mn-g5x"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="g2h-mn-g5x" firstAttribute="trailing" secondItem="vdi-Mo-SKu" secondAttribute="trailing" constant="25" id="98U-24-nlZ"/>
                             <constraint firstItem="vdi-Mo-SKu" firstAttribute="top" secondItem="g2h-mn-g5x" secondAttribute="top" constant="16" id="IzX-Uh-De0"/>
@@ -353,8 +352,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="ljW-by-XPY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" name="Text Black"/>
+                        <color key="backgroundColor" name="White"/>
+                        <color key="tintColor" name="Black"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
                         </textAttributes>
@@ -376,8 +375,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="Toe-iw-lAm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" name="Text Black"/>
+                        <color key="backgroundColor" name="White"/>
+                        <color key="tintColor" name="Black"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
                         </textAttributes>
@@ -397,16 +396,16 @@
         <image name="navbarShadow" width="375" height="14"/>
         <image name="qr-code" width="21" height="21"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.78431372549019607" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Text Black">
-            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Text Gray">
-            <color red="0.4779999852180481" green="0.4779999852180481" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Text Color">
+            <color red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

@@ -85,9 +85,9 @@ class ReviewTrainingScoreViewController: UIViewController {
             mediumCircleSize = view.frame.width * 0.8
             largeCircleSize = view.frame.width * 1.1
         }
-        smallCircleView.backgroundColor = UIColor(named: percentage <= 0.1 ? "Review Gray" : "AccentColor")
-        mediumCircleView.backgroundColor = UIColor(named: percentage < 0.4 ? "Review Gray" : "AccentColor")
-        largeCircleView.backgroundColor = UIColor(named: percentage < 1 ? "Review Gray" : "AccentColor")
+        smallCircleView.backgroundColor = percentage <= 0.1 ? .speaklGray : .speaklAccentColor
+        mediumCircleView.backgroundColor = percentage < 0.4 ? .speaklGray : .speaklAccentColor
+        largeCircleView.backgroundColor = percentage < 1 ? .speaklGray : .speaklAccentColor
         UIView.animate(withDuration: 0.6, delay: 0,
                        usingSpringWithDamping: 0.5, initialSpringVelocity: 5,
                        options: [.curveEaseInOut]) {

@@ -34,12 +34,12 @@ class WritingCollectionViewCell: UICollectionViewCell {
                 inputTextFieldView.isHidden = false
                 wordLabel.isHidden = true
             case .incorrect:
-                cellView.borderColor = UIColor(named: "Tag Red")
+                cellView.borderColor = .speaklRed
                 cellView.borderWidth = 2
                 inputTextFieldView.isHidden = false
                 wordLabel.isHidden = true
             case .correct:
-                cellView.borderColor = UIColor(named: "Tag Green")
+                cellView.borderColor = .speaklGreen
                 cellView.borderWidth = 2
                 inputTextFieldView.isHidden = false
                 wordLabel.isHidden = true
@@ -81,7 +81,7 @@ class WritingCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func fieldBeginAction(_ sender: Any) {
-        cellView.borderColor = UIColor(named: "GradientBottom")
+        cellView.borderColor = .speaklGradientBottom
         cellView.borderWidth = 2
     }
     @IBAction func fieldEndAction(_ sender: Any) {

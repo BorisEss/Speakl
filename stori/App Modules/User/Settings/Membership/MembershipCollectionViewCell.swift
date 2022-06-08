@@ -25,7 +25,7 @@ class MembershipCollectionViewCell: UICollectionViewCell {
         didSet {
             if isSelected {
                 cellView.borderWidth = 2
-                cellView.borderColor = .accentColor
+                cellView.borderColor = .speaklAccentColor
             } else {
                 cellView.borderWidth = 0
                 cellView.borderColor = .clear
@@ -55,11 +55,11 @@ class MembershipCollectionViewCell: UICollectionViewCell {
                 var totalPrice: Double = Double(truncating: monthlySubscription.price)
                 if item.productIdentifier == RegisteredPurchases.quaterlySubscription.rawValue {
                     totalPrice = Double(truncating: monthlySubscription.price) * 3
-                    topBadgeView.backgroundColor = .systemGreen
+                    topBadgeView.backgroundColor = .speaklGreen
                 }
                 if item.productIdentifier == RegisteredPurchases.yearlySubscription.rawValue {
                     totalPrice = Double(truncating: monthlySubscription.price) * 12
-                    topBadgeView.backgroundColor = .red
+                    topBadgeView.backgroundColor = .speaklRed
                     
                 }
                 let oldPrice = Number.format(price: totalPrice, locale: item.priceLocale)
@@ -84,8 +84,8 @@ class MembershipCollectionViewCell: UICollectionViewCell {
     func disable() {
         cellView.alpha = 0.9
         topBadgeView.isHidden = false
-        topBadgeView.backgroundColor = .accentColor
+        topBadgeView.backgroundColor = .speaklAccentColor
         badgeLabel.text = "membership_active_label".localized
-        cellView.backgroundColor = UIColor.accentColor.withAlphaComponent(0.15)
+        cellView.backgroundColor = UIColor.speaklAccentColor.withAlphaComponent(0.15)
     }
 }

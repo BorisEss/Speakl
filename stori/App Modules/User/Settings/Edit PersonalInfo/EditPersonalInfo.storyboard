@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bEh-zQ-NTd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bEh-zQ-NTd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -39,7 +38,7 @@
                                                         <rect key="frame" x="6" y="6" width="28" height="28"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.65098039220000004" green="0.83921568629999999" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="Light Blue"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="DbF-kJ-P6g" secondAttribute="height" multiplier="1:1" id="1pL-kN-ZjQ"/>
                                                     <constraint firstAttribute="bottom" secondItem="lxf-xW-0Lg" secondAttribute="bottom" constant="6" id="4Fh-W9-5aI"/>
@@ -60,7 +59,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="Uuo-st-Yda">
                                                         <rect key="frame" x="0.0" y="0.0" width="69.5" height="19.5"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
-                                                        <color key="textColor" name="Text Black"/>
+                                                        <color key="textColor" name="Black"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="edit_personal_info_username"/>
@@ -69,14 +68,14 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="DxJ-W5-Fla">
                                                         <rect key="frame" x="0.0" y="23.5" width="69.5" height="50"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
-                                                        <color key="textColor" name="Text Gray"/>
+                                                        <color key="textColor" name="Text Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Fa-jl-7hq">
                                                 <rect key="frame" x="0.0" y="52" width="414" height="1"/>
-                                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="Grey Light"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="7gE-bw-GkQ"/>
                                                 </constraints>
@@ -85,7 +84,7 @@
                                                 <rect key="frame" x="351" y="21" width="30" height="32"/>
                                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="15"/>
                                                 <state key="normal" title="Edit">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" name="Black"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="common_edit_title"/>
@@ -120,7 +119,7 @@
                                                         <rect key="frame" x="6" y="6" width="28" height="28"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.65098039220000004" green="0.83921568629999999" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="Light Blue"/>
                                                 <constraints>
                                                     <constraint firstItem="W4G-ar-TYP" firstAttribute="top" secondItem="UD6-5D-MV6" secondAttribute="top" constant="6" id="6DB-bj-fDW"/>
                                                     <constraint firstItem="W4G-ar-TYP" firstAttribute="leading" secondItem="UD6-5D-MV6" secondAttribute="leading" constant="6" id="Tgj-vk-oc0"/>
@@ -141,7 +140,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="P7p-HP-RIM">
                                                         <rect key="frame" x="0.0" y="0.0" width="322" height="19.5"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
-                                                        <color key="textColor" name="Text Black"/>
+                                                        <color key="textColor" name="Black"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="edit_personal_info_email"/>
@@ -150,14 +149,14 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="R3P-Rb-VbS">
                                                         <rect key="frame" x="0.0" y="23.5" width="322" height="50"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
-                                                        <color key="textColor" name="Text Gray"/>
+                                                        <color key="textColor" name="Text Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1RI-29-dzN">
                                                 <rect key="frame" x="0.0" y="52" width="414" height="1"/>
-                                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="Grey Light"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="nbd-eU-jvc"/>
                                                 </constraints>
@@ -180,7 +179,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PLg-vL-Hkp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="jTN-EQ-jaZ" firstAttribute="leading" secondItem="PLg-vL-Hkp" secondAttribute="leading" id="2Qs-ey-pRh"/>
                             <constraint firstItem="jTN-EQ-jaZ" firstAttribute="top" secondItem="PLg-vL-Hkp" secondAttribute="top" constant="32" id="8rE-Er-EFF"/>
@@ -218,7 +217,7 @@
                                                         <rect key="frame" x="6" y="6" width="28" height="28"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.65098039220000004" green="0.83921568629999999" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="Light Blue"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="NQQ-Tc-bov"/>
                                                     <constraint firstAttribute="trailing" secondItem="FNp-jY-cDk" secondAttribute="trailing" constant="6" id="QGf-6u-fPR"/>
@@ -239,7 +238,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="adN-lp-pVn">
                                                         <rect key="frame" x="0.0" y="0.0" width="324" height="19.5"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="15"/>
-                                                        <color key="textColor" name="Text Black"/>
+                                                        <color key="textColor" name="Black"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="edit_personal_info_username"/>
@@ -248,7 +247,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ksG-ub-dMS">
                                                         <rect key="frame" x="0.0" y="23.5" width="324" height="18.5"/>
                                                         <color key="tintColor" name="AccentColor"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" name="Black"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="13"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                                                         <userDefinedRuntimeAttributes>
@@ -262,7 +261,7 @@
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Kd-A7-cUp">
                                                 <rect key="frame" x="0.0" y="52" width="414" height="1"/>
-                                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="Grey Light"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="w8k-Of-YBH"/>
                                                 </constraints>
@@ -314,7 +313,7 @@
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IQ8-Xf-Qgd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="IQ8-Xf-Qgd" firstAttribute="trailing" secondItem="13j-I6-SxV" secondAttribute="trailing" id="5m7-6D-CYj"/>
                             <constraint firstItem="13j-I6-SxV" firstAttribute="top" secondItem="IQ8-Xf-Qgd" secondAttribute="top" constant="32" id="AdS-be-6Ku"/>
@@ -347,8 +346,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="Y5w-QG-ciW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" name="Text Black"/>
+                        <color key="backgroundColor" name="White"/>
+                        <color key="tintColor" name="Black"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
                         </textAttributes>
@@ -367,16 +366,22 @@
         <image name="navbarShadow" width="375" height="14"/>
         <image name="s_user_info" width="28" height="28.5"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.78431372549019607" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Text Black">
-            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Text Gray">
-            <color red="0.4779999852180481" green="0.4779999852180481" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Grey Light">
+            <color red="0.94509803921568625" green="0.94509803921568625" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="Light Blue">
+            <color red="0.094117647058823528" green="0.62745098039215685" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Color">
+            <color red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

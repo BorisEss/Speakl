@@ -74,7 +74,7 @@ class MainTabBarViewController: UITabBarController {
     @objc private func showToolTip() {
         var preferences = EasyTipView.globalPreferences
         // Tip Bubble UI
-        preferences.drawing.backgroundColor = UIColor.accentColor
+        preferences.drawing.backgroundColor = UIColor.speaklAccentColor
         preferences.drawing.arrowPosition = .bottom
         preferences.drawing.arrowHeight = 8
         preferences.drawing.arrowWidth = 16
@@ -155,7 +155,7 @@ class MainTabBarViewController: UITabBarController {
         tabBar.layer.shadowColor = UIColor.black.cgColor
         tabBar.layer.shadowOpacity = 0.15
         tabBar.backgroundColor = .white
-        tabBar.tintColor = .accentColor
+        tabBar.tintColor = .speaklAccentColor
         tabBar.barTintColor = .white
         tabBar.unselectedItemTintColor = .lightGray
         addButton.setImage(UIImage(named: "add_stori_icon_yellow"), for: .normal)

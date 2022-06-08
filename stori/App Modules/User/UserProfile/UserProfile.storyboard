@@ -28,12 +28,12 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFk-gx-JiV">
                                         <rect key="frame" x="172" y="14.5" width="70" height="21"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="16"/>
-                                        <color key="textColor" name="GradientBottom"/>
+                                        <color key="textColor" name="Gradient Bottom"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7o7-PG-bbQ">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
-                                        <color key="tintColor" name="GradientBottom"/>
+                                        <color key="tintColor" name="Gradient Bottom"/>
                                         <inset key="contentEdgeInsets" minX="14" minY="14" maxX="14" maxY="14"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="back_icon"/>
@@ -55,7 +55,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" name="Background"/>
+                        <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="zcF-K1-zZn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="e2N-7L-Tzi"/>
                             <constraint firstItem="zcF-K1-zZn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="q7D-kM-U3w"/>
@@ -70,11 +70,11 @@
     </scenes>
     <resources>
         <image name="back_icon" width="12" height="21"/>
-        <namedColor name="Background">
-            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Gradient Bottom">
+            <color red="0.082352941176470587" green="0.10980392156862745" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="GradientBottom">
-            <color red="0.082000002264976501" green="0.10999999940395355" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

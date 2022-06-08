@@ -32,7 +32,7 @@ extension UINavigationItem {
                                                height: 0))
         
         titleLabel.backgroundColor = UIColor.clear
-        titleLabel.textColor = UIColor.textBlack
+        titleLabel.textColor = UIColor.speaklTextColor
         titleLabel.font = UIFont.IBMPlexSansBold(size: 16)
         titleLabel.text = title
         titleLabel.sizeToFit()
@@ -42,7 +42,7 @@ extension UINavigationItem {
                                                   width: 0,
                                                   height: 0))
         subtitleLabel.backgroundColor = UIColor.clear
-        subtitleLabel.textColor = UIColor.textGray
+        subtitleLabel.textColor = UIColor.speaklGray
         subtitleLabel.font = UIFont.IBMPlexSans(size: 12)
         subtitleLabel.text = subtitle
         subtitleLabel.sizeToFit()

@@ -29,7 +29,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g6-fY-WlI">
                         <rect key="frame" x="16" y="10" width="60.5" height="24"/>
                         <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="16"/>
-                        <color key="textColor" name="GradientBottom"/>
+                        <color key="textColor" name="Gradient Bottom"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2He-wN-rdO">
@@ -38,10 +38,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbn-WE-F8J">
                                 <rect key="frame" x="0.0" y="0.0" width="61" height="28"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="12"/>
-                                <color key="tintColor" name="Text Gray"/>
+                                <color key="tintColor" name="Text Color"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Close topic">
-                                    <color key="titleColor" name="Text Gray"/>
+                                    <color key="titleColor" name="Text Color"/>
                                 </state>
                                 <connections>
                                     <action selector="clearButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RSR-z5-zDy"/>
@@ -50,10 +50,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihf-7y-BFe">
                                 <rect key="frame" x="69" y="0.0" width="17" height="28"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="12"/>
-                                <color key="tintColor" name="Text Gray"/>
+                                <color key="tintColor" name="Text Color"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="clear_circle_filled">
-                                    <color key="titleColor" name="Text Gray"/>
+                                    <color key="titleColor" name="Text Color"/>
                                 </state>
                                 <connections>
                                     <action selector="clearButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xbb-Ee-u2A"/>
@@ -85,11 +85,11 @@
     </objects>
     <resources>
         <image name="clear_circle_filled" width="17" height="17"/>
-        <namedColor name="GradientBottom">
-            <color red="0.082000002264976501" green="0.10999999940395355" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Gradient Bottom">
+            <color red="0.082352941176470587" green="0.10980392156862745" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Text Gray">
-            <color red="0.4779999852180481" green="0.4779999852180481" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Text Color">
+            <color red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

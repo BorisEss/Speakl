@@ -181,7 +181,7 @@ extension ReviewViewController: UITableViewDelegate, UITableViewDataSource {
         let mainCell = tableView.dequeueReusableCell(withIdentifier: ReviewHeaderTableViewCell.identifier)
         if let cell = mainCell as? ReviewHeaderTableViewCell {
             if section == 0 {
-                cell.backgroundColor = UIColor(named: "Background")
+                cell.backgroundColor = .speaklWhite
                 cell.setUp(name: "Topics", shouldShowClose: selectedTopic != nil)
                 cell.delegate = self
             } else {

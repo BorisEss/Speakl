@@ -70,6 +70,7 @@ class AudioPlayer {
     }
     
     func load(item: BackgroundAudio) {
+        // TODO: Check this code
 //        stop()
 //        guard let url = item.fileUrl else { return }
 //        let media = VLCMedia(url: url)

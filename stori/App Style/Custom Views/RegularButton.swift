@@ -37,19 +37,19 @@ class RegularButton: UIButton {
         cornerRadius = smallerSide / 2
         
         // Setting button colors
-        setTitleColor(darkStyle ? .darkButtonTitle : .lightButtonTitle, for: .normal)
+        setTitleColor(darkStyle ? .speaklWhite : .speaklWhite, for: .normal)
         if isEnabled {
-            backgroundColor = darkStyle ? .darkButtonBackground : .lightButtonBackground
+            backgroundColor = darkStyle ? .speaklTextColor : .speaklAccentColor
             if whiteStyle {
                 backgroundColor = .white
                 setTitleColor(.black, for: .normal)
             }
         } else {
-            backgroundColor = .disabledButtonBackground
+            backgroundColor = .speaklGray
         }
         
         // Setting disabled style
-        setTitleColor(.disabledButtonTitle, for: .disabled)
+        setTitleColor(.speaklTextColor, for: .disabled)
         
         // Setting button font
         titleLabel?.font = UIFont.IBMPlexSansBold(size: titleLabel?.font.pointSize ?? 16)

@@ -37,7 +37,7 @@ class ItemViewWithSubtitleAndCheckmark: UIView {
             return checkMarkImage.backgroundColor == .white
         }
         set(newValue) {
-            checkMarkImage.backgroundColor = newValue ? .white : .accentColor
+            checkMarkImage.backgroundColor = newValue ? .speaklWhite : .speaklAccentColor
             layoutIfNeeded()
         }
     }

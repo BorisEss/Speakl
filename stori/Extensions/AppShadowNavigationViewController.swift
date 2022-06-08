@@ -17,7 +17,7 @@ class AppShadowNavigationViewController: UINavigationController {
             appearance.backgroundColor = .white
             appearance.shadowImage = UIImage(named: "navbarShadow")
             appearance.titleTextAttributes = [.font: UIFont.IBMPlexSansBold(size: 16),
-                                              .foregroundColor: UIColor.textBlack]
+                                              .foregroundColor: UIColor.speaklTextColor]
             
             let backButtonAppearence = UIBarButtonItemAppearance()
             backButtonAppearence.normal.titleTextAttributes = [.font: UIFont.IBMPlexSansBold(size: 14),
@@ -30,11 +30,11 @@ class AppShadowNavigationViewController: UINavigationController {
             navigationBar.isTranslucent = false
             navigationBar.barTintColor = .white
             navigationBar.backgroundColor = .white
-            navigationBar.tintColor = .textBlack
+            navigationBar.tintColor = .speaklTextColor
             navigationBar.shadowImage = UIImage(named: "navbarShadow")
             navigationBar.titleTextAttributes = [
                 .font: UIFont.IBMPlexSansBold(size: 16),
-                .foregroundColor: UIColor.textBlack
+                .foregroundColor: UIColor.speaklTextColor
             ]
             
             navigationBar.layer.shadowColor = UIColor.lightGray.cgColor

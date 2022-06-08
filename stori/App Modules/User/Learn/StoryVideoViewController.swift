@@ -156,11 +156,11 @@ class StoryVideoViewController: UIViewController {
     
     @IBAction func userBadgePressed(_ sender: Any) {
         UIView.animate(withDuration: 0.3) {
-            if self.userBadgeView.backgroundColor == .white {
-                self.userBadgeView.backgroundColor = UIColor(named: "Tag Green")
+            if self.userBadgeView.backgroundColor == .speaklWhite {
+                self.userBadgeView.backgroundColor = .speaklGreen
                 self.userBadgeIconView.image = UIImage(named: "check_mark_white")
             } else {
-                self.userBadgeView.backgroundColor = .white
+                self.userBadgeView.backgroundColor = .speaklWhite
                 self.userBadgeIconView.image = UIImage(named: "plus")
             }
         }
@@ -225,12 +225,12 @@ class StoryVideoViewController: UIViewController {
         }
         
         UIView.animate(withDuration: 0.6) {
-            if self.likesView.backgroundColor == .white {
-                self.likesView.backgroundColor = .gradientTop
-                self.likesIconView.tintColor = .white
+            if self.likesView.backgroundColor == .speaklWhite {
+                self.likesView.backgroundColor = .speaklGradientTop
+                self.likesIconView.tintColor = .speaklWhite
             } else {
-                self.likesView.backgroundColor = .white
-                self.likesIconView.tintColor = .gradientTop
+                self.likesView.backgroundColor = .speaklWhite
+                self.likesIconView.tintColor = .speaklGradientTop
             }
         }
         

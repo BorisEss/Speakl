@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Oz-DH-Zwv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Oz-DH-Zwv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -41,7 +41,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="ZsY-E5-o7P" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="6x9-Ch-hcc"/>
                             <constraint firstAttribute="bottom" secondItem="ZsY-E5-o7P" secondAttribute="bottom" id="Myf-u2-ZcS"/>
@@ -93,7 +93,7 @@
                                             <string key="text">Get personalized stories &amp; vocabulary
 based on your level</string>
                                             <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="14"/>
-                                            <color key="textColor" name="Text Black"/>
+                                            <color key="textColor" name="Black"/>
                                             <nil key="highlightedColor"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="edit_learning_level_subtitle"/>
@@ -116,7 +116,7 @@ based on your level</string>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zPe-YF-ojt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="Skh-to-8Dn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zPe-YF-ojt" secondAttribute="leading" constant="32" id="0Gj-3a-UyY"/>
                             <constraint firstItem="Rwj-C2-VLw" firstAttribute="leading" secondItem="zPe-YF-ojt" secondAttribute="leading" id="0wX-H2-b7H"/>
@@ -168,7 +168,7 @@ based on your level</string>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your can change this anytime in Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="JMD-Sx-t3h">
                                         <rect key="frame" x="98.5" y="78" width="217" height="16"/>
                                         <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="12"/>
-                                        <color key="textColor" name="Text Gray"/>
+                                        <color key="textColor" name="Text Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SX7-Pf-dZC" customClass="RegularButton" customModule="stori" customModuleProvider="target">
@@ -200,7 +200,7 @@ based on your level</string>
                                         <color key="color" name="AccentColor"/>
                                     </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JMD-Sx-t3h" secondAttribute="trailing" constant="16" id="1xa-FA-McH"/>
                                     <constraint firstItem="SX7-Pf-dZC" firstAttribute="top" secondItem="9af-5L-93f" secondAttribute="top" constant="14" id="9Gn-5C-mEs"/>
@@ -241,7 +241,7 @@ based on your level</string>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="White"/>
                                                 <constraints>
                                                     <constraint firstItem="fMR-Jz-bQX" firstAttribute="top" secondItem="6b9-cc-WWE" secondAttribute="top" id="1Bo-Zl-hav"/>
                                                     <constraint firstAttribute="bottom" secondItem="fMR-Jz-bQX" secondAttribute="bottom" id="8Ob-9g-Ufm"/>
@@ -254,7 +254,7 @@ based on your level</string>
                                             </view>
                                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VsP-E5-Hwh">
                                                 <rect key="frame" x="206.5" y="0.0" width="1" height="42"/>
-                                                <color key="backgroundColor" name="Text Gray"/>
+                                                <color key="backgroundColor" name="Text Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="1" id="mEk-IV-ylj"/>
                                                 </constraints>
@@ -280,7 +280,7 @@ based on your level</string>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="White"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="ISz-wO-FoP" secondAttribute="bottom" id="Cfy-ev-STi"/>
                                                     <constraint firstItem="ISz-wO-FoP" firstAttribute="leading" secondItem="cQB-ig-VCb" secondAttribute="leading" id="FU3-sR-ooS"/>
@@ -297,7 +297,7 @@ based on your level</string>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="value" name="Gray"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                                 <real key="value" value="8"/>
@@ -311,7 +311,7 @@ based on your level</string>
                                         </userDefinedRuntimeAttributes>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="XRw-WL-BnQ" secondAttribute="trailing" id="7bM-ij-UgB"/>
                                     <constraint firstAttribute="bottom" secondItem="XRw-WL-BnQ" secondAttribute="bottom" id="CqM-xF-ThS"/>
@@ -322,7 +322,7 @@ based on your level</string>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xiq-1o-ekZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="O3p-aE-Uci" firstAttribute="leading" secondItem="Xiq-1o-ekZ" secondAttribute="leading" id="8C6-4u-FQR"/>
                             <constraint firstItem="9af-5L-93f" firstAttribute="top" secondItem="4FP-Zh-kd8" secondAttribute="bottom" id="8qE-Ma-yPK"/>
@@ -375,7 +375,7 @@ based on your level</string>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No items to show" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Oa-d5-nIx">
                                 <rect key="frame" x="141" y="300" width="132.5" height="22.5"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
-                                <color key="textColor" name="Text Gray"/>
+                                <color key="textColor" name="Text Color"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="common_no_items_to_show"/>
@@ -383,7 +383,7 @@ based on your level</string>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6ID-OC-ORD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="xvo-BO-Mxd" firstAttribute="leading" secondItem="6ID-OC-ORD" secondAttribute="leading" id="3Dw-3v-T3b"/>
                             <constraint firstItem="xvo-BO-Mxd" firstAttribute="top" secondItem="6ID-OC-ORD" secondAttribute="top" id="QXA-K8-M5I"/>
@@ -432,7 +432,7 @@ based on your level</string>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to show" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6f-Qr-tTk">
                                 <rect key="frame" x="145" y="300" width="124" height="22.5"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
-                                <color key="textColor" name="Text Gray"/>
+                                <color key="textColor" name="Text Color"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="common_nothing_to_show"/>
@@ -444,7 +444,7 @@ based on your level</string>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g0o-q2-ovs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="REN-xH-Whm" firstAttribute="top" secondItem="g0o-q2-ovs" secondAttribute="top" id="4cw-d9-5PR"/>
                             <constraint firstItem="g0o-q2-ovs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T6f-Qr-tTk" secondAttribute="trailing" constant="32" id="ASv-M3-vOX"/>
@@ -476,8 +476,8 @@ based on your level</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="navbarShadow" id="ehE-6D-Rfz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" name="Text Black"/>
+                        <color key="backgroundColor" name="White"/>
+                        <color key="tintColor" name="Black"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="16"/>
                         </textAttributes>
@@ -495,13 +495,19 @@ based on your level</string>
     <resources>
         <image name="navbarShadow" width="375" height="14"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.7803921568627451" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.78431372549019607" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Text Black">
-            <color red="0.082000002264976501" green="0.082000002264976501" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Text Gray">
-            <color red="0.4779999852180481" green="0.4779999852180481" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Gray">
+            <color red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Color">
+            <color red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

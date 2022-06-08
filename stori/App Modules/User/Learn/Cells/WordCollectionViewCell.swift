@@ -17,8 +17,8 @@ class WordCollectionViewCell: UICollectionViewCell, CustomCollectionViewCell {
 //            cellView.backgroundColor = hasAnswerdCorrect ? .tagGreen : .tagRed
 //            wordLabel.textColor = .white
 //        } else {
-            cellView.backgroundColor = .white
-            wordLabel.textColor = .textGray
+            cellView.backgroundColor = .speaklWhite
+            wordLabel.textColor = .speaklTextColor
 //        }
 //        wordLabel.text = word.word
         wordLabel.text = word

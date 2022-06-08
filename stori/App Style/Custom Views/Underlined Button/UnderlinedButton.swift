@@ -22,8 +22,8 @@ class UnderlinedButton: UIButton {
     @IBInspectable var isChecked: Bool = true {
         didSet {
             UIView.animate(withDuration: 0.3) {
-                self.buttonLabel.textColor = self.isChecked ? .gradientBotton : .brightGray
-                self.underlineView.backgroundColor = self.isChecked ? .gradientBotton : .greyLight
+                self.buttonLabel.textColor = self.isChecked ? .speaklGradientBottom : .speaklGreyLight
+                self.underlineView.backgroundColor = self.isChecked ? .speaklGradientBottom : .speaklGreyLight
                 self.layoutIfNeeded()
             } completion: { _ in
                 if self.isChecked {
@@ -53,8 +53,8 @@ class UnderlinedButton: UIButton {
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         buttonLabel.text = localizedButtonTitle // TODO: Made it localized
-        buttonLabel.textColor = isChecked ? .gradientBotton : .brightGray
-        underlineView.backgroundColor = isChecked ? .gradientBotton : .greyLight
+        buttonLabel.textColor = isChecked ? .speaklGradientBottom : .speaklGreyLight
+        underlineView.backgroundColor = isChecked ? .speaklGradientBottom : .speaklGreyLight
     }
 
 }

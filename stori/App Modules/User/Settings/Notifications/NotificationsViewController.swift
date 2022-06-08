@@ -17,9 +17,9 @@ class NotificationsViewController: UIViewController {
         title = "edit_notifications_title".localized
         notificationsSwitch.isOn = Storage.shared.currentUser?.notificationsEnabled ?? false
         if notificationsSwitch.isOn {
-            notificationsSwitch.thumbTintColor = .accentColor
+            notificationsSwitch.thumbTintColor = .speaklAccentColor
         } else {
-            notificationsSwitch.thumbTintColor = .white
+            notificationsSwitch.thumbTintColor = .speaklWhite
         }
     }
     
@@ -38,9 +38,9 @@ class NotificationsViewController: UIViewController {
     @IBAction func notificationsSwitchChanged(_ sender: UISwitch) {
         Vibration().light()
         if sender.isOn {
-            sender.thumbTintColor = .accentColor
+            sender.thumbTintColor = .speaklAccentColor
         } else {
-            sender.thumbTintColor = .white
+            sender.thumbTintColor = .speaklWhite
         }
         UserClient.updateNotifications(enabled: sender.isOn)
             .cauterize()

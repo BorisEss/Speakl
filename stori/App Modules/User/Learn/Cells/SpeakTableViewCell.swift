@@ -14,11 +14,11 @@ class SpeakTableViewCell: UITableViewCell {
     
     func setUp(word: SpeakWord) {
         if let hasAnswerdCorrect = word.hasAnsweredCorrect {
-            cellView.backgroundColor = hasAnswerdCorrect ? .tagGreen : .tagRed
-            wordLabel.textColor = .white
+            cellView.backgroundColor = hasAnswerdCorrect ? .speaklGreen : .speaklRed
+            wordLabel.textColor = .speaklWhite
         } else {
             cellView.backgroundColor = .clear
-            wordLabel.textColor = .textGray
+            wordLabel.textColor = .speaklTextColor
         }
         wordLabel.text = word.word
     }

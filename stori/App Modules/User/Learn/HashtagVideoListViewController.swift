@@ -27,7 +27,7 @@ class HashtagVideoListViewController: UIViewController {
 
         titleLabel.text = hashtag.name
         loadJson()
-        followButton.backgroundColor = .accentColor
+        followButton.backgroundColor = .speaklAccentColor
     }
     
     private func loadJson() {
@@ -51,13 +51,13 @@ class HashtagVideoListViewController: UIViewController {
     }
     
     @IBAction func followButtonPressed(_ sender: UIButton) {
-        if sender.backgroundColor == .accentColor {
-            sender.backgroundColor = .white
-            sender.setTitleColor(.gradientTop, for: .normal)
+        if sender.backgroundColor == .speaklAccentColor {
+            sender.backgroundColor = .speaklWhite
+            sender.setTitleColor(.speaklGradientTop, for: .normal)
             sender.setTitle("Following", for: .normal)
         } else {
-            sender.backgroundColor = .accentColor
-            sender.setTitleColor(.white, for: .normal)
+            sender.backgroundColor = .speaklAccentColor
+            sender.setTitleColor(.speaklWhite, for: .normal)
             sender.setTitle("Follow", for: .normal)
         }
     }

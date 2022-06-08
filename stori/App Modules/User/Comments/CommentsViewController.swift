@@ -73,7 +73,7 @@ class CommentsViewController: UIViewController {
         comments.append(item)
         commentTextField.resignFirstResponder()
         commentTextField.text = ""
-        commentView.borderColor = .systemGray6
+        commentView.borderColor = .speaklGreyLight
         sendView.isHidden = true
         tableView.reloadData()
     }
@@ -101,13 +101,13 @@ extension CommentsViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension CommentsViewController: GrowingTextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
-        commentView.borderColor = UIColor.completedPurple
+        commentView.borderColor = UIColor.speaklViolet
     }
     func textViewDidEndEditing(_ textView: UITextView) {
         if #available(iOS 13.0, *) {
-            commentView.borderColor = UIColor.systemGray6
+            commentView.borderColor = UIColor.speaklGreyLight
         } else {
-            commentView.borderColor = .gray
+            commentView.borderColor = .speaklGray
         }
     }
     func textViewDidChangeSelection(_ textView: UITextView) {
