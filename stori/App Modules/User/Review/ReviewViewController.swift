@@ -245,8 +245,8 @@ extension ReviewViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard indexPath.section != 0 else { return }
         let storyBoard: UIStoryboard = UIStoryboard(name: "WordExplanation", bundle: nil)
-        let nextScreen = storyBoard.instantiateViewController(withIdentifier: "SelectedWordViewController")
-        if let unwrappedNextScreen = nextScreen as? SelectedWordViewController {
+        let nextScreen = storyBoard.instantiateViewController(withIdentifier: "WEViewController")
+        if let unwrappedNextScreen = nextScreen as? WEViewController {
 //            unwrappedNextScreen.hashtag = Hashtag(name: hashtag, popularity: 0)
             
             self.navigationController?.pushViewController(unwrappedNextScreen, animated: true)

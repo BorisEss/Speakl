@@ -61,7 +61,7 @@ class CSTextItemTableViewCell: CSTableViewCell {
                 self.tagListView.addTag(item.word)
             } else {
                 let tagView = self.tagListView.addTag(item.word)
-                tagView.tagBackgroundColor = .removeRed
+                tagView.tagBackgroundColor = .speaklRedSoft
             }
         }
         updateView?()
@@ -161,8 +161,8 @@ extension CSTextItemTableViewCell: TagListViewDelegate {
                     }
                 })
             ])
-            menuViewController.appearance.popMenuColor.backgroundColor = .solid(fill: .background)
-            menuViewController.appearance.popMenuColor.actionColor = .tint(Color(cgColor: UIColor.textGray.cgColor))
+            menuViewController.appearance.popMenuColor.backgroundColor = .solid(fill: .speaklWhite)
+            menuViewController.appearance.popMenuColor.actionColor = .tint(Color(cgColor: UIColor.speaklTextColor.cgColor))
             UIApplication.getTopViewController()?.present(menuViewController, animated: true, completion: nil)
         } else if (section?.canSelect(wordIndex: selectedIndex, selectedWords: selectedTags)) ?? false,
                   !tagView.isSelected {
@@ -179,8 +179,8 @@ extension CSTextItemTableViewCell: TagListViewDelegate {
                         }
                     }
                 ])
-                menuViewController.appearance.popMenuColor.backgroundColor = .solid(fill: .background)
-                menuViewController.appearance.popMenuColor.actionColor = .tint(Color(cgColor: UIColor.textGray.cgColor))
+                menuViewController.appearance.popMenuColor.backgroundColor = .solid(fill: .speaklWhite)
+                menuViewController.appearance.popMenuColor.actionColor = .tint(Color(cgColor: UIColor.speaklTextColor.cgColor))
                 UIApplication.getTopViewController()?.present(menuViewController, animated: true, completion: nil)
             } else if selectedTags.count >= 2 {
                 let menuViewController = PopMenuViewController(sourceView: tagView, actions: [
@@ -192,8 +192,8 @@ extension CSTextItemTableViewCell: TagListViewDelegate {
                         }
                     }
                 ])
-                menuViewController.appearance.popMenuColor.backgroundColor = .solid(fill: .background)
-                menuViewController.appearance.popMenuColor.actionColor = .tint(Color(cgColor: UIColor.textGray.cgColor))
+                menuViewController.appearance.popMenuColor.backgroundColor = .solid(fill: .speaklWhite)
+                menuViewController.appearance.popMenuColor.actionColor = .tint(Color(cgColor: UIColor.speaklTextColor.cgColor))
                 UIApplication.getTopViewController()?.present(menuViewController, animated: true, completion: nil)
             }
         } else {
@@ -211,7 +211,7 @@ struct PopMenuActionBuilder {
     static func mergeAction(action: @escaping () -> Void) -> PopMenuDefaultAction {
         return PopMenuDefaultAction(title: "cs_text_merge".localized,
                                     image: UIImage(named: "merge"),
-                                    color: .textBlack) { (_) in
+                                    color: .speaklBlack) { (_) in
             action()
         }
     }
@@ -219,7 +219,7 @@ struct PopMenuActionBuilder {
     static func unmergeAction(action: @escaping () -> Void) -> PopMenuDefaultAction {
         return PopMenuDefaultAction(title: "cs_text_unmerge".localized,
                                     image: UIImage(named: "unmerge"),
-                                    color: .textBlack) { (_) in
+                                    color: .speaklBlack) { (_) in
             action()
         }
     }
@@ -228,7 +228,7 @@ struct PopMenuActionBuilder {
                            action: @escaping () -> Void) -> PopMenuDefaultAction {
         return PopMenuDefaultAction(title: String(format: "cs_text_remove_word".localized, level),
                                     image: UIImage(named: "clear_circle"),
-                                    color: .removeRed) { (_) in
+                                    color: .speaklRedSoft) { (_) in
             action()
         }
     }

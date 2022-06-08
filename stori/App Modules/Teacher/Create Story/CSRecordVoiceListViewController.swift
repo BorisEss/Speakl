@@ -13,9 +13,9 @@ class CSRecordVoiceListViewController: UIViewController {
     var recording: LocalFile? {
         didSet {
             recordVoiceButton.isEnabled = recording == nil
-            recordVoiceButton.backgroundColor = recording == nil ? .accentColor : .lightGray
+            recordVoiceButton.backgroundColor = recording == nil ? .speaklAccentColor : .speaklGreyLight
             uploadFileButton.isEnabled = recording == nil
-            uploadFileButton.backgroundColor = recording == nil ? .accentColor : .lightGray
+            uploadFileButton.backgroundColor = recording == nil ? .speaklAccentColor : .speaklGreyLight
             tableView.reloadData()
         }
     }

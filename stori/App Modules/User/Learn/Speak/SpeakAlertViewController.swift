@@ -47,7 +47,7 @@ class SpeakAlertViewController: UIViewController {
         correctAnswerLabel.text = correctText
         wordTranslationLabel.text = definition
         userAnswerIcon.image = UIImage(named: itIsCorrect ? "speaker_icon_correct" : "speaker_icon_incorrect")
-        userAnswerLabel.textColor = itIsCorrect ? .tagGreen : .tagRed
+        userAnswerLabel.textColor = itIsCorrect ? .speaklGreen : .speaklRed
         finishButton.isHidden = !itIsLastWord
         nextButton.isHidden = itIsLastWord
     }

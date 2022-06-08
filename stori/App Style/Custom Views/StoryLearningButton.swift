@@ -15,11 +15,11 @@ class StoryLearningButton: UIButton {
     }
     func inProgress() {
         borderWidth = 0
-        backgroundColor = .inProgressYellow
+        backgroundColor = .speaklYellowLabel
     }
     
     func finished() {
         borderWidth = 0
-        backgroundColor = .completedPurple
+        backgroundColor = .speaklViolet
     }
 }

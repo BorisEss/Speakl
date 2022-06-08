@@ -80,4 +80,7 @@ extension UIColor {
     static var speaklRedSoft: UIColor {
         return UIColor(red: 0.918, green: 0.349, blue: 0.431, alpha: 1)
     }
+    static var speaklBlack: UIColor {
+        return UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+    }
 }

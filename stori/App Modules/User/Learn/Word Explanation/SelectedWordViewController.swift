@@ -42,11 +42,7 @@ class SelectedWordViewController: UIViewController {
             nextVc.delegate = self
         }
     }
-    
-    @IBAction func backButtonPressed(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-    
+
     @IBAction func cancelButtonPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }

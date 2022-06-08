@@ -19,7 +19,7 @@ extension UILabel {
                                           value: NSUnderlineStyle.single.rawValue,
                                           range: NSRange(location: 0, length: attributedString.length))
             attributedString.addAttribute(NSAttributedString.Key.underlineColor,
-                                          value: isShown ? UIColor.accentColor : .clear,
+                                          value: isShown ? UIColor.speaklAccentColor : .clear,
                                           range: NSRange(location: 0, length: attributedString.length))
           attributedText = attributedString
         }

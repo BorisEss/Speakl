@@ -47,7 +47,7 @@ class ReviewTrainingViewController: UIViewController {
         }
         if let nextVc = segue.destination as? ReviewTrainingScoreViewController {
             scoreVc = nextVc
-            nextVc.retryCallback = { [weak self] in
+            nextVc.retryCallback = {
                  print("Retry")
             }
         }

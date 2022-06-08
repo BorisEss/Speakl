@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f7M-4O-uZW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mj6-Li-4TS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -25,29 +25,122 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Selected Word View Controller-->
-        <scene sceneID="KLm-YF-Uaw">
+        <!--View Controller-->
+        <scene sceneID="zFI-ew-d3F">
             <objects>
-                <viewController storyboardIdentifier="SelectedWordViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f7M-4O-uZW" customClass="SelectedWordViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="st1-3N-RjU">
+                <viewController storyboardIdentifier="WEViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mj6-Li-4TS" customClass="WEViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9kN-dU-tT2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rj-bS-Ze5">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3f-cN-A8X">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfw-XC-csU">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siR-oN-rd7">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
                                         <color key="tintColor" name="Gradient Bottom"/>
                                         <inset key="contentEdgeInsets" minX="14" minY="14" maxX="14" maxY="14"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="back_icon"/>
                                         <connections>
-                                            <action selector="backButtonPressed:" destination="f7M-4O-uZW" eventType="touchUpInside" id="Kj4-Ez-MDM"/>
+                                            <action selector="backButtonPressed:" destination="Mj6-Li-4TS" eventType="touchUpInside" id="WT3-AO-6lq"/>
                                         </connections>
                                     </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="siR-oN-rd7" secondAttribute="bottom" id="6FF-9e-WjR"/>
+                                    <constraint firstItem="siR-oN-rd7" firstAttribute="leading" secondItem="V3f-cN-A8X" secondAttribute="leading" id="EyK-Dp-0RB"/>
+                                    <constraint firstItem="siR-oN-rd7" firstAttribute="top" secondItem="V3f-cN-A8X" secondAttribute="top" id="Fzm-VH-rOA"/>
+                                    <constraint firstAttribute="height" constant="50" id="iUc-Sp-idj"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aib-tG-6Cm">
+                                <rect key="frame" x="0.0" y="136" width="414" height="726"/>
+                                <connections>
+                                    <segue destination="f7M-4O-uZW" kind="embed" id="7Ol-MG-WG6"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4b-b9-Wez">
+                                <rect key="frame" x="0.0" y="136" width="414" height="726"/>
+                                <connections>
+                                    <segue destination="4MF-wc-9sg" kind="embed" id="0BN-2X-hiK"/>
+                                </connections>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="O6K-qs-3XJ">
+                                <rect key="frame" x="0.0" y="94" width="414" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMa-Hz-JHb" customClass="UnderlinedButton" customModule="stori" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="42"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isChecked" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedButtonTitle" value="Vocabulary"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="vocabularyButtonPressed:" destination="Mj6-Li-4TS" eventType="touchUpInside" id="PRh-pd-0SW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEY-Lz-wVd" customClass="UnderlinedButton" customModule="stori" customModuleProvider="target">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="42"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedButtonTitle" value="Grammar"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isChecked" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="googleButtonPressed:" destination="Mj6-Li-4TS" eventType="touchUpInside" id="nBz-Gj-jGp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="I7f-yv-JHa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nEh-Od-Ihi"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="V3f-cN-A8X" firstAttribute="top" secondItem="nEh-Od-Ihi" secondAttribute="top" id="1Ai-gf-xsk"/>
+                            <constraint firstItem="nEh-Od-Ihi" firstAttribute="bottom" secondItem="aib-tG-6Cm" secondAttribute="bottom" id="39y-V1-XEo"/>
+                            <constraint firstItem="aib-tG-6Cm" firstAttribute="top" secondItem="O6K-qs-3XJ" secondAttribute="bottom" id="3zu-fM-ibC"/>
+                            <constraint firstItem="O6K-qs-3XJ" firstAttribute="leading" secondItem="nEh-Od-Ihi" secondAttribute="leading" id="48y-li-o6T"/>
+                            <constraint firstItem="nEh-Od-Ihi" firstAttribute="bottom" secondItem="T4b-b9-Wez" secondAttribute="bottom" id="56D-Ra-ZG1"/>
+                            <constraint firstItem="T4b-b9-Wez" firstAttribute="leading" secondItem="nEh-Od-Ihi" secondAttribute="leading" id="Dbi-Bc-9Yl"/>
+                            <constraint firstItem="V3f-cN-A8X" firstAttribute="leading" secondItem="nEh-Od-Ihi" secondAttribute="leading" id="OYG-t2-sDf"/>
+                            <constraint firstItem="nEh-Od-Ihi" firstAttribute="trailing" secondItem="T4b-b9-Wez" secondAttribute="trailing" id="deN-3g-5ns"/>
+                            <constraint firstItem="O6K-qs-3XJ" firstAttribute="trailing" secondItem="nEh-Od-Ihi" secondAttribute="trailing" id="fb0-fJ-akA"/>
+                            <constraint firstItem="T4b-b9-Wez" firstAttribute="top" secondItem="O6K-qs-3XJ" secondAttribute="bottom" id="hz7-or-TRQ"/>
+                            <constraint firstItem="nEh-Od-Ihi" firstAttribute="trailing" secondItem="V3f-cN-A8X" secondAttribute="trailing" id="rWJ-mm-9qJ"/>
+                            <constraint firstItem="aib-tG-6Cm" firstAttribute="leading" secondItem="nEh-Od-Ihi" secondAttribute="leading" id="rWa-Nm-L0g"/>
+                            <constraint firstItem="nEh-Od-Ihi" firstAttribute="trailing" secondItem="aib-tG-6Cm" secondAttribute="trailing" id="u2B-rP-JiA"/>
+                            <constraint firstItem="O6K-qs-3XJ" firstAttribute="top" secondItem="V3f-cN-A8X" secondAttribute="bottom" id="va6-Ph-E7c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="grammarButton" destination="dEY-Lz-wVd" id="Dha-3c-X5W"/>
+                        <outlet property="grammarContainer" destination="T4b-b9-Wez" id="bph-GR-SwD"/>
+                        <outlet property="vocabularyButton" destination="UMa-Hz-JHb" id="fhC-vN-YaL"/>
+                        <outlet property="vocabularyContainer" destination="aib-tG-6Cm" id="PIe-I0-bzv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAt-hQ-Zs5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="827.536231884058" y="-258.48214285714283"/>
+        </scene>
+        <!--Selected Word View Controller-->
+        <scene sceneID="KLm-YF-Uaw">
+            <objects>
+                <viewController storyboardIdentifier="SelectedWordViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f7M-4O-uZW" customClass="SelectedWordViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="st1-3N-RjU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="726"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rj-bS-Ze5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BGO-8y-6wR">
-                                        <rect key="frame" x="40" y="0.0" width="374" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="8" id="ZMo-dh-FuP">
                                             <size key="itemSize" width="128" height="50"/>
@@ -90,18 +183,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="tfw-XC-csU" secondAttribute="bottom" id="0bO-ck-Uo7"/>
-                                    <constraint firstItem="tfw-XC-csU" firstAttribute="top" secondItem="9Rj-bS-Ze5" secondAttribute="top" id="8BG-8b-OVm"/>
+                                    <constraint firstItem="BGO-8y-6wR" firstAttribute="leading" secondItem="9Rj-bS-Ze5" secondAttribute="leading" id="L6p-gE-3Qh"/>
                                     <constraint firstAttribute="trailing" secondItem="BGO-8y-6wR" secondAttribute="trailing" id="Vgs-U4-TMu"/>
                                     <constraint firstAttribute="height" constant="50" id="W6T-z6-0O1"/>
-                                    <constraint firstItem="tfw-XC-csU" firstAttribute="leading" secondItem="9Rj-bS-Ze5" secondAttribute="leading" id="abn-fy-5jE"/>
-                                    <constraint firstItem="BGO-8y-6wR" firstAttribute="leading" secondItem="tfw-XC-csU" secondAttribute="trailing" id="eoc-Pc-uLM"/>
                                     <constraint firstItem="BGO-8y-6wR" firstAttribute="top" secondItem="9Rj-bS-Ze5" secondAttribute="top" id="n3B-Ce-WcH"/>
                                     <constraint firstAttribute="bottom" secondItem="BGO-8y-6wR" secondAttribute="bottom" id="uS2-jA-PQa"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bv4-Zj-bIn">
-                                <rect key="frame" x="20" y="782" width="374" height="60"/>
+                                <rect key="frame" x="20" y="646" width="374" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJD-cA-BPD">
                                         <rect key="frame" x="0.0" y="0.0" width="177" height="60"/>
@@ -176,25 +266,25 @@
                                 </subviews>
                             </stackView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5p2-Jc-5aJ">
-                                <rect key="frame" x="0.0" y="246.5" width="414" height="503.5"/>
+                                <rect key="frame" x="0.0" y="246.5" width="414" height="367.5"/>
                                 <connections>
                                     <segue destination="HPs-kj-pqN" kind="embed" id="XWP-7F-OcR"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fm4-l3-BWs">
-                                <rect key="frame" x="0.0" y="246.5" width="414" height="503.5"/>
+                                <rect key="frame" x="0.0" y="246.5" width="414" height="367.5"/>
                                 <connections>
                                     <segue destination="Eun-5b-FE7" kind="embed" id="wfU-mp-w1R"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sn1-Vq-Whp">
-                                <rect key="frame" x="0.0" y="246.5" width="414" height="503.5"/>
+                                <rect key="frame" x="0.0" y="246.5" width="414" height="367.5"/>
                                 <connections>
                                     <segue destination="bfu-2G-tzS" kind="embed" id="Heu-C2-TRi"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHf-IC-b7W">
-                                <rect key="frame" x="0.0" y="246.5" width="414" height="503.5"/>
+                                <rect key="frame" x="0.0" y="246.5" width="414" height="367.5"/>
                                 <connections>
                                     <segue destination="cPC-ym-pLn" kind="embed" id="Aqa-2r-l9R"/>
                                 </connections>
@@ -250,7 +340,7 @@
             <objects>
                 <viewController storyboardIdentifier="SelectedWordExplanationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qLc-bR-3dH" customClass="SelectedWordExplanationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E84-bG-ybJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jow-H2-6wO">
@@ -282,11 +372,11 @@
             <objects>
                 <viewController storyboardIdentifier="WEPronunciationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HPs-kj-pqN" customClass="WEPronunciationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pof-cU-flK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="503.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="367.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1M2-2p-QNW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="503.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="367.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="q9S-BR-ry6">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="746.5"/>
@@ -550,11 +640,11 @@
             <objects>
                 <viewController storyboardIdentifier="WEDictionaryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Eun-5b-FE7" customClass="WEDictionaryViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XeL-Qu-qVk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="503.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="367.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b74-qf-psH">
-                                <rect key="frame" x="40" y="0.0" width="334" height="503.5"/>
+                                <rect key="frame" x="40" y="0.0" width="334" height="367.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="ddK-Bt-PTI">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="163.5"/>
@@ -627,11 +717,11 @@
             <objects>
                 <viewController storyboardIdentifier="WEExpressionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bfu-2G-tzS" customClass="WEExpressionsViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ER-j7-ba2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="503.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="367.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNA-4Q-aB8">
-                                <rect key="frame" x="40" y="0.0" width="334" height="503.5"/>
+                                <rect key="frame" x="40" y="0.0" width="334" height="367.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer nec ante interdum, porttitor ante scelerisque, aliquet lectus. Aenean non dolor a est elementum tristique convallis vel lectus. Cras facilisis nisi odio, at ultricies quam vulputate non. Aenean purus est, aliquet in ex et, tincidunt fringilla sapien. Integer magna augue, mollis in venenatis id, iaculis ac risus. Etiam congue arcu vitae urna consequat, a interdum orci pellentesque.
 
@@ -660,11 +750,11 @@ Aenean in fringilla nisi. Donec pretium finibus tincidunt. Nulla vitae faucibus 
             <objects>
                 <viewController storyboardIdentifier="WEExamplesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cPC-ym-pLn" customClass="WEExamplesViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rD9-jI-UhX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="503.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="367.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Tener la nariz ~ grande / afilada / pequeña; " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzJ-QT-eln">
-                                <rect key="frame" x="40" y="0.0" width="334" height="503.5"/>
+                                <rect key="frame" x="40" y="0.0" width="334" height="367.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" name="Text Color"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="14"/>
@@ -684,6 +774,20 @@ Aenean in fringilla nisi. Donec pretium finibus tincidunt. Nulla vitae faucibus 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wz-gv-t7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2175" y="790"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9gI-lO-qZ7">
+            <objects>
+                <viewController id="4MF-wc-9sg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="REa-oZ-43J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="726"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hBF-4O-JEQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="-520"/>
         </scene>
     </scenes>
     <resources>

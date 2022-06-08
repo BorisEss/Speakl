@@ -251,8 +251,8 @@ extension WritingViewController: UICollectionViewDelegate, UICollectionViewDataS
             }
         } else {
             let storyBoard: UIStoryboard = UIStoryboard(name: "WordExplanation", bundle: nil)
-            let nextScreen = storyBoard.instantiateViewController(withIdentifier: "SelectedWordViewController")
-            if let unwrappedNextScreen = nextScreen as? SelectedWordViewController {
+            let nextScreen = storyBoard.instantiateViewController(withIdentifier: "WEViewController")
+            if let unwrappedNextScreen = nextScreen as? WEViewController {
                 //            unwrappedNextScreen.hashtag = Hashtag(name: hashtag, popularity: 0)
                 
                 self.navigationController?.pushViewController(unwrappedNextScreen, animated: true)

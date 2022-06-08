@@ -230,10 +230,10 @@ extension CSStoryTextViewController: SwipeTableViewCellDelegate {
                     self.items.remove(at: indexPath.row)
                 }
                 remove.title = "common_remove_title".localized
-                remove.textColor = .removeRed
+                remove.textColor = .speaklRedSoft
                 remove.font = .IBMPlexSans(size: 12)
                 remove.image = UIImage(named: "remove")
-                remove.backgroundColor = .background
+                remove.backgroundColor = .speaklWhite
                 return [remove]
             } else { return nil}
         }
@@ -247,7 +247,7 @@ extension CSStoryTextViewController: SwipeTableViewCellDelegate {
         options.transitionStyle = .drag
         options.buttonPadding = 8
         options.buttonSpacing = 2
-        options.backgroundColor = .background
+        options.backgroundColor = .speaklWhite
         return options
     }
 }
