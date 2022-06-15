@@ -15,9 +15,12 @@ class MainTabBarViewController: UITabBarController {
     
     let item1 = UIStoryboard(name: "Learn",
                              bundle: nil).instantiateViewController(withIdentifier: "MainViewController")
+    // TODO: Update Tab Item
     let item2 = UIStoryboard(name: "Review",
                              bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
-    let item3 = UIStoryboard(name: "Settings",
+    let item3 = UIStoryboard(name: "Review",
+                             bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
+    let item4 = UIStoryboard(name: "Settings",
                              bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
 
     override func viewDidLoad() {
@@ -37,12 +40,14 @@ class MainTabBarViewController: UITabBarController {
         item1.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_learn".localized,
                                         image: UIImage(named: "learnTab"), tag: 0)
         // TODO: Update Localization
-        item2.tabBarItem = UITabBarItem(title: "Review", // "main_nav_controller_tab_title_vocabulary".localized,
+        item2.tabBarItem = UITabBarItem(title: "Grammar", // "main_nav_controller_tab_title_vocabulary".localized,
+                                        image: UIImage(named: "grammarTab"), tag: 0)
+        item3.tabBarItem = UITabBarItem(title: "Review", // "main_nav_controller_tab_title_vocabulary".localized,
                                         image: UIImage(named: "vocabularyTab"), tag: 0)
-        item3.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_profile".localized,
+        item4.tabBarItem = UITabBarItem(title: "main_nav_controller_tab_title_profile".localized,
                                         image: UIImage(named: "profileTab"), tag: 0)
 
-        viewControllers = [item1, item2, item3]
+        viewControllers = [item1, item2, item3, item4]
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.updateTitles),
@@ -124,8 +129,9 @@ class MainTabBarViewController: UITabBarController {
     @objc func updateTitles() {
         item1.title = "main_nav_controller_tab_title_learn".localized
         // TODO: Update Localization
-        item2.title = "Review"
-        item3.title = "main_nav_controller_tab_title_profile".localized
+        item2.title = "Grammar"
+        item3.title = "Review"
+        item4.title = "main_nav_controller_tab_title_profile".localized
     }
     
     @objc func addButtonPressed(sender: UIButton!) {
@@ -151,11 +157,11 @@ class MainTabBarViewController: UITabBarController {
     
     func setNonTransparent() {
         tabBar.isTranslucent = true
-        tabBar.shadow = true
-        tabBar.layer.shadowColor = UIColor.black.cgColor
-        tabBar.layer.shadowOpacity = 0.15
+//        tabBar.shadow = true
+//        tabBar.layer.shadowColor = UIColor.black.cgColor
+//        tabBar.layer.shadowOpacity = 0.15
         tabBar.backgroundColor = .white
-        tabBar.tintColor = .speaklAccentColor
+        tabBar.tintColor = .speaklGradientTop
         tabBar.barTintColor = .white
         tabBar.unselectedItemTintColor = .lightGray
         addButton.setImage(UIImage(named: "add_stori_icon_yellow"), for: .normal)
