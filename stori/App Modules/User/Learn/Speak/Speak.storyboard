@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -72,14 +73,68 @@
                                             <constraint firstItem="MjU-u2-5AR" firstAttribute="centerY" secondItem="W6z-oZ-VxD" secondAttribute="centerY" id="vNG-my-a68"/>
                                         </constraints>
                                     </view>
-                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKc-qB-vky">
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3ur-F1-0Wy">
                                         <rect key="frame" x="44" y="96" width="326" height="642"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">When I was young, I went looking for gold in California. I never found enough to make me rich. But I did discover a beautiful part of the country. It was called “the Stanislau.” The Stanislau was like Heaven on Earth. It had bright green hills and deep forests where soft winds touched the trees.</string>
-                                        <color key="textColor" name="Text Color"/>
-                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKc-qB-vky">
+                                                <rect key="frame" x="0.0" y="0.0" width="326" height="616"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">When I was young, I went looking for gold in California. I never found enough to make me rich. But I did discover a beautiful part of the country. It was called “the Stanislau.” The Stanislau was like Heaven on Earth. It had bright green hills and deep forests where soft winds touched the trees.</string>
+                                                <color key="textColor" name="Text Color"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNS-jS-jL0">
+                                                <rect key="frame" x="0.0" y="624" width="326" height="18"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="QvI-f8-zhB">
+                                                        <rect key="frame" x="73.5" y="0.0" width="179.5" height="18"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story translated by " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPW-pA-f6C">
+                                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="18"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="12"/>
+                                                                <color key="textColor" name="Text Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42c-gV-UkW">
+                                                                <rect key="frame" x="116.5" y="0.0" width="39" height="18"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <color key="titleColor" name="Text Color"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="cSc-ev-plN" kind="show" id="HiY-wn-lwv"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LB-o1-QhP">
+                                                                <rect key="frame" x="161.5" y="0.0" width="18" height="18"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="2LB-o1-QhP" secondAttribute="height" multiplier="1:1" id="guK-2j-bWL"/>
+                                                                </constraints>
+                                                                <color key="tintColor" name="Violet"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="help_circle"/>
+                                                                <connections>
+                                                                    <segue destination="rE3-ak-Dwc" kind="custom" customClass="SwiftMessagesCenterSegue" customModule="stori" customModuleProvider="target" id="3pl-0M-fcB"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="18" id="9aF-cX-dak"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="QvI-f8-zhB" firstAttribute="centerX" secondItem="bNS-jS-jL0" secondAttribute="centerX" id="7MD-ye-vhe"/>
+                                                    <constraint firstAttribute="bottom" secondItem="QvI-f8-zhB" secondAttribute="bottom" id="ZwM-im-XMM"/>
+                                                    <constraint firstItem="QvI-f8-zhB" firstAttribute="top" secondItem="bNS-jS-jL0" secondAttribute="top" id="gY8-a2-HNB"/>
+                                                    <constraint firstItem="QvI-f8-zhB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bNS-jS-jL0" secondAttribute="leading" id="iSl-lw-5BS"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="ujI-U9-wOt">
                                         <rect key="frame" x="20" y="96" width="374" height="622"/>
                                         <subviews>
@@ -548,17 +603,17 @@
                                 </subviews>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
-                                    <constraint firstItem="kKc-qB-vky" firstAttribute="top" secondItem="W6z-oZ-VxD" secondAttribute="bottom" constant="14" id="1C1-U0-j9h"/>
-                                    <constraint firstItem="kKc-qB-vky" firstAttribute="leading" secondItem="t1I-xW-C9l" secondAttribute="leading" constant="44" id="Frw-C2-W5W"/>
                                     <constraint firstItem="W6z-oZ-VxD" firstAttribute="leading" secondItem="t1I-xW-C9l" secondAttribute="leading" id="HYI-tB-O4Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="3ur-F1-0Wy" secondAttribute="trailing" constant="44" id="IA3-mh-wif"/>
                                     <constraint firstItem="ujI-U9-wOt" firstAttribute="top" secondItem="W6z-oZ-VxD" secondAttribute="bottom" constant="14" id="JMj-sf-CQt"/>
                                     <constraint firstAttribute="trailing" secondItem="W6z-oZ-VxD" secondAttribute="trailing" id="K6b-sp-GHh"/>
+                                    <constraint firstItem="3ur-F1-0Wy" firstAttribute="leading" secondItem="t1I-xW-C9l" secondAttribute="leading" constant="44" id="Znb-3Z-KhP"/>
                                     <constraint firstAttribute="trailing" secondItem="ujI-U9-wOt" secondAttribute="trailing" constant="20" id="ayB-20-hdi"/>
                                     <constraint firstItem="TCf-kC-i3B" firstAttribute="centerX" secondItem="t1I-xW-C9l" secondAttribute="centerX" id="j92-ge-RJ6"/>
                                     <constraint firstItem="ujI-U9-wOt" firstAttribute="leading" secondItem="t1I-xW-C9l" secondAttribute="leading" constant="20" id="lRQ-3K-MTR"/>
                                     <constraint firstItem="W6z-oZ-VxD" firstAttribute="top" secondItem="t1I-xW-C9l" secondAttribute="top" constant="32" id="ouv-7F-aDN"/>
-                                    <constraint firstAttribute="trailing" secondItem="kKc-qB-vky" secondAttribute="trailing" constant="44" id="pT3-vT-ZqM"/>
                                     <constraint firstItem="TCf-kC-i3B" firstAttribute="top" secondItem="t1I-xW-C9l" secondAttribute="top" constant="16" id="rAJ-Fb-Oly"/>
+                                    <constraint firstItem="3ur-F1-0Wy" firstAttribute="top" secondItem="W6z-oZ-VxD" secondAttribute="bottom" constant="14" id="zAr-MZ-vTi"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LwU-uI-Asl">
@@ -743,12 +798,12 @@
                             <constraint firstItem="LwU-uI-Asl" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="94o-E9-cc1"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="h7I-UU-kGh" secondAttribute="bottom" constant="20" id="SRP-MW-jHz"/>
                             <constraint firstItem="t1I-xW-C9l" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="b9x-ve-X7u"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="3ur-F1-0Wy" secondAttribute="bottom" id="gj2-PV-OVH"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="WJY-et-nzs" secondAttribute="bottom" constant="20" id="hQc-F7-q4R"/>
                             <constraint firstItem="LwU-uI-Asl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hva-dZ-Uek"/>
                             <constraint firstItem="tYs-fs-Vfd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="qrk-7o-iUu"/>
                             <constraint firstItem="tYs-fs-Vfd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="r81-tV-Oxc"/>
                             <constraint firstItem="t1I-xW-C9l" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="rdy-3V-8oy"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="kKc-qB-vky" secondAttribute="bottom" id="yfW-hi-DSz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VlO-Ih-vD4"/>
@@ -763,7 +818,11 @@
                         <outlet property="levelTypeLabel" destination="TCf-kC-i3B" id="HJQ-Vv-gwM"/>
                         <outlet property="listenButton" destination="y6c-hE-OQI" id="eGk-Pl-ExY"/>
                         <outlet property="listeningProgressView" destination="wTU-0c-5TG" id="l5X-MC-j2E"/>
+                        <outlet property="nativeLanguageStackView" destination="3ur-F1-0Wy" id="jO9-7Z-4zS"/>
                         <outlet property="nativeLanguageTextView" destination="kKc-qB-vky" id="Bsr-yC-5ge"/>
+                        <outlet property="nativeLanguageTranslationButton" destination="2LB-o1-QhP" id="RPi-08-5Bb"/>
+                        <outlet property="nativeLanguageTranslationLabel" destination="SPW-pA-f6C" id="rvl-RE-rXf"/>
+                        <outlet property="nativeLanguageTranslationUserButton" destination="42c-gV-UkW" id="FZZ-GN-iNe"/>
                         <outlet property="normalSpeedButton" destination="D8u-yc-NiX" id="ILr-b4-QfT"/>
                         <outlet property="recordingActivityIndicator" destination="O1b-lK-yux" id="43F-Oc-Ygh"/>
                         <outlet property="recordingActivityIndicatorMainView" destination="o38-Er-Amo" id="Xab-YS-coJ"/>
@@ -782,6 +841,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </scene>
+        <!--UserProfile-->
+        <scene sceneID="Vyx-N7-NMt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserProfile" id="cSc-ev-plN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5aR-2Q-TKU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q0C-mL-oyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="103"/>
         </scene>
         <!--Speak Alert View Controller-->
         <scene sceneID="jIH-PP-SOA">
@@ -1118,10 +1187,19 @@
             </objects>
             <point key="canvasLocation" x="-625" y="98"/>
         </scene>
+        <!--AnonymousTranslation-->
+        <scene sceneID="Zaf-zw-eZf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AnonymousTranslation" id="rE3-ak-Dwc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j80-5l-idc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789" y="159"/>
+        </scene>
     </scenes>
     <resources>
         <image name="correct" width="32" height="32"/>
         <image name="delete" width="59" height="59"/>
+        <image name="help_circle" width="21" height="21"/>
         <image name="incorrect" width="32" height="32"/>
         <image name="recording_icon" width="16" height="16"/>
         <image name="speaker_icon" width="16" height="16"/>
@@ -1158,5 +1236,8 @@
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

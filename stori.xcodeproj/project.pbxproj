@@ -112,6 +112,8 @@
 		FA4B61BE25753CF2005501BD /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B61BD25753CF2005501BD /* FacebookManager.swift */; };
 		FA4B709426209F2A00DE2582 /* LocalizationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B709326209F2A00DE2582 /* LocalizationExtension.swift */; };
 		FA4C2B062868897D00B934AA /* TeacherReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C2B052868897D00B934AA /* TeacherReviewsViewController.swift */; };
+		FA4C2B092868BB6700B934AA /* AnonymousTranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C2B072868BB6700B934AA /* AnonymousTranslationViewController.swift */; };
+		FA4C2B0D2868BBC900B934AA /* AnonymousTranslation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4C2B0C2868BBC900B934AA /* AnonymousTranslation.storyboard */; };
 		FA4D445F257810C700398AE2 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D445E257810C700398AE2 /* Language.swift */; };
 		FA4D44622578BE0700398AE2 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D44612578BE0700398AE2 /* ResponseObject.swift */; };
 		FA4D44682578CF1E00398AE2 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D44672578CF1E00398AE2 /* Storage.swift */; };
@@ -430,6 +432,8 @@
 		FA4B61C4257543BC005501BD /* stori.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stori.entitlements; sourceTree = "<group>"; };
 		FA4B709326209F2A00DE2582 /* LocalizationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationExtension.swift; sourceTree = "<group>"; };
 		FA4C2B052868897D00B934AA /* TeacherReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherReviewsViewController.swift; sourceTree = "<group>"; };
+		FA4C2B072868BB6700B934AA /* AnonymousTranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnonymousTranslationViewController.swift; sourceTree = "<group>"; };
+		FA4C2B0C2868BBC900B934AA /* AnonymousTranslation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnonymousTranslation.storyboard; sourceTree = "<group>"; };
 		FA4D445E257810C700398AE2 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		FA4D44612578BE0700398AE2 /* ResponseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
 		FA4D44672578CF1E00398AE2 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
@@ -881,6 +885,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FA4C2B0B2868BB7200B934AA /* Anonymous Translation ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA4C2B0C2868BBC900B934AA /* AnonymousTranslation.storyboard */,
+				FA4C2B072868BB6700B934AA /* AnonymousTranslationViewController.swift */,
+			);
+			path = "Anonymous Translation ViewController";
+			sourceTree = "<group>";
+		};
 		FA4D4477257940AB00398AE2 /* Web Browser */ = {
 			isa = PBXGroup;
 			children = (
@@ -1168,6 +1181,7 @@
 				FAD2BC9A27679BD900BE6A85 /* Underlined Button */,
 				FAC93A6626DFCCE1003FACDA /* Item View With Subtitle And Checkmark */,
 				FAC93A6926DFCD39003FACDA /* Video Player View */,
+				FA4C2B0B2868BB7200B934AA /* Anonymous Translation ViewController */,
 				FA812D8D256641940036F162 /* UIGradientView.swift */,
 				FA812DA9256682F70036F162 /* RegularButton.swift */,
 				FA3C27DE256BDBFD0089F646 /* RegularTextField.swift */,
@@ -1585,6 +1599,7 @@
 				FA43D85127BEB25A00BBEF07 /* writing.mp3 in Resources */,
 				FA960AB7263AC48B001ACB21 /* UpdateLanguage.storyboard in Resources */,
 				FA43D84927BEAD8100BBEF07 /* sentence5.mp3 in Resources */,
+				FA4C2B0D2868BBC900B934AA /* AnonymousTranslation.storyboard in Resources */,
 				FAC93A6526DFCB52003FACDA /* VideoPlayerView.xib in Resources */,
 				FA6853F72599FA47008A7D63 /* IBMPlexSans-Light.ttf in Resources */,
 				FA43D84D27BEAD8100BBEF07 /* sentence1.mp3 in Resources */,
@@ -1877,6 +1892,7 @@
 				FA94560425C54BE8003E54F0 /* CSVocabularyListViewController.swift in Sources */,
 				FA81724427A3F5BB005759B8 /* RandomElements.swift in Sources */,
 				FA8593DE25E1691D004CAC9E /* CSVocabularyService.swift in Sources */,
+				FA4C2B092868BB6700B934AA /* AnonymousTranslationViewController.swift in Sources */,
 				FA7690A7278F094A001221B7 /* ListenViewController.swift in Sources */,
 				FAF398CD2772585900F1A55A /* HashtagVideoListViewController.swift in Sources */,
 				FAFF92CA25A4944500A604C3 /* JoinTNSelectUserTypeViewController.swift in Sources */,

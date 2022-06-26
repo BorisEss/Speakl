@@ -54,6 +54,19 @@ class WritingViewController: UIViewController {
         }
     }
     
+    private var isAnonymous: Bool = false {
+        didSet {
+            nativeLanguageTranslationButton.isHidden = !isAnonymous
+            nativeLanguageTranslationUserButton.isHidden = isAnonymous
+            if isAnonymous {
+                nativeLanguageTranslationLabel.text = "Translation provided by Anonymous"
+            } else {
+                nativeLanguageTranslationLabel.text = "Translation provided by"
+                nativeLanguageTranslationUserButton.setAttributedTitle("John Doe".underLined, for: .normal)
+            }
+        }
+    }
+    
     private var player: AudioPlayer = AudioPlayer()
     
     lazy var completion: (() -> Void)? = nil
@@ -69,7 +82,12 @@ class WritingViewController: UIViewController {
     
     @IBOutlet weak var learningLanguageLabel: UILabel!
     
+    @IBOutlet weak var nativeLanguageStackView: UIStackView!
     @IBOutlet weak var nativeLanguageTextView: UITextView!
+    @IBOutlet weak var nativeLanguageTranslationLabel: UILabel!
+    @IBOutlet weak var nativeLanguageTranslationUserButton: UIButton!
+    @IBOutlet weak var nativeLanguageTranslationButton: UIButton!
+    
     @IBOutlet weak var learningLanguageView: UIStackView!
     
     @IBOutlet weak var tagsCollectionView: UICollectionView!
@@ -100,6 +118,8 @@ class WritingViewController: UIViewController {
                 playPauseButton.setImage(UIImage(named: "speaker_circled_icon"), for: .normal)
             }
         }
+        
+        isAnonymous = Bool.random()
         
     }
     
@@ -178,7 +198,7 @@ class WritingViewController: UIViewController {
     }
     
     @IBAction func learningLanguageSwitchChanged(_ sender: UISwitch) {
-        nativeLanguageTextView.isHidden = sender.isOn
+        nativeLanguageStackView.isHidden = sender.isOn
         learningLanguageView.isHidden = !sender.isOn
     }
     

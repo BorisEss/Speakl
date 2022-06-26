@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Bold.ttf">
+            <string>IBMPlexSans-Bold</string>
+        </array>
+        <array key="IBMPlexSans-Regular.ttf">
+            <string>IBMPlexSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Anonymous Translation View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AnonymousTranslationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="AnonymousTranslationViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2b6-r1-s5t">
+                                <rect key="frame" x="26" y="370.5" width="362.5" height="155.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHs-dT-cD2">
+                                        <rect key="frame" x="0.0" y="0.0" width="362.5" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j9J-di-UNr">
+                                                <rect key="frame" x="156" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="j9J-di-UNr" secondAttribute="height" multiplier="1:1" id="NCb-w3-5Tf"/>
+                                                    <constraint firstAttribute="height" constant="50" id="TDc-Ba-4Da"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="j9J-di-UNr" secondAttribute="trailing" constant="8" id="7nd-qr-oAD"/>
+                                            <constraint firstItem="j9J-di-UNr" firstAttribute="centerX" secondItem="XHs-dT-cD2" secondAttribute="centerX" id="Mte-ai-aiy"/>
+                                            <constraint firstAttribute="bottom" secondItem="j9J-di-UNr" secondAttribute="bottom" id="c7E-4K-Zps"/>
+                                            <constraint firstItem="j9J-di-UNr" firstAttribute="top" secondItem="XHs-dT-cD2" secondAttribute="top" id="saI-O3-fJZ"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anonymous" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0N-b6-9Y8">
+                                        <rect key="frame" x="0.0" y="66" width="362.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="24"/>
+                                        <color key="textColor" name="Violet"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This translation was provided by a user who didn’t create yet a Speakl account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLg-V1-5Kj">
+                                        <rect key="frame" x="0.0" y="113.5" width="362.5" height="42"/>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="16"/>
+                                        <color key="textColor" name="Gradient Bottom"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2b6-r1-s5t" secondAttribute="bottom" constant="32" id="BZ8-pE-B59"/>
+                            <constraint firstItem="2b6-r1-s5t" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="Lmq-33-Nd0"/>
+                            <constraint firstItem="2b6-r1-s5t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="ROp-LO-Lu7"/>
+                            <constraint firstItem="2b6-r1-s5t" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Znd-UC-dH7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2b6-r1-s5t" secondAttribute="trailing" constant="24" id="fOe-lu-wkV"/>
+                            <constraint firstItem="2b6-r1-s5t" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="rOb-UC-nc6"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="270" height="300"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="pLg-V1-5Kj" id="rK0-66-BB1"/>
+                        <outlet property="eyeImageView" destination="j9J-di-UNr" id="Bgd-Jp-xql"/>
+                        <outlet property="titleLabel" destination="I0N-b6-9Y8" id="PaU-Ch-ljG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Gradient Bottom">
+            <color red="0.082352941176470587" green="0.10980392156862745" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Violet">
+            <color red="0.46666666666666667" green="0.28627450980392155" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

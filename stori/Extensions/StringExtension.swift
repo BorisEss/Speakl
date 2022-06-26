@@ -5,7 +5,7 @@
 //  Created by Alex on 21.11.2020.
 //
 
-import Foundation
+import UIKit
 
 extension String {
     /// This function loads string from `Localization` File for multiple languages applications.
@@ -60,5 +60,15 @@ extension String {
     /// 
     func trimTrailingPunctuation() -> String {
         return self.components(separatedBy: CharacterSet.punctuationCharacters).joined(separator: "")
+    }
+}
+
+extension String {
+    /// This function underlines the string and returns the Underlined attributed string
+    ///
+    /// - Returns: Underlined `NSAttributedString` 
+    ///
+    var underLined: NSAttributedString {
+        NSMutableAttributedString(string: self, attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
     }
 }

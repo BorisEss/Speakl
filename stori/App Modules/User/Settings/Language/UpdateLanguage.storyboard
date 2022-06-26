@@ -135,7 +135,6 @@ based on your level</string>
                         <outlet property="noDataLabel" destination="Skh-to-8Dn" id="sFy-wN-yqa"/>
                         <outlet property="progressActivityIndicator" destination="PNm-PB-tSS" id="ELn-B9-hPn"/>
                         <outlet property="tableView" destination="Rwj-C2-VLw" id="zfI-wh-oNW"/>
-                        <segue destination="ycP-Ma-qyQ" kind="show" identifier="showLevelDetails" id="Ii2-Zp-xwN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKo-8a-wtQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -147,23 +146,23 @@ based on your level</string>
             <objects>
                 <viewController storyboardIdentifier="UpdateLanguageLevelDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ycP-Ma-qyQ" customClass="UpdateLanguageLevelDetailsViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qd2-hP-h6t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FP-Zh-kd8">
-                                <rect key="frame" x="0.0" y="42" width="414" height="622"/>
+                                <rect key="frame" x="0.0" y="86" width="414" height="666"/>
                                 <connections>
                                     <segue destination="hNu-Ky-jsN" kind="embed" identifier="embededWebView" id="MJX-U7-Urn"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phn-2Q-coA">
-                                <rect key="frame" x="0.0" y="42" width="414" height="622"/>
+                                <rect key="frame" x="0.0" y="86" width="414" height="666"/>
                                 <connections>
                                     <segue destination="lJq-WV-1Y5" kind="embed" id="p6n-pm-oM6"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9af-5L-93f">
-                                <rect key="frame" x="0.0" y="664" width="414" height="110"/>
+                                <rect key="frame" x="0.0" y="752" width="414" height="110"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your can change this anytime in Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="JMD-Sx-t3h">
                                         <rect key="frame" x="98.5" y="78" width="217" height="16"/>
@@ -215,7 +214,7 @@ based on your level</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3p-aE-Uci">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="42"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRw-WL-BnQ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
@@ -360,11 +359,11 @@ based on your level</string>
             <objects>
                 <viewController storyboardIdentifier="UpdateLanguageLevelVocabularyVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lJq-WV-1Y5" customClass="UpdateLanguageLevelVocabularyVC" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="epB-CR-cUs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="622"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="666"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xvo-BO-Mxd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="578"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="622"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -373,7 +372,7 @@ based on your level</string>
                                 </connections>
                             </tableView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No items to show" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Oa-d5-nIx">
-                                <rect key="frame" x="141" y="300" width="132.5" height="22.5"/>
+                                <rect key="frame" x="141" y="322" width="132.5" height="22.5"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                 <color key="textColor" name="Text Color"/>
                                 <nil key="highlightedColor"/>
@@ -419,18 +418,18 @@ based on your level</string>
             <objects>
                 <viewController storyboardIdentifier="UpdateLanguageLevelGrammarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hNu-Ky-jsN" customClass="UpdateLanguageLevelGrammarViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ee-bl-VeL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="622"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="666"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REN-xH-Whm">
-                                <rect key="frame" x="0.0" y="44" width="414" height="578"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="622"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to show" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6f-Qr-tTk">
-                                <rect key="frame" x="145" y="300" width="124" height="22.5"/>
+                                <rect key="frame" x="145" y="322" width="124" height="22.5"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="17"/>
                                 <color key="textColor" name="Text Color"/>
                                 <nil key="highlightedColor"/>
@@ -439,7 +438,7 @@ based on your level</string>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-wh-N1D">
-                                <rect key="frame" x="197" y="301" width="20" height="20"/>
+                                <rect key="frame" x="197" y="323" width="20" height="20"/>
                                 <color key="color" name="AccentColor"/>
                             </activityIndicatorView>
                         </subviews>

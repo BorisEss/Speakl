@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -256,14 +257,68 @@
                                             <constraint firstItem="U0X-JA-VOP" firstAttribute="top" secondItem="u4P-fZ-vhG" secondAttribute="top" constant="8" id="jbA-TT-rKl"/>
                                         </constraints>
                                     </view>
-                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwY-i4-xjB">
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bRB-Le-dgs">
                                         <rect key="frame" x="44" y="166" width="326" height="478"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">When I was young, I went looking for gold in California. I never found enough to make me rich. But I did discover a beautiful part of the country. It was called “the Stanislau.” The Stanislau was like Heaven on Earth. It had bright green hills and deep forests where soft winds touched the trees.</string>
-                                        <color key="textColor" name="Text Color"/>
-                                        <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwY-i4-xjB">
+                                                <rect key="frame" x="0.0" y="0.0" width="326" height="452"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">When I was young, I went looking for gold in California. I never found enough to make me rich. But I did discover a beautiful part of the country. It was called “the Stanislau.” The Stanislau was like Heaven on Earth. It had bright green hills and deep forests where soft winds touched the trees.</string>
+                                                <color key="textColor" name="Text Color"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans" family="IBM Plex Sans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jo-Ay-AfC">
+                                                <rect key="frame" x="0.0" y="460" width="326" height="18"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="1M5-xc-JwA">
+                                                        <rect key="frame" x="74.5" y="0.0" width="177" height="18"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story translated by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFA-xi-O1N">
+                                                                <rect key="frame" x="0.0" y="0.0" width="108" height="18"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="12"/>
+                                                                <color key="textColor" name="Text Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JA-px-2ER">
+                                                                <rect key="frame" x="114" y="0.0" width="39" height="18"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <color key="titleColor" name="Text Color"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="WcY-cF-0lm" kind="show" id="i01-MV-5f5"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N60-jC-qBk">
+                                                                <rect key="frame" x="159" y="0.0" width="18" height="18"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="N60-jC-qBk" secondAttribute="height" multiplier="1:1" id="Cmo-sV-HDE"/>
+                                                                </constraints>
+                                                                <color key="tintColor" name="Violet"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="help_circle"/>
+                                                                <connections>
+                                                                    <segue destination="zM1-fW-EPB" kind="custom" customClass="SwiftMessagesCenterSegue" customModule="stori" customModuleProvider="target" id="1hM-k9-Nwx"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="18" id="ANa-Ct-ONn"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="1M5-xc-JwA" firstAttribute="centerX" secondItem="4jo-Ay-AfC" secondAttribute="centerX" id="EpT-vV-CAK"/>
+                                                    <constraint firstItem="1M5-xc-JwA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4jo-Ay-AfC" secondAttribute="leading" id="G8y-k1-Yus"/>
+                                                    <constraint firstItem="1M5-xc-JwA" firstAttribute="top" secondItem="4jo-Ay-AfC" secondAttribute="top" id="LwD-9Z-Wzd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1M5-xc-JwA" secondAttribute="bottom" id="SBU-dz-XUy"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpy-1b-zK5">
                                         <rect key="frame" x="20" y="166" width="374" height="478"/>
                                         <subviews>
@@ -294,17 +349,17 @@
                                 </subviews>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
-                                    <constraint firstItem="XwY-i4-xjB" firstAttribute="top" secondItem="u4P-fZ-vhG" secondAttribute="bottom" constant="14" id="0l1-Ly-ST4"/>
-                                    <constraint firstItem="XwY-i4-xjB" firstAttribute="leading" secondItem="bsv-ZE-VNh" secondAttribute="leading" constant="44" id="2ik-qP-HR6"/>
+                                    <constraint firstItem="bRB-Le-dgs" firstAttribute="top" secondItem="u4P-fZ-vhG" secondAttribute="bottom" constant="14" id="BQb-rd-swf"/>
                                     <constraint firstItem="u4P-fZ-vhG" firstAttribute="top" secondItem="rle-dV-sFP" secondAttribute="bottom" constant="14" id="BWf-6V-gqC"/>
                                     <constraint firstItem="1B2-qT-L5B" firstAttribute="centerX" secondItem="bsv-ZE-VNh" secondAttribute="centerX" id="Gyq-HU-5Ew"/>
+                                    <constraint firstItem="Rmv-8w-8SN" firstAttribute="top" secondItem="bRB-Le-dgs" secondAttribute="bottom" constant="14" id="I1s-PR-bqC"/>
                                     <constraint firstItem="1B2-qT-L5B" firstAttribute="centerY" secondItem="bsv-ZE-VNh" secondAttribute="centerY" id="Js9-bs-vBJ"/>
+                                    <constraint firstItem="bRB-Le-dgs" firstAttribute="leading" secondItem="bsv-ZE-VNh" secondAttribute="leading" constant="44" id="Lba-OL-eIc"/>
                                     <constraint firstItem="Mpy-1b-zK5" firstAttribute="top" secondItem="u4P-fZ-vhG" secondAttribute="bottom" constant="14" id="UMh-uI-jdo"/>
                                     <constraint firstItem="rle-dV-sFP" firstAttribute="top" secondItem="bsv-ZE-VNh" secondAttribute="top" constant="16" id="WsN-zh-fj3"/>
-                                    <constraint firstAttribute="trailing" secondItem="XwY-i4-xjB" secondAttribute="trailing" constant="44" id="atz-ZF-5ta"/>
-                                    <constraint firstItem="Rmv-8w-8SN" firstAttribute="top" secondItem="XwY-i4-xjB" secondAttribute="bottom" constant="14" id="bJI-dc-751"/>
                                     <constraint firstAttribute="trailing" secondItem="Mpy-1b-zK5" secondAttribute="trailing" constant="20" symbolic="YES" id="bUA-uJ-JgY"/>
                                     <constraint firstAttribute="trailing" secondItem="Rmv-8w-8SN" secondAttribute="trailing" constant="20" id="gwD-4P-8xY"/>
+                                    <constraint firstAttribute="trailing" secondItem="bRB-Le-dgs" secondAttribute="trailing" constant="44" id="j4t-dv-lvC"/>
                                     <constraint firstItem="Mpy-1b-zK5" firstAttribute="leading" secondItem="bsv-ZE-VNh" secondAttribute="leading" constant="20" symbolic="YES" id="jPb-dg-Jh8"/>
                                     <constraint firstItem="u4P-fZ-vhG" firstAttribute="leading" secondItem="bsv-ZE-VNh" secondAttribute="leading" id="jhM-ov-6If"/>
                                     <constraint firstAttribute="trailing" secondItem="rle-dV-sFP" secondAttribute="trailing" id="l7O-Y1-ubG"/>
@@ -433,9 +488,14 @@
                         <outlet property="languageLabel" destination="Os5-lw-8Y6" id="9hY-lt-qbD"/>
                         <outlet property="languageSwitch" destination="Z9D-sv-MFO" id="Jnr-7v-UkV"/>
                         <outlet property="learningLanguageCollectionView" destination="F5V-uS-rUd" id="ekp-BC-bXY"/>
+                        <outlet property="learningLanguageView" destination="Mpy-1b-zK5" id="mMH-dy-ymM"/>
                         <outlet property="maxTimeSliderLabel" destination="JgG-NJ-dv5" id="79c-Bn-y3R"/>
                         <outlet property="minTimeSliderLabel" destination="2vo-K8-owD" id="2du-jz-UQG"/>
+                        <outlet property="nativeLanguageStackView" destination="bRB-Le-dgs" id="diC-hl-6Mn"/>
                         <outlet property="nativeLanguageTextView" destination="XwY-i4-xjB" id="FYP-zI-Apc"/>
+                        <outlet property="nativeLanguageTranslationButton" destination="N60-jC-qBk" id="TwG-xz-cuH"/>
+                        <outlet property="nativeLanguageTranslationLabel" destination="zFA-xi-O1N" id="9Hy-Cl-mgs"/>
+                        <outlet property="nativeLanguageTranslationUserButton" destination="4JA-px-2ER" id="y9o-g4-res"/>
                         <outlet property="normalSpeedButton" destination="vEo-PR-Xhd" id="38v-ic-tkN"/>
                         <outlet property="playingView" destination="01G-u2-fAH" id="N7l-mg-usd"/>
                         <outlet property="quickSpeedButton" destination="Qfj-on-Z0r" id="71R-aw-oXz"/>
@@ -449,6 +509,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="91.741071428571431"/>
+        </scene>
+        <!--UserProfile-->
+        <scene sceneID="bHi-D2-K2B">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserProfile" id="WcY-cF-0lm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3ig-QY-mAV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpL-vf-Dbc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40" y="475"/>
+        </scene>
+        <!--AnonymousTranslation-->
+        <scene sceneID="kpI-Qh-ig2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AnonymousTranslation" id="zM1-fW-EPB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jwU-mC-iZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304" y="475"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fce-Y4-IwA">
@@ -471,6 +549,7 @@
     <resources>
         <image name="goback_2sec" width="32" height="32"/>
         <image name="goforward_2sec" width="32" height="32"/>
+        <image name="help_circle" width="21" height="21"/>
         <image name="skip-back-filled" width="17" height="17"/>
         <image name="white_close" width="48" height="48"/>
         <namedColor name="AccentColor">
@@ -491,8 +570,14 @@
         <namedColor name="Text Color">
             <color red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Violet">
+            <color red="0.46666666666666667" green="0.28627450980392155" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

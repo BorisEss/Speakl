@@ -83,6 +83,19 @@ class SpeakViewController: UIViewController {
         }
     }
     
+    private var isAnonymous: Bool = false {
+        didSet {
+            nativeLanguageTranslationButton.isHidden = !isAnonymous
+            nativeLanguageTranslationUserButton.isHidden = isAnonymous
+            if isAnonymous {
+                nativeLanguageTranslationLabel.text = "Translation provided by Anonymous"
+            } else {
+                nativeLanguageTranslationLabel.text = "Translation provided by"
+                nativeLanguageTranslationUserButton.setAttributedTitle("John Doe".underLined, for: .normal)
+            }
+        }
+    }
+    
     var speed: SpeakSpeed = .normal {
         didSet {
             normalSpeedButton.borderWidth = speed == .normal ? 3 : 0
@@ -120,7 +133,12 @@ class SpeakViewController: UIViewController {
     @IBOutlet weak var levelTypeLabel: UILabel!
     @IBOutlet weak var learningLanguageLabel: UILabel!
     
+    @IBOutlet weak var nativeLanguageStackView: UIStackView!
     @IBOutlet weak var nativeLanguageTextView: UITextView!
+    @IBOutlet weak var nativeLanguageTranslationLabel: UILabel!
+    @IBOutlet weak var nativeLanguageTranslationUserButton: UIButton!
+    @IBOutlet weak var nativeLanguageTranslationButton: UIButton!
+    
     @IBOutlet weak var learningLanguageView: UIStackView!
     
     @IBOutlet weak var normalSpeedButton: UIButton!
@@ -150,6 +168,8 @@ class SpeakViewController: UIViewController {
         closeButton.alpha = 0
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
         navigationController?.modalPresentationCapturesStatusBarAppearance = true
+        
+        isAnonymous = Bool.random()
         
         player.didUpdateProgress = { value in
             UIView.animate(withDuration: 1, delay: 0, options: [.curveLinear]) {
@@ -241,7 +261,7 @@ class SpeakViewController: UIViewController {
     }
     
     @IBAction func learningLanguageSwitchChanged(_ sender: UISwitch) {
-        nativeLanguageTextView.isHidden = sender.isOn
+        nativeLanguageStackView.isHidden = sender.isOn
         learningLanguageView.isHidden = !sender.isOn
     }
     
@@ -369,7 +389,9 @@ class SpeakViewController: UIViewController {
             }
         }
     }
-    
+}
+
+extension SpeakViewController {
     func startTimer() {
         timeValue = 0
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in

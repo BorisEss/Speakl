@@ -19,6 +19,19 @@ class ListenViewController: UIViewController {
     // MARK: - Variables
     lazy var completion: (() -> Void)? = nil
     
+    private var isAnonymous: Bool = false {
+        didSet {
+            nativeLanguageTranslationButton.isHidden = !isAnonymous
+            nativeLanguageTranslationUserButton.isHidden = isAnonymous
+            if isAnonymous {
+                nativeLanguageTranslationLabel.text = "Translation provided by Anonymous"
+            } else {
+                nativeLanguageTranslationLabel.text = "Translation provided by"
+                nativeLanguageTranslationUserButton.setAttributedTitle("John Doe".underLined, for: .normal)
+            }
+        }
+    }
+    
     private var playingSpeed: PlayingSpeed = .normal {
         didSet {
             UIView.animate(withDuration: 0.3) { [self] in
@@ -55,8 +68,13 @@ class ListenViewController: UIViewController {
     @IBOutlet weak var minTimeSliderLabel: UILabel!
     @IBOutlet weak var maxTimeSliderLabel: UILabel!
     
+    @IBOutlet weak var nativeLanguageStackView: UIStackView!
     @IBOutlet weak var nativeLanguageTextView: UITextView!
+    @IBOutlet weak var nativeLanguageTranslationLabel: UILabel!
+    @IBOutlet weak var nativeLanguageTranslationUserButton: UIButton!
+    @IBOutlet weak var nativeLanguageTranslationButton: UIButton!
     
+    @IBOutlet weak var learningLanguageView: UIView!
     @IBOutlet weak var learningLanguageCollectionView: UICollectionView!
     @IBOutlet weak var startButton: StoryLearningButton!
     @IBOutlet weak var restartButton: StoryLearningButton!
@@ -106,6 +124,8 @@ class ListenViewController: UIViewController {
                 maxTimeSliderLabel.text = player.maxTime
             }
         }
+        
+        isAnonymous = Bool.random()
         
 //        activityIndicator.startAnimating()
     }
@@ -158,8 +178,8 @@ class ListenViewController: UIViewController {
     }
     
     @IBAction func languageSwitchChanged(_ sender: UISwitch) {
-        UIView.transition(from: sender.isOn ? nativeLanguageTextView : learningLanguageCollectionView,
-                          to: sender.isOn ? learningLanguageCollectionView : nativeLanguageTextView,
+        UIView.transition(from: sender.isOn ? nativeLanguageStackView : learningLanguageView,
+                          to: sender.isOn ? learningLanguageView : nativeLanguageStackView,
                           duration: 0.3,
                           options: [.transitionCrossDissolve, .showHideTransitionViews]) { _ in }
     }

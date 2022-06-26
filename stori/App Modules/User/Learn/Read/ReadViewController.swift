@@ -54,6 +54,19 @@ class ReadViewController: UIViewController {
         }
     }
     
+    private var isAnonymous: Bool = false {
+        didSet {
+            nativeLanguageTranslationButton.isHidden = !isAnonymous
+            nativeLanguageTranslationUserButton.isHidden = isAnonymous
+            if isAnonymous {
+                nativeLanguageTranslationLabel.text = "Translation provided by Anonymous"
+            } else {
+                nativeLanguageTranslationLabel.text = "Translation provided by"
+                nativeLanguageTranslationUserButton.setAttributedTitle("John Doe".underLined, for: .normal)
+            }
+        }
+    }
+    
     lazy var completion: (() -> Void)? = nil
 
     @IBOutlet weak var cardView: UIView!
@@ -64,6 +77,9 @@ class ReadViewController: UIViewController {
     
     @IBOutlet weak var nativeLanguageView: UIStackView!
     @IBOutlet weak var nativeLanguageTextView: UITextView!
+    @IBOutlet weak var nativeLanguageTranslationLabel: UILabel!
+    @IBOutlet weak var nativeLanguageTranslationUserButton: UIButton!
+    @IBOutlet weak var nativeLanguageTranslationButton: UIButton!
     
     @IBOutlet weak var learningLanguageView: UIStackView!
     @IBOutlet weak var learningLanguageWordsView: TagListView!
@@ -87,6 +103,7 @@ class ReadViewController: UIViewController {
         pageSlider.maxCount = UInt(paragraphs.count)
         learningLanguageWordsView.delegate = self
         learningLanguageWordsView.textFont = .IBMPlexSans(size: 14)
+        isAnonymous = Bool.random()
     }
     
     override func viewWillAppear(_ animated: Bool) {

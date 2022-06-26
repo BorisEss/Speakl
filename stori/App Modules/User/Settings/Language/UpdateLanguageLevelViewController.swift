@@ -32,14 +32,6 @@ class UpdateLanguageLevelViewController: UIViewController {
         if !levels.isEmpty { checkItem() }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let nextVc =  segue.destination as? UpdateLanguageLevelDetailsViewController,
-           let indexPath = tableView.indexPathForSelectedRow {
-            nextVc.language = language
-            nextVc.level = levels[indexPath.row]
-        }
-    }
-    
     private func setUpTableView() {
         tableView.register(UpdateLevelTableViewCell.nib(),
                            forCellReuseIdentifier: UpdateLevelTableViewCell.identifier)
@@ -109,6 +101,18 @@ extension UpdateLanguageLevelViewController: UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Vibration().light()
-        performSegue(withIdentifier: "showLevelDetails", sender: nil)
+        let level = levels[indexPath.row]
+        guard let language = language else { return }
+        UserClient.updateLanguageLevel(language: language, level: level)
+            .ensure {
+            }
+            .done { _ in
+                Toast.success("edit_learning_level_success".localized)
+                self.navigationController?.popToRootViewController(animated: true)
+                self.navigationController?.setNavigationBarHidden(true, animated: true)
+            }
+            .catch { error in
+                error.parse()
+            }
     }
 }
