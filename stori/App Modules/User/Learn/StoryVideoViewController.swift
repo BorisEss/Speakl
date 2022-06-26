@@ -200,11 +200,13 @@ class StoryVideoViewController: UIViewController {
     @IBAction func commentsPressed(_ sender: Any) {
         // TODO: Finish comments view
         let storyBoard: UIStoryboard = UIStoryboard(name: "Comments", bundle: nil)
-        let nextScreen = storyBoard.instantiateViewController(withIdentifier: "CommentsViewController")
-        if let unwrappedNextScreen = nextScreen as? CommentsViewController {
-            unwrappedNextScreen.isModalInPresentation = true
-            self.present(unwrappedNextScreen, animated: true)
-        }
+        let nextScreen = storyBoard.instantiateViewController(withIdentifier: "CommentsNavigationController")
+//        if let unwrappedNextScreen = nextScreen.navigationController?.viewControllers.first as? CommentsViewController {
+//            unwrappedNextScreen.isModalInPresentation = true
+//            self.present(unwrappedNextScreen, animated: true)
+        nextScreen.isModalInPresentation = true
+        present(nextScreen, animated: true)
+//        }
     }
     
     @IBAction func likeButtonPressed(_ sender: Any) {

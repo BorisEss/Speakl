@@ -57,6 +57,13 @@ class CommentsViewController: UIViewController {
         commentTextField.becomeFirstResponder()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if let nextVc = segue.destination as? UserProfileViewController {
+            nextVc.isTeacher = false
+        }
+    }
+    
     func presentationControllerShouldDismiss(_ presentationController: UIPresentationController) -> Bool {
         return false
     }
@@ -96,6 +103,10 @@ extension CommentsViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         return mainCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showUserProfile", sender: nil)
     }
 }
 
