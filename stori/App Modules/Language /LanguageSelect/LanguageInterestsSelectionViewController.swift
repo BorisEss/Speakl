@@ -23,6 +23,8 @@ class LanguageInterestsSelectionViewController: UIViewController {
     }
     var dataLoaded: Bool = false
     
+    var selectedInterests: Int = 0
+    
     // MARK: - Outlets
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
@@ -117,56 +119,36 @@ class LanguageInterestsSelectionViewController: UIViewController {
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
 extension LanguageInterestsSelectionViewController: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return interests.count
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return interests.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let mainCell = tableView.dequeueReusableCell(withIdentifier: InterestTableViewCell.identifier),
            let cell = mainCell as? InterestTableViewCell {
-            cell.setUp(interest: interests[indexPath.section])
+            cell.setUp(interest: interests[indexPath.row])
+            cell.beginUpdate = {
+                self.tableView.beginUpdates()
+            }
+            cell.endUpdate = {
+                self.tableView.endUpdates()
+            }
+            cell.interestAction = { (isSelected, interest) in
+                print(interest)
+                if isSelected {
+                    self.selectedInterests += 1
+                } else {
+                    self.selectedInterests -= 1
+                }
+                self.checkSelectedItems()
+            }
             return cell
         }
         return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        if (tableView.indexPathsForSelectedRows ?? []).contains(indexPath) {
-            tableView.deselectRow(at: indexPath, animated: true)
-            return nil
-        } else {
-            return indexPath
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        checkSelectedItems()
-    }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        checkSelectedItems()
-    }
-    
     private func checkSelectedItems() {
-        nextButton.isEnabled = !(tableView.indexPathsForSelectedRows?.isEmpty ?? true)
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return InterestTableViewCell.height
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 20
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = .clear
-        return headerView
+        nextButton.isEnabled = selectedInterests != 0
     }
 }
 
