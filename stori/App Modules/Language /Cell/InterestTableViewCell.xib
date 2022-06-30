@@ -83,11 +83,6 @@
                             <constraint firstAttribute="trailing" secondItem="7hb-mN-06p" secondAttribute="trailing" constant="20" id="eff-DE-Kx1"/>
                             <constraint firstAttribute="height" constant="32" id="mFE-Zt-Z9k"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="S3N-Ro-Psz"/>
-                            </mask>
-                        </variation>
                     </view>
                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3AO-89-3Kt">
                         <rect key="frame" x="0.0" y="40" width="342" height="0.0"/>
@@ -200,11 +195,6 @@
             <point key="canvasLocation" x="115.94202898550725" y="155.35714285714286"/>
         </tableViewCell>
     </objects>
-    <designables>
-        <designable name="wih-Z1-rkQ">
-            <size key="intrinsicContentSize" width="302" height="28"/>
-        </designable>
-    </designables>
     <resources>
         <image name="tint_right_arrow" width="9.5" height="16"/>
         <namedColor name="AccentColor">
