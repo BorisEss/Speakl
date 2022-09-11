@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Articles",
+        "icon": "triangle",
+        "url": "articles",
+        "has_subcategories": true
+    },
+    {
+        "id": 2,
+        "name": "Adjectifs",
+        "icon": "square",
+        "url": "adjectifs",
+        "has_subcategories": true
+    },
+    {
+        "id": 3,
+        "name": "Pronoms",
+        "icon": "circle",
+        "url": "pronoms",
+        "has_subcategories": true
+    },
+    {
+        "id": 4,
+        "name": "Adverbes",
+        "icon": "pentagon",
+        "url": "adverbes",
+        "has_subcategories": false
+    },
+    {
+        "id": 5,
+        "name": "Prepositions",
+        "icon": "diamond",
+        "url": "prepositions",
+        "has_subcategories": false
+    },
+    {
+        "id": 6,
+        "name": "Conjunctions",
+        "icon": "star",
+        "url": "conjunctions",
+        "has_subcategories": false
+    },
+    {
+        "id": 7,
+        "name": "Interjections",
+        "icon": "heart",
+        "url": "interjections",
+        "has_subcategories": false
+    }
+]

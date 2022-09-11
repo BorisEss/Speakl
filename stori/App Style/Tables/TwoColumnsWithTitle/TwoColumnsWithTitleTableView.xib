@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoColumnsWithTitleTableView" customModule="stori" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="oy1-0f-x7T"/>
+                <outlet property="spreadsheetView" destination="YgX-Dw-d1b" id="hKG-T2-5kC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="313"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YgX-Dw-d1b" customClass="SpreadsheetView" customModule="SpreadsheetView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="269"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YgX-Dw-d1b" secondAttribute="bottom" id="4ht-PX-rGU"/>
+                <constraint firstItem="YgX-Dw-d1b" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XnQ-iM-Dye"/>
+                <constraint firstItem="YgX-Dw-d1b" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="g8h-RG-Uao"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YgX-Dw-d1b" secondAttribute="trailing" id="kp8-dy-NRR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="-64.620535714285708"/>
+        </view>
+    </objects>
+</document>

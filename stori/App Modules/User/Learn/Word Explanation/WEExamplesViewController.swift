@@ -9,10 +9,19 @@ import UIKit
 
 class WEExamplesViewController: UIViewController {
 
+    weak var scrollDelegate: UICustomScrollDelegate?
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
+}
+
+extension WEExamplesViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollDelegate?.scrollViewDidScroll(scrollView)
+    }
 }

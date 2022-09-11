@@ -1,0 +1,28 @@
+{
+    "id": 1,
+    "name": "Articles",
+    "icon": "triangle",
+    "explanation": "Explanation: Sed ut consequat maecenas enim, integer. Amet, amet massa mollis elementum bibendum sit feugiat sem. Egestas habitant adipiscing fames eu aenean. Nisi non velit.",
+    "categories": [
+        {
+            "id": 1,
+            "name": "Articles indéfinis",
+            "url": "articles_indefinis"
+        },
+        {
+            "id": 2,
+            "name": "Articles définis",
+            "url": "articles_definis"
+        },
+        {
+            "id": 3,
+            "name": "Articles définis contractés",
+            "url": "articles_definis_contractes"
+        },
+        {
+            "id": 4,
+            "name": "Articles partitifs",
+            "url": "articles_partitifs"
+        }
+    ]
+}

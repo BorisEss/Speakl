@@ -1,0 +1,70 @@
+{
+    "id": 6,
+    "name": "Conjunctions",
+    "icon": "star",
+    "explanation": "Explanation: Sed ut consequat maecenas enim, integer. Amet, amet massa mollis elementum bibendum sit feugiat sem. Egestas habitant adipiscing fames eu aenean. Nisi non velit.",
+    "table": {
+        "table_type": 4,
+        "title": "Conjonctions",
+        "data": [
+            ["Conjonctions de coordination", "mais"],
+            ["Conjonctions de coordination", "ou"],
+            ["Conjonctions de coordination", "et"],
+            ["Conjonctions de coordination", "donc"],
+            ["Conjonctions de coordination", "or"],
+            ["Conjonctions de coordination", "ni"],
+            ["Conjonctions de coordination", "car"],
+            ["Conjonctions de subordination simples", "que"],
+            ["Conjonctions de subordination simples", "quand"],
+            ["Conjonctions de subordination simples", "comme"],
+            ["Conjonctions de subordination simples", "quoique"],
+            ["Conjonctions de subordination simples", "si"],
+            ["Conjonctions de subordination simples", "lorsque"],
+            ["Conjonctions de subordination simples", "pourtant"],
+            ["Conjonctions de subordination simples", "cependant"],
+            ["Conjonctions de subordination simples", "toutefois"],
+            ["Conjonctions de subordination simples", "néanmoins"],
+            ["Conjonctions de subordination simples", "ainsi"],
+            ["Conjonctions de subordination simples", "donc"],
+            ["Conjonctions de subordination simples", "sinon"],
+            ["Conjonctions de subordination composées", "alors que"],
+            ["Conjonctions de subordination composées", "tandis que"],
+            ["Conjonctions de subordination composées", "ainsi que"],
+            ["Conjonctions de subordination composées", "à condition que"],
+            ["Conjonctions de subordination composées", "pourvu que"],
+            ["Conjonctions de subordination composées", "à moins que"],
+            ["Conjonctions de subordination composées", "pour que"],
+            ["Conjonctions de subordination composées", "afin que"],
+            ["Conjonctions de subordination composées", "de crainte que"],
+            ["Conjonctions de subordination composées", "de peur que"],
+            ["Conjonctions de subordination composées", "de façon que"],
+            ["Conjonctions de subordination composées", "de manière que"],
+            ["Conjonctions de subordination composées", "de sorte que"],
+            ["Conjonctions de subordination composées", "de même que"],
+            ["Conjonctions de subordination composées", "depuis que"],
+            ["Conjonctions de subordination composées", "pendant que"],
+            ["Conjonctions de subordination composées", "aussitôt que"],
+            ["Conjonctions de subordination composées", "jusqu’à ce que"],
+            ["Conjonctions de subordination composées", "malgré que"],
+            ["Conjonctions de subordination composées", "plutôt que"],
+            ["Conjonctions de subordination composées", "vu que"]
+        ],
+        "merged_items": [
+            {
+                "from": { "row": 1, "column": 0 },
+                "to": { "row": 7, "column": 0 }
+            },
+            {
+                "from": { "row": 8, "column": 0 },
+                "to": { "row": 20, "column": 0 }
+            },
+            {
+                "from": { "row": 21, "column": 0 },
+                "to": { "row": 41, "column": 0 }
+            }
+        ]
+    },
+    "stories": [
+        "1", "2", "3"
+    ]
+}

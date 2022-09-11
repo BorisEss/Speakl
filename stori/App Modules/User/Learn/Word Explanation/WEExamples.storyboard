@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A8w-9d-Wyr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Bold.ttf">
+            <string>IBMPlexSans-Bold</string>
+        </array>
+        <array key="IBMPlexSans-Light.ttf">
+            <string>IBMPlexSans-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Examples View Controller-->
+        <scene sceneID="v4G-WD-UTG">
+            <objects>
+                <viewController storyboardIdentifier="WEExamplesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A8w-9d-Wyr" customClass="WEExamplesViewController" customModule="stori" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tog-9G-GYW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4p-fE-kFh">
+                                <rect key="frame" x="20" y="0.0" width="374" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="lTu-Rj-M3i">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="237.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBV-OQ-isQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="0.0"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="gWF-Dg-c4M"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="buB-TR-cbJ">
+                                                <rect key="frame" x="0.0" y="32" width="374" height="102.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nariz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OI-Q1-oKA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31.5"/>
+                                                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="24"/>
+                                                        <color key="textColor" name="Gradient Bottom"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↓" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzb-P0-qAa">
+                                                        <rect key="frame" x="0.0" y="35.5" width="374" height="31.5"/>
+                                                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="24"/>
+                                                        <color key="textColor" name="Gray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nose" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATJ-qJ-B3h">
+                                                        <rect key="frame" x="0.0" y="71" width="374" height="31.5"/>
+                                                        <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="24"/>
+                                                        <color key="textColor" name="Text Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkR-px-5Pc">
+                                                <rect key="frame" x="0.0" y="166.5" width="374" height="71"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Tener la nariz ~ grande / afilada / pequeña;  
+la forma de su nariz ~ shape of your nose.</string>
+                                                <color key="textColor" name="Text Color"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Light" family="IBM Plex Sans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lTu-Rj-M3i" secondAttribute="bottom" id="9AB-k0-T1C"/>
+                                    <constraint firstItem="lTu-Rj-M3i" firstAttribute="top" secondItem="d4p-fE-kFh" secondAttribute="top" id="YWf-ln-8Qn"/>
+                                    <constraint firstItem="lTu-Rj-M3i" firstAttribute="width" secondItem="d4p-fE-kFh" secondAttribute="width" id="g1N-m3-jNX"/>
+                                    <constraint firstItem="lTu-Rj-M3i" firstAttribute="leading" secondItem="d4p-fE-kFh" secondAttribute="leading" id="lMB-ge-qpm"/>
+                                    <constraint firstAttribute="trailing" secondItem="lTu-Rj-M3i" secondAttribute="trailing" id="nOc-rO-GH1"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="A8w-9d-Wyr" id="6Xk-Yb-zlE"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Np2-ej-quM"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d4p-fE-kFh" firstAttribute="leading" secondItem="Np2-ej-quM" secondAttribute="leading" constant="20" id="I4o-yl-hsx"/>
+                            <constraint firstItem="d4p-fE-kFh" firstAttribute="top" secondItem="tog-9G-GYW" secondAttribute="top" id="Ms0-bc-4tS"/>
+                            <constraint firstAttribute="bottom" secondItem="d4p-fE-kFh" secondAttribute="bottom" id="UG5-UN-y2V"/>
+                            <constraint firstItem="Np2-ej-quM" firstAttribute="trailing" secondItem="d4p-fE-kFh" secondAttribute="trailing" constant="20" id="qMT-Lb-6eo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="d4p-fE-kFh" id="zOC-Cm-Gl6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFJ-Bx-mQ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2175" y="969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Gradient Bottom">
+            <color red="0.082352941176470587" green="0.10980392156862745" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Color">
+            <color red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

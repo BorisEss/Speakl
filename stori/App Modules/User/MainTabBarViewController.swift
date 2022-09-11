@@ -16,7 +16,7 @@ class MainTabBarViewController: UITabBarController {
     let item1 = UIStoryboard(name: "Learn",
                              bundle: nil).instantiateViewController(withIdentifier: "MainViewController")
     // TODO: Update Tab Item
-    let item2 = UIStoryboard(name: "Review",
+    let item2 = UIStoryboard(name: "Grammar",
                              bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")
     let item3 = UIStoryboard(name: "Review",
                              bundle: nil).instantiateViewController(withIdentifier: "MainNavigationViewController")

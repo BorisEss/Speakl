@@ -1,0 +1,42 @@
+{
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "table": {
+        "table_type": 3,
+        "title": "Articles définis contractés",
+        "subtitle_1": ["Singulier", "Pluriel"],
+        "subtitle_2": ["masculin", "féminin", "masculin", "féminin"],
+        "data": [
+            ["au (= à + le)", "à la'", "aux (= à + les)", "aux (= à + les)"],
+            ["au (= à + le)", "à l'", "aux (= à + les)", "aux (= à + les)"],
+            ["du (= de + le)", "de la'", "des (= de + les)", "des (= de + les)"],
+            ["du (= de + le)", " de l'", "des (= de + les)", "des (= de + les)"]
+        ],
+        "merged_items": [
+            {
+                "from": { "row": 3, "column": 0 },
+                "to": { "row": 4, "column": 0 }
+            },
+            {
+                "from": { "row": 5, "column": 0 },
+                "to": { "row": 6, "column": 0 }
+            },
+            {
+                "from": { "row": 3, "column": 2 },
+                "to": { "row": 4, "column": 2 }
+            },
+            {
+                "from": { "row": 3, "column": 3 },
+                "to": { "row": 4, "column": 3 }
+            },
+            {
+                "from": { "row": 5, "column": 2 },
+                "to": { "row": 6, "column": 2 }
+            },
+            {
+                "from": { "row": 5, "column": 3 },
+                "to": { "row": 6, "column": 3 }
+            }
+        ]
+    },
+    "stories": [ "1", "2", "3" ]
+}

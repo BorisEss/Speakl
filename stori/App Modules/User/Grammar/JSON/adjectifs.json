@@ -1,0 +1,28 @@
+{
+    "id": 2,
+    "name": "Adjectifs",
+    "icon": "square",
+    "explanation": "Explanation: Sed ut consequat maecenas enim, integer. Amet, amet massa mollis elementum bibendum sit feugiat sem. Egestas habitant adipiscing fames eu aenean. Nisi non velit.",
+    "categories": [
+        {
+            "id": 1,
+            "name": "Adjectifs possessifs",
+            "url": "adjectifs_possessifs"
+        },
+        {
+            "id": 2,
+            "name": "Adjectifs démonstratifs",
+            "url": "adjectifs_demonstratifs"
+        },
+        {
+            "id": 3,
+            "name": "Adjectifs interrogatifs et exclamatifs",
+            "url": "adjectifs_interrogatifs_et_exclamatifs"
+        },
+        {
+            "id": 4,
+            "name": "Adjectifs indéfinis",
+            "url": "adjectifs_indefinis"
+        }
+    ]
+}

@@ -57,6 +57,7 @@ target 'stori' do
   pod 'StepSlider'                # Custom UISlider with stepping control
   pod 'MBCircularProgressBar'     # A circular progress bar(it is used in Speak Module to show the progres of the audio over the 'Speaker' button)
   pod 'GrowingTextView'           # Growing UITextView for comments text view
+  pod 'SpreadsheetView'           # Spreadsheet Library to create Grammar Tables
 
   
   # Should be deleted

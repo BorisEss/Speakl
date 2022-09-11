@@ -1,0 +1,77 @@
+{
+    "id": 5,
+    "name": "Prepositions",
+    "icon": "diamond",
+    "explanation": "Explanation: Sed ut consequat maecenas enim, integer. Amet, amet massa mollis elementum bibendum sit feugiat sem. Egestas habitant adipiscing fames eu aenean. Nisi non velit.",
+    "table": {
+        "table_type": 4,
+        "title": "Prépositions",
+        "data": [
+            ["Prépositions de lieu", "chez"],
+            ["Prépositions de lieu", "devant"],
+            ["Prépositions de lieu", "derrière"],
+            ["Prépositions de lieu", "au-dessus de"],
+            ["Prépositions de lieu", "au-dessous de"],
+            ["Prépositions de lieu", "hors de"],
+            ["Prépositions de lieu", "loin de"],
+            ["Prépositions de lieu", "près de"],
+            ["Prépositions de lieu", "à côté de"],
+            ["Prépositions de lieu", "en face de"],
+            ["Prépositions de lieu", "le long de"],
+            ["Prépositions de lieu", "à travers"],
+            ["Prépositions de lieu", "au-delà de"],
+            ["Prépositions de lieu", "à gauche de"],
+            ["Prépositions de lieu", "à droite de"],
+            ["Prépositions de temps", "avant"],
+            ["Prépositions de temps", "après"],
+            ["Prépositions de temps", "pendant"],
+            ["Prépositions de temps", "durant"],
+            ["Prépositions de temps", "depuis"],
+            ["Prépositions de temps", "dès"],
+            ["Prépositions de temps", "il y a"],
+            ["Prépositions de temps", "dans"],
+            ["Prépositions de temps", "en"],
+            ["Prépositions de temps", "pour"],
+            ["Prépositions de temps", "jusque"],
+            ["Prépositions de temps", "en attendant"],
+            ["Prépositions de manière ou de moyen", "à l’aide de"],
+            ["Prépositions de manière ou de moyen", "au moyen de"],
+            ["Prépositions de manière ou de moyen", "à la manière de"],
+            ["Prépositions de manière ou de moyen", "sans"],
+            ["Prépositions de manière ou de moyen", "avec"],
+            ["Prépositions de manière ou de moyen", "selon"],
+            ["Prépositions de manière ou de moyen", "dans"],
+            ["Prépositions de sens multiples (lieu, temps, manière)", "par"],
+            ["Prépositions de sens multiples (lieu, temps, manière)", "sur"],
+            ["Prépositions de sens multiples (lieu, temps, manière)", "sous"],
+            ["Prépositions de sens multiples (lieu, temps, manière)", "dans"],
+            ["Prépositions de sens multiples (lieu, temps, manière)", "en"],
+            ["Prépositions de sens multiples (lieu, temps, manière)", "vers"],
+            ["Prépositions de sens multiples (lieu, temps, manière)", "jusqu’à"],
+            ["Prépositions de sens multiples (lieu, temps, manière)", "entre"],
+            ["Prépositions de sens multiples (lieu, temps, manière)", "pour"],
+            ["Prépositions de sens multiples (lieu, temps, manière)", "à partir de"]
+        ],
+        "merged_items": [
+            {
+                "from": { "row": 1, "column": 0 },
+                "to": { "row": 15, "column": 0 }
+            },
+            {
+                "from": { "row": 16, "column": 0 },
+                "to": { "row": 28, "column": 0 }
+            },
+            {
+                "from": { "row": 29, "column": 0 },
+                "to": { "row": 35, "column": 0 }
+            },
+            {
+                "from": { "row": 36, "column": 0 },
+                "to": { "row": 44, "column": 0 }
+            }
+        ]
+    },
+    "stories": [
+        "1", "2", "3"
+    ]
+}

@@ -22,7 +22,7 @@ class UnderlinedButton: UIButton {
     @IBInspectable var isChecked: Bool = true {
         didSet {
             UIView.animate(withDuration: 0.3) {
-                self.buttonLabel.textColor = self.isChecked ? .speaklGradientBottom : .speaklGreyLight
+                self.buttonLabel.textColor = self.isChecked ? .speaklGradientBottom : .speaklGray
                 self.underlineView.backgroundColor = self.isChecked ? .speaklGradientBottom : .speaklGreyLight
                 self.layoutIfNeeded()
             } completion: { _ in

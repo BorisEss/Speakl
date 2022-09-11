@@ -54,6 +54,15 @@
 		FA29BE6F281FF13B006524EC /* ReviewWordButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA29BE6E281FF13B006524EC /* ReviewWordButton.xib */; };
 		FA2AB11B281AF58000D05940 /* ReviewTopicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2AB119281AF58000D05940 /* ReviewTopicCollectionViewCell.swift */; };
 		FA2AB11C281AF58000D05940 /* ReviewTopicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2AB11A281AF58000D05940 /* ReviewTopicCollectionViewCell.xib */; };
+		FA30188C2887CE570041CECB /* Grammar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA30188B2887CE570041CECB /* Grammar.storyboard */; };
+		FA30188E28881EDA0041CECB /* GrammarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30188D28881EDA0041CECB /* GrammarViewController.swift */; };
+		FA301891288825410041CECB /* GrammarCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301890288825410041CECB /* GrammarCategoryCollectionViewCell.swift */; };
+		FA3018932888386D0041CECB /* GrammarCategoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3018922888386D0041CECB /* GrammarCategoryDetailsViewController.swift */; };
+		FA31048528BB4A4400830479 /* TwoColumnsWithTitleTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA31048428BB4A4400830479 /* TwoColumnsWithTitleTableView.xib */; };
+		FA31048728BB4A5500830479 /* TwoColumnsWithTitleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31048628BB4A5500830479 /* TwoColumnsWithTitleTableView.swift */; };
+		FA31048928BB4A8F00830479 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31048828BB4A8F00830479 /* TextCell.swift */; };
+		FA31048C28BB53B500830479 /* ThreeColumnsTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA31048B28BB53B500830479 /* ThreeColumnsTableView.xib */; };
+		FA31048E28BB53C300830479 /* ThreeColumnsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31048D28BB53C300830479 /* ThreeColumnsTableView.swift */; };
 		FA333DAC27EC89E700E6B5A1 /* WordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA333DAA27EC89E700E6B5A1 /* WordCollectionViewCell.swift */; };
 		FA333DAD27EC89E700E6B5A1 /* WordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA333DAB27EC89E700E6B5A1 /* WordCollectionViewCell.xib */; };
 		FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */; };
@@ -63,6 +72,33 @@
 		FA36E569281F0A4800000477 /* ReviewTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36E568281F0A4800000477 /* ReviewTrainingViewController.swift */; };
 		FA36E56B281F0A5400000477 /* ReviewTrainingGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36E56A281F0A5400000477 /* ReviewTrainingGameViewController.swift */; };
 		FA36E56D281F0A6100000477 /* ReviewTrainingScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36E56C281F0A6100000477 /* ReviewTrainingScoreViewController.swift */; };
+		FA39763028C8840900167305 /* GrammarObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39762F28C8840900167305 /* GrammarObjects.swift */; };
+		FA39763228C8BAC100167305 /* adjectifs.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39763128C8BAC100167305 /* adjectifs.json */; };
+		FA39763428C8BAD000167305 /* pronoms.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39763328C8BAD000167305 /* pronoms.json */; };
+		FA39763628C8BAD900167305 /* adverbes.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39763528C8BAD900167305 /* adverbes.json */; };
+		FA39763828C8BAE200167305 /* prepositions.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39763728C8BAE200167305 /* prepositions.json */; };
+		FA39763A28C8BAEA00167305 /* conjunctions.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39763928C8BAE900167305 /* conjunctions.json */; };
+		FA39763E28C8DB2400167305 /* adjectifs_possessifs.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39763D28C8DB2400167305 /* adjectifs_possessifs.json */; };
+		FA39764028C8DB2C00167305 /* adjectifs_demonstratifs.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39763F28C8DB2C00167305 /* adjectifs_demonstratifs.json */; };
+		FA39764228C8DB3500167305 /* adjectifs_interrogatifs_et_exclamatifs.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39764128C8DB3500167305 /* adjectifs_interrogatifs_et_exclamatifs.json */; };
+		FA39764428C8DB4000167305 /* adjectifs_indefinis.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39764328C8DB4000167305 /* adjectifs_indefinis.json */; };
+		FA39764628C8DB6100167305 /* pronoms_personnels_sujets.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39764528C8DB6100167305 /* pronoms_personnels_sujets.json */; };
+		FA39764828C8DB6900167305 /* pronoms_toniques.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39764728C8DB6900167305 /* pronoms_toniques.json */; };
+		FA39764A28C8DB7300167305 /* pronoms_personnels_cod.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39764928C8DB7300167305 /* pronoms_personnels_cod.json */; };
+		FA39764C28C8DB7A00167305 /* pronoms_personnels_coi.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39764B28C8DB7A00167305 /* pronoms_personnels_coi.json */; };
+		FA39764E28C8DB8100167305 /* pronoms_reflechis.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39764D28C8DB8100167305 /* pronoms_reflechis.json */; };
+		FA39765028C8DB8B00167305 /* pronoms_demonstratifs.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39764F28C8DB8B00167305 /* pronoms_demonstratifs.json */; };
+		FA39765228C8DBA000167305 /* pronoms_interrogatifs.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39765128C8DBA000167305 /* pronoms_interrogatifs.json */; };
+		FA39765428C8DBA900167305 /* pronoms_possessifs.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39765328C8DBA900167305 /* pronoms_possessifs.json */; };
+		FA39765628C8DBB200167305 /* pronoms_adverbiaux_en_et_y.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39765528C8DBB200167305 /* pronoms_adverbiaux_en_et_y.json */; };
+		FA39765828C8DBBA00167305 /* pronoms_relatifs_simples.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39765728C8DBBA00167305 /* pronoms_relatifs_simples.json */; };
+		FA39765A28C8DBC200167305 /* pronoms_relatifs_composes.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39765928C8DBC200167305 /* pronoms_relatifs_composes.json */; };
+		FA39765C28C8DBCE00167305 /* pronoms_indefinis.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39765B28C8DBCE00167305 /* pronoms_indefinis.json */; };
+		FA39765E28C9AE9400167305 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39765D28C9AE9400167305 /* CollectionExtension.swift */; };
+		FA39766028C9BDAA00167305 /* FourColumnsTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA39765F28C9BDAA00167305 /* FourColumnsTableView.xib */; };
+		FA39766228C9BDBD00167305 /* FourColumnsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39766128C9BDBD00167305 /* FourColumnsTableView.swift */; };
+		FA39766428C9C1CD00167305 /* TwoColumnsGrouppedTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA39766328C9C1CD00167305 /* TwoColumnsGrouppedTableView.xib */; };
+		FA39766628C9C1DF00167305 /* TwoColumnsGrouppedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39766528C9C1DF00167305 /* TwoColumnsGrouppedTableView.swift */; };
 		FA3A467526381A7A00BF0CB5 /* ShareFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */; };
 		FA3A467726381A8300BF0CB5 /* ShareFeedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */; };
 		FA3A467926381F5100BF0CB5 /* ShareFeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467826381F5100BF0CB5 /* ShareFeedbackService.swift */; };
@@ -138,6 +174,7 @@
 		FA5608C9261F2D150062EE88 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5608C8261F2D150062EE88 /* SettingsViewController.swift */; };
 		FA5608E6262034070062EE88 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5608E5262034070062EE88 /* IBMPlexSans-Medium.ttf */; };
 		FA5BCFBE27038CE8004A6B08 /* AppShadowNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BCFBD27038CE8004A6B08 /* AppShadowNavigationViewController.swift */; };
+		FA5F5F3328CE36D3004964DE /* interjections.json in Resources */ = {isa = PBXBuildFile; fileRef = FA5F5F3228CE36D3004964DE /* interjections.json */; };
 		FA63DA39258CF3D400722CA6 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */; };
 		FA63DA3C258CF3EC00722CA6 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */; };
 		FA63DA3F258D030900722CA6 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63DA3E258D030900722CA6 /* NotificationExtension.swift */; };
@@ -154,6 +191,10 @@
 		FA6853FE259B0DE3008A7D63 /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6853FD259B0DE3008A7D63 /* UINavigationBarExtension.swift */; };
 		FA6B0015258116B700438E80 /* LanguageLevelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B0014258116B700438E80 /* LanguageLevelSelectionViewController.swift */; };
 		FA6EDD2E27466D940028EC91 /* AVPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EDD2D27466D940028EC91 /* AVPlayerExtension.swift */; };
+		FA71445F288E8EDB00D669FB /* WEDictionary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA71445E288E8EDB00D669FB /* WEDictionary.storyboard */; };
+		FA714461288E8EE800D669FB /* WEPronunciation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA714460288E8EE800D669FB /* WEPronunciation.storyboard */; };
+		FA714463288E8EF400D669FB /* WEExamples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA714462288E8EF400D669FB /* WEExamples.storyboard */; };
+		FA714465288E8F0500D669FB /* WEExpressions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA714464288E8F0500D669FB /* WEExpressions.storyboard */; };
 		FA7690A5278F090A001221B7 /* Listen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7690A4278F090A001221B7 /* Listen.storyboard */; };
 		FA7690A7278F094A001221B7 /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7690A6278F094A001221B7 /* ListenViewController.swift */; };
 		FA7B72D0256690C1003F9A0C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B72CF256690C1003F9A0C /* UIViewExtension.swift */; };
@@ -244,6 +285,8 @@
 		FAAF7CC226306F0F0007E63B /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF7CC126306F0F0007E63B /* Number.swift */; };
 		FAB47D9125C1725200B55F58 /* CoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB47D9025C1725200B55F58 /* CoverImage.swift */; };
 		FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB670C125DE623100DA5CA8 /* CSChapterModel.swift */; };
+		FAB7617328B8E96C0009B77E /* TwoColumnsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7617228B8E96C0009B77E /* TwoColumnsTableView.swift */; };
+		FAB7617528B8E9750009B77E /* TwoColumnsTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB7617428B8E9740009B77E /* TwoColumnsTableView.xib */; };
 		FAB84DC426CFAE1F00B9C5A0 /* StoryVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB84DC326CFAE1F00B9C5A0 /* StoryVideoListViewController.swift */; };
 		FAB84DC626CFE73C00B9C5A0 /* video.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB84DC526CFE73C00B9C5A0 /* video.json */; };
 		FAB84DC826CFEA3B00B9C5A0 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB84DC726CFEA3B00B9C5A0 /* Video.swift */; };
@@ -279,6 +322,9 @@
 		FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */; };
 		FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */; };
 		FAE2105925768C2100A3D971 /* LanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */; };
+		FAE5D87D288872FD00C7AA57 /* GrammarSubcategoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D87C288872FD00C7AA57 /* GrammarSubcategoryDetailsViewController.swift */; };
+		FAE5D87F288873D900C7AA57 /* GrammarCategoryExplanationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D87E288873D900C7AA57 /* GrammarCategoryExplanationTableViewCell.swift */; };
+		FAE5D8812888743300C7AA57 /* GrammarSubcategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D8802888743300C7AA57 /* GrammarSubcategoryTableViewCell.swift */; };
 		FAE653EA25C3FB8600CC25A1 /* RecordButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE653E925C3FB8600CC25A1 /* RecordButton.xib */; };
 		FAE653ED25C3FB9700CC25A1 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE653EC25C3FB9700CC25A1 /* RecordButton.swift */; };
 		FAE653F025C4045000CC25A1 /* CSRecordVoiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE653EF25C4045000CC25A1 /* CSRecordVoiceListViewController.swift */; };
@@ -297,6 +343,13 @@
 		FAF2690B25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2690A25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift */; };
 		FAF2690E25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2690D25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib */; };
 		FAF2691225BF32AE00FFDE4A /* CSMainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2691125BF32AE00FFDE4A /* CSMainListViewController.swift */; };
+		FAF3283A28C0AA74002D0A10 /* GrammarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3283928C0AA74002D0A10 /* GrammarService.swift */; };
+		FAF3283D28C0AABB002D0A10 /* grammar.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF3283C28C0AABB002D0A10 /* grammar.json */; };
+		FAF3283F28C0AACC002D0A10 /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF3283E28C0AACC002D0A10 /* articles.json */; };
+		FAF3284228C0C160002D0A10 /* articles_indefinis.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF3284128C0C160002D0A10 /* articles_indefinis.json */; };
+		FAF3284428C0C16B002D0A10 /* articles_definis.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF3284328C0C16B002D0A10 /* articles_definis.json */; };
+		FAF3284628C0C176002D0A10 /* articles_definis_contractes.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF3284528C0C176002D0A10 /* articles_definis_contractes.json */; };
+		FAF3284828C0C187002D0A10 /* articles_partitifs.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF3284728C0C187002D0A10 /* articles_partitifs.json */; };
 		FAF398CB277230BA00F1A55A /* InProgressTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF398CA277230BA00F1A55A /* InProgressTutorialViewController.swift */; };
 		FAF398CD2772585900F1A55A /* HashtagVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF398CC2772585900F1A55A /* HashtagVideoListViewController.swift */; };
 		FAF398CF2773888000F1A55A /* HastagVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF398CE2773887F00F1A55A /* HastagVideoCollectionViewCell.swift */; };
@@ -373,6 +426,15 @@
 		FA29BE6E281FF13B006524EC /* ReviewWordButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewWordButton.xib; sourceTree = "<group>"; };
 		FA2AB119281AF58000D05940 /* ReviewTopicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTopicCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA2AB11A281AF58000D05940 /* ReviewTopicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTopicCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA30188B2887CE570041CECB /* Grammar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Grammar.storyboard; sourceTree = "<group>"; };
+		FA30188D28881EDA0041CECB /* GrammarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarViewController.swift; sourceTree = "<group>"; };
+		FA301890288825410041CECB /* GrammarCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA3018922888386D0041CECB /* GrammarCategoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarCategoryDetailsViewController.swift; sourceTree = "<group>"; };
+		FA31048428BB4A4400830479 /* TwoColumnsWithTitleTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoColumnsWithTitleTableView.xib; sourceTree = "<group>"; };
+		FA31048628BB4A5500830479 /* TwoColumnsWithTitleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsWithTitleTableView.swift; sourceTree = "<group>"; };
+		FA31048828BB4A8F00830479 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		FA31048B28BB53B500830479 /* ThreeColumnsTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreeColumnsTableView.xib; sourceTree = "<group>"; };
+		FA31048D28BB53C300830479 /* ThreeColumnsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeColumnsTableView.swift; sourceTree = "<group>"; };
 		FA333DAA27EC89E700E6B5A1 /* WordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA333DAB27EC89E700E6B5A1 /* WordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInterestsSelectionViewController.swift; sourceTree = "<group>"; };
@@ -382,6 +444,33 @@
 		FA36E568281F0A4800000477 /* ReviewTrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTrainingViewController.swift; sourceTree = "<group>"; };
 		FA36E56A281F0A5400000477 /* ReviewTrainingGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTrainingGameViewController.swift; sourceTree = "<group>"; };
 		FA36E56C281F0A6100000477 /* ReviewTrainingScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTrainingScoreViewController.swift; sourceTree = "<group>"; };
+		FA39762F28C8840900167305 /* GrammarObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarObjects.swift; sourceTree = "<group>"; };
+		FA39763128C8BAC100167305 /* adjectifs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adjectifs.json; sourceTree = "<group>"; };
+		FA39763328C8BAD000167305 /* pronoms.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms.json; sourceTree = "<group>"; };
+		FA39763528C8BAD900167305 /* adverbes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adverbes.json; sourceTree = "<group>"; };
+		FA39763728C8BAE200167305 /* prepositions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prepositions.json; sourceTree = "<group>"; };
+		FA39763928C8BAE900167305 /* conjunctions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = conjunctions.json; sourceTree = "<group>"; };
+		FA39763D28C8DB2400167305 /* adjectifs_possessifs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adjectifs_possessifs.json; sourceTree = "<group>"; };
+		FA39763F28C8DB2C00167305 /* adjectifs_demonstratifs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adjectifs_demonstratifs.json; sourceTree = "<group>"; };
+		FA39764128C8DB3500167305 /* adjectifs_interrogatifs_et_exclamatifs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adjectifs_interrogatifs_et_exclamatifs.json; sourceTree = "<group>"; };
+		FA39764328C8DB4000167305 /* adjectifs_indefinis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adjectifs_indefinis.json; sourceTree = "<group>"; };
+		FA39764528C8DB6100167305 /* pronoms_personnels_sujets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_personnels_sujets.json; sourceTree = "<group>"; };
+		FA39764728C8DB6900167305 /* pronoms_toniques.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_toniques.json; sourceTree = "<group>"; };
+		FA39764928C8DB7300167305 /* pronoms_personnels_cod.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_personnels_cod.json; sourceTree = "<group>"; };
+		FA39764B28C8DB7A00167305 /* pronoms_personnels_coi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_personnels_coi.json; sourceTree = "<group>"; };
+		FA39764D28C8DB8100167305 /* pronoms_reflechis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_reflechis.json; sourceTree = "<group>"; };
+		FA39764F28C8DB8B00167305 /* pronoms_demonstratifs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_demonstratifs.json; sourceTree = "<group>"; };
+		FA39765128C8DBA000167305 /* pronoms_interrogatifs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_interrogatifs.json; sourceTree = "<group>"; };
+		FA39765328C8DBA900167305 /* pronoms_possessifs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_possessifs.json; sourceTree = "<group>"; };
+		FA39765528C8DBB200167305 /* pronoms_adverbiaux_en_et_y.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_adverbiaux_en_et_y.json; sourceTree = "<group>"; };
+		FA39765728C8DBBA00167305 /* pronoms_relatifs_simples.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_relatifs_simples.json; sourceTree = "<group>"; };
+		FA39765928C8DBC200167305 /* pronoms_relatifs_composes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_relatifs_composes.json; sourceTree = "<group>"; };
+		FA39765B28C8DBCE00167305 /* pronoms_indefinis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_indefinis.json; sourceTree = "<group>"; };
+		FA39765D28C9AE9400167305 /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
+		FA39765F28C9BDAA00167305 /* FourColumnsTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourColumnsTableView.xib; sourceTree = "<group>"; };
+		FA39766128C9BDBD00167305 /* FourColumnsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourColumnsTableView.swift; sourceTree = "<group>"; };
+		FA39766328C9C1CD00167305 /* TwoColumnsGrouppedTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoColumnsGrouppedTableView.xib; sourceTree = "<group>"; };
+		FA39766528C9C1DF00167305 /* TwoColumnsGrouppedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsGrouppedTableView.swift; sourceTree = "<group>"; };
 		FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFeedbackViewController.swift; sourceTree = "<group>"; };
 		FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareFeedback.storyboard; sourceTree = "<group>"; };
 		FA3A467826381F5100BF0CB5 /* ShareFeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFeedbackService.swift; sourceTree = "<group>"; };
@@ -458,6 +547,7 @@
 		FA5608C8261F2D150062EE88 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FA5608E5262034070062EE88 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
 		FA5BCFBD27038CE8004A6B08 /* AppShadowNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShadowNavigationViewController.swift; sourceTree = "<group>"; };
+		FA5F5F3228CE36D3004964DE /* interjections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = interjections.json; sourceTree = "<group>"; };
 		FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
 		FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FA63DA3E258D030900722CA6 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
@@ -474,6 +564,10 @@
 		FA6853FD259B0DE3008A7D63 /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		FA6B0014258116B700438E80 /* LanguageLevelSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLevelSelectionViewController.swift; sourceTree = "<group>"; };
 		FA6EDD2D27466D940028EC91 /* AVPlayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerExtension.swift; sourceTree = "<group>"; };
+		FA71445E288E8EDB00D669FB /* WEDictionary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WEDictionary.storyboard; sourceTree = "<group>"; };
+		FA714460288E8EE800D669FB /* WEPronunciation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WEPronunciation.storyboard; sourceTree = "<group>"; };
+		FA714462288E8EF400D669FB /* WEExamples.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WEExamples.storyboard; sourceTree = "<group>"; };
+		FA714464288E8F0500D669FB /* WEExpressions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WEExpressions.storyboard; sourceTree = "<group>"; };
 		FA7690A4278F090A001221B7 /* Listen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Listen.storyboard; sourceTree = "<group>"; };
 		FA7690A6278F094A001221B7 /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
 		FA7B72CF256690C1003F9A0C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -566,6 +660,8 @@
 		FAAF7CC126306F0F0007E63B /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		FAB47D9025C1725200B55F58 /* CoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImage.swift; sourceTree = "<group>"; };
 		FAB670C125DE623100DA5CA8 /* CSChapterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterModel.swift; sourceTree = "<group>"; };
+		FAB7617228B8E96C0009B77E /* TwoColumnsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsTableView.swift; sourceTree = "<group>"; };
+		FAB7617428B8E9740009B77E /* TwoColumnsTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoColumnsTableView.xib; sourceTree = "<group>"; };
 		FAB84DC326CFAE1F00B9C5A0 /* StoryVideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVideoListViewController.swift; sourceTree = "<group>"; };
 		FAB84DC526CFE73C00B9C5A0 /* video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video.json; sourceTree = "<group>"; };
 		FAB84DC726CFEA3B00B9C5A0 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -600,6 +696,9 @@
 		FAE2105225768A3D00A3D971 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FAE2105625768C2100A3D971 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		FAE2105725768C2100A3D971 /* LanguageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableViewCell.xib; sourceTree = "<group>"; };
+		FAE5D87C288872FD00C7AA57 /* GrammarSubcategoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarSubcategoryDetailsViewController.swift; sourceTree = "<group>"; };
+		FAE5D87E288873D900C7AA57 /* GrammarCategoryExplanationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarCategoryExplanationTableViewCell.swift; sourceTree = "<group>"; };
+		FAE5D8802888743300C7AA57 /* GrammarSubcategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarSubcategoryTableViewCell.swift; sourceTree = "<group>"; };
 		FAE653E925C3FB8600CC25A1 /* RecordButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordButton.xib; sourceTree = "<group>"; };
 		FAE653EC25C3FB9700CC25A1 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		FAE653EF25C4045000CC25A1 /* CSRecordVoiceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSRecordVoiceListViewController.swift; sourceTree = "<group>"; };
@@ -618,6 +717,13 @@
 		FAF2690A25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewWithSubtitleAndCheckmark.swift; sourceTree = "<group>"; };
 		FAF2690D25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemViewWithSubtitleAndCheckmark.xib; sourceTree = "<group>"; };
 		FAF2691125BF32AE00FFDE4A /* CSMainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainListViewController.swift; sourceTree = "<group>"; };
+		FAF3283928C0AA74002D0A10 /* GrammarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarService.swift; sourceTree = "<group>"; };
+		FAF3283C28C0AABB002D0A10 /* grammar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grammar.json; sourceTree = "<group>"; };
+		FAF3283E28C0AACC002D0A10 /* articles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = articles.json; sourceTree = "<group>"; };
+		FAF3284128C0C160002D0A10 /* articles_indefinis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = articles_indefinis.json; sourceTree = "<group>"; };
+		FAF3284328C0C16B002D0A10 /* articles_definis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = articles_definis.json; sourceTree = "<group>"; };
+		FAF3284528C0C176002D0A10 /* articles_definis_contractes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = articles_definis_contractes.json; sourceTree = "<group>"; };
+		FAF3284728C0C187002D0A10 /* articles_partitifs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = articles_partitifs.json; sourceTree = "<group>"; };
 		FAF398CA277230BA00F1A55A /* InProgressTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTutorialViewController.swift; sourceTree = "<group>"; };
 		FAF398CC2772585900F1A55A /* HashtagVideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagVideoListViewController.swift; sourceTree = "<group>"; };
 		FAF398CE2773887F00F1A55A /* HastagVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastagVideoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -757,6 +863,96 @@
 			path = "Review Word Button";
 			sourceTree = "<group>";
 		};
+		FA30188A2887CCF30041CECB /* Grammar */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3283B28C0AA7E002D0A10 /* JSON */,
+				FA30188F288825280041CECB /* Cells */,
+				FA30188B2887CE570041CECB /* Grammar.storyboard */,
+				FA30188D28881EDA0041CECB /* GrammarViewController.swift */,
+				FA3018922888386D0041CECB /* GrammarCategoryDetailsViewController.swift */,
+				FAE5D87C288872FD00C7AA57 /* GrammarSubcategoryDetailsViewController.swift */,
+				FAF3283928C0AA74002D0A10 /* GrammarService.swift */,
+			);
+			path = Grammar;
+			sourceTree = "<group>";
+		};
+		FA30188F288825280041CECB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA301890288825410041CECB /* GrammarCategoryCollectionViewCell.swift */,
+				FAE5D87E288873D900C7AA57 /* GrammarCategoryExplanationTableViewCell.swift */,
+				FAE5D8802888743300C7AA57 /* GrammarSubcategoryTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FA31048328BB4A2E00830479 /* TwoColumnsWithTitle */ = {
+			isa = PBXGroup;
+			children = (
+				FA31048428BB4A4400830479 /* TwoColumnsWithTitleTableView.xib */,
+				FA31048628BB4A5500830479 /* TwoColumnsWithTitleTableView.swift */,
+			);
+			path = TwoColumnsWithTitle;
+			sourceTree = "<group>";
+		};
+		FA31048A28BB539200830479 /* ThreeColumns */ = {
+			isa = PBXGroup;
+			children = (
+				FA31048B28BB53B500830479 /* ThreeColumnsTableView.xib */,
+				FA31048D28BB53C300830479 /* ThreeColumnsTableView.swift */,
+			);
+			path = ThreeColumns;
+			sourceTree = "<group>";
+		};
+		FA39762D28C6273200167305 /* FourColumns */ = {
+			isa = PBXGroup;
+			children = (
+				FA39765F28C9BDAA00167305 /* FourColumnsTableView.xib */,
+				FA39766128C9BDBD00167305 /* FourColumnsTableView.swift */,
+			);
+			path = FourColumns;
+			sourceTree = "<group>";
+		};
+		FA39762E28C6273C00167305 /* TwoColumnsGroupped */ = {
+			isa = PBXGroup;
+			children = (
+				FA39766328C9C1CD00167305 /* TwoColumnsGrouppedTableView.xib */,
+				FA39766528C9C1DF00167305 /* TwoColumnsGrouppedTableView.swift */,
+			);
+			path = TwoColumnsGroupped;
+			sourceTree = "<group>";
+		};
+		FA39763B28C8DB0700167305 /* Adjectifs */ = {
+			isa = PBXGroup;
+			children = (
+				FA39763D28C8DB2400167305 /* adjectifs_possessifs.json */,
+				FA39763F28C8DB2C00167305 /* adjectifs_demonstratifs.json */,
+				FA39764128C8DB3500167305 /* adjectifs_interrogatifs_et_exclamatifs.json */,
+				FA39764328C8DB4000167305 /* adjectifs_indefinis.json */,
+			);
+			path = Adjectifs;
+			sourceTree = "<group>";
+		};
+		FA39763C28C8DB1500167305 /* Pronoms */ = {
+			isa = PBXGroup;
+			children = (
+				FA39764528C8DB6100167305 /* pronoms_personnels_sujets.json */,
+				FA39764728C8DB6900167305 /* pronoms_toniques.json */,
+				FA39764928C8DB7300167305 /* pronoms_personnels_cod.json */,
+				FA39764B28C8DB7A00167305 /* pronoms_personnels_coi.json */,
+				FA39764D28C8DB8100167305 /* pronoms_reflechis.json */,
+				FA39764F28C8DB8B00167305 /* pronoms_demonstratifs.json */,
+				FA39765128C8DBA000167305 /* pronoms_interrogatifs.json */,
+				FA39765328C8DBA900167305 /* pronoms_possessifs.json */,
+				FA39765528C8DBB200167305 /* pronoms_adverbiaux_en_et_y.json */,
+				FA39765728C8DBBA00167305 /* pronoms_relatifs_simples.json */,
+				FA39765928C8DBC200167305 /* pronoms_relatifs_composes.json */,
+				FA39765B28C8DBCE00167305 /* pronoms_indefinis.json */,
+			);
+			path = Pronoms;
+			sourceTree = "<group>";
+		};
 		FA3A467326381A6100BF0CB5 /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
@@ -881,6 +1077,7 @@
 				FA666A26259CAA9900FD6462 /* LearningLanguage.swift */,
 				FA5041E525A5B3B0004E6EC9 /* File.swift */,
 				FA9F70E725C5ADD400A16C61 /* Word.swift */,
+				FA39762F28C8840900167305 /* GrammarObjects.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -956,6 +1153,7 @@
 				FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */,
 				FA63DA3B258CF3EC00722CA6 /* MainTabBarViewController.swift */,
 				FAC97F8026CE8DEC008B2CEF /* Learn */,
+				FA30188A2887CCF30041CECB /* Grammar */,
 				FAC58246280DB4F000C3EE38 /* Review */,
 				FA5608C4261F2CAB0062EE88 /* Settings */,
 				FA186A32280701AF00FA0479 /* Comments */,
@@ -1029,6 +1227,10 @@
 			children = (
 				FA7E253827843C7600DEB6A0 /* Cells */,
 				FA7E253627843C3C00DEB6A0 /* WordExplanation.storyboard */,
+				FA71445E288E8EDB00D669FB /* WEDictionary.storyboard */,
+				FA714460288E8EE800D669FB /* WEPronunciation.storyboard */,
+				FA714462288E8EF400D669FB /* WEExamples.storyboard */,
+				FA714464288E8F0500D669FB /* WEExpressions.storyboard */,
 				FA06A59A2850ADA200335746 /* WEViewController.swift */,
 				FA7E25312782EF5A00DEB6A0 /* SelectedWordViewController.swift */,
 				FA26C0E0278476B60021AFB1 /* WEDictionaryViewController.swift */,
@@ -1134,6 +1336,7 @@
 				FA252CC825DB186000FF85E1 /* SwiftMessagesSegues.swift */,
 				FA4B709326209F2A00DE2582 /* LocalizationExtension.swift */,
 				FA5BCFBD27038CE8004A6B08 /* AppShadowNavigationViewController.swift */,
+				FA39765D28C9AE9400167305 /* CollectionExtension.swift */,
 				FA6EDD2D27466D940028EC91 /* AVPlayerExtension.swift */,
 				FA67EE2927A2A1320045C0B9 /* TopLeftCellsFlowLayout.swift */,
 				FA81724327A3F5BB005759B8 /* RandomElements.swift */,
@@ -1162,6 +1365,7 @@
 		FA812D8C256641820036F162 /* App Style */ = {
 			isa = PBXGroup;
 			children = (
+				FAB7617028B8D5C50009B77E /* Tables */,
 				FA812D9A2566593D0036F162 /* Custom Views */,
 				FA812D9B256659690036F162 /* AppColors.swift */,
 				FA7B72DE25669C54003F9A0C /* AppFonts.swift */,
@@ -1270,6 +1474,28 @@
 				FA333DAA27EC89E700E6B5A1 /* WordCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAB7617028B8D5C50009B77E /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				FA31048828BB4A8F00830479 /* TextCell.swift */,
+				FAB7617128B8D5CD0009B77E /* TwoColumns */,
+				FA31048328BB4A2E00830479 /* TwoColumnsWithTitle */,
+				FA31048A28BB539200830479 /* ThreeColumns */,
+				FA39762D28C6273200167305 /* FourColumns */,
+				FA39762E28C6273C00167305 /* TwoColumnsGroupped */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		FAB7617128B8D5CD0009B77E /* TwoColumns */ = {
+			isa = PBXGroup;
+			children = (
+				FAB7617428B8E9740009B77E /* TwoColumnsTableView.xib */,
+				FAB7617228B8E96C0009B77E /* TwoColumnsTableView.swift */,
+			);
+			path = TwoColumns;
 			sourceTree = "<group>";
 		};
 		FAB8E018263A7976000AE9FE /* Referral */ = {
@@ -1445,6 +1671,35 @@
 			path = Writing;
 			sourceTree = "<group>";
 		};
+		FAF3283B28C0AA7E002D0A10 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3283C28C0AABB002D0A10 /* grammar.json */,
+				FAF3283E28C0AACC002D0A10 /* articles.json */,
+				FA39763128C8BAC100167305 /* adjectifs.json */,
+				FA39763328C8BAD000167305 /* pronoms.json */,
+				FA39763528C8BAD900167305 /* adverbes.json */,
+				FA39763728C8BAE200167305 /* prepositions.json */,
+				FA39763928C8BAE900167305 /* conjunctions.json */,
+				FA5F5F3228CE36D3004964DE /* interjections.json */,
+				FAF3284028C0C140002D0A10 /* Articles */,
+				FA39763B28C8DB0700167305 /* Adjectifs */,
+				FA39763C28C8DB1500167305 /* Pronoms */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		FAF3284028C0C140002D0A10 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3284128C0C160002D0A10 /* articles_indefinis.json */,
+				FAF3284328C0C16B002D0A10 /* articles_definis.json */,
+				FAF3284528C0C176002D0A10 /* articles_definis_contractes.json */,
+				FAF3284728C0C187002D0A10 /* articles_partitifs.json */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
 		FAFF82BE25D4427F00A9BE82 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -1575,6 +1830,7 @@
 				FAF10ED92637152E001B650F /* ChangePassword.storyboard in Resources */,
 				FAC1F4BB25A3ACE70034C64C /* IBMPlexSans-SemiBold.ttf in Resources */,
 				FAA27A3E2868833E00F0B741 /* TeacherUserReviewView.xib in Resources */,
+				FA39763228C8BAC100167305 /* adjectifs.json in Resources */,
 				FA63DA39258CF3D400722CA6 /* MainTabBar.storyboard in Resources */,
 				FA7B72E22566B493003F9A0C /* Sweet Pea.ttf in Resources */,
 				FA812DA125665AA70036F162 /* Root.storyboard in Resources */,
@@ -1582,21 +1838,32 @@
 				FAD2BCA22768AFA400BE6A85 /* UnderlinedButton.xib in Resources */,
 				FA187B892779BFFC00086245 /* Read.storyboard in Resources */,
 				FA4D4496257E48B700398AE2 /* LanguageSelect.storyboard in Resources */,
+				FAF3284628C0C176002D0A10 /* articles_definis_contractes.json in Resources */,
+				FA39765628C8DBB200167305 /* pronoms_adverbiaux_en_et_y.json in Resources */,
+				FAF3284228C0C160002D0A10 /* articles_indefinis.json in Resources */,
+				FA39764A28C8DB7300167305 /* pronoms_personnels_cod.json in Resources */,
 				FA5608E6262034070062EE88 /* IBMPlexSans-Medium.ttf in Resources */,
+				FA39765C28C8DBCE00167305 /* pronoms_indefinis.json in Resources */,
 				FAA78B942860F4A6001AC307 /* StoryCollectionViewCell.xib in Resources */,
 				FA7690A5278F090A001221B7 /* Listen.storyboard in Resources */,
 				FA3CA396281AAC8000141F19 /* ReviewHeaderTableViewCell.xib in Resources */,
 				FA999D9825694D3E00B694FA /* Strings.strings in Resources */,
+				FA39763428C8BAD000167305 /* pronoms.json in Resources */,
+				FA39766428C9C1CD00167305 /* TwoColumnsGrouppedTableView.xib in Resources */,
 				FA1F714D25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard in Resources */,
 				FA43D84E27BEAD8100BBEF07 /* sentence3.mp3 in Resources */,
 				FA50421025A611F4004E6EC9 /* ImagePreview.storyboard in Resources */,
 				FA812D7A256298450036F162 /* LaunchScreen.storyboard in Resources */,
+				FAF3283F28C0AACC002D0A10 /* articles.json in Resources */,
 				FAF12809279E89EA001F7643 /* Writing.storyboard in Resources */,
 				FAB8E01A263A7A36000AE9FE /* Referral.storyboard in Resources */,
 				FAC58248280DB50A00C3EE38 /* Review.storyboard in Resources */,
 				FAAEA0C0275F591500E8B750 /* AppActivityIndicator.xib in Resources */,
+				FA39765A28C8DBC200167305 /* pronoms_relatifs_composes.json in Resources */,
 				FA43D84B27BEAD8100BBEF07 /* sentence4.mp3 in Resources */,
+				FA39765428C8DBA900167305 /* pronoms_possessifs.json in Resources */,
 				FA43D85127BEB25A00BBEF07 /* writing.mp3 in Resources */,
+				FA39764628C8DB6100167305 /* pronoms_personnels_sujets.json in Resources */,
 				FA960AB7263AC48B001ACB21 /* UpdateLanguage.storyboard in Resources */,
 				FA43D84927BEAD8100BBEF07 /* sentence5.mp3 in Resources */,
 				FA4C2B0D2868BBC900B934AA /* AnonymousTranslation.storyboard in Resources */,
@@ -1604,16 +1871,24 @@
 				FA6853F72599FA47008A7D63 /* IBMPlexSans-Light.ttf in Resources */,
 				FA43D84D27BEAD8100BBEF07 /* sentence1.mp3 in Resources */,
 				FA8F2CD027A9222E00701B23 /* Speak.storyboard in Resources */,
+				FA39764C28C8DB7A00167305 /* pronoms_personnels_coi.json in Resources */,
+				FA39764428C8DB4000167305 /* adjectifs_indefinis.json in Resources */,
+				FA39763E28C8DB2400167305 /* adjectifs_possessifs.json in Resources */,
 				FA7B72DB25669BEF003F9A0C /* IBMPlexSans-Bold.ttf in Resources */,
 				FA9F6C102582899800AC5197 /* LanguageLevelTableViewCell.xib in Resources */,
 				FA94560A25C557C9003E54F0 /* VocabularyItemTableViewCell.xib in Resources */,
 				FA1F714925BEF066009AE0D4 /* CreateStory.storyboard in Resources */,
+				FA39766028C9BDAA00167305 /* FourColumnsTableView.xib in Resources */,
 				FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */,
 				FA2AB11C281AF58000D05940 /* ReviewTopicCollectionViewCell.xib in Resources */,
 				FA4B61A625753433005501BD /* Google-Credentials.plist in Resources */,
 				FA26F7FC27902B40000F72A2 /* The_Californian_s_Tale_-_By_Mark_Twain.mp3 in Resources */,
+				FA39765028C8DB8B00167305 /* pronoms_demonstratifs.json in Resources */,
 				FAE2105925768C2100A3D971 /* LanguageTableViewCell.xib in Resources */,
+				FA5F5F3328CE36D3004964DE /* interjections.json in Resources */,
 				FA5608C6261F2CEF0062EE88 /* Settings.storyboard in Resources */,
+				FA39763628C8BAD900167305 /* adverbes.json in Resources */,
+				FA714461288E8EE800D669FB /* WEPronunciation.storyboard in Resources */,
 				FA876C8225C80E7C00E65B95 /* CSImageItemTableViewCell.xib in Resources */,
 				FA812D77256298450036F162 /* Assets.xcassets in Resources */,
 				FA333DAD27EC89E700E6B5A1 /* WordCollectionViewCell.xib in Resources */,
@@ -1622,34 +1897,52 @@
 				FA7E253727843C3C00DEB6A0 /* WordExplanation.storyboard in Resources */,
 				FAF10ECA26369B3E001B650F /* EditPersonalInfo.storyboard in Resources */,
 				FA9F70F325C69E3F00A16C61 /* CSAddTableViewCell.xib in Resources */,
+				FA714463288E8EF400D669FB /* WEExamples.storyboard in Resources */,
 				FA94561025C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib in Resources */,
 				FA3CA39A281AACEE00141F19 /* ReviewTopicsTableViewCell.xib in Resources */,
+				FA31048C28BB53B500830479 /* ThreeColumnsTableView.xib in Resources */,
 				FA8BB73A25C1ED6C001B6A22 /* CSAudioTableViewCell.xib in Resources */,
+				FA39764028C8DB2C00167305 /* adjectifs_demonstratifs.json in Resources */,
 				FA186A34280701BD00FA0479 /* Comments.storyboard in Resources */,
 				FA29BE6F281FF13B006524EC /* ReviewWordButton.xib in Resources */,
 				FA3CA3A0281AAD2000141F19 /* ReviewWordTableViewCell.xib in Resources */,
 				FA4506062637FE5100000279 /* Notifications.storyboard in Resources */,
 				FAA27A3A2868823F00F0B741 /* TeacherExperienceView.xib in Resources */,
+				FAB7617528B8E9750009B77E /* TwoColumnsTableView.xib in Resources */,
 				FA50420625A5B957004E6EC9 /* FileTableViewCell.xib in Resources */,
 				FA3A467726381A8300BF0CB5 /* ShareFeedback.storyboard in Resources */,
+				FAF3284428C0C16B002D0A10 /* articles_definis.json in Resources */,
 				FA876C8825C80EA200E65B95 /* CSVideoItemTableViewCell.xib in Resources */,
 				FA7EF424262DAB2D00335CE6 /* Membership.storyboard in Resources */,
 				FA812D88256640BF0036F162 /* Tutorial.storyboard in Resources */,
+				FA39763A28C8BAEA00167305 /* conjunctions.json in Resources */,
 				FA7B72D825669A31003F9A0C /* IBMPlexSans-Regular.ttf in Resources */,
+				FA39764228C8DB3500167305 /* adjectifs_interrogatifs_et_exclamatifs.json in Resources */,
 				FAA60E0A25C1952D00522F8A /* IBMPlexSans-LightItalic.ttf in Resources */,
 				FA876C7D25C80E6800E65B95 /* CSTextItemTableViewCell.xib in Resources */,
 				FA417FC52590DD2F00F9D81B /* Teacher.storyboard in Resources */,
 				FAC97F8426CE8E43008B2CEF /* Learn.storyboard in Resources */,
 				FAC5820028089FA700C3EE38 /* CommentTableViewCell.xib in Resources */,
 				FAFF92C325A44C5900A604C3 /* UploadFileTableViewCell.xib in Resources */,
+				FA39765828C8DBBA00167305 /* pronoms_relatifs_simples.json in Resources */,
+				FA39764E28C8DB8100167305 /* pronoms_reflechis.json in Resources */,
 				FA43D84A27BEAD8100BBEF07 /* paragraph.mp3 in Resources */,
+				FAF3283D28C0AABB002D0A10 /* grammar.json in Resources */,
+				FA31048528BB4A4400830479 /* TwoColumnsWithTitleTableView.xib in Resources */,
 				FAAA96D9261DE6A800B53D6C /* InterestTableViewCell.xib in Resources */,
 				FA186A2F2806D27200FA0479 /* UserProfile.storyboard in Resources */,
+				FA39765228C8DBA000167305 /* pronoms_interrogatifs.json in Resources */,
 				FA43D84C27BEAD8100BBEF07 /* sentence6.mp3 in Resources */,
+				FA714465288E8F0500D669FB /* WEExpressions.storyboard in Resources */,
+				FA39764828C8DB6900167305 /* pronoms_toniques.json in Resources */,
+				FA30188C2887CE570041CECB /* Grammar.storyboard in Resources */,
+				FAF3284828C0C187002D0A10 /* articles_partitifs.json in Resources */,
+				FA39763828C8BAE200167305 /* prepositions.json in Resources */,
 				FAAEA0CA2762573800E8B750 /* eyes.gif in Resources */,
 				FA43D84F27BEAD8100BBEF07 /* sentence2.mp3 in Resources */,
 				FA3C26132569559C0089F646 /* Auth.storyboard in Resources */,
 				FA09A5CB263C2AC000DB7450 /* UpdateLevelTableViewCell.xib in Resources */,
+				FA71445F288E8EDB00D669FB /* WEDictionary.storyboard in Resources */,
 				FAF2690E25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib in Resources */,
 				FAB84DC626CFE73C00B9C5A0 /* video.json in Resources */,
 				FA0E895F25BF47C400D80027 /* CSItemTableViewCell.xib in Resources */,
@@ -1742,6 +2035,7 @@
 				FA7E25342783376300DEB6A0 /* SelectedWordMenuCollectionViewCell.swift in Sources */,
 				FA4B616F25713362005501BD /* DataExtension.swift in Sources */,
 				FA4B6144257015BE005501BD /* NetworkError.swift in Sources */,
+				FAE5D87D288872FD00C7AA57 /* GrammarSubcategoryDetailsViewController.swift in Sources */,
 				FA417FC82590DE8B00F9D81B /* TeacherNetworkViewController.swift in Sources */,
 				FA4B709426209F2A00DE2582 /* LocalizationExtension.swift in Sources */,
 				FAFF92D025A494BB00A604C3 /* JoinTNAddDocumentViewController.swift in Sources */,
@@ -1772,17 +2066,21 @@
 				FA3CA395281AAC8000141F19 /* ReviewHeaderTableViewCell.swift in Sources */,
 				FA5BCFBE27038CE8004A6B08 /* AppShadowNavigationViewController.swift in Sources */,
 				FA1F52B02860A00B00B03FCF /* TeacherProfileViewController.swift in Sources */,
+				FA3018932888386D0041CECB /* GrammarCategoryDetailsViewController.swift in Sources */,
 				FA6853FE259B0DE3008A7D63 /* UINavigationBarExtension.swift in Sources */,
+				FAF3283A28C0AA74002D0A10 /* GrammarService.swift in Sources */,
 				FAD2BCAA2768D1CA00BE6A85 /* SearchHashtagTableViewCell.swift in Sources */,
 				FAFF81BD25D2830100A9BE82 /* CreateStoryObject.swift in Sources */,
 				FAD254A327BA6A1A00DADE67 /* SpeakCollectionViewCell.swift in Sources */,
 				FA22A7EA2588E4C6001129E7 /* Interest.swift in Sources */,
 				FA999D922568F30B00B694FA /* CustomCollectionViewCell.swift in Sources */,
+				FAE5D87F288873D900C7AA57 /* GrammarCategoryExplanationTableViewCell.swift in Sources */,
 				FAE8AFB125E3E0FA00448AA4 /* SectionModel.swift in Sources */,
 				FAFF82D625D4437A00A9BE82 /* CSLanguageLevelService.swift in Sources */,
 				FA4B6141257008A2005501BD /* Request.swift in Sources */,
 				FA4D448B257C172F00398AE2 /* UIImageViewExtension.swift in Sources */,
 				FA16CE2C25ECE60D007B8354 /* StoryTextSection.swift in Sources */,
+				FA39766228C9BDBD00167305 /* FourColumnsTableView.swift in Sources */,
 				FA3C2626256A52320089F646 /* UIViewControllerExtension.swift in Sources */,
 				FAC93A6326DFCB3B003FACDA /* VideoPlayerView.swift in Sources */,
 				FA4D447525790C2700398AE2 /* LanguageClient.swift in Sources */,
@@ -1795,7 +2093,9 @@
 				FA8F2CD427A9227F00701B23 /* SpeakViewController.swift in Sources */,
 				FA4B61342570036C005501BD /* APIClient.swift in Sources */,
 				FAC581FF28089FA700C3EE38 /* CommentTableViewCell.swift in Sources */,
+				FA31048E28BB53C300830479 /* ThreeColumnsTableView.swift in Sources */,
 				FA5041E625A5B3B0004E6EC9 /* File.swift in Sources */,
+				FA31048728BB4A5500830479 /* TwoColumnsWithTitleTableView.swift in Sources */,
 				FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */,
 				FA9BCB4A26417BB0009B1DDB /* VocabularyClient.swift in Sources */,
 				FABD3A0827BFD3F300F408A0 /* SpeakTableViewCell.swift in Sources */,
@@ -1845,6 +2145,7 @@
 				FA812DA425665AB10036F162 /* RootViewController.swift in Sources */,
 				FA9BCB5026417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift in Sources */,
 				FA7B72DF25669C54003F9A0C /* AppFonts.swift in Sources */,
+				FA39766628C9C1DF00167305 /* TwoColumnsGrouppedTableView.swift in Sources */,
 				FAC5824A280DB52000C3EE38 /* ReviewViewController.swift in Sources */,
 				FA9A0F6E28204C77000CA94F /* UnderlinedLabel.swift in Sources */,
 				FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */,
@@ -1858,6 +2159,7 @@
 				FAF398D52774753F00F1A55A /* TutorialItemViewController.swift in Sources */,
 				FA16CE3325ECE65C007B8354 /* StoryVideoSection.swift in Sources */,
 				FAFF82C625D442D100A9BE82 /* CSCategoryService.swift in Sources */,
+				FA301891288825410041CECB /* GrammarCategoryCollectionViewCell.swift in Sources */,
 				FAAEA0C82762465900E8B750 /* NothingFoundViewController.swift in Sources */,
 				FA187B8F277B044400086245 /* SettingsSecondViewController.swift in Sources */,
 				FAF452F125D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift in Sources */,
@@ -1866,6 +2168,7 @@
 				FA8F2CD627A924CC00701B23 /* SpeakAlertViewController.swift in Sources */,
 				FA85364C25AC644D002607EC /* UploadClient.swift in Sources */,
 				FAD2BCA82768D1BE00BE6A85 /* SearchUserTableViewCell.swift in Sources */,
+				FA39763028C8840900167305 /* GrammarObjects.swift in Sources */,
 				FA16CE3625ED1231007B8354 /* CSChapterPartService.swift in Sources */,
 				FA652B5E26F239D900CEEA35 /* CSUploadCoverViewController.swift in Sources */,
 				FA3CA39F281AAD2000141F19 /* ReviewWordTableViewCell.swift in Sources */,
@@ -1887,10 +2190,12 @@
 				FA06A59D2850B0AB00335746 /* WEGrammarViewController.swift in Sources */,
 				FA36E567281F0A3E00000477 /* ReviewTrainingLevelViewController.swift in Sources */,
 				FA4B613E257007B1005501BD /* RequestProtocol.swift in Sources */,
+				FA30188E28881EDA0041CECB /* GrammarViewController.swift in Sources */,
 				FA4B613A25700765005501BD /* Headers.swift in Sources */,
 				FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */,
 				FA94560425C54BE8003E54F0 /* CSVocabularyListViewController.swift in Sources */,
 				FA81724427A3F5BB005759B8 /* RandomElements.swift in Sources */,
+				FAB7617328B8E96C0009B77E /* TwoColumnsTableView.swift in Sources */,
 				FA8593DE25E1691D004CAC9E /* CSVocabularyService.swift in Sources */,
 				FA4C2B092868BB6700B934AA /* AnonymousTranslationViewController.swift in Sources */,
 				FA7690A7278F094A001221B7 /* ListenViewController.swift in Sources */,
@@ -1904,6 +2209,7 @@
 				FA3A467D26397CFE00BF0CB5 /* RatingButton.swift in Sources */,
 				FA94560925C557C9003E54F0 /* VocabularyItemTableViewCell.swift in Sources */,
 				FA4B613725700749005501BD /* Commons.swift in Sources */,
+				FA31048928BB4A8F00830479 /* TextCell.swift in Sources */,
 				FA94560F25C57CCE003E54F0 /* VocabularyHeaderTableViewCell.swift in Sources */,
 				FA4D447C257940DE00398AE2 /* WebBrowserViewController.swift in Sources */,
 				FA08DF7225C6DAC1001EEF7E /* StorySection.swift in Sources */,
@@ -1931,10 +2237,12 @@
 				FA26C0DF278442060021AFB1 /* SelectedWordExplanationViewController.swift in Sources */,
 				FA2AB11B281AF58000D05940 /* ReviewTopicCollectionViewCell.swift in Sources */,
 				FA46952025C0A0D300F347B1 /* CSCustomItemViewController.swift in Sources */,
+				FAE5D8812888743300C7AA57 /* GrammarSubcategoryTableViewCell.swift in Sources */,
 				FA4C2B062868897D00B934AA /* TeacherReviewsViewController.swift in Sources */,
 				FAE2105325768A3D00A3D971 /* CustomTableViewCell.swift in Sources */,
 				FA187B8B2779C00900086245 /* ReadViewController.swift in Sources */,
 				FAF2690B25BF150900FFDE4A /* ItemViewWithSubtitleAndCheckmark.swift in Sources */,
+				FA39765E28C9AE9400167305 /* CollectionExtension.swift in Sources */,
 				FAAF7CBF26304B220007E63B /* Vibration.swift in Sources */,
 				FAB84DC426CFAE1F00B9C5A0 /* StoryVideoListViewController.swift in Sources */,
 				FA186515275B7A0B004981AA /* UIScrollViewExtension.swift in Sources */,
@@ -2103,7 +2411,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 67;
+				CURRENT_PROJECT_VERSION = 69;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;
@@ -2128,7 +2436,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 67;
+				CURRENT_PROJECT_VERSION = 69;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;

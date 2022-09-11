@@ -13,14 +13,22 @@ protocol WEPronunciationViewControllerDelegate: AnyObject {
 
 class WEPronunciationViewController: UIViewController {
     
-    var audios: [String] = ["Spanish", "LATAM"]
-    var styles: [String] = ["Both", "Spanish", "LATAM"]
+    var audios: [String] = ["SPAIN", "LATAM"]
+    var styles: [String] = ["LATAM", "SPAIN"]
     
     weak var delegate: WEPronunciationViewControllerDelegate?
+    weak var scrollDelegate: UICustomScrollDelegate?
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var audiosCollectionView: UICollectionView!
     @IBOutlet weak var stylesCollectionView: UICollectionView!
     
+    @IBOutlet weak var expression1ArrowIcon: UIImageView!
+    @IBOutlet weak var expression1DefinitionView: UIStackView!
+    
+    @IBOutlet weak var expression2ArrowIcon: UIImageView!
+    @IBOutlet weak var expression2DefinitionView: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,13 +39,32 @@ class WEPronunciationViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        audiosCollectionView.centerContentHorizontalyByInsetIfNeeded(minimumInset: UIEdgeInsets.zero)
-        stylesCollectionView.centerContentHorizontalyByInsetIfNeeded(minimumInset: UIEdgeInsets.zero)
+//        audiosCollectionView.centerContentHorizontalyByInsetIfNeeded(minimumInset: UIEdgeInsets.zero)
+//        stylesCollectionView.centerContentHorizontalyByInsetIfNeeded(minimumInset: UIEdgeInsets.zero)
     }
     
     @IBAction func infoButtonPressed(_ sender: Any) {
         delegate?.didTapInfo()
     }
+    
+    @IBAction func expression1ButtonPressed(_ sender: UIButton) {
+        expression1DefinitionView.isHidden = !expression1DefinitionView.isHidden
+        if expression1DefinitionView.isHidden {
+            expression1ArrowIcon.image = UIImage(named: "tint_right_arrow")
+        } else {
+            expression1ArrowIcon.image = UIImage(named: "tint_bottom_arrow")
+        }
+    }
+    
+    @IBAction func expression2ButtonPressed(_ sender: UIButton) {
+        expression2DefinitionView.isHidden = !expression2DefinitionView.isHidden
+        if expression2DefinitionView.isHidden {
+            expression2ArrowIcon.image = UIImage(named: "tint_right_arrow")
+        } else {
+            expression2ArrowIcon.image = UIImage(named: "tint_bottom_arrow")
+        }
+    }
+    
 }
 
 extension WEPronunciationViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -94,5 +121,11 @@ extension WEPronunciationViewController: UICollectionViewDelegate, UICollectionV
         } else {
             return WEPronunciationStyleCollectionViewCell()
         }
+    }
+}
+
+extension WEPronunciationViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        scrollDelegate?.scrollViewDidScroll(scrollView)
     }
 }

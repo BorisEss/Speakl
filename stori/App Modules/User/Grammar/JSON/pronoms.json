@@ -1,0 +1,68 @@
+{
+    "id": 3,
+    "name": "Pronoms",
+    "icon": "circle",
+    "explanation": "Explanation: Sed ut consequat maecenas enim, integer. Amet, amet massa mollis elementum bibendum sit feugiat sem. Egestas habitant adipiscing fames eu aenean. Nisi non velit.",
+    "categories": [
+        {
+            "id": 1,
+            "name": "Pronoms personnels sujets",
+            "url": "pronoms_personnels_sujets"
+        },
+        {
+            "id": 2,
+            "name": "Pronoms toniques",
+            "url": "pronoms_toniques"
+        },
+        {
+            "id": 3,
+            "name": "Pronoms personnels COD",
+            "url": "pronoms_personnels_cod"
+        },
+        {
+            "id": 4,
+            "name": "Pronoms personnels COI",
+            "url": "pronoms_personnels_coi"
+        },
+        {
+            "id": 5,
+            "name": "Pronoms réfléchis",
+            "url": "pronoms_reflechis"
+        },
+        {
+            "id": 6,
+            "name": "Pronoms démonstratifs",
+            "url": "pronoms_demonstratifs"
+        },
+        {
+            "id": 7,
+            "name": "Pronoms interrogatifs",
+            "url": "pronoms_interrogatifs"
+        },
+        {
+            "id": 8,
+            "name": "Pronoms possessifs",
+            "url": "pronoms_possessifs"
+        },
+        {
+            "id": 9,
+            "name": "Pronoms adverbiaux : \"en\" et \"y\"",
+            "url": "pronoms_adverbiaux_en_et_y"
+        },
+        {
+            "id": 10,
+            "name": "Pronoms relatifs simples",
+            "url": "pronoms_relatifs_simples"
+        },
+        {
+            "id": 11,
+            "name": "Pronoms relatifs composés",
+            "url": "pronoms_relatifs_composes"
+        },
+        {
+            "id": 12,
+            "name": "Pronoms indéfinis",
+            "url": "pronoms_indefinis"
+        }
+    ]
+}

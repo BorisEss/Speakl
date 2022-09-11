@@ -9,14 +9,19 @@ import UIKit
 
 class WEPronunciationStyleCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     
     override var isSelected: Bool {
         didSet {
             if isSelected {
-                titleLabel.font = .IBMPlexSansBold(size: 16)
+                cellView.borderWidth = 0
+                cellView.backgroundColor = .speaklViolet
+                titleLabel.textColor = .speaklWhite
             } else {
-                titleLabel.font = .IBMPlexSans(size: 16)
+                cellView.borderWidth = 2
+                cellView.backgroundColor = .clear
+                titleLabel.textColor = .speaklTextColor
             }
             layoutIfNeeded()
         }

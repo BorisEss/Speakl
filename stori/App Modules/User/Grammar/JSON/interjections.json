@@ -1,0 +1,49 @@
+{
+    "id": 7,
+    "name": "Interjections",
+    "icon": "heart",
+    "explanation": "Explanation: Sed ut consequat maecenas enim, integer. Amet, amet massa mollis elementum bibendum sit feugiat sem. Egestas habitant adipiscing fames eu aenean. Nisi non velit.",
+    "table": {
+        "table_type": 4,
+        "title": "Interjections",
+        "data": [
+            ["Interjections", "Ah !"],
+            ["Interjections", "Aie !"],
+            ["Interjections", "Eh !"],
+            ["Interjections", "Euh !"],
+            ["Interjections", "Ouf !"],
+            ["Interjections", "Hihi !"],
+            ["Interjections", "Hé !"],
+            ["Interjections", "Bon ! "],
+            ["Interjections", "Fi !"],
+            ["Interjections", "Fi donc ! "],
+            ["Interjections", "Oh ! "],
+            ["Interjections", "Zest ! "],
+            ["Interjections", "Ho !"],
+            ["Interjections", "Ha ! "],
+            ["Interjections", "Bon Dieu ! "],
+            ["Interjections", "Oh ça !"],
+            ["Interjections", "Allons !"],
+            ["Interjections", "Holà ! "],
+            ["Interjections", "Hem !"],
+            ["Interjections", "Gare !"],
+            ["Interjections", "Chut !"],
+            ["Interjections", "Si !"],
+            ["Interjections", "Paix !"],
+            ["Interjections", "Zut !"],
+            ["Interjections", "Pst !"],
+            ["Interjections", "Paf !"],
+            ["Interjections", "Crac ! "],
+            ["Interjections", "Boum !"]
+        ],
+        "merged_items": [
+            {
+                "from": { "row": 1, "column": 0 },
+                "to": { "row": 28, "column": 0 }
+            }
+        ]
+    },
+    "stories": [
+        "1", "2", "3"
+    ]
+}

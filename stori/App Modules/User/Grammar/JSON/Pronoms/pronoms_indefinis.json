@@ -1,0 +1,77 @@
+{
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "table": {
+        "table_type": 4,
+        "title": "Pronoms indéfinis",
+        "data": [
+            ["Quantité nulle", "aucun"],
+            ["Quantité nulle", "aucune"],
+            ["Quantité nulle", "nul"],
+            ["Quantité nulle", "personne"],
+            ["Quantité nulle", "rien"],
+            ["Quantité nulle", "ni l’un"],
+            ["Quantité nulle", "ni l’autre"],
+            ["Quantité nulle", "pas un"],
+            ["Quantité nulle", "pas une"],
+            ["Quantité indéterminée au singulier", "quelqu’un"],
+            ["Quantité indéterminée au singulier", "quelque chose"],
+            ["Quantité indéterminée au singulier", "chacun"],
+            ["Quantité indéterminée au singulier", "chacune"],
+            ["Quantité indéterminée au singulier", "on"],
+            ["Quantité indéterminée au singulier", "l’un"],
+            ["Quantité indéterminée au singulier", "l’une"],
+            ["Quantité indéterminée au singulier", "autrui"],
+            ["Quantité indéterminée au pluriel", "certains"],
+            ["Quantité indéterminée au pluriel", "certaines"],
+            ["Quantité indéterminée au pluriel", "plusieurs"],
+            ["Quantité indéterminée au pluriel", "la plupart"],
+            ["Quantité indéterminée au pluriel", "d’autres"],
+            ["Quantité indéterminée au pluriel", "les uns"],
+            ["Quantité indéterminée au pluriel", "les unes"],
+            ["Quantité indéterminée au pluriel", "quelques-uns"],
+            ["Quantité indéterminée au pluriel", " quelques-unes"],
+            ["Quantité totale", "tout"],
+            ["Quantité totale", "toute"],
+            ["Quantité totale", "tous"],
+            ["Quantité totale", "toutes"],
+            ["Un choix indifférent", "n’importe qui"],
+            ["Un choix indifférent", "quiconque"],
+            ["Un choix indifférent", "n’importe quoi"],
+            ["Un choix indifférent", "n’importe lequel"],
+            ["Un choix indifférent", "n’importe laquelle"],
+            ["Un choix indifférent", "n’importe lesquels"],
+            ["Un choix indifférent", "n’importe lesquelles"],
+            ["Ressemblance ou différence", "le même"],
+            ["Ressemblance ou différence", "la même"],
+            ["Ressemblance ou différence", "les mêmes"],
+            ["Ressemblance ou différence", "l’un … l’autre"]
+        ],
+        "merged_items": [
+            {
+                "from": { "row": 1, "column": 0 },
+                "to": { "row": 9, "column": 0 }
+            },
+            {
+                "from": { "row": 10, "column": 0 },
+                "to": { "row": 17, "column": 0 }
+            },
+            {
+                "from": { "row": 18, "column": 0 },
+                "to": { "row": 26, "column": 0 }
+            },
+            {
+                "from": { "row": 27, "column": 0 },
+                "to": { "row": 30, "column": 0 }
+            },
+            {
+                "from": { "row": 31, "column": 0 },
+                "to": { "row": 37, "column": 0 }
+            },
+            {
+                "from": { "row": 38, "column": 0 },
+                "to": { "row": 41, "column": 0 }
+            }
+        ]
+    },
+    "stories": [ "1", "2", "3" ]
+}

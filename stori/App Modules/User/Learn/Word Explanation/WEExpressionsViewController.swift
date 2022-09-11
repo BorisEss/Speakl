@@ -9,10 +9,18 @@ import UIKit
 
 class WEExpressionsViewController: UIViewController {
 
+    weak var scrollDelegate: UICustomScrollDelegate?
+
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
-    
+}
+
+extension WEExpressionsViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollDelegate?.scrollViewDidScroll(scrollView)
+    }
 }

@@ -47,7 +47,7 @@ extension UIColor {
     static var speaklGreyLight: UIColor {
         return UIColor(red: 0.945, green: 0.945, blue: 0.949, alpha: 1)
     }
-    static var speaklGradientTop: UIColor  {
+    static var speaklGradientTop: UIColor {
         return UIColor(red: 0.196, green: 0.275, blue: 0.42, alpha: 1)
     }
     static var speaklGradientBottom: UIColor {

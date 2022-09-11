@@ -1,0 +1,31 @@
+{
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "table": {
+        "table_type": 2,
+        "title": "Pronoms personnels sujets",
+        "subtitle_1": ["personne", "singulier", "pluriel"],
+        "subtitle_2": [],
+        "data": [
+            ["1re", "je", "nous"],
+            ["1re", "j'", "nous"],
+            ["2e", "tu", "vous"],
+            ["3e", "il", "ils"],
+            ["3e", "elle", "elles"]
+        ],
+        "merged_items": [
+            {
+                "from": { "row": 2, "column": 0 },
+                "to": { "row": 3, "column": 0 }
+            },
+            {
+                "from": { "row": 5, "column": 0 },
+                "to": { "row": 6, "column": 0 }
+            },
+            {
+                "from": { "row": 2, "column": 2 },
+                "to": { "row": 3, "column": 2 }
+            }
+        ]
+    },
+    "stories": [ "1", "2", "3" ]
+}

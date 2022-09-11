@@ -1,0 +1,45 @@
+{
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "table": {
+        "table_type": 2,
+        "title": "Pronoms personnels COD",
+        "subtitle_1": ["personne", "singulier", "pluriel"],
+        "subtitle_2": [],
+        "data": [
+            ["1re", "me", "nous"],
+            ["1re", "m'", "nous"],
+            ["2e", "te", "vous"],
+            ["2e", "t'", "vous"],
+            ["3e", "le", "les"],
+            ["3e", "la", "les"],
+            ["3e", "l'", "les"]
+        ],
+        "merged_items": [
+            {
+                "from": { "row": 2, "column": 0 },
+                "to": { "row": 3, "column": 0 }
+            },
+            {
+                "from": { "row": 4, "column": 0 },
+                "to": { "row": 5, "column": 0 }
+            },
+            {
+                "from": { "row": 6, "column": 0 },
+                "to": { "row": 8, "column": 0 }
+            },
+            {
+                "from": { "row": 2, "column": 2 },
+                "to": { "row": 3, "column": 2 }
+            },
+            {
+                "from": { "row": 4, "column": 2 },
+                "to": { "row": 5, "column": 2 }
+            },
+            {
+                "from": { "row": 6, "column": 2 },
+                "to": { "row": 8, "column": 2 }
+            }
+        ]
+    },
+    "stories": [ "1", "2", "3" ]
+}
