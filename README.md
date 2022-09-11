@@ -2,7 +2,7 @@
 
 ### Installation
 
-Prestige Not requires [Cocoapods](https://cocoapods.org/)  to run.
+Speakl requires [Cocoapods](https://cocoapods.org/)  to run.
 
 First of all clone the repository and install pods and missing files.
 
