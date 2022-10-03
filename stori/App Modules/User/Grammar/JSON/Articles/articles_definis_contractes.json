@@ -1,17 +1,175 @@
 {
     "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "table": {
-        "table_type": 3,
-        "title": "Articles définis contractés",
-        "subtitle_1": ["Singulier", "Pluriel"],
-        "subtitle_2": ["masculin", "féminin", "masculin", "féminin"],
         "data": [
-            ["au (= à + le)", "à la'", "aux (= à + les)", "aux (= à + les)"],
-            ["au (= à + le)", "à l'", "aux (= à + les)", "aux (= à + les)"],
-            ["du (= de + le)", "de la'", "des (= de + les)", "des (= de + les)"],
-            ["du (= de + le)", " de l'", "des (= de + les)", "des (= de + les)"]
+            [
+                {
+                    "text": "Articles définis contractés",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Articles définis contractés",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Articles définis contractés",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Articles définis contractés",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                }
+            ],
+            [
+                {
+                    "text": "Singulier",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Singulier",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Pluriel",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Pluriel",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                }
+            ],
+            [
+                {
+                    "text": "masculin",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "féminin",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "masculin",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "féminin",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                }
+            ],
+            [
+                {
+                    "text": "au (= à + le)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "à la'",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "aux (= à + les)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "aux (= à + les)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "au (= à + le)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "à l'",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "aux (= à + les)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "aux (= à + les)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "du (= de + le)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "de la'",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "des (= de + les)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "des (= de + les)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "du (= de + le)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "de l'",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "des (= de + les)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "des (= de + les)",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ]
         ],
         "merged_items": [
+            {
+                "from": { "row": 0, "column": 0 },
+                "to": { "row": 0, "column": 3 }
+            },
+            {
+                "from": { "row": 1, "column": 0 },
+                "to": { "row": 1, "column": 1 }
+            },
+            {
+                "from": { "row": 1, "column": 2 },
+                "to": { "row": 1, "column": 3 }
+            },
             {
                 "from": { "row": 3, "column": 0 },
                 "to": { "row": 4, "column": 0 }

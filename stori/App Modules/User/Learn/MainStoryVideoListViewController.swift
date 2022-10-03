@@ -36,7 +36,12 @@ class MainStoryVideoListViewController: UIViewController {
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        if let count = navigationController?.viewControllers.count,
+           count > 1 {
+            navigationController?.popViewController(animated: true)
+        } else {
+            dismiss(animated: true)
+        }
     }
     
 }

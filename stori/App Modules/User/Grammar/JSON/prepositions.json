@@ -4,55 +4,557 @@
     "icon": "diamond",
     "explanation": "Explanation: Sed ut consequat maecenas enim, integer. Amet, amet massa mollis elementum bibendum sit feugiat sem. Egestas habitant adipiscing fames eu aenean. Nisi non velit.",
     "table": {
-        "table_type": 4,
-        "title": "Prépositions",
         "data": [
-            ["Prépositions de lieu", "chez"],
-            ["Prépositions de lieu", "devant"],
-            ["Prépositions de lieu", "derrière"],
-            ["Prépositions de lieu", "au-dessus de"],
-            ["Prépositions de lieu", "au-dessous de"],
-            ["Prépositions de lieu", "hors de"],
-            ["Prépositions de lieu", "loin de"],
-            ["Prépositions de lieu", "près de"],
-            ["Prépositions de lieu", "à côté de"],
-            ["Prépositions de lieu", "en face de"],
-            ["Prépositions de lieu", "le long de"],
-            ["Prépositions de lieu", "à travers"],
-            ["Prépositions de lieu", "au-delà de"],
-            ["Prépositions de lieu", "à gauche de"],
-            ["Prépositions de lieu", "à droite de"],
-            ["Prépositions de temps", "avant"],
-            ["Prépositions de temps", "après"],
-            ["Prépositions de temps", "pendant"],
-            ["Prépositions de temps", "durant"],
-            ["Prépositions de temps", "depuis"],
-            ["Prépositions de temps", "dès"],
-            ["Prépositions de temps", "il y a"],
-            ["Prépositions de temps", "dans"],
-            ["Prépositions de temps", "en"],
-            ["Prépositions de temps", "pour"],
-            ["Prépositions de temps", "jusque"],
-            ["Prépositions de temps", "en attendant"],
-            ["Prépositions de manière ou de moyen", "à l’aide de"],
-            ["Prépositions de manière ou de moyen", "au moyen de"],
-            ["Prépositions de manière ou de moyen", "à la manière de"],
-            ["Prépositions de manière ou de moyen", "sans"],
-            ["Prépositions de manière ou de moyen", "avec"],
-            ["Prépositions de manière ou de moyen", "selon"],
-            ["Prépositions de manière ou de moyen", "dans"],
-            ["Prépositions de sens multiples (lieu, temps, manière)", "par"],
-            ["Prépositions de sens multiples (lieu, temps, manière)", "sur"],
-            ["Prépositions de sens multiples (lieu, temps, manière)", "sous"],
-            ["Prépositions de sens multiples (lieu, temps, manière)", "dans"],
-            ["Prépositions de sens multiples (lieu, temps, manière)", "en"],
-            ["Prépositions de sens multiples (lieu, temps, manière)", "vers"],
-            ["Prépositions de sens multiples (lieu, temps, manière)", "jusqu’à"],
-            ["Prépositions de sens multiples (lieu, temps, manière)", "entre"],
-            ["Prépositions de sens multiples (lieu, temps, manière)", "pour"],
-            ["Prépositions de sens multiples (lieu, temps, manière)", "à partir de"]
+            [
+                {
+                    "text": "Prépositions",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Prépositions",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                }
+            ],
+            
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "chez",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "devant",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "derrière",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "au-dessus de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "au-dessous de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "hors de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "loin de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "près de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "à côté de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "en face de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "le long de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "à travers",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "au-delà de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "à gauche de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "à droite de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "avant",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "après",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "pendant",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "durant",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "depuis",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "dès",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "il y a",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "dans",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "en",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "pour",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "jusque",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "en attendant",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            
+            [
+                {
+                    "text": "Prépositions de manière ou de moyen",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "à l’aide de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de manière ou de moyen",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "au moyen de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de manière ou de moyen",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "à la manière de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de manière ou de moyen",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "sans",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de manière ou de moyen",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "avec",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de manière ou de moyen",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "selon",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de manière ou de moyen",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "dans",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            
+            [
+                {
+                    "text": "Prépositions de sens multiples (lieu, temps, manière)",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "par",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de sens multiples (lieu, temps, manière)",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "sur",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de sens multiples (lieu, temps, manière)",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "sous",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de sens multiples (lieu, temps, manière)",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "dans",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de sens multiples (lieu, temps, manière)",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "en",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de sens multiples (lieu, temps, manière)",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "vers",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de sens multiples (lieu, temps, manière)",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "jusqu’à",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de sens multiples (lieu, temps, manière)",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "entre",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de sens multiples (lieu, temps, manière)",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "pour",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Prépositions de sens multiples (lieu, temps, manière)",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "à partir de",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ]
         ],
         "merged_items": [
+            {
+                "from": { "row": 0, "column": 0 },
+                "to": { "row": 0, "column": 1 }
+            },
             {
                 "from": { "row": 1, "column": 0 },
                 "to": { "row": 15, "column": 0 }

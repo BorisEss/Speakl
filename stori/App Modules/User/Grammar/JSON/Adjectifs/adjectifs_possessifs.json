@@ -1,17 +1,219 @@
 {
     "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "table": {
-        "table_type": 3,
-        "title": "Adjectifs possessifs",
-        "subtitle_1": ["Singulier", "Pluriel"],
-        "subtitle_2": ["masculin", "féminin", "masculin", "féminin"],
         "data": [
-            ["Mon père", "Ma mère", "Mes frères", "Mes sœurs"],
-            ["Ton père", "Ta mère", "Tes frères", "Tes sœurs"],
-            ["Son père", "Sa mère", "Ses frères", "Ses sœurs"],
-            ["Notre père", "Notre mère", "Nos frères", "Nos sœurs"],
-            ["Votre père", "Votre mère", "Vos frères", "Vos sœurs"],
-            ["Leur père", "Leur mère", "Leurs frères", "Leurs sœurs"]
+            [
+                {
+                    "text": "Adjectifs possessifs",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Adjectifs possessifs",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Adjectifs possessifs",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Adjectifs possessifs",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                }
+            ],
+            [
+                {
+                    "text": "Singulier",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Singulier",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Pluriel",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Pluriel",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                }
+            ],
+            [
+                {
+                    "text": "masculin",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "féminin",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "masculin",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "féminin",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                }
+            ],
+            [
+                {
+                    "text": "Mon père",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Ma mère",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Mes frères",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Mes sœurs",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Ton père",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Ta mère",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Tes frères",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Tes sœurs",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Son père",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Sa mère",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Ses frères",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Ses sœurs",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Notre père",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Notre mère",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Nos frères",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Nos sœurs",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Votre père",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Votre mère",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Vos frères",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Vos sœurs",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Leur père",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Leur mère",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Leurs frères",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "Leurs sœurs",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ]
+        ],
+        "merged_items": [
+            {
+                "from": { "row": 0, "column": 0 },
+                "to": { "row": 0, "column": 3 }
+            },
+            {
+                "from": { "row": 1, "column": 0 },
+                "to": { "row": 1, "column": 1 }
+            },
+            {
+                "from": { "row": 1, "column": 2 },
+                "to": { "row": 1, "column": 3 }
+            }
         ]
     },
     "stories": [ "1", "2", "3" ]

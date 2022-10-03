@@ -78,7 +78,6 @@ class TextCell: Cell {
                 attributedString1.append(attributedString3)
             }
             label.attributedText = attributedString1
-
         } else {
             let newText = text.replacingOccurrences(of: "<", with: "").replacingOccurrences(of: ">", with: "")
             label.text = newText

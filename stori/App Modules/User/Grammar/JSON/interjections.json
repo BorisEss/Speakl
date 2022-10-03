@@ -4,39 +4,361 @@
     "icon": "heart",
     "explanation": "Explanation: Sed ut consequat maecenas enim, integer. Amet, amet massa mollis elementum bibendum sit feugiat sem. Egestas habitant adipiscing fames eu aenean. Nisi non velit.",
     "table": {
-        "table_type": 4,
-        "title": "Interjections",
         "data": [
-            ["Interjections", "Ah !"],
-            ["Interjections", "Aie !"],
-            ["Interjections", "Eh !"],
-            ["Interjections", "Euh !"],
-            ["Interjections", "Ouf !"],
-            ["Interjections", "Hihi !"],
-            ["Interjections", "Hé !"],
-            ["Interjections", "Bon ! "],
-            ["Interjections", "Fi !"],
-            ["Interjections", "Fi donc ! "],
-            ["Interjections", "Oh ! "],
-            ["Interjections", "Zest ! "],
-            ["Interjections", "Ho !"],
-            ["Interjections", "Ha ! "],
-            ["Interjections", "Bon Dieu ! "],
-            ["Interjections", "Oh ça !"],
-            ["Interjections", "Allons !"],
-            ["Interjections", "Holà ! "],
-            ["Interjections", "Hem !"],
-            ["Interjections", "Gare !"],
-            ["Interjections", "Chut !"],
-            ["Interjections", "Si !"],
-            ["Interjections", "Paix !"],
-            ["Interjections", "Zut !"],
-            ["Interjections", "Pst !"],
-            ["Interjections", "Paf !"],
-            ["Interjections", "Crac ! "],
-            ["Interjections", "Boum !"]
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Ah !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Aie !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Eh !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Euh !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Ouf !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Hihi !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Hé !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Bon !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Fi !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Fi donc !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Oh !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Zest !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Ho !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Ha !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Bon Dieu !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Oh ça !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Allons !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Holà !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Hem !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Gare !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Chut !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Si !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Paix !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Zut !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Pst !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Paf !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Crac !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Interjections",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Boum !",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ]
         ],
         "merged_items": [
+            {
+                "from": { "row": 0, "column": 0 },
+                "to": { "row": 0, "column": 1 }
+            },
             {
                 "from": { "row": 1, "column": 0 },
                 "to": { "row": 28, "column": 0 }

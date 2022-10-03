@@ -78,62 +78,8 @@ class GrammarSubcategoryDetailsViewController: UIViewController {
     }
     
     private func setUpTable(_ details: GrammarSubcategoryDetails) {
-        switch details.tableData.tableType {
-        case .twoColumns: loadTwoColumnsTableView()
-        case .twoColumnsWithTitle: loadTwoColumnsWithTitleTableView()
-        case .threeColumns: loadThreeColumnsTableView()
-        case .fourColumns: loadFourColumnsTableView()
-        case .twoColumnsGrouped: loadTwoColumnsGrouppedTableView()
-        }
-    }
-    
-    private func loadTwoColumnsTableView() {
         guard let subcategoryDetails = subcategoryDetails else { return }
-        let table = TwoColumnsTableView(width: view.frame.width, data: subcategoryDetails.tableData)
-        table.heightAnchor.constraint(equalToConstant: table.tableHeight).isActive = true
-        table.didSelectItem = { item in
-            Toast.success(item)
-        }
-        contentStackView.insertArrangedSubview(table, at: 1)
-    }
-    
-    private func loadTwoColumnsWithTitleTableView() {
-        guard let subcategoryDetails = subcategoryDetails else { return }
-        let table = TwoColumnsWithTitleTableView(width: view.frame.width,
-                                                 data: subcategoryDetails.tableData)
-        table.heightAnchor.constraint(equalToConstant: table.tableHeight).isActive = true
-        table.didSelectItem = { item in
-            Toast.success(item)
-        }
-        contentStackView.insertArrangedSubview(table, at: 1)
-    }
-    
-    private func loadThreeColumnsTableView() {
-        guard let subcategoryDetails = subcategoryDetails else { return }
-        let table = ThreeColumnsTableView(width: view.frame.width,
-                                          data: subcategoryDetails.tableData)
-        table.heightAnchor.constraint(equalToConstant: table.tableHeight).isActive = true
-        table.didSelectItem = { item in
-            Toast.success(item)
-        }
-        contentStackView.insertArrangedSubview(table, at: 1)
-    }
-    
-    private func loadFourColumnsTableView() {
-        guard let subcategoryDetails = subcategoryDetails else { return }
-        let table = FourColumnsTableView(width: view.frame.width,
-                                          data: subcategoryDetails.tableData)
-        table.heightAnchor.constraint(equalToConstant: table.tableHeight).isActive = true
-        table.didSelectItem = { item in
-            Toast.success(item)
-        }
-        contentStackView.insertArrangedSubview(table, at: 1)
-    }
-    
-    private func loadTwoColumnsGrouppedTableView() {
-        guard let subcategoryDetails = subcategoryDetails else { return }
-        let table = TwoColumnsGrouppedTableView(width: view.frame.width,
-                                          data: subcategoryDetails.tableData)
+        let table = GeneralTableView(width: view.frame.width, data: subcategoryDetails.tableData)
         table.heightAnchor.constraint(equalToConstant: table.tableHeight).isActive = true
         table.didSelectItem = { item in
             Toast.success(item)
@@ -168,7 +114,10 @@ extension GrammarSubcategoryDetailsViewController: UICollectionViewDelegate, UIC
         let nextScreen = storyBoard.instantiateViewController(withIdentifier: "MainStoryVideoListViewController")
         if let unwrappedNextScreen = nextScreen as? MainStoryVideoListViewController {
             unwrappedNextScreen.position = 0
-            navigationController?.pushViewController(unwrappedNextScreen, animated: true)
+            let navC = AppShadowNavigationViewController(rootViewController: unwrappedNextScreen)
+            navC.modalPresentationStyle = .fullScreen
+            navC.setNavigationBarHidden(true, animated: false)
+            present(navC, animated: true)
         }
     }
 }

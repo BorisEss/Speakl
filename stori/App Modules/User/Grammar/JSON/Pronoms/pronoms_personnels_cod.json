@@ -1,20 +1,166 @@
 {
     "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "table": {
-        "table_type": 2,
-        "title": "Pronoms personnels COD",
-        "subtitle_1": ["personne", "singulier", "pluriel"],
-        "subtitle_2": [],
         "data": [
-            ["1re", "me", "nous"],
-            ["1re", "m'", "nous"],
-            ["2e", "te", "vous"],
-            ["2e", "t'", "vous"],
-            ["3e", "le", "les"],
-            ["3e", "la", "les"],
-            ["3e", "l'", "les"]
+            [
+                {
+                    "text": "Pronoms personnels COD",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Pronoms personnels COD",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Pronoms personnels COD",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                }
+            ],
+            [
+                {
+                    "text": "personne",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "singulier",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "pluriel",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                }
+            ],
+            [
+                {
+                    "text": "1re",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "me",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "nous",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "1re",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "m'",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "nous",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "2e",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "te",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "vous",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "2e",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "t'",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "vous",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "3e",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "le",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "les",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "3e",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "la",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "les",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "3e",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "l'",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "les",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ]
         ],
         "merged_items": [
+            {
+                "from": { "row": 0, "column": 0 },
+                "to": { "row": 0, "column": 2 }
+            },
             {
                 "from": { "row": 2, "column": 0 },
                 "to": { "row": 3, "column": 0 }

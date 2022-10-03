@@ -1,0 +1,171 @@
+{
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "table": {
+        "data": [
+            [
+                {
+                    "text": "Pronoms relatifs simples",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Pronoms relatifs simples",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Pronoms relatifs simples",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                }
+            ],
+            [
+                {
+                    "text": "Sujet",
+                    "is_clickable": false,
+                    "background_color": "#33A851",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "Qui",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "C’est un film <qui> aborde un sujet délicat.",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                }
+            ],
+            [
+                {
+                    "text": "Complément d’objet direct",
+                    "is_clickable": false,
+                    "background_color": "#33A851",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "Que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "C’est un film <que> tous adorent.",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                }
+            ],
+            [
+                {
+                    "text": "Complément de lieu",
+                    "is_clickable": false,
+                    "background_color": "#33A851",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "Où",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "C’est une ville <où> nous habitons.",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                }
+            ],
+            [
+                {
+                    "text": "Complément de temps",
+                    "is_clickable": false,
+                    "background_color": "#33A851",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "Où",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "C’est le jour <où> Emma est arrivée à Aix.",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                }
+            ],
+            [
+                {
+                    "text": "Complément du verbe\n(introduit par de )",
+                    "is_clickable": false,
+                    "background_color": "#33A851",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "Dont",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "C’est le film <dont> je vous ai parlé.",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                }
+            ],
+            [
+                {
+                    "text": "Complément de l’adjectif\n(introduit par de)",
+                    "is_clickable": false,
+                    "background_color": "#33A851",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "Dont",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "C’est le jeune <dont> elle est amoureuse.",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                }
+            ],
+            [
+                {
+                    "text": "Complément du nom\n(introduit par de)",
+                    "is_clickable": false,
+                    "background_color": "#33A851",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "Dont",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "C’est le film <dont> le scénario est banal.",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                }
+            ]
+        ],
+        "merged_items": [
+            {
+                "from": { "row": 0, "column": 0 },
+                "to": { "row": 0, "column": 2 }
+            }
+        ]
+    },
+    "stories": [ "1", "2", "3" ]
+}

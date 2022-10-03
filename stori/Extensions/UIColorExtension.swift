@@ -22,4 +22,34 @@ extension UIColor {
         }
         return nil
     }
+    
+    convenience init(hex: String, alpha: CGFloat = 1.0) {
+        let hexString: String = hex
+            .replacingOccurrences(of: "#", with: "")
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+        let scanner = Scanner(string: hexString)
+        var color: UInt64 = 0
+        scanner.scanHexInt64(&color)
+        let mask = 0x000000FF
+        let rInt = Int(color >> 16) & mask
+        let gInt = Int(color >> 8) & mask
+        let bInt = Int(color) & mask
+        let red   = CGFloat(rInt) / 255.0
+        let green = CGFloat(gInt) / 255.0
+        let blue  = CGFloat(bInt) / 255.0
+        self.init(red: red, green: green, blue: blue, alpha: alpha)
+    }
+    
+    func hexStringFromColor() -> String {
+        let components = self.cgColor.components
+        let rFloat: CGFloat = components?[0] ?? 0.0
+        let gFloat: CGFloat = components?[1] ?? 0.0
+        let bFloat: CGFloat = components?[2] ?? 0.0
+
+        let hexString = String.init(format: "#%02lX%02lX%02lX",
+                                    lroundf(Float(rFloat * 255)),
+                                    lroundf(Float(gFloat * 255)),
+                                    lroundf(Float(bFloat * 255)))
+        return hexString
+     }
 }

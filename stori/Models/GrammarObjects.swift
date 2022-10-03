@@ -94,21 +94,29 @@ struct MergedRangeItem: Decodable {
 }
 
 struct TableData: Decodable {
-    var tableType: TableType
-    var title: String?
-    var subtitle1: [String]?
-    var subtitle2: [String]?
-    var data: [[String]]?
-    var groupedData: [String: [String]]?
+    var data: [[TableCellObject]]?
     var mergedItems: [MergedRangeItem]?
     
     enum CodingKeys: String, CodingKey {
-        case tableType = "table_type"
-        case title
-        case subtitle1 = "subtitle_1"
-        case subtitle2 = "subtitle_2"
         case data
-        case groupedData = "grouped_data"
         case mergedItems = "merged_items"
+    }
+}
+
+struct TableCellObject: Decodable {
+    var text: String
+    var isClickable: Bool
+    private var backgroundColorHexString: String
+    var isLargeCell: Bool?
+    
+    enum CodingKeys: String, CodingKey {
+        case text
+        case isClickable = "is_clickable"
+        case backgroundColorHexString = "background_color"
+        case isLargeCell = "is_large_cell"
+    }
+    
+    var backgroundColor: UIColor {
+        return UIColor(hex: backgroundColorHexString)
     }
 }

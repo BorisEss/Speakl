@@ -82,7 +82,7 @@ extension GrammarViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.bounds.width - 40 - 16) / 2
+        let width = (collectionView.bounds.width - 40 - 18) / 2
         let height = width / 5 * 4
         return CGSize(width: width, height: height)
     }

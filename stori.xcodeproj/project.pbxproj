@@ -58,11 +58,7 @@
 		FA30188E28881EDA0041CECB /* GrammarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30188D28881EDA0041CECB /* GrammarViewController.swift */; };
 		FA301891288825410041CECB /* GrammarCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301890288825410041CECB /* GrammarCategoryCollectionViewCell.swift */; };
 		FA3018932888386D0041CECB /* GrammarCategoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3018922888386D0041CECB /* GrammarCategoryDetailsViewController.swift */; };
-		FA31048528BB4A4400830479 /* TwoColumnsWithTitleTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA31048428BB4A4400830479 /* TwoColumnsWithTitleTableView.xib */; };
-		FA31048728BB4A5500830479 /* TwoColumnsWithTitleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31048628BB4A5500830479 /* TwoColumnsWithTitleTableView.swift */; };
 		FA31048928BB4A8F00830479 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31048828BB4A8F00830479 /* TextCell.swift */; };
-		FA31048C28BB53B500830479 /* ThreeColumnsTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA31048B28BB53B500830479 /* ThreeColumnsTableView.xib */; };
-		FA31048E28BB53C300830479 /* ThreeColumnsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31048D28BB53C300830479 /* ThreeColumnsTableView.swift */; };
 		FA333DAC27EC89E700E6B5A1 /* WordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA333DAA27EC89E700E6B5A1 /* WordCollectionViewCell.swift */; };
 		FA333DAD27EC89E700E6B5A1 /* WordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA333DAB27EC89E700E6B5A1 /* WordCollectionViewCell.xib */; };
 		FA33B6A42587D8E700836668 /* LanguageInterestsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */; };
@@ -95,10 +91,6 @@
 		FA39765A28C8DBC200167305 /* pronoms_relatifs_composes.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39765928C8DBC200167305 /* pronoms_relatifs_composes.json */; };
 		FA39765C28C8DBCE00167305 /* pronoms_indefinis.json in Resources */ = {isa = PBXBuildFile; fileRef = FA39765B28C8DBCE00167305 /* pronoms_indefinis.json */; };
 		FA39765E28C9AE9400167305 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39765D28C9AE9400167305 /* CollectionExtension.swift */; };
-		FA39766028C9BDAA00167305 /* FourColumnsTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA39765F28C9BDAA00167305 /* FourColumnsTableView.xib */; };
-		FA39766228C9BDBD00167305 /* FourColumnsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39766128C9BDBD00167305 /* FourColumnsTableView.swift */; };
-		FA39766428C9C1CD00167305 /* TwoColumnsGrouppedTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA39766328C9C1CD00167305 /* TwoColumnsGrouppedTableView.xib */; };
-		FA39766628C9C1DF00167305 /* TwoColumnsGrouppedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39766528C9C1DF00167305 /* TwoColumnsGrouppedTableView.swift */; };
 		FA3A467526381A7A00BF0CB5 /* ShareFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */; };
 		FA3A467726381A8300BF0CB5 /* ShareFeedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */; };
 		FA3A467926381F5100BF0CB5 /* ShareFeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A467826381F5100BF0CB5 /* ShareFeedbackService.swift */; };
@@ -173,6 +165,8 @@
 		FA5608C6261F2CEF0062EE88 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5608C5261F2CEF0062EE88 /* Settings.storyboard */; };
 		FA5608C9261F2D150062EE88 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5608C8261F2D150062EE88 /* SettingsViewController.swift */; };
 		FA5608E6262034070062EE88 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5608E5262034070062EE88 /* IBMPlexSans-Medium.ttf */; };
+		FA56BB5C28DF5C0C006247D4 /* GeneralTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA56BB5B28DF5C0C006247D4 /* GeneralTableView.xib */; };
+		FA56BB5E28DF5C33006247D4 /* GeneralTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56BB5D28DF5C33006247D4 /* GeneralTableView.swift */; };
 		FA5BCFBE27038CE8004A6B08 /* AppShadowNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BCFBD27038CE8004A6B08 /* AppShadowNavigationViewController.swift */; };
 		FA5F5F3328CE36D3004964DE /* interjections.json in Resources */ = {isa = PBXBuildFile; fileRef = FA5F5F3228CE36D3004964DE /* interjections.json */; };
 		FA63DA39258CF3D400722CA6 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */; };
@@ -285,8 +279,6 @@
 		FAAF7CC226306F0F0007E63B /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF7CC126306F0F0007E63B /* Number.swift */; };
 		FAB47D9125C1725200B55F58 /* CoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB47D9025C1725200B55F58 /* CoverImage.swift */; };
 		FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB670C125DE623100DA5CA8 /* CSChapterModel.swift */; };
-		FAB7617328B8E96C0009B77E /* TwoColumnsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7617228B8E96C0009B77E /* TwoColumnsTableView.swift */; };
-		FAB7617528B8E9750009B77E /* TwoColumnsTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB7617428B8E9740009B77E /* TwoColumnsTableView.xib */; };
 		FAB84DC426CFAE1F00B9C5A0 /* StoryVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB84DC326CFAE1F00B9C5A0 /* StoryVideoListViewController.swift */; };
 		FAB84DC626CFE73C00B9C5A0 /* video.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB84DC526CFE73C00B9C5A0 /* video.json */; };
 		FAB84DC826CFEA3B00B9C5A0 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB84DC726CFEA3B00B9C5A0 /* Video.swift */; };
@@ -430,11 +422,7 @@
 		FA30188D28881EDA0041CECB /* GrammarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarViewController.swift; sourceTree = "<group>"; };
 		FA301890288825410041CECB /* GrammarCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA3018922888386D0041CECB /* GrammarCategoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarCategoryDetailsViewController.swift; sourceTree = "<group>"; };
-		FA31048428BB4A4400830479 /* TwoColumnsWithTitleTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoColumnsWithTitleTableView.xib; sourceTree = "<group>"; };
-		FA31048628BB4A5500830479 /* TwoColumnsWithTitleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsWithTitleTableView.swift; sourceTree = "<group>"; };
 		FA31048828BB4A8F00830479 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
-		FA31048B28BB53B500830479 /* ThreeColumnsTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreeColumnsTableView.xib; sourceTree = "<group>"; };
-		FA31048D28BB53C300830479 /* ThreeColumnsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeColumnsTableView.swift; sourceTree = "<group>"; };
 		FA333DAA27EC89E700E6B5A1 /* WordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA333DAB27EC89E700E6B5A1 /* WordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA33B6A32587D8E700836668 /* LanguageInterestsSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInterestsSelectionViewController.swift; sourceTree = "<group>"; };
@@ -467,10 +455,6 @@
 		FA39765928C8DBC200167305 /* pronoms_relatifs_composes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_relatifs_composes.json; sourceTree = "<group>"; };
 		FA39765B28C8DBCE00167305 /* pronoms_indefinis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pronoms_indefinis.json; sourceTree = "<group>"; };
 		FA39765D28C9AE9400167305 /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
-		FA39765F28C9BDAA00167305 /* FourColumnsTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourColumnsTableView.xib; sourceTree = "<group>"; };
-		FA39766128C9BDBD00167305 /* FourColumnsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourColumnsTableView.swift; sourceTree = "<group>"; };
-		FA39766328C9C1CD00167305 /* TwoColumnsGrouppedTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoColumnsGrouppedTableView.xib; sourceTree = "<group>"; };
-		FA39766528C9C1DF00167305 /* TwoColumnsGrouppedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsGrouppedTableView.swift; sourceTree = "<group>"; };
 		FA3A467426381A7A00BF0CB5 /* ShareFeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFeedbackViewController.swift; sourceTree = "<group>"; };
 		FA3A467626381A8300BF0CB5 /* ShareFeedback.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareFeedback.storyboard; sourceTree = "<group>"; };
 		FA3A467826381F5100BF0CB5 /* ShareFeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFeedbackService.swift; sourceTree = "<group>"; };
@@ -546,6 +530,8 @@
 		FA5608C5261F2CEF0062EE88 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		FA5608C8261F2D150062EE88 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FA5608E5262034070062EE88 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		FA56BB5B28DF5C0C006247D4 /* GeneralTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralTableView.xib; sourceTree = "<group>"; };
+		FA56BB5D28DF5C33006247D4 /* GeneralTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTableView.swift; sourceTree = "<group>"; };
 		FA5BCFBD27038CE8004A6B08 /* AppShadowNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShadowNavigationViewController.swift; sourceTree = "<group>"; };
 		FA5F5F3228CE36D3004964DE /* interjections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = interjections.json; sourceTree = "<group>"; };
 		FA63DA38258CF3D400722CA6 /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
@@ -660,8 +646,6 @@
 		FAAF7CC126306F0F0007E63B /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		FAB47D9025C1725200B55F58 /* CoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImage.swift; sourceTree = "<group>"; };
 		FAB670C125DE623100DA5CA8 /* CSChapterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSChapterModel.swift; sourceTree = "<group>"; };
-		FAB7617228B8E96C0009B77E /* TwoColumnsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsTableView.swift; sourceTree = "<group>"; };
-		FAB7617428B8E9740009B77E /* TwoColumnsTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoColumnsTableView.xib; sourceTree = "<group>"; };
 		FAB84DC326CFAE1F00B9C5A0 /* StoryVideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVideoListViewController.swift; sourceTree = "<group>"; };
 		FAB84DC526CFE73C00B9C5A0 /* video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video.json; sourceTree = "<group>"; };
 		FAB84DC726CFEA3B00B9C5A0 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -885,42 +869,6 @@
 				FAE5D8802888743300C7AA57 /* GrammarSubcategoryTableViewCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		FA31048328BB4A2E00830479 /* TwoColumnsWithTitle */ = {
-			isa = PBXGroup;
-			children = (
-				FA31048428BB4A4400830479 /* TwoColumnsWithTitleTableView.xib */,
-				FA31048628BB4A5500830479 /* TwoColumnsWithTitleTableView.swift */,
-			);
-			path = TwoColumnsWithTitle;
-			sourceTree = "<group>";
-		};
-		FA31048A28BB539200830479 /* ThreeColumns */ = {
-			isa = PBXGroup;
-			children = (
-				FA31048B28BB53B500830479 /* ThreeColumnsTableView.xib */,
-				FA31048D28BB53C300830479 /* ThreeColumnsTableView.swift */,
-			);
-			path = ThreeColumns;
-			sourceTree = "<group>";
-		};
-		FA39762D28C6273200167305 /* FourColumns */ = {
-			isa = PBXGroup;
-			children = (
-				FA39765F28C9BDAA00167305 /* FourColumnsTableView.xib */,
-				FA39766128C9BDBD00167305 /* FourColumnsTableView.swift */,
-			);
-			path = FourColumns;
-			sourceTree = "<group>";
-		};
-		FA39762E28C6273C00167305 /* TwoColumnsGroupped */ = {
-			isa = PBXGroup;
-			children = (
-				FA39766328C9C1CD00167305 /* TwoColumnsGrouppedTableView.xib */,
-				FA39766528C9C1DF00167305 /* TwoColumnsGrouppedTableView.swift */,
-			);
-			path = TwoColumnsGroupped;
 			sourceTree = "<group>";
 		};
 		FA39763B28C8DB0700167305 /* Adjectifs */ = {
@@ -1480,22 +1428,10 @@
 			isa = PBXGroup;
 			children = (
 				FA31048828BB4A8F00830479 /* TextCell.swift */,
-				FAB7617128B8D5CD0009B77E /* TwoColumns */,
-				FA31048328BB4A2E00830479 /* TwoColumnsWithTitle */,
-				FA31048A28BB539200830479 /* ThreeColumns */,
-				FA39762D28C6273200167305 /* FourColumns */,
-				FA39762E28C6273C00167305 /* TwoColumnsGroupped */,
+				FA56BB5B28DF5C0C006247D4 /* GeneralTableView.xib */,
+				FA56BB5D28DF5C33006247D4 /* GeneralTableView.swift */,
 			);
 			path = Tables;
-			sourceTree = "<group>";
-		};
-		FAB7617128B8D5CD0009B77E /* TwoColumns */ = {
-			isa = PBXGroup;
-			children = (
-				FAB7617428B8E9740009B77E /* TwoColumnsTableView.xib */,
-				FAB7617228B8E96C0009B77E /* TwoColumnsTableView.swift */,
-			);
-			path = TwoColumns;
 			sourceTree = "<group>";
 		};
 		FAB8E018263A7976000AE9FE /* Referral */ = {
@@ -1849,7 +1785,6 @@
 				FA3CA396281AAC8000141F19 /* ReviewHeaderTableViewCell.xib in Resources */,
 				FA999D9825694D3E00B694FA /* Strings.strings in Resources */,
 				FA39763428C8BAD000167305 /* pronoms.json in Resources */,
-				FA39766428C9C1CD00167305 /* TwoColumnsGrouppedTableView.xib in Resources */,
 				FA1F714D25BEF0AE009AE0D4 /* JoinTeacherNetwork.storyboard in Resources */,
 				FA43D84E27BEAD8100BBEF07 /* sentence3.mp3 in Resources */,
 				FA50421025A611F4004E6EC9 /* ImagePreview.storyboard in Resources */,
@@ -1878,7 +1813,6 @@
 				FA9F6C102582899800AC5197 /* LanguageLevelTableViewCell.xib in Resources */,
 				FA94560A25C557C9003E54F0 /* VocabularyItemTableViewCell.xib in Resources */,
 				FA1F714925BEF066009AE0D4 /* CreateStory.storyboard in Resources */,
-				FA39766028C9BDAA00167305 /* FourColumnsTableView.xib in Resources */,
 				FABB63A7257672EC008B3FAB /* LanguagePopup.storyboard in Resources */,
 				FA2AB11C281AF58000D05940 /* ReviewTopicCollectionViewCell.xib in Resources */,
 				FA4B61A625753433005501BD /* Google-Credentials.plist in Resources */,
@@ -1900,7 +1834,6 @@
 				FA714463288E8EF400D669FB /* WEExamples.storyboard in Resources */,
 				FA94561025C57CCE003E54F0 /* VocabularyHeaderTableViewCell.xib in Resources */,
 				FA3CA39A281AACEE00141F19 /* ReviewTopicsTableViewCell.xib in Resources */,
-				FA31048C28BB53B500830479 /* ThreeColumnsTableView.xib in Resources */,
 				FA8BB73A25C1ED6C001B6A22 /* CSAudioTableViewCell.xib in Resources */,
 				FA39764028C8DB2C00167305 /* adjectifs_demonstratifs.json in Resources */,
 				FA186A34280701BD00FA0479 /* Comments.storyboard in Resources */,
@@ -1908,7 +1841,6 @@
 				FA3CA3A0281AAD2000141F19 /* ReviewWordTableViewCell.xib in Resources */,
 				FA4506062637FE5100000279 /* Notifications.storyboard in Resources */,
 				FAA27A3A2868823F00F0B741 /* TeacherExperienceView.xib in Resources */,
-				FAB7617528B8E9750009B77E /* TwoColumnsTableView.xib in Resources */,
 				FA50420625A5B957004E6EC9 /* FileTableViewCell.xib in Resources */,
 				FA3A467726381A8300BF0CB5 /* ShareFeedback.storyboard in Resources */,
 				FAF3284428C0C16B002D0A10 /* articles_definis.json in Resources */,
@@ -1928,7 +1860,6 @@
 				FA39764E28C8DB8100167305 /* pronoms_reflechis.json in Resources */,
 				FA43D84A27BEAD8100BBEF07 /* paragraph.mp3 in Resources */,
 				FAF3283D28C0AABB002D0A10 /* grammar.json in Resources */,
-				FA31048528BB4A4400830479 /* TwoColumnsWithTitleTableView.xib in Resources */,
 				FAAA96D9261DE6A800B53D6C /* InterestTableViewCell.xib in Resources */,
 				FA186A2F2806D27200FA0479 /* UserProfile.storyboard in Resources */,
 				FA39765228C8DBA000167305 /* pronoms_interrogatifs.json in Resources */,
@@ -1945,6 +1876,7 @@
 				FA71445F288E8EDB00D669FB /* WEDictionary.storyboard in Resources */,
 				FAF2690E25BF151400FFDE4A /* ItemViewWithSubtitleAndCheckmark.xib in Resources */,
 				FAB84DC626CFE73C00B9C5A0 /* video.json in Resources */,
+				FA56BB5C28DF5C0C006247D4 /* GeneralTableView.xib in Resources */,
 				FA0E895F25BF47C400D80027 /* CSItemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2080,7 +2012,6 @@
 				FA4B6141257008A2005501BD /* Request.swift in Sources */,
 				FA4D448B257C172F00398AE2 /* UIImageViewExtension.swift in Sources */,
 				FA16CE2C25ECE60D007B8354 /* StoryTextSection.swift in Sources */,
-				FA39766228C9BDBD00167305 /* FourColumnsTableView.swift in Sources */,
 				FA3C2626256A52320089F646 /* UIViewControllerExtension.swift in Sources */,
 				FAC93A6326DFCB3B003FACDA /* VideoPlayerView.swift in Sources */,
 				FA4D447525790C2700398AE2 /* LanguageClient.swift in Sources */,
@@ -2093,9 +2024,7 @@
 				FA8F2CD427A9227F00701B23 /* SpeakViewController.swift in Sources */,
 				FA4B61342570036C005501BD /* APIClient.swift in Sources */,
 				FAC581FF28089FA700C3EE38 /* CommentTableViewCell.swift in Sources */,
-				FA31048E28BB53C300830479 /* ThreeColumnsTableView.swift in Sources */,
 				FA5041E625A5B3B0004E6EC9 /* File.swift in Sources */,
-				FA31048728BB4A5500830479 /* TwoColumnsWithTitleTableView.swift in Sources */,
 				FA4B6116256F7BE7005501BD /* Endpoints.swift in Sources */,
 				FA9BCB4A26417BB0009B1DDB /* VocabularyClient.swift in Sources */,
 				FABD3A0827BFD3F300F408A0 /* SpeakTableViewCell.swift in Sources */,
@@ -2145,7 +2074,6 @@
 				FA812DA425665AB10036F162 /* RootViewController.swift in Sources */,
 				FA9BCB5026417DCC009B1DDB /* UpdateLanguageLevelVocabularyVC.swift in Sources */,
 				FA7B72DF25669C54003F9A0C /* AppFonts.swift in Sources */,
-				FA39766628C9C1DF00167305 /* TwoColumnsGrouppedTableView.swift in Sources */,
 				FAC5824A280DB52000C3EE38 /* ReviewViewController.swift in Sources */,
 				FA9A0F6E28204C77000CA94F /* UnderlinedLabel.swift in Sources */,
 				FAE2105825768C2100A3D971 /* LanguageTableViewCell.swift in Sources */,
@@ -2195,7 +2123,6 @@
 				FA999D9D25694D6800B694FA /* StringExtension.swift in Sources */,
 				FA94560425C54BE8003E54F0 /* CSVocabularyListViewController.swift in Sources */,
 				FA81724427A3F5BB005759B8 /* RandomElements.swift in Sources */,
-				FAB7617328B8E96C0009B77E /* TwoColumnsTableView.swift in Sources */,
 				FA8593DE25E1691D004CAC9E /* CSVocabularyService.swift in Sources */,
 				FA4C2B092868BB6700B934AA /* AnonymousTranslationViewController.swift in Sources */,
 				FA7690A7278F094A001221B7 /* ListenViewController.swift in Sources */,
@@ -2249,6 +2176,7 @@
 				FA210B202785AA7600732440 /* WEPronunciationStyleCollectionViewCell.swift in Sources */,
 				FA186517275BD81D004981AA /* SearchViewController.swift in Sources */,
 				FA417FDE2590F40F00F9D81B /* UIApplicationExtension.swift in Sources */,
+				FA56BB5E28DF5C33006247D4 /* GeneralTableView.swift in Sources */,
 				FAB670C225DE623100DA5CA8 /* CSChapterModel.swift in Sources */,
 				FA3A467526381A7A00BF0CB5 /* ShareFeedbackViewController.swift in Sources */,
 				FA09A5CA263C2AC000DB7450 /* UpdateLevelTableViewCell.swift in Sources */,
@@ -2411,7 +2339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 69;
+				CURRENT_PROJECT_VERSION = 71;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;
@@ -2436,7 +2364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = stori/stori.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 69;
+				CURRENT_PROJECT_VERSION = 71;
 				DEVELOPMENT_TEAM = GBTHA95GEH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = stori/Info.plist;

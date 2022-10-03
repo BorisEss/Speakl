@@ -4,52 +4,520 @@
     "icon": "star",
     "explanation": "Explanation: Sed ut consequat maecenas enim, integer. Amet, amet massa mollis elementum bibendum sit feugiat sem. Egestas habitant adipiscing fames eu aenean. Nisi non velit.",
     "table": {
-        "table_type": 4,
-        "title": "Conjonctions",
         "data": [
-            ["Conjonctions de coordination", "mais"],
-            ["Conjonctions de coordination", "ou"],
-            ["Conjonctions de coordination", "et"],
-            ["Conjonctions de coordination", "donc"],
-            ["Conjonctions de coordination", "or"],
-            ["Conjonctions de coordination", "ni"],
-            ["Conjonctions de coordination", "car"],
-            ["Conjonctions de subordination simples", "que"],
-            ["Conjonctions de subordination simples", "quand"],
-            ["Conjonctions de subordination simples", "comme"],
-            ["Conjonctions de subordination simples", "quoique"],
-            ["Conjonctions de subordination simples", "si"],
-            ["Conjonctions de subordination simples", "lorsque"],
-            ["Conjonctions de subordination simples", "pourtant"],
-            ["Conjonctions de subordination simples", "cependant"],
-            ["Conjonctions de subordination simples", "toutefois"],
-            ["Conjonctions de subordination simples", "néanmoins"],
-            ["Conjonctions de subordination simples", "ainsi"],
-            ["Conjonctions de subordination simples", "donc"],
-            ["Conjonctions de subordination simples", "sinon"],
-            ["Conjonctions de subordination composées", "alors que"],
-            ["Conjonctions de subordination composées", "tandis que"],
-            ["Conjonctions de subordination composées", "ainsi que"],
-            ["Conjonctions de subordination composées", "à condition que"],
-            ["Conjonctions de subordination composées", "pourvu que"],
-            ["Conjonctions de subordination composées", "à moins que"],
-            ["Conjonctions de subordination composées", "pour que"],
-            ["Conjonctions de subordination composées", "afin que"],
-            ["Conjonctions de subordination composées", "de crainte que"],
-            ["Conjonctions de subordination composées", "de peur que"],
-            ["Conjonctions de subordination composées", "de façon que"],
-            ["Conjonctions de subordination composées", "de manière que"],
-            ["Conjonctions de subordination composées", "de sorte que"],
-            ["Conjonctions de subordination composées", "de même que"],
-            ["Conjonctions de subordination composées", "depuis que"],
-            ["Conjonctions de subordination composées", "pendant que"],
-            ["Conjonctions de subordination composées", "aussitôt que"],
-            ["Conjonctions de subordination composées", "jusqu’à ce que"],
-            ["Conjonctions de subordination composées", "malgré que"],
-            ["Conjonctions de subordination composées", "plutôt que"],
-            ["Conjonctions de subordination composées", "vu que"]
+            [
+                {
+                    "text": "Conjonctions",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Conjonctions",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                }
+            ],
+            
+            [
+                {
+                    "text": "Conjonctions de coordination",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "mais",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de coordination",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "ou",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de coordination",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "et",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de coordination",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "donc",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de coordination",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "or",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de coordination",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "ni",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de coordination",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "car",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "quand",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "comme",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "quoique",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "si",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "lorsque",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "pourtant",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "cependant",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "toutefois",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "néanmoins",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "ainsi",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "donc",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination simples",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "sinon",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "alors que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "tandis que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "ainsi que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "à condition que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "pourvu que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "à moins que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "pour que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "afin que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "de crainte que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "de peur que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "de façon que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "de manière que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "de sorte que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "de même que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "depuis que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "pendant que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "aussitôt que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "jusqu’à ce que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "malgré que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "plutôt que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ],
+            [
+                {
+                    "text": "Conjonctions de subordination composées",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "vu que",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ]
         ],
         "merged_items": [
+            {
+                "from": { "row": 0, "column": 0 },
+                "to": { "row": 0, "column": 1 }
+            },
             {
                 "from": { "row": 1, "column": 0 },
                 "to": { "row": 7, "column": 0 }

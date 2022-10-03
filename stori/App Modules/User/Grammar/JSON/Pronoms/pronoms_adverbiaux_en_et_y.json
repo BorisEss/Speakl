@@ -1,0 +1,115 @@
+{
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "table": {
+        "data": [
+            [
+                {
+                    "text": "Pronoms adverbiaux : \"en\" et \"y\"",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Pronoms adverbiaux : \"en\" et \"y\"",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Pronoms adverbiaux : \"en\" et \"y\"",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                },
+                {
+                    "text": "Pronoms adverbiaux : \"en\" et \"y\"",
+                    "is_clickable": false,
+                    "background_color": "#F6AB2C"
+                }
+            ],
+            [
+                {
+                    "text": "Pour les choses",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Pour les choses",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Pour les choses",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                },
+                {
+                    "text": "Pour les choses",
+                    "is_clickable": false,
+                    "background_color": "#33A851"
+                }
+            ],
+            [
+                {
+                    "text": "Avec une expression de quantité (article partitif, adverbe)",
+                    "is_clickable": false,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "Avec un verbe construit avec la préposition <de>",
+                    "is_clickable": false,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "Pour remplacer un complément de lieu",
+                    "is_clickable": false,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                },
+                {
+                    "text": "Avec un verbe construit avec la préposition <à>",
+                    "is_clickable": false,
+                    "background_color": "#2C3E61",
+                    "is_large_cell": true
+                }
+            ],
+            [
+                {
+                    "text": "en",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "en",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "y",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                },
+                {
+                    "text": "y",
+                    "is_clickable": true,
+                    "background_color": "#2C3E61"
+                }
+            ]
+        ],
+        "merged_items": [
+            {
+                "from": { "row": 0, "column": 0 },
+                "to": { "row": 0, "column": 3 }
+            },
+            {
+                "from": { "row": 1, "column": 0 },
+                "to": { "row": 1, "column": 1 }
+            },
+            {
+                "from": { "row": 1, "column": 2 },
+                "to": { "row": 1, "column": 3 }
+            }
+        ]
+    },
+    "stories": [ "1", "2", "3" ]
+}
+
