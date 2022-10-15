@@ -12,6 +12,7 @@ class GeneralTableView: UIView {
 
     var tableHeight: CGFloat = 0
     var didSelectItem: ((String) -> Void)?
+    private var textAlignment: NSTextAlignment = .center
     
     private var data: [[TableCellObject]] = []
     private var mergedItems: [CellRange] = []
@@ -25,7 +26,8 @@ class GeneralTableView: UIView {
     
     @IBOutlet weak var spreadsheetView: SpreadsheetView!
 
-    init(width: CGFloat, data: TableData) {
+    init(width: CGFloat, data: TableData, textAlignment: NSTextAlignment = .center) {
+        self.textAlignment = textAlignment
         if let rows = data.data {
             var numberOfLines = rows.count
             for row in rows where row.map({ $0.isLargeCell ?? false }).contains(true) {
@@ -114,6 +116,9 @@ extension GeneralTableView: SpreadsheetViewDataSource {
         return 37
     }
     func spreadsheetView(_ spreadsheetView: SpreadsheetView, widthForColumn column: Int) -> CGFloat {
+        if (data.first?.count ?? 0) == 1 {
+            return contentView.frame.width - 2
+        }
         return (contentView.frame.width - 3) / 2
     }
 
@@ -162,7 +167,8 @@ extension GeneralTableView: SpreadsheetViewDelegate {
             cell.setUp(color: data[indexPath.row][optional: indexPath.column]?.backgroundColor ?? .speaklBlueSolid,
                        roundedCorners: roundedCorners,
                        radius: roundedCorners.isEmpty ? 0 : 10,
-                       text: data[indexPath.row][optional: indexPath.column]?.text)
+                       text: data[indexPath.row][optional: indexPath.column]?.text,
+                       textAlignment: textAlignment)
             return cell
         }
         return mainCell

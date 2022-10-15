@@ -1,0 +1,47 @@
+{
+    "data": [
+        [
+            {
+                "text": "I walked",
+                "is_clickable": false,
+                "background_color": "#2C3E61"
+            }
+        ],
+        [
+            {
+                "text": "you <walked>",
+                "is_clickable": false,
+                "background_color": "#F6AB2C"
+            }
+        ],
+        [
+            {
+                "text": "he/she walked",
+                "is_clickable": false,
+                "background_color": "#2C3E61"
+            }
+        ],
+        [
+            {
+                "text": "we walked",
+                "is_clickable": false,
+                "background_color": "#2C3E61"
+            }
+        ],
+        [
+            {
+                "text": "you walked",
+                "is_clickable": false,
+                "background_color": "#2C3E61"
+            }
+        ],
+        [
+            {
+                "text": "they walked",
+                "is_clickable": false,
+                "background_color": "#2C3E61"
+            }
+        ]
+    ],
+    "merged_items": []
+}

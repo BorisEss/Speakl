@@ -35,20 +35,29 @@ class TextCell: Cell {
         label.frame = bounds
         label.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         label.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
-        label.textAlignment = .center
         label.textColor = .white
         label.numberOfLines = 0
+        label.translatesAutoresizingMaskIntoConstraints = false
 
         contentView.addSubview(colorView)
         contentView.addSubview(label)
+        label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16).isActive = true
+        label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 16).isActive = true
+        label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    func setUp(color: UIColor, roundedCorners: UIRectCorner = [], radius: CGFloat = 0, text: String?) {
+    func setUp(color: UIColor,
+               roundedCorners: UIRectCorner = [],
+               radius: CGFloat = 0,
+               text: String?,
+               textAlignment: NSTextAlignment = .center) {
         DispatchQueue.main.async {
+            self.label.textAlignment = textAlignment
             self.colorView.roundCorners(corners: roundedCorners, radius: radius)
             self.colorView.backgroundColor = color
             self.setUpLabelWith(text: text ?? "")

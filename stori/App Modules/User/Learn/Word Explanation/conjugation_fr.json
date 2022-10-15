@@ -1,0 +1,47 @@
+{
+    "data": [
+        [
+            {
+                "text": "j’ai marché",
+                "is_clickable": false,
+                "background_color": "#2C3E61"
+            }
+        ],
+        [
+            {
+                "text": "tu as <marché>",
+                "is_clickable": false,
+                "background_color": "#F6AB2C"
+            }
+        ],
+        [
+            {
+                "text": "il a marché",
+                "is_clickable": false,
+                "background_color": "#2C3E61"
+            }
+        ],
+        [
+            {
+                "text": "nous avons marché",
+                "is_clickable": false,
+                "background_color": "#2C3E61"
+            }
+        ],
+        [
+            {
+                "text": "vous avez marché",
+                "is_clickable": false,
+                "background_color": "#2C3E61"
+            }
+        ],
+        [
+            {
+                "text": "ils ont marché",
+                "is_clickable": false,
+                "background_color": "#2C3E61"
+            }
+        ]
+    ],
+    "merged_items": []
+}

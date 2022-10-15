@@ -350,6 +350,9 @@
 		FAF398D52774753F00F1A55A /* TutorialItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF398D42774753F00F1A55A /* TutorialItemViewController.swift */; };
 		FAF452F125D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF452F025D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift */; };
 		FAFC99F625C9757000D60AB4 /* CSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC99F525C9757000D60AB4 /* CSTableViewCell.swift */; };
+		FAFCF7D428F7F2A6004899B7 /* conjugation_en.json in Resources */ = {isa = PBXBuildFile; fileRef = FAFCF7D328F7F2A6004899B7 /* conjugation_en.json */; };
+		FAFCF7D628F7F2B3004899B7 /* conjugation_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = FAFCF7D528F7F2B3004899B7 /* conjugation_fr.json */; };
+		FAFCF7D828FAB47A004899B7 /* WEGrammarMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCF7D728FAB47A004899B7 /* WEGrammarMenuCollectionViewCell.swift */; };
 		FAFD404F263C136800305326 /* UpdateLanguageLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD404E263C136800305326 /* UpdateLanguageLevelViewController.swift */; };
 		FAFE8B262817C4810074F050 /* LearningLanguagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE8B252817C4810074F050 /* LearningLanguagesListViewController.swift */; };
 		FAFF81BA25D277D300A9BE82 /* CreateStoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF81B925D277D300A9BE82 /* CreateStoryModel.swift */; };
@@ -717,6 +720,9 @@
 		FAF452F025D1A1FE0047EFD3 /* CSSuccessMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSuccessMessageViewController.swift; sourceTree = "<group>"; };
 		FAFC99F525C9757000D60AB4 /* CSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTableViewCell.swift; sourceTree = "<group>"; };
 		FAFC9A3425C987E700D60AB4 /* Stori-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stori-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAFCF7D328F7F2A6004899B7 /* conjugation_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = conjugation_en.json; sourceTree = "<group>"; };
+		FAFCF7D528F7F2B3004899B7 /* conjugation_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = conjugation_fr.json; sourceTree = "<group>"; };
+		FAFCF7D728FAB47A004899B7 /* WEGrammarMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEGrammarMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAFD404E263C136800305326 /* UpdateLanguageLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLanguageLevelViewController.swift; sourceTree = "<group>"; };
 		FAFE8B252817C4810074F050 /* LearningLanguagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningLanguagesListViewController.swift; sourceTree = "<group>"; };
 		FAFF81B925D277D300A9BE82 /* CreateStoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStoryModel.swift; sourceTree = "<group>"; };
@@ -1187,6 +1193,8 @@
 				FA26C0E62784772F0021AFB1 /* WEExpressionsViewController.swift */,
 				FA26C0DE278442060021AFB1 /* SelectedWordExplanationViewController.swift */,
 				FA06A59C2850B0AB00335746 /* WEGrammarViewController.swift */,
+				FAFCF7D328F7F2A6004899B7 /* conjugation_en.json */,
+				FAFCF7D528F7F2B3004899B7 /* conjugation_fr.json */,
 			);
 			path = "Word Explanation";
 			sourceTree = "<group>";
@@ -1197,6 +1205,7 @@
 				FA7E25332783376300DEB6A0 /* SelectedWordMenuCollectionViewCell.swift */,
 				FA210B1D2785AA6600732440 /* WEPronunciationAudioCollectionViewCell.swift */,
 				FA210B1F2785AA7600732440 /* WEPronunciationStyleCollectionViewCell.swift */,
+				FAFCF7D728FAB47A004899B7 /* WEGrammarMenuCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1777,6 +1786,7 @@
 				FAF3284628C0C176002D0A10 /* articles_definis_contractes.json in Resources */,
 				FA39765628C8DBB200167305 /* pronoms_adverbiaux_en_et_y.json in Resources */,
 				FAF3284228C0C160002D0A10 /* articles_indefinis.json in Resources */,
+				FAFCF7D428F7F2A6004899B7 /* conjugation_en.json in Resources */,
 				FA39764A28C8DB7300167305 /* pronoms_personnels_cod.json in Resources */,
 				FA5608E6262034070062EE88 /* IBMPlexSans-Medium.ttf in Resources */,
 				FA39765C28C8DBCE00167305 /* pronoms_indefinis.json in Resources */,
@@ -1825,6 +1835,7 @@
 				FA714461288E8EE800D669FB /* WEPronunciation.storyboard in Resources */,
 				FA876C8225C80E7C00E65B95 /* CSImageItemTableViewCell.xib in Resources */,
 				FA812D77256298450036F162 /* Assets.xcassets in Resources */,
+				FAFCF7D628F7F2B3004899B7 /* conjugation_fr.json in Resources */,
 				FA333DAD27EC89E700E6B5A1 /* WordCollectionViewCell.xib in Resources */,
 				FA3A467B26397BDA00BF0CB5 /* RatingButton.xib in Resources */,
 				FAE653EA25C3FB8600CC25A1 /* RecordButton.xib in Resources */,
@@ -1954,6 +1965,7 @@
 				FA04986F25C2E624004CF8B7 /* AudioPlayer.swift in Sources */,
 				FAC97F8226CE8E1D008B2CEF /* LearnViewController.swift in Sources */,
 				FAB8E01C263A7B96000AE9FE /* InviteFriendsViewController.swift in Sources */,
+				FAFCF7D828FAB47A004899B7 /* WEGrammarMenuCollectionViewCell.swift in Sources */,
 				FA29BE6D281FF134006524EC /* ReviewWordButton.swift in Sources */,
 				FAF10ECD26369B63001B650F /* EditPersonalInfoViewController.swift in Sources */,
 				FA36E56D281F0A6100000477 /* ReviewTrainingScoreViewController.swift in Sources */,
